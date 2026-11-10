@@ -258,6 +258,12 @@ msgstr "Температура модема"
 msgid "Service uptime"
 msgstr "Час роботи сервісу"
 
+msgid "LTE quality"
+msgstr "Якість LTE"
+
+msgid "CSQ"
+msgstr "CSQ"
+
 msgid "RSSI"
 msgstr "RSSI"
 
@@ -369,9 +375,6 @@ msgstr "Помилка перезапуску"
 msgid "Signal strength (RSRQ)"
 msgstr "Рівень сигналу (RSRQ)"
 
-msgid "LTE quality"
-msgstr "Якість LTE"
-
 msgid "Operator"
 msgstr "Оператор"
 
@@ -386,6 +389,9 @@ msgstr "Інтервал оновлення"
 
 msgid "seconds"
 msgstr "секунд"
+
+msgid "Signal Strength"
+msgstr "Рівень сигналу"
 
 msgid "Received Signal Strength Indicator"
 msgstr "Індикатор рівня прийнятого сигналу"
