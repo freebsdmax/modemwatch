@@ -280,8 +280,10 @@ LuCI-застосунок і всі пакети перекладів для в�
 до списку мов LuCI. Наприклад:
 
 ```sh
-opkg install luci-i18n-modemwatch-de_24.10.8_*.ipk
+opkg install luci-i18n-modemwatch-uk_24.10.8_*.ipk
 ```
+
+Пакети для інших мов лежать в архіві `modemwatch-24.10.8-all.tar.gz`.
 
 Повний перелік кодів мов — у [`scripts/languages.txt`](scripts/languages.txt).
 
