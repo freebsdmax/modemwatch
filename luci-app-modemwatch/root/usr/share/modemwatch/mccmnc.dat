@@ -1,0 +1,3095 @@
+# PLMN;Country;Operator
+# Generated from https://github.com/pbakondy/mcc-mnc-list
+# Source: https://en.wikipedia.org/wiki/Mobile_country_code
+28967;Abkhazia;Aquafon
+28988;Abkhazia;A-Mobile
+27601;Albania;ONE
+27602;Albania;Vodafone
+27603;Albania;ALBtelecom
+27604;Albania;Plus Communication
+21303;Andorra;Som, Mobiland
+28301;Armenia;Beeline
+28304;Armenia;Karabakh Telecom
+28305;Armenia;VivaCell-MTS
+28310;Armenia;Ucom
+23201;Austria;A1.net
+23202;Austria;A1 Telekom Austria
+23203;Austria;Magenta
+23204;Austria;Magenta
+23205;Austria;3
+23206;Austria;Orange AT
+23207;Austria;Hofer Telekom
+23208;Austria;Lycamobile
+23209;Austria;Tele2Mobil
+23210;Austria;3
+23211;Austria;bob
+23212;Austria;yesss!
+23213;Austria;Magenta
+23214;Austria;Hutchison Drei Austria
+23215;Austria;Vectone Mobile
+23216;Austria;Hutchison Drei Austria
+23217;Austria;spusu
+23218;Austria;smartspace GmbH
+23219;Austria;Hutchison Drei Austria
+23220;Austria;m:tel
+23221;Austria;Salzburg AG für Energie, Verkehr und Telekommunikation
+23222;Austria;Plintron Austria Limited
+23223;Austria;Magenta
+23224;Austria;Smartel Services GmbH
+23225;Austria;Holding Graz Kommunale Dienstleistungen GmbH
+23226;Austria;LIWEST Kabelmedien GmbH
+23227;Austria;TISMI B.V.
+23291;Austria;GSM-R A
+23292;Austria;ArgoNET
+25701;Belarus;A1
+25702;Belarus;MTS
+25703;Belarus;DIALLOG
+25704;Belarus;life:)
+25705;Belarus;byfly
+25706;Belarus;beCloud
+20600;Belgium;Proximus
+20601;Belgium;Proximus
+20602;Belgium;Infrabel
+20603;Belgium;Citymesh Connect
+20604;Belgium;MWingz
+20605;Belgium;Telenet
+20606;Belgium;Lycamobile
+20607;Belgium;Vectone Mobile
+20608;Belgium;VOO
+20609;Belgium;Proximus SA
+20610;Belgium;Orange Belgium
+20611;Belgium;L-mobi
+20615;Belgium;Elephant Talk Communications Schweiz GmbH
+20616;Belgium;NextGen Mobile Ltd.
+20620;Belgium;Base
+20622;Belgium;Febo.mobi
+20623;Belgium;Dust Mobile
+20625;Belgium;Dense Air Belgium SPRL
+20628;Belgium;BICS
+20629;Belgium;TISMI
+20630;Belgium;Mobile Vikings
+20633;Belgium;Ericsson NV
+20634;Belgium;ONOFFAPP OÜ
+20640;Belgium;JOIN
+20648;Belgium;Network Research Belgium
+20650;Belgium;IP Nexia
+20671;Belgium;test
+20672;Belgium;test
+20673;Belgium;test
+20674;Belgium;test
+20699;Belgium;e-BO Enterprises
+27077;Belgium;Proximus Luxembourg S.A.
+27099;Belgium;Orange Communications Luxembourg S.A.
+21803;Bosnia and Herzegovina;HT-ERONET
+21805;Bosnia and Herzegovina;m:tel
+21890;Bosnia and Herzegovina;BH Mobile
+28401;Bulgaria;A1 BG
+28403;Bulgaria;Vivacom
+28405;Bulgaria;Yettel
+28407;Bulgaria;НКЖИ
+28409;Bulgaria;COMPATEL LIMITED
+28411;Bulgaria;Bulsatcom
+28413;Bulgaria;Ти.ком
+21901;Croatia;HT HR
+21902;Croatia;Telemach
+21903;Croatia;ALTAVOX d.o.o.
+21904;Croatia;NTH Mobile d.o.o.
+21910;Croatia;A1 HR
+21912;Croatia;TELE FOCUS d.o.o.
+21920;Croatia;T-Mobile HR
+21922;Croatia;Mobile One
+21930;Croatia;INNOVACOM OÜ
+28001;Cyprus;Cytamobile-Vodafone
+28002;Cyprus;Cytamobile-Vodafone
+28010;Cyprus;Epic
+28020;Cyprus;PrimeTel
+28022;Cyprus;lemontel
+28023;Cyprus;Vectone Mobile
+23001;Czech Republic;T-Mobile
+23002;Czech Republic;O2
+23003;Czech Republic;Vodafone
+23004;Czech Republic;Nordic Telecom Regional s.r.o.
+23005;Czech Republic;PODA a.s.
+23006;Czech Republic;Nordic Telecom 5G a.s.
+23007;Czech Republic;T-Mobile
+23008;Czech Republic;Compatel s.r.o.
+23009;Czech Republic;Unimobile
+23011;Czech Republic;incrate s.r.o.
+23098;Czech Republic;Správa železniční dopravní cesty, s.o.
+23099;Czech Republic;Vodafone
+23801;Denmark (Kingdom of Denmark);TDC
+23802;Denmark (Kingdom of Denmark);Telenor
+23803;Denmark (Kingdom of Denmark);Syniverse Technologies
+23804;Denmark (Kingdom of Denmark);Nexcon.io ApS
+23805;Denmark (Kingdom of Denmark);TetraNet
+23806;Denmark (Kingdom of Denmark);3
+23807;Denmark (Kingdom of Denmark);Vectone Mobile
+23808;Denmark (Kingdom of Denmark);Voxbone
+23809;Denmark (Kingdom of Denmark);SINE
+23810;Denmark (Kingdom of Denmark);TDC
+23811;Denmark (Kingdom of Denmark);SINE
+23812;Denmark (Kingdom of Denmark);Lycamobile
+23813;Denmark (Kingdom of Denmark);Compatel Limited
+23814;Denmark (Kingdom of Denmark);Monty UK Global Limited
+23815;Denmark (Kingdom of Denmark);Net 1
+23816;Denmark (Kingdom of Denmark);Tismi B.V.
+23817;Denmark (Kingdom of Denmark);Gotanet AB
+23818;Denmark (Kingdom of Denmark);Cubic Telecom
+23820;Denmark (Kingdom of Denmark);Telia
+23823;Denmark (Kingdom of Denmark);GSM-R DK
+23825;Denmark (Kingdom of Denmark);Viahub
+23828;Denmark (Kingdom of Denmark);LINK Mobile A/S
+23830;Denmark (Kingdom of Denmark);Interactive digital media GmbH
+23840;Denmark (Kingdom of Denmark);Ericsson Danmark A/S
+23842;Denmark (Kingdom of Denmark);Wavely
+23843;Denmark (Kingdom of Denmark);MobiWeb Limited
+23866;Denmark (Kingdom of Denmark);TT-Netværket P/S
+23873;Denmark (Kingdom of Denmark);Onomondo
+23877;Denmark (Kingdom of Denmark);Telenor
+23888;Denmark (Kingdom of Denmark);Cobira ApS
+23896;Denmark (Kingdom of Denmark);Telia
+24801;Estonia;Telia
+24802;Estonia;Elisa
+24803;Estonia;Tele2
+24804;Estonia;Top Connect
+24805;Estonia;CSC Telecom
+24806;Estonia;Progroup Holding
+24807;Estonia;Kou
+24808;Estonia;VIVEX
+24809;Estonia;Bravo Telecom
+24810;Estonia;Telcotrade OÜ
+24811;Estonia;UAB Raystorm Eesti filiaal
+24812;Estonia;Ntel Solutions OÜ
+24813;Estonia;Telia Eesti AS
+24814;Estonia;Estonian Crafts OÜ
+24815;Estonia;Premium Net International S.R.L. Eesti filiaal
+24816;Estonia;dzinga
+24817;Estonia;Baltergo OÜ
+24818;Estonia;Cloud Communications OÜ
+24819;Estonia;OkTelecom OÜ
+24820;Estonia;DOTT Telecom OÜ
+24821;Estonia;Tismi B.V.
+24822;Estonia;M2MConnect OÜ
+24824;Estonia;Novametro OÜ
+24825;Estonia;Eurofed OÜ
+24826;Estonia;IT-Decision Telecom OÜ
+24828;Estonia;Nord Connect OÜ
+24829;Estonia;SkyTel OÜ
+24871;Estonia;Siseministeerium (Ministry of Interior)
+28801;Faroe Islands (Kingdom of Denmark);Føroya Tele
+28802;Faroe Islands (Kingdom of Denmark);Nema
+28803;Faroe Islands (Kingdom of Denmark);TOSA
+24403;Finland;DNA
+24404;Finland;DNA
+24405;Finland;Elisa
+24406;Finland;Elisa
+24407;Finland;Nokia
+24408;Finland;Nokia
+24409;Finland;Nokia Solutions and Networks Oy
+24410;Finland;Traficom
+24411;Finland;Traficom
+24412;Finland;DNA
+24413;Finland;DNA
+24414;Finland;Ålcom
+24415;Finland;Telit Wireless Solutions GmbH
+24416;Finland;Digita Oy
+24417;Finland;Liikennevirasto
+24419;Finland;Nettia Oy
+24420;Finland;Elisa Oyj
+24421;Finland;Elisa- Saunalahti
+24422;Finland;EXFO Oy
+24423;Finland;EXFO Oy
+24424;Finland;Nord Connect UAB
+24425;Finland;Fortum Power and Heat Oy
+24426;Finland;Compatel
+24427;Finland;Teknologian tutkimuskeskus VTT Oy
+24428;Finland;Teknologian tutkimuskeskus VTT Oy
+24429;Finland;Teknologian tutkimuskeskus VTT Oy
+24430;Finland;Teknologian tutkimuskeskus VTT Oy
+24431;Finland;Teknologian tutkimuskeskus VTT Oy
+24432;Finland;Voxbone
+24433;Finland;VIRVE
+24434;Finland;Bittium Wireless
+24435;Finland;Edzcom Oy
+24436;Finland;Telia / DNA
+24437;Finland;Tismi
+24438;Finland;Nokia Solutions and Networks Oy
+24439;Finland;Nokia Solutions and Networks Oy
+24440;Finland;Nokia Solutions and Networks Oy
+24441;Finland;Nokia Solutions and Networks Oy
+24442;Finland;SMS Provider Corp.
+24443;Finland;Telavox AB / Telavox Oy
+24444;Finland;Turun ammattikorkeakoulu Oy
+24445;Finland;Suomen Turvallisuusverkko Oy
+24446;Finland;Suomen Turvallisuusverkko Oy
+24447;Finland;Suomen Turvallisuusverkko Oy
+24450;Finland;Aalto-korkeakoulusäätiö sr
+24451;Finland;Aalto-korkeakoulusäätiö sr
+24452;Finland;Aalto-korkeakoulusäätiö sr
+24453;Finland;Aalto-korkeakoulusäätiö sr
+24454;Finland;Aalto-korkeakoulusäätiö sr
+24455;Finland;Aalto-korkeakoulusäätiö sr
+24456;Finland;Aalto-korkeakoulusäätiö sr
+24457;Finland;Aalto-korkeakoulusäätiö sr
+24458;Finland;Aalto-korkeakoulusäätiö sr
+24459;Finland;Aalto-korkeakoulusäätiö sr
+24491;Finland;Telia
+24492;Finland;Sonera
+24495;Finland;Säteilyturvakeskus
+24499;Finland;Oy L M Ericsson Ab
+20801;France;Orange
+20802;France;Orange
+20803;France;MobiquiThings
+20804;France;Sisteer
+20805;France;Globalstar Europe
+20806;France;Globalstar Europe
+20807;France;Globalstar Europe
+20808;France;SFR
+20809;France;SFR
+20810;France;SFR
+20811;France;SFR
+20812;France;Truphone
+20813;France;SFR
+20814;France;SNCF Réseau
+20815;France;Free
+20816;France;Free
+20817;France;LEGOS
+20818;France;Voxbone
+20819;France;Haute-Garonne numérique
+20820;France;Bouygues
+20821;France;Bouygues
+20822;France;Transatel Mobile
+20823;France;Syndicat mixte ouvert Charente Numérique
+20824;France;Sierra Wireless
+20825;France;LycaMobile
+20826;France;NRJ Mobile
+20827;France;Coriolis Telecom
+20828;France;AIF
+20829;France;Cubic télécom France
+20830;France;Syma Mobile
+20831;France;Vectone Mobile
+20832;France;Orange
+20833;France;Fibre64
+20834;France;Cellhire France
+20835;France;Free
+20836;France;Free
+20837;France;IP Directions
+20838;France;Lebara France Ltd
+20839;France;Netwo
+208500;France;EDF
+20850144;France;TotalEnergies Global Information Technology services
+20850164;France;TotalEnergies Global Information Technology services
+20850168;France;Butachimie
+20850169;France;SNEF telecom
+20850176;France;Grand port fluvio-maritime de l'axe Seine
+20850194;France;Société du Grand Paris
+208502;France;EDF
+208504;France;Centre à l'énergie atomique et aux énergies alternatives
+208700;France;Weaccess group
+208701;France;GIP Vendée numérique
+208702;France;17-Numerique
+208703;France;Nivertel
+208704;France;Axione Limousin
+208705;France;Hautes-Pyrénées Numérique
+208706;France;Tours Métropole Numérique
+208707;France;Sartel THD
+208708;France;Melis@ territoires ruraux
+208709;France;Quimper communauté télécom
+208710;France;Losange
+208711;France;Nomotech
+208712;France;Syndicat Audois d'énergies et du Numérique
+208713;France;SD NUM SAS
+208714;France;Département de l'Isère
+20886;France;SEM@FOR77
+20887;France;Airbus defence and space SAS
+20888;France;Bouygues
+20889;France;Hub One
+20890;France;Images & Réseaux
+20891;France;Orange S.A.
+20892;France;Com4Innov
+20893;France;Thales Communications & Security SAS
+20894;France;Halys
+20895;France;Orange S.A.
+20896;France;Région Bourgogne-Franche-Comté
+20897;France;Thales Communications & Security SAS
+20898;France;Société Air France
+28201;Georgia;Geocell
+28202;Georgia;Magti
+28203;Georgia;MagtiFix
+28204;Georgia;Beeline
+28205;Georgia;S1
+28206;Georgia;JSC Compatel
+28207;Georgia;GlobalCell
+28208;Georgia;Silk LTE
+28209;Georgia;Gmobile
+28210;Georgia;Premium Net International SRL
+28211;Georgia;Mobilive
+28212;Georgia;Telecom1 Ltd
+28213;Georgia;Asanet Ltd
+28214;Georgia;DataCell
+28215;Georgia;Servicebox Ltd
+28222;Georgia;Myphone
+26201;Germany;Telekom
+26202;Germany;Vodafone
+26203;Germany;O2
+26204;Germany;Vodafone
+26205;Germany;O2
+26206;Germany;Telekom
+26207;Germany;O2
+26208;Germany;O2
+26209;Germany;Vodafone
+26210;Germany;DB Netz AG
+26211;Germany;O2
+26212;Germany;Simquadrat
+26213;Germany;BAAINBw
+26214;Germany;Lebara Limited
+26215;Germany;Airdata
+26216;Germany;Telogic Germany GmbH
+26217;Germany;O2
+26218;Germany;NetCologne
+26219;Germany;450connect
+26220;Germany;Enreach
+26221;Germany;Multiconnect GmbH
+26222;Germany;sipgate Wireless GmbH
+26223;Germany;1&1
+26224;Germany;TelcoVillage GmbH
+26225;Germany;MTEL Deutschland GmbH
+26233;Germany;simquadrat
+26241;Germany;First Telecom GmbH
+26242;Germany;CCC Event
+26243;Germany;Lycamobile
+26260;Germany;DB Telematik
+26270;Germany;BDBOS
+26271;Germany;GSMK
+26272;Germany;Ericsson GmbH
+26273;Germany;Nokia
+26274;Germany;Ericsson GmbH
+26275;Germany;Core Network Dynamics GmbH
+26276;Germany;BDBOS
+26277;Germany;O2
+26278;Germany;Telekom
+26279;Germany;ng4T GmbH
+26292;Germany;Nash Technologies
+26298;Germany;private networks
+26601;Gibraltar (United Kingdom);GibTel
+26603;Gibraltar (United Kingdom);Gibfibrespeed
+26606;Gibraltar (United Kingdom);CTS Mobile
+26609;Gibraltar (United Kingdom);Shine
+20201;Greece;Cosmote
+20202;Greece;Cosmote
+20203;Greece;OTE
+20204;Greece;OSE
+20205;Greece;Vodafone
+20206;Greece;Cosmoline
+20207;Greece;AMD Telecom
+20209;Greece;NOVA
+20210;Greece;NOVA
+20211;Greece;interConnect
+20212;Greece;Yuboto
+20213;Greece;Compatel Limited
+20214;Greece;Cyta Hellas
+20215;Greece;BWS
+20216;Greece;Inter Telecom
+29001;Greenland (Kingdom of Denmark);tusass
+29002;Greenland (Kingdom of Denmark);Nanoq Media
+29003;Greenland (Kingdom of Denmark);GTV Greenland
+23403;Guernsey (United Kingdom);Airtel-Vodafone
+23450;Guernsey (United Kingdom);JT
+23455;Guernsey (United Kingdom);Sure Mobile
+21601;Hungary;Yettel Hungary
+21602;Hungary;MVM Net Ltd.
+21603;Hungary;DIGI
+21604;Hungary;Invitech ICT Services Ltd.
+21620;Hungary;Yettel Hungary
+21630;Hungary;Telekom
+21670;Hungary;Vodafone
+21671;Hungary;upc
+21699;Hungary;MAV GSM-R
+27401;Iceland;Síminn
+27402;Iceland;Vodafone
+27403;Iceland;Vodafone
+27404;Iceland;Viking
+27405;Iceland;Halló Frjáls fjarskipti hf.
+27406;Iceland;Núll níu ehf
+27407;Iceland;IceCell
+27408;Iceland;On-waves
+27411;Iceland;Nova
+27412;Iceland;Tal
+27416;Iceland;Tismi BV
+27422;Iceland;Landhelgisgæslan (Icelandic Coast Guard)
+27431;Iceland;Síminn
+27491;Iceland;Neyðarlínan
+27201;Ireland;Vodafone
+27202;Ireland;3
+27203;Ireland;Eir
+27204;Ireland;Access Telecom
+27205;Ireland;3
+27207;Ireland;Eir
+27208;Ireland;Eir
+27209;Ireland;Clever Communications Ltd.
+27211;Ireland;Tesco Mobile
+27213;Ireland;Lycamobile
+27215;Ireland;Virgin Mobile
+27216;Ireland;Carphone Warehouse
+27217;Ireland;3
+27218;Ireland;Cubic Telecom Limited
+27221;Ireland;Net Feasa Limited
+27268;Ireland;Office of the Government Chief Information Officer
+23418;Isle of Man (United Kingdom);Cloud 9 Mobile
+23436;Isle of Man (United Kingdom);Sure Mobile
+23458;Isle of Man (United Kingdom);Pronto GSM
+23473;Isle of Man (United Kingdom);Bluewave Communications Ltd.
+22201;Italy;TIM
+22202;Italy;Elsacom
+22204;Italy;Intermatica
+22205;Italy;Telespazio
+22206;Italy;Vodafone
+22207;Italy;Kena Mobile
+22208;Italy;Fastweb
+22210;Italy;Vodafone
+22230;Italy;RFI
+22233;Italy;Poste Mobile
+22234;Italy;BT Italia
+22235;Italy;Lycamobile
+22236;Italy;Digi Mobil
+22237;Italy;WINDTRE
+22238;Italy;LINKEM
+22239;Italy;SMS Italia
+22241;Italy;GO internet
+22243;Italy;TIM
+22247;Italy;Fastweb
+22248;Italy;TIM
+22249;Italy;Vianova
+22250;Italy;Iliad
+22253;Italy;COOP Voce
+22254;Italy;Plintron
+22256;Italy;Spusu
+22277;Italy;IPSE 2000
+22288;Italy;WINDTRE
+22298;Italy;BLU
+22299;Italy;WINDTRE
+23403;Jersey (United Kingdom);Airtel-Vodafone
+23428;Jersey (United Kingdom);Marathon Telecom Limited
+23450;Jersey (United Kingdom);JT
+23455;Jersey (United Kingdom);Sure Mobile
+22101;Kosovo;Vala
+22102;Kosovo;IPKO
+22106;Kosovo;Z Mobile
+22107;Kosovo;D3 Mobile
+24701;Latvia;LMT
+24702;Latvia;Tele2
+24703;Latvia;TRIATEL
+24704;Latvia;Beta Telecom
+24705;Latvia;Bite
+24706;Latvia;SIA "UNISTARS"
+24707;Latvia;SIA "MEGATEL"
+24708;Latvia;VMT
+24709;Latvia;Xomobile
+24710;Latvia;LMT
+29501;Liechtenstein;Swisscom
+29502;Liechtenstein;7acht
+29505;Liechtenstein;FL1
+29506;Liechtenstein;Cubic Telecom
+29507;Liechtenstein;First Mobile AG
+29509;Liechtenstein;EMnify GmbH
+29510;Liechtenstein;Soracom LI Ltd.
+29511;Liechtenstein;DIMOCO Messaging AG
+29577;Liechtenstein;Alpmobil
+24601;Lithuania;Telia
+24602;Lithuania;BITĖ
+24603;Lithuania;Tele2
+24604;Lithuania;LR vidaus reikalų ministerija (Ministry of the Interior)
+24605;Lithuania;LitRail
+24606;Lithuania;Mediafon
+24607;Lithuania;Compatel Ltd.
+24608;Lithuania;MEZON
+24609;Lithuania;Interactive Digital Media GmbH
+24611;Lithuania;DATASIM OU
+24612;Lithuania;Nord connect OU
+24613;Lithuania;Travel Communication SIA
+24614;Lithuania;Tismi BV
+24615;Lithuania;Esim telecom, UAB
+24616;Lithuania;Annecto Telecom Limited
+27001;Luxembourg;POST
+27002;Luxembourg;MTX Connect S.a.r.l.
+27005;Luxembourg;Luxembourg Online S.A.
+27007;Luxembourg;Bouygues Telecom S.A.
+27010;Luxembourg;Blue Communications
+27071;Luxembourg;CFL
+27077;Luxembourg;Tango
+27078;Luxembourg;Interactive digital media GmbH
+27079;Luxembourg;Mitto AG
+27080;Luxembourg;Syniverse Technologies S.à r.l.
+27081;Luxembourg;E-Lux Mobile Telecommunication S.A.
+27099;Luxembourg;Orange
+27801;Malta;Epic
+27811;Malta;YOM Ltd.
+27821;Malta;GO
+27830;Malta;GO
+27877;Malta;Melita
+25500;Moldova;IDC
+25901;Moldova;Orange
+25902;Moldova;Moldcell
+25903;Moldova;Moldtelecom
+25904;Moldova;Eventis
+25905;Moldova;Moldtelecom
+25915;Moldova;IDC
+25999;Moldova;Moldtelecom
+21210;Monaco;Office des Telephones
+29701;Montenegro;One
+29702;Montenegro;telekom.me
+29703;Montenegro;m:tel
+20400;Netherlands (Kingdom of the Netherlands);Intovoice B.V.
+20401;Netherlands (Kingdom of the Netherlands);RadioAccess Network Services
+20402;Netherlands (Kingdom of the Netherlands);Tele2
+20403;Netherlands (Kingdom of the Netherlands);Enreach
+20404;Netherlands (Kingdom of the Netherlands);Vodafone
+20405;Netherlands (Kingdom of the Netherlands);Elephant Talk Communications Premium Rate Services
+20406;Netherlands (Kingdom of the Netherlands);Vectone Mobile
+20407;Netherlands (Kingdom of the Netherlands);Teleena
+20408;Netherlands (Kingdom of the Netherlands);KPN
+20409;Netherlands (Kingdom of the Netherlands);Lycamobile
+20410;Netherlands (Kingdom of the Netherlands);KPN
+20411;Netherlands (Kingdom of the Netherlands);Greenet Netwerk B.V
+20412;Netherlands (Kingdom of the Netherlands);Telfort
+20413;Netherlands (Kingdom of the Netherlands);Unica Installatietechniek B.V.
+20414;Netherlands (Kingdom of the Netherlands);Venus & Mercury Telecom
+20415;Netherlands (Kingdom of the Netherlands);Ziggo
+20416;Netherlands (Kingdom of the Netherlands);T-Mobile (BEN)
+20417;Netherlands (Kingdom of the Netherlands);Lebara Ltd
+20418;Netherlands (Kingdom of the Netherlands);Ziggo
+20419;Netherlands (Kingdom of the Netherlands);Mixe Communication Solutions B.V.
+20420;Netherlands (Kingdom of the Netherlands);T-Mobile
+20421;Netherlands (Kingdom of the Netherlands);ProRail B.V.
+20422;Netherlands (Kingdom of the Netherlands);Ministerie van Defensie
+20423;Netherlands (Kingdom of the Netherlands);KORE Wireless Nederland B.V.
+20424;Netherlands (Kingdom of the Netherlands);PM Factory B.V.
+20425;Netherlands (Kingdom of the Netherlands);CapX B.V.
+20426;Netherlands (Kingdom of the Netherlands);SpeakUp B.V.
+20427;Netherlands (Kingdom of the Netherlands);L-mobi
+20428;Netherlands (Kingdom of the Netherlands);Lancelot B.V.
+20429;Netherlands (Kingdom of the Netherlands);Tismi B.V.
+20430;Netherlands (Kingdom of the Netherlands);ASpider Solutions Nederland B.V.
+20432;Netherlands (Kingdom of the Netherlands);Cubic Telecom Limited
+20433;Netherlands (Kingdom of the Netherlands);Truphone B.V.
+20460;Netherlands (Kingdom of the Netherlands);Nextgen Mobile Ltd
+20461;Netherlands (Kingdom of the Netherlands);Alcadis B.V.
+20462;Netherlands (Kingdom of the Netherlands);RGTN
+20463;Netherlands (Kingdom of the Netherlands);Messagebird BV
+20464;Netherlands (Kingdom of the Netherlands);Zetacom B.V.
+20465;Netherlands (Kingdom of the Netherlands);AGMS Netherlands B.V.
+20466;Netherlands (Kingdom of the Netherlands);Utility Connect B.V.
+20467;Netherlands (Kingdom of the Netherlands);Koning en Hartman B.V.
+20468;Netherlands (Kingdom of the Netherlands);Roamware (Netherlands) B.V.
+20469;Netherlands (Kingdom of the Netherlands);KPN Mobile The Netherlands B.V.
+20491;Netherlands (Kingdom of the Netherlands);Enexis Netbeheer B.V.
+29401;North Macedonia;Telekom.mk
+29402;North Macedonia;one
+29403;North Macedonia;A1 MK
+29404;North Macedonia;Lycamobile
+29410;North Macedonia;WTI Macedonia
+29411;North Macedonia;MOBIK TELEKOMUNIKACII DOOEL Skopje
+29412;North Macedonia;MTEL DOOEL Skopje
+24201;Norway;Telenor
+24202;Norway;Telia
+24203;Norway;Televerket AS
+24204;Norway;Tele2
+24205;Norway;Telia
+24206;Norway;ice
+24207;Norway;Phonero
+24208;Norway;Telia
+24209;Norway;Com4
+24210;Norway;Norwegian Communications Authority
+24211;Norway;SystemNet
+24212;Norway;Telenor
+24214;Norway;ice
+24215;Norway;eRate Norway AS
+24216;Norway;Iristel Norway AS
+24217;Norway;Telenor
+24220;Norway;Jernbaneverket AS
+24221;Norway;Jernbaneverket AS
+24222;Norway;Altibox AS
+24223;Norway;Lycamobile
+24224;Norway;Mobile Norway AS
+24225;Norway;Forsvarets kompetansesenter KKIS
+24270;Norway;test networks
+24271;Norway;private networks
+24272;Norway;private networks
+24273;Norway;private networks
+24274;Norway;private networks
+24275;Norway;private networks
+24290;Norway;Nokia Solutions and Networks Norge AS
+24299;Norway;TampNet AS
+26001;Poland;Plus
+26002;Poland;T-Mobile
+26003;Poland;Orange
+26004;Poland;Plus
+26005;Poland;Orange
+26006;Poland;Play
+26007;Poland;Netia
+26008;Poland;EXATEL S.A.
+26009;Poland;Lycamobile
+26010;Poland;T-Mobile
+26011;Poland;Plus
+26012;Poland;Cyfrowy Polsat
+26013;Poland;Move Telecom S.A.
+26014;Poland;Telco Leaders Ltd
+26015;Poland;Plus
+26016;Poland;Plus
+26017;Poland;Plus
+26018;Poland;AMD Telecom
+26019;Poland;SIA NetBalt
+26020;Poland;TISMI B.V.
+26021;Poland;private networks
+26022;Poland;Twilio Ireland Limited
+26023;Poland;PGE Systemy S.A.
+26024;Poland;IT Partners Telco Sp. z o.o.
+26025;Poland;TeleCube.PL
+26026;Poland;Vonage B.V.
+26027;Poland;SIA Ntel Solutions
+26028;Poland;CrossMobile Sp. z o.o.
+26029;Poland;SMSWIZARD POLSKA Sp. z o.o.
+26030;Poland;HXG Sp. z o.o.
+26031;Poland;Phone IT
+26032;Poland;Compatel Limited
+26033;Poland;Truphone
+26034;Poland;NetWorkS!
+26035;Poland;PKP Polskie Linie Kolejowe S.A.
+26036;Poland;Vectone Mobile
+26037;Poland;NEXTGEN MOBILE LTD
+26038;Poland;CALLFREEDOM Sp. z o.o.
+26039;Poland;Voxbone
+26040;Poland;Interactive Digital Media GmbH
+26041;Poland;EZ PHONE MOBILE Sp. z o.o.
+26042;Poland;MobiWeb Telecom Limited
+26043;Poland;Smart Idea International Sp. z o.o.
+26044;Poland;Rebtel Poland Sp. z o.o.
+26045;Poland;Virgin Mobile
+26046;Poland;Terra Telekom Sp. z o.o.
+26047;Poland;SMShighway Limited
+26048;Poland;AGILE TELECOM S.P.A.
+26049;Poland;Messagebird B.V.
+26090;Poland;Polska Spółka Gazownictwa Sp. z o.o.
+26097;Poland;Politechnika Łódzka Uczelniane Centrum Informatyczne
+26098;Poland;Play
+26801;Portugal;Vodafone
+26802;Portugal;Digi Portugal, Lda.
+26803;Portugal;NOS
+26804;Portugal;LycaMobile
+26805;Portugal;Oniway - Inforcomunicaçôes, S.A.
+26806;Portugal;MEO
+26807;Portugal;Sumamovil Portugal, S.A.
+26808;Portugal;MEO
+26811;Portugal;Compatel, Limited
+26812;Portugal;Infraestruturas de Portugal, S.A.
+26813;Portugal;G9Telecom, S.A.
+26821;Portugal;Zapp
+26880;Portugal;MEO
+26891;Portugal;Vodafone
+26893;Portugal;NOS
+22601;Romania;Vodafone
+22602;Romania;Clicknet Mobile
+22603;Romania;Telekom
+22604;Romania;Cosmote/Zapp
+22605;Romania;Digi.Mobil
+22606;Romania;Telekom
+22610;Romania;Orange
+22611;Romania;Enigma-System
+22615;Romania;Idilis
+22616;Romania;Lycamobile
+22619;Romania;CFR
+25001;Russian Federation;MTS
+25002;Russian Federation;MegaFon
+25003;Russian Federation;NCC
+25004;Russian Federation;Sibchallenge
+25005;Russian Federation;ETK
+25006;Russian Federation;Skylink
+25007;Russian Federation;SMARTS
+25008;Russian Federation;Vainah Telecom
+25009;Russian Federation;Skylink
+25010;Russian Federation;DTC
+25011;Russian Federation;Yota
+25012;Russian Federation;Baykalwestcom
+25012;Russian Federation;Akos
+25013;Russian Federation;KUGSM
+25014;Russian Federation;MegaFon
+25015;Russian Federation;SMARTS
+25016;Russian Federation;Miatel
+25017;Russian Federation;Utel
+25018;Russian Federation;Osnova Telecom
+25019;Russian Federation;INDIGO
+25020;Russian Federation;Tele2
+25021;Russian Federation;GlobalTel
+25022;Russian Federation;Vainakh Telecom
+25023;Russian Federation;Thuraya
+25026;Russian Federation;VTB Mobile
+25027;Russian Federation;Letai
+25028;Russian Federation;Beeline
+25029;Russian Federation;Iridium
+25032;Russian Federation;Win Mobile
+25033;Russian Federation;Sevmobile
+25034;Russian Federation;Krymtelekom
+25035;Russian Federation;MOTIV
+25038;Russian Federation;Tambov GSM
+25039;Russian Federation;Rostelecom
+25040;Russian Federation;VTC Mobile
+25044;Russian Federation;Stavtelesot / North Caucasian GSM
+25045;Russian Federation;Gazprombank Mobile
+25050;Russian Federation;SberMobile
+25054;Russian Federation;TTK
+25059;Russian Federation;WireFire
+25060;Russian Federation;Volna mobile
+25061;Russian Federation;Intertelecom
+25062;Russian Federation;Tinkoff Mobile
+25091;Russian Federation;Sonic Duo
+25092;Russian Federation;Primtelefon
+25093;Russian Federation;Telecom XXI
+25096;Russian Federation;+7Telecom
+25097;Russian Federation;Phoenix
+25598;Russian Federation;MKS (ex. Lugacom)
+25099;Russian Federation;Beeline
+250811;Russian Federation;Votek Mobile
+29201;San Marino;PRIMA
+22001;Serbia;Yettel
+22002;Serbia;One
+22003;Serbia;mt:s
+22004;Serbia;T-Mobile CG
+22005;Serbia;A1 SRB
+22007;Serbia;Orion
+22009;Serbia;Vectone Mobile
+22011;Serbia;Globaltel
+22020;Serbia;A1 SRB
+22021;Serbia;Infrastruktura železnice Srbije a.d.
+23101;Slovakia;Orange
+23102;Slovakia;Telekom
+23103;Slovakia;4ka
+23104;Slovakia;Telekom
+23105;Slovakia;Orange
+23106;Slovakia;O2
+23107;Slovakia;Orange
+23108;Slovakia;Unimobile
+23109;Slovakia;DSI DATA, a.s.
+23110;Slovakia;HMZ RÁDIOKOMUNIKÁCIE, spol. s r.o.
+23150;Slovakia;Telekom
+23199;Slovakia;ŽSR
+29310;Slovenia;SŽ - Infrastruktura, d.o.o.
+29311;Slovenia;BeeIN d.o.o.
+29320;Slovenia;COMPATEL Ltd
+29321;Slovenia;NOVATEL d.o.o.
+29322;Slovenia;Mobile One Ltd.
+29340;Slovenia;A1 SI
+29341;Slovenia;Mobitel
+29364;Slovenia;T-2
+29370;Slovenia;Telemach
+29386;Slovenia;ELEKTRO GORENJSKA, d.d
+21401;Spain;Vodafone
+21402;Spain;Fibracat
+21403;Spain;Orange
+21404;Spain;Yoigo
+21405;Spain;Movistar
+21406;Spain;Vodafone
+21407;Spain;Movistar
+21408;Spain;Euskaltel
+21409;Spain;Orange
+21410;Spain;ZINNIA TELECOMUNICACIONES, S.L.U.
+21411;Spain;TELECOM CASTILLA-LA MANCHA, S.A.
+21412;Spain;VENUS MOVIL, S.L. UNIPERSONAL
+21413;Spain;SYMA MOBILE ESPAÑA, S.L.
+21414;Spain;AVATEL MÓVIL, S.L.U.
+21415;Spain;BT
+21416;Spain;TeleCable
+21417;Spain;Móbil R
+21418;Spain;ONO
+21419;Spain;Simyo
+21420;Spain;Fonyou
+21421;Spain;Jazztel
+21422;Spain;DIGI mobil
+21423;Spain;Xfera Moviles S.A.U.
+21424;Spain;VODAFONE ESPAÑA, S.A.U.
+21425;Spain;Xfera Moviles S.A.U.
+21426;Spain;Lleida Networks Serveis Telemátics, SL
+21427;Spain;Truphone
+21428;Spain;Murcia4G
+21429;Spain;Xfera Moviles S.A.U.
+21430;Spain;Compatel Limited
+21431;Spain;Red Digital De Telecomunicaciones de las Islas Baleares, S.L.
+21432;Spain;Tuenti
+21433;Spain;Xfera Móviles, S.A.U.
+21434;Spain;Aire Networks del Mediterráneo, S.L.U.
+21435;Spain;INGENIUM OUTSOURCING SERVICES, S.L.
+21436;Spain;ALAI OPERADOR DE TELECOMUNICACIONES, S.L
+21437;Spain;Vodafone Spain
+21438;Spain;Telefónica Móviles España, S.A.U.
+21451;Spain;ADIF
+214700;Spain;Iberdrola
+214701;Spain;Endesa
+24001;Sweden;Telia
+24002;Sweden;3
+24003;Sweden;Net 1
+24004;Sweden;SWEDEN
+24005;Sweden;Sweden 3G
+24006;Sweden;Telenor
+24007;Sweden;Tele2
+24008;Sweden;Telenor
+24009;Sweden;Com4
+24010;Sweden;Spring Mobil
+24011;Sweden;ComHem AB
+24012;Sweden;Lycamobile
+24013;Sweden;Bredband2 Företag AB
+24014;Sweden;Tele2 Sverige AB
+24015;Sweden;Sierra Wireless Sweden AB
+24016;Sweden;42 Telecom AB
+24017;Sweden;Gotanet
+24018;Sweden;Generic Mobile Systems Sweden AB
+24019;Sweden;Vectone Mobile
+24020;Sweden;Sierra Wireless Messaging AB
+24021;Sweden;MobiSir
+24022;Sweden;EuTel AB
+24023;Sweden;Infobip Limited (UK)
+24024;Sweden;Sweden 2G
+24025;Sweden;Monty UK Global Ltd
+24026;Sweden;Twilio Sweden AB
+24027;Sweden;GlobeTouch AB
+24028;Sweden;LINK Mobile A/S
+24029;Sweden;Mercury International Carrier Services AB
+24030;Sweden;NextGen Mobile Ltd.
+24031;Sweden;RebTel Network AB
+24032;Sweden;Compatel Limited
+24033;Sweden;Mobile Arts AB
+24034;Sweden;Trafikverket centralfunktion IT
+24035;Sweden;42 Telecom LTD
+24036;Sweden;interactive digital media GmbH
+24037;Sweden;Sinch Sweden AB
+24038;Sweden;Voxbone
+24039;Sweden;Primlight AB
+24040;Sweden;Netmore Group AB
+24041;Sweden;Telenor Sverige AB
+24042;Sweden;Telenor Connexion AB
+24043;Sweden;MobiWeb Ltd.
+24044;Sweden;Telenabler AB
+24045;Sweden;Spirius AB
+24046;Sweden;Viahub
+24047;Sweden;Viatel Sweden AB
+24048;Sweden;Tismi BV
+24049;Sweden;Telia Sverige AB
+24060;Sweden;Västra Götalandsregionen
+24061;Sweden;MessageBird B.V.
+24063;Sweden;FTS
+22801;Switzerland;Swisscom
+22802;Switzerland;Sunrise
+22803;Switzerland;Salt
+22805;Switzerland;Comfone AG
+22806;Switzerland;SBB-CFF-FFS
+22807;Switzerland;IN&Phone
+22808;Switzerland;Tele4u
+22809;Switzerland;Comfone AG
+22810;Switzerland;Stadt Polizei Zürich
+22811;Switzerland;Swisscom Broadcast AG
+22812;Switzerland;Sunrise
+22850;Switzerland;3G Mobile AG
+22851;Switzerland;relario AG
+22852;Switzerland;Barablu
+22853;Switzerland;upc cablecom
+22854;Switzerland;Lycamobile
+22855;Switzerland;WeMobile SA
+22856;Switzerland;SMSRelay AG
+22857;Switzerland;Mitto AG
+22858;Switzerland;beeone
+22859;Switzerland;Vectone
+22860;Switzerland;Sunrise
+22861;Switzerland;Compatel Ltd.
+22862;Switzerland;Telecom26 AG
+22863;Switzerland;FTS
+22864;Switzerland;Nth AG
+22865;Switzerland;Nexphone AG
+22866;Switzerland;Inovia Services SA
+22867;Switzerland;Datatrade Managed AG
+22868;Switzerland;Intellico AG
+22869;Switzerland;MTEL Schweiz GmbH
+22870;Switzerland;Tismi BV
+22898;Switzerland;Etablissement Cantonal d'Assurance
+22899;Switzerland;Swisscom Broadcast AG
+28601;Turkey;Turkcell
+28602;Turkey;Vodafone
+28603;Turkey;Türk Telekom
+28604;Turkey;Aycell
+25501;Ukraine;Vodafone
+25502;Ukraine;Kyivstar
+25503;Ukraine;Kyivstar
+25504;Ukraine;Intertelecom
+25505;Ukraine;Kyivstar
+25506;Ukraine;lifecell
+25507;Ukraine;3Mob, Lycamobile
+25508;Ukraine;JSC Ukrtelecom
+25509;Ukraine;PRJSC "Farlep-Invest"
+25510;Ukraine;Atlantis Telecom LLC
+25521;Ukraine;PEOPLEnet
+25523;Ukraine;CDMA Ukraine
+25525;Ukraine;NEWTONE
+255701;Ukraine;Ukrainian Special Systems
+25599;Ukraine;Phoenix, MKS (ex. Lugacom)
+23400;United Kingdom;BT
+23401;United Kingdom;Vectone Mobile
+23402;United Kingdom;O2 (UK)
+23403;United Kingdom;Airtel-Vodafone
+23404;United Kingdom;FMS Solutions Ltd
+23405;United Kingdom;Spitfire Network Services Limited
+23406;United Kingdom;Internet Computer Bureau Limited
+23407;United Kingdom;Vodafone UK
+23408;United Kingdom;BT OnePhone
+23409;United Kingdom;Tismi BV
+23410;United Kingdom;O2 (UK)
+23411;United Kingdom;O2 (UK)
+23412;United Kingdom;Railtrack
+23413;United Kingdom;Railtrack
+23414;United Kingdom;Link Mobility UK Ltd
+23415;United Kingdom;Vodafone UK
+23416;United Kingdom;Talk Talk
+23417;United Kingdom;FleXtel Limited
+23418;United Kingdom;Cloud9
+23419;United Kingdom;PMN
+23420;United Kingdom;3
+23421;United Kingdom;LogicStar Ltd
+23422;United Kingdom;Telesign Mobile Limited
+23423;United Kingdom;Icron Network Limited
+23424;United Kingdom;Greenfone
+23425;United Kingdom;Truphone
+23426;United Kingdom;Lycamobile
+23427;United Kingdom;Teleena
+23428;United Kingdom;Marathon Telecom Limited
+23429;United Kingdom;aql
+23430;United Kingdom;EE
+23431;United Kingdom;EE
+23432;United Kingdom;EE
+23433;United Kingdom;EE
+23434;United Kingdom;EE
+23435;United Kingdom;JSC Ingenium (UK) Limited
+23436;United Kingdom;Sure Mobile
+23437;United Kingdom;Synectiv Ltd
+23438;United Kingdom;Virgin Mobile
+23439;United Kingdom;Gamma Telecom Holdings Ltd.
+23440;United Kingdom;Mass Response Service GmbH
+23450;United Kingdom;JT
+23451;United Kingdom;Relish
+23452;United Kingdom;Shyam Telecom UK Ltd
+23453;United Kingdom;Mobile-X
+23454;United Kingdom;iD Mobile
+23455;United Kingdom;Sure Mobile
+23456;United Kingdom;National Cyber Security Centre
+23457;United Kingdom;Sky UK Limited
+23458;United Kingdom;Pronto GSM
+23459;United Kingdom;Limitless Mobile Ltd
+23470;United Kingdom;AMSUK Ltd.
+23471;United Kingdom;Home Office
+23472;United Kingdom;Hanhaa Mobile
+23473;United Kingdom;Bluewave Communications Ltd
+23474;United Kingdom;Pareteum Europe B.V.
+23475;United Kingdom;Mass Response Service GmbH
+23476;United Kingdom;BT
+23477;United Kingdom;Vodafone UK
+23478;United Kingdom;Airwave
+23479;United Kingdom;UKTL
+23486;United Kingdom;EE
+23488;United Kingdom;telet
+23500;United Kingdom;Vectone Mobile
+23501;United Kingdom;EE
+23502;United Kingdom;EE
+23503;United Kingdom;Relish
+23504;United Kingdom;University of Strathclyde
+23506;United Kingdom;University of Strathclyde
+23507;United Kingdom;University of Strathclyde
+23508;United Kingdom;Spitfire Network Services Limited
+23577;United Kingdom;BT
+23588;United Kingdom;telet
+23591;United Kingdom;Vodafone UK
+23592;United Kingdom;Vodafone UK
+23594;United Kingdom;Hutchison 3G UK Ltd
+23595;United Kingdom;Network Rail Infrastructure Limited
+365010;Anguilla (United Kingdom);Digicel
+365840;Anguilla (United Kingdom);FLOW
+344030;Antigua and Barbuda;APUA
+344050;Antigua and Barbuda;Digicel
+344920;Antigua and Barbuda;FLOW
+344930;Antigua and Barbuda;AT&T Wireless
+36301;Aruba (Kingdom of the Netherlands);SETAR
+36302;Aruba (Kingdom of the Netherlands);Digicel
+36439;Bahamas;BTC
+36449;Bahamas;Aliv
+342600;Barbados;FLOW
+342646;Barbados;KW Telecommunications Inc.
+342750;Barbados;Digicel
+342800;Barbados;Ozone
+342820;Barbados;Neptune Communications Inc.
+31059;Bermuda;Cellular One
+338050;Bermuda;Digicel Bermuda
+35000;Bermuda;One
+350007;Bermuda;Paradise Mobile
+35001;Bermuda;Digicel Bermuda
+35002;Bermuda;Mobility
+35005;Bermuda;Telecom Networks
+35011;Bermuda;Deltronics
+35015;Bermuda;FKB Net Ltd.
+348170;British Virgin Islands (United Kingdom);FLOW
+348370;British Virgin Islands (United Kingdom);BVI Cable TV Ltd
+348570;British Virgin Islands (United Kingdom);CCT Boatphone
+348770;British Virgin Islands (United Kingdom);Digicel
+302100;Canada;dotmobile
+302130;Canada;Xplore
+302131;Canada;Xplore
+302140;Canada;Fibernetics
+302150;Canada;Cogeco Connexion Inc.
+302151;Canada;Cogeco Connexion Inc.
+302152;Canada;Cogeco Connexion Inc.
+302220;Canada;Telus Mobility, Koodo Mobile, Public Mobile
+302221;Canada;Telus
+302222;Canada;Telus
+302230;Canada;ISP Telecom
+302250;Canada;ALO
+302270;Canada;EastLink
+302290;Canada;Airtel Wireless
+302300;Canada;ECOTEL
+302310;Canada;ECOTEL
+302320;Canada;Rogers Wireless
+302330;Canada;Blue Canada Wireless Inc.
+302340;Canada;Execulink
+302350;Canada;Naskapi Imuun Inc.
+302360;Canada;MiKe
+302361;Canada;Telus
+302370;Canada;Fido
+302380;Canada;Keewaytinook Mobile
+302390;Canada;DMTS
+302420;Canada;ABC
+302480;Canada;Qiniq
+302490;Canada;Freedom Mobile
+302491;Canada;Freedom Mobile
+302500;Canada;Videotron
+302510;Canada;Videotron
+302520;Canada;Rogers (Vidéotron MOCN)
+302530;Canada;Keewaytinook Mobile
+302540;Canada;Rovvr Communications Inc.
+302550;Canada;Star Solutions International Inc.
+302560;Canada;Lynx Mobility
+302570;Canada;Ligado Networks Corp.
+302590;Canada;Quadro Mobility
+302600;Canada;Iristel
+302610;Canada;Bell Mobility
+302620;Canada;ICE Wireless
+302630;Canada;Aliant Mobility
+302640;Canada;Bell
+302650;Canada;TBaytel
+302652;Canada;BC Tel Mobility (Telus)
+302653;Canada;Telus
+302655;Canada;MTS
+302656;Canada;TBay
+302657;Canada;Telus
+302660;Canada;MTS
+302670;Canada;CityTel Mobility
+302680;Canada;SaskTel
+302681;Canada;SaskTel
+302690;Canada;Bell
+302701;Canada;MB Tel Mobility
+302702;Canada;MT&T Mobility (Aliant)
+302703;Canada;New Tel Mobility (Aliant)
+302710;Canada;Globalstar
+302720;Canada;Rogers Wireless
+302721;Canada;Rogers Wireless
+302730;Canada;TerreStar Solutions
+302740;Canada;Shaw Telecom
+302750;Canada;SaskTel
+302760;Canada;Public Mobile
+302770;Canada;TNW Wireless
+302780;Canada;SaskTel
+302781;Canada;SaskTel
+302790;Canada;NetSet Communications
+302820;Canada;Rogers Wireless
+302848;Canada;Vocom International Telecommunications, Inc
+302860;Canada;Telus
+302880;Canada;Bell / Telus / SaskTel
+302910;Canada;Halton Regional Police Service
+302920;Canada;Rogers Wireless
+302940;Canada;Wightman Mobility
+302990;Canada;Ericsson Canada
+302991;Canada;Halton Regional Police Service
+302996;Canada;Powertech Labs
+302997;Canada;Powertech Labs
+302998;Canada;Institut de Recherche d’Hydro-Québec
+33805;Cayman Islands (United Kingdom);Digicel
+346001;Cayman Islands (United Kingdom);Logic
+346140;Cayman Islands (United Kingdom);FLOW
+346050;Cayman Islands (United Kingdom);Digicel
+36801;Cuba;CUBACEL
+366020;Dominica;Digicel
+366110;Dominica;FLOW
+37001;Dominican Republic;Altice
+37002;Dominican Republic;Claro
+37003;Dominican Republic;Altice
+37004;Dominican Republic;Viva
+37005;Dominican Republic;Wind
+34001;French Antilles (France);Orange
+34002;French Antilles (France);SFR Caraïbe
+34003;French Antilles (France);FLOW
+34004;French Antilles (France);Free
+34008;French Antilles (France);Dauphin
+34009;French Antilles (France);Free
+34010;French Antilles (France);Guadeloupe Téléphone Mobile
+34011;French Antilles (France);Guyane Téléphone Mobile
+34012;French Antilles (France);Martinique Téléphone Mobile
+34020;French Antilles (France);Digicel
+352030;Grenada;Digicel
+352110;Grenada;FLOW
+310032;Guam (United States of America);IT&E Wireless
+310033;Guam (United States of America);Guam Telephone Authority
+310140;Guam (United States of America);GTA Wireless
+310370;Guam (United States of America);Docomo
+310400;Guam (United States of America);IT&E Wireless
+310470;Guam (United States of America);Docomo
+310480;Guam (United States of America);IT&E Wireless
+311120;Guam (United States of America);IT&E Wireless
+311250;Guam (United States of America);IT&E Wireless
+37201;Haiti;Voila
+37202;Haiti;Digicel
+37203;Haiti;Natcom
+338020;Jamaica;FLOW
+338040;Jamaica;Caricel
+33805;Jamaica;Digicel
+338070;Jamaica;Claro
+338080;Jamaica;Rock Mobile Limited
+338110;Jamaica;FLOW
+338180;Jamaica;FLOW
+334001;Mexico;Comunicaciones Digitales Del Norte, S.A. de C.V.
+334010;Mexico;AT&T
+334020;Mexico;Telcel
+334030;Mexico;Movistar
+334040;Mexico;Unefon
+334050;Mexico;AT&T / Unefon
+334060;Mexico;Servicios de Acceso Inalambrico, S.A. de C.V.
+334066;Mexico;Telefonos de México, S.A.B. de C.V.
+334070;Mexico;Unefon
+334080;Mexico;Unefon
+334090;Mexico;AT&T
+334100;Mexico;Telecomunicaciones de México
+334110;Mexico;Maxcom Telecomunicaciones, S.A.B. de C.V.
+334120;Mexico;Quickly Phone, S.A. de C.V.
+334130;Mexico;ALESTRA SERVICIOS MÓVILES, S.A. DE C.V.
+334140;Mexico;Red Compartida
+334150;Mexico;Ultranet
+334160;Mexico;Cablevisión Red, S.A. de C.V.
+334170;Mexico;Oxio Mobile, S.A. de C.V.
+334180;Mexico;FreedomPop
+334190;Mexico;Viasat
+33805;Montserrat (United Kingdom);Digicel
+354860;Montserrat (United Kingdom);FLOW
+36231;Former Netherlands Antilles (Kingdom of the Netherlands);Eutel N.V.
+36233;Former Netherlands Antilles (Kingdom of the Netherlands);WICC N.V.
+36251;Former Netherlands Antilles (Kingdom of the Netherlands);Telcell
+36254;Former Netherlands Antilles (Kingdom of the Netherlands);ECC
+36259;Former Netherlands Antilles (Kingdom of the Netherlands);FLOW
+36260;Former Netherlands Antilles (Kingdom of the Netherlands);FLOW
+36263;Former Netherlands Antilles (Kingdom of the Netherlands);CSC N.V.
+36268;Former Netherlands Antilles (Kingdom of the Netherlands);Digicel
+36269;Former Netherlands Antilles (Kingdom of the Netherlands);Digicel
+36274;Former Netherlands Antilles (Kingdom of the Netherlands);PCS N.V.
+36276;Former Netherlands Antilles (Kingdom of the Netherlands);Digicel
+36278;Former Netherlands Antilles (Kingdom of the Netherlands);Telbo
+36291;Former Netherlands Antilles (Kingdom of the Netherlands);FLOW
+36294;Former Netherlands Antilles (Kingdom of the Netherlands);Bayòs
+36295;Former Netherlands Antilles (Kingdom of the Netherlands);MIO
+310110;Northern Mariana Islands (United States of America);IT&E Wireless
+310370;Northern Mariana Islands (United States of America);Docomo
+310017;Puerto Rico;ProxTel
+310260;Puerto Rico;T-Mobile
+310280;Puerto Rico;AT&T
+313510;Puerto Rico;Puerto Rico Telecom Company
+313790;Puerto Rico;Liberty
+330000;Puerto Rico;Open Mobile
+330110;Puerto Rico;Claro Puerto Rico
+330120;Puerto Rico;Open Mobile
+356050;Saint Kitts and Nevis;Digicel
+356070;Saint Kitts and Nevis;FLOW
+356110;Saint Kitts and Nevis;FLOW
+33805;Saint Lucia;Digicel
+358110;Saint Lucia;FLOW
+30801;Saint Pierre and Miquelon (France);Ameris
+30802;Saint Pierre and Miquelon (France);GLOBALTEL
+30803;Saint Pierre and Miquelon (France);Ameris
+360050;Saint Vincent and the Grenadines;Digicel
+360100;Saint Vincent and the Grenadines;Cingular Wireless
+360110;Saint Vincent and the Grenadines;FLOW
+37401;Trinidad and Tobago;bmobile
+37412;Trinidad and Tobago;bmobile
+37413;Trinidad and Tobago;Digicel
+37420;Trinidad and Tobago;bmobile
+374120;Trinidad and Tobago;bmobile
+374129;Trinidad and Tobago;bmobile
+374130;Trinidad and Tobago;Digicel
+374140;Trinidad and Tobago;Laqtel
+338050;Turks and Caicos Islands;Digicel
+376350;Turks and Caicos Islands;FLOW
+376351;Turks and Caicos Islands;Digicel
+376352;Turks and Caicos Islands;FLOW
+376360;Turks and Caicos Islands;Digicel
+310004;United States of America;Verizon
+310005;United States of America;Verizon
+310006;United States of America;Verizon
+310010;United States of America;Verizon
+310012;United States of America;Verizon
+310013;United States of America;Verizon
+310015;United States of America;Southern LINC
+310016;United States of America;AT&T
+310017;United States of America;ProxTel
+310020;United States of America;Union Wireless
+310030;United States of America;AT&T
+310032;United States of America;IT&E Wireless
+310033;United States of America;Guam Telephone Authority
+310034;United States of America;Airpeak
+310035;United States of America;ETEX Wireless
+310040;United States of America;MTA
+310050;United States of America;GCI
+310053;United States of America;Virgin Mobile
+310054;United States of America;Alltel US
+310060;United States of America;Consolidated Telcom
+310066;United States of America;U.S. Cellular
+310070;United States of America;AT&T
+310080;United States of America;AT&T
+310090;United States of America;AT&T
+310100;United States of America;Plateau Wireless
+310110;United States of America;IT&E Wireless
+310120;United States of America;T-Mobile
+310130;United States of America;Carolina West Wireless
+310140;United States of America;GTA Wireless
+310150;United States of America;AT&T
+310160;United States of America;T-Mobile
+310170;United States of America;AT&T
+310180;United States of America;West Central
+310190;United States of America;GCI
+310200;United States of America;T-Mobile
+310210;United States of America;T-Mobile
+310220;United States of America;T-Mobile
+310230;United States of America;T-Mobile
+310240;United States of America;T-Mobile
+310250;United States of America;T-Mobile
+310260;United States of America;T-Mobile
+310270;United States of America;T-Mobile
+310280;United States of America;AT&T
+310290;United States of America;nep
+310300;United States of America;Big Sky Mobile
+310310;United States of America;T-Mobile
+310311;United States of America;Farmers Wireless
+310320;United States of America;Cellular One
+310330;United States of America;Wireless Partners, LLC
+310340;United States of America;Limitless Mobile
+310350;United States of America;Verizon
+310360;United States of America;Pioneer Cellular
+310370;United States of America;Docomo
+310380;United States of America;AT&T
+310390;United States of America;Cellular One of East Texas
+310400;United States of America;IT&E Wireless
+310410;United States of America;AT&T
+310420;United States of America;Cincinnati Bell
+310430;United States of America;GCI
+310440;United States of America;Numerex
+310450;United States of America;Viaero
+310460;United States of America;Conecto
+310470;United States of America;NTT DoCoMo Pacific
+310480;United States of America;IT&E Wireless
+310490;United States of America;T-Mobile
+310500;United States of America;Alltel
+310510;United States of America;Cellcom
+310520;United States of America;TNS
+310530;United States of America;T-Mobile
+310540;United States of America;Phoenix
+310550;United States of America;Syniverse Technologies
+310560;United States of America;AT&T
+310570;United States of America;Broadpoint, LLC
+310580;United States of America;Inland Cellular Telephone Company
+310590;United States of America;Verizon Wireless
+310591;United States of America;Verizon Wireless
+310592;United States of America;Verizon Wireless
+310593;United States of America;Verizon Wireless
+310594;United States of America;Verizon Wireless
+310595;United States of America;Verizon Wireless
+310596;United States of America;Verizon Wireless
+310597;United States of America;Verizon Wireless
+310598;United States of America;Verizon Wireless
+310599;United States of America;Verizon Wireless
+310600;United States of America;Cellcom
+310610;United States of America;Mavenir Systems Inc
+310620;United States of America;Cellcom
+310630;United States of America;Choice Wireless
+310640;United States of America;Numerex
+310650;United States of America;Jasper
+310660;United States of America;T-Mobile
+310670;United States of America;AT&T
+310680;United States of America;AT&T
+310690;United States of America;Limitless Mobile
+310700;United States of America;Bigfoot Cellular
+310710;United States of America;ASTAC
+310720;United States of America;Syniverse Technologies
+310730;United States of America;U.S. Cellular
+310740;United States of America;Viaero
+310750;United States of America;Appalachian Wireless
+310760;United States of America;Lynch 3G Communications Corporation
+310770;United States of America;T-Mobile
+310780;United States of America;Dispatch Direct
+310790;United States of America;BLAZE
+310800;United States of America;T-Mobile
+310810;United States of America;Pacific Lightwave Inc.
+310820;United States of America;Verizon Wireless
+310830;United States of America;T-Mobile
+310840;United States of America;telna Mobile
+310850;United States of America;Aeris
+310860;United States of America;Five Star Wireless
+310870;United States of America;PACE
+310880;United States of America;DTC Wireless
+310890;United States of America;Verizon Wireless
+310891;United States of America;Verizon Wireless
+310892;United States of America;Verizon Wireless
+310893;United States of America;Verizon Wireless
+310894;United States of America;Verizon Wireless
+310895;United States of America;Verizon Wireless
+310896;United States of America;Verizon Wireless
+310897;United States of America;Verizon Wireless
+310898;United States of America;Verizon Wireless
+310899;United States of America;Verizon Wireless
+310900;United States of America;Mid-Rivers Wireless
+310910;United States of America;Verizon Wireless
+310920;United States of America;James Valley Wireless, LLC
+310930;United States of America;Copper Valley Wireless
+310940;United States of America;Tyntec Inc.
+310950;United States of America;AT&T
+310960;United States of America;STRATA
+310970;United States of America;Globalstar
+310980;United States of America;Peoples Telephone
+310990;United States of America;Evolve Broadband
+311000;United States of America;West Central Wireless
+311010;United States of America;Chariton Valley
+311012;United States of America;Verizon
+311020;United States of America;Chariton Valley
+311030;United States of America;Indigo Wireless
+311040;United States of America;Choice Wireless
+311050;United States of America;Thumb Cellular LP
+311060;United States of America;Space Data Corporation
+311070;United States of America;AT&T
+311080;United States of America;Pine Cellular
+311090;United States of America;AT&T
+311100;United States of America;Nex-Tech Wireless
+311110;United States of America;Verizon
+311120;United States of America;IT&E Wireless
+311130;United States of America;Black & Veatch
+311140;United States of America;Bravado Wireless
+311150;United States of America;Wilkes Cellular
+311160;United States of America;Lightsquared L.P.
+311170;United States of America;Tampnet
+311180;United States of America;AT&T
+311190;United States of America;AT&T
+311200;United States of America;Dish Wireless
+311210;United States of America;Telnyx LLC
+311220;United States of America;U.S. Cellular
+311230;United States of America;C Spire
+311240;United States of America;Cordova Wireless
+311250;United States of America;IT&E Wireless
+311260;United States of America;T-Mobile
+311270;United States of America;Verizon
+311271;United States of America;Verizon
+311272;United States of America;Verizon
+311273;United States of America;Verizon
+311274;United States of America;Verizon
+311275;United States of America;Verizon
+311276;United States of America;Verizon
+311277;United States of America;Verizon
+311278;United States of America;Verizon
+311279;United States of America;Verizon
+311280;United States of America;Verizon
+311281;United States of America;Verizon
+311282;United States of America;Verizon
+311283;United States of America;Verizon
+311284;United States of America;Verizon
+311285;United States of America;Verizon
+311286;United States of America;Verizon
+311287;United States of America;Verizon
+311288;United States of America;Verizon
+311289;United States of America;Verizon
+311290;United States of America;BLAZE
+311300;United States of America;Nexus Communications, Inc.
+311310;United States of America;NMobile
+311320;United States of America;Choice Wireless
+311330;United States of America;Bug Tussel Wireless
+311340;United States of America;Illinois Valley Cellular
+311350;United States of America;Nemont
+311360;United States of America;Stelera Wireless
+311370;United States of America;GCI Wireless
+311380;United States of America;New Dimension Wireless Ltd.
+311390;United States of America;Verizon
+311410;United States of America;Chat Mobility
+311420;United States of America;NorthwestCell
+311430;United States of America;Chat Mobility
+311440;United States of America;Verizon Wireless
+311450;United States of America;PTCI
+311460;United States of America;Electric Imp Inc.
+311470;United States of America;Viya
+311480;United States of America;Verizon
+311481;United States of America;Verizon
+311482;United States of America;Verizon
+311483;United States of America;Verizon
+311484;United States of America;Verizon
+311485;United States of America;Verizon
+311486;United States of America;Verizon
+311487;United States of America;Verizon
+311488;United States of America;Verizon
+311489;United States of America;Verizon
+311490;United States of America;T-Mobile
+311500;United States of America;Mosaic Telecom
+311510;United States of America;Ligado Networks
+311520;United States of America;Lightsquared L.P.
+311530;United States of America;NewCore
+311540;United States of America;Coeur Rochester, Inc
+311550;United States of America;Choice Wireless
+311560;United States of America;OTZ Cellular
+311570;United States of America;Mediacom
+311580;United States of America;U.S. Cellular
+311590;United States of America;Verizon
+311600;United States of America;Limitless Mobile
+311610;United States of America;SRT Communications
+311620;United States of America;TerreStar Networks, Inc.
+311630;United States of America;C Spire
+311640;United States of America;Rock Wireless
+311650;United States of America;United Wireless
+311660;United States of America;Metro
+311670;United States of America;Pine Belt Wireless
+311680;United States of America;GreenFly LLC
+311690;United States of America;TeleBEEPER of New Mexico
+311700;United States of America;Midwest Network Solutions Hub LLC
+311710;United States of America;Northeast Wireless Networks LLC
+311720;United States of America;MainePCS LLC
+311730;United States of America;Proximiti Mobility Inc.
+311740;United States of America;Telalaska Cellular
+311750;United States of America;ClearTalk
+311760;United States of America;Edigen Inc.
+311770;United States of America;Altiostar Networks, Inc.
+311780;United States of America;ASTCA
+311790;United States of America;Coleman County Telephone Cooperative, Inc.
+311800;United States of America;Verizon Wireless
+311810;United States of America;Verizon Wireless
+311820;United States of America;Sonus Networks
+311830;United States of America;Thumb Cellular LP
+311840;United States of America;Cellcom
+311850;United States of America;Cellcom
+311860;United States of America;STRATA
+311870;United States of America;T-Mobile
+311880;United States of America;T-Mobile
+311882;United States of America;T-Mobile
+311890;United States of America;Globecomm Network Services Corporation
+311900;United States of America;GigSky
+311910;United States of America;MobileNation
+311920;United States of America;Chariton Valley
+311930;United States of America;Cox Communications
+311940;United States of America;T-Mobile
+311950;United States of America;ETC
+311960;United States of America;Lycamobile
+311970;United States of America;Big River Broadband
+311980;United States of America;LigTel Communications
+311990;United States of America;VTel Wireless
+312010;United States of America;Chariton Valley
+312020;United States of America;Infrastructure Networks, LLC
+312030;United States of America;Bravado Wireless
+312040;United States of America;Custer Telephone Co-op (CTCI)
+312050;United States of America;Fuego Wireless
+312060;United States of America;CoverageCo
+312070;United States of America;Adams Networks Inc
+312080;United States of America;SyncSouth
+312090;United States of America;AT&T
+312100;United States of America;ClearSky Technologies, Inc.
+312110;United States of America;Texas Energy Network LLC
+312120;United States of America;Appalachian Wireless
+312130;United States of America;Appalachian Wireless
+312140;United States of America;Revol Wireless
+312150;United States of America;NorthwestCell
+312160;United States of America;Chat Mobility
+312170;United States of America;Chat Mobility
+312180;United States of America;Limitless Mobile LLC
+312190;United States of America;T-Mobile
+312200;United States of America;Voyager Mobility LLC
+312210;United States of America;Aspenta International, Inc.
+312220;United States of America;Chariton Valley
+312230;United States of America;SRT Communications
+312240;United States of America;Sprint
+312250;United States of America;T-Mobile
+312260;United States of America;WorldCell Solutions LLC
+312270;United States of America;Pioneer Cellular
+312280;United States of America;Pioneer Cellular
+312290;United States of America;STRATA
+312300;United States of America;telna Mobile
+312310;United States of America;Clear Stream Communications, LLC
+312320;United States of America;RTC Communications LLC
+312330;United States of America;Nemont
+312340;United States of America;MTA
+312350;United States of America;Triangle Communication System Inc.
+312360;United States of America;Wes-Tex Telecommunications, Ltd.
+312370;United States of America;Choice Wireless
+312380;United States of America;Copper Valley Wireless
+312390;United States of America;FTC Wireless
+312400;United States of America;Mid-Rivers Wireless
+312410;United States of America;Eltopia Communications, LLC
+312420;United States of America;Nex-Tech Wireless
+312430;United States of America;Silver Star Communications
+312440;United States of America;Kajeet, Inc.
+312450;United States of America;Cable & Communications Corporation
+312460;United States of America;Ketchikan Public Utilities (KPU)
+312470;United States of America;Carolina West Wireless
+312480;United States of America;Nemont
+312490;United States of America;TrustComm, Inc.
+312500;United States of America;AB Spectrum LLC
+312510;United States of America;WUE Inc.
+312520;United States of America;ANIN
+312530;United States of America;T-Mobile
+312540;United States of America;Broadband In Hand LLC
+312550;United States of America;Great Plains Communications, Inc.
+312560;United States of America;NHLT Inc.
+312570;United States of America;Blue Wireless
+312580;United States of America;Google LLC
+312590;United States of America;NMU
+312600;United States of America;Nemont
+312610;United States of America;ShawnTech Communications
+312620;United States of America;GlobeTouch Inc.
+312630;United States of America;NetGenuity, Inc.
+312640;United States of America;Nemont
+312650;United States of America;Brightlink
+312660;United States of America;nTelos
+312670;United States of America;FirstNet
+312680;United States of America;AT&T
+312690;United States of America;TGS, LLC
+312700;United States of America;Wireless Partners, LLC
+312710;United States of America;Great North Woods Wireless LLC
+312720;United States of America;Southern LINC
+312730;United States of America;Triangle Communication System Inc.
+312740;United States of America;Locus Telecommunications
+312750;United States of America;Artemis Networks LLC
+312760;United States of America;ASTAC
+312770;United States of America;Verizon
+312780;United States of America;Redzone Wireless
+312790;United States of America;Gila Electronics
+312800;United States of America;Cirrus Core Networks
+312810;United States of America;BBCP
+312820;United States of America;Santel Communications Cooperative, Inc.
+312830;United States of America;Kings County Office of Education
+312840;United States of America;South Georgia Regional Information Technology Authority
+312850;United States of America;Onvoy Spectrum, LLC
+312860;United States of America;ClearTalk
+312870;United States of America;GigSky Mobile, LLC
+312880;United States of America;Albemarle County Public Schools
+312890;United States of America;Circle Gx
+312900;United States of America;ClearTalk
+312910;United States of America;Appalachian Wireless
+312920;United States of America;Northeast Wireless Networks LLC
+312930;United States of America;Hewlett-Packard Communication Services, LLC
+312940;United States of America;Webformix
+312950;United States of America;Custer Telephone Co-op (CTCI)
+312960;United States of America;M&A Technology, Inc.
+312970;United States of America;IOSAZ Intellectual Property LLC
+312980;United States of America;Mark Twain Communications Company
+312990;United States of America;Premier Broadband
+313000;United States of America;Tennessee Wireless
+313010;United States of America;Bravado Wireless
+313020;United States of America;CTC Wireless
+313030;United States of America;AT&T Mobility
+313040;United States of America;NNTC Wireless
+313050;United States of America;Breakaway Wireless
+313060;United States of America;Country Wireless
+313061;United States of America;Country Wireless
+313070;United States of America;Midwest Network Solutions Hub LLC
+313080;United States of America;Speedwavz LLP
+313090;United States of America;Vivint Wireless, Inc.
+313100;United States of America;FirstNet
+313110;United States of America;FirstNet
+313120;United States of America;FirstNet
+313130;United States of America;FirstNet
+313140;United States of America;FirstNet
+313150;United States of America;FirstNet
+313160;United States of America;FirstNet
+313170;United States of America;FirstNet
+313180;United States of America;FirstNet
+313190;United States of America;FirstNet
+313200;United States of America;Mercury Network Corporation
+313210;United States of America;AT&T
+313220;United States of America;Custer Telephone Co-op (CTCI)
+313230;United States of America;Velocity Communications Inc.
+313240;United States of America;Peak Internet
+313250;United States of America;Imperial County Office of Education
+313260;United States of America;Expeto Wireless Inc.
+313270;United States of America;Blackstar Management
+313280;United States of America;King Street Wireless, LP
+313290;United States of America;Gulf Coast Broadband LLC
+313300;United States of America;Cambio WiFi of Delmarva, LLC
+313310;United States of America;CAL.NET, Inc.
+313320;United States of America;Paladin Wireless
+313330;United States of America;CenturyTel Broadband Services LLC
+313340;United States of America;Dish
+313350;United States of America;Dish
+313360;United States of America;Dish
+313370;United States of America;Red Truck Wireless, LLC
+313380;United States of America;OptimERA Inc.
+313390;United States of America;Altice USA Wireless, Inc.
+313400;United States of America;Texoma Communications, LLC
+313410;United States of America;pdvWireless
+313420;United States of America;Hudson Valley Wireless
+313440;United States of America;Arvig Enterprises, Inc.
+313450;United States of America;Spectrum Wireless Holdings, LLC
+313460;United States of America;Mobi
+313470;United States of America;San Diego Gas & Electric Company
+313480;United States of America;Ready Wireless, LLC
+313490;United States of America;Puloli, Inc.
+313500;United States of America;Shelcomm, Inc.
+313510;United States of America;Claro
+313520;United States of America;Florida Broadband, Inc.
+313540;United States of America;Nokia Innovations US LLC
+313550;United States of America;Mile High Networks LLC
+313560;United States of America;Transit Wireless LLC
+313570;United States of America;Pioneer Cellular
+313580;United States of America;Telecall Telecommunications Corp.
+313590;United States of America;Southern LINC
+313600;United States of America;ST Engineering iDirect
+313610;United States of America;Crystal Automation Systems, Inc.
+313620;United States of America;OmniProphis Corporation
+313630;United States of America;LICT  Corporation
+313640;United States of America;Geoverse LLC
+313650;United States of America;Chevron USA, Inc.
+313660;United States of America;Hudson Valley Wireless
+313670;United States of America;Hudson Valley Wireless
+313680;United States of America;Hudson Valley Wireless
+313690;United States of America;Shenandoah Cable Television, LLC
+313700;United States of America;Ameren Services Company
+313710;United States of America;Extent Systems
+313720;United States of America;1st Point Communications, LLC
+313730;United States of America;TruAccess Networks
+313740;United States of America;RTO Wireless, LLC
+313750;United States of America;ZipLink
+313760;United States of America;Hologram, Inc.
+313770;United States of America;Tango Networks
+313780;United States of America;Windstream Holdings
+313790;United States of America;Liberty
+313800;United States of America;Wireless Technologies of Nebraska
+313810;United States of America;Watch Communications
+313820;United States of America;Inland Cellular Telephone Company
+313830;United States of America;360 Communications
+313840;United States of America;CellBlox Acquisitions
+313850;United States of America;Softcom Internet Communications, Inc
+313860;United States of America;Nextlink
+313870;United States of America;ElektraFi LLC
+313880;United States of America;Shuttle wireless
+313890;United States of America;TCOE
+313900;United States of America;Tribal Networks
+313910;United States of America;San Diego Gas & Electric
+313920;United States of America;JCI
+313930;United States of America;Rock Wireless
+313940;United States of America;Motorola Solutions
+313950;United States of America;Cheyenne and Arapaho Development Group
+313960;United States of America;Townes 5G, LLC
+313970;United States of America;Tycrhron
+313980;United States of America;Next Generation Application LLC
+313990;United States of America;Ericsson US
+314010;United States of America;Boingo Wireless Inc.
+314020;United States of America;Spectrum Wireless Holdings, LLC
+314030;United States of America;Baicells Technologies North America Inc.
+314060;United States of America;Texas A&M University
+314070;United States of America;Texas A&M University
+314080;United States of America;Texas A&M University
+314090;United States of America;Southern LINC
+314100 - 190;United States of America;Reserved for Public Safety
+314200;United States of America;XF Wireless Investments, LLC
+314210;United States of America;Telecom Resource Center
+314220;United States of America;Securus Technologies
+314230;United States of America;Trace-Tek LLC
+314240;United States of America;XF Wireless Investments, LLC
+314260;United States of America;AT&T Mobility
+314270;United States of America;AT&T Mobility
+314280;United States of America;AT&T Mobility
+314290;United States of America;Wave
+314300;United States of America;Southern California Edison
+314310;United States of America;Terranet
+314320;United States of America;Agri-Valley Communications, Inc
+314330;United States of America;FreedomFi
+314340;United States of America;e/marconi
+315010;United States of America;CBRS
+316010;United States of America;Nextel
+316011;United States of America;Southern LINC
+310120;United States Virgin Islands (United States of America);T-Mobile
+310260;United States Virgin Islands (United States of America);T-Mobile
+310410;United States Virgin Islands (United States of America);Liberty
+311470;United States Virgin Islands (United States of America);Viya
+41201;Afghanistan;AWCC
+41220;Afghanistan;Roshan
+41240;Afghanistan;MTN
+41250;Afghanistan;Etisalat
+41255;Afghanistan;WASEL
+41280;Afghanistan;Salaam
+41288;Afghanistan;Salaam
+40001;Azerbaijan;Azercell
+40002;Azerbaijan;Bakcell
+40003;Azerbaijan;FONEX
+40004;Azerbaijan;Nar Mobile
+40005;Azerbaijan;Special State Protection Service of the Republic of Azerbaijan
+40006;Azerbaijan;Naxtel
+42601;Bahrain;Batelco
+42602;Bahrain;zain BH
+42603;Bahrain;Civil Aviation Authority
+42604;Bahrain;stc
+42605;Bahrain;Batelco
+42606;Bahrain;stc
+42607;Bahrain;TAIF
+47001;Bangladesh;Grameenphone
+47002;Bangladesh;Robi
+47003;Bangladesh;Banglalink
+47004;Bangladesh;TeleTalk
+47005;Bangladesh;Citycell
+47007;Bangladesh;Airtel
+47009;Bangladesh;ollo
+47010;Bangladesh;Banglalion
+40211;Bhutan;B-Mobile
+40217;Bhutan;B-Mobile
+40277;Bhutan;TashiCell
+45601;Cambodia;Cellcard
+45602;Cambodia;Smart
+45603;Cambodia;qb
+45604;Cambodia;qb
+45605;Cambodia;Smart
+45606;Cambodia;Smart
+45608;Cambodia;Metfone
+45609;Cambodia;Metfone
+45611;Cambodia;SEATEL
+45618;Cambodia;Cellcard
+46000;China;China Mobile
+46001;China;China Unicom
+46002;China;China Mobile
+46003;China;China Telecom
+46004;China;China Mobile
+46005;China;China Telecom
+46006;China;China Unicom
+46007;China;China Mobile
+46008;China;China Mobile
+46009;China;China Unicom
+46011;China;China Telecom
+46015;China;China Broadnet
+46020;China;China Tietong
+45400;Hong Kong;1O1O / One2Free / New World Mobility / SUNMobile
+45401;Hong Kong;CITIC Telecom 1616
+45402;Hong Kong;CSL Limited
+45403;Hong Kong;3
+45404;Hong Kong;3 (2G)
+45405;Hong Kong;3 (CDMA)
+45406;Hong Kong;SmarTone
+45407;Hong Kong;China Unicom
+45408;Hong Kong;Truphone
+45409;Hong Kong;China Motion Telecom
+45410;Hong Kong;New World Mobility
+45411;Hong Kong;China-Hong Kong Telecom
+45412;Hong Kong;CMCC HK
+45413;Hong Kong;CMCC HK
+45414;Hong Kong;Hutchison Telecom
+45415;Hong Kong;SmarTone Mobile Communications Limited
+45416;Hong Kong;PCCW Mobile (2G)
+45417;Hong Kong;SmarTone Mobile Communications Limited
+45418;Hong Kong;CSL Limited
+45419;Hong Kong;PCCW Mobile (3G)
+45420;Hong Kong;PCCW Mobile (4G)
+45421;Hong Kong;21Vianet Mobile Ltd.
+45422;Hong Kong;263 Mobile Communications (HongKong) Limited
+45423;Hong Kong;Lycamobile
+45424;Hong Kong;Multibyte Info Technology Ltd
+45425;Hong Kong;Hong Kong Government
+45426;Hong Kong;Hong Kong Government
+45429;Hong Kong;PCCW Mobile (CDMA)
+45430;Hong Kong;CMCC HK
+45431;Hong Kong;CTExcel
+45432;Hong Kong;Hong Kong Broadband Network Ltd
+45435;Hong Kong;Webbing Hong Kong Ltd
+45436;Hong Kong;Easco Telecommunications Limited
+40401;India;Vi India
+40402;India;AirTel
+40403;India;AirTel
+40404;India;Vi India
+40405;India;Vi India
+40407;India;Vi India
+40409;India;Reliance
+40410;India;AirTel
+40411;India;Vi India
+40412;India;Vi India
+40413;India;Vi India
+40414;India;Vi India
+40415;India;Vi India
+40416;India;Airtel
+40417;India;AIRCEL
+40418;India;Reliance
+40419;India;Vi India
+40420;India;Vi India
+40421;India;Loop Mobile
+40422;India;Vi India
+40423;India;Reliance
+40424;India;Vi India
+40425;India;AIRCEL
+40427;India;Vi India
+40428;India;AIRCEL
+40429;India;AIRCEL
+40430;India;Vi India
+40431;India;AirTel
+40434;India;BSNL Mobile
+40435;India;Aircel
+40436;India;Reliance
+40437;India;Aircel
+40438;India;BSNL Mobile
+40440;India;AirTel
+40441;India;Aircel
+40442;India;Aircel
+40443;India;Vi India
+40444;India;Vi India
+40445;India;Airtel
+40446;India;Vi India
+40448;India;Dishnet Wireless
+40449;India;Airtel
+40450;India;Reliance
+40451;India;BSNL Mobile
+40452;India;Reliance
+40453;India;BSNL Mobile
+40454;India;BSNL Mobile
+40455;India;BSNL Mobile
+40456;India;Vi India
+40457;India;BSNL Mobile
+40458;India;BSNL Mobile
+40459;India;BSNL Mobile
+40460;India;Vi India
+40462;India;BSNL Mobile
+40464;India;BSNL Mobile
+40466;India;BSNL Mobile
+40467;India;Reliance
+40468;India;MTNL
+40469;India;MTNL
+40470;India;AirTel
+40471;India;BSNL Mobile
+40472;India;BSNL Mobile
+40473;India;BSNL Mobile
+40474;India;BSNL Mobile
+40475;India;BSNL Mobile
+40476;India;BSNL Mobile
+40477;India;BSNL Mobile
+40478;India;Vi India
+40479;India;BSNL Mobile
+40480;India;BSNL Mobile
+40481;India;BSNL Mobile
+40482;India;Vi India
+40483;India;Reliance
+40484;India;Vi India
+40485;India;Reliance
+40486;India;Vi India
+40487;India;Vi India
+40488;India;Vi India
+40489;India;Vi India
+40490;India;AirTel
+40491;India;AIRCEL
+40492;India;AirTel
+40493;India;AirTel
+40494;India;AirTel
+40495;India;AirTel
+40496;India;AirTel
+40497;India;AirTel
+40498;India;AirTel
+40501;India;Reliance
+405025;India;TATA DOCOMO
+405026;India;TATA DOCOMO
+405027;India;TATA DOCOMO
+405028;India;TATA DOCOMO
+405029;India;TATA DOCOMO
+40503;India;Reliance
+405030;India;TATA DOCOMO
+405031;India;TATA DOCOMO
+405032;India;TATA DOCOMO
+405033;India;TATA DOCOMO
+405034;India;TATA DOCOMO
+405035;India;TATA DOCOMO
+405036;India;TATA DOCOMO
+405037;India;TATA DOCOMO
+405038;India;TATA DOCOMO
+405039;India;TATA DOCOMO
+40504;India;Reliance
+405041;India;TATA DOCOMO
+405042;India;TATA DOCOMO
+405043;India;TATA DOCOMO
+405044;India;TATA DOCOMO
+405045;India;TATA DOCOMO
+405046;India;TATA DOCOMO
+405047;India;TATA DOCOMO
+40505;India;Reliance
+40506;India;Reliance
+40507;India;Reliance
+40508;India;Reliance
+40509;India;Reliance
+40510;India;Reliance
+40511;India;Reliance
+40512;India;Reliance
+40513;India;Reliance
+40514;India;Reliance
+40515;India;Reliance
+40517;India;Reliance
+40518;India;Reliance
+40519;India;Reliance
+40520;India;Reliance
+40521;India;Reliance
+40522;India;Reliance
+40523;India;Reliance
+40551;India;AirTel
+40552;India;AirTel
+40553;India;AirTel
+40554;India;AirTel
+40555;India;Airtel
+40556;India;AirTel
+40566;India;Vi India
+40567;India;Vi India
+40570;India;Vi India
+405750;India;Vi India
+405751;India;Vi India
+405752;India;Vi India
+405753;India;Vi India
+405754;India;Vi India
+405755;India;Vi India
+405756;India;Vi India
+405799;India;Vi India
+405800;India;AIRCEL
+405801;India;AIRCEL
+405802;India;AIRCEL
+405803;India;AIRCEL
+405804;India;AIRCEL
+405805;India;AIRCEL
+405806;India;AIRCEL
+405807;India;AIRCEL
+405808;India;AIRCEL
+405809;India;AIRCEL
+405810;India;AIRCEL
+405811;India;AIRCEL
+405812;India;AIRCEL
+405819;India;Uninor
+405818;India;Uninor
+405820;India;Uninor
+405821;India;Uninor
+405822;India;Uninor
+405824;India;Videocon Telecom
+405827;India;Videocon Telecom
+405834;India;Videocon Telecom
+405844;India;Uninor
+405840;India;Jio
+405845;India;Vi India
+405846;India;Vi India
+405847;India;Vi India
+405848;India;Vi India
+405849;India;Vi India
+405850;India;Vi India
+405851;India;Vi India
+405852;India;Vi India
+405853;India;Vi India
+405854;India;Jio
+405855;India;Jio
+405856;India;Jio
+405857;India;Jio
+405858;India;Jio
+405859;India;Jio
+405860;India;Jio
+405861;India;Jio
+405862;India;Jio
+405863;India;Jio
+405864;India;Jio
+405865;India;Jio
+405866;India;Jio
+405867;India;Jio
+405868;India;Jio
+405869;India;Jio
+405870;India;Jio
+405871;India;Jio
+405872;India;Jio
+405873;India;Jio
+405874;India;Jio
+405875;India;Uninor
+405880;India;Uninor
+405881;India;S Tel
+405908;India;Vi India
+405909;India;Vi India
+405910;India;Vi India
+405911;India;Vi India
+405912;India;Etisalat DB (cheers)
+405913;India;Etisalat DB (cheers)
+405914;India;Etisalat DB (cheers)
+405917;India;Etisalat DB (cheers)
+405927;India;Uninor
+405929;India;Uninor
+43201;Iran;Kish Cell Pars
+43202;Iran;ApTel, AzarTel
+43203;Iran;Parsian Hamrah Lotus
+43204;Iran;TOSE E FANAVARI ERTEBATAT NOVIN HAMRAH
+43205;Iran;Smart Comm
+43206;Iran;Arian-Tel
+43207;Iran;Hooshmand Amin Mobile
+43208;Iran;Shatel Mobile
+43209;Iran;HiWEB
+43210;Iran;Samantel
+43211;Iran;IR-TCI (Hamrah-e-Avval)
+43212;Iran;Avacell (HiWEB)
+43213;Iran;HiWEB
+43214;Iran;TKC/KFZO
+43219;Iran;Espadan
+43220;Iran;RighTel
+43221;Iran;RighTel
+43232;Iran;Taliya
+43235;Iran;MTN Irancell
+43240;Iran;Mobinnet
+43244;Iran;Mobinnet
+43245;Iran;Zi-Tel
+43246;Iran;HiWEB
+43249;Iran;Gostaresh Ertebatat Mabna
+43250;Iran;Shatel Mobile
+43251;Iran;Pishgaman Tose'e Ertebatat
+43252;Iran;Asiatech
+43270;Iran;MTCE
+43271;Iran;KOOHE NOOR
+43290;Iran;Iraphone
+43293;Iran;Iraphone
+43293;Iran;Farzanegan Pars
+43299;Iran;TCI
+41800;Iraq;Asia Cell
+41805;Iraq;Asia Cell
+41808;Iraq;SanaTel
+41820;Iraq;Zain
+41830;Iraq;Zain
+41840;Iraq;Korek
+41845;Iraq;Mobitel
+41862;Iraq;Itisaluna
+41892;Iraq;Omnnea
+42501;Israel;Partner
+42502;Israel;Cellcom
+42503;Israel;Pelephone
+42504;Israel;Globalsim Ltd
+42505;Israel;Jawwal
+42506;Israel;Wataniya Mobile
+42507;Israel;Hot Mobile
+42508;Israel;Golan Telecom
+42509;Israel;We4G
+42510;Israel;Partner
+42511;Israel;365 Telecom
+42512;Israel;x2one
+42513;Israel;Ituran Cellular Communications
+42514;Israel;Youphone
+42515;Israel;Home Cellular
+42516;Israel;Rami Levy
+42517;Israel;Sipme
+42518;Israel;Cellact Communications
+42519;Israel;019 Mobile
+42520;Israel;Bezeq
+42521;Israel;Bezeq International
+42522;Israel;Maskyoo Telephonia Ltd.
+42523;Israel;Beezz Communication Solutions Ltd.
+42524;Israel;012 Mobile
+42525;Israel;IMOD
+42526;Israel;Annatel
+42527;Israel;BITIT Ltd.
+42528;Israel;PHI Networks
+42529;Israel;CG Networks
+44000;Japan;Y!Mobile
+44001;Japan;KDDI Corporation
+44002;Japan;Hanshin Cable Engineering Co., Ltd.
+44003;Japan;IIJmio
+44004;Japan;Japan Radio Company, Ltd.
+44005;Japan;Wireless City Planning Inc.
+44006;Japan;SAKURA Internet Inc.
+44007;Japan;closip, Inc.
+44008;Japan;Panasonic Connect Co., Ltd.
+44009;Japan;Marubeni Network Solutions Inc.
+44010;Japan;NTT docomo
+44011;Japan;Rakuten Mobile
+44012;Japan;Cable media waiwai Co., Ltd.
+44013;Japan;NTT Communications Corporation
+44014;Japan;Grape One Co., Ltd.
+44015;Japan;BB Backbone Corp.
+44016;Japan;Nokia Innovations Japan G.K.
+44017;Japan;Osaka Gas Business Create Co., Ltd.
+44018;Japan;Kintetsu Cable Network Co., Ltd.
+44019;Japan;NEC Networks & System Integration Corporation
+44020;Japan;SoftBank
+44021;Japan;SoftBank
+44022;Japan;JTOWER Inc.
+44023;Japan;Fujitsu Ltd.
+44050;Japan;au
+44051;Japan;au
+44052;Japan;au
+44053;Japan;au
+44054;Japan;au
+44070;Japan;au
+44071;Japan;au
+44072;Japan;au
+44073;Japan;au
+44074;Japan;au
+44075;Japan;au
+44076;Japan;au
+44078;Japan;au
+44100;Japan;Wireless City Planning Inc.
+44101;Japan;SoftBank
+44110;Japan;UQ WiMAX
+441200;Japan;Soracom Inc.
+441201;Japan;Aurens Co., Ltd.
+441202;Japan;Sony Wireless Communications Inc.
+441203;Japan;Gujo City
+441204;Japan;Wicom Inc.
+441205;Japan;Katch Network Inc.
+441206;Japan;Mitsubishi Electric Corp.
+441207;Japan;Mitsui Knowledge Industry Co., Ltd.
+441208;Japan;Chudenko Corp.
+441209;Japan;Cable Television Toyama Inc.
+441210;Japan;Nippon Telegraph and Telephone East Corp.
+441211;Japan;Starcat Cable Network Co., Ltd.
+441212;Japan;I-TEC Solutions Co., Ltd.
+44191;Japan;Tokyo Organising Committee of the Olympic and Paralympic Games
+41601;Jordan;zain JO
+41602;Jordan;XPress Telecom
+41603;Jordan;Umniah
+41677;Jordan;Orange
+40101;Kazakhstan;Beeline
+40102;Kazakhstan;Kcell
+40107;Kazakhstan;Altel
+40108;Kazakhstan;Kazakhtelecom
+40177;Kazakhstan;Tele2.kz
+46705;North Korea;Koryolink
+46706;North Korea;Kang Song NET
+467193;North Korea;SunNet
+45001;South Korea;Globalstar Asia Pacific
+45002;South Korea;KT
+45003;South Korea;Power 017
+45004;South Korea;KT
+45005;South Korea;SKTelecom
+45006;South Korea;LG U+
+45007;South Korea;KT
+45008;South Korea;olleh
+45011;South Korea;Tplus
+45012;South Korea;SKTelecom
+41902;Kuwait;zain KW
+41903;Kuwait;Ooredoo
+41904;Kuwait;STC
+43701;Kyrgyzstan;Beeline
+43703;Kyrgyzstan;7 Mobile
+43705;Kyrgyzstan;MegaCom
+43709;Kyrgyzstan;O!
+43710;Kyrgyzstan;Saima Telecom
+43711;Kyrgyzstan;iTel
+45701;Laos;LaoTel
+45702;Laos;ETL
+45703;Laos;Unitel
+45707;Laos;Best
+45708;Laos;TPLUS
+41501;Lebanon;Alfa
+41503;Lebanon;Touch
+41505;Lebanon;Ogero Mobile
+45500;Macau (People's Republic of China);SmarTone
+45501;Macau (People's Republic of China);CTM
+45502;Macau (People's Republic of China);China Telecom
+45503;Macau (People's Republic of China);3
+45504;Macau (People's Republic of China);CTM
+45505;Macau (People's Republic of China);3
+45506;Macau (People's Republic of China);SmarTone
+45507;Macau (People's Republic of China);China Telecom
+47201;Maldives;Dhiraagu
+47202;Maldives;Ooredoo
+42888;Mongolia;Unitel
+42891;Mongolia;Skytel
+42898;Mongolia;G-Mobile
+42899;Mongolia;Mobicom
+41400;Myanmar;MPT
+41401;Myanmar;MPT
+41402;Myanmar;MPT
+41403;Myanmar;CDMA800
+41404;Myanmar;MPT
+41405;Myanmar;Ooredoo
+41406;Myanmar;Telenor
+41409;Myanmar;Mytel
+41420;Myanmar;ACS
+41421;Myanmar;ACS
+41422;Myanmar;Fortune Telecom Co., Ltd
+41423;Myanmar;Global Technology Co., Ltd
+42901;Nepal;Namaste / NT Mobile / Sky Phone
+42902;Nepal;Ncell
+42903;Nepal;UTL
+42904;Nepal;SmartCell
+42202;Oman;Omantel
+42203;Oman;Ooredoo
+42204;Oman;Omantel
+42206;Oman;Vodafone
+41001;Pakistan;Jazz
+41002;Pakistan;3G EVO / CharJi 4G
+41003;Pakistan;Ufone
+41004;Pakistan;Zong
+41005;Pakistan;SCO Mobile
+41006;Pakistan;Telenor
+41007;Pakistan;Jazz
+41008;Pakistan;SCO Mobile
+42505;Palestine;Jawwal
+42506;Palestine;Ooredoo
+42701;Qatar;Ooredoo
+42702;Qatar;Vodafone
+42705;Qatar;Ministry of Interior
+42706;Qatar;Ministry of Interior
+42001;Saudi Arabia;Al Jawal (STC )
+42003;Saudi Arabia;Mobily
+42004;Saudi Arabia;Zain SA
+42005;Saudi Arabia;Virgin Mobile
+42006;Saudi Arabia;Lebara Mobile
+42021;Saudi Arabia;RGSM
+41301;Sri Lanka;SLTMobitel
+41302;Sri Lanka;Dialog
+41303;Sri Lanka;Hutch
+41304;Sri Lanka;Lanka Bell
+41305;Sri Lanka;Airtel
+41308;Sri Lanka;Hutch
+41309;Sri Lanka;Hutch
+41311;Sri Lanka;Dialog
+41312;Sri Lanka;SLTMobitel
+41701;Syria;Syriatel
+41702;Syria;MTN
+41703;Syria;Wafa Telecom
+41709;Syria;Syrian Telecom
+46601;Taiwan;FarEasTone
+46602;Taiwan;FarEasTone
+46603;Taiwan;FarEasTone
+46605;Taiwan;Gt
+46606;Taiwan;FarEasTone
+46607;Taiwan;FarEasTone
+46609;Taiwan;VMAX
+46610;Taiwan;G1
+46611;Taiwan;Chunghwa LDM
+46612;Taiwan;Ambit Microsystems
+46656;Taiwan;FITEL
+46668;Taiwan;Tatung InfoComm
+46688;Taiwan;FarEasTone
+46689;Taiwan;T Star
+46690;Taiwan;T Star
+46692;Taiwan;Chunghwa
+46693;Taiwan;MobiTai
+46697;Taiwan;Taiwan Mobile
+46699;Taiwan;TransAsia
+43601;Tajikistan;Tcell
+43602;Tajikistan;Tcell
+43603;Tajikistan;MegaFon
+43604;Tajikistan;Babilon-M
+43605;Tajikistan;ZET-Mobile
+43610;Tajikistan;Babilon-T
+43612;Tajikistan;Tcell
+43801;Turkmenistan;MTS
+43802;Turkmenistan;TM-Cell
+43803;Turkmenistan;AGTS CDMA
+42402;United Arab Emirates;Etisalat
+42403;United Arab Emirates;du
+43401;Uzbekistan;Buztel
+43402;Uzbekistan;Uzmacom
+43403;Uzbekistan;UzMobile
+43404;Uzbekistan;Beeline
+43405;Uzbekistan;Ucell
+43406;Uzbekistan;Perfectum Mobile
+43407;Uzbekistan;Mobiuz
+43408;Uzbekistan;UzMobile
+43409;Uzbekistan;EVO
+45201;Vietnam;MobiFone
+45202;Vietnam;Vinaphone
+45203;Vietnam;S-Fone
+45204;Vietnam;Viettel Mobile
+45205;Vietnam;Vietnamobile
+45206;Vietnam;EVNTelecom
+45207;Vietnam;Gmobile
+45208;Vietnam;I-Telecom
+45209;Vietnam;REDDI
+42101;Yemen;SabaFon
+42102;Yemen;YOU
+42103;Yemen;Yemen Mobile
+42104;Yemen;Y
+42110;Yemen;Yemen-4G
+42111;Yemen;Yemen Mobile
+311780;American Samoa (United States of America);ASTCA
+54411;American Samoa (United States of America);Bluesky
+50501;Australia;Telstra
+50502;Australia;Optus
+50503;Australia;Vodafone
+50504;Australia;Department of Defence
+50505;Australia;Ozitel
+50506;Australia;3
+50507;Australia;Vodafone
+50508;Australia;One.Tel
+50509;Australia;Airnet
+50510;Australia;Norfolk Is.
+50511;Australia;Telstra
+50512;Australia;3
+50513;Australia;RailCorp
+50514;Australia;AAPT
+50515;Australia;3GIS
+50516;Australia;VicTrack
+50517;Australia;Optus
+50518;Australia;Pactel
+50519;Australia;Lycamobile
+50520;Australia;Ausgrid Corporation
+50521;Australia;Queensland Rail Limited
+50522;Australia;iiNet Ltd
+50523;Australia;Challenge Networks Pty Ltd
+50524;Australia;Advanced Communications Technologies Pty Ltd
+50525;Australia;Pilbara Iron Company Services Pty Ltd
+50526;Australia;Dialogue Communications Pty Ltd
+50527;Australia;Nexium Telecommunications
+50528;Australia;RCOM International Pty Ltd
+50530;Australia;Compatel Limited
+50531;Australia;BHP
+50532;Australia;Thales Australia
+50533;Australia;CLX Networks Pty Ltd
+50534;Australia;Santos Limited
+50535;Australia;MessageBird Pty Ltd
+50536;Australia;Optus
+50537;Australia;Yancoal Australia Ltd
+50538;Australia;Truphone
+50539;Australia;Telstra
+50540;Australia;CITIC Pacific Mining
+50541;Australia;Aqura Technologies Pty
+50542;Australia;GEMCO
+50543;Australia;Arrow Energy Pty Ltd
+50544;Australia;Roy Hill Iron Ore Pty Ltd
+50545;Australia;Clermont Coal Operations Pty Ltd
+50546;Australia;AngloGold Ashanti Australia Ltd
+50547;Australia;Woodside Energy Limited
+50548;Australia;Titan ICT Pty Ltd
+50549;Australia;Field Solutions Group Pty Ltd
+50550;Australia;Pivotel Group Pty Ltd
+50551;Australia;Fortescue Metals Group
+50552;Australia;OptiTel Australia
+50553;Australia;Shell Australia Pty Ltd
+50554;Australia;Nokia Solutions and Networks Australia Pty Ltd
+50561;Australia;CommTel NS
+50562;Australia;NBN
+50568;Australia;NBN
+50571;Australia;Telstra
+50572;Australia;Telstra
+50588;Australia;Pivotel Group Pty Ltd
+50590;Australia;Optus
+50599;Australia;One.Tel
+52801;Brunei;TelBru
+52802;Brunei;PCSB
+52803;Brunei;UNN
+52811;Brunei;DST
+54801;Cook Islands (Pacific Ocean);Vodafone
+51401;East Timor;Telkomcel
+51402;East Timor;TT
+51403;East Timor;Telemor
+54201;Fiji;Vodafone
+54202;Fiji;Digicel
+54203;Fiji;TFL
+54705;French Polynesia (France);Ora
+54710;French Polynesia (France);Mara Telecom
+54715;French Polynesia (France);Vodafone
+54720;French Polynesia (France);Vini
+51000;Indonesia;PSN
+51001;Indonesia;Indosat Ooredoo Hutchison
+51003;Indonesia;StarOne
+51007;Indonesia;TelkomFlexi
+51008;Indonesia;AXIS
+51009;Indonesia;Smartfren
+51010;Indonesia;Telkomsel
+51011;Indonesia;XL
+51020;Indonesia;TELKOMMobile
+51021;Indonesia;Indosat Ooredoo Hutchison
+51027;Indonesia;Net 1
+51028;Indonesia;Fren/Hepi
+51078;Indonesia;Hinet
+51088;Indonesia;BOLT! 4G LTE
+51089;Indonesia;3
+51099;Indonesia;Esia
+54501;Kiribati;Kiribati - ATH
+54502;Kiribati;OceanLink
+54509;Kiribati;Kiribati - Frigate Net
+50201;Malaysia;ATUR 450
+50210;Malaysia;Celcom, DiGi, Maxis, Tune Talk, U Mobile, Unifi, XOX, Yes
+50211;Malaysia;TM Homeline
+50212;Malaysia;Maxis
+50213;Malaysia;Celcom
+50214;Malaysia;Telekom Malaysia Berhad for PSTN SMS
+502150;Malaysia;Tune Talk
+502151;Malaysia;SalamFone
+502152;Malaysia;Yes
+502153;Malaysia;unifi
+502154;Malaysia;Tron
+502155;Malaysia;Clixster
+502156;Malaysia;Altel
+502157;Malaysia;Telin
+50216;Malaysia;DiGi
+50217;Malaysia;Maxis
+50218;Malaysia;U Mobile
+50219;Malaysia;Celcom
+50220;Malaysia;Electcoms
+55101;Marshall Islands;Marshall Islands National Telecommunications Authority (MINTA)
+55001;Federated States of Micronesia;FSMTC
+53602;Nauru;Digicel
+54601;New Caledonia (France);Mobilis
+53000;New Zealand;Telecom
+53001;New Zealand;Vodafone
+53002;New Zealand;Telecom
+53003;New Zealand;Woosh
+53004;New Zealand;TelstraClear
+53005;New Zealand;Spark
+53006;New Zealand;FX Networks
+53007;New Zealand;Dense Air New Zealand
+53024;New Zealand;2degrees
+55501;Niue;Telecom Niue
+50510;Norfolk Island;Norfolk Telecom
+55201;Palau;PNCC
+55202;Palau;PT Waves
+55280;Palau;Palau Mobile
+55299;Palau;PMCI
+53701;Papua New Guinea;bmobile
+53702;Papua New Guinea;citifon
+53703;Papua New Guinea;Digicel
+53704;Papua New Guinea;Digitec Communication Ltd.
+51501;Philippines;Islacom
+51502;Philippines;Globe
+51503;Philippines;SMART
+51505;Philippines;Sun Cellular
+51511;Philippines;PLDT via ACeS Philippines
+51518;Philippines;Cure
+51524;Philippines;ABS-CBN Mobile
+51566;Philippines;DITO
+51588;Philippines;Next Mobile Inc.
+54900;Samoa;Digicel
+54901;Samoa;Digicel
+54927;Samoa;Vodafone
+52501;Singapore;SingTel
+52502;Singapore;SingTel-G18
+52503;Singapore;M1
+52505;Singapore;StarHub
+52506;Singapore;StarHub
+52507;Singapore;SingTel
+52508;Singapore;StarHub
+52509;Singapore;Circles.Life
+52510;Singapore;SIMBA
+52511;Singapore;M1
+52512;Singapore;Grid
+54001;Solomon Islands;BREEZE
+54002;Solomon Islands;BeMobile
+52000;Thailand;TrueMove H / my by NT
+52001;Thailand;AIS
+52002;Thailand;NT Mobile
+52003;Thailand;AIS
+52004;Thailand;TrueMove H
+52005;Thailand;dtac
+52009;Thailand;Royal Thai Police
+52015;Thailand;AIS-T / NT Mobile
+52017;Thailand;NT Mobile
+52018;Thailand;dtac
+52020;Thailand;ACeS
+52023;Thailand;AIS GSM 1800
+52025;Thailand;WE PCT
+52047;Thailand;dtac-T
+52099;Thailand;TrueMove
+55401;Tokelau;Teletok
+53901;Tonga;U-Call
+53943;Tonga;Shoreline Communication
+53988;Tonga;Digicel
+55301;Tuvalu;TTC
+54100;Vanuatu;AIL
+54101;Vanuatu;SMILE
+54105;Vanuatu;Digicel
+54107;Vanuatu;WanTok
+54301;Wallis and Futuna;Manuia
+60301;Algeria;Mobilis
+60302;Algeria;Djezzy
+60303;Algeria;Ooredoo
+60307;Algeria;AT
+60309;Algeria;AT
+60321;Algeria;ANESRIF
+63102;Angola;UNITEL
+63104;Angola;MOVICEL
+63105;Angola;Africell
+61601;Benin;Benin Telecoms Mobile
+61602;Benin;Moov
+61603;Benin;MTN
+61604;Benin;BBCOM
+61605;Benin;Glo
+65201;Botswana;Mascom
+65202;Botswana;Orange
+65204;Botswana;beMobile
+61301;Burkina Faso;Telmob
+61302;Burkina Faso;Orange
+61303;Burkina Faso;Telecel Faso
+64201;Burundi;econet Leo
+64202;Burundi;Tempo
+64203;Burundi;Onatel
+64207;Burundi;Smart Mobile
+64208;Burundi;Lumitel
+64282;Burundi;econet Leo
+62401;Cameroon;MTN Cameroon
+62402;Cameroon;Orange
+62403;Cameroon;Camtel
+62404;Cameroon;Nexttel
+62501;Cape Verde;CVMOVEL
+62502;Cape Verde;T+
+62301;Central African Republic;Moov
+62302;Central African Republic;TC
+62303;Central African Republic;Orange
+62304;Central African Republic;Azur
+62201;Chad;Airtel
+62202;Chad;Tawali
+62203;Chad;Tigo
+62207;Chad;Salam
+65401;Comoros;HURI
+65402;Comoros;TELCO SA
+62901;Congo;Airtel
+62907;Congo;Airtel
+62910;Congo;Libertis Telecom
+63001;Democratic Republic of the Congo;Vodacom
+63002;Democratic Republic of the Congo;Airtel
+63005;Democratic Republic of the Congo;Supercell
+63086;Democratic Republic of the Congo;Orange RDC
+63088;Democratic Republic of the Congo;YTT
+63089;Democratic Republic of the Congo;Orange RDC
+63090;Democratic Republic of the Congo;Africell
+63801;Djibouti;Evatis
+60201;Egypt;Orange
+60202;Egypt;Vodafone
+60203;Egypt;Etisalat
+60204;Egypt;WE
+62701;Equatorial Guinea;Orange GQ
+62703;Equatorial Guinea;Muni
+65701;Eritrea;Eritel
+65301;Eswatini;SPTC
+65302;Eswatini;Eswatini Mobile Limited
+65310;Eswatini;MTN Eswatini
+63601;Ethiopia;MTN
+64700;French Departments and Territories in the Indian Ocean (France);Orange
+64701;French Departments and Territories in the Indian Ocean (France);Maoré Mobile
+64702;French Departments and Territories in the Indian Ocean (France);Only
+64703;French Departments and Territories in the Indian Ocean (France);Free
+64704;French Departments and Territories in the Indian Ocean (France);Zeop
+64710;French Departments and Territories in the Indian Ocean (France);SFR Réunion
+62801;Gabon;Libertis
+62802;Gabon;Moov
+62803;Gabon;Airtel
+62804;Gabon;Azur
+62805;Gabon;RAG
+60701;Gambia;Gamcel
+60702;Gambia;Africell
+60703;Gambia;Comium
+60704;Gambia;QCell
+60705;Gambia;Gamtel-Ecowan
+60706;Gambia;NETPAGE
+62001;Ghana;MTN
+62002;Ghana;Vodafone
+62003;Ghana;AirtelTigo
+62004;Ghana;Expresso
+62005;Ghana;National Security
+62006;Ghana;AirtelTigo
+62007;Ghana;Globacom
+62008;Ghana;Surfline
+62009;Ghana;NITA
+62010;Ghana;Blu
+62011;Ghana;Netafrique Dot Com Ltd
+62012;Ghana;BTL
+62013;Ghana;Goldkey
+62014;Ghana;busy
+62015;Ghana;Lebara
+62016;Ghana;Telesol
+62017;Ghana;iBurst Africa
+61101;Guinea;Orange
+61102;Guinea;Sotelgui
+61103;Guinea;Intercel
+61104;Guinea;MTN
+61105;Guinea;Cellcom
+63201;Guinea-Bissau;Guinetel
+63202;Guinea-Bissau;MTN Areeba
+63203;Guinea-Bissau;Orange
+63207;Guinea-Bissau;Guinetel
+61201;Ivory Coast;Cora de Comstar
+61202;Ivory Coast;Moov
+61203;Ivory Coast;Orange
+61204;Ivory Coast;KoZ
+61205;Ivory Coast;MTN
+61206;Ivory Coast;GreenN
+61207;Ivory Coast;café
+61218;Ivory Coast;YooMee
+63901;Kenya;Safaricom
+63902;Kenya;Safaricom
+63903;Kenya;Airtel
+63904;Kenya;Mobile Pay Kenya Limited
+63905;Kenya;Airtel
+63906;Kenya;Finserve Africa Limited
+63907;Kenya;Telkom
+63908;Kenya;Wetribe Ltd
+63909;Kenya;Homeland Media Group Limited
+63910;Kenya;Faiba 4G
+63911;Kenya;Jambo Telcoms Limited
+63912;Kenya;Infura Limited
+63913;Kenya;Hidiga Investments Ltd
+63914;Kenya;NRG Media Limited
+65101;Lesotho;Vodacom
+65102;Lesotho;Econet Telecom
+65110;Lesotho;Vodacom
+61801;Liberia;Lonestar Cell MTN
+61802;Liberia;Libercell
+61804;Liberia;Novafone
+61807;Liberia;Orange LBR
+61820;Liberia;LIBTELCO
+60600;Libya;Libyana
+60601;Libya;Madar
+60602;Libya;Al-Jeel Phone
+60603;Libya;Libya Phone
+60606;Libya;Hatef Libya
+64601;Madagascar;Airtel
+64602;Madagascar;Orange
+64603;Madagascar;Sacel
+64604;Madagascar;Telma
+64605;Madagascar;BIP / blueline
+65001;Malawi;TNM
+65002;Malawi;Access
+65003;Malawi;MTL
+65010;Malawi;Airtel
+61001;Mali;Malitel
+61002;Mali;Orange
+61003;Mali;Telecel
+60901;Mauritania;Mattel
+60902;Mauritania;Chinguitel
+60910;Mauritania;Moov
+61701;Mauritius;my.t
+61702;Mauritius;MOKOZE / AZU
+61703;Mauritius;CHILI
+61710;Mauritius;Emtel
+60400;Morocco;Orange Morocco
+60401;Morocco;IAM
+60402;Morocco;INWI
+60404;Morocco;Al Houria Telecom
+60405;Morocco;INWI
+60406;Morocco;IAM
+60499;Morocco;Al Houria Telecom
+64301;Mozambique;mCel
+64303;Mozambique;Movitel
+64304;Mozambique;Vodacom
+64901;Namibia;MTC
+64902;Namibia;switch
+64903;Namibia;TN Mobile
+64904;Namibia;Paratus Telecommunications (Pty)
+64905;Namibia;Demshi Investments CC
+64906;Namibia;MTN Namibia
+64907;Namibia;Capricorn Connect
+61401;Niger;SahelCom
+61402;Niger;Airtel
+61403;Niger;Moov
+61404;Niger;Orange
+62100;Nigeria;Capcom
+62120;Nigeria;Airtel
+62122;Nigeria;InterC
+62124;Nigeria;Spectranet
+62125;Nigeria;Visafone
+62126;Nigeria;Swift
+62127;Nigeria;Smile
+62130;Nigeria;MTN
+62140;Nigeria;Ntel
+62150;Nigeria;Glo
+62160;Nigeria;9mobile
+63510;Rwanda;MTN
+63511;Rwanda;Rwandatel
+63512;Rwanda;Rwandatel
+63513;Rwanda;Airtel
+63514;Rwanda;Airtel
+63517;Rwanda;Olleh
+65801;Saint Helena, Ascension and Tristan da Cunha;Sure
+62601;São Tomé and Príncipe;CSTmovel
+62602;São Tomé and Príncipe;Unitel STP
+60801;Senegal;Orange
+60802;Senegal;Free
+60803;Senegal;Expresso
+60804;Senegal;CSU-SA
+63301;Seychelles;Cable & Wireless
+63302;Seychelles;Mediatech
+63305;Seychelles;Intelvision Ltd
+63310;Seychelles;Airtel
+61901;Sierra Leone;Orange
+61902;Sierra Leone;Africell
+61903;Sierra Leone;Africell
+61904;Sierra Leone;Comium
+61905;Sierra Leone;Africell
+61906;Sierra Leone;SierraTel
+61907;Sierra Leone;Qcell Sierra Leone
+61909;Sierra Leone;Smart Mobile
+61925;Sierra Leone;Mobitel
+61940;Sierra Leone;Datatel (SL) Ltd.
+61950;Sierra Leone;Datatel (SL) Ltd.
+63701;Somalia;Telesom
+63704;Somalia;Somafone
+63710;Somalia;Nationlink
+63720;Somalia;SOMNET
+63750;Somalia;Hormuud
+63730;Somalia;Golis
+63757;Somalia;UNITEL
+63760;Somalia;Nationlink
+63767;Somalia;Horntel Group
+63770;Somalia;Onkod Telecom Ltd.
+63771;Somalia;Somtel
+63782;Somalia;Telcom
+65501;South Africa;Vodacom
+65502;South Africa;Telkom
+65503;South Africa;Telkom
+65504;South Africa;Sasol (Pty) Ltd.
+65505;South Africa;Telkom SA Ltd
+65506;South Africa;Sentech (Pty) Ltd
+65507;South Africa;Cell C
+65510;South Africa;MTN
+65511;South Africa;South African Police Service Gauteng
+65512;South Africa;MTN
+65513;South Africa;Neotel
+65514;South Africa;Neotel
+65516;South Africa;Phoenix System Integration (Pty) Ltd
+65517;South Africa;Sishen Iron Ore Company (Ltd) Pty
+65519;South Africa;rain
+65521;South Africa;Cape Town Metropolitan Council
+65524;South Africa;SMSPortal (Pty) Ltd.
+65525;South Africa;Wirels Connect
+65527;South Africa;A to Z Vaal Industrial Supplies Pty Ltd
+65528;South Africa;Hymax Talking Solutions (Pty) Ltd
+65530;South Africa;Bokamoso Consortium
+65531;South Africa;Karabo Telecoms (Pty) Ltd.
+65532;South Africa;Ilizwi Telecommunications
+65533;South Africa;Thinta Thinta Telecommunications Pty Ltd
+65534;South Africa;Bokone Telecoms Pty Ltd
+65535;South Africa;Kingdom Communications Pty Ltd
+65536;South Africa;Amatole Telecommunications Pty Ltd
+65538;South Africa;rain
+65541;South Africa;South African Police Service
+65546;South Africa;SMS Cellular Services (Pty) Ltd
+65550;South Africa;Ericsson South Africa (Pty) Ltd
+65551;South Africa;Integrat (Pty) Ltd
+65553;South Africa;Lycamobile
+65565;South Africa;Vodacom Pty Ltd
+65573;South Africa;rain
+65574;South Africa;rain
+65575;South Africa;ACSA
+65576;South Africa;Comsol Networks (Pty) Ltd
+65577;South Africa;Umoja Connect
+65902;South Sudan;MTN
+65903;South Sudan;Gemtel
+65904;South Sudan;Vivacell
+65906;South Sudan;Zain
+65907;South Sudan;Sudani
+63401;Sudan;Zain SD
+63402;Sudan;MTN
+63403;Sudan;MTN
+63405;Sudan;canar
+63407;Sudan;Sudani One
+63409;Sudan;khartoum INC
+64001;Tanzania;Shared Network Tanzania Limited
+64002;Tanzania;tiGO
+64003;Tanzania;Zantel
+64004;Tanzania;Vodacom
+64005;Tanzania;Airtel
+64006;Tanzania;WIA Company Limited
+64007;Tanzania;TTCL Mobile
+64008;Tanzania;Smart
+64009;Tanzania;Halotel
+64011;Tanzania;SmileCom
+64012;Tanzania;MyCell Limited
+64013;Tanzania;Cootel
+64014;Tanzania;MO Mobile Holding Limited
+61501;Togo;Togo Cell
+61503;Togo;Moov
+60501;Tunisia;Orange
+60502;Tunisia;Tunicell
+60503;Tunisia;Ooredoo
+64101;Uganda;Airtel
+64104;Uganda;Tangerine Uganda Limited
+64106;Uganda;Vodafone
+64110;Uganda;MTN
+64111;Uganda;Uganda Telecom
+64114;Uganda;Africell
+64116;Uganda;SimbaNET Uganda Limited
+64118;Uganda;Smart
+64120;Uganda;Hamilton Telecom Limited
+64122;Uganda;Airtel
+64126;Uganda;Lycamobile
+64130;Uganda;Anupam Global Soft Uganda Limited
+64133;Uganda;Smile
+64140;Uganda;Civil Aviation Authority (CAA)
+64144;Uganda;K2
+64166;Uganda;i-Tel
+64501;Zambia;Airtel
+64502;Zambia;MTN
+64503;Zambia;ZAMTEL
+64507;Zambia;Liquid Telecom Zambia Limited
+64801;Zimbabwe;Net*One
+64803;Zimbabwe;Telecel
+64804;Zimbabwe;Econet
+722010;Argentina;Movistar
+722020;Argentina;Nextel
+722034;Argentina;Personal
+722040;Argentina;Globalstar
+722070;Argentina;Movistar
+722310;Argentina;Claro
+722320;Argentina;Claro
+722330;Argentina;Claro
+722341;Argentina;Personal
+722350;Argentina;PORT-HABLE
+70267;Belize;DigiCell
+70268;Belize;INTELCO
+70269;Belize;SMART
+70299;Belize;SMART
+73601;Bolivia;Viva
+73602;Bolivia;Entel
+73603;Bolivia;Tigo
+72400;Brazil;Nextel
+72401;Brazil;SISTEER DO BRASIL TELECOMUNICAÇÔES
+72402;Brazil;TIM
+72403;Brazil;TIM
+72404;Brazil;TIM
+72405;Brazil;Claro
+72406;Brazil;Vivo
+72410;Brazil;Vivo
+72411;Brazil;Vivo
+72412;Brazil;Claro
+72415;Brazil;Sercomtel
+72416;Brazil;Brasil Telecom GSM
+72417;Brazil;Surf Telecom
+72418;Brazil;datora
+72421;Brazil;LIGUE
+72423;Brazil;Vivo
+72424;Brazil;Amazonia Celular
+72428;Brazil;No name
+72429;Brazil;Unifique
+72430;Brazil;Oi
+72431;Brazil;Oi
+72432;Brazil;Algar Telecom
+72433;Brazil;Algar Telecom
+72434;Brazil;Algar Telecom
+72435;Brazil;Telcom Telecomunicações
+72436;Brazil;Options Telecomunicações
+72437;Brazil;aeiou
+72438;Brazil;Claro
+72439;Brazil;Nextel
+72454;Brazil;Conecta
+72499;Brazil;Local
+73001;Chile;entel
+73002;Chile;Movistar
+73003;Chile;CLARO CL
+73004;Chile;WOM
+73005;Chile;Multikom S.A.
+73006;Chile;Telsur
+73007;Chile;Movistar
+73008;Chile;VTR Móvil
+73009;Chile;WOM
+73010;Chile;entel
+73011;Chile;Celupago S.A.
+73012;Chile;Colo-Colo MóvilWanderers Móvil
+73013;Chile;Virgin Mobile
+73014;Chile;Netline Telefónica Móvil Ltda
+73015;Chile;Cibeles Telecom S.A.
+73016;Chile;Nomade Telecomunicaciones S.A.
+73017;Chile;COMPATEL Chile Limitada
+73018;Chile;Empresas Bunker S.A.
+73019;Chile;móvil Falabella
+73020;Chile;Inversiones Santa Fe Limitada
+73022;Chile;Cellplus SpA
+73023;Chile;Claro Servicios Empresariales S. A.
+73026;Chile;WILL S.A.
+73027;Chile;Cibeles Telecom S.A.
+73099;Chile;Will
+732001;Colombia;Movistar
+732002;Colombia;Edatel
+732003;Colombia;LLEIDA S.A.S.
+732004;Colombia;COMPATEL COLOMBIA SAS
+732020;Colombia;Tigo
+732099;Colombia;EMCALI
+732100;Colombia;Claro
+732101;Colombia;Claro
+732102;Colombia;Bellsouth Colombia
+732103;Colombia;Tigo
+732111;Colombia;Tigo
+732123;Colombia;Movistar
+732124;Colombia;Movistar
+732130;Colombia;AVANTEL
+732142;Colombia;Une EPM Telecomunicaciones S.A. E.S.P.
+732154;Colombia;Virgin Mobile
+732165;Colombia;Colombia Móvil S.A. ESP
+732176;Colombia;DirecTV Colombia Ltda
+732187;Colombia;eTb
+732199;Colombia;SUMA Movil SAS
+732208;Colombia;UFF Movil SAS
+732210;Colombia;Hablame Colombia SAS ESP
+732220;Colombia;Libre Tecnologias SAS
+732230;Colombia;Setroc Mobile Group SAS
+732240;Colombia;Logistica Flash Colombia SAS
+732250;Colombia;Plintron Colombia SAS
+732360;Colombia;WOM
+732666;Colombia;Claro
+71201;Costa Rica;Kölbi ICE
+71202;Costa Rica;Kölbi ICE
+71203;Costa Rica;Claro
+71204;Costa Rica;Liberty
+71220;Costa Rica;fullmóvil
+74000;Ecuador;Movistar
+74001;Ecuador;Claro
+74002;Ecuador;CNT Mobile
+74003;Ecuador;Tuenti
+70601;El Salvador;Claro
+70602;El Salvador;Digicel
+70603;El Salvador;Tigo
+70604;El Salvador;Movistar
+70605;El Salvador;RED
+750001;Falkland Islands (United Kingdom);Sure
+34001;French Guiana (France);Orange
+34002;French Guiana (France);SFR Caraïbe
+34011;French Guiana (France);Guyane Téléphone Mobile
+34020;French Guiana (France);Digicel
+74204;French Guiana (France);Free
+70401;Guatemala;Claro
+70402;Guatemala;Tigo
+70403;Guatemala;Claro
+704?;Guatemala;digicel
+704?;Guatemala;RED/INTELFON
+73800;Guyana;E-Networks
+73801;Guyana;Digicel
+738002;Guyana;GT&T Cellink Plus
+738003;Guyana;Quark Communications Inc.
+738040;Guyana;E-Networks
+73805;Guyana;eGovernment Unit, Ministry of the Presidency
+708001;Honduras;Claro
+708002;Honduras;Tigo
+708030;Honduras;Hondutel
+708040;Honduras;Digicel
+71021;Nicaragua;Claro
+710300;Nicaragua;Tigo
+71073;Nicaragua;Claro
+71401;Panama;Cable & Wireless
+71402;Panama;Tigo
+714020;Panama;Tigo
+71403;Panama;Claro
+71404;Panama;Digicel
+71405;Panama;Cable & Wireless
+74401;Paraguay;VOX
+74402;Paraguay;Claro
+74403;Paraguay;Compañia Privada de Comunicaciones S.A.
+74404;Paraguay;Tigo
+74405;Paraguay;Personal
+74406;Paraguay;Copaco
+71606;Peru;Movistar
+71607;Peru;Entel
+71610;Peru;Claro
+71615;Peru;Bitel
+71617;Peru;Entel
+74602;Suriname;Telesur
+74603;Suriname;Digicel
+74604;Suriname;Digicel
+74605;Suriname;Telesur
+74800;Uruguay;Antel
+74801;Uruguay;Antel
+74803;Uruguay;Antel
+74807;Uruguay;Movistar
+74810;Uruguay;Claro
+74815;Uruguay;ENALUR S.A.
+73401;Venezuela;Digitel
+73402;Venezuela;Digitel GSM
+73403;Venezuela;DirecTV
+73404;Venezuela;Movistar
+73406;Venezuela;Movilnet
+00101;;TEST
+001001;;TEST
+99999;;Internal use
+999999;;Internal use
+90101;;ICO
+90102;;Unassigned
+90103;;Iridium
+90104;;Unassigned
+90105;;Thuraya RMSS Network
+90106;;Thuraya Satellite Telecommunications Company
+90107;;Unassigned
+90108;;Unassigned
+90109;;Unassigned
+90110;;ACeS
+90111;;Inmarsat
+90112;;Telenor
+90113;;GSM.AQ
+90114;;AeroMobile
+90115;;OnAir
+90116;;Cisco Jasper
+90117;;Navitas
+90118;;Cellular at Sea
+90119;;Epic Maritime
+90120;;Intermatica
+90121;;Wins Limited
+90122;;MediaLincc Ltd
+90123;;Unassigned
+90124;;iNum
+90125;;Unassigned
+90126;;TIM@sea
+90127;;OnMarine
+90128;;Vodafone
+90129;;Telenor
+90130;;Unassigned
+90131;;Orange
+90132;;Sky High
+90133;;Smart Communications
+90134;;tyntec GmbH
+90135;;Globecomm Network Services
+90136;;Azerfon
+90137;;Transatel
+90138;;Multiregional TransitTelecom (MTT)
+90139;;MTX Connect Ltd
+90140;;1NCE
+90141;;One Network B.V.
+90142;;IMC Island Ehf
+90143;;EMnify GmbH
+90144;;AT&T Inc.
+90145;;Advanced Wireless Network Company Limited
+90146;;Telecom26 AG
+90147;;Ooredoo
+90148;;Com4
+90149;;Zain
+90150;;EchoStar Mobile
+90151;;VisionNG
+90152;;Manx Telecom Trading Ltd.
+90153;;European Aviation Network
+90154;;Teleena Holding B.V.
+90155;;Beezz Communication Solutions Ltd.
+90156;;ETSI
+90157;;SAP
+90158;;BICS
+90159;;MessageBird B.V.
+90160;;OneWeb
+90161;;MTN Management Services
+90162;;Twilio Inc.
+90163;;GloTel B.V.
+90164;;Syniverse Technologies, LLC
+90165;;Plintron Global Technology Solutions Pty Ltd
+90166;;Limitless Mobile LLC
+90167;;1NCE GmbH
+90168;;Maersk Line A/S
+90169;;Legos
+90170;;Clementvale Baltic OÜ
+90171;;Tampnet AS
+90172;;Tele2 Sverige Aktiebolag
+90173;;Cubic Telecom Limited
+90174;;Etisalat
+90175;;Podsystem Ltd.
+90176;;A1 Telekom Austria AG
+90177;;Bouygues Telecom
+90178;;Telecom Italia Sparkle S.p.A.
+90179;;Nokia Corporation
+90180;;Flo Live Limited
+90181;;Airnity SAS
+90182;;Eseye Limited
+90183;;iBasis Netherlands BV
+90184;;Telefónica Móviles España, S.A. Unipersonal
+90185;;Telefónica Germany GmbH & Co. OHG
+90186;;BJT Partners SAS
+90187;;Cisco Systems, Inc.
+90188;;UN Office for the Coordination of Humanitarian Affairs (OCHA)
+90189;;DIDWW Ireland Limited
+90190;;Truphone Limited
+90191;;World Mobile Group Limited
+90192;;Phonegroup SA
+90193;;SkyFive AG
+90194;;Intelsat US LLC
+90195;;HMD Global Oy
+90196;;KORE Wireless
+90197;;Satelio IoT Services S.L.
+90201;;MulteFire Alliance
+99101;;World's Global Telecom
+99102;;5G Croco
+99103;;Halys SAS
+99501;;FonePlus

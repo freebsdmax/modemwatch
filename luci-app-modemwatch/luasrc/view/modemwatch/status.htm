@@ -89,6 +89,10 @@
 				<td class="cbi-value-field"><span id="mw-wan">-</span></td>
 			</tr>
 			<tr class="cbi-section-table-row">
+				<td class="cbi-value-title"><%:Data transferred%></td>
+				<td class="cbi-value-field"><span id="mw-data">-</span></td>
+			</tr>
+			<tr class="cbi-section-table-row">
 				<td class="cbi-value-title"><%:Ping / DNS / HTTP%></td>
 				<td class="cbi-value-field"><span id="mw-checks">-</span></td>
 			</tr>
@@ -228,6 +232,18 @@
 		return out;
 	}
 
+	function fmtBytes(n) {
+		n = parseInt(n, 10);
+		if (!n || n < 0) return '0 B';
+		var units = ['B', 'KB', 'MB', 'GB', 'TB'];
+		var i = 0;
+		while (n >= 1024 && i < units.length - 1) {
+			n /= 1024;
+			i++;
+		}
+		return (i ? n.toFixed(2) : n) + ' ' + units[i];
+	}
+
 	function clampPct(v) {
 		return Math.max(0, Math.min(100, v));
 	}
@@ -352,14 +368,13 @@
 				setText('mw-reboots', d.reboots);
 				setText('mw-last-reboot', fmtTime(d.last_reboot));
 				setText('mw-wan', (d.wan_device || '-') + ' ' + (d.wan_ip || '') + ' (' + fmtBool(d.wan_up) + ')');
+				setText('mw-data', 'RX ' + fmtBytes(d.wan_rx_bytes) + ' / TX ' + fmtBytes(d.wan_tx_bytes) + ' (' + fmtBytes(d.wan_total_bytes) + ')');
 				setText('mw-checks', fmtBool(d.ping_ok) + ' / ' + fmtBool(d.dns_ok) + ' / ' + fmtBool(d.http_ok));
 				setText('mw-latency', d.latency_ms);
 				setText('mw-model', d.modem_model);
 				setText('mw-fw', d.modem_fw);
 				setText('mw-imei', d.modem_imei);
-				var op = d.operator || '';
-				if (op && d.operator_country) op += ' (' + d.operator_country + ')';
-				setText('mw-operator', op);
+				setText('mw-operator', d.operator);
 				setText('mw-network', d.network);
 
 				var csq = d.signal_csq || '';

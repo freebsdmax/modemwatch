@@ -270,7 +270,8 @@
 			read: '<%=luci.dispatcher.build_url("admin", "modem", "modemwatch", "read_config")%>',
 			at: '<%=luci.dispatcher.build_url("admin", "modem", "modemwatch", "at_cmd")%>',
 			band_info: '<%=luci.dispatcher.build_url("admin", "modem", "modemwatch", "band_info")%>',
-			band_set: '<%=luci.dispatcher.build_url("admin", "modem", "modemwatch", "band_set")%>'
+			band_set: '<%=luci.dispatcher.build_url("admin", "modem", "modemwatch", "band_set")%>',
+			operator_info: '<%=luci.dispatcher.build_url("admin", "modem", "modemwatch", "operator_info")%>'
 		}
 	};
 
@@ -420,7 +421,17 @@
 		if (m) show('ms-info-sim', m[1]);
 
 		m = out.match(/\+COPS:\s*\d+\s*,\s*\d+\s*,\s*"([^"]+)"/);
-		if (m) show('ms-info-operator', m[1]);
+		if (m) {
+			show('ms-info-operator', m[1]);
+			if (/^\d+$/.test(m[1])) {
+				fetch(ms.urls.operator_info + '?mccmnc=' + encodeURIComponent(m[1]), { cache: 'no-store', credentials: 'same-origin' })
+					.then(function(r) { return r.json(); })
+					.then(function(d) {
+						if (d.ok && d.name) show('ms-info-operator', d.name + ' (' + d.mccmnc + ')');
+					})
+					.catch(function() {});
+			}
+		}
 
 		m = out.match(/\+QNWINFO:\s*"([^"]+)"\s*,\s*"([^"]+)"\s*,\s*"([^"]+)"\s*,\s*(\d+)/);
 		if (m) {
@@ -573,7 +584,7 @@
 			})
 			.then(function(d) {
 				if (!d.ok) {
-					message(d.error || '<%:modemband not available%>', true);
+					message(d.error || '<%:AT command failed%>', true);
 					return;
 				}
 				bandState.supported = d.supported || [];

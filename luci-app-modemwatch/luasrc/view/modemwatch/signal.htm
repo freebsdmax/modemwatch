@@ -98,6 +98,7 @@
 				<div class="sig-bar"><div class="sig-bar-fill" id="sig-lte-quality-bar"></div></div>
 			</div>
 			<div class="sig-meta">
+				<div><%:Operator%>: <span id="sig-operator">—</span></div>
 				<div><%:Network%>: <span id="sig-network">—</span></div>
 				<div><%:Band%>: <span id="sig-band">—</span></div>
 				<div><%:Last update%>: <span id="sig-updated">—</span></div>
@@ -354,8 +355,15 @@
 					lb.className = 'sig-bar-fill ' + qualityClass(lteQuality);
 				}
 
+				setText('sig-operator', d.operator);
 				setText('sig-network', d.network);
-				setText('sig-band', d.band ? 'B' + d.band : '');
+				var band = parseInt(d.band, 10);
+				var bandFreq = {
+					1: '2100 MHz', 3: '1800 MHz', 5: '850 MHz', 7: '2600 MHz',
+					8: '900 MHz', 20: '800 MHz', 28: '700 MHz', 38: '2600 MHz',
+					40: '2300 MHz', 41: '2500 MHz'
+				};
+				setText('sig-band', band ? 'B' + band + (bandFreq[band] ? ' (' + bandFreq[band] + ')' : '') : '');
 				var ts = parseInt(d.timestamp, 10);
 				setText('sig-updated', ts ? new Date(ts * 1000).toLocaleTimeString() : '');
 				message('', false);

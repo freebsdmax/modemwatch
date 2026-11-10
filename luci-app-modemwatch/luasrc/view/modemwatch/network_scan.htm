@@ -240,9 +240,7 @@
 		fetch(ns.urls.status, { cache: 'no-store', credentials: 'same-origin' })
 			.then(function(r) { return r.json(); })
 			.then(function(d) {
-				var op = d.operator || '';
-				if (op && d.operator_country) op += ' (' + d.operator_country + ')';
-				show('ns-current', op || '—');
+				show('ns-current', d.operator || '—');
 				show('ns-network', d.network || '—');
 				if (d.config && d.config.at_port) show('ns-port', d.config.at_port);
 			})

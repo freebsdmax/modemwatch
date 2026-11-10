@@ -98,6 +98,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           name: modemwatch ${{ github.ref_name }}
+          generate_release_notes: true
           body: |
             OpenWrt packages for 23.05.6, 24.10.8 and 25.12.6.
 

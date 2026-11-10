@@ -36,9 +36,6 @@ msgstr "Недійсний токен"
 msgid "empty AT command"
 msgstr "Порожня AT-команда"
 
-msgid "modemband not available"
-msgstr "modemband недоступний"
-
 msgid "invalid band selection"
 msgstr "недійсний вибір діапазонів"
 
@@ -50,6 +47,9 @@ msgstr "Сканування мереж розпочато"
 
 msgid "network scan stopped"
 msgstr "Сканування мереж зупинено"
+
+msgid "invalid operator"
+msgstr "Недійсний оператор"
 
 msgid "Downloading MCC/MNC list"
 msgstr "Завантаження списку MCC/MNC"
@@ -68,9 +68,6 @@ msgstr "Оновлення бази MCC/MNC вже виконується"
 
 msgid "MCC/MNC update started"
 msgstr "Оновлення бази MCC/MNC розпочато"
-
-msgid "invalid operator"
-msgstr "Недійсний оператор"
 
 msgid "operator selection sent"
 msgstr "Команду вибору оператора надіслано"
@@ -234,6 +231,9 @@ msgstr "останнє"
 msgid "WAN"
 msgstr "WAN"
 
+msgid "Data transferred"
+msgstr "Передано даних"
+
 msgid "Ping / DNS / HTTP"
 msgstr "Ping / DNS / HTTP"
 
@@ -360,6 +360,9 @@ msgstr "Сервіс перезапущено"
 msgid "Restart failed"
 msgstr "Помилка перезапуску"
 
+msgid "Operator"
+msgstr "Оператор"
+
 msgid "Network"
 msgstr "Мережа"
 
@@ -437,9 +440,6 @@ msgstr "Модель"
 
 msgid "SIM status"
 msgstr "Статус SIM"
-
-msgid "Operator"
-msgstr "Оператор"
 
 msgid "Temperature"
 msgstr "Температура"

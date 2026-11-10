@@ -70,6 +70,9 @@ function index()
 	entry({"admin", "modem", "modemwatch", "mccmnc_status"},
 		call("action_mccmnc_status")).leaf = true
 
+	entry({"admin", "modem", "modemwatch", "operator_info"},
+		call("action_operator_info")).leaf = true
+
 	entry({"admin", "modem", "modemwatch", "scan_select"},
 		call("action_scan_select")).leaf = true
 
@@ -120,8 +123,23 @@ local function config_values()
 	return cursor:get_all("modemwatch", "main") or {}
 end
 
+local function read_wan_stats()
+	local cursor = uci.cursor()
+	local iface = cursor:get("modemwatch", "main", "wan_iface") or "wan"
+	local device = cursor:get("network", iface, "device") or iface
+	local function read_bytes(path)
+		local value = fs.readfile(path)
+		local s = (value or ""):gsub("%s+", "")
+		return tonumber(s) or 0
+	end
+	local rx = read_bytes("/sys/class/net/" .. device .. "/statistics/rx_bytes")
+	local tx = read_bytes("/sys/class/net/" .. device .. "/statistics/tx_bytes")
+	return rx, tx, device
+end
+
 local load_mccmnc
 local lookup_operator_info
+local format_operator
 
 local function check_token()
 	local token = http.formvalue("token")
@@ -139,8 +157,16 @@ function action_status()
 	data.service_running = service_running()
 	data.server_time = os.time()
 	data.config = config_values()
-	local name, country, plmn = lookup_operator_info(data.operator)
-	data.operator = name
+	local rx, tx, dev = read_wan_stats()
+	data.wan_rx_bytes = rx
+	data.wan_tx_bytes = tx
+	data.wan_total_bytes = rx + tx
+	if not data.wan_device or data.wan_device == "" then
+		data.wan_device = dev
+	end
+	local op, net, country, plmn = format_operator(data.operator, data.network)
+	data.operator = op
+	data.network = net
 	if country ~= "" then
 		data.operator_country = country
 	end
@@ -163,8 +189,11 @@ function action_signal()
 	data.signal_interval = cursor:get("modemwatch", "main", "signal_interval") or "5"
 	data.ok = true
 	data.server_time = os.time()
-	local name, country, plmn = lookup_operator_info(data.operator)
-	data.operator = name
+	local status = read_status()
+	local raw_op = data.operator or status.operator
+	local op, net, country, plmn = format_operator(raw_op, data.network)
+	data.operator = op
+	data.network = net
 	if country ~= "" then
 		data.operator_country = country
 	end
@@ -199,15 +228,82 @@ function action_at()
 	send_json({ ok = true, output = out })
 end
 
-function action_band_info()
-	local out = sys.exec("/usr/bin/modemband.sh json 2>&1")
-	local ok, data = pcall(jsonc.parse, out)
-	if not ok or type(data) ~= "table" then
-		send_json({ ok = false, error = i18n.translate("modemband not available"), raw = out })
-		return
+local BAND_NAMES = {
+	[1] = "FDD 2100 MHz", [3] = "FDD 1800 MHz", [5] = "FDD 850 MHz",
+	[7] = "FDD 2600 MHz", [8] = "FDD 900 MHz", [20] = "FDD 800 MHz",
+	[28] = "FDD 700 MHz", [38] = "TDD 2600 MHz", [40] = "TDD 2300 MHz",
+	[41] = "TDD 2500 MHz"
+}
+local BAND_LIST = { 1, 3, 5, 7, 8, 20, 28, 38, 40, 41 }
+
+local function hex_to_number(hex)
+	local h = hex:gsub("^0[xX]", "")
+	local n = 0
+	for i = 1, #h do
+		local d = tonumber(h:sub(i, i), 16)
+		if not d then
+			return 0
+		end
+		n = n * 16 + d
 	end
-	data.ok = true
-	send_json(data)
+	return n
+end
+
+local function number_to_hex(n)
+	local digits = "0123456789abcdef"
+	n = math.floor(n)
+	if n <= 0 then
+		return "0"
+	end
+	local out = ""
+	while n > 0 do
+		local d = math.floor(n % 16)
+		out = digits:sub(d + 1, d + 1) .. out
+		n = math.floor(n / 16)
+	end
+	return out
+end
+
+local function hex_to_bands(hex)
+	local n = hex_to_number(hex)
+	local bands = {}
+	for b = 0, 52 do
+		local pow = 2 ^ b
+		if math.floor(n / pow) % 2 == 1 then
+			bands[#bands + 1] = b + 1
+		end
+	end
+	return bands
+end
+
+local function bands_to_hex(bands)
+	local mask = 0
+	for n in bands:gmatch("%d+") do
+		local b = tonumber(n)
+		if b and b >= 1 and b <= 53 then
+			mask = mask + 2 ^ (b - 1)
+		end
+	end
+	return "0x" .. number_to_hex(mask)
+end
+
+function action_band_info()
+	local out = sys.exec("/usr/bin/modemwatch.sh at " .. shellquote('AT+QCFG="band"') .. " 2>&1")
+	local lte_hex
+	local _, second = out:match("(0x[0-9a-fA-F]+)%s*,%s*(0x[0-9a-fA-F]+)")
+	lte_hex = second or out:match("(0x[0-9a-fA-F]+)")
+	local supported = {}
+	for _, b in ipairs(BAND_LIST) do
+		supported[#supported + 1] = { band = b, txt = BAND_NAMES[b] or "" }
+	end
+	local enabled = lte_hex and hex_to_bands(lte_hex) or {}
+	send_json({
+		ok = true,
+		modem = "Quectel EC200A",
+		supported = supported,
+		enabled = enabled,
+		raw = out
+	})
 end
 
 function action_band_set()
@@ -219,8 +315,17 @@ function action_band_set()
 		send_json({ ok = false, error = i18n.translate("invalid band selection") })
 		return
 	end
-	local out = sys.exec("/usr/bin/modemband.sh setbands " .. shellquote(bands) .. " 2>&1")
-	send_json({ ok = true, output = out, message = i18n.translate("Band settings sent") })
+	if bands == "default" then
+		bands = "1 3 5 7 8 20 28 38 40 41"
+	end
+	local hex = bands_to_hex(bands)
+	local out1 = sys.exec("/usr/bin/modemwatch.sh at " .. shellquote('AT+QCFG="band",0,' .. hex) .. " 2>&1")
+	local out2 = sys.exec("/usr/bin/modemwatch.sh at " .. shellquote("AT&W") .. " 2>&1")
+	send_json({
+		ok = true,
+		output = out1 .. out2,
+		message = i18n.translate("Band settings sent")
+	})
 end
 
 function action_scan_start()
@@ -260,27 +365,19 @@ end
 
 load_mccmnc = function()
 	local map = {}
-	local paths = {
-		"/usr/share/modemwatch/mccmnc.dat",
-		"/usr/share/3ginfo-lite/mccmnc.dat",
-		"/usr/share/modemdata/libs/mccmnc.dat"
-	}
-	for _, path in ipairs(paths) do
-		local f = io.open(path, "r")
-		if f then
-			for line in f:lines() do
-				local plmn, country, name = line:match("^(%d+);([^;]*);(.*)$")
-				if plmn and name then
-					country = country:gsub("[\r\n]+$", "")
-					name = name:gsub("[\r\n]+$", "")
-					if name ~= "" then
-						map[plmn] = { country = country, name = name }
-					end
+	local f = io.open("/usr/share/modemwatch/mccmnc.dat", "r")
+	if f then
+		for line in f:lines() do
+			local plmn, country, name = line:match("^(%d+);([^;]*);(.*)$")
+			if plmn and name then
+				country = country:gsub("[\r\n]+$", "")
+				name = name:gsub("[\r\n]+$", "")
+				if name ~= "" then
+					map[plmn] = { country = country, name = name }
 				end
 			end
-			f:close()
-			break
 		end
+		f:close()
 	end
 	return map
 end
@@ -298,6 +395,25 @@ lookup_operator_info = function(raw)
 		return entry.name, entry.country, plmn
 	end
 	return raw, "", plmn
+end
+
+format_operator = function(raw, network)
+	local name, country, plmn = lookup_operator_info(raw)
+	local net = network or ""
+	if plmn == "" then
+		local code = net:match("(%d%d%d%d%d%d?)$")
+		if code then
+			plmn = code
+		end
+	end
+	if plmn ~= "" then
+		net = net:gsub("%s+" .. plmn .. "$", "")
+		if name == "" or name:match("^%d+$") then
+			name = raw or plmn
+		end
+		return name .. " (" .. plmn .. ")", net, country, plmn
+	end
+	return name, net, country, plmn
 end
 
 local function parse_operators(raw)
@@ -359,6 +475,21 @@ function action_scan_status()
 		error = st.error,
 		operators = parse_operators(raw),
 		raw = raw
+	})
+end
+
+function action_operator_info()
+	local mccmnc = http.formvalue("mccmnc")
+	if not mccmnc or not mccmnc:match("^%d+$") then
+		send_json({ ok = false, error = i18n.translate("invalid operator") })
+		return
+	end
+	local name, country, plmn = lookup_operator_info(mccmnc)
+	send_json({
+		ok = true,
+		name = name,
+		country = country,
+		mccmnc = (plmn ~= "" and plmn or mccmnc)
 	})
 end
 
