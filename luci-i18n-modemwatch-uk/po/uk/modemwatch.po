@@ -21,6 +21,9 @@ msgstr "Статус"
 msgid "Signal"
 msgstr "Сигнал"
 
+msgid "Log"
+msgstr "Лог"
+
 msgid "Modem settings"
 msgstr "Налаштування модему"
 
@@ -291,12 +294,6 @@ msgstr "Перезавантажити модем"
 msgid "Restart service"
 msgstr "Перезапустити сервіс"
 
-msgid "Log"
-msgstr "Лог"
-
-msgid "Refresh log"
-msgstr "Оновити лог"
-
 msgid "yes"
 msgstr "так"
 
@@ -332,12 +329,6 @@ msgstr "працює"
 
 msgid "Failed to read status"
 msgstr "Не вдалося прочитати статус"
-
-msgid "(empty)"
-msgstr "(порожньо)"
-
-msgid "Failed to read log"
-msgstr "Не вдалося прочитати лог"
 
 msgid "Reading modem data"
 msgstr "Читання даних модема"
@@ -425,6 +416,21 @@ msgstr "Не вдалося прочитати сигнал"
 
 msgid "Resume"
 msgstr "Продовжити"
+
+msgid "Refresh log"
+msgstr "Оновити лог"
+
+msgid "Auto-refresh"
+msgstr "Автооновлення"
+
+msgid "(empty)"
+msgstr "(порожньо)"
+
+msgid "Updated"
+msgstr "Оновлено"
+
+msgid "Failed to read log"
+msgstr "Не вдалося прочитати лог"
 
 msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
 msgstr "AT-команди можуть змінити налаштування модема та розірвати інтернет або SSH. Не змінюйте режим USB, APN, діапазон або режим мережі віддалено без плану відкату."

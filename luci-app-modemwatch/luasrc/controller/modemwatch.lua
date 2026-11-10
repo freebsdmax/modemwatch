@@ -28,6 +28,9 @@ function index()
 	entry({"admin", "modem", "modemwatch", "signal"},
 		template("modemwatch/signal"), _("Signal"), 15).leaf = true
 
+	entry({"admin", "modem", "modemwatch", "log"},
+		template("modemwatch/log"), _("Log"), 17).leaf = true
+
 	entry({"admin", "modem", "modemwatch", "modem_settings"},
 		template("modemwatch/modem_settings"), _("Modem settings"), 20).leaf = true
 

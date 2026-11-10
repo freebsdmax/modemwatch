@@ -15,6 +15,7 @@ Watchdog-сервіс для 4G/LTE-модемів **Quectel** на OpenWrt з �
 - Інформація про модем: модель, прошивка, IMEI, оператор, мережа, CSQ/RSRP, температура.
 - Ручні дії з веб-інтерфейсу: перевірити зараз, перезавантажити модем, перезапустити сервіс.
 - Логи в syslog (`logread -e modemwatch`) і у `/var/log/modemwatch.log`.
+- Окрема вкладка «Журнал» з ручним і автоматичним оновленням.
 - CLI: `status`, `check`, `reboot`, `info`, `at`, `logs`.
 
 ## Скріншоти
@@ -26,6 +27,10 @@ Watchdog-сервіс для 4G/LTE-модемів **Quectel** на OpenWrt з �
 ### Сигнал
 
 ![Сигнал](docs/screenshots/signal.png)
+
+### Журнал
+
+![Журнал](docs/screenshots/log.png)
 
 ### Налаштування модема
 
