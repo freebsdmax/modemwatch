@@ -130,19 +130,31 @@
 			</tr>
 			<tr class="cbi-section-table-row">
 				<td class="cbi-value-title"><%:RSSI%></td>
-				<td class="cbi-value-field"><span id="mw-rssi">-</span> dBm (<span id="mw-rssi-pct">-</span>)</td>
+				<td class="cbi-value-field">
+					<span id="mw-rssi">-</span> dBm (<span id="mw-rssi-pct">-</span>)
+					<div class="status-sig-bar"><div class="status-sig-fill" id="mw-rssi-bar"></div></div>
+				</td>
 			</tr>
 			<tr class="cbi-section-table-row">
 				<td class="cbi-value-title"><%:RSRP%></td>
-				<td class="cbi-value-field"><span id="mw-rsrp">-</span> dBm (<span id="mw-rsrp-pct">-</span>)</td>
+				<td class="cbi-value-field">
+					<span id="mw-rsrp">-</span> dBm (<span id="mw-rsrp-pct">-</span>)
+					<div class="status-sig-bar"><div class="status-sig-fill" id="mw-rsrp-bar"></div></div>
+				</td>
 			</tr>
 			<tr class="cbi-section-table-row">
 				<td class="cbi-value-title"><%:SINR%></td>
-				<td class="cbi-value-field"><span id="mw-sinr">-</span> dB (<span id="mw-sinr-pct">-</span>)</td>
+				<td class="cbi-value-field">
+					<span id="mw-sinr">-</span> dB (<span id="mw-sinr-pct">-</span>)
+					<div class="status-sig-bar"><div class="status-sig-fill" id="mw-sinr-bar"></div></div>
+				</td>
 			</tr>
 			<tr class="cbi-section-table-row">
 				<td class="cbi-value-title"><%:RSRQ%></td>
-				<td class="cbi-value-field"><span id="mw-rsrq">-</span> dB (<span id="mw-rsrq-pct">-</span>)</td>
+				<td class="cbi-value-field">
+					<span id="mw-rsrq">-</span> dB (<span id="mw-rsrq-pct">-</span>)
+					<div class="status-sig-bar"><div class="status-sig-fill" id="mw-rsrq-bar"></div></div>
+				</td>
 			</tr>
 			<tr class="cbi-section-table-row">
 				<td class="cbi-value-title"><%:Band%></td>
@@ -388,6 +400,10 @@
 					40: '2300 MHz', 41: '2500 MHz'
 				};
 				setText('mw-band', band ? 'B' + band + (bandFreq[band] ? ' (' + bandFreq[band] + ')' : '') : '');
+				setBar('mw-rssi-bar', prssi);
+				setBar('mw-rsrp-bar', prsrp);
+				setBar('mw-sinr-bar', psinr);
+				setBar('mw-rsrq-bar', prsrq);
 
 				setText('mw-temp', d.modem_temp);
 				setText('mw-last-info', fmtTime(d.last_info));

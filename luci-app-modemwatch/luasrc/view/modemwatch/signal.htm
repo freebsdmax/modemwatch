@@ -112,6 +112,13 @@
 
 		<div class="sig-grid">
 			<div class="sig-card">
+				<div class="sig-name">CSQ</div>
+				<div class="sig-raw" id="sig-csq-raw">—</div>
+				<div class="sig-pct" id="sig-csq-pct">—</div>
+				<div class="sig-bar"><div class="sig-bar-fill" id="sig-csq-bar"></div></div>
+				<div class="sig-desc"><%:Signal Strength%></div>
+			</div>
+			<div class="sig-card">
 				<div class="sig-name">RSSI</div>
 				<div class="sig-raw" id="sig-rssi-raw">—</div>
 				<div class="sig-pct" id="sig-rssi-pct">—</div>
@@ -318,7 +325,9 @@
 				var prsrp = pctRSRP(rsrp);
 				var psinr = pctSINR(sinr);
 				var prsrq = pctRSRQ(rsrq);
+				var pcsq = pctCSQ(csq);
 
+				setMetric('csq', csq, pcsq, '');
 				setMetric('rssi', rssi, prssi, 'dBm');
 				setMetric('rsrp', rsrp, prsrp, 'dBm');
 				setMetric('sinr', sinr, psinr, 'dB');
