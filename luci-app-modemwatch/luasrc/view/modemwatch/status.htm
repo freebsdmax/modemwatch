@@ -117,40 +117,6 @@
 				<td class="cbi-value-field"><span id="mw-operator">-</span> / <span id="mw-network">-</span></td>
 			</tr>
 			<tr class="cbi-section-table-row">
-				<td class="cbi-value-title"><%:Signal%></td>
-				<td class="cbi-value-field">
-					<div class="status-sig-overall">
-						<div><%:Signal strength (CSQ)%>: <span id="mw-signal-strength">-</span></div>
-						<div class="status-sig-bar"><div class="status-sig-fill" id="mw-signal-strength-bar"></div></div>
-						<div style="margin-top:0.4em"><%:LTE quality%>: <span id="mw-lte-quality">-</span></div>
-						<div class="status-sig-bar"><div class="status-sig-fill" id="mw-lte-quality-bar"></div></div>
-					</div>
-					<div class="status-sig-grid">
-						<div class="status-sig-item">
-							<div>CSQ <span id="mw-csq">-</span> (<span id="mw-csq-pct">-</span>)</div>
-							<div class="status-sig-bar"><div class="status-sig-fill" id="mw-csq-bar"></div></div>
-						</div>
-						<div class="status-sig-item">
-							<div>RSSI <span id="mw-rssi">-</span> dBm (<span id="mw-rssi-pct">-</span>)</div>
-							<div class="status-sig-bar"><div class="status-sig-fill" id="mw-rssi-bar"></div></div>
-						</div>
-						<div class="status-sig-item">
-							<div>RSRP <span id="mw-rsrp">-</span> dBm (<span id="mw-rsrp-pct">-</span>)</div>
-							<div class="status-sig-bar"><div class="status-sig-fill" id="mw-rsrp-bar"></div></div>
-						</div>
-						<div class="status-sig-item">
-							<div>SINR <span id="mw-sinr">-</span> dB (<span id="mw-sinr-pct">-</span>)</div>
-							<div class="status-sig-bar"><div class="status-sig-fill" id="mw-sinr-bar"></div></div>
-						</div>
-						<div class="status-sig-item">
-							<div>RSRQ <span id="mw-rsrq">-</span> dB (<span id="mw-rsrq-pct">-</span>)</div>
-							<div class="status-sig-bar"><div class="status-sig-fill" id="mw-rsrq-bar"></div></div>
-						</div>
-					</div>
-					<div style="font-size:0.9em;opacity:0.85;margin-top:0.5em"><%:Band%>: <span id="mw-band">-</span></div>
-				</td>
-			</tr>
-			<tr class="cbi-section-table-row">
 				<td class="cbi-value-title"><%:Modem temperature%></td>
 				<td class="cbi-value-field"><span id="mw-temp">-</span> &deg;C</td>
 			</tr>
@@ -161,6 +127,26 @@
 			<tr class="cbi-section-table-row">
 				<td class="cbi-value-title"><%:Service uptime%></td>
 				<td class="cbi-value-field"><span id="mw-uptime">-</span></td>
+			</tr>
+			<tr class="cbi-section-table-row">
+				<td class="cbi-value-title"><%:RSSI%></td>
+				<td class="cbi-value-field"><span id="mw-rssi">-</span> dBm (<span id="mw-rssi-pct">-</span>)</td>
+			</tr>
+			<tr class="cbi-section-table-row">
+				<td class="cbi-value-title"><%:RSRP%></td>
+				<td class="cbi-value-field"><span id="mw-rsrp">-</span> dBm (<span id="mw-rsrp-pct">-</span>)</td>
+			</tr>
+			<tr class="cbi-section-table-row">
+				<td class="cbi-value-title"><%:SINR%></td>
+				<td class="cbi-value-field"><span id="mw-sinr">-</span> dB (<span id="mw-sinr-pct">-</span>)</td>
+			</tr>
+			<tr class="cbi-section-table-row">
+				<td class="cbi-value-title"><%:RSRQ%></td>
+				<td class="cbi-value-field"><span id="mw-rsrq">-</span> dB (<span id="mw-rsrq-pct">-</span>)</td>
+			</tr>
+			<tr class="cbi-section-table-row">
+				<td class="cbi-value-title"><%:Band%></td>
+				<td class="cbi-value-field"><span id="mw-band">-</span></td>
 			</tr>
 		</table>
 
@@ -382,21 +368,11 @@
 				var rsrp = d.signal_rsrp || '';
 				var sinr = d.signal_sinr || '';
 				var rsrq = d.signal_rsrq || '';
-				var pcsq = pctCSQ(csq);
 				var prssi = pctRSSI(rssi);
 				var prsrp = pctRSRP(rsrp);
 				var psinr = pctSINR(sinr);
 				var prsrq = pctRSRQ(rsrq);
-				var lteValues = [prsrp, prsrq, psinr].filter(function(v) { return v !== null; });
-				var lteQuality = lteValues.length
-					? lteValues.reduce(function(a, b) { return a + b; }, 0) / lteValues.length
-					: null;
-				var signalStrength = (pcsq !== null) ? pcsq : (lteQuality !== null ? lteQuality : prssi);
 
-				setText('mw-signal-strength', signalStrength === null ? '-' : Math.round(signalStrength) + '%');
-				setText('mw-lte-quality', lteQuality === null ? '-' : Math.round(lteQuality) + '%');
-				setText('mw-csq', csq);
-				setText('mw-csq-pct', fmtPct(pcsq));
 				setText('mw-rssi', rssi);
 				setText('mw-rssi-pct', fmtPct(prssi));
 				setText('mw-rsrp', rsrp);
@@ -405,15 +381,13 @@
 				setText('mw-sinr-pct', fmtPct(psinr));
 				setText('mw-rsrq', rsrq);
 				setText('mw-rsrq-pct', fmtPct(prsrq));
-				setText('mw-band', d.signal_band ? 'B' + d.signal_band : '');
-
-				setBar('mw-signal-strength-bar', signalStrength);
-				setBar('mw-lte-quality-bar', lteQuality);
-				setBar('mw-csq-bar', pcsq);
-				setBar('mw-rssi-bar', prssi);
-				setBar('mw-rsrp-bar', prsrp);
-				setBar('mw-sinr-bar', psinr);
-				setBar('mw-rsrq-bar', prsrq);
+				var band = parseInt(d.signal_band, 10);
+				var bandFreq = {
+					1: '2100 MHz', 3: '1800 MHz', 5: '850 MHz', 7: '2600 MHz',
+					8: '900 MHz', 20: '800 MHz', 28: '700 MHz', 38: '2600 MHz',
+					40: '2300 MHz', 41: '2500 MHz'
+				};
+				setText('mw-band', band ? 'B' + band + (bandFreq[band] ? ' (' + bandFreq[band] + ')' : '') : '');
 
 				setText('mw-temp', d.modem_temp);
 				setText('mw-last-info', fmtTime(d.last_info));

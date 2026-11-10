@@ -90,7 +90,7 @@
 	<div class="cbi-section">
 		<div class="sig-header">
 			<div class="sig-overall">
-				<div class="sig-overall-label"><%:Signal strength (CSQ)%></div>
+				<div class="sig-overall-label"><%:Signal strength (RSRQ)%></div>
 				<div class="sig-overall-value" id="sig-strength">—</div>
 				<div class="sig-bar"><div class="sig-bar-fill" id="sig-strength-bar"></div></div>
 				<div class="sig-overall-label" style="margin-top:0.7em"><%:LTE quality%></div>
@@ -111,13 +111,6 @@
 		</div>
 
 		<div class="sig-grid">
-			<div class="sig-card">
-				<div class="sig-name">CSQ</div>
-				<div class="sig-raw" id="sig-csq-raw">—</div>
-				<div class="sig-pct" id="sig-csq-pct">—</div>
-				<div class="sig-bar"><div class="sig-bar-fill" id="sig-csq-bar"></div></div>
-				<div class="sig-desc"><%:Signal Strength%></div>
-			</div>
 			<div class="sig-card">
 				<div class="sig-name">RSSI</div>
 				<div class="sig-raw" id="sig-rssi-raw">—</div>
@@ -321,13 +314,11 @@
 				var sinr = d.sinr || '';
 				var rsrq = d.rsrq || '';
 
-				var pcsq = pctCSQ(csq);
 				var prssi = pctRSSI(rssi);
 				var prsrp = pctRSRP(rsrp);
 				var psinr = pctSINR(sinr);
 				var prsrq = pctRSRQ(rsrq);
 
-				setMetric('csq', csq, pcsq, '');
 				setMetric('rssi', rssi, prssi, 'dBm');
 				setMetric('rsrp', rsrp, prsrp, 'dBm');
 				setMetric('sinr', sinr, psinr, 'dB');
@@ -337,7 +328,7 @@
 				var lteQuality = lteValues.length
 					? lteValues.reduce(function(a, b) { return a + b; }, 0) / lteValues.length
 					: null;
-				var signalStrength = (pcsq !== null) ? pcsq : (lteQuality !== null ? lteQuality : prssi);
+				var signalStrength = (prsrq !== null) ? prsrq : (lteQuality !== null ? lteQuality : prssi);
 
 				var sv = document.getElementById('sig-strength');
 				var sb = document.getElementById('sig-strength-bar');

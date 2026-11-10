@@ -252,20 +252,26 @@ msgstr "IMEI"
 msgid "Operator / network"
 msgstr "Оператор / мережа"
 
-msgid "Signal strength (CSQ)"
-msgstr "Рівень сигналу (CSQ)"
-
-msgid "LTE quality"
-msgstr "Якість LTE"
-
-msgid "Band"
-msgstr "Діапазон"
-
 msgid "Modem temperature"
 msgstr "Температура модема"
 
 msgid "Service uptime"
 msgstr "Час роботи сервісу"
+
+msgid "RSSI"
+msgstr "RSSI"
+
+msgid "RSRP"
+msgstr "RSRP"
+
+msgid "SINR"
+msgstr "SINR"
+
+msgid "RSRQ"
+msgstr "RSRQ"
+
+msgid "Band"
+msgstr "Діапазон"
 
 msgid "Check now"
 msgstr "Перевірити зараз"
@@ -360,6 +366,12 @@ msgstr "Сервіс перезапущено"
 msgid "Restart failed"
 msgstr "Помилка перезапуску"
 
+msgid "Signal strength (RSRQ)"
+msgstr "Рівень сигналу (RSRQ)"
+
+msgid "LTE quality"
+msgstr "Якість LTE"
+
 msgid "Operator"
 msgstr "Оператор"
 
@@ -374,9 +386,6 @@ msgstr "Інтервал оновлення"
 
 msgid "seconds"
 msgstr "секунд"
-
-msgid "Signal Strength"
-msgstr "Рівень сигналу"
 
 msgid "Received Signal Strength Indicator"
 msgstr "Індикатор рівня прийнятого сигналу"
