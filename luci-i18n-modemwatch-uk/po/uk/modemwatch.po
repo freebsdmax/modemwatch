@@ -1,0 +1,748 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-modemwatch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-09 00:00+0000\n"
+"PO-Revision-Date: 2026-11-09 00:00+0000\n"
+"Last-Translator: modemwatch contributors\n"
+"Language-Team: Ukrainian\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "Modem LTE 4G"
+msgstr "Модем LTE 4G"
+
+msgid "Status"
+msgstr "Статус"
+
+msgid "Signal"
+msgstr "Сигнал"
+
+msgid "Modem settings"
+msgstr "Налаштування модему"
+
+msgid "Network search"
+msgstr "Пошук мереж"
+
+msgid "Settings"
+msgstr "Налаштування"
+
+msgid "invalid token"
+msgstr "Недійсний токен"
+
+msgid "empty AT command"
+msgstr "Порожня AT-команда"
+
+msgid "modemband not available"
+msgstr "modemband недоступний"
+
+msgid "invalid band selection"
+msgstr "недійсний вибір діапазонів"
+
+msgid "Band settings sent"
+msgstr "Налаштування діапазонів надіслано"
+
+msgid "network scan started"
+msgstr "Сканування мереж розпочато"
+
+msgid "network scan stopped"
+msgstr "Сканування мереж зупинено"
+
+msgid "Downloading MCC/MNC list"
+msgstr "Завантаження списку MCC/MNC"
+
+msgid "Parsing MCC/MNC list"
+msgstr "Розбір списку MCC/MNC"
+
+msgid "MCC/MNC database updated"
+msgstr "Базу MCC/MNC оновлено"
+
+msgid "Failed to update MCC/MNC database"
+msgstr "Не вдалося оновити базу MCC/MNC"
+
+msgid "MCC/MNC update already running"
+msgstr "Оновлення бази MCC/MNC вже виконується"
+
+msgid "MCC/MNC update started"
+msgstr "Оновлення бази MCC/MNC розпочато"
+
+msgid "invalid operator"
+msgstr "Недійсний оператор"
+
+msgid "operator selection sent"
+msgstr "Команду вибору оператора надіслано"
+
+msgid "internet check started"
+msgstr "Перевірку інтернету розпочато"
+
+msgid "modem reboot started"
+msgstr "Перезавантаження модема розпочато"
+
+msgid "service restarted"
+msgstr "Сервіс перезапущено"
+
+msgid "Modem info updated"
+msgstr "Дані модема оновлено"
+
+msgid "Modem did not respond"
+msgstr "Модем не відповів"
+
+msgid "Checks internet connectivity and reboots the Quectel modem when the connection is lost."
+msgstr "Перевіряє доступність інтернету та перезавантажує модем Quectel, коли з'єднання втрачено."
+
+msgid "Service settings"
+msgstr "Налаштування сервісу"
+
+msgid "Enable service"
+msgstr "Увімкнути сервіс"
+
+msgid "Check interval (seconds)"
+msgstr "Інтервал перевірки (секунди)"
+
+msgid "Failures before modem reboot"
+msgstr "Невдач до перезавантаження модема"
+
+msgid "Ping hosts"
+msgstr "Хости для ping"
+
+msgid "Space-separated list. Internet is considered up if at least one host responds."
+msgstr "Список через пробіл. Інтернет вважається доступним, якщо відповідає хоча б один хост."
+
+msgid "Also require DNS resolution"
+msgstr "Додатково перевіряти DNS"
+
+msgid "DNS name to resolve"
+msgstr "DNS-ім'я для перевірки"
+
+msgid "Also require an HTTP request"
+msgstr "Додатково перевіряти HTTP"
+
+msgid "HTTP URL"
+msgstr "HTTP-адреса"
+
+msgid "WAN interface"
+msgstr "WAN-інтерфейс"
+
+msgid "The device name is read from network.<iface>.device."
+msgstr "Назва пристрою береться з network.<iface>.device."
+
+msgid "AT serial port"
+msgstr "AT-порт"
+
+msgid "Detected USB/ACM serial ports. For Quectel EC200A use /dev/ttyUSB2; /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Виявлені USB/ACM послідовні порти. Для Quectel EC200A використовуйте /dev/ttyUSB2; /dev/ttyUSB0 — діагностичний порт і не відповідає на AT-команди."
+
+msgid "AT port baud rate"
+msgstr "Швидкість AT-порту"
+
+msgid "Modem reboot method"
+msgstr "Метод перезавантаження модема"
+
+msgid "AT+CFUN=1,1 (recommended)"
+msgstr "AT+CFUN=1,1 (рекомендовано)"
+
+msgid "USB re-bind (best effort)"
+msgstr "USB re-bind (за можливості)"
+
+msgid "Wait after reboot (seconds)"
+msgstr "Очікування після перезавантаження (секунди)"
+
+msgid "Collect modem information"
+msgstr "Збирати інформацію про модем"
+
+msgid "Reads model, firmware, IMEI, signal, operator and temperature via AT commands."
+msgstr "Зчитує модель, прошивку, IMEI, сигнал, оператора та температуру AT-командами."
+
+msgid "Modem info interval (seconds)"
+msgstr "Інтервал збору інформації (секунди)"
+
+msgid "How often to query the modem with AT commands. Keep it longer if other modem tools use the same serial port."
+msgstr "Як часто опитувати модем AT-командами. Збільште, якщо інші інструменти використовують той самий порт."
+
+msgid "Signal refresh interval (seconds)"
+msgstr "Інтервал оновлення сигналу (секунди)"
+
+msgid "Pause between signal page updates. The actual update also includes the modem response time."
+msgstr "Пауза між оновленнями сторінки сигналу. Фактичний час також включає час відповіді модема."
+
+msgid "Safety"
+msgstr "Безпека"
+
+msgid "Maximum reboots per window"
+msgstr "Максимум перезавантажень за вікно"
+
+msgid "Set to 0 for unlimited. The limit prevents reboot loops."
+msgstr "0 — без обмежень. Ліміт захищає від циклів перезавантаження."
+
+msgid "Reboot window (seconds)"
+msgstr "Вікно перезавантажень (секунди)"
+
+msgid "Cooldown between reboots (seconds)"
+msgstr "Пауза між перезавантаженнями (секунди)"
+
+msgid "Logging"
+msgstr "Логування"
+
+msgid "Log level"
+msgstr "Рівень логування"
+
+msgid "Error"
+msgstr "Помилка"
+
+msgid "Warning"
+msgstr "Попередження"
+
+msgid "Info"
+msgstr "Інформація"
+
+msgid "Debug"
+msgstr "Налагодження"
+
+msgid "Remote access warning"
+msgstr "Попередження про віддалений доступ"
+
+msgid "This service reboots only the modem, not the router. If the modem is the only WAN, internet and remote access will be down during the reboot. Do not change USB mode, APN or band settings remotely without a rollback plan."
+msgstr "Сервіс перезавантажує лише модем, не роутер. Якщо модем — єдиний WAN, під час перезавантаження інтернет і віддалений доступ зникнуть. Не змінюйте режим USB, APN або band lock віддалено без плану відкату."
+
+msgid "Service"
+msgstr "Сервіс"
+
+msgid "State"
+msgstr "Стан"
+
+msgid "Last check"
+msgstr "Остання перевірка"
+
+msgid "Last success"
+msgstr "Останній успіх"
+
+msgid "Last failure"
+msgstr "Остання невдача"
+
+msgid "Failures"
+msgstr "Невдачі"
+
+msgid "Modem reboots"
+msgstr "Перезавантаження модема"
+
+msgid "last"
+msgstr "останнє"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "Ping / DNS / HTTP"
+msgstr "Ping / DNS / HTTP"
+
+msgid "Latency"
+msgstr "Затримка"
+
+msgid "Modem"
+msgstr "Модем"
+
+msgid "Firmware"
+msgstr "Прошивка"
+
+msgid "IMEI"
+msgstr "IMEI"
+
+msgid "Operator / network"
+msgstr "Оператор / мережа"
+
+msgid "Signal strength (CSQ)"
+msgstr "Рівень сигналу (CSQ)"
+
+msgid "LTE quality"
+msgstr "Якість LTE"
+
+msgid "Band"
+msgstr "Діапазон"
+
+msgid "Modem temperature"
+msgstr "Температура модема"
+
+msgid "Service uptime"
+msgstr "Час роботи сервісу"
+
+msgid "Check now"
+msgstr "Перевірити зараз"
+
+msgid "Refresh modem info"
+msgstr "Оновити дані модема"
+
+msgid "Reboot modem"
+msgstr "Перезавантажити модем"
+
+msgid "Restart service"
+msgstr "Перезапустити сервіс"
+
+msgid "Log"
+msgstr "Лог"
+
+msgid "Refresh log"
+msgstr "Оновити лог"
+
+msgid "yes"
+msgstr "так"
+
+msgid "no"
+msgstr "ні"
+
+msgid "online"
+msgstr "онлайн"
+
+msgid "offline"
+msgstr "офлайн"
+
+msgid "rebooting"
+msgstr "перезавантаження"
+
+msgid "checking"
+msgstr "перевірка"
+
+msgid "disabled"
+msgstr "вимкнено"
+
+msgid "starting"
+msgstr "запуск"
+
+msgid "stopped"
+msgstr "зупинено"
+
+msgid "error"
+msgstr "помилка"
+
+msgid "running"
+msgstr "працює"
+
+msgid "Failed to read status"
+msgstr "Не вдалося прочитати статус"
+
+msgid "(empty)"
+msgstr "(порожньо)"
+
+msgid "Failed to read log"
+msgstr "Не вдалося прочитати лог"
+
+msgid "Reading modem data"
+msgstr "Читання даних модема"
+
+msgid "Failed to read modem data"
+msgstr "Не вдалося прочитати дані модема"
+
+msgid "Check started"
+msgstr "Перевірку розпочато"
+
+msgid "Check failed"
+msgstr "Помилка перевірки"
+
+msgid "Reboot the modem now? Internet will be down for about"
+msgstr "Перезавантажити модем зараз? Інтернет зникне приблизно на"
+
+msgid "seconds."
+msgstr "секунд."
+
+msgid "Modem reboot started"
+msgstr "Перезавантаження модема розпочато"
+
+msgid "Reboot failed"
+msgstr "Помилка перезавантаження"
+
+msgid "Restart the modemwatch service?"
+msgstr "Перезапустити сервіс?"
+
+msgid "Service restarted"
+msgstr "Сервіс перезапущено"
+
+msgid "Restart failed"
+msgstr "Помилка перезапуску"
+
+msgid "Network"
+msgstr "Мережа"
+
+msgid "Last update"
+msgstr "Останнє оновлення"
+
+msgid "Refresh interval"
+msgstr "Інтервал оновлення"
+
+msgid "seconds"
+msgstr "секунд"
+
+msgid "Signal Strength"
+msgstr "Рівень сигналу"
+
+msgid "Received Signal Strength Indicator"
+msgstr "Індикатор рівня прийнятого сигналу"
+
+msgid "Reference Signal Receive Power"
+msgstr "Потужність опорного сигналу"
+
+msgid "Signal to Interference plus Noise Ratio"
+msgstr "Відношення сигнал/шум+перешкоди"
+
+msgid "Reference Signal Received Quality"
+msgstr "Якість прийнятого опорного сигналу"
+
+msgid "Refresh now"
+msgstr "Оновити зараз"
+
+msgid "Pause"
+msgstr "Пауза"
+
+msgid "Busy"
+msgstr "Зайнято"
+
+msgid "AT port not found"
+msgstr "AT-порт не знайдено"
+
+msgid "No response from modem"
+msgstr "Модем не відповів"
+
+msgid "Failed to read signal"
+msgstr "Не вдалося прочитати сигнал"
+
+msgid "Resume"
+msgstr "Продовжити"
+
+msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
+msgstr "AT-команди можуть змінити налаштування модема та розірвати інтернет або SSH. Не змінюйте режим USB, APN, діапазон або режим мережі віддалено без плану відкату."
+
+msgid "Expert mode — allow changing USB mode and NAT"
+msgstr "Експертний режим — дозволити зміну режиму USB і NAT"
+
+msgid "Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan."
+msgstr "Зміна режиму USB може відключити модем і SSH. Використовуйте лише з локальним доступом або планом відкату."
+
+msgid "Selected AT port"
+msgstr "Вибраний AT-порт"
+
+msgid "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Для Quectel EC200A використовуйте /dev/ttyUSB2. /dev/ttyUSB0 — діагностичний порт і не відповідає на AT-команди."
+
+msgid "Current configuration"
+msgstr "Поточна конфігурація"
+
+msgid "Read current configuration"
+msgstr "Прочитати поточну конфігурацію"
+
+msgid "Modem information"
+msgstr "Інформація про модем"
+
+msgid "Model"
+msgstr "Модель"
+
+msgid "SIM status"
+msgstr "Статус SIM"
+
+msgid "Operator"
+msgstr "Оператор"
+
+msgid "Temperature"
+msgstr "Температура"
+
+msgid "Access Point Name (APN)"
+msgstr "Точка доступу (APN)"
+
+msgid "Username"
+msgstr "Ім'я користувача"
+
+msgid "Password"
+msgstr "Пароль"
+
+msgid "Authentication"
+msgstr "Автентифікація"
+
+msgid "None"
+msgstr "Немає"
+
+msgid "PDP type"
+msgstr "Тип PDP"
+
+msgid "Read APN"
+msgstr "Прочитати APN"
+
+msgid "Apply APN"
+msgstr "Застосувати APN"
+
+msgid "Network mode"
+msgstr "Режим мережі"
+
+msgid "Mode"
+msgstr "Режим"
+
+msgid "Automatic"
+msgstr "Автоматично"
+
+msgid "GSM only"
+msgstr "Тільки GSM"
+
+msgid "WCDMA only"
+msgstr "Тільки WCDMA"
+
+msgid "LTE only"
+msgstr "Тільки LTE"
+
+msgid "Read mode"
+msgstr "Прочитати режим"
+
+msgid "Apply mode"
+msgstr "Застосувати режим"
+
+msgid "Band configuration"
+msgstr "Конфігурація діапазонів"
+
+msgid "Read bands"
+msgstr "Прочитати діапазони"
+
+msgid "Select all"
+msgstr "Вибрати всі"
+
+msgid "Restore default"
+msgstr "Відновити за замовчуванням"
+
+msgid "Apply bands"
+msgstr "Застосувати діапазони"
+
+msgid "Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection."
+msgstr "Виберіть LTE-діапазони, які потрібно залишити увімкненими. Застосування може перезапустити WAN і розірвати з'єднання."
+
+msgid "USB mode"
+msgstr "Режим USB"
+
+msgid "Current value"
+msgstr "Поточне значення"
+
+msgid "New value"
+msgstr "Нове значення"
+
+msgid "RMNET (QMI)"
+msgstr "RMNET (QMI)"
+
+msgid "not supported"
+msgstr "не підтримується"
+
+msgid "ECM (CDC Ethernet)"
+msgstr "ECM (CDC Ethernet)"
+
+msgid "MBIM"
+msgstr "MBIM"
+
+msgid "RNDIS"
+msgstr "RNDIS"
+
+msgid "Apply USB mode"
+msgstr "Застосувати режим USB"
+
+msgid "Read USB mode"
+msgstr "Прочитати режим USB"
+
+msgid "Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem."
+msgstr "Режими, які не підтримуються прошивкою модема, вимкнені та позначені як не підтримувані. Підтримувані режими визначаються автоматично з модема."
+
+msgid "Apply NAT"
+msgstr "Застосувати NAT"
+
+msgid "Read NAT"
+msgstr "Прочитати NAT"
+
+msgid "Raw AT command"
+msgstr "Довільна AT-команда"
+
+msgid "AT command"
+msgstr "AT-команда"
+
+msgid "Send"
+msgstr "Надіслати"
+
+msgid "Sending"
+msgstr "Надсилання"
+
+msgid "AT command failed"
+msgstr "Помилка AT-команди"
+
+msgid "Reading APN"
+msgstr "Читання APN"
+
+msgid "Failed to read APN"
+msgstr "Не вдалося прочитати APN"
+
+msgid "Reading settings"
+msgstr "Читання налаштувань"
+
+msgid "Settings read"
+msgstr "Налаштування прочитано"
+
+msgid "Failed to read settings"
+msgstr "Не вдалося прочитати налаштування"
+
+msgid "APN, username and password may contain only letters, digits, dot, hyphen and underscore."
+msgstr "APN, ім'я користувача та пароль можуть містити лише літери, цифри, крапку, дефіс і підкреслення."
+
+msgid "Apply APN settings? The connection may drop."
+msgstr "Застосувати налаштування APN? З'єднання може розірватися."
+
+msgid "Applying APN"
+msgstr "Застосування APN"
+
+msgid "APN applied. Reconnect or reboot the modem if needed."
+msgstr "APN застосовано. За потреби перепідключіть або перезавантажте модем."
+
+msgid "Failed to apply APN"
+msgstr "Не вдалося застосувати APN"
+
+msgid "Apply network mode? The connection may drop."
+msgstr "Застосувати режим мережі? З'єднання може розірватися."
+
+msgid "Reading bands"
+msgstr "Читання діапазонів"
+
+msgid "Failed to read bands"
+msgstr "Не вдалося прочитати діапазони"
+
+msgid "No bands selected"
+msgstr "Не вибрано жодного діапазону"
+
+msgid "Restore default bands?"
+msgstr "Відновити діапазони за замовчуванням?"
+
+msgid "Apply selected bands? The connection may drop."
+msgstr "Застосувати вибрані діапазони? З'єднання може розірватися."
+
+msgid "Applying bands"
+msgstr "Застосування діапазонів"
+
+msgid "Failed to apply bands"
+msgstr "Не вдалося застосувати діапазони"
+
+msgid "USB mode is read-only in this UI."
+msgstr "Режим USB у цьому інтерфейсі доступний лише для перегляду."
+
+msgid "This USB mode is not supported by the modem firmware."
+msgstr "Цей режим USB не підтримується прошивкою модема."
+
+msgid "Change USB mode? The modem will re-enumerate and the connection may drop. Continue?"
+msgstr "Змінити режим USB? Модем перепідключиться, і з'єднання може розірватися. Продовжити?"
+
+msgid "Change NAT mode? The connection may drop."
+msgstr "Змінити режим NAT? З'єднання може розірватися."
+
+msgid "Current operator"
+msgstr "Поточний оператор"
+
+msgid "AT port"
+msgstr "AT-порт"
+
+msgid "Scan networks"
+msgstr "Сканувати мережі"
+
+msgid "Automatic operator selection"
+msgstr "Автоматичний вибір оператора"
+
+msgid "Stop scan"
+msgstr "Зупинити сканування"
+
+msgid "Update MCC/MNC database"
+msgstr "Оновити базу MCC/MNC"
+
+msgid "Country"
+msgstr "Країна"
+
+msgid "MCC/MNC"
+msgstr "MCC/MNC"
+
+msgid "Technology"
+msgstr "Технологія"
+
+msgid "Action"
+msgstr "Дія"
+
+msgid "Raw scan output"
+msgstr "Сирий результат сканування"
+
+msgid "current"
+msgstr "поточний"
+
+msgid "available"
+msgstr "доступний"
+
+msgid "forbidden"
+msgstr "заборонений"
+
+msgid "unknown"
+msgstr "невідомий"
+
+msgid "Select"
+msgstr "Вибрати"
+
+msgid "MCC/MNC database updated."
+msgstr "Базу MCC/MNC оновлено."
+
+msgid "Not updated yet"
+msgstr "Ще не оновлено"
+
+msgid "Failed to read MCC/MNC update status"
+msgstr "Не вдалося прочитати статус оновлення бази MCC/MNC"
+
+msgid "Updating MCC/MNC database"
+msgstr "Оновлення бази MCC/MNC"
+
+msgid "Scanning networks... This may take up to two minutes."
+msgstr "Сканування мереж... Це може тривати до двох хвилин."
+
+msgid "Scan complete."
+msgstr "Сканування завершено."
+
+msgid "Modem is busy. Try again later."
+msgstr "Модем зайнятий. Спробуйте пізніше."
+
+msgid "Scan failed"
+msgstr "Помилка сканування"
+
+msgid "Not scanned yet."
+msgstr "Ще не сканувалося."
+
+msgid "Failed to read scan status"
+msgstr "Не вдалося прочитати статус сканування"
+
+msgid "Stopping scan"
+msgstr "Зупинка сканування"
+
+msgid "Network scan stopped"
+msgstr "Сканування мереж зупинено"
+
+msgid "Failed to stop scan"
+msgstr "Не вдалося зупинити сканування"
+
+msgid "Starting network scan"
+msgstr "Запуск сканування мереж"
+
+msgid "Network scan started"
+msgstr "Сканування мереж розпочато"
+
+msgid "Failed to start scan"
+msgstr "Не вдалося запустити сканування"
+
+msgid "Select operator"
+msgstr "Вибрати оператора"
+
+msgid "The connection may drop."
+msgstr "З'єднання може розірватися."
+
+msgid "Selecting operator"
+msgstr "Вибір оператора"
+
+msgid "Operator selection sent"
+msgstr "Команду вибору оператора надіслано"
+
+msgid "Failed to select operator"
+msgstr "Не вдалося вибрати оператора"
+
+msgid "Use automatic operator selection?"
+msgstr "Увімкнути автоматичний вибір оператора?"
+
+msgid "Selecting automatic mode"
+msgstr "Увімкнення автоматичного режиму"

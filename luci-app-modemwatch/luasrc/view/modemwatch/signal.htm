@@ -1,0 +1,403 @@
+<%+header%>
+
+<h2 name="content"><%:Signal%></h2>
+
+<style>
+	.cbi-map > .cbi-section {
+		padding: 1rem 1.25rem;
+	}
+	.sig-header {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2em;
+		align-items: center;
+		margin-bottom: 1.25em;
+	}
+	.sig-overall {
+		min-width: 220px;
+	}
+	.sig-overall-label {
+		font-size: 0.95em;
+		opacity: 0.75;
+	}
+	.sig-overall-value {
+		font-size: 2.6em;
+		font-weight: bold;
+		line-height: 1.1;
+	}
+	.sig-meta {
+		font-size: 0.95em;
+		line-height: 1.7;
+	}
+	.sig-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+		gap: 1em;
+	}
+	.sig-card {
+		border: 1px solid rgba(128,128,128,0.35);
+		border-radius: 8px;
+		padding: 0.9em 1em;
+	}
+	.sig-name {
+		font-weight: bold;
+		font-size: 1.05em;
+	}
+	.sig-raw {
+		font-size: 1.45em;
+		margin-top: 0.2em;
+	}
+	.sig-pct {
+		font-size: 1.1em;
+		opacity: 0.8;
+	}
+	.sig-desc {
+		font-size: 0.8em;
+		opacity: 0.6;
+		margin-top: 0.6em;
+	}
+	.sig-bar {
+		height: 10px;
+		background: rgba(128,128,128,0.25);
+		border-radius: 5px;
+		overflow: hidden;
+		margin-top: 0.5em;
+	}
+	.sig-bar-fill {
+		height: 100%;
+		width: 0;
+		background: #999;
+		transition: width 0.3s ease;
+	}
+	.sig-bar-fill.level-1 {
+		background: #e55;
+	}
+	.sig-bar-fill.level-2 {
+		background: #f90;
+	}
+	.sig-bar-fill.level-3 {
+		background: #fd0;
+	}
+	.sig-bar-fill.level-4 {
+		background: #8c4;
+	}
+	.sig-bar-fill.level-5 {
+		background: #2a2;
+	}
+</style>
+
+<div class="cbi-map">
+	<div class="cbi-section">
+		<div class="sig-header">
+			<div class="sig-overall">
+				<div class="sig-overall-label"><%:Signal strength (CSQ)%></div>
+				<div class="sig-overall-value" id="sig-strength">—</div>
+				<div class="sig-bar"><div class="sig-bar-fill" id="sig-strength-bar"></div></div>
+				<div class="sig-overall-label" style="margin-top:0.7em"><%:LTE quality%></div>
+				<div class="sig-pct" id="sig-lte-quality">—</div>
+				<div class="sig-bar"><div class="sig-bar-fill" id="sig-lte-quality-bar"></div></div>
+			</div>
+			<div class="sig-meta">
+				<div><%:Network%>: <span id="sig-network">—</span></div>
+				<div><%:Band%>: <span id="sig-band">—</span></div>
+				<div><%:Last update%>: <span id="sig-updated">—</span></div>
+				<div>
+					<label for="sig-interval"><%:Refresh interval%></label>
+					<input type="number" id="sig-interval" min="2" max="300" step="1" value="5" style="width:5em" />
+					<span><%:seconds%></span>
+				</div>
+			</div>
+		</div>
+
+		<div class="sig-grid">
+			<div class="sig-card">
+				<div class="sig-name">CSQ</div>
+				<div class="sig-raw" id="sig-csq-raw">—</div>
+				<div class="sig-pct" id="sig-csq-pct">—</div>
+				<div class="sig-bar"><div class="sig-bar-fill" id="sig-csq-bar"></div></div>
+				<div class="sig-desc"><%:Signal Strength%></div>
+			</div>
+			<div class="sig-card">
+				<div class="sig-name">RSSI</div>
+				<div class="sig-raw" id="sig-rssi-raw">—</div>
+				<div class="sig-pct" id="sig-rssi-pct">—</div>
+				<div class="sig-bar"><div class="sig-bar-fill" id="sig-rssi-bar"></div></div>
+				<div class="sig-desc"><%:Received Signal Strength Indicator%></div>
+			</div>
+			<div class="sig-card">
+				<div class="sig-name">RSRP</div>
+				<div class="sig-raw" id="sig-rsrp-raw">—</div>
+				<div class="sig-pct" id="sig-rsrp-pct">—</div>
+				<div class="sig-bar"><div class="sig-bar-fill" id="sig-rsrp-bar"></div></div>
+				<div class="sig-desc"><%:Reference Signal Receive Power%></div>
+			</div>
+			<div class="sig-card">
+				<div class="sig-name">SINR</div>
+				<div class="sig-raw" id="sig-sinr-raw">—</div>
+				<div class="sig-pct" id="sig-sinr-pct">—</div>
+				<div class="sig-bar"><div class="sig-bar-fill" id="sig-sinr-bar"></div></div>
+				<div class="sig-desc"><%:Signal to Interference plus Noise Ratio%></div>
+			</div>
+			<div class="sig-card">
+				<div class="sig-name">RSRQ</div>
+				<div class="sig-raw" id="sig-rsrq-raw">—</div>
+				<div class="sig-pct" id="sig-rsrq-pct">—</div>
+				<div class="sig-bar"><div class="sig-bar-fill" id="sig-rsrq-bar"></div></div>
+				<div class="sig-desc"><%:Reference Signal Received Quality%></div>
+			</div>
+		</div>
+
+		<div class="cbi-page-actions" style="margin-top:1.25em">
+			<button class="cbi-button cbi-button-action" id="sig-refresh"><%:Refresh now%></button>
+			<button class="cbi-button" id="sig-pause"><%:Pause%></button>
+		</div>
+		<div id="sig-message" style="margin-top:0.75em"></div>
+	</div>
+</div>
+
+<script type="text/javascript">
+(function() {
+	var sig = {
+		url: '<%=luci.dispatcher.build_url("admin", "modem", "modemwatch", "signal_json")%>',
+		loading: false,
+		paused: false,
+		timer: null,
+		interval: 5,
+		intervalInitialized: false
+	};
+
+	function setText(id, value) {
+		var el = document.getElementById(id);
+		if (el) el.textContent = (value === undefined || value === null || value === '') ? '—' : String(value);
+	}
+
+	function message(text, isError) {
+		var el = document.getElementById('sig-message');
+		if (!el) return;
+		el.textContent = text || '';
+		el.style.color = isError ? '#d9534f' : '';
+	}
+
+	function clamp(v) {
+		return Math.max(0, Math.min(100, v));
+	}
+
+	function pctCSQ(v) {
+		if (v === '' || v === undefined || v === null) return null;
+		var n = parseFloat(v);
+		return isNaN(n) ? null : clamp(n / 31 * 100);
+	}
+
+	function pctRSSI(v) {
+		if (v === '' || v === undefined || v === null) return null;
+		var n = parseFloat(v);
+		return isNaN(n) ? null : clamp((n + 100) / 50 * 100);
+	}
+
+	function pctRSRP(v) {
+		if (v === '' || v === undefined || v === null) return null;
+		var n = parseFloat(v);
+		if (isNaN(n)) return null;
+		if (n >= -80) return 100;
+		if (n <= -120) return 0;
+		return clamp((n + 120) / 40 * 100);
+	}
+
+	function pctSINR(v) {
+		if (v === '' || v === undefined || v === null) return null;
+		var n = parseFloat(v);
+		if (isNaN(n)) return null;
+		if (n >= 30) return 95;
+		if (n >= 22) return 75 + (n - 22) / 8 * 20;
+		if (n >= 13) return 60 + (n - 13) / 9 * 15;
+		if (n >= -20) return (n + 20) / 33 * 60;
+		return 0;
+	}
+
+	function pctRSRQ(v) {
+		if (v === '' || v === undefined || v === null) return null;
+		var n = parseFloat(v);
+		if (isNaN(n)) return null;
+		if (n >= -5) return 100;
+		if (n <= -25) return 0;
+		return clamp((n + 25) / 20 * 100);
+	}
+
+	function qualityClass(p) {
+		if (p === null) return '';
+		if (p < 20) return 'level-1';
+		if (p < 40) return 'level-2';
+		if (p < 60) return 'level-3';
+		if (p < 80) return 'level-4';
+		return 'level-5';
+	}
+
+	function setMetric(id, raw, pct, unit) {
+		var rawEl = document.getElementById('sig-' + id + '-raw');
+		var pctEl = document.getElementById('sig-' + id + '-pct');
+		var bar = document.getElementById('sig-' + id + '-bar');
+		if (rawEl) rawEl.textContent = (raw === '' || raw === undefined || raw === null) ? '—' : raw + (unit ? ' ' + unit : '');
+		if (pctEl) {
+			var pctText = (pct === null) ? '—' : Math.round(pct) + '%';
+			if (raw !== '' && raw !== undefined && raw !== null) {
+				pctText += ' · ' + raw + (unit ? ' ' + unit : '');
+			}
+			pctEl.textContent = pctText;
+		}
+		if (bar) {
+			bar.style.width = (pct === null ? 0 : pct) + '%';
+			bar.className = 'sig-bar-fill ' + qualityClass(pct);
+		}
+	}
+
+	function getStoredInterval() {
+		var v = parseInt(localStorage.getItem('modemwatch.signal_interval'), 10);
+		return (v >= 2 && v <= 300) ? v : null;
+	}
+
+	function applyServerInterval(d) {
+		if (sig.intervalInitialized) return;
+		sig.intervalInitialized = true;
+		if (getStoredInterval() !== null) return;
+		var v = parseInt(d.signal_interval, 10);
+		if (v >= 2 && v <= 300) {
+			sig.interval = v;
+			var input = document.getElementById('sig-interval');
+			if (input) input.value = String(v);
+		}
+	}
+
+	function schedule() {
+		if (sig.timer) clearTimeout(sig.timer);
+		if (sig.paused) return;
+		sig.timer = setTimeout(function() {
+			load().then(schedule);
+		}, sig.interval * 1000);
+	}
+
+	function refreshNow() {
+		if (sig.timer) clearTimeout(sig.timer);
+		load().then(schedule);
+	}
+
+	function setIntervalValue(v) {
+		v = parseInt(v, 10);
+		if (isNaN(v)) v = 5;
+		v = Math.max(2, Math.min(300, v));
+		sig.interval = v;
+		localStorage.setItem('modemwatch.signal_interval', String(v));
+		var input = document.getElementById('sig-interval');
+		if (input) input.value = String(v);
+		if (!sig.paused) schedule();
+	}
+
+	function load() {
+		if (sig.loading || sig.paused) return Promise.resolve();
+		sig.loading = true;
+
+		return fetch(sig.url, { cache: 'no-store', credentials: 'same-origin' })
+			.then(function(r) {
+				if (!r.ok) throw new Error('HTTP ' + r.status);
+				return r.json();
+			})
+			.then(function(d) {
+				applyServerInterval(d);
+				if (d.busy) {
+					message('<%:Busy%>', false);
+					return;
+				}
+				if (d.error) {
+					var err = d.error;
+					if (err === 'AT port not found') err = '<%:AT port not found%>';
+					else if (err === 'no response') err = '<%:No response from modem%>';
+					message(err, true);
+					return;
+				}
+
+				var csq = d.csq || '';
+				var rssi = d.rssi || '';
+				var rsrp = d.rsrp || '';
+				var sinr = d.sinr || '';
+				var rsrq = d.rsrq || '';
+
+				var pcsq = pctCSQ(csq);
+				var prssi = pctRSSI(rssi);
+				var prsrp = pctRSRP(rsrp);
+				var psinr = pctSINR(sinr);
+				var prsrq = pctRSRQ(rsrq);
+
+				setMetric('csq', csq, pcsq, '');
+				setMetric('rssi', rssi, prssi, 'dBm');
+				setMetric('rsrp', rsrp, prsrp, 'dBm');
+				setMetric('sinr', sinr, psinr, 'dB');
+				setMetric('rsrq', rsrq, prsrq, 'dB');
+
+				var lteValues = [prsrp, prsrq, psinr].filter(function(v) { return v !== null; });
+				var lteQuality = lteValues.length
+					? lteValues.reduce(function(a, b) { return a + b; }, 0) / lteValues.length
+					: null;
+				var signalStrength = (pcsq !== null) ? pcsq : (lteQuality !== null ? lteQuality : prssi);
+
+				var sv = document.getElementById('sig-strength');
+				var sb = document.getElementById('sig-strength-bar');
+				if (sv) sv.textContent = (signalStrength === null) ? '—' : Math.round(signalStrength) + '%';
+				if (sb) {
+					sb.style.width = (signalStrength === null ? 0 : signalStrength) + '%';
+					sb.className = 'sig-bar-fill ' + qualityClass(signalStrength);
+				}
+
+				var lq = document.getElementById('sig-lte-quality');
+				var lb = document.getElementById('sig-lte-quality-bar');
+				if (lq) lq.textContent = (lteQuality === null) ? '—' : Math.round(lteQuality) + '%';
+				if (lb) {
+					lb.style.width = (lteQuality === null ? 0 : lteQuality) + '%';
+					lb.className = 'sig-bar-fill ' + qualityClass(lteQuality);
+				}
+
+				setText('sig-network', d.network);
+				setText('sig-band', d.band ? 'B' + d.band : '');
+				var ts = parseInt(d.timestamp, 10);
+				setText('sig-updated', ts ? new Date(ts * 1000).toLocaleTimeString() : '');
+				message('', false);
+			})
+			.catch(function(e) {
+				message('<%:Failed to read signal%>: ' + e.message, true);
+			})
+			.then(function() {
+				sig.loading = false;
+			});
+	}
+
+	var btnRefresh = document.getElementById('sig-refresh');
+	if (btnRefresh) {
+		btnRefresh.onclick = refreshNow;
+	}
+
+	var btnPause = document.getElementById('sig-pause');
+	if (btnPause) {
+		btnPause.onclick = function() {
+			sig.paused = !sig.paused;
+			btnPause.textContent = sig.paused ? '<%:Resume%>' : '<%:Pause%>';
+			if (sig.paused) {
+				if (sig.timer) clearTimeout(sig.timer);
+			} else {
+				refreshNow();
+			}
+		};
+	}
+
+	var inputInterval = document.getElementById('sig-interval');
+	if (inputInterval) {
+		inputInterval.onchange = function() {
+			setIntervalValue(inputInterval.value);
+		};
+		var stored = getStoredInterval();
+		if (stored !== null) sig.interval = stored;
+		inputInterval.value = String(sig.interval);
+	}
+
+	load().then(schedule);
+})();
+</script>
+
+<%+footer%>

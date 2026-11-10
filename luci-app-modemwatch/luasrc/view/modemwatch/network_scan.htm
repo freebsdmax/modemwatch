@@ -1,0 +1,347 @@
+<%+header%>
+
+<h2 name="content"><%:Network search%></h2>
+
+<style>
+	.cbi-map > .cbi-section {
+		padding: 1rem 1.25rem;
+	}
+	.ns-row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1em;
+		align-items: center;
+		margin-bottom: 0.75em;
+	}
+	.ns-output {
+		background: rgba(0,0,0,0.06);
+		border: 1px solid rgba(128,128,128,0.3);
+		border-radius: 4px;
+		padding: 0.75em;
+		max-height: 260px;
+		overflow: auto;
+		white-space: pre-wrap;
+		font-family: monospace;
+		font-size: 0.9em;
+	}
+	.ns-table {
+		width: 100%;
+		border-collapse: collapse;
+		margin-top: 0.75em;
+	}
+	.ns-table th,
+	.ns-table td {
+		text-align: left;
+		padding: 0.45em 0.6em;
+		border-bottom: 1px solid rgba(128,128,128,0.25);
+	}
+	.ns-table th {
+		font-weight: bold;
+	}
+	.ns-status-current {
+		font-weight: bold;
+	}
+</style>
+
+<div class="cbi-map">
+	<div class="cbi-section">
+		<div class="ns-row">
+			<label><%:Current operator%>:</label>
+			<span id="ns-current">—</span>
+			<label><%:Network%>:</label>
+			<span id="ns-network">—</span>
+			<label><%:AT port%>:</label>
+			<span id="ns-port">—</span>
+		</div>
+
+		<div class="ns-row">
+			<button class="cbi-button cbi-button-action" id="ns-scan"><%:Scan networks%></button>
+			<button class="cbi-button" id="ns-auto"><%:Automatic operator selection%></button>
+			<button class="cbi-button cbi-button-reset" id="ns-stop" style="display:none"><%:Stop scan%></button>
+		</div>
+
+		<div class="ns-row">
+			<button class="cbi-button" id="ns-mccmnc-update"><%:Update MCC/MNC database%></button>
+			<span id="ns-mccmnc-status" style="font-size:0.9em;opacity:0.8"></span>
+		</div>
+
+		<div id="ns-message" style="margin-bottom:0.75em"></div>
+
+		<table class="ns-table" id="ns-table" style="display:none">
+			<thead>
+				<tr>
+					<th><%:Status%></th>
+					<th><%:Operator%></th>
+					<th><%:Country%></th>
+					<th><%:MCC/MNC%></th>
+					<th><%:Technology%></th>
+					<th><%:Action%></th>
+				</tr>
+			</thead>
+			<tbody id="ns-tbody"></tbody>
+		</table>
+
+		<h3 style="margin-top:1.25em"><%:Raw scan output%></h3>
+		<pre class="ns-output" id="ns-raw"></pre>
+	</div>
+</div>
+
+<script type="text/javascript">
+(function() {
+	var ns = {
+		token: '<%=token%>',
+		timer: null,
+		urls: {
+			status: '<%=luci.dispatcher.build_url("admin", "modem", "modemwatch", "status_json")%>',
+			start: '<%=luci.dispatcher.build_url("admin", "modem", "modemwatch", "scan_start")%>',
+			scan: '<%=luci.dispatcher.build_url("admin", "modem", "modemwatch", "scan_status")%>',
+			stop: '<%=luci.dispatcher.build_url("admin", "modem", "modemwatch", "scan_stop")%>',
+			select: '<%=luci.dispatcher.build_url("admin", "modem", "modemwatch", "scan_select")%>',
+			mccmnc_update: '<%=luci.dispatcher.build_url("admin", "modem", "modemwatch", "mccmnc_update")%>',
+			mccmnc_status: '<%=luci.dispatcher.build_url("admin", "modem", "modemwatch", "mccmnc_status")%>'
+		}
+	};
+
+	function message(text, isError) {
+		var el = document.getElementById('ns-message');
+		if (!el) return;
+		el.textContent = text || '';
+		el.style.color = isError ? '#d9534f' : '';
+	}
+
+	function show(id, text) {
+		var el = document.getElementById(id);
+		if (el) el.textContent = text || '';
+	}
+
+	function post(url, data) {
+		var body = 'token=' + encodeURIComponent(ns.token);
+		if (data) {
+			for (var k in data) {
+				if (Object.prototype.hasOwnProperty.call(data, k)) {
+					body += '&' + encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
+				}
+			}
+		}
+		return fetch(url, {
+			method: 'POST',
+			cache: 'no-store',
+			credentials: 'same-origin',
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			body: body
+		}).then(function(r) {
+			if (!r.ok) throw new Error('HTTP ' + r.status);
+			return r.json();
+		});
+	}
+
+	function statusLabel(s) {
+		switch (s) {
+			case 'current': return '<%:current%>';
+			case 'available': return '<%:available%>';
+			case 'forbidden': return '<%:forbidden%>';
+			default: return '<%:unknown%>';
+		}
+	}
+
+	function renderOperators(ops) {
+		var tbody = document.getElementById('ns-tbody');
+		var table = document.getElementById('ns-table');
+		if (!tbody || !table) return;
+		tbody.textContent = '';
+		if (!ops || !ops.length) {
+			table.style.display = 'none';
+			return;
+		}
+		table.style.display = '';
+		ops.forEach(function(op) {
+			var tr = document.createElement('tr');
+
+			var tdStatus = document.createElement('td');
+			tdStatus.textContent = statusLabel(op.status);
+			if (op.status === 'current') tdStatus.className = 'ns-status-current';
+			tr.appendChild(tdStatus);
+
+			var tdName = document.createElement('td');
+			tdName.textContent = op.name || op.db_name || op.short || '-';
+			tr.appendChild(tdName);
+
+			var tdCountry = document.createElement('td');
+			tdCountry.textContent = op.country || '-';
+			tr.appendChild(tdCountry);
+
+			var tdMcc = document.createElement('td');
+			tdMcc.textContent = op.mccmnc || '-';
+			tr.appendChild(tdMcc);
+
+			var tdTech = document.createElement('td');
+			tdTech.textContent = op.tech || '-';
+			tr.appendChild(tdTech);
+
+			var tdAction = document.createElement('td');
+			var btn = document.createElement('button');
+			btn.className = 'cbi-button cbi-button-apply';
+			btn.textContent = '<%:Select%>';
+			btn.onclick = function() {
+				selectOperator(op.mccmnc, op.name || op.short || op.mccmnc);
+			};
+			tdAction.appendChild(btn);
+			tr.appendChild(tdAction);
+
+			tbody.appendChild(tr);
+		});
+	}
+
+	function pollMccmnc() {
+		fetch(ns.urls.mccmnc_status, { cache: 'no-store', credentials: 'same-origin' })
+			.then(function(r) { return r.json(); })
+			.then(function(d) {
+				var el = document.getElementById('ns-mccmnc-status');
+				if (el) el.textContent = d.message || '';
+				if (d.state === 'downloading' || d.state === 'parsing') {
+					setTimeout(pollMccmnc, 1500);
+				} else {
+					var btn = document.getElementById('ns-mccmnc-update');
+					if (btn) btn.disabled = false;
+					if (d.state === 'done') {
+						message('<%:MCC/MNC database updated.%>', false);
+					} else if (d.state === 'error') {
+						message(d.message || '<%:Failed to update MCC/MNC database%>', true);
+					} else if (el && !el.textContent) {
+						el.textContent = '<%:Not updated yet%>';
+					}
+				}
+			})
+			.catch(function(e) {
+				var btn = document.getElementById('ns-mccmnc-update');
+				if (btn) btn.disabled = false;
+				message('<%:Failed to read MCC/MNC update status%>: ' + e.message, true);
+			});
+	}
+
+	function updateMccmnc() {
+		var btn = document.getElementById('ns-mccmnc-update');
+		if (btn) btn.disabled = true;
+		message('<%:Updating MCC/MNC database%>...', false);
+		post(ns.urls.mccmnc_update).then(function(d) {
+			if (!d.ok) {
+				if (btn) btn.disabled = false;
+				message(d.error || '<%:Failed to update MCC/MNC database%>', true);
+				return;
+			}
+			pollMccmnc();
+		}).catch(function(e) {
+			if (btn) btn.disabled = false;
+			message('<%:Failed to update MCC/MNC database%>: ' + e.message, true);
+		});
+	}
+
+	function loadStatus() {
+		fetch(ns.urls.status, { cache: 'no-store', credentials: 'same-origin' })
+			.then(function(r) { return r.json(); })
+			.then(function(d) {
+				var op = d.operator || '';
+				if (op && d.operator_country) op += ' (' + d.operator_country + ')';
+				show('ns-current', op || '—');
+				show('ns-network', d.network || '—');
+				if (d.config && d.config.at_port) show('ns-port', d.config.at_port);
+			})
+			.catch(function() {});
+	}
+
+	function pollScan() {
+		fetch(ns.urls.scan, { cache: 'no-store', credentials: 'same-origin' })
+			.then(function(r) { return r.json(); })
+			.then(function(d) {
+				show('ns-raw', d.raw || '');
+				var stopBtn = document.getElementById('ns-stop');
+				if (stopBtn) stopBtn.style.display = (d.state === 'scanning') ? '' : 'none';
+				if (d.state === 'scanning') {
+					message('<%:Scanning networks... This may take up to two minutes.%>', false);
+					ns.timer = setTimeout(pollScan, 2000);
+				} else if (d.state === 'done') {
+					message('<%:Scan complete.%>', false);
+					renderOperators(d.operators || []);
+					loadStatus();
+				} else if (d.state === 'busy') {
+					message('<%:Modem is busy. Try again later.%>', true);
+				} else if (d.state === 'error') {
+					message((d.error || '<%:Scan failed%>'), true);
+				} else {
+					message('<%:Not scanned yet.%>', false);
+				}
+			})
+			.catch(function(e) {
+				message('<%:Failed to read scan status%>: ' + e.message, true);
+			});
+	}
+
+	function stopScan() {
+		if (ns.timer) clearTimeout(ns.timer);
+		message('<%:Stopping scan%>...', false);
+		post(ns.urls.stop).then(function(d) {
+			message(d.message || '<%:Network scan stopped%>', false);
+			pollScan();
+		}).catch(function(e) {
+			message('<%:Failed to stop scan%>: ' + e.message, true);
+		});
+	}
+
+	function startScan() {
+		var btn = document.getElementById('ns-scan');
+		if (btn) btn.disabled = true;
+		if (ns.timer) clearTimeout(ns.timer);
+		message('<%:Starting network scan%>...', false);
+		post(ns.urls.start).then(function(d) {
+			message(d.message || '<%:Network scan started%>', false);
+			pollScan();
+		}).catch(function(e) {
+			message('<%:Failed to start scan%>: ' + e.message, true);
+		}).then(function() {
+			if (btn) btn.disabled = false;
+		});
+	}
+
+	function selectOperator(mccmnc, name) {
+		if (!confirm('<%:Select operator%> "' + name + '"? <%:The connection may drop.%>')) return;
+		message('<%:Selecting operator%>...', false);
+		post(ns.urls.select, { mode: 'manual', mccmnc: mccmnc }).then(function(d) {
+			show('ns-raw', d.output || '');
+			message(d.message || '<%:Operator selection sent%>', false);
+			setTimeout(loadStatus, 3000);
+		}).catch(function(e) {
+			message('<%:Failed to select operator%>: ' + e.message, true);
+		});
+	}
+
+	function autoOperator() {
+		if (!confirm('<%:Use automatic operator selection?%>')) return;
+		message('<%:Selecting automatic mode%>...', false);
+		post(ns.urls.select, { mode: 'auto' }).then(function(d) {
+			show('ns-raw', d.output || '');
+			message(d.message || '<%:Operator selection sent%>', false);
+			setTimeout(loadStatus, 3000);
+		}).catch(function(e) {
+			message('<%:Failed to select operator%>: ' + e.message, true);
+		});
+	}
+
+	var btnScan = document.getElementById('ns-scan');
+	if (btnScan) btnScan.onclick = startScan;
+
+	var btnAuto = document.getElementById('ns-auto');
+	if (btnAuto) btnAuto.onclick = autoOperator;
+
+	var btnStop = document.getElementById('ns-stop');
+	if (btnStop) btnStop.onclick = stopScan;
+
+	var btnMcc = document.getElementById('ns-mccmnc-update');
+	if (btnMcc) btnMcc.onclick = updateMccmnc;
+
+	loadStatus();
+	pollScan();
+	pollMccmnc();
+})();
+</script>
+
+<%+footer%>

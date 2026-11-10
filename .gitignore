@@ -1,0 +1,12 @@
+/bin/
+/build_dir/
+/staging_dir/
+/tmp/
+/logs/
+*.ipk
+*.apk
+*.tar.gz
+*.tar.zst
+*.tar.xz
+*.bundle
+.DS_Store

@@ -1,0 +1,11 @@
+{
+	"luci-app-modemwatch": {
+		"description": "Grant access to Modem Watchdog",
+		"read": {
+			"uci": [ "modemwatch" ]
+		},
+		"write": {
+			"uci": [ "modemwatch" ]
+		}
+	}
+}

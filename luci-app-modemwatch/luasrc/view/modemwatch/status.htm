@@ -1,0 +1,539 @@
+<%+header%>
+
+<h2 name="content"><%:Modem LTE 4G%></h2>
+
+<style>
+	.cbi-map > .cbi-section {
+		padding: 1rem 1.25rem;
+	}
+	.cbi-section-table-row {
+		display: table-row !important;
+		text-align: left !important;
+	}
+	.cbi-section-table-row > .cbi-value-title,
+	.cbi-section-table-row > .cbi-value-field {
+		display: table-cell !important;
+	}
+	.cbi-section-table-row > .cbi-value-title {
+		float: none !important;
+		width: 12rem !important;
+	}
+	.cbi-section-table {
+		table-layout: fixed;
+	}
+	.cbi-section-table-row .cbi-value-field {
+		text-align: left !important;
+	}
+	.status-sig-bar {
+		height: 8px;
+		background: rgba(128,128,128,0.25);
+		border-radius: 4px;
+		overflow: hidden;
+		margin-top: 0.3em;
+	}
+	.status-sig-fill {
+		height: 100%;
+		width: 0;
+		background: #999;
+		transition: width 0.3s ease;
+	}
+	.status-sig-fill.level-1 { background: #e55; }
+	.status-sig-fill.level-2 { background: #f90; }
+	.status-sig-fill.level-3 { background: #fd0; }
+	.status-sig-fill.level-4 { background: #8c4; }
+	.status-sig-fill.level-5 { background: #2a2; }
+	.status-sig-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		gap: 0.75em;
+		margin-top: 0.5em;
+	}
+	.status-sig-item { font-size: 0.9em; }
+	.status-sig-overall { min-width: 200px; margin-bottom: 0.5em; }
+</style>
+
+<div class="cbi-map">
+	<div class="cbi-section">
+		<h3><%:Status%></h3>
+		<table class="cbi-section-table" style="width:100%">
+			<tr class="cbi-section-table-row">
+				<td class="cbi-value-title"><%:Service%></td>
+				<td class="cbi-value-field"><span id="mw-service">-</span></td>
+			</tr>
+			<tr class="cbi-section-table-row">
+				<td class="cbi-value-title"><%:State%></td>
+				<td class="cbi-value-field"><span id="mw-state" class="label">-</span></td>
+			</tr>
+			<tr class="cbi-section-table-row">
+				<td class="cbi-value-title"><%:Last check%></td>
+				<td class="cbi-value-field"><span id="mw-last-check">-</span></td>
+			</tr>
+			<tr class="cbi-section-table-row">
+				<td class="cbi-value-title"><%:Last success%></td>
+				<td class="cbi-value-field"><span id="mw-last-success">-</span></td>
+			</tr>
+			<tr class="cbi-section-table-row">
+				<td class="cbi-value-title"><%:Last failure%></td>
+				<td class="cbi-value-field"><span id="mw-last-failure">-</span></td>
+			</tr>
+			<tr class="cbi-section-table-row">
+				<td class="cbi-value-title"><%:Failures%></td>
+				<td class="cbi-value-field"><span id="mw-failures">-</span> / <span id="mw-threshold">-</span></td>
+			</tr>
+			<tr class="cbi-section-table-row">
+				<td class="cbi-value-title"><%:Modem reboots%></td>
+				<td class="cbi-value-field"><span id="mw-reboots">-</span> (<%:last%>: <span id="mw-last-reboot">-</span>)</td>
+			</tr>
+			<tr class="cbi-section-table-row">
+				<td class="cbi-value-title"><%:WAN%></td>
+				<td class="cbi-value-field"><span id="mw-wan">-</span></td>
+			</tr>
+			<tr class="cbi-section-table-row">
+				<td class="cbi-value-title"><%:Ping / DNS / HTTP%></td>
+				<td class="cbi-value-field"><span id="mw-checks">-</span></td>
+			</tr>
+			<tr class="cbi-section-table-row">
+				<td class="cbi-value-title"><%:Latency%></td>
+				<td class="cbi-value-field"><span id="mw-latency">-</span> ms</td>
+			</tr>
+			<tr class="cbi-section-table-row">
+				<td class="cbi-value-title"><%:Modem%></td>
+				<td class="cbi-value-field"><span id="mw-model">-</span></td>
+			</tr>
+			<tr class="cbi-section-table-row">
+				<td class="cbi-value-title"><%:Firmware%></td>
+				<td class="cbi-value-field"><span id="mw-fw">-</span></td>
+			</tr>
+			<tr class="cbi-section-table-row">
+				<td class="cbi-value-title"><%:IMEI%></td>
+				<td class="cbi-value-field"><span id="mw-imei">-</span></td>
+			</tr>
+			<tr class="cbi-section-table-row">
+				<td class="cbi-value-title"><%:Operator / network%></td>
+				<td class="cbi-value-field"><span id="mw-operator">-</span> / <span id="mw-network">-</span></td>
+			</tr>
+			<tr class="cbi-section-table-row">
+				<td class="cbi-value-title"><%:Signal%></td>
+				<td class="cbi-value-field">
+					<div class="status-sig-overall">
+						<div><%:Signal strength (CSQ)%>: <span id="mw-signal-strength">-</span></div>
+						<div class="status-sig-bar"><div class="status-sig-fill" id="mw-signal-strength-bar"></div></div>
+						<div style="margin-top:0.4em"><%:LTE quality%>: <span id="mw-lte-quality">-</span></div>
+						<div class="status-sig-bar"><div class="status-sig-fill" id="mw-lte-quality-bar"></div></div>
+					</div>
+					<div class="status-sig-grid">
+						<div class="status-sig-item">
+							<div>CSQ <span id="mw-csq">-</span> (<span id="mw-csq-pct">-</span>)</div>
+							<div class="status-sig-bar"><div class="status-sig-fill" id="mw-csq-bar"></div></div>
+						</div>
+						<div class="status-sig-item">
+							<div>RSSI <span id="mw-rssi">-</span> dBm (<span id="mw-rssi-pct">-</span>)</div>
+							<div class="status-sig-bar"><div class="status-sig-fill" id="mw-rssi-bar"></div></div>
+						</div>
+						<div class="status-sig-item">
+							<div>RSRP <span id="mw-rsrp">-</span> dBm (<span id="mw-rsrp-pct">-</span>)</div>
+							<div class="status-sig-bar"><div class="status-sig-fill" id="mw-rsrp-bar"></div></div>
+						</div>
+						<div class="status-sig-item">
+							<div>SINR <span id="mw-sinr">-</span> dB (<span id="mw-sinr-pct">-</span>)</div>
+							<div class="status-sig-bar"><div class="status-sig-fill" id="mw-sinr-bar"></div></div>
+						</div>
+						<div class="status-sig-item">
+							<div>RSRQ <span id="mw-rsrq">-</span> dB (<span id="mw-rsrq-pct">-</span>)</div>
+							<div class="status-sig-bar"><div class="status-sig-fill" id="mw-rsrq-bar"></div></div>
+						</div>
+					</div>
+					<div style="font-size:0.9em;opacity:0.85;margin-top:0.5em"><%:Band%>: <span id="mw-band">-</span></div>
+				</td>
+			</tr>
+			<tr class="cbi-section-table-row">
+				<td class="cbi-value-title"><%:Modem temperature%></td>
+				<td class="cbi-value-field"><span id="mw-temp">-</span> &deg;C</td>
+			</tr>
+			<tr class="cbi-section-table-row">
+				<td class="cbi-value-title"><%:Modem info updated%></td>
+				<td class="cbi-value-field"><span id="mw-last-info">-</span></td>
+			</tr>
+			<tr class="cbi-section-table-row">
+				<td class="cbi-value-title"><%:Service uptime%></td>
+				<td class="cbi-value-field"><span id="mw-uptime">-</span></td>
+			</tr>
+		</table>
+
+		<div class="cbi-page-actions">
+			<button class="cbi-button cbi-button-action" id="mw-check"><%:Check now%></button>
+			<button class="cbi-button" id="mw-refresh-modem"><%:Refresh modem info%></button>
+			<button class="cbi-button cbi-button-reset" id="mw-reboot"><%:Reboot modem%></button>
+			<button class="cbi-button cbi-button-apply" id="mw-restart"><%:Restart service%></button>
+		</div>
+		<div id="mw-message" style="margin-top:1em"></div>
+	</div>
+
+	<div class="cbi-section">
+		<h3><%:Log%></h3>
+		<pre id="mw-log" style="max-height:420px; overflow:auto; white-space:pre-wrap"></pre>
+		<div class="cbi-page-actions">
+			<button class="cbi-button" id="mw-refresh-log"><%:Refresh log%></button>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+(function() {
+	var mw = {
+		token: '<%=token%>',
+		urls: {
+			status: '<%=luci.dispatcher.build_url("admin", "modem", "modemwatch", "status_json")%>',
+			check: '<%=luci.dispatcher.build_url("admin", "modem", "modemwatch", "check")%>',
+			reboot: '<%=luci.dispatcher.build_url("admin", "modem", "modemwatch", "reboot")%>',
+			restart: '<%=luci.dispatcher.build_url("admin", "modem", "modemwatch", "restart")%>',
+			modem_info: '<%=luci.dispatcher.build_url("admin", "modem", "modemwatch", "modem_info")%>',
+			logs: '<%=luci.dispatcher.build_url("admin", "modem", "modemwatch", "logs")%>'
+		}
+	};
+
+	function setText(id, value) {
+		var el = document.getElementById(id);
+		if (!el) return;
+		if (value === undefined || value === null || value === '') {
+			el.textContent = '-';
+		} else {
+			el.textContent = String(value);
+		}
+	}
+
+	function fmtTime(ts) {
+		ts = parseInt(ts, 10);
+		if (!ts || ts <= 0) return '-';
+		return new Date(ts * 1000).toLocaleString();
+	}
+
+	function fmtBool(v) {
+		if (v === '1') return '<%:yes%>';
+		if (v === '0') return '<%:no%>';
+		return '-';
+	}
+
+	function fmtDuration(sec) {
+		sec = parseInt(sec, 10);
+		if (!sec || sec < 0) return '-';
+		var d = Math.floor(sec / 86400);
+		var h = Math.floor((sec % 86400) / 3600);
+		var m = Math.floor((sec % 3600) / 60);
+		var s = sec % 60;
+		var out = '';
+		if (d) out += d + 'd ';
+		if (h || d) out += h + 'h ';
+		out += m + 'm ' + s + 's';
+		return out;
+	}
+
+	function clampPct(v) {
+		return Math.max(0, Math.min(100, v));
+	}
+
+	function pctCSQ(v) {
+		if (v === '' || v === undefined || v === null) return null;
+		var n = parseFloat(v);
+		return isNaN(n) ? null : clampPct(n / 31 * 100);
+	}
+
+	function pctRSSI(v) {
+		if (v === '' || v === undefined || v === null) return null;
+		var n = parseFloat(v);
+		return isNaN(n) ? null : clampPct((n + 100) / 50 * 100);
+	}
+
+	function pctRSRP(v) {
+		if (v === '' || v === undefined || v === null) return null;
+		var n = parseFloat(v);
+		if (isNaN(n)) return null;
+		if (n >= -80) return 100;
+		if (n <= -120) return 0;
+		return clampPct((n + 120) / 40 * 100);
+	}
+
+	function pctSINR(v) {
+		if (v === '' || v === undefined || v === null) return null;
+		var n = parseFloat(v);
+		if (isNaN(n)) return null;
+		if (n >= 30) return 95;
+		if (n >= 22) return 75 + (n - 22) / 8 * 20;
+		if (n >= 13) return 60 + (n - 13) / 9 * 15;
+		if (n >= -20) return (n + 20) / 33 * 60;
+		return 0;
+	}
+
+	function pctRSRQ(v) {
+		if (v === '' || v === undefined || v === null) return null;
+		var n = parseFloat(v);
+		if (isNaN(n)) return null;
+		if (n >= -5) return 100;
+		if (n <= -25) return 0;
+		return clampPct((n + 25) / 20 * 100);
+	}
+
+	function fmtPct(p) {
+		return (p === null) ? '-' : Math.round(p) + '%';
+	}
+
+	function qualityClass(p) {
+		if (p === null) return '';
+		if (p < 20) return 'level-1';
+		if (p < 40) return 'level-2';
+		if (p < 60) return 'level-3';
+		if (p < 80) return 'level-4';
+		return 'level-5';
+	}
+
+	function setBar(id, pct) {
+		var el = document.getElementById(id);
+		if (!el) return;
+		el.style.width = (pct === null ? 0 : pct) + '%';
+		el.className = 'status-sig-fill ' + qualityClass(pct);
+	}
+
+	function stateLabel(state) {
+		switch (state) {
+			case 'online': return '<%:online%>';
+			case 'offline': return '<%:offline%>';
+			case 'rebooting': return '<%:rebooting%>';
+			case 'checking': return '<%:checking%>';
+			case 'disabled': return '<%:disabled%>';
+			case 'starting': return '<%:starting%>';
+			case 'stopped': return '<%:stopped%>';
+			case 'error': return '<%:error%>';
+			default: return state || '-';
+		}
+	}
+
+	function setState(state) {
+		var el = document.getElementById('mw-state');
+		if (!el) return;
+		el.textContent = stateLabel(state);
+		el.className = 'label';
+		if (state === 'online') {
+			el.className += ' success';
+		} else if (state === 'offline' || state === 'error') {
+			el.className += ' danger';
+		} else if (state === 'rebooting' || state === 'checking') {
+			el.className += ' warning';
+		}
+	}
+
+	function message(text, isError) {
+		var el = document.getElementById('mw-message');
+		if (!el) return;
+		el.textContent = text || '';
+		el.style.color = isError ? '#d9534f' : '';
+	}
+
+	function withQuery(url, q) {
+		return url + (url.indexOf('?') >= 0 ? '&' : '?') + q;
+	}
+
+	var lastStatus = {};
+
+	function loadStatus() {
+		fetch(mw.urls.status, { cache: 'no-store', credentials: 'same-origin' })
+			.then(function(r) {
+				if (!r.ok) throw new Error('HTTP ' + r.status);
+				return r.json();
+			})
+			.then(function(d) {
+				lastStatus = d;
+				setText('mw-service', d.service_running ? '<%:running%>' : '<%:stopped%>');
+				setState(d.state);
+				setText('mw-last-check', fmtTime(d.last_check));
+				setText('mw-last-success', fmtTime(d.last_success));
+				setText('mw-last-failure', fmtTime(d.last_failure));
+				setText('mw-failures', d.failures);
+				setText('mw-threshold', d.failure_threshold);
+				setText('mw-reboots', d.reboots);
+				setText('mw-last-reboot', fmtTime(d.last_reboot));
+				setText('mw-wan', (d.wan_device || '-') + ' ' + (d.wan_ip || '') + ' (' + fmtBool(d.wan_up) + ')');
+				setText('mw-checks', fmtBool(d.ping_ok) + ' / ' + fmtBool(d.dns_ok) + ' / ' + fmtBool(d.http_ok));
+				setText('mw-latency', d.latency_ms);
+				setText('mw-model', d.modem_model);
+				setText('mw-fw', d.modem_fw);
+				setText('mw-imei', d.modem_imei);
+				var op = d.operator || '';
+				if (op && d.operator_country) op += ' (' + d.operator_country + ')';
+				setText('mw-operator', op);
+				setText('mw-network', d.network);
+
+				var csq = d.signal_csq || '';
+				var rssi = d.signal_rssi || '';
+				var rsrp = d.signal_rsrp || '';
+				var sinr = d.signal_sinr || '';
+				var rsrq = d.signal_rsrq || '';
+				var pcsq = pctCSQ(csq);
+				var prssi = pctRSSI(rssi);
+				var prsrp = pctRSRP(rsrp);
+				var psinr = pctSINR(sinr);
+				var prsrq = pctRSRQ(rsrq);
+				var lteValues = [prsrp, prsrq, psinr].filter(function(v) { return v !== null; });
+				var lteQuality = lteValues.length
+					? lteValues.reduce(function(a, b) { return a + b; }, 0) / lteValues.length
+					: null;
+				var signalStrength = (pcsq !== null) ? pcsq : (lteQuality !== null ? lteQuality : prssi);
+
+				setText('mw-signal-strength', signalStrength === null ? '-' : Math.round(signalStrength) + '%');
+				setText('mw-lte-quality', lteQuality === null ? '-' : Math.round(lteQuality) + '%');
+				setText('mw-csq', csq);
+				setText('mw-csq-pct', fmtPct(pcsq));
+				setText('mw-rssi', rssi);
+				setText('mw-rssi-pct', fmtPct(prssi));
+				setText('mw-rsrp', rsrp);
+				setText('mw-rsrp-pct', fmtPct(prsrp));
+				setText('mw-sinr', sinr);
+				setText('mw-sinr-pct', fmtPct(psinr));
+				setText('mw-rsrq', rsrq);
+				setText('mw-rsrq-pct', fmtPct(prsrq));
+				setText('mw-band', d.signal_band ? 'B' + d.signal_band : '');
+
+				setBar('mw-signal-strength-bar', signalStrength);
+				setBar('mw-lte-quality-bar', lteQuality);
+				setBar('mw-csq-bar', pcsq);
+				setBar('mw-rssi-bar', prssi);
+				setBar('mw-rsrp-bar', prsrp);
+				setBar('mw-sinr-bar', psinr);
+				setBar('mw-rsrq-bar', prsrq);
+
+				setText('mw-temp', d.modem_temp);
+				setText('mw-last-info', fmtTime(d.last_info));
+				setText('mw-uptime', fmtDuration(d.service_uptime));
+			})
+			.catch(function(e) {
+				setState('error');
+				message('<%:Failed to read status%>: ' + e.message, true);
+			});
+	}
+
+	function loadLogs() {
+		fetch(withQuery(mw.urls.logs, 'lines=200'), { cache: 'no-store', credentials: 'same-origin' })
+			.then(function(r) {
+				if (!r.ok) throw new Error('HTTP ' + r.status);
+				return r.text();
+			})
+			.then(function(text) {
+				var el = document.getElementById('mw-log');
+				if (!el) return;
+				el.textContent = text || '<%:(empty)%>';
+				el.scrollTop = el.scrollHeight;
+			})
+			.catch(function(e) {
+				var el = document.getElementById('mw-log');
+				if (el) el.textContent = '<%:Failed to read log%>: ' + e.message;
+			});
+	}
+
+	var modemInfoLoading = false;
+
+	function loadModemInfo() {
+		if (modemInfoLoading) return;
+		modemInfoLoading = true;
+		var btn = document.getElementById('mw-refresh-modem');
+		if (btn) btn.disabled = true;
+		message('<%:Reading modem data%>...', false);
+		post(mw.urls.modem_info)
+			.then(function(d) {
+				message(d.message || '<%:Modem info updated%>', false);
+				loadStatus();
+			})
+			.catch(function(e) {
+				message('<%:Failed to read modem data%>: ' + e.message, true);
+			})
+			.then(function() {
+				modemInfoLoading = false;
+				if (btn) btn.disabled = false;
+			});
+	}
+
+	function post(url, data) {
+		var body = 'token=' + encodeURIComponent(mw.token);
+		if (data) {
+			for (var k in data) {
+				if (Object.prototype.hasOwnProperty.call(data, k)) {
+					body += '&' + encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
+				}
+			}
+		}
+		return fetch(url, {
+			method: 'POST',
+			cache: 'no-store',
+			credentials: 'same-origin',
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			body: body
+		}).then(function(r) {
+			if (!r.ok) throw new Error('HTTP ' + r.status);
+			return r.json();
+		});
+	}
+
+	var btnCheck = document.getElementById('mw-check');
+	if (btnCheck) {
+		btnCheck.onclick = function() {
+			btnCheck.disabled = true;
+			message('<%:Check started%>...', false);
+			post(mw.urls.check)
+				.then(function(d) {
+					message(d.message || '<%:Check started%>', false);
+					setTimeout(loadStatus, 1500);
+				})
+				.catch(function(e) { message('<%:Check failed%>: ' + e.message, true); })
+				.then(function() { btnCheck.disabled = false; });
+		};
+	}
+
+	var btnReboot = document.getElementById('mw-reboot');
+	if (btnReboot) {
+		btnReboot.onclick = function() {
+			var wait = parseInt(lastStatus.reboot_wait, 10) || 45;
+			if (!confirm('<%:Reboot the modem now? Internet will be down for about%> ' + wait + ' <%:seconds.%>')) return;
+			btnReboot.disabled = true;
+			message('<%:Modem reboot started%>...', false);
+			post(mw.urls.reboot)
+				.then(function(d) {
+					message(d.message || '<%:Modem reboot started%>', false);
+					setTimeout(loadStatus, 2000);
+				})
+				.catch(function(e) { message('<%:Reboot failed%>: ' + e.message, true); })
+				.then(function() { btnReboot.disabled = false; });
+		};
+	}
+
+	var btnRestart = document.getElementById('mw-restart');
+	if (btnRestart) {
+		btnRestart.onclick = function() {
+			if (!confirm('<%:Restart the modemwatch service?%>')) return;
+			btnRestart.disabled = true;
+			post(mw.urls.restart)
+				.then(function(d) {
+					message(d.message || '<%:Service restarted%>', false);
+					setTimeout(loadStatus, 2000);
+				})
+				.catch(function(e) { message('<%:Restart failed%>: ' + e.message, true); })
+				.then(function() { btnRestart.disabled = false; });
+		};
+	}
+
+	var btnModemInfo = document.getElementById('mw-refresh-modem');
+	if (btnModemInfo) {
+		btnModemInfo.onclick = loadModemInfo;
+	}
+
+	var btnLog = document.getElementById('mw-refresh-log');
+	if (btnLog) {
+		btnLog.onclick = loadLogs;
+	}
+
+	loadStatus();
+	loadLogs();
+	loadModemInfo();
+	setInterval(loadStatus, 5000);
+	setInterval(loadLogs, 15000);
+})();
+</script>
+
+<%+footer%>

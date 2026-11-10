@@ -1,0 +1,711 @@
+<%+header%>
+
+<h2 name="content"><%:Modem settings%></h2>
+
+<style>
+	.ms-warning {
+		border-left: 4px solid #e55;
+		background: rgba(229,85,85,0.08);
+		padding: 0.75em 1em;
+		margin-bottom: 1em;
+	}
+	.ms-expert {
+		border-left: 4px solid #e9a;
+		background: rgba(233,154,0,0.08);
+		padding: 0.75em 1em;
+		margin-bottom: 1em;
+	}
+	.ms-band-grid {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 6px;
+		margin: 0.5em 0;
+	}
+	.ms-band-tile {
+		padding: 0.35em 0.6em;
+		border-radius: 4px;
+		border: 1px solid rgba(128,128,128,0.5);
+		cursor: pointer;
+		user-select: none;
+		font-weight: bold;
+	}
+	.ms-band-tile.on {
+		background: #34c759;
+		color: #fff;
+		border-color: #34c759;
+	}
+	.ms-band-tile.off {
+		background: rgba(128,128,128,0.15);
+	}
+	.ms-usb-select option:disabled {
+		color: #999;
+	}
+	.ms-section {
+		margin-bottom: 1.5em;
+	}
+	.ms-wrap {
+		padding: 1rem 1.25rem;
+	}
+	.ms-row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75em;
+		align-items: center;
+		margin-bottom: 0.6em;
+	}
+	.ms-row label {
+		min-width: 11em;
+	}
+	.ms-row input[type="text"],
+	.ms-row input[type="password"],
+	.ms-row select {
+		min-width: 16em;
+	}
+	.ms-output {
+		background: rgba(0,0,0,0.06);
+		border: 1px solid rgba(128,128,128,0.3);
+		border-radius: 4px;
+		padding: 0.75em;
+		max-height: 320px;
+		overflow: auto;
+		white-space: pre-wrap;
+		font-family: monospace;
+		font-size: 0.9em;
+	}
+	.ms-info-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+		gap: 0.5em 1em;
+	}
+	.ms-info-item {
+		font-size: 0.92em;
+	}
+	.ms-info-item label {
+		opacity: 0.75;
+		margin-right: 0.35em;
+	}
+	.ms-readonly {
+		font-weight: bold;
+	}
+</style>
+
+<div class="cbi-map">
+	<div class="cbi-section ms-wrap">
+		<div class="ms-warning">
+			<strong><%:Warning%>:</strong>
+			<%:AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan.%>
+		</div>
+
+		<div class="ms-expert">
+			<label><input type="checkbox" id="ms-expert" /> <%:Expert mode — allow changing USB mode and NAT%></label>
+			<div style="font-size:0.9em;opacity:0.8;margin-top:0.35em">
+				<%:Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan.%>
+			</div>
+		</div>
+
+		<div class="ms-row">
+			<label><%:Selected AT port%></label>
+			<span id="ms-port">—</span>
+		</div>
+		<div class="ms-row" style="font-size:0.9em;opacity:0.8">
+			<%:For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands.%>
+		</div>
+
+		<div class="ms-section">
+			<h3><%:Current configuration%></h3>
+			<button class="cbi-button cbi-button-action" id="ms-read"><%:Read current configuration%></button>
+			<pre class="ms-output" id="ms-read-output"></pre>
+		</div>
+
+		<div class="ms-section">
+			<h3><%:Modem information%></h3>
+			<div class="ms-info-grid">
+				<div class="ms-info-item"><label><%:Model%>:</label><span id="ms-info-model">—</span></div>
+				<div class="ms-info-item"><label><%:Firmware%>:</label><span id="ms-info-fw">—</span></div>
+				<div class="ms-info-item"><label>IMEI:</label><span id="ms-info-imei">—</span></div>
+				<div class="ms-info-item"><label>ICCID:</label><span id="ms-info-iccid">—</span></div>
+				<div class="ms-info-item"><label><%:SIM status%>:</label><span id="ms-info-sim">—</span></div>
+				<div class="ms-info-item"><label><%:Operator%>:</label><span id="ms-info-operator">—</span></div>
+				<div class="ms-info-item"><label><%:Network%>:</label><span id="ms-info-network">—</span></div>
+				<div class="ms-info-item"><label><%:Band%>:</label><span id="ms-info-band">—</span></div>
+				<div class="ms-info-item"><label><%:Temperature%>:</label><span id="ms-info-temp">—</span></div>
+				<div class="ms-info-item"><label><%:Signal%>:</label><span id="ms-info-signal">—</span></div>
+			</div>
+		</div>
+
+		<div class="ms-section">
+			<h3><%:Access Point Name (APN)%></h3>
+			<div class="ms-row">
+				<label for="ms-apn"><%:Access Point Name (APN)%></label>
+				<input type="text" id="ms-apn" value="" />
+			</div>
+			<div class="ms-row">
+				<label for="ms-apn-user"><%:Username%></label>
+				<input type="text" id="ms-apn-user" value="" />
+			</div>
+			<div class="ms-row">
+				<label for="ms-apn-pass"><%:Password%></label>
+				<input type="password" id="ms-apn-pass" value="" />
+			</div>
+			<div class="ms-row">
+				<label for="ms-apn-auth"><%:Authentication%></label>
+				<select id="ms-apn-auth">
+					<option value="0"><%:None%></option>
+					<option value="1">PAP</option>
+					<option value="2">CHAP</option>
+				</select>
+			</div>
+			<div class="ms-row">
+				<label for="ms-pdp"><%:PDP type%></label>
+				<select id="ms-pdp">
+					<option value="1">IP</option>
+					<option value="2">IPv6</option>
+					<option value="3">IPv4v6</option>
+				</select>
+			</div>
+			<div class="ms-row">
+				<button class="cbi-button" id="ms-apn-read"><%:Read APN%></button>
+				<button class="cbi-button cbi-button-apply" id="ms-apn-apply"><%:Apply APN%></button>
+			</div>
+			<pre class="ms-output" id="ms-apn-output"></pre>
+		</div>
+
+		<div class="ms-section">
+			<h3><%:Network mode%></h3>
+			<div class="ms-row">
+				<label for="ms-mode"><%:Mode%></label>
+				<select id="ms-mode">
+					<option value="0"><%:Automatic%></option>
+					<option value="1"><%:GSM only%></option>
+					<option value="2"><%:WCDMA only%></option>
+					<option value="3"><%:LTE only%></option>
+				</select>
+			</div>
+			<div class="ms-row">
+				<button class="cbi-button" id="ms-mode-read"><%:Read mode%></button>
+				<button class="cbi-button cbi-button-apply" id="ms-mode-apply"><%:Apply mode%></button>
+			</div>
+			<pre class="ms-output" id="ms-mode-output"></pre>
+		</div>
+
+		<div class="ms-section">
+			<h3><%:Band configuration%></h3>
+			<div class="ms-row"><label><%:Modem%></label><span id="ms-band-modem">—</span></div>
+			<div class="ms-band-grid" id="ms-band-grid"></div>
+			<div class="ms-row">
+				<button class="cbi-button" id="ms-band-read"><%:Read bands%></button>
+				<button class="cbi-button" id="ms-band-all"><%:Select all%></button>
+				<button class="cbi-button cbi-button-reset" id="ms-band-default"><%:Restore default%></button>
+				<button class="cbi-button cbi-button-apply" id="ms-band-apply"><%:Apply bands%></button>
+			</div>
+			<div class="ms-row" style="font-size:0.9em;opacity:0.8">
+				<%:Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection.%>
+			</div>
+			<pre class="ms-output" id="ms-band-output"></pre>
+		</div>
+
+		<div class="ms-section">
+			<h3><%:USB mode%></h3>
+			<div class="ms-row">
+				<label><%:Current value%></label>
+				<span class="ms-readonly" id="ms-usb-mode">—</span>
+			</div>
+			<div class="ms-row">
+				<label for="ms-usb-select"><%:New value%></label>
+				<select id="ms-usb-select" class="ms-usb-select">
+					<option value="0" data-label="0 — <%:RMNET (QMI)%>" disabled>0 — <%:RMNET (QMI)%> (<%:not supported%>)</option>
+					<option value="1" data-label="1 — <%:ECM (CDC Ethernet)%>">1 — <%:ECM (CDC Ethernet)%></option>
+					<option value="2" data-label="2 — <%:MBIM%>" disabled>2 — <%:MBIM%> (<%:not supported%>)</option>
+					<option value="3" data-label="3 — <%:RNDIS%>">3 — <%:RNDIS%></option>
+				</select>
+				<button class="cbi-button cbi-button-apply" id="ms-usb-apply" disabled><%:Apply USB mode%></button>
+				<button class="cbi-button" id="ms-usb-read"><%:Read USB mode%></button>
+			</div>
+			<div class="ms-row" style="font-size:0.9em;opacity:0.8">
+				<%:Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem.%>
+			</div>
+			<pre class="ms-output" id="ms-usb-output"></pre>
+		</div>
+
+		<div class="ms-section">
+			<h3>NAT</h3>
+			<div class="ms-row">
+				<label><%:Current value%></label>
+				<span class="ms-readonly" id="ms-nat">—</span>
+			</div>
+			<div class="ms-row">
+				<label for="ms-nat-select"><%:New value%></label>
+				<select id="ms-nat-select">
+					<option value="0">0</option>
+					<option value="1">1</option>
+				</select>
+				<button class="cbi-button cbi-button-apply" id="ms-nat-apply" disabled><%:Apply NAT%></button>
+				<button class="cbi-button" id="ms-nat-read"><%:Read NAT%></button>
+			</div>
+			<pre class="ms-output" id="ms-nat-output"></pre>
+		</div>
+
+		<div class="ms-section">
+			<h3><%:Raw AT command%></h3>
+			<div class="ms-row">
+				<label for="ms-raw"><%:AT command%></label>
+				<input type="text" id="ms-raw" value="AT+CSQ" style="min-width:24em" />
+				<button class="cbi-button cbi-button-action" id="ms-raw-send"><%:Send%></button>
+			</div>
+			<pre class="ms-output" id="ms-raw-output"></pre>
+		</div>
+
+		<div id="ms-message" style="margin-top:0.75em"></div>
+	</div>
+</div>
+
+<script type="text/javascript">
+(function() {
+	var ms = {
+		token: '<%=token%>',
+		expert: false,
+		usbSupported: [1, 3],
+		urls: {
+			status: '<%=luci.dispatcher.build_url("admin", "modem", "modemwatch", "status_json")%>',
+			read: '<%=luci.dispatcher.build_url("admin", "modem", "modemwatch", "read_config")%>',
+			at: '<%=luci.dispatcher.build_url("admin", "modem", "modemwatch", "at_cmd")%>',
+			band_info: '<%=luci.dispatcher.build_url("admin", "modem", "modemwatch", "band_info")%>',
+			band_set: '<%=luci.dispatcher.build_url("admin", "modem", "modemwatch", "band_set")%>'
+		}
+	};
+
+	function message(text, isError) {
+		var el = document.getElementById('ms-message');
+		if (!el) return;
+		el.textContent = text || '';
+		el.style.color = isError ? '#d9534f' : '';
+	}
+
+	function show(id, text) {
+		var el = document.getElementById(id);
+		if (el) el.textContent = text || '';
+	}
+
+	function setVal(id, value) {
+		var el = document.getElementById(id);
+		if (el) el.value = (value === undefined || value === null) ? '' : String(value);
+	}
+
+	function usbModeLabel(value) {
+		switch (String(value)) {
+			case '0': return '<%:RMNET (QMI)%>';
+			case '1': return '<%:ECM (CDC Ethernet)%>';
+			case '2': return '<%:MBIM%>';
+			case '3': return '<%:RNDIS%>';
+			default: return String(value);
+		}
+	}
+
+	function parseUsbModes(out) {
+		var m = out.match(/\+QCFG:\s*"usbnet"\s*,\s*\(([^)]*)\)/);
+		if (!m) return false;
+		var vals = m[1].split(',').map(function(x) {
+			return parseInt(x.replace(/[^0-9]/g, ''), 10);
+		}).filter(function(x) {
+			return !isNaN(x);
+		});
+		if (vals.length) {
+			ms.usbSupported = vals;
+			return true;
+		}
+		return false;
+	}
+
+	function applyUsbSupport() {
+		var sel = document.getElementById('ms-usb-select');
+		if (!sel) return;
+		Array.prototype.forEach.call(sel.options, function(opt) {
+			var v = parseInt(opt.value, 10);
+			var supported = ms.usbSupported.indexOf(v) >= 0;
+			opt.disabled = !supported;
+			var base = opt.getAttribute('data-label') || opt.textContent;
+			opt.textContent = base + (supported ? '' : ' (<%:not supported%>)');
+		});
+	}
+
+	function loadUsbSupport() {
+		at('AT+QCFG=?').then(function(d) {
+			parseUsbModes(d.output || '');
+			applyUsbSupport();
+		}).catch(function() {
+			applyUsbSupport();
+		});
+	}
+
+	function post(url, data) {
+		var body = 'token=' + encodeURIComponent(ms.token);
+		if (data) {
+			for (var k in data) {
+				if (Object.prototype.hasOwnProperty.call(data, k)) {
+					body += '&' + encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
+				}
+			}
+		}
+		return fetch(url, {
+			method: 'POST',
+			cache: 'no-store',
+			credentials: 'same-origin',
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			body: body
+		}).then(function(r) {
+			if (!r.ok) throw new Error('HTTP ' + r.status);
+			return r.json();
+		});
+	}
+
+	function at(cmd) {
+		return post(ms.urls.at, { cmd: cmd });
+	}
+
+	function runAt(cmd, outputId) {
+		message('<%:Sending%>...', false);
+		return at(cmd).then(function(d) {
+			show(outputId, d.output || '');
+			message('', false);
+			return d;
+		}).catch(function(e) {
+			message('<%:AT command failed%>: ' + e.message, true);
+		});
+	}
+
+	function parseConfig(out) {
+		var m;
+
+		m = out.match(/\+QICSGP:\s*\d+\s*,\s*"([^"]*)"\s*,\s*"([^"]*)"\s*,\s*"([^"]*)"\s*,\s*(\d+)/);
+		if (m) {
+			setVal('ms-apn', m[1]);
+			setVal('ms-apn-user', m[2]);
+			setVal('ms-apn-pass', m[3]);
+			setVal('ms-apn-auth', m[4]);
+		}
+
+		m = out.match(/\+CGDCONT:\s*1\s*,\s*"([^"]+)"/);
+		if (m) {
+			setVal('ms-pdp', m[1] === 'IPV4V6' ? '3' : (m[1] === 'IPV6' ? '2' : '1'));
+		}
+
+		m = out.match(/\+QCFG:\s*"nwscanmode"\s*,\s*(\d+)/);
+		if (m) setVal('ms-mode', m[1]);
+
+		m = out.match(/\+QCFG:\s*"usbnet"\s*,\s*(\d+)/);
+		if (m) {
+			show('ms-usb-mode', m[1] + ' — ' + usbModeLabel(m[1]));
+			setVal('ms-usb-select', m[1]);
+		}
+
+		m = out.match(/\+QCFG:\s*"nat"\s*,\s*(\d+)/);
+		if (m) {
+			show('ms-nat', m[1]);
+			setVal('ms-nat-select', m[1]);
+		}
+
+		m = out.match(/Quectel\r?\n([^\r\n]+)\r?\nRevision:\s*([^\r\n]+)/);
+		if (m) {
+			show('ms-info-model', m[1]);
+			show('ms-info-fw', m[2]);
+		}
+
+		m = out.match(/(?:^|\n)(\d{15})(?:\r?\n|$)/);
+		if (m) show('ms-info-imei', m[1]);
+
+		m = out.match(/\+QCCID:\s*([0-9A-Fa-f]+)/);
+		if (m) show('ms-info-iccid', m[1]);
+
+		m = out.match(/\+CPIN:\s*([^\r\n]+)/);
+		if (m) show('ms-info-sim', m[1]);
+
+		m = out.match(/\+COPS:\s*\d+\s*,\s*\d+\s*,\s*"([^"]+)"/);
+		if (m) show('ms-info-operator', m[1]);
+
+		m = out.match(/\+QNWINFO:\s*"([^"]+)"\s*,\s*"([^"]+)"\s*,\s*"([^"]+)"\s*,\s*(\d+)/);
+		if (m) {
+			show('ms-info-network', m[1] + ' / ' + m[3]);
+			show('ms-info-band', m[3]);
+		}
+
+		m = out.match(/\+QTEMP:\s*(\d+)/);
+		if (m) show('ms-info-temp', m[1] + ' °C');
+
+		var csq = out.match(/\+CSQ:\s*(\d+)/);
+		var qcsq = out.match(/\+QCSQ:\s*"[^"]*"\s*,\s*(-?\d+)\s*,\s*(-?\d+)\s*,\s*(-?\d+)\s*,\s*(-?\d+)/);
+		if (csq || qcsq) {
+			var sig = [];
+			if (csq) sig.push('CSQ ' + csq[1]);
+			if (qcsq) {
+				var rsrp = qcsq[2];
+				var sinr = parseFloat(qcsq[3]);
+				if (sinr > 50) sinr = sinr / 10;
+				sig.push('RSRP ' + rsrp + ' dBm');
+				sig.push('SINR ' + sinr.toFixed(1) + ' dB');
+				sig.push('RSRQ ' + qcsq[4] + ' dB');
+			}
+			show('ms-info-signal', sig.join(', '));
+		}
+	}
+
+	function readApn() {
+		message('<%:Reading APN%>...', false);
+		return at('AT+QICSGP=1').then(function(d) {
+			show('ms-apn-output', d.output || '');
+			parseConfig(d.output || '');
+			message('', false);
+			return d;
+		}).catch(function(e) {
+			message('<%:Failed to read APN%>: ' + e.message, true);
+		});
+	}
+
+	function loadPort() {
+		fetch(ms.urls.status, { cache: 'no-store', credentials: 'same-origin' })
+			.then(function(r) { return r.json(); })
+			.then(function(d) {
+				if (d.config && d.config.at_port) show('ms-port', d.config.at_port);
+			})
+			.catch(function() {});
+	}
+
+	var btnRead = document.getElementById('ms-read');
+	if (btnRead) {
+		btnRead.onclick = function() {
+			btnRead.disabled = true;
+			message('<%:Reading settings%>...', false);
+			post(ms.urls.read).then(function(d) {
+				show('ms-read-output', d.output || '');
+				parseConfig(d.output || '');
+				loadBands();
+				message('<%:Settings read%>', false);
+			}).catch(function(e) {
+				message('<%:Failed to read settings%>: ' + e.message, true);
+			}).then(function() {
+				btnRead.disabled = false;
+			});
+		};
+	}
+
+	var btnApnRead = document.getElementById('ms-apn-read');
+	if (btnApnRead) btnApnRead.onclick = readApn;
+
+	var btnApnApply = document.getElementById('ms-apn-apply');
+	if (btnApnApply) {
+		btnApnApply.onclick = function() {
+			var apn = document.getElementById('ms-apn').value.trim();
+			var user = document.getElementById('ms-apn-user').value.trim();
+			var pass = document.getElementById('ms-apn-pass').value.trim();
+			var auth = document.getElementById('ms-apn-auth').value;
+			var pdp = document.getElementById('ms-pdp').value;
+			var pdpName = pdp === '3' ? 'IPV4V6' : (pdp === '2' ? 'IPV6' : 'IP');
+			if (!/^[A-Za-z0-9._-]*$/.test(apn) || !/^[A-Za-z0-9._-]*$/.test(user) || !/^[A-Za-z0-9._-]*$/.test(pass)) {
+				message('<%:APN, username and password may contain only letters, digits, dot, hyphen and underscore.%>', true);
+				return;
+			}
+			if (!confirm('<%:Apply APN settings? The connection may drop.%>')) return;
+			btnApnApply.disabled = true;
+			message('<%:Applying APN%>...', false);
+			at('AT+QICSGP=1,' + pdp + ',"' + apn + '","' + user + '","' + pass + '",' + auth)
+				.then(function(d) {
+					show('ms-apn-output', d.output || '');
+					return at('AT+CGDCONT=1,"' + pdpName + '","' + apn + '"');
+				})
+				.then(function(d) {
+					var el = document.getElementById('ms-apn-output');
+					if (el) el.textContent += '\n' + (d.output || '');
+					message('<%:APN applied. Reconnect or reboot the modem if needed.%>', false);
+				})
+				.catch(function(e) {
+					message('<%:Failed to apply APN%>: ' + e.message, true);
+				})
+				.then(function() {
+					btnApnApply.disabled = false;
+				});
+		};
+	}
+
+	var btnModeRead = document.getElementById('ms-mode-read');
+	if (btnModeRead) {
+		btnModeRead.onclick = function() {
+			runAt('AT+QCFG="nwscanmode"', 'ms-mode-output');
+		};
+	}
+
+	var btnModeApply = document.getElementById('ms-mode-apply');
+	if (btnModeApply) {
+		btnModeApply.onclick = function() {
+			var mode = document.getElementById('ms-mode').value;
+			if (!confirm('<%:Apply network mode? The connection may drop.%>')) return;
+			runAt('AT+QCFG="nwscanmode",' + mode, 'ms-mode-output');
+		};
+	}
+
+	var bandState = { supported: [], selected: [] };
+
+	function renderBands() {
+		var grid = document.getElementById('ms-band-grid');
+		if (!grid) return;
+		grid.textContent = '';
+		bandState.supported.forEach(function(item) {
+			var b = item.band;
+			var tile = document.createElement('div');
+			var on = bandState.selected.indexOf(b) >= 0;
+			tile.className = 'ms-band-tile ' + (on ? 'on' : 'off');
+			tile.textContent = 'B' + b;
+			tile.title = item.txt || ('B' + b);
+			tile.onclick = function() {
+				var i = bandState.selected.indexOf(b);
+				if (i >= 0) bandState.selected.splice(i, 1);
+				else bandState.selected.push(b);
+				renderBands();
+			};
+			grid.appendChild(tile);
+		});
+	}
+
+	function loadBands() {
+		message('<%:Reading bands%>...', false);
+		fetch(ms.urls.band_info, { cache: 'no-store', credentials: 'same-origin' })
+			.then(function(r) {
+				if (!r.ok) throw new Error('HTTP ' + r.status);
+				return r.json();
+			})
+			.then(function(d) {
+				if (!d.ok) {
+					message(d.error || '<%:modemband not available%>', true);
+					return;
+				}
+				bandState.supported = d.supported || [];
+				bandState.selected = (d.enabled || []).slice();
+				show('ms-band-modem', d.modem || '—');
+				renderBands();
+				message('', false);
+			})
+			.catch(function(e) {
+				message('<%:Failed to read bands%>: ' + e.message, true);
+			})
+			.then(function() {
+				loadUsbSupport();
+			});
+	}
+
+	function selectAllBands() {
+		bandState.selected = bandState.supported.map(function(x) { return x.band; });
+		renderBands();
+	}
+
+	function applyBands(bands, isDefault) {
+		var payload = isDefault ? 'default' : bands.join(' ');
+		if (!isDefault && bands.length === 0) {
+			message('<%:No bands selected%>', true);
+			return;
+		}
+		if (!confirm(isDefault ? '<%:Restore default bands?%>' : '<%:Apply selected bands? The connection may drop.%>')) return;
+		message('<%:Applying bands%>...', false);
+		post(ms.urls.band_set, { bands: payload }).then(function(d) {
+			show('ms-band-output', d.output || '');
+			message(d.message || '<%:Band settings sent%>', false);
+			loadBands();
+		}).catch(function(e) {
+			message('<%:Failed to apply bands%>: ' + e.message, true);
+		});
+	}
+
+	var btnBandRead = document.getElementById('ms-band-read');
+	if (btnBandRead) btnBandRead.onclick = loadBands;
+	var btnBandAll = document.getElementById('ms-band-all');
+	if (btnBandAll) btnBandAll.onclick = selectAllBands;
+	var btnBandDefault = document.getElementById('ms-band-default');
+	if (btnBandDefault) btnBandDefault.onclick = function() { applyBands([], true); };
+	var btnBandApply = document.getElementById('ms-band-apply');
+	if (btnBandApply) btnBandApply.onclick = function() { applyBands(bandState.selected, false); };
+
+	var btnUsbRead = document.getElementById('ms-usb-read');
+	if (btnUsbRead) {
+		btnUsbRead.onclick = function() {
+			at('AT+QCFG="usbnet"').then(function(d) {
+				show('ms-usb-output', d.output || '');
+				var m = (d.output || '').match(/\+QCFG:\s*"usbnet"\s*,\s*(\d+)/);
+				if (m) {
+					show('ms-usb-mode', m[1] + ' — ' + usbModeLabel(m[1]));
+					setVal('ms-usb-select', m[1]);
+				}
+				message('', false);
+			}).catch(function(e) {
+				message('<%:AT command failed%>: ' + e.message, true);
+			});
+		};
+	}
+
+	var btnNatRead = document.getElementById('ms-nat-read');
+	if (btnNatRead) {
+		btnNatRead.onclick = function() {
+			at('AT+QCFG="nat"').then(function(d) {
+				show('ms-nat-output', d.output || '');
+				var m = (d.output || '').match(/\+QCFG:\s*"nat"\s*,\s*(\d+)/);
+				if (m) {
+					show('ms-nat', m[1]);
+					setVal('ms-nat-select', m[1]);
+				}
+				message('', false);
+			}).catch(function(e) {
+				message('<%:AT command failed%>: ' + e.message, true);
+			});
+		};
+	}
+
+	var btnRawSend = document.getElementById('ms-raw-send');
+	if (btnRawSend) {
+		btnRawSend.onclick = function() {
+			var cmd = document.getElementById('ms-raw').value.trim();
+			if (!cmd) return;
+			if (!ms.expert && /AT\+QCFG\s*=\s*"usbnet"\s*,/i.test(cmd)) {
+				message('<%:USB mode is read-only in this UI.%>', true);
+				return;
+			}
+			runAt(cmd, 'ms-raw-output');
+		};
+	}
+
+	var expert = document.getElementById('ms-expert');
+	function setExpert(on) {
+		ms.expert = !!on;
+		var usb = document.getElementById('ms-usb-apply');
+		var nat = document.getElementById('ms-nat-apply');
+		if (usb) usb.disabled = !ms.expert;
+		if (nat) nat.disabled = !ms.expert;
+	}
+	if (expert) {
+		expert.onchange = function() { setExpert(expert.checked); };
+		setExpert(expert.checked);
+	}
+
+	var btnUsbApply = document.getElementById('ms-usb-apply');
+	if (btnUsbApply) {
+		btnUsbApply.onclick = function() {
+			var val = document.getElementById('ms-usb-select').value;
+			if (ms.usbSupported.indexOf(parseInt(val, 10)) < 0) {
+				message('<%:This USB mode is not supported by the modem firmware.%>', true);
+				return;
+			}
+			if (!confirm('<%:Change USB mode? The modem will re-enumerate and the connection may drop. Continue?%>')) return;
+			runAt('AT+QCFG="usbnet",' + val, 'ms-usb-output');
+		};
+	}
+
+	var btnNatApply = document.getElementById('ms-nat-apply');
+	if (btnNatApply) {
+		btnNatApply.onclick = function() {
+			var val = document.getElementById('ms-nat-select').value;
+			if (!confirm('<%:Change NAT mode? The connection may drop.%>')) return;
+			runAt('AT+QCFG="nat",' + val, 'ms-nat-output');
+		};
+	}
+
+	loadPort();
+	loadBands();
+})();
+</script>
+
+<%+footer%>

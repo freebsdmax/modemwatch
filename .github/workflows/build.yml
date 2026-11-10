@@ -1,0 +1,107 @@
+name: Build OpenWrt packages
+
+on:
+  push:
+    branches: [ main ]
+    tags: [ 'v*' ]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: ${{ matrix.version }} / all / ${{ matrix.format }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # arch only selects the SDK target. The packages themselves use
+          # PKGARCH:=all, so the same .ipk/.apk works on ARM, MIPS and x86.
+          - version: "23.05.6"
+            arch: "arm_cortex-a7_neon-vfpv4"
+            format: "ipk"
+          - version: "24.10.8"
+            arch: "arm_cortex-a7_neon-vfpv4"
+            format: "ipk"
+          - version: "25.12.6"
+            arch: "arm_cortex-a7_neon-vfpv4"
+            format: "apk"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Build packages with OpenWrt SDK
+        uses: openwrt/gh-action-sdk@main
+        env:
+          ARCH: ${{ matrix.arch }}-${{ matrix.version }}
+          FEEDNAME: modemwatch
+          PACKAGES: modemwatch luci-app-modemwatch luci-i18n-modemwatch-uk
+          NO_SHFMT_CHECK: 1
+
+      - name: Upload modemwatch package
+        uses: actions/upload-artifact@v4
+        with:
+          name: modemwatch-${{ matrix.version }}-all
+          path: bin/packages/**/modemwatch*.${{ matrix.format }}
+          if-no-files-found: error
+
+      - name: Upload LuCI app package
+        uses: actions/upload-artifact@v4
+        with:
+          name: luci-app-modemwatch-${{ matrix.version }}-all
+          path: bin/packages/**/luci-app-modemwatch*.${{ matrix.format }}
+          if-no-files-found: error
+
+      - name: Upload Ukrainian translation package
+        uses: actions/upload-artifact@v4
+        with:
+          name: luci-i18n-modemwatch-uk-${{ matrix.version }}-all
+          path: bin/packages/**/luci-i18n-modemwatch-uk*.${{ matrix.format }}
+          if-no-files-found: error
+
+      - name: Upload version bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: modemwatch-${{ matrix.version }}-all-bundle
+          path: |
+            bin/packages/**/modemwatch*.${{ matrix.format }}
+            bin/packages/**/luci-app-modemwatch*.${{ matrix.format }}
+            bin/packages/**/luci-i18n-modemwatch-uk*.${{ matrix.format }}
+          if-no-files-found: error
+
+  release:
+    name: Publish release assets
+    if: startsWith(github.ref, 'refs/tags/')
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download built packages
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+
+      - name: Prepare versioned release assets
+        run: |
+          chmod +x scripts/release-assets.sh
+          scripts/release-assets.sh artifacts release
+
+      - name: Create or update GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: modemwatch ${{ github.ref_name }}
+          body: |
+            OpenWrt packages for 23.05.6, 24.10.8 and 25.12.6.
+
+            Each package filename includes the OpenWrt version.
+            A combined `modemwatch-<version>-all.tar.gz` archive is provided
+            for every version.
+          files: release/*
