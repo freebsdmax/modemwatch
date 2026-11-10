@@ -14,6 +14,11 @@ trap cleanup EXIT INT TERM
 rm -rf "$OUT_DIR"
 mkdir -p "$OUT_DIR"
 
+known_pkgs="modemwatch luci-app-modemwatch"
+for dir in i18n/luci-i18n-modemwatch-*; do
+	[ -d "$dir" ] && known_pkgs="$known_pkgs $(basename "$dir")"
+done
+
 for ver in $VERSIONS; do
 	case "$ver" in
 		25.12.6) ext="apk" ;;
@@ -34,8 +39,22 @@ for ver in $VERSIONS; do
 
 	while IFS= read -r src; do
 		base=$(basename "$src")
-		pkg="${base%%_*}"
-		suffix="${base#*_}"
+		pkg=""
+		for known in $known_pkgs; do
+			case "$base" in
+				"${known}_"*|"${known}-"*)
+					pkg="$known"
+					break
+					;;
+			esac
+		done
+		if [ -z "$pkg" ]; then
+			echo "ERROR: cannot determine package name for ${base}" >&2
+			exit 1
+		fi
+		suffix="${base#"$pkg"}"
+		suffix="${suffix#_}"
+		suffix="${suffix#-}"
 		out="${pkg}_${ver}_${suffix}"
 		cp "$src" "$bundle_dir/$out"
 		bundle_files="$bundle_files $out"
