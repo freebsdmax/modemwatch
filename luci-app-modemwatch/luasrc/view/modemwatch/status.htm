@@ -129,6 +129,13 @@
 				<td class="cbi-value-field"><span id="mw-uptime">-</span></td>
 			</tr>
 			<tr class="cbi-section-table-row">
+				<td class="cbi-value-title"><%:LTE quality%></td>
+				<td class="cbi-value-field">
+					<span id="mw-lte-quality">-</span>
+					<div class="status-sig-bar"><div class="status-sig-fill" id="mw-lte-quality-bar"></div></div>
+				</td>
+			</tr>
+			<tr class="cbi-section-table-row">
 				<td class="cbi-value-title"><%:RSSI%></td>
 				<td class="cbi-value-field">
 					<span id="mw-rssi">-</span> dBm (<span id="mw-rssi-pct">-</span>)
@@ -384,7 +391,13 @@
 				var prsrp = pctRSRP(rsrp);
 				var psinr = pctSINR(sinr);
 				var prsrq = pctRSRQ(rsrq);
+				var lteValues = [prsrp, prsrq, psinr].filter(function(v) { return v !== null; });
+				var lteQuality = lteValues.length
+					? lteValues.reduce(function(a, b) { return a + b; }, 0) / lteValues.length
+					: null;
 
+				setText('mw-lte-quality', lteQuality === null ? '-' : Math.round(lteQuality) + '%');
+				setBar('mw-lte-quality-bar', lteQuality);
 				setText('mw-rssi', rssi);
 				setText('mw-rssi-pct', fmtPct(prssi));
 				setText('mw-rsrp', rsrp);
