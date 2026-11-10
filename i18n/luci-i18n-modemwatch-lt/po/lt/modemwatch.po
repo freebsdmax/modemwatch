@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-modemwatch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 00:00+0000\n"
+"PO-Revision-Date: 2026-11-10 00:00+0000\n"
+"Last-Translator: modemwatch contributors\n"
+"Language-Team: Lietuvių (Lithuanian)\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Modem LTE 4G"
+msgstr "Modemas LTE 4G"
+
+msgid "Status"
+msgstr "Būklė/Būsena"
+
+msgid "Signal"
+msgstr "Signalas"
+
+msgid "Log"
+msgstr "Žurnalas"
+
+msgid "Modem settings"
+msgstr "Modemo nustatymai"
+
+msgid "Network search"
+msgstr "Tinklo paieška"
+
+msgid "Settings"
+msgstr "Nustatymai"
+
+msgid "invalid token"
+msgstr "neteisingas prieigos raktas"
+
+msgid "empty AT command"
+msgstr "tuščia AT komanda"
+
+msgid "invalid band selection"
+msgstr "neteisingas juostos pasirinkimas"
+
+msgid "Band settings sent"
+msgstr "Juostos nustatymai išsiųsti"
+
+msgid "network scan started"
+msgstr "pradėtas tinklo nuskaitymas"
+
+msgid "network scan stopped"
+msgstr "tinklo nuskaitymas sustabdytas"
+
+msgid "invalid operator"
+msgstr "netinkamas operatorius"
+
+msgid "Downloading MCC/MNC list"
+msgstr "Atsisiunčiamas MKC/MNC sąrašas"
+
+msgid "Parsing MCC/MNC list"
+msgstr "Nagrinėjamas MKC/MNC sąrašas"
+
+msgid "MCC/MNC database updated"
+msgstr "MCC/MNC duomenų bazė atnaujinta"
+
+msgid "Failed to update MCC/MNC database"
+msgstr "Nepavyko atnaujinti MKC / MNC duomenų bazės"
+
+msgid "MCC/MNC update already running"
+msgstr "MCC / MNC naujinimas jau veikia"
+
+msgid "MCC/MNC update started"
+msgstr "Pradėtas MKC/MNC atnaujinimas"
+
+msgid "operator selection sent"
+msgstr "operatoriaus pasirinkimas išsiųstas"
+
+msgid "internet check started"
+msgstr "pradėtas interneto patikrinimas"
+
+msgid "modem reboot started"
+msgstr "prasidėjo modemo perkrovimas"
+
+msgid "service restarted"
+msgstr "paslauga paleista iš naujo"
+
+msgid "Modem info updated"
+msgstr "Modemo informacija atnaujinta"
+
+msgid "Modem did not respond"
+msgstr "Modemas neatsakė"
+
+msgid "Checks internet connectivity and reboots the Quectel modem when the connection is lost."
+msgstr "Tikrina interneto ryšį ir iš naujo paleidžia Quectel modemą, kai ryšys nutrūksta."
+
+msgid "Service settings"
+msgstr "Paslaugos nustatymai"
+
+msgid "Enable service"
+msgstr "Įgalinti paslaugą"
+
+msgid "Check interval (seconds)"
+msgstr "Tikrinimo intervalas (sekundėmis)"
+
+msgid "Failures before modem reboot"
+msgstr "Gedimai prieš modemo paleidimą iš naujo"
+
+msgid "Ping hosts"
+msgstr "Ping šeimininkai"
+
+msgid "Space-separated list. Internet is considered up if at least one host responds."
+msgstr "Tarpais atskirtas sąrašas. Internetas laikomas prieinamu, jei atsako bent vienas pagrindinis kompiuteris."
+
+msgid "Also require DNS resolution"
+msgstr "Taip pat reikalingas DNS sprendimas"
+
+msgid "DNS name to resolve"
+msgstr "DNS vardas, kurį reikia išspręsti"
+
+msgid "Also require an HTTP request"
+msgstr "Taip pat reikia HTTP užklausos"
+
+msgid "HTTP URL"
+msgstr "HTTP URL"
+
+msgid "WAN interface"
+msgstr "WAN sąsaja"
+
+msgid "The device name is read from network.<iface>.device."
+msgstr "Įrenginio pavadinimas nuskaitomas iš tinklo.<iface>.device."
+
+msgid "AT serial port"
+msgstr "AT nuosekliajame prievade"
+
+msgid "Detected USB/ACM serial ports. For Quectel EC200A use /dev/ttyUSB2; /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Aptikti USB / ACM nuoseklieji prievadai. Quectel EC200A naudokite /dev/ttyUSB2; /dev/ttyUSB0 yra diagnostikos prievadas ir neatsako į AT komandas."
+
+msgid "AT port baud rate"
+msgstr "AT prievado perdavimo sparta"
+
+msgid "Modem reboot method"
+msgstr "Modemo perkrovimo metodas"
+
+msgid "AT+CFUN=1,1 (recommended)"
+msgstr "AT+CFUN=1,1 (rekomenduojama)"
+
+msgid "USB re-bind (best effort)"
+msgstr "USB perrišimas (geriausios pastangos)"
+
+msgid "Wait after reboot (seconds)"
+msgstr "Palaukite po perkrovimo (sekundėmis)"
+
+msgid "Collect modem information"
+msgstr "Surinkite informaciją apie modemą"
+
+msgid "Reads model, firmware, IMEI, signal, operator and temperature via AT commands."
+msgstr "Nuskaito modelį, programinę-aparatinę įrangą, IMEI, signalą, operatorių ir temperatūrą per AT komandas."
+
+msgid "Modem info interval (seconds)"
+msgstr "Modemo informacijos intervalas (sekundėmis)"
+
+msgid "How often to query the modem with AT commands. Keep it longer if other modem tools use the same serial port."
+msgstr "Kaip dažnai užklausti modemą naudojant AT komandas. Laikykite jį ilgiau, jei kiti modemo įrankiai naudoja tą patį nuoseklųjį prievadą."
+
+msgid "Signal refresh interval (seconds)"
+msgstr "Signalo atnaujinimo intervalas (sekundėmis)"
+
+msgid "Pause between signal page updates. The actual update also includes the modem response time."
+msgstr "Pauzė tarp signalo puslapio atnaujinimų. Tikrasis atnaujinimas taip pat apima modemo atsako laiką."
+
+msgid "Safety"
+msgstr "Saugumas"
+
+msgid "Maximum reboots per window"
+msgstr "Maksimalus paleidimų skaičius viename lange"
+
+msgid "Set to 0 for unlimited. The limit prevents reboot loops."
+msgstr "Nustatykite 0, kad būtų neribota. Riba neleidžia iš naujo paleisti kilpų."
+
+msgid "Reboot window (seconds)"
+msgstr "Iš naujo paleisti langą (sekundėmis)"
+
+msgid "Cooldown between reboots (seconds)"
+msgstr "Atvėsimas tarp paleidimų iš naujo (sekundėmis)"
+
+msgid "Logging"
+msgstr "Žurnalinimas"
+
+msgid "Log level"
+msgstr "Žurnalo lygis"
+
+msgid "Error"
+msgstr "Klaida"
+
+msgid "Warning"
+msgstr "Warning"
+
+msgid "Info"
+msgstr "Informacija"
+
+msgid "Debug"
+msgstr "Derinimas/Trukdžių šalinimas"
+
+msgid "Remote access warning"
+msgstr "Nuotolinės prieigos įspėjimas"
+
+msgid "This service reboots only the modem, not the router. If the modem is the only WAN, internet and remote access will be down during the reboot. Do not change USB mode, APN or band settings remotely without a rollback plan."
+msgstr "Ši paslauga perkrauna tik modemą, o ne maršrutizatorių. Jei modemas yra vienintelis WAN, perkrovimo metu internetas ir nuotolinė prieiga neveikia. Nekeiskite USB režimo, APN ar juostos nustatymų nuotoliniu būdu be atšaukimo plano."
+
+msgid "Service"
+msgstr "Tarnyba"
+
+msgid "State"
+msgstr "Būklę/Būseną"
+
+msgid "Last check"
+msgstr "Paskutinis patikrinimas"
+
+msgid "Last success"
+msgstr "Paskutinė sėkmė"
+
+msgid "Last failure"
+msgstr "Paskutinė nesėkmė"
+
+msgid "Failures"
+msgstr "Nesėkmės"
+
+msgid "Modem reboots"
+msgstr "Modemas perkraunamas"
+
+msgid "last"
+msgstr "paskutinis"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "Data transferred"
+msgstr "Duomenys perduoti"
+
+msgid "Ping / DNS / HTTP"
+msgstr "Ping / DNS / HTTP"
+
+msgid "Latency"
+msgstr "Delsà"
+
+msgid "Modem"
+msgstr "Modemas"
+
+msgid "Firmware"
+msgstr "Firmware"
+
+msgid "IMEI"
+msgstr "IMEI"
+
+msgid "Operator / network"
+msgstr "Operatorius / tinklas"
+
+msgid "Modem temperature"
+msgstr "Modemo temperatūra"
+
+msgid "Service uptime"
+msgstr "Paslaugos veikimo laikas"
+
+msgid "LTE quality"
+msgstr "LTE kokybė"
+
+msgid "CSQ"
+msgstr "CSQ"
+
+msgid "RSSI"
+msgstr "RSSI"
+
+msgid "RSRP"
+msgstr "RSRP"
+
+msgid "SINR"
+msgstr "SINR"
+
+msgid "RSRQ"
+msgstr "RSRQ"
+
+msgid "Band"
+msgstr "Diapazonas"
+
+msgid "Check now"
+msgstr "Patikrinkite dabar"
+
+msgid "Refresh modem info"
+msgstr "Atnaujinkite modemo informaciją"
+
+msgid "Reboot modem"
+msgstr "Perkraukite modemą"
+
+msgid "Restart service"
+msgstr "Iš naujo paleiskite paslaugą"
+
+msgid "yes"
+msgstr "taip"
+
+msgid "no"
+msgstr "ne"
+
+msgid "online"
+msgstr "internete"
+
+msgid "offline"
+msgstr "neprisijungus"
+
+msgid "rebooting"
+msgstr "perkrovimas"
+
+msgid "checking"
+msgstr "tikrinimas"
+
+msgid "disabled"
+msgstr "išjungta/neįgalinta (-s/-i)"
+
+msgid "starting"
+msgstr "pradedant"
+
+msgid "stopped"
+msgstr "sustojo"
+
+msgid "error"
+msgstr "klaida"
+
+msgid "running"
+msgstr "bėgimas"
+
+msgid "Failed to read status"
+msgstr "Nepavyko nuskaityti būsenos"
+
+msgid "Reading modem data"
+msgstr "Skaityti modemo duomenis"
+
+msgid "Failed to read modem data"
+msgstr "Nepavyko nuskaityti modemo duomenų"
+
+msgid "Check started"
+msgstr "Patikra pradėta"
+
+msgid "Check failed"
+msgstr "Patikrinimas nepavyko"
+
+msgid "Reboot the modem now? Internet will be down for about"
+msgstr "Dabar iš naujo paleisti modemą? Internetas nutrūks maždaug"
+
+msgid "seconds."
+msgstr "sekundžių."
+
+msgid "Modem reboot started"
+msgstr "Pradėtas modemo perkrovimas"
+
+msgid "Reboot failed"
+msgstr "Perkrauti nepavyko"
+
+msgid "Restart the modemwatch service?"
+msgstr "Iš naujo paleisti modemo laikrodžio paslaugą?"
+
+msgid "Service restarted"
+msgstr "Paslauga paleista iš naujo"
+
+msgid "Restart failed"
+msgstr "Paleisti iš naujo nepavyko"
+
+msgid "Signal strength (RSRQ)"
+msgstr "Signalo stiprumas (RSRQ)"
+
+msgid "Operator"
+msgstr "Operatorius"
+
+msgid "Network"
+msgstr "Tinklas"
+
+msgid "Last update"
+msgstr "Paskutinis atnaujinimas"
+
+msgid "Refresh interval"
+msgstr "Atnaujinimo intervalas"
+
+msgid "seconds"
+msgstr "sekundžių"
+
+msgid "Signal Strength"
+msgstr "Signalo stiprumas"
+
+msgid "Received Signal Strength Indicator"
+msgstr "Gauto signalo stiprumo indikatorius"
+
+msgid "Reference Signal Receive Power"
+msgstr "Atskaitos signalo priėmimo galia"
+
+msgid "Signal to Interference plus Noise Ratio"
+msgstr "Signalo ir trukdžių bei triukšmo santykis"
+
+msgid "Reference Signal Received Quality"
+msgstr "Gauto atskaitos signalo kokybė"
+
+msgid "Refresh now"
+msgstr "Atnaujinkite dabar"
+
+msgid "Pause"
+msgstr "Pauzė"
+
+msgid "Busy"
+msgstr "Užimtas"
+
+msgid "AT port not found"
+msgstr "AT prievadas nerastas"
+
+msgid "No response from modem"
+msgstr "Jokio atsakymo iš modemo"
+
+msgid "Failed to read signal"
+msgstr "Nepavyko nuskaityti signalo"
+
+msgid "Resume"
+msgstr "Tęsti"
+
+msgid "Refresh log"
+msgstr "Atnaujinti žurnalą"
+
+msgid "Auto-refresh"
+msgstr "Automatinis atnaujinimas"
+
+msgid "(empty)"
+msgstr "(tuščia)"
+
+msgid "Updated"
+msgstr "Atnaujinta"
+
+msgid "Failed to read log"
+msgstr "Nepavyko nuskaityti žurnalo"
+
+msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
+msgstr "AT komandos gali pakeisti modemo nustatymus ir atjungti internetą arba SSH. Nekeiskite USB režimo, APN, juostos ar tinklo režimo nuotoliniu būdu be atšaukimo plano."
+
+msgid "Expert mode — allow changing USB mode and NAT"
+msgstr "Eksperto režimas – leidžia keisti USB režimą ir NAT"
+
+msgid "Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan."
+msgstr "Pakeitus USB režimą galima atjungti modemą ir SSH. Naudokite tik su vietine prieiga arba atšaukimo planu."
+
+msgid "Selected AT port"
+msgstr "Pasirinktas AT prievadas"
+
+msgid "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Quectel EC200A naudokite /dev/ttyUSB2. /dev/ttyUSB0 yra diagnostikos prievadas ir neatsako į AT komandas."
+
+msgid "Current configuration"
+msgstr "Dabartinė konfigūracija"
+
+msgid "Read current configuration"
+msgstr "Skaityti dabartinę konfigūraciją"
+
+msgid "Modem information"
+msgstr "Modemo informacija"
+
+msgid "Model"
+msgstr "Modelis"
+
+msgid "SIM status"
+msgstr "SIM būsena"
+
+msgid "Temperature"
+msgstr "Temperatūra"
+
+msgid "Access Point Name (APN)"
+msgstr "Prieigos taško pavadinimas (APN)"
+
+msgid "Username"
+msgstr "Naudotojo/Vartotojo vardas (t.y. Slapyvardis)"
+
+msgid "Password"
+msgstr "Slaptažodis"
+
+msgid "Authentication"
+msgstr "Autentifikavimas"
+
+msgid "None"
+msgstr "Joks (-ia/-ie/-ios)"
+
+msgid "PDP type"
+msgstr "PDP tipas"
+
+msgid "Read APN"
+msgstr "Skaityti APN"
+
+msgid "Apply APN"
+msgstr "Taikyti APN"
+
+msgid "Network mode"
+msgstr "Tinklo režimas"
+
+msgid "Mode"
+msgstr "Veiksena"
+
+msgid "Automatic"
+msgstr "Automatinis"
+
+msgid "GSM only"
+msgstr "Tik GSM"
+
+msgid "WCDMA only"
+msgstr "Tik WCDMA"
+
+msgid "LTE only"
+msgstr "Tik LTE"
+
+msgid "Read mode"
+msgstr "Skaitymo režimas"
+
+msgid "Apply mode"
+msgstr "Taikyti režimą"
+
+msgid "Band configuration"
+msgstr "Juostos konfigūracija"
+
+msgid "Read bands"
+msgstr "Skaityti juostas"
+
+msgid "Select all"
+msgstr "Pasirinkite viską"
+
+msgid "Restore default"
+msgstr "Atkurti numatytuosius nustatymus"
+
+msgid "Apply bands"
+msgstr "Taikyti juostas"
+
+msgid "Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection."
+msgstr "Pasirinkite LTE juostas, kurias norite palikti įjungtas. Taikymas gali iš naujo paleisti WAN ir nutrūkti ryšys."
+
+msgid "USB mode"
+msgstr "USB režimas"
+
+msgid "Current value"
+msgstr "Dabartinė vertė"
+
+msgid "New value"
+msgstr "Nauja vertė"
+
+msgid "RMNET (QMI)"
+msgstr "RMNET (QMI)"
+
+msgid "not supported"
+msgstr "nepalaikoma"
+
+msgid "ECM (CDC Ethernet)"
+msgstr "ECM (CDC Ethernet)"
+
+msgid "MBIM"
+msgstr "MBIM"
+
+msgid "RNDIS"
+msgstr "RNDIS"
+
+msgid "Apply USB mode"
+msgstr "Taikyti USB režimą"
+
+msgid "Read USB mode"
+msgstr "Skaityti USB režimą"
+
+msgid "Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem."
+msgstr "Režimai, kurių nepalaiko modemo programinė įranga, yra išjungti ir pažymėti kaip nepalaikomi. Palaikomi režimai aptinkami automatiškai iš modemo."
+
+msgid "Apply NAT"
+msgstr "Taikykite NAT"
+
+msgid "Read NAT"
+msgstr "Skaitykite NAT"
+
+msgid "Raw AT command"
+msgstr "Neapdorota AT komanda"
+
+msgid "AT command"
+msgstr "AT komanda"
+
+msgid "Send"
+msgstr "Siųsti"
+
+msgid "Sending"
+msgstr "Siuntimas"
+
+msgid "AT command failed"
+msgstr "AT komanda nepavyko"
+
+msgid "Reading APN"
+msgstr "APN skaitymas"
+
+msgid "Failed to read APN"
+msgstr "Nepavyko nuskaityti APN"
+
+msgid "Reading settings"
+msgstr "Skaitymo nustatymai"
+
+msgid "Settings read"
+msgstr "Skaityti nustatymus"
+
+msgid "Failed to read settings"
+msgstr "Nepavyko nuskaityti nustatymų"
+
+msgid "APN, username and password may contain only letters, digits, dot, hyphen and underscore."
+msgstr "APN, vartotojo vardą ir slaptažodį gali sudaryti tik raidės, skaitmenys, taškas, brūkšnelis ir apatinis brūkšnys."
+
+msgid "Apply APN settings? The connection may drop."
+msgstr "Taikyti APN nustatymus? Ryšys gali nutrūkti."
+
+msgid "Applying APN"
+msgstr "Taikant APN"
+
+msgid "APN applied. Reconnect or reboot the modem if needed."
+msgstr "APN pritaikytas. Jei reikia, prijunkite arba iš naujo paleiskite modemą."
+
+msgid "Failed to apply APN"
+msgstr "Nepavyko pritaikyti APN"
+
+msgid "Apply network mode? The connection may drop."
+msgstr "Taikyti tinklo režimą? Ryšys gali nutrūkti."
+
+msgid "Reading bands"
+msgstr "Skaitymo juostos"
+
+msgid "Failed to read bands"
+msgstr "Nepavyko perskaityti juostų"
+
+msgid "No bands selected"
+msgstr "Nepasirinkta jokių juostų"
+
+msgid "Restore default bands?"
+msgstr "Atkurti numatytąsias juostas?"
+
+msgid "Apply selected bands? The connection may drop."
+msgstr "Taikyti pasirinktas juostas? Ryšys gali nutrūkti."
+
+msgid "Applying bands"
+msgstr "Juostų taikymas"
+
+msgid "Failed to apply bands"
+msgstr "Nepavyko pritaikyti juostų"
+
+msgid "USB mode is read-only in this UI."
+msgstr "Šioje vartotojo sąsajoje USB režimas yra tik skaitomas."
+
+msgid "This USB mode is not supported by the modem firmware."
+msgstr "Šio USB režimo modemo programinė įranga nepalaiko."
+
+msgid "Change USB mode? The modem will re-enumerate and the connection may drop. Continue?"
+msgstr "Keisti USB režimą? Modemas iš naujo suskaičiuos ir ryšys gali nutrūkti. Tęsti?"
+
+msgid "Change NAT mode? The connection may drop."
+msgstr "Keisti NAT režimą? Ryšys gali nutrūkti."
+
+msgid "Current operator"
+msgstr "Dabartinis operatorius"
+
+msgid "AT port"
+msgstr "AT uoste"
+
+msgid "Scan networks"
+msgstr "Nuskaitykite tinklus"
+
+msgid "Automatic operator selection"
+msgstr "Automatinis operatoriaus pasirinkimas"
+
+msgid "Stop scan"
+msgstr "Sustabdyti nuskaitymą"
+
+msgid "Update MCC/MNC database"
+msgstr "Atnaujinkite MCC/MNC duomenų bazę"
+
+msgid "Country"
+msgstr "Šalis"
+
+msgid "MCC/MNC"
+msgstr "MCC/MNC"
+
+msgid "Technology"
+msgstr "Technologijos"
+
+msgid "Action"
+msgstr "Veiksmas"
+
+msgid "Raw scan output"
+msgstr "Neapdorota nuskaitymo išvestis"
+
+msgid "current"
+msgstr "srovė"
+
+msgid "available"
+msgstr "prieinama"
+
+msgid "forbidden"
+msgstr "draudžiama"
+
+msgid "unknown"
+msgstr "nežinoma/-s/-i"
+
+msgid "Select"
+msgstr "Pasirinkti"
+
+msgid "MCC/MNC database updated."
+msgstr "MCC/MNC duomenų bazė atnaujinta."
+
+msgid "Not updated yet"
+msgstr "Dar neatnaujinta"
+
+msgid "Failed to read MCC/MNC update status"
+msgstr "Nepavyko nuskaityti MKC / MNC naujinimo būsenos"
+
+msgid "Updating MCC/MNC database"
+msgstr "MCC/MNC duomenų bazės atnaujinimas"
+
+msgid "Scanning networks... This may take up to two minutes."
+msgstr "Nuskaitomi tinklai... Tai gali užtrukti iki dviejų minučių."
+
+msgid "Scan complete."
+msgstr "Nuskaitymas baigtas."
+
+msgid "Modem is busy. Try again later."
+msgstr "Modemas užimtas. Vėliau bandykite dar kartą."
+
+msgid "Scan failed"
+msgstr "Nuskaitymas nepavyko"
+
+msgid "Not scanned yet."
+msgstr "Dar nenuskaityta."
+
+msgid "Failed to read scan status"
+msgstr "Nepavyko nuskaityti nuskaitymo būsenos"
+
+msgid "Stopping scan"
+msgstr "Nuskaitymo sustabdymas"
+
+msgid "Network scan stopped"
+msgstr "Tinklo nuskaitymas sustabdytas"
+
+msgid "Failed to stop scan"
+msgstr "Nepavyko sustabdyti nuskaitymo"
+
+msgid "Starting network scan"
+msgstr "Pradedamas tinklo nuskaitymas"
+
+msgid "Network scan started"
+msgstr "Pradėtas tinklo nuskaitymas"
+
+msgid "Failed to start scan"
+msgstr "Nepavyko pradėti nuskaitymo"
+
+msgid "Select operator"
+msgstr "Pasirinkite operatorių"
+
+msgid "The connection may drop."
+msgstr "Ryšys gali nutrūkti."
+
+msgid "Selecting operator"
+msgstr "Renkantis operatorių"
+
+msgid "Operator selection sent"
+msgstr "Operatoriaus pasirinkimas išsiųstas"
+
+msgid "Failed to select operator"
+msgstr "Nepavyko pasirinkti operatoriaus"
+
+msgid "Use automatic operator selection?"
+msgstr "Naudoti automatinį operatoriaus pasirinkimą?"
+
+msgid "Selecting automatic mode"
+msgstr "Automatinio režimo pasirinkimas"

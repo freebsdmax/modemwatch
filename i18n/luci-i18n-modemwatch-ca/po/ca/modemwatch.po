@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-modemwatch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 00:00+0000\n"
+"PO-Revision-Date: 2026-11-10 00:00+0000\n"
+"Last-Translator: modemwatch contributors\n"
+"Language-Team: Català (Catalan)\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgid "Modem LTE 4G"
+msgstr "Mòdem LTE 4G"
+
+msgid "Status"
+msgstr "Estat"
+
+msgid "Signal"
+msgstr "Senyal"
+
+msgid "Log"
+msgstr "Registre"
+
+msgid "Modem settings"
+msgstr "Configuració del mòdem"
+
+msgid "Network search"
+msgstr "Cerca a la xarxa"
+
+msgid "Settings"
+msgstr "Paràmetres"
+
+msgid "invalid token"
+msgstr "testimoni no vàlid"
+
+msgid "empty AT command"
+msgstr "comanda AT buida"
+
+msgid "invalid band selection"
+msgstr "selecció de banda no vàlida"
+
+msgid "Band settings sent"
+msgstr "Configuració de la banda enviada"
+
+msgid "network scan started"
+msgstr "s'ha iniciat l'exploració de la xarxa"
+
+msgid "network scan stopped"
+msgstr "l'exploració de la xarxa s'ha aturat"
+
+msgid "invalid operator"
+msgstr "operador no vàlid"
+
+msgid "Downloading MCC/MNC list"
+msgstr "S'està baixant la llista MCC/MNC"
+
+msgid "Parsing MCC/MNC list"
+msgstr "S'està analitzant la llista MCC/MNC"
+
+msgid "MCC/MNC database updated"
+msgstr "Base de dades MCC/MNC actualitzada"
+
+msgid "Failed to update MCC/MNC database"
+msgstr "No s'ha pogut actualitzar la base de dades MCC/MNC"
+
+msgid "MCC/MNC update already running"
+msgstr "L'actualització de l'MCC/MNC ja s'està executant"
+
+msgid "MCC/MNC update started"
+msgstr "S'ha iniciat l'actualització de l'MCC/MNC"
+
+msgid "operator selection sent"
+msgstr "Selecció d'operador enviada"
+
+msgid "internet check started"
+msgstr "va començar la comprovació d'Internet"
+
+msgid "modem reboot started"
+msgstr "s'ha iniciat el reinici del mòdem"
+
+msgid "service restarted"
+msgstr "servei reiniciat"
+
+msgid "Modem info updated"
+msgstr "S'ha actualitzat la informació del mòdem"
+
+msgid "Modem did not respond"
+msgstr "El mòdem no va respondre"
+
+msgid "Checks internet connectivity and reboots the Quectel modem when the connection is lost."
+msgstr "Comprova la connectivitat a Internet i reinicia el mòdem Quectel quan es perd la connexió."
+
+msgid "Service settings"
+msgstr "Configuració del servei"
+
+msgid "Enable service"
+msgstr "Activa el servei"
+
+msgid "Check interval (seconds)"
+msgstr "Interval de comprovació (segons)"
+
+msgid "Failures before modem reboot"
+msgstr "Errors abans del reinici del mòdem"
+
+msgid "Ping hosts"
+msgstr "Amfitrions de ping"
+
+msgid "Space-separated list. Internet is considered up if at least one host responds."
+msgstr "Llista separada per espais. Internet es considera activa si almenys un amfitrió respon."
+
+msgid "Also require DNS resolution"
+msgstr "També requereix resolució DNS"
+
+msgid "DNS name to resolve"
+msgstr "Nom DNS per resoldre"
+
+msgid "Also require an HTTP request"
+msgstr "També requereix una sol·licitud HTTP"
+
+msgid "HTTP URL"
+msgstr "HTTP URL"
+
+msgid "WAN interface"
+msgstr "Interfície WAN"
+
+msgid "The device name is read from network.<iface>.device."
+msgstr "El nom del dispositiu es llegeix des de la xarxa.<iface>.device."
+
+msgid "AT serial port"
+msgstr "Port sèrie AT"
+
+msgid "Detected USB/ACM serial ports. For Quectel EC200A use /dev/ttyUSB2; /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "S'han detectat ports sèrie USB/ACM. Per a Quectel EC200A utilitzeu /dev/ttyUSB2; /dev/ttyUSB0 és el port de diagnòstic i no respon a les ordres AT."
+
+msgid "AT port baud rate"
+msgstr "Velocitat en baudios del port AT"
+
+msgid "Modem reboot method"
+msgstr "Mètode de reinici del mòdem"
+
+msgid "AT+CFUN=1,1 (recommended)"
+msgstr "AT+CFUN=1,1 (recomanat)"
+
+msgid "USB re-bind (best effort)"
+msgstr "Reenllaç USB (millor esforç)"
+
+msgid "Wait after reboot (seconds)"
+msgstr "Espereu després de reiniciar (segons)"
+
+msgid "Collect modem information"
+msgstr "Recolliu informació del mòdem"
+
+msgid "Reads model, firmware, IMEI, signal, operator and temperature via AT commands."
+msgstr "Llegeix model, firmware, IMEI, senyal, operador i temperatura mitjançant ordres AT."
+
+msgid "Modem info interval (seconds)"
+msgstr "Interval d'informació del mòdem (segons)"
+
+msgid "How often to query the modem with AT commands. Keep it longer if other modem tools use the same serial port."
+msgstr "Amb quina freqüència consultar el mòdem amb ordres AT. Mantingueu-lo més temps si altres eines de mòdem utilitzen el mateix port sèrie."
+
+msgid "Signal refresh interval (seconds)"
+msgstr "Interval d'actualització del senyal (segons)"
+
+msgid "Pause between signal page updates. The actual update also includes the modem response time."
+msgstr "Pausa entre les actualitzacions de la pàgina de senyal. L'actualització real també inclou el temps de resposta del mòdem."
+
+msgid "Safety"
+msgstr "Seguretat"
+
+msgid "Maximum reboots per window"
+msgstr "Màxim de reinicis per finestra"
+
+msgid "Set to 0 for unlimited. The limit prevents reboot loops."
+msgstr "Establiu a 0 per il·limitat. El límit impedeix els bucles de reinici."
+
+msgid "Reboot window (seconds)"
+msgstr "Finestra de reinici (segons)"
+
+msgid "Cooldown between reboots (seconds)"
+msgstr "Refrigeració entre reinicis (segons)"
+
+msgid "Logging"
+msgstr "Registre"
+
+msgid "Log level"
+msgstr "Nivell de registre"
+
+msgid "Error"
+msgstr "Error"
+
+msgid "Warning"
+msgstr "Warning"
+
+msgid "Info"
+msgstr "Informació"
+
+msgid "Debug"
+msgstr "Depuració"
+
+msgid "Remote access warning"
+msgstr "Avís d'accés remot"
+
+msgid "This service reboots only the modem, not the router. If the modem is the only WAN, internet and remote access will be down during the reboot. Do not change USB mode, APN or band settings remotely without a rollback plan."
+msgstr "Aquest servei només reinicia el mòdem, no l'encaminador. Si el mòdem és l'única WAN, l'accés a Internet i remot es desactivarà durant el reinici. No canvieu la configuració del mode USB, l'APN o la banda de forma remota sense un pla de retrocés."
+
+msgid "Service"
+msgstr "Servei"
+
+msgid "State"
+msgstr "Estat"
+
+msgid "Last check"
+msgstr "Última comprovació"
+
+msgid "Last success"
+msgstr "Últim èxit"
+
+msgid "Last failure"
+msgstr "Últim fracàs"
+
+msgid "Failures"
+msgstr "Falles"
+
+msgid "Modem reboots"
+msgstr "El mòdem es reinicia"
+
+msgid "last"
+msgstr "darrer"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "Data transferred"
+msgstr "Dades transferides"
+
+msgid "Ping / DNS / HTTP"
+msgstr "Ping / DNS / HTTP"
+
+msgid "Latency"
+msgstr "Latència"
+
+msgid "Modem"
+msgstr "Mòdem"
+
+msgid "Firmware"
+msgstr "Firmware"
+
+msgid "IMEI"
+msgstr "IMEI"
+
+msgid "Operator / network"
+msgstr "Operador / xarxa"
+
+msgid "Modem temperature"
+msgstr "Temperatura del mòdem"
+
+msgid "Service uptime"
+msgstr "Temps de funcionament del servei"
+
+msgid "LTE quality"
+msgstr "Qualitat LTE"
+
+msgid "CSQ"
+msgstr "CSQ"
+
+msgid "RSSI"
+msgstr "RSSI"
+
+msgid "RSRP"
+msgstr "RSRP"
+
+msgid "SINR"
+msgstr "SINR"
+
+msgid "RSRQ"
+msgstr "RSRQ"
+
+msgid "Band"
+msgstr "Banda"
+
+msgid "Check now"
+msgstr "Comproveu ara"
+
+msgid "Refresh modem info"
+msgstr "Actualitza la informació del mòdem"
+
+msgid "Reboot modem"
+msgstr "Reinicieu el mòdem"
+
+msgid "Restart service"
+msgstr "Reinicieu el servei"
+
+msgid "yes"
+msgstr "sí"
+
+msgid "no"
+msgstr "no"
+
+msgid "online"
+msgstr "en línia"
+
+msgid "offline"
+msgstr "fora de línia"
+
+msgid "rebooting"
+msgstr "reiniciant"
+
+msgid "checking"
+msgstr "comprovació"
+
+msgid "disabled"
+msgstr "disabled"
+
+msgid "starting"
+msgstr "començant"
+
+msgid "stopped"
+msgstr "aturat"
+
+msgid "error"
+msgstr "error"
+
+msgid "running"
+msgstr "corrent"
+
+msgid "Failed to read status"
+msgstr "No s'ha pogut llegir l'estat"
+
+msgid "Reading modem data"
+msgstr "Lectura de dades del mòdem"
+
+msgid "Failed to read modem data"
+msgstr "No s'han pogut llegir les dades del mòdem"
+
+msgid "Check started"
+msgstr "Comprovació començada"
+
+msgid "Check failed"
+msgstr "La comprovació ha fallat"
+
+msgid "Reboot the modem now? Internet will be down for about"
+msgstr "Vols reiniciar el mòdem ara? Internet estarà caiguda durant aproximadament"
+
+msgid "seconds."
+msgstr "segons."
+
+msgid "Modem reboot started"
+msgstr "S'ha iniciat el reinici del mòdem"
+
+msgid "Reboot failed"
+msgstr "El reinici ha fallat"
+
+msgid "Restart the modemwatch service?"
+msgstr "Reinicieu el servei de modemwatch?"
+
+msgid "Service restarted"
+msgstr "S'ha reiniciat el servei"
+
+msgid "Restart failed"
+msgstr "Ha fallat el reinici"
+
+msgid "Signal strength (RSRQ)"
+msgstr "Intensitat del senyal (RSRQ)"
+
+msgid "Operator"
+msgstr "Operador"
+
+msgid "Network"
+msgstr "Xarxa"
+
+msgid "Last update"
+msgstr "Última actualització"
+
+msgid "Refresh interval"
+msgstr "Interval d'actualització"
+
+msgid "seconds"
+msgstr "segons"
+
+msgid "Signal Strength"
+msgstr "Força del senyal"
+
+msgid "Received Signal Strength Indicator"
+msgstr "Indicador de força del senyal rebut"
+
+msgid "Reference Signal Receive Power"
+msgstr "Potència de recepció del senyal de referència"
+
+msgid "Signal to Interference plus Noise Ratio"
+msgstr "Relació senyal/interferència més soroll"
+
+msgid "Reference Signal Received Quality"
+msgstr "Qualitat del senyal de referència rebut"
+
+msgid "Refresh now"
+msgstr "Actualitza ara"
+
+msgid "Pause"
+msgstr "Pausa"
+
+msgid "Busy"
+msgstr "Ocupat"
+
+msgid "AT port not found"
+msgstr "No s'ha trobat el port AT"
+
+msgid "No response from modem"
+msgstr "No hi ha resposta del mòdem"
+
+msgid "Failed to read signal"
+msgstr "No s'ha pogut llegir el senyal"
+
+msgid "Resume"
+msgstr "Currículum"
+
+msgid "Refresh log"
+msgstr "Actualitza el registre"
+
+msgid "Auto-refresh"
+msgstr "Actualització automàtica"
+
+msgid "(empty)"
+msgstr "(buit)"
+
+msgid "Updated"
+msgstr "Actualitzat"
+
+msgid "Failed to read log"
+msgstr "No s'ha pogut llegir el registre"
+
+msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
+msgstr "Les ordres AT poden canviar la configuració del mòdem i poden desconnectar Internet o SSH. No canvieu el mode USB, APN, banda o mode de xarxa de forma remota sense un pla de retrocés."
+
+msgid "Expert mode — allow changing USB mode and NAT"
+msgstr "Mode expert: permet canviar el mode USB i el NAT"
+
+msgid "Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan."
+msgstr "Si canvieu el mode USB, podeu desconnectar el mòdem i SSH. Utilitzeu només amb accés local o amb un pla de retrocés."
+
+msgid "Selected AT port"
+msgstr "Port AT seleccionat"
+
+msgid "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Per a Quectel EC200A, utilitzeu /dev/ttyUSB2. /dev/ttyUSB0 és el port de diagnòstic i no respon a les ordres AT."
+
+msgid "Current configuration"
+msgstr "Configuració actual"
+
+msgid "Read current configuration"
+msgstr "Llegeix la configuració actual"
+
+msgid "Modem information"
+msgstr "Informació del mòdem"
+
+msgid "Model"
+msgstr "Model"
+
+msgid "SIM status"
+msgstr "Estat de la SIM"
+
+msgid "Temperature"
+msgstr "Temperatura"
+
+msgid "Access Point Name (APN)"
+msgstr "Nom del punt d'accés (APN)"
+
+msgid "Username"
+msgstr "Nom d'usuari"
+
+msgid "Password"
+msgstr "Contrasenya"
+
+msgid "Authentication"
+msgstr "Autenticació"
+
+msgid "None"
+msgstr "Cap"
+
+msgid "PDP type"
+msgstr "tipus PDP"
+
+msgid "Read APN"
+msgstr "Llegeix APN"
+
+msgid "Apply APN"
+msgstr "Aplicar APN"
+
+msgid "Network mode"
+msgstr "Mode de xarxa"
+
+msgid "Mode"
+msgstr "Mode"
+
+msgid "Automatic"
+msgstr "Automàtic"
+
+msgid "GSM only"
+msgstr "Només GSM"
+
+msgid "WCDMA only"
+msgstr "Només WCDMA"
+
+msgid "LTE only"
+msgstr "Només LTE"
+
+msgid "Read mode"
+msgstr "Mode de lectura"
+
+msgid "Apply mode"
+msgstr "Mode d'aplicació"
+
+msgid "Band configuration"
+msgstr "Configuració de la banda"
+
+msgid "Read bands"
+msgstr "Llegir bandes"
+
+msgid "Select all"
+msgstr "Seleccioneu-ho tot"
+
+msgid "Restore default"
+msgstr "Restaura el valor predeterminat"
+
+msgid "Apply bands"
+msgstr "Aplicar bandes"
+
+msgid "Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection."
+msgstr "Seleccioneu les bandes LTE que voleu mantenir activades. L'aplicació pot reiniciar la WAN i deixar la connexió."
+
+msgid "USB mode"
+msgstr "Mode USB"
+
+msgid "Current value"
+msgstr "Valor actual"
+
+msgid "New value"
+msgstr "Nou valor"
+
+msgid "RMNET (QMI)"
+msgstr "RMNET (QMI)"
+
+msgid "not supported"
+msgstr "no suportat"
+
+msgid "ECM (CDC Ethernet)"
+msgstr "ECM (CDC Ethernet)"
+
+msgid "MBIM"
+msgstr "MBIM"
+
+msgid "RNDIS"
+msgstr "RNDIS"
+
+msgid "Apply USB mode"
+msgstr "Aplica el mode USB"
+
+msgid "Read USB mode"
+msgstr "Mode de lectura USB"
+
+msgid "Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem."
+msgstr "Els modes que no són compatibles amb el microprogramari del mòdem estan desactivats i es marquen com a no compatibles. Els modes compatibles es detecten automàticament des del mòdem."
+
+msgid "Apply NAT"
+msgstr "Aplicar NAT"
+
+msgid "Read NAT"
+msgstr "Llegeix NAT"
+
+msgid "Raw AT command"
+msgstr "Comandament AT brut"
+
+msgid "AT command"
+msgstr "comandament AT"
+
+msgid "Send"
+msgstr "Enviar"
+
+msgid "Sending"
+msgstr "Enviament"
+
+msgid "AT command failed"
+msgstr "L'ordre AT ha fallat"
+
+msgid "Reading APN"
+msgstr "Lectura de l'APN"
+
+msgid "Failed to read APN"
+msgstr "No s'ha pogut llegir l'APN"
+
+msgid "Reading settings"
+msgstr "Configuració de lectura"
+
+msgid "Settings read"
+msgstr "Configuració llegida"
+
+msgid "Failed to read settings"
+msgstr "No s'ha pogut llegir la configuració"
+
+msgid "APN, username and password may contain only letters, digits, dot, hyphen and underscore."
+msgstr "L'APN, el nom d'usuari i la contrasenya només poden contenir lletres, dígits, punt, guionet i guió baix."
+
+msgid "Apply APN settings? The connection may drop."
+msgstr "Voleu aplicar la configuració de l'APN? La connexió pot caure."
+
+msgid "Applying APN"
+msgstr "Aplicació d'APN"
+
+msgid "APN applied. Reconnect or reboot the modem if needed."
+msgstr "APN aplicat. Torneu a connectar o reinicieu el mòdem si cal."
+
+msgid "Failed to apply APN"
+msgstr "No s'ha pogut aplicar l'APN"
+
+msgid "Apply network mode? The connection may drop."
+msgstr "Voleu aplicar el mode de xarxa? La connexió pot caure."
+
+msgid "Reading bands"
+msgstr "Bandes de lectura"
+
+msgid "Failed to read bands"
+msgstr "No s'han pogut llegir les bandes"
+
+msgid "No bands selected"
+msgstr "No s'han seleccionat bandes"
+
+msgid "Restore default bands?"
+msgstr "Voleu restaurar les bandes predeterminades?"
+
+msgid "Apply selected bands? The connection may drop."
+msgstr "Voleu aplicar les bandes seleccionades? La connexió pot caure."
+
+msgid "Applying bands"
+msgstr "Aplicació de bandes"
+
+msgid "Failed to apply bands"
+msgstr "No s'han pogut aplicar les bandes"
+
+msgid "USB mode is read-only in this UI."
+msgstr "El mode USB és només de lectura en aquesta interfície d'usuari."
+
+msgid "This USB mode is not supported by the modem firmware."
+msgstr "Aquest mode USB no és compatible amb el microprogramari del mòdem."
+
+msgid "Change USB mode? The modem will re-enumerate and the connection may drop. Continue?"
+msgstr "Canviar el mode USB? El mòdem es tornarà a enumerar i la connexió pot caure. Continuar?"
+
+msgid "Change NAT mode? The connection may drop."
+msgstr "Canviar el mode NAT? La connexió pot caure."
+
+msgid "Current operator"
+msgstr "Operador actual"
+
+msgid "AT port"
+msgstr "Port AT"
+
+msgid "Scan networks"
+msgstr "Escanejar xarxes"
+
+msgid "Automatic operator selection"
+msgstr "Selecció automàtica de l'operador"
+
+msgid "Stop scan"
+msgstr "Atura l'escaneig"
+
+msgid "Update MCC/MNC database"
+msgstr "Actualitzar la base de dades MCC/MNC"
+
+msgid "Country"
+msgstr "País"
+
+msgid "MCC/MNC"
+msgstr "MCC/MNC"
+
+msgid "Technology"
+msgstr "Tecnologia"
+
+msgid "Action"
+msgstr "Acció"
+
+msgid "Raw scan output"
+msgstr "Sortida d'escaneig en brut"
+
+msgid "current"
+msgstr "actual"
+
+msgid "available"
+msgstr "disponible"
+
+msgid "forbidden"
+msgstr "prohibit"
+
+msgid "unknown"
+msgstr "desconegut"
+
+msgid "Select"
+msgstr "Seleccioneu"
+
+msgid "MCC/MNC database updated."
+msgstr "Base de dades MCC/MNC actualitzada."
+
+msgid "Not updated yet"
+msgstr "Encara no s'ha actualitzat"
+
+msgid "Failed to read MCC/MNC update status"
+msgstr "No s'ha pogut llegir l'estat de l'actualització de l'MCC/MNC"
+
+msgid "Updating MCC/MNC database"
+msgstr "S'està actualitzant la base de dades MCC/MNC"
+
+msgid "Scanning networks... This may take up to two minutes."
+msgstr "Escanejant xarxes... Això pot trigar fins a dos minuts."
+
+msgid "Scan complete."
+msgstr "Escaneig completat."
+
+msgid "Modem is busy. Try again later."
+msgstr "El mòdem està ocupat. Torna-ho a provar més tard."
+
+msgid "Scan failed"
+msgstr "L'escaneig ha fallat"
+
+msgid "Not scanned yet."
+msgstr "Encara no s'ha escanejat."
+
+msgid "Failed to read scan status"
+msgstr "No s'ha pogut llegir l'estat de l'escaneig"
+
+msgid "Stopping scan"
+msgstr "Aturant l'escaneig"
+
+msgid "Network scan stopped"
+msgstr "L'exploració de la xarxa s'ha aturat"
+
+msgid "Failed to stop scan"
+msgstr "No s'ha pogut aturar l'exploració"
+
+msgid "Starting network scan"
+msgstr "S'està iniciant l'exploració de la xarxa"
+
+msgid "Network scan started"
+msgstr "S'ha iniciat l'exploració de la xarxa"
+
+msgid "Failed to start scan"
+msgstr "No s'ha pogut iniciar l'exploració"
+
+msgid "Select operator"
+msgstr "Seleccioneu l'operador"
+
+msgid "The connection may drop."
+msgstr "La connexió pot caure."
+
+msgid "Selecting operator"
+msgstr "Selecció de l'operador"
+
+msgid "Operator selection sent"
+msgstr "Selecció d'operador enviada"
+
+msgid "Failed to select operator"
+msgstr "No s'ha pogut seleccionar l'operador"
+
+msgid "Use automatic operator selection?"
+msgstr "Utilitzeu la selecció automàtica de l'operador?"
+
+msgid "Selecting automatic mode"
+msgstr "Selecció del mode automàtic"

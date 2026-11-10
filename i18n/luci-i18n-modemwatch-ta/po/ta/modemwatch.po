@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-modemwatch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 00:00+0000\n"
+"PO-Revision-Date: 2026-11-10 00:00+0000\n"
+"Last-Translator: modemwatch contributors\n"
+"Language-Team: தமிழ் (Tamil)\n"
+"Language: ta\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgid "Modem LTE 4G"
+msgstr "மோடம் LTE 4G"
+
+msgid "Status"
+msgstr "நிலை"
+
+msgid "Signal"
+msgstr "குறிகை"
+
+msgid "Log"
+msgstr "பதிவு"
+
+msgid "Modem settings"
+msgstr "மோடம் அமைப்புகள்"
+
+msgid "Network search"
+msgstr "நெட்வொர்க் தேடல்"
+
+msgid "Settings"
+msgstr "அமைப்புகள்"
+
+msgid "invalid token"
+msgstr "தவறான டோக்கன்"
+
+msgid "empty AT command"
+msgstr "வெற்று AT கட்டளை"
+
+msgid "invalid band selection"
+msgstr "தவறான இசைக்குழு தேர்வு"
+
+msgid "Band settings sent"
+msgstr "பேண்ட் அமைப்புகள் அனுப்பப்பட்டன"
+
+msgid "network scan started"
+msgstr "நெட்வொர்க் ஸ்கேன் தொடங்கியது"
+
+msgid "network scan stopped"
+msgstr "நெட்வொர்க் ஸ்கேன் நிறுத்தப்பட்டது"
+
+msgid "invalid operator"
+msgstr "தவறான ஆபரேட்டர்"
+
+msgid "Downloading MCC/MNC list"
+msgstr "MCC/MNC பட்டியலைப் பதிவிறக்குகிறது"
+
+msgid "Parsing MCC/MNC list"
+msgstr "MCC/MNC பட்டியலை பாகுபடுத்துகிறது"
+
+msgid "MCC/MNC database updated"
+msgstr "MCC/MNC தரவுத்தளம் புதுப்பிக்கப்பட்டது"
+
+msgid "Failed to update MCC/MNC database"
+msgstr "MCC/MNC தரவுத்தளத்தைப் புதுப்பிக்க முடியவில்லை"
+
+msgid "MCC/MNC update already running"
+msgstr "MCC/MNC புதுப்பிப்பு ஏற்கனவே இயங்குகிறது"
+
+msgid "MCC/MNC update started"
+msgstr "MCC/MNC புதுப்பிப்பு தொடங்கியது"
+
+msgid "operator selection sent"
+msgstr "ஆபரேட்டர் தேர்வு அனுப்பப்பட்டது"
+
+msgid "internet check started"
+msgstr "இணைய சோதனை தொடங்கியது"
+
+msgid "modem reboot started"
+msgstr "மோடம் மறுதொடக்கம் தொடங்கியது"
+
+msgid "service restarted"
+msgstr "சேவை மீண்டும் தொடங்கப்பட்டது"
+
+msgid "Modem info updated"
+msgstr "மோடம் தகவல் புதுப்பிக்கப்பட்டது"
+
+msgid "Modem did not respond"
+msgstr "மோடம் பதிலளிக்கவில்லை"
+
+msgid "Checks internet connectivity and reboots the Quectel modem when the connection is lost."
+msgstr "இணைய இணைப்பைச் சரிபார்த்து, இணைப்பு துண்டிக்கப்படும்போது Quectel மோடத்தை மறுதொடக்கம் செய்கிறது."
+
+msgid "Service settings"
+msgstr "சேவை அமைப்புகள்"
+
+msgid "Enable service"
+msgstr "சேவையை இயக்கு"
+
+msgid "Check interval (seconds)"
+msgstr "இடைவெளியை சரிபார்க்கவும் (வினாடிகள்)"
+
+msgid "Failures before modem reboot"
+msgstr "மோடம் மறுதொடக்கம் செய்வதற்கு முன் தோல்விகள்"
+
+msgid "Ping hosts"
+msgstr "பிங் ஹோஸ்ட்கள்"
+
+msgid "Space-separated list. Internet is considered up if at least one host responds."
+msgstr "விண்வெளியால் பிரிக்கப்பட்ட பட்டியல். குறைந்தது ஒரு புரவலராவது பதிலளித்தால் இணையம் பயன்படுத்தப்படும்."
+
+msgid "Also require DNS resolution"
+msgstr "DNS தெளிவுத்திறனும் தேவை"
+
+msgid "DNS name to resolve"
+msgstr "தீர்க்க DNS பெயர்"
+
+msgid "Also require an HTTP request"
+msgstr "HTTP கோரிக்கையும் தேவை"
+
+msgid "HTTP URL"
+msgstr "HTTP URL"
+
+msgid "WAN interface"
+msgstr "WAN இடைமுகம்"
+
+msgid "The device name is read from network.<iface>.device."
+msgstr "சாதனத்தின் பெயர் பிணையத்திலிருந்து படிக்கப்பட்டது.<iface>.device."
+
+msgid "AT serial port"
+msgstr "AT சீரியல் போர்ட்"
+
+msgid "Detected USB/ACM serial ports. For Quectel EC200A use /dev/ttyUSB2; /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "USB/ACM தொடர் போர்ட்கள் கண்டறியப்பட்டது. Quectel EC200Aக்கு /dev/ttyUSB2 பயன்படுத்தவும்; /dev/ttyUSB0 என்பது கண்டறியும் போர்ட் மற்றும் AT கட்டளைகளுக்கு பதிலளிக்காது."
+
+msgid "AT port baud rate"
+msgstr "போர்ட் பாட் விகிதம்"
+
+msgid "Modem reboot method"
+msgstr "மோடம் மறுதொடக்கம் முறை"
+
+msgid "AT+CFUN=1,1 (recommended)"
+msgstr "AT+CFUN=1,1 (பரிந்துரைக்கப்படுகிறது)"
+
+msgid "USB re-bind (best effort)"
+msgstr "USB ரீ-பைண்ட் (சிறந்த முயற்சி)"
+
+msgid "Wait after reboot (seconds)"
+msgstr "மறுதொடக்கம் செய்த பிறகு காத்திருங்கள் (வினாடிகள்)"
+
+msgid "Collect modem information"
+msgstr "மோடம் தகவலைச் சேகரிக்கவும்"
+
+msgid "Reads model, firmware, IMEI, signal, operator and temperature via AT commands."
+msgstr "AT கட்டளைகள் வழியாக மாதிரி, ஃபார்ம்வேர், IMEI, சிக்னல், ஆபரேட்டர் மற்றும் வெப்பநிலையைப் படிக்கிறது."
+
+msgid "Modem info interval (seconds)"
+msgstr "மோடம் தகவல் இடைவெளி (வினாடிகள்)"
+
+msgid "How often to query the modem with AT commands. Keep it longer if other modem tools use the same serial port."
+msgstr "AT கட்டளைகளுடன் மோடமை எவ்வளவு அடிக்கடி வினவுவது. மற்ற மோடம் கருவிகள் ஒரே சீரியல் போர்ட்டைப் பயன்படுத்தினால் அதை நீண்ட நேரம் வைத்திருங்கள்."
+
+msgid "Signal refresh interval (seconds)"
+msgstr "சிக்னல் புதுப்பிப்பு இடைவெளி (வினாடிகள்)"
+
+msgid "Pause between signal page updates. The actual update also includes the modem response time."
+msgstr "சிக்னல் பக்க புதுப்பிப்புகளுக்கு இடையில் இடைநிறுத்தம். உண்மையான புதுப்பிப்பில் மோடம் மறுமொழி நேரமும் அடங்கும்."
+
+msgid "Safety"
+msgstr "பாதுகாப்பு"
+
+msgid "Maximum reboots per window"
+msgstr "ஒரு சாளரத்திற்கு அதிகபட்ச மறுதொடக்கம்"
+
+msgid "Set to 0 for unlimited. The limit prevents reboot loops."
+msgstr "வரம்பற்ற 0 என அமைக்கவும். வரம்பு மறுதொடக்கம் சுழற்சிகளைத் தடுக்கிறது."
+
+msgid "Reboot window (seconds)"
+msgstr "மறுதொடக்கம் சாளரம் (வினாடிகள்)"
+
+msgid "Cooldown between reboots (seconds)"
+msgstr "மறுதொடக்கங்களுக்கு இடையே கூல்டவுன் (வினாடிகள்)"
+
+msgid "Logging"
+msgstr "பதிவு"
+
+msgid "Log level"
+msgstr "பதிவு நிலை"
+
+msgid "Error"
+msgstr "பிழை"
+
+msgid "Warning"
+msgstr "Warning"
+
+msgid "Info"
+msgstr "தகவல்"
+
+msgid "Debug"
+msgstr "பிழை நீக்கு"
+
+msgid "Remote access warning"
+msgstr "தொலைநிலை அணுகல் எச்சரிக்கை"
+
+msgid "This service reboots only the modem, not the router. If the modem is the only WAN, internet and remote access will be down during the reboot. Do not change USB mode, APN or band settings remotely without a rollback plan."
+msgstr "இந்த சேவை மோடத்தை மட்டுமே மறுதொடக்கம் செய்கிறது, திசைவி அல்ல. மோடம் மட்டுமே WAN ஆக இருந்தால், மறுதொடக்கம் செய்யும் போது இணையம் மற்றும் தொலைநிலை அணுகல் செயலிழக்கும். திரும்பப்பெறும் திட்டம் இல்லாமல் USB பயன்முறை, APN அல்லது பேண்ட் அமைப்புகளை தொலைவிலிருந்து மாற்ற வேண்டாம்."
+
+msgid "Service"
+msgstr "பணி"
+
+msgid "State"
+msgstr "மாநிலம்"
+
+msgid "Last check"
+msgstr "கடைசி காசோலை"
+
+msgid "Last success"
+msgstr "கடைசி வெற்றி"
+
+msgid "Last failure"
+msgstr "கடைசி தோல்வி"
+
+msgid "Failures"
+msgstr "தோல்விகள்"
+
+msgid "Modem reboots"
+msgstr "மோடம் மறுதொடக்கம்"
+
+msgid "last"
+msgstr "கடைசி"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "Data transferred"
+msgstr "தரவு மாற்றப்பட்டது"
+
+msgid "Ping / DNS / HTTP"
+msgstr "பிங் / DNS / HTTP"
+
+msgid "Latency"
+msgstr "சுணக்கம்"
+
+msgid "Modem"
+msgstr "மோடம்"
+
+msgid "Firmware"
+msgstr "நிலைபொருள்"
+
+msgid "IMEI"
+msgstr "IMEI"
+
+msgid "Operator / network"
+msgstr "ஆபரேட்டர் / நெட்வொர்க்"
+
+msgid "Modem temperature"
+msgstr "மோடம் வெப்பநிலை"
+
+msgid "Service uptime"
+msgstr "சேவை இயக்க நேரம்"
+
+msgid "LTE quality"
+msgstr "LTE தரம்"
+
+msgid "CSQ"
+msgstr "CSQ"
+
+msgid "RSSI"
+msgstr "RSSI"
+
+msgid "RSRP"
+msgstr "RSRP"
+
+msgid "SINR"
+msgstr "SINR"
+
+msgid "RSRQ"
+msgstr "RSRQ"
+
+msgid "Band"
+msgstr "பட்டை"
+
+msgid "Check now"
+msgstr "இப்போது சரிபார்க்கவும்"
+
+msgid "Refresh modem info"
+msgstr "மோடம் தகவலைப் புதுப்பிக்கவும்"
+
+msgid "Reboot modem"
+msgstr "மோடத்தை மீண்டும் துவக்கவும்"
+
+msgid "Restart service"
+msgstr "சேவையை மீண்டும் தொடங்கவும்"
+
+msgid "yes"
+msgstr "ஆம்"
+
+msgid "no"
+msgstr "இல்லை"
+
+msgid "online"
+msgstr "ஆன்லைன்"
+
+msgid "offline"
+msgstr "ஆஃப்லைனில்"
+
+msgid "rebooting"
+msgstr "மறுதொடக்கம்"
+
+msgid "checking"
+msgstr "சரிபார்க்கிறது"
+
+msgid "disabled"
+msgstr "முடக்கப்பட்டது"
+
+msgid "starting"
+msgstr "தொடங்குகிறது"
+
+msgid "stopped"
+msgstr "நிறுத்தப்பட்டது"
+
+msgid "error"
+msgstr "பிழை"
+
+msgid "running"
+msgstr "ஓடுகிறது"
+
+msgid "Failed to read status"
+msgstr "நிலையைப் படிக்க முடியவில்லை"
+
+msgid "Reading modem data"
+msgstr "மோடம் தரவைப் படித்தல்"
+
+msgid "Failed to read modem data"
+msgstr "மோடம் தரவைப் படிக்க முடியவில்லை"
+
+msgid "Check started"
+msgstr "சோதனை தொடங்கியது"
+
+msgid "Check failed"
+msgstr "சோதனை தோல்வியடைந்தது"
+
+msgid "Reboot the modem now? Internet will be down for about"
+msgstr "இப்போது மோடத்தை மீண்டும் துவக்கவா? இணையம் ஏறத்தாழ முடங்கும்"
+
+msgid "seconds."
+msgstr "வினாடிகள்."
+
+msgid "Modem reboot started"
+msgstr "மோடம் மறுதொடக்கம் தொடங்கியது"
+
+msgid "Reboot failed"
+msgstr "மறுதொடக்கம் தோல்வியடைந்தது"
+
+msgid "Restart the modemwatch service?"
+msgstr "மோடம்வாட்ச் சேவையை மீண்டும் தொடங்கவா?"
+
+msgid "Service restarted"
+msgstr "சேவை மீண்டும் தொடங்கப்பட்டது"
+
+msgid "Restart failed"
+msgstr "மறுதொடக்கம் தோல்வியடைந்தது"
+
+msgid "Signal strength (RSRQ)"
+msgstr "சமிக்ஞை வலிமை (RSRQ)"
+
+msgid "Operator"
+msgstr "ஆபரேட்டர்"
+
+msgid "Network"
+msgstr "பிணையம்"
+
+msgid "Last update"
+msgstr "கடைசி புதுப்பிப்பு"
+
+msgid "Refresh interval"
+msgstr "இடைவெளியைப் புதுப்பிக்கவும்"
+
+msgid "seconds"
+msgstr "வினாடிகள்"
+
+msgid "Signal Strength"
+msgstr "சிக்னல் வலிமை"
+
+msgid "Received Signal Strength Indicator"
+msgstr "பெறப்பட்ட சிக்னல் வலிமை காட்டி"
+
+msgid "Reference Signal Receive Power"
+msgstr "குறிப்பு சமிக்ஞை பெறு சக்தி"
+
+msgid "Signal to Interference plus Noise Ratio"
+msgstr "குறுக்கீடு மற்றும் ஒலி விகிதத்திற்கான சமிக்ஞை"
+
+msgid "Reference Signal Received Quality"
+msgstr "குறிப்பு சமிக்ஞை பெறப்பட்ட தரம்"
+
+msgid "Refresh now"
+msgstr "இப்போது புதுப்பிக்கவும்"
+
+msgid "Pause"
+msgstr "இடைநிறுத்தம்"
+
+msgid "Busy"
+msgstr "பிஸி"
+
+msgid "AT port not found"
+msgstr "AT போர்ட் கிடைக்கவில்லை"
+
+msgid "No response from modem"
+msgstr "மோடமில் இருந்து பதில் இல்லை"
+
+msgid "Failed to read signal"
+msgstr "சிக்னலைப் படிக்க முடியவில்லை"
+
+msgid "Resume"
+msgstr "ரெஸ்யூம்"
+
+msgid "Refresh log"
+msgstr "பதிவைப் புதுப்பிக்கவும்"
+
+msgid "Auto-refresh"
+msgstr "தானாக புதுப்பித்தல்"
+
+msgid "(empty)"
+msgstr "(காலியாக)"
+
+msgid "Updated"
+msgstr "புதுப்பிக்கப்பட்டது"
+
+msgid "Failed to read log"
+msgstr "பதிவைப் படிக்க முடியவில்லை"
+
+msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
+msgstr "AT கட்டளைகள் மோடம் அமைப்புகளை மாற்றலாம் மற்றும் இணையம் அல்லது SSH ஐ துண்டிக்கலாம். USB பயன்முறை, APN, பேண்ட் அல்லது நெட்வொர்க் பயன்முறையை திரும்பப்பெறும் திட்டம் இல்லாமல் தொலைவிலிருந்து மாற்ற வேண்டாம்."
+
+msgid "Expert mode — allow changing USB mode and NAT"
+msgstr "நிபுணர் பயன்முறை - USB பயன்முறை மற்றும் NAT ஆகியவற்றை மாற்ற அனுமதிக்கவும்"
+
+msgid "Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan."
+msgstr "USB பயன்முறையை மாற்றுவது மோடம் மற்றும் SSH ஐ துண்டிக்கலாம். உள்ளூர் அணுகல் அல்லது திரும்பப்பெறுதல் திட்டத்துடன் மட்டுமே பயன்படுத்தவும்."
+
+msgid "Selected AT port"
+msgstr "AT போர்ட் தேர்ந்தெடுக்கப்பட்டது"
+
+msgid "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Quectel EC200Aக்கு /dev/ttyUSB2 ஐப் பயன்படுத்தவும். /dev/ttyUSB0 என்பது கண்டறியும் போர்ட் மற்றும் AT கட்டளைகளுக்கு பதிலளிக்காது."
+
+msgid "Current configuration"
+msgstr "தற்போதைய கட்டமைப்பு"
+
+msgid "Read current configuration"
+msgstr "தற்போதைய உள்ளமைவைப் படிக்கவும்"
+
+msgid "Modem information"
+msgstr "மோடம் தகவல்"
+
+msgid "Model"
+msgstr "மாதிரியுரு"
+
+msgid "SIM status"
+msgstr "சிம் நிலை"
+
+msgid "Temperature"
+msgstr "வெப்பநிலை"
+
+msgid "Access Point Name (APN)"
+msgstr "அணுகல் புள்ளி பெயர் (APN)"
+
+msgid "Username"
+msgstr "பயனர்பெயர்"
+
+msgid "Password"
+msgstr "கடவுச்சொல்"
+
+msgid "Authentication"
+msgstr "ஏற்பு"
+
+msgid "None"
+msgstr "எதுவுமில்லை"
+
+msgid "PDP type"
+msgstr "PDP வகை"
+
+msgid "Read APN"
+msgstr "APN ஐப் படிக்கவும்"
+
+msgid "Apply APN"
+msgstr "APNஐப் பயன்படுத்தவும்"
+
+msgid "Network mode"
+msgstr "நெட்வொர்க் பயன்முறை"
+
+msgid "Mode"
+msgstr "பயன்முறை"
+
+msgid "Automatic"
+msgstr "தானியங்கி"
+
+msgid "GSM only"
+msgstr "ஜிஎஸ்எம் மட்டும்"
+
+msgid "WCDMA only"
+msgstr "WCDMA மட்டும்"
+
+msgid "LTE only"
+msgstr "LTE மட்டும்"
+
+msgid "Read mode"
+msgstr "வாசிப்பு முறை"
+
+msgid "Apply mode"
+msgstr "பயன்முறையைப் பயன்படுத்து"
+
+msgid "Band configuration"
+msgstr "பேண்ட் கட்டமைப்பு"
+
+msgid "Read bands"
+msgstr "பட்டைகளைப் படியுங்கள்"
+
+msgid "Select all"
+msgstr "அனைத்தையும் தேர்ந்தெடுக்கவும்"
+
+msgid "Restore default"
+msgstr "இயல்புநிலையை மீட்டமை"
+
+msgid "Apply bands"
+msgstr "பட்டைகள் விண்ணப்பிக்கவும்"
+
+msgid "Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection."
+msgstr "நீங்கள் இயக்கத்தில் வைத்திருக்க விரும்பும் LTE பட்டைகளைத் தேர்ந்தெடுக்கவும். விண்ணப்பிப்பது WAN ஐ மறுதொடக்கம் செய்து இணைப்பு துண்டிக்கப்படலாம்."
+
+msgid "USB mode"
+msgstr "USB பயன்முறை"
+
+msgid "Current value"
+msgstr "தற்போதைய மதிப்பு"
+
+msgid "New value"
+msgstr "புதிய மதிப்பு"
+
+msgid "RMNET (QMI)"
+msgstr "RMNET (QMI)"
+
+msgid "not supported"
+msgstr "ஆதரிக்கவில்லை"
+
+msgid "ECM (CDC Ethernet)"
+msgstr "ஈசிஎம் (சிடிசி ஈதர்நெட்)"
+
+msgid "MBIM"
+msgstr "MBIM"
+
+msgid "RNDIS"
+msgstr "RNDIS"
+
+msgid "Apply USB mode"
+msgstr "USB பயன்முறையைப் பயன்படுத்தவும்"
+
+msgid "Read USB mode"
+msgstr "USB பயன்முறையைப் படிக்கவும்"
+
+msgid "Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem."
+msgstr "மோடம் ஃபார்ம்வேரால் ஆதரிக்கப்படாத முறைகள் முடக்கப்பட்டு, ஆதரிக்கப்படவில்லை எனக் குறிக்கப்படும். ஆதரிக்கப்படும் முறைகள் மோடமிலிருந்து தானாகவே கண்டறியப்படும்."
+
+msgid "Apply NAT"
+msgstr "NAT ஐ விண்ணப்பிக்கவும்"
+
+msgid "Read NAT"
+msgstr "NAT ஐப் படியுங்கள்"
+
+msgid "Raw AT command"
+msgstr "ரா AT கட்டளை"
+
+msgid "AT command"
+msgstr "AT கட்டளை"
+
+msgid "Send"
+msgstr "அனுப்பு"
+
+msgid "Sending"
+msgstr "அனுப்புகிறது"
+
+msgid "AT command failed"
+msgstr "AT கட்டளை தோல்வியடைந்தது"
+
+msgid "Reading APN"
+msgstr "APN ஐப் படிக்கிறது"
+
+msgid "Failed to read APN"
+msgstr "APNஐப் படிக்க முடியவில்லை"
+
+msgid "Reading settings"
+msgstr "வாசிப்பு அமைப்புகள்"
+
+msgid "Settings read"
+msgstr "அமைப்புகள் படித்தன"
+
+msgid "Failed to read settings"
+msgstr "அமைப்புகளைப் படிக்க முடியவில்லை"
+
+msgid "APN, username and password may contain only letters, digits, dot, hyphen and underscore."
+msgstr "APN, பயனர்பெயர் மற்றும் கடவுச்சொல்லில் எழுத்துக்கள், இலக்கங்கள், புள்ளி, ஹைபன் மற்றும் அடிக்கோடி மட்டுமே இருக்கலாம்."
+
+msgid "Apply APN settings? The connection may drop."
+msgstr "APN அமைப்புகளைப் பயன்படுத்தவா? இணைப்பு குறையலாம்."
+
+msgid "Applying APN"
+msgstr "APNஐப் பயன்படுத்துகிறது"
+
+msgid "APN applied. Reconnect or reboot the modem if needed."
+msgstr "APN பயன்படுத்தப்பட்டது. தேவைப்பட்டால் மோடத்தை மீண்டும் இணைக்கவும் அல்லது மறுதொடக்கம் செய்யவும்."
+
+msgid "Failed to apply APN"
+msgstr "APNஐப் பயன்படுத்துவதில் தோல்வி"
+
+msgid "Apply network mode? The connection may drop."
+msgstr "நெட்வொர்க் பயன்முறையைப் பயன்படுத்தவா? இணைப்பு குறையலாம்."
+
+msgid "Reading bands"
+msgstr "வாசிப்பு இசைக்குழுக்கள்"
+
+msgid "Failed to read bands"
+msgstr "இசைக்குழுக்களைப் படிக்க முடியவில்லை"
+
+msgid "No bands selected"
+msgstr "பட்டைகள் எதுவும் தேர்ந்தெடுக்கப்படவில்லை"
+
+msgid "Restore default bands?"
+msgstr "இயல்புநிலை பட்டைகளை மீட்டெடுக்கவா?"
+
+msgid "Apply selected bands? The connection may drop."
+msgstr "தேர்ந்தெடுக்கப்பட்ட பேண்டுகளைப் பயன்படுத்தவா? இணைப்பு குறையலாம்."
+
+msgid "Applying bands"
+msgstr "பட்டைகளைப் பயன்படுத்துதல்"
+
+msgid "Failed to apply bands"
+msgstr "பேண்டுகளைப் பயன்படுத்துவதில் தோல்வி"
+
+msgid "USB mode is read-only in this UI."
+msgstr "இந்த UI இல் USB பயன்முறை படிக்க மட்டுமே உள்ளது."
+
+msgid "This USB mode is not supported by the modem firmware."
+msgstr "இந்த USB பயன்முறையை மோடம் ஃபார்ம்வேர் ஆதரிக்கவில்லை."
+
+msgid "Change USB mode? The modem will re-enumerate and the connection may drop. Continue?"
+msgstr "USB பயன்முறையை மாற்றவா? மோடம் மீண்டும் கணக்கிடப்படும் மற்றும் இணைப்பு குறையலாம். தொடரவா?"
+
+msgid "Change NAT mode? The connection may drop."
+msgstr "NAT பயன்முறையை மாற்றவா? இணைப்பு குறையலாம்."
+
+msgid "Current operator"
+msgstr "தற்போதைய ஆபரேட்டர்"
+
+msgid "AT port"
+msgstr "துறைமுகத்தில்"
+
+msgid "Scan networks"
+msgstr "நெட்வொர்க்குகளை ஸ்கேன் செய்யவும்"
+
+msgid "Automatic operator selection"
+msgstr "தானியங்கி ஆபரேட்டர் தேர்வு"
+
+msgid "Stop scan"
+msgstr "ஸ்கேன் செய்வதை நிறுத்து"
+
+msgid "Update MCC/MNC database"
+msgstr "MCC/MNC தரவுத்தளத்தைப் புதுப்பிக்கவும்"
+
+msgid "Country"
+msgstr "நாடு"
+
+msgid "MCC/MNC"
+msgstr "MCC/MNC"
+
+msgid "Technology"
+msgstr "தொழில்நுட்பம்"
+
+msgid "Action"
+msgstr "Action"
+
+msgid "Raw scan output"
+msgstr "ரா ஸ்கேன் வெளியீடு"
+
+msgid "current"
+msgstr "தற்போதைய"
+
+msgid "available"
+msgstr "கிடைக்கும்"
+
+msgid "forbidden"
+msgstr "தடைசெய்யப்பட்டுள்ளது"
+
+msgid "unknown"
+msgstr "தெரியவில்லை"
+
+msgid "Select"
+msgstr "Select"
+
+msgid "MCC/MNC database updated."
+msgstr "MCC/MNC தரவுத்தளம் புதுப்பிக்கப்பட்டது."
+
+msgid "Not updated yet"
+msgstr "இன்னும் புதுப்பிக்கப்படவில்லை"
+
+msgid "Failed to read MCC/MNC update status"
+msgstr "MCC/MNC புதுப்பிப்பு நிலையைப் படிக்க முடியவில்லை"
+
+msgid "Updating MCC/MNC database"
+msgstr "MCC/MNC தரவுத்தளத்தைப் புதுப்பிக்கிறது"
+
+msgid "Scanning networks... This may take up to two minutes."
+msgstr "நெட்வொர்க்குகளை ஸ்கேன் செய்கிறது... இதற்கு இரண்டு நிமிடங்கள் வரை ஆகலாம்."
+
+msgid "Scan complete."
+msgstr "ஸ்கேன் முடிந்தது."
+
+msgid "Modem is busy. Try again later."
+msgstr "மோடம் பிஸியாக உள்ளது. பிறகு முயற்சிக்கவும்."
+
+msgid "Scan failed"
+msgstr "ஸ்கேன் தோல்வியடைந்தது"
+
+msgid "Not scanned yet."
+msgstr "இன்னும் ஸ்கேன் செய்யவில்லை."
+
+msgid "Failed to read scan status"
+msgstr "ஸ்கேன் நிலையைப் படிக்க முடியவில்லை"
+
+msgid "Stopping scan"
+msgstr "ஸ்கேன் செய்வதை நிறுத்துகிறது"
+
+msgid "Network scan stopped"
+msgstr "நெட்வொர்க் ஸ்கேன் நிறுத்தப்பட்டது"
+
+msgid "Failed to stop scan"
+msgstr "ஸ்கேன் செய்வதை நிறுத்த முடியவில்லை"
+
+msgid "Starting network scan"
+msgstr "நெட்வொர்க் ஸ்கேன் தொடங்குகிறது"
+
+msgid "Network scan started"
+msgstr "நெட்வொர்க் ஸ்கேன் தொடங்கியது"
+
+msgid "Failed to start scan"
+msgstr "ஸ்கேன் தொடங்குவதில் தோல்வி"
+
+msgid "Select operator"
+msgstr "ஆபரேட்டரைத் தேர்ந்தெடுக்கவும்"
+
+msgid "The connection may drop."
+msgstr "இணைப்பு குறையலாம்."
+
+msgid "Selecting operator"
+msgstr "ஆபரேட்டரைத் தேர்ந்தெடுப்பது"
+
+msgid "Operator selection sent"
+msgstr "ஆபரேட்டர் தேர்வு அனுப்பப்பட்டது"
+
+msgid "Failed to select operator"
+msgstr "ஆபரேட்டரைத் தேர்ந்தெடுக்க முடியவில்லை"
+
+msgid "Use automatic operator selection?"
+msgstr "தானியங்கி ஆபரேட்டர் தேர்வைப் பயன்படுத்தவா?"
+
+msgid "Selecting automatic mode"
+msgstr "தானியங்கி பயன்முறையைத் தேர்ந்தெடுப்பது"

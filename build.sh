@@ -1,5 +1,6 @@
 #!/bin/sh
-# Build modemwatch and luci-app-modemwatch with the official OpenWrt SDK.
+# Build modemwatch, luci-app-modemwatch and all translation packages
+# with the official OpenWrt SDK.
 # Tested with OpenWrt 24.10.1, target ipq40xx/mikrotik (MikroTik hAP ac3).
 set -eu
 
@@ -29,17 +30,23 @@ fi
 cd "$ROOT_DIR/$SDK_DIR"
 
 echo "==> Copying packages into SDK"
-rm -rf package/modemwatch package/luci-app-modemwatch package/luci-i18n-modemwatch-uk
-mkdir -p package/modemwatch package/luci-app-modemwatch package/luci-i18n-modemwatch-uk
-cp -r "$ROOT_DIR/modemwatch/." package/modemwatch/
-cp -r "$ROOT_DIR/luci-app-modemwatch/." package/luci-app-modemwatch/
-cp -r "$ROOT_DIR/luci-i18n-modemwatch-uk/." package/luci-i18n-modemwatch-uk/
+for dir in "$ROOT_DIR"/modemwatch "$ROOT_DIR"/luci-app-modemwatch "$ROOT_DIR"/i18n/luci-i18n-modemwatch-*; do
+	[ -d "$dir" ] || continue
+	name=$(basename "$dir")
+	rm -rf "package/$name"
+	mkdir -p "package/$name"
+	cp -r "$dir/." "package/$name/"
+done
 
 echo "==> Building"
 make defconfig
 make package/modemwatch/compile V=s
 make package/luci-app-modemwatch/compile V=s
-make package/luci-i18n-modemwatch-uk/compile V=s
+for dir in "$ROOT_DIR"/i18n/luci-i18n-modemwatch-*; do
+	[ -d "$dir" ] || continue
+	name=$(basename "$dir")
+	make "package/$name/compile" V=s
+done
 
 echo "==> Built packages:"
-find bin/packages -type f \( -name 'modemwatch*.ipk' -o -name 'luci-app-modemwatch*.ipk' -o -name 'luci-i18n-modemwatch-uk*.ipk' \) -print
+find bin/packages -type f \( -name 'modemwatch*.ipk' -o -name 'luci-app-modemwatch*.ipk' -o -name 'luci-i18n-modemwatch-*.ipk' -o -name 'modemwatch*.apk' -o -name 'luci-app-modemwatch*.apk' -o -name 'luci-i18n-modemwatch-*.apk' \) -print

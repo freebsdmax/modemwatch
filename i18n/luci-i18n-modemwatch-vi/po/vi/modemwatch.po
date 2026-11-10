@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-modemwatch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 00:00+0000\n"
+"PO-Revision-Date: 2026-11-10 00:00+0000\n"
+"Last-Translator: modemwatch contributors\n"
+"Language-Team: Tiếng Việt (Vietnamese)\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Modem LTE 4G"
+msgstr "Modem LTE 4G"
+
+msgid "Status"
+msgstr "Trạng thái"
+
+msgid "Signal"
+msgstr "Tín hiệu"
+
+msgid "Log"
+msgstr "Nhật ký"
+
+msgid "Modem settings"
+msgstr "Cài đặt modem"
+
+msgid "Network search"
+msgstr "Tìm kiếm mạng"
+
+msgid "Settings"
+msgstr "Cài đặt"
+
+msgid "invalid token"
+msgstr "mã thông báo không hợp lệ"
+
+msgid "empty AT command"
+msgstr "lệnh AT trống"
+
+msgid "invalid band selection"
+msgstr "lựa chọn băng tần không hợp lệ"
+
+msgid "Band settings sent"
+msgstr "Đã gửi cài đặt ban nhạc"
+
+msgid "network scan started"
+msgstr "bắt đầu quét mạng"
+
+msgid "network scan stopped"
+msgstr "quá trình quét mạng đã dừng"
+
+msgid "invalid operator"
+msgstr "toán tử không hợp lệ"
+
+msgid "Downloading MCC/MNC list"
+msgstr "Đang tải xuống danh sách MCC/MNC"
+
+msgid "Parsing MCC/MNC list"
+msgstr "Phân tích danh sách MCC/MNC"
+
+msgid "MCC/MNC database updated"
+msgstr "Đã cập nhật cơ sở dữ liệu MCC/MNC"
+
+msgid "Failed to update MCC/MNC database"
+msgstr "Không cập nhật được cơ sở dữ liệu MCC/MNC"
+
+msgid "MCC/MNC update already running"
+msgstr "Bản cập nhật MCC/MNC đã chạy"
+
+msgid "MCC/MNC update started"
+msgstr "Đã bắt đầu cập nhật MCC/MNC"
+
+msgid "operator selection sent"
+msgstr "lựa chọn nhà điều hành đã được gửi"
+
+msgid "internet check started"
+msgstr "bắt đầu kiểm tra internet"
+
+msgid "modem reboot started"
+msgstr "khởi động lại modem bắt đầu"
+
+msgid "service restarted"
+msgstr "dịch vụ được khởi động lại"
+
+msgid "Modem info updated"
+msgstr "Đã cập nhật thông tin modem"
+
+msgid "Modem did not respond"
+msgstr "Modem không phản hồi"
+
+msgid "Checks internet connectivity and reboots the Quectel modem when the connection is lost."
+msgstr "Kiểm tra kết nối internet và khởi động lại modem Quectel khi mất kết nối."
+
+msgid "Service settings"
+msgstr "Cài đặt dịch vụ"
+
+msgid "Enable service"
+msgstr "Kích hoạt dịch vụ"
+
+msgid "Check interval (seconds)"
+msgstr "Khoảng thời gian kiểm tra (giây)"
+
+msgid "Failures before modem reboot"
+msgstr "Lỗi trước khi khởi động lại modem"
+
+msgid "Ping hosts"
+msgstr "Máy chủ Ping"
+
+msgid "Space-separated list. Internet is considered up if at least one host responds."
+msgstr "Danh sách được phân tách bằng dấu cách. Internet được coi là hoạt động nếu có ít nhất một máy chủ phản hồi."
+
+msgid "Also require DNS resolution"
+msgstr "Cũng yêu cầu độ phân giải DNS"
+
+msgid "DNS name to resolve"
+msgstr "Tên DNS để giải quyết"
+
+msgid "Also require an HTTP request"
+msgstr "Cũng yêu cầu một yêu cầu HTTP"
+
+msgid "HTTP URL"
+msgstr "HTTP URL"
+
+msgid "WAN interface"
+msgstr "giao diện WAN"
+
+msgid "The device name is read from network.<iface>.device."
+msgstr "Tên thiết bị được đọc từ mạng.<iface>.device."
+
+msgid "AT serial port"
+msgstr "Cổng nối tiếp AT"
+
+msgid "Detected USB/ACM serial ports. For Quectel EC200A use /dev/ttyUSB2; /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Đã phát hiện cổng nối tiếp USB/ACM. Đối với Quectel EC200A, hãy sử dụng /dev/ttyUSB2; /dev/ttyUSB0 là cổng chẩn đoán và không trả lời các lệnh AT."
+
+msgid "AT port baud rate"
+msgstr "Tốc độ truyền của cổng AT"
+
+msgid "Modem reboot method"
+msgstr "Phương pháp khởi động lại modem"
+
+msgid "AT+CFUN=1,1 (recommended)"
+msgstr "AT+CFUN=1,1 (được khuyến nghị)"
+
+msgid "USB re-bind (best effort)"
+msgstr "Liên kết lại USB (nỗ lực tốt nhất)"
+
+msgid "Wait after reboot (seconds)"
+msgstr "Đợi sau khi khởi động lại (giây)"
+
+msgid "Collect modem information"
+msgstr "Thu thập thông tin modem"
+
+msgid "Reads model, firmware, IMEI, signal, operator and temperature via AT commands."
+msgstr "Đọc model, firmware, IMEI, tín hiệu, toán tử và nhiệt độ thông qua lệnh AT."
+
+msgid "Modem info interval (seconds)"
+msgstr "Khoảng thời gian thông tin modem (giây)"
+
+msgid "How often to query the modem with AT commands. Keep it longer if other modem tools use the same serial port."
+msgstr "Tần suất truy vấn modem bằng lệnh AT. Giữ nó lâu hơn nếu các công cụ modem khác sử dụng cùng một cổng nối tiếp."
+
+msgid "Signal refresh interval (seconds)"
+msgstr "Khoảng thời gian làm mới tín hiệu (giây)"
+
+msgid "Pause between signal page updates. The actual update also includes the modem response time."
+msgstr "Tạm dừng giữa các lần cập nhật trang tín hiệu. Bản cập nhật thực tế cũng bao gồm thời gian phản hồi của modem."
+
+msgid "Safety"
+msgstr "An toàn"
+
+msgid "Maximum reboots per window"
+msgstr "Số lần khởi động lại tối đa trên mỗi cửa sổ"
+
+msgid "Set to 0 for unlimited. The limit prevents reboot loops."
+msgstr "Đặt thành 0 cho không giới hạn. Giới hạn ngăn chặn các vòng lặp khởi động lại."
+
+msgid "Reboot window (seconds)"
+msgstr "Cửa sổ khởi động lại (giây)"
+
+msgid "Cooldown between reboots (seconds)"
+msgstr "Thời gian hồi chiêu giữa các lần khởi động lại (giây)"
+
+msgid "Logging"
+msgstr "Ghi nhật ký"
+
+msgid "Log level"
+msgstr "Mức độ nhật ký"
+
+msgid "Error"
+msgstr "Lỗi"
+
+msgid "Warning"
+msgstr "Warning"
+
+msgid "Info"
+msgstr "Thông tin"
+
+msgid "Debug"
+msgstr "Debug"
+
+msgid "Remote access warning"
+msgstr "Cảnh báo truy cập từ xa"
+
+msgid "This service reboots only the modem, not the router. If the modem is the only WAN, internet and remote access will be down during the reboot. Do not change USB mode, APN or band settings remotely without a rollback plan."
+msgstr "Dịch vụ này chỉ khởi động lại modem chứ không khởi động lại bộ định tuyến. Nếu modem là mạng WAN duy nhất, internet và quyền truy cập từ xa sẽ bị ngắt trong quá trình khởi động lại. Không thay đổi cài đặt chế độ USB, APN hoặc băng tần từ xa mà không có kế hoạch khôi phục."
+
+msgid "Service"
+msgstr "Dịch vụ"
+
+msgid "State"
+msgstr "Trạng thái"
+
+msgid "Last check"
+msgstr "Kiểm tra lần cuối"
+
+msgid "Last success"
+msgstr "Thành công cuối cùng"
+
+msgid "Last failure"
+msgstr "Thất bại cuối cùng"
+
+msgid "Failures"
+msgstr "Thất bại"
+
+msgid "Modem reboots"
+msgstr "Khởi động lại modem"
+
+msgid "last"
+msgstr "cuối cùng"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "Data transferred"
+msgstr "Dữ liệu được truyền"
+
+msgid "Ping / DNS / HTTP"
+msgstr "Ping/DNS/HTTP"
+
+msgid "Latency"
+msgstr "Độ trễ"
+
+msgid "Modem"
+msgstr "modem"
+
+msgid "Firmware"
+msgstr "Phần sụn"
+
+msgid "IMEI"
+msgstr "IMEI"
+
+msgid "Operator / network"
+msgstr "Nhà điều hành/mạng"
+
+msgid "Modem temperature"
+msgstr "Nhiệt độ modem"
+
+msgid "Service uptime"
+msgstr "Thời gian hoạt động của dịch vụ"
+
+msgid "LTE quality"
+msgstr "chất lượng LTE"
+
+msgid "CSQ"
+msgstr "CSQ"
+
+msgid "RSSI"
+msgstr "RSSI"
+
+msgid "RSRP"
+msgstr "RSRP"
+
+msgid "SINR"
+msgstr "SINR"
+
+msgid "RSRQ"
+msgstr "RSRQ"
+
+msgid "Band"
+msgstr "Cấm"
+
+msgid "Check now"
+msgstr "Kiểm tra ngay"
+
+msgid "Refresh modem info"
+msgstr "Làm mới thông tin modem"
+
+msgid "Reboot modem"
+msgstr "Khởi động lại modem"
+
+msgid "Restart service"
+msgstr "Khởi động lại dịch vụ"
+
+msgid "yes"
+msgstr "có"
+
+msgid "no"
+msgstr "Không"
+
+msgid "online"
+msgstr "trực tuyến"
+
+msgid "offline"
+msgstr "ngoại tuyến"
+
+msgid "rebooting"
+msgstr "khởi động lại"
+
+msgid "checking"
+msgstr "kiểm tra"
+
+msgid "disabled"
+msgstr "Đã vô hiệu hoá"
+
+msgid "starting"
+msgstr "bắt đầu"
+
+msgid "stopped"
+msgstr "dừng lại"
+
+msgid "error"
+msgstr "lỗi"
+
+msgid "running"
+msgstr "đang chạy"
+
+msgid "Failed to read status"
+msgstr "Không đọc được trạng thái"
+
+msgid "Reading modem data"
+msgstr "Đọc dữ liệu modem"
+
+msgid "Failed to read modem data"
+msgstr "Không đọc được dữ liệu modem"
+
+msgid "Check started"
+msgstr "Đã bắt đầu kiểm tra"
+
+msgid "Check failed"
+msgstr "Kiểm tra không thành công"
+
+msgid "Reboot the modem now? Internet will be down for about"
+msgstr "Khởi động lại modem bây giờ? Internet sẽ ngừng hoạt động trong khoảng"
+
+msgid "seconds."
+msgstr "giây."
+
+msgid "Modem reboot started"
+msgstr "Khởi động lại modem đã bắt đầu"
+
+msgid "Reboot failed"
+msgstr "Khởi động lại không thành công"
+
+msgid "Restart the modemwatch service?"
+msgstr "Khởi động lại dịch vụ modemwatch?"
+
+msgid "Service restarted"
+msgstr "Dịch vụ đã được khởi động lại"
+
+msgid "Restart failed"
+msgstr "Khởi động lại không thành công"
+
+msgid "Signal strength (RSRQ)"
+msgstr "Cường độ tín hiệu (RSRQ)"
+
+msgid "Operator"
+msgstr "Nhà điều hành"
+
+msgid "Network"
+msgstr "Mạng"
+
+msgid "Last update"
+msgstr "Cập nhật lần cuối"
+
+msgid "Refresh interval"
+msgstr "Khoảng thời gian làm mới"
+
+msgid "seconds"
+msgstr "giây"
+
+msgid "Signal Strength"
+msgstr "Cường độ tín hiệu"
+
+msgid "Received Signal Strength Indicator"
+msgstr "Chỉ báo cường độ tín hiệu nhận được"
+
+msgid "Reference Signal Receive Power"
+msgstr "Công suất nhận tín hiệu tham chiếu"
+
+msgid "Signal to Interference plus Noise Ratio"
+msgstr "Tín hiệu nhiễu cộng với tỷ lệ nhiễu"
+
+msgid "Reference Signal Received Quality"
+msgstr "Chất lượng nhận được tín hiệu tham chiếu"
+
+msgid "Refresh now"
+msgstr "Làm mới ngay bây giờ"
+
+msgid "Pause"
+msgstr "Tạm dừng"
+
+msgid "Busy"
+msgstr "Bận"
+
+msgid "AT port not found"
+msgstr "Không tìm thấy cổng AT"
+
+msgid "No response from modem"
+msgstr "Không có phản hồi từ modem"
+
+msgid "Failed to read signal"
+msgstr "Không đọc được tín hiệu"
+
+msgid "Resume"
+msgstr "Tiếp tục"
+
+msgid "Refresh log"
+msgstr "Làm mới nhật ký"
+
+msgid "Auto-refresh"
+msgstr "Tự động làm mới"
+
+msgid "(empty)"
+msgstr "(Rỗng)"
+
+msgid "Updated"
+msgstr "Đã cập nhật"
+
+msgid "Failed to read log"
+msgstr "Không đọc được nhật ký"
+
+msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
+msgstr "Lệnh AT có thể thay đổi cài đặt modem và có thể ngắt kết nối Internet hoặc SSH. Không thay đổi chế độ USB, APN, băng tần hoặc chế độ mạng từ xa mà không có kế hoạch khôi phục."
+
+msgid "Expert mode — allow changing USB mode and NAT"
+msgstr "Chế độ chuyên gia - cho phép thay đổi chế độ USB và NAT"
+
+msgid "Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan."
+msgstr "Việc thay đổi chế độ USB có thể ngắt kết nối modem và SSH. Chỉ sử dụng với quyền truy cập cục bộ hoặc gói khôi phục."
+
+msgid "Selected AT port"
+msgstr "Cổng AT đã chọn"
+
+msgid "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Đối với Quectel EC200A, hãy sử dụng /dev/ttyUSB2. /dev/ttyUSB0 là cổng chẩn đoán và không trả lời các lệnh AT."
+
+msgid "Current configuration"
+msgstr "Cấu hình hiện tại"
+
+msgid "Read current configuration"
+msgstr "Đọc cấu hình hiện tại"
+
+msgid "Modem information"
+msgstr "Thông tin modem"
+
+msgid "Model"
+msgstr "Model"
+
+msgid "SIM status"
+msgstr "trạng thái SIM"
+
+msgid "Temperature"
+msgstr "Nhiệt độ"
+
+msgid "Access Point Name (APN)"
+msgstr "Tên điểm truy cập (APN)"
+
+msgid "Username"
+msgstr "Tên người dùng"
+
+msgid "Password"
+msgstr "Mật khẩu"
+
+msgid "Authentication"
+msgstr "Xác thực"
+
+msgid "None"
+msgstr "Không có"
+
+msgid "PDP type"
+msgstr "loại PDP"
+
+msgid "Read APN"
+msgstr "Đọc APN"
+
+msgid "Apply APN"
+msgstr "Áp dụng APN"
+
+msgid "Network mode"
+msgstr "Chế độ mạng"
+
+msgid "Mode"
+msgstr "Chế độ"
+
+msgid "Automatic"
+msgstr "Thự động"
+
+msgid "GSM only"
+msgstr "chỉ GSM"
+
+msgid "WCDMA only"
+msgstr "chỉ WCDMA"
+
+msgid "LTE only"
+msgstr "Chỉ LTE"
+
+msgid "Read mode"
+msgstr "Chế độ đọc"
+
+msgid "Apply mode"
+msgstr "Chế độ áp dụng"
+
+msgid "Band configuration"
+msgstr "Cấu hình băng tần"
+
+msgid "Read bands"
+msgstr "Đọc ban nhạc"
+
+msgid "Select all"
+msgstr "Chọn tất cả"
+
+msgid "Restore default"
+msgstr "Khôi phục mặc định"
+
+msgid "Apply bands"
+msgstr "Áp dụng các dải"
+
+msgid "Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection."
+msgstr "Chọn băng tần LTE bạn muốn tiếp tục bật. Việc áp dụng có thể khởi động lại mạng WAN và ngắt kết nối."
+
+msgid "USB mode"
+msgstr "chế độ USB"
+
+msgid "Current value"
+msgstr "Giá trị hiện tại"
+
+msgid "New value"
+msgstr "Giá trị mới"
+
+msgid "RMNET (QMI)"
+msgstr "RMNET (QMI)"
+
+msgid "not supported"
+msgstr "không được hỗ trợ"
+
+msgid "ECM (CDC Ethernet)"
+msgstr "ECM (CDC Ethernet)"
+
+msgid "MBIM"
+msgstr "MBIM"
+
+msgid "RNDIS"
+msgstr "RNDIS"
+
+msgid "Apply USB mode"
+msgstr "Áp dụng chế độ USB"
+
+msgid "Read USB mode"
+msgstr "Đọc chế độ USB"
+
+msgid "Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem."
+msgstr "Các chế độ không được chương trình cơ sở của modem hỗ trợ sẽ bị tắt và được đánh dấu là không được hỗ trợ. Các chế độ được hỗ trợ sẽ được phát hiện tự động từ modem."
+
+msgid "Apply NAT"
+msgstr "Áp dụng NAT"
+
+msgid "Read NAT"
+msgstr "Đọc NAT"
+
+msgid "Raw AT command"
+msgstr "Lệnh AT thô"
+
+msgid "AT command"
+msgstr "Lệnh AT"
+
+msgid "Send"
+msgstr "Gửi"
+
+msgid "Sending"
+msgstr "Đang gửi"
+
+msgid "AT command failed"
+msgstr "Lệnh AT không thành công"
+
+msgid "Reading APN"
+msgstr "Đọc APN"
+
+msgid "Failed to read APN"
+msgstr "Không đọc được APN"
+
+msgid "Reading settings"
+msgstr "Cài đặt đọc"
+
+msgid "Settings read"
+msgstr "Đã đọc cài đặt"
+
+msgid "Failed to read settings"
+msgstr "Không đọc được cài đặt"
+
+msgid "APN, username and password may contain only letters, digits, dot, hyphen and underscore."
+msgstr "APN, tên người dùng và mật khẩu chỉ có thể chứa các chữ cái, chữ số, dấu chấm, dấu gạch ngang và dấu gạch dưới."
+
+msgid "Apply APN settings? The connection may drop."
+msgstr "Áp dụng cài đặt APN? Kết nối có thể bị rớt."
+
+msgid "Applying APN"
+msgstr "Áp dụng APN"
+
+msgid "APN applied. Reconnect or reboot the modem if needed."
+msgstr "APN được áp dụng. Kết nối lại hoặc khởi động lại modem nếu cần."
+
+msgid "Failed to apply APN"
+msgstr "Không áp dụng được APN"
+
+msgid "Apply network mode? The connection may drop."
+msgstr "Áp dụng chế độ mạng? Kết nối có thể bị rớt."
+
+msgid "Reading bands"
+msgstr "ban nhạc đọc"
+
+msgid "Failed to read bands"
+msgstr "Không đọc được ban nhạc"
+
+msgid "No bands selected"
+msgstr "Không có ban nhạc nào được chọn"
+
+msgid "Restore default bands?"
+msgstr "Khôi phục các băng tần mặc định?"
+
+msgid "Apply selected bands? The connection may drop."
+msgstr "Áp dụng các dải đã chọn? Kết nối có thể bị rớt."
+
+msgid "Applying bands"
+msgstr "Áp dụng các dải"
+
+msgid "Failed to apply bands"
+msgstr "Không áp dụng được dải tần"
+
+msgid "USB mode is read-only in this UI."
+msgstr "Chế độ USB ở chế độ chỉ đọc trong giao diện người dùng này."
+
+msgid "This USB mode is not supported by the modem firmware."
+msgstr "Chế độ USB này không được firmware của modem hỗ trợ."
+
+msgid "Change USB mode? The modem will re-enumerate and the connection may drop. Continue?"
+msgstr "Thay đổi chế độ USB? Modem sẽ liệt kê lại và kết nối có thể bị rớt. Tiếp tục?"
+
+msgid "Change NAT mode? The connection may drop."
+msgstr "Thay đổi chế độ NAT? Kết nối có thể bị rớt."
+
+msgid "Current operator"
+msgstr "Toán tử hiện tại"
+
+msgid "AT port"
+msgstr "Cổng AT"
+
+msgid "Scan networks"
+msgstr "Quét mạng"
+
+msgid "Automatic operator selection"
+msgstr "Lựa chọn người vận hành tự động"
+
+msgid "Stop scan"
+msgstr "Dừng quét"
+
+msgid "Update MCC/MNC database"
+msgstr "Cập nhật cơ sở dữ liệu MCC/MNC"
+
+msgid "Country"
+msgstr "Quốc gia"
+
+msgid "MCC/MNC"
+msgstr "MCC/MNC"
+
+msgid "Technology"
+msgstr "Công nghệ"
+
+msgid "Action"
+msgstr "Action"
+
+msgid "Raw scan output"
+msgstr "Đầu ra quét thô"
+
+msgid "current"
+msgstr "hiện tại"
+
+msgid "available"
+msgstr "có sẵn"
+
+msgid "forbidden"
+msgstr "bị cấm"
+
+msgid "unknown"
+msgstr "Không xác định"
+
+msgid "Select"
+msgstr "Select"
+
+msgid "MCC/MNC database updated."
+msgstr "Đã cập nhật cơ sở dữ liệu MCC/MNC."
+
+msgid "Not updated yet"
+msgstr "Chưa cập nhật"
+
+msgid "Failed to read MCC/MNC update status"
+msgstr "Không đọc được trạng thái cập nhật MCC/MNC"
+
+msgid "Updating MCC/MNC database"
+msgstr "Cập nhật cơ sở dữ liệu MCC/MNC"
+
+msgid "Scanning networks... This may take up to two minutes."
+msgstr "Đang quét mạng... Quá trình này có thể mất tối đa hai phút."
+
+msgid "Scan complete."
+msgstr "Quét hoàn tất."
+
+msgid "Modem is busy. Try again later."
+msgstr "Modem đang bận. Hãy thử lại sau."
+
+msgid "Scan failed"
+msgstr "Quét không thành công"
+
+msgid "Not scanned yet."
+msgstr "Chưa được quét."
+
+msgid "Failed to read scan status"
+msgstr "Không đọc được trạng thái quét"
+
+msgid "Stopping scan"
+msgstr "Đang dừng quét"
+
+msgid "Network scan stopped"
+msgstr "Đã dừng quét mạng"
+
+msgid "Failed to stop scan"
+msgstr "Không thể ngừng quét"
+
+msgid "Starting network scan"
+msgstr "Bắt đầu quét mạng"
+
+msgid "Network scan started"
+msgstr "Đã bắt đầu quét mạng"
+
+msgid "Failed to start scan"
+msgstr "Không thể bắt đầu quét"
+
+msgid "Select operator"
+msgstr "Chọn toán tử"
+
+msgid "The connection may drop."
+msgstr "Kết nối có thể bị rớt."
+
+msgid "Selecting operator"
+msgstr "Chọn toán tử"
+
+msgid "Operator selection sent"
+msgstr "Đã gửi lựa chọn nhà điều hành"
+
+msgid "Failed to select operator"
+msgstr "Không chọn được nhà điều hành"
+
+msgid "Use automatic operator selection?"
+msgstr "Sử dụng lựa chọn nhà điều hành tự động?"
+
+msgid "Selecting automatic mode"
+msgstr "Lựa chọn chế độ tự động"

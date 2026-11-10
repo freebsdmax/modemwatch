@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-modemwatch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 00:00+0000\n"
+"PO-Revision-Date: 2026-11-10 00:00+0000\n"
+"Last-Translator: modemwatch contributors\n"
+"Language-Team: Español (Spanish)\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgid "Modem LTE 4G"
+msgstr "Módem LTE 4G"
+
+msgid "Status"
+msgstr "Estado"
+
+msgid "Signal"
+msgstr "Señal"
+
+msgid "Log"
+msgstr "Registro"
+
+msgid "Modem settings"
+msgstr "Configuración del módem"
+
+msgid "Network search"
+msgstr "búsqueda de red"
+
+msgid "Settings"
+msgstr "Configuración"
+
+msgid "invalid token"
+msgstr "ficha no válida"
+
+msgid "empty AT command"
+msgstr "comando AT vacío"
+
+msgid "invalid band selection"
+msgstr "selección de banda no válida"
+
+msgid "Band settings sent"
+msgstr "Configuración de banda enviada"
+
+msgid "network scan started"
+msgstr "escaneo de red iniciado"
+
+msgid "network scan stopped"
+msgstr "escaneo de red detenido"
+
+msgid "invalid operator"
+msgstr "operador no válido"
+
+msgid "Downloading MCC/MNC list"
+msgstr "Descargando la lista MCC/MNC"
+
+msgid "Parsing MCC/MNC list"
+msgstr "Analizando la lista MCC/MNC"
+
+msgid "MCC/MNC database updated"
+msgstr "Base de datos MCC/MNC actualizada"
+
+msgid "Failed to update MCC/MNC database"
+msgstr "No se pudo actualizar la base de datos de MCC/MNC"
+
+msgid "MCC/MNC update already running"
+msgstr "La actualización de MCC/MNC ya se está ejecutando"
+
+msgid "MCC/MNC update started"
+msgstr "Actualización de MCC/MNC iniciada"
+
+msgid "operator selection sent"
+msgstr "selección de operador enviada"
+
+msgid "internet check started"
+msgstr "Se inició la comprobación de Internet."
+
+msgid "modem reboot started"
+msgstr "se inició el reinicio del módem"
+
+msgid "service restarted"
+msgstr "servicio reiniciado"
+
+msgid "Modem info updated"
+msgstr "Información del módem actualizada"
+
+msgid "Modem did not respond"
+msgstr "El módem no respondió"
+
+msgid "Checks internet connectivity and reboots the Quectel modem when the connection is lost."
+msgstr "Comprueba la conectividad a Internet y reinicia el módem Quectel cuando se pierde la conexión."
+
+msgid "Service settings"
+msgstr "Configuraciones de servicio"
+
+msgid "Enable service"
+msgstr "Habilitar servicio"
+
+msgid "Check interval (seconds)"
+msgstr "Intervalo de comprobación (segundos)"
+
+msgid "Failures before modem reboot"
+msgstr "Fallos antes del reinicio del módem"
+
+msgid "Ping hosts"
+msgstr "Hosts de ping"
+
+msgid "Space-separated list. Internet is considered up if at least one host responds."
+msgstr "Lista separada por espacios. Internet se considera activo si al menos un host responde."
+
+msgid "Also require DNS resolution"
+msgstr "También requiere resolución DNS"
+
+msgid "DNS name to resolve"
+msgstr "Nombre DNS para resolver"
+
+msgid "Also require an HTTP request"
+msgstr "También requiere una solicitud HTTP"
+
+msgid "HTTP URL"
+msgstr "HTTP URL"
+
+msgid "WAN interface"
+msgstr "interfaz WAN"
+
+msgid "The device name is read from network.<iface>.device."
+msgstr "El nombre del dispositivo se lee desde la red.<iface>.device."
+
+msgid "AT serial port"
+msgstr "En el puerto serie"
+
+msgid "Detected USB/ACM serial ports. For Quectel EC200A use /dev/ttyUSB2; /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Puertos serie USB/ACM detectados. Para Quectel EC200A utilice /dev/ttyUSB2; /dev/ttyUSB0 es el puerto de diagnóstico y no responde a los comandos AT."
+
+msgid "AT port baud rate"
+msgstr "Velocidad en baudios del puerto AT"
+
+msgid "Modem reboot method"
+msgstr "Método de reinicio del módem"
+
+msgid "AT+CFUN=1,1 (recommended)"
+msgstr "AT+CFUN=1,1 (recomendado)"
+
+msgid "USB re-bind (best effort)"
+msgstr "Volver a vincular USB (mejor esfuerzo)"
+
+msgid "Wait after reboot (seconds)"
+msgstr "Espere después del reinicio (segundos)"
+
+msgid "Collect modem information"
+msgstr "Recopilar información del módem"
+
+msgid "Reads model, firmware, IMEI, signal, operator and temperature via AT commands."
+msgstr "Lee modelo, firmware, IMEI, señal, operador y temperatura mediante comandos AT."
+
+msgid "Modem info interval (seconds)"
+msgstr "Intervalo de información del módem (segundos)"
+
+msgid "How often to query the modem with AT commands. Keep it longer if other modem tools use the same serial port."
+msgstr "Con qué frecuencia consultar el módem con comandos AT. Guárdelo por más tiempo si otras herramientas de módem usan el mismo puerto serie."
+
+msgid "Signal refresh interval (seconds)"
+msgstr "Intervalo de actualización de señal (segundos)"
+
+msgid "Pause between signal page updates. The actual update also includes the modem response time."
+msgstr "Pausa entre actualizaciones de la página de señales. La actualización real también incluye el tiempo de respuesta del módem."
+
+msgid "Safety"
+msgstr "Seguridad"
+
+msgid "Maximum reboots per window"
+msgstr "Reinicios máximos por ventana"
+
+msgid "Set to 0 for unlimited. The limit prevents reboot loops."
+msgstr "Establezca en 0 para ilimitado. El límite evita bucles de reinicio."
+
+msgid "Reboot window (seconds)"
+msgstr "Ventana de reinicio (segundos)"
+
+msgid "Cooldown between reboots (seconds)"
+msgstr "Enfriamiento entre reinicios (segundos)"
+
+msgid "Logging"
+msgstr "Registro"
+
+msgid "Log level"
+msgstr "Nivel de registro"
+
+msgid "Error"
+msgstr "Error"
+
+msgid "Warning"
+msgstr "Advertencia"
+
+msgid "Info"
+msgstr "Informe"
+
+msgid "Debug"
+msgstr "Depuración"
+
+msgid "Remote access warning"
+msgstr "Advertencia de acceso remoto"
+
+msgid "This service reboots only the modem, not the router. If the modem is the only WAN, internet and remote access will be down during the reboot. Do not change USB mode, APN or band settings remotely without a rollback plan."
+msgstr "Este servicio reinicia sólo el módem, no el enrutador. Si el módem es la única WAN, Internet y el acceso remoto estarán inactivos durante el reinicio. No cambie el modo USB, APN o la configuración de la banda de forma remota sin un plan de reversión."
+
+msgid "Service"
+msgstr "Servicio"
+
+msgid "State"
+msgstr "Estado"
+
+msgid "Last check"
+msgstr "último control"
+
+msgid "Last success"
+msgstr "Último éxito"
+
+msgid "Last failure"
+msgstr "último fracaso"
+
+msgid "Failures"
+msgstr "Fallos"
+
+msgid "Modem reboots"
+msgstr "El módem se reinicia"
+
+msgid "last"
+msgstr "último"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "Data transferred"
+msgstr "Datos transferidos"
+
+msgid "Ping / DNS / HTTP"
+msgstr "Hacer ping/DNS/HTTP"
+
+msgid "Latency"
+msgstr "Latencia"
+
+msgid "Modem"
+msgstr "Módem"
+
+msgid "Firmware"
+msgstr "firmware"
+
+msgid "IMEI"
+msgstr "IMEI"
+
+msgid "Operator / network"
+msgstr "Operador/red"
+
+msgid "Modem temperature"
+msgstr "Temperatura del módem"
+
+msgid "Service uptime"
+msgstr "tiempo de actividad del servicio"
+
+msgid "LTE quality"
+msgstr "calidad LTE"
+
+msgid "CSQ"
+msgstr "CSQ"
+
+msgid "RSSI"
+msgstr "RSSI"
+
+msgid "RSRP"
+msgstr "RSRP"
+
+msgid "SINR"
+msgstr "SINR"
+
+msgid "RSRQ"
+msgstr "RSRQ"
+
+msgid "Band"
+msgstr "Banda"
+
+msgid "Check now"
+msgstr "Compruébalo ahora"
+
+msgid "Refresh modem info"
+msgstr "Actualizar información del módem"
+
+msgid "Reboot modem"
+msgstr "Reiniciar el módem"
+
+msgid "Restart service"
+msgstr "Reiniciar servicio"
+
+msgid "yes"
+msgstr "sí"
+
+msgid "no"
+msgstr "no"
+
+msgid "online"
+msgstr "en línea"
+
+msgid "offline"
+msgstr "fuera de línea"
+
+msgid "rebooting"
+msgstr "reiniciando"
+
+msgid "checking"
+msgstr "comprobando"
+
+msgid "disabled"
+msgstr "desactivado"
+
+msgid "starting"
+msgstr "comenzando"
+
+msgid "stopped"
+msgstr "detenido"
+
+msgid "error"
+msgstr "error"
+
+msgid "running"
+msgstr "corriendo"
+
+msgid "Failed to read status"
+msgstr "No se pudo leer el estado"
+
+msgid "Reading modem data"
+msgstr "Lectura de datos del módem"
+
+msgid "Failed to read modem data"
+msgstr "No se pudieron leer los datos del módem"
+
+msgid "Check started"
+msgstr "Cheque iniciado"
+
+msgid "Check failed"
+msgstr "Verificación fallida"
+
+msgid "Reboot the modem now? Internet will be down for about"
+msgstr "¿Reiniciar el módem ahora? Internet estará caído por aproximadamente"
+
+msgid "seconds."
+msgstr "segundos."
+
+msgid "Modem reboot started"
+msgstr "Se inició el reinicio del módem"
+
+msgid "Reboot failed"
+msgstr "Error al reiniciar"
+
+msgid "Restart the modemwatch service?"
+msgstr "¿Reiniciar el servicio modemwatch?"
+
+msgid "Service restarted"
+msgstr "Servicio reiniciado"
+
+msgid "Restart failed"
+msgstr "Reinicio fallido"
+
+msgid "Signal strength (RSRQ)"
+msgstr "Intensidad de la señal (RSRQ)"
+
+msgid "Operator"
+msgstr "Operador"
+
+msgid "Network"
+msgstr "Red"
+
+msgid "Last update"
+msgstr "Última actualización"
+
+msgid "Refresh interval"
+msgstr "Intervalo de actualización"
+
+msgid "seconds"
+msgstr "segundos"
+
+msgid "Signal Strength"
+msgstr "Fuerza de la señal"
+
+msgid "Received Signal Strength Indicator"
+msgstr "Indicador de intensidad de la señal recibida"
+
+msgid "Reference Signal Receive Power"
+msgstr "Potencia de recepción de señal de referencia"
+
+msgid "Signal to Interference plus Noise Ratio"
+msgstr "Relación señal/interferencia más ruido"
+
+msgid "Reference Signal Received Quality"
+msgstr "Calidad de la señal de referencia recibida"
+
+msgid "Refresh now"
+msgstr "Actualizar ahora"
+
+msgid "Pause"
+msgstr "Pausa"
+
+msgid "Busy"
+msgstr "Ocupado"
+
+msgid "AT port not found"
+msgstr "Puerto AT no encontrado"
+
+msgid "No response from modem"
+msgstr "No hay respuesta del módem"
+
+msgid "Failed to read signal"
+msgstr "No se pudo leer la señal"
+
+msgid "Resume"
+msgstr "Currículum"
+
+msgid "Refresh log"
+msgstr "Actualizar registro"
+
+msgid "Auto-refresh"
+msgstr "Actualización automática"
+
+msgid "(empty)"
+msgstr "(vacío)"
+
+msgid "Updated"
+msgstr "Actualizado"
+
+msgid "Failed to read log"
+msgstr "No se pudo leer el registro"
+
+msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
+msgstr "Los comandos AT pueden cambiar la configuración del módem y desconectar Internet o SSH. No cambie el modo USB, APN, banda o modo de red de forma remota sin un plan de reversión."
+
+msgid "Expert mode — allow changing USB mode and NAT"
+msgstr "Modo experto: permite cambiar el modo USB y NAT"
+
+msgid "Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan."
+msgstr "Cambiar el modo USB puede desconectar el módem y SSH. Úselo solo con acceso local o un plan de reversión."
+
+msgid "Selected AT port"
+msgstr "Puerto AT seleccionado"
+
+msgid "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Para Quectel EC200A utilice /dev/ttyUSB2. /dev/ttyUSB0 es el puerto de diagnóstico y no responde a los comandos AT."
+
+msgid "Current configuration"
+msgstr "Configuración actual"
+
+msgid "Read current configuration"
+msgstr "Leer la configuración actual"
+
+msgid "Modem information"
+msgstr "Información del módem"
+
+msgid "Model"
+msgstr "Modelo"
+
+msgid "SIM status"
+msgstr "Estado de la tarjeta SIM"
+
+msgid "Temperature"
+msgstr "Temperatura"
+
+msgid "Access Point Name (APN)"
+msgstr "Nombre del punto de acceso (APN)"
+
+msgid "Username"
+msgstr "Nombre de usuario"
+
+msgid "Password"
+msgstr "Contraseña"
+
+msgid "Authentication"
+msgstr "Autenticación"
+
+msgid "None"
+msgstr "Ninguno"
+
+msgid "PDP type"
+msgstr "tipo PDP"
+
+msgid "Read APN"
+msgstr "Leer APN"
+
+msgid "Apply APN"
+msgstr "Aplicar APN"
+
+msgid "Network mode"
+msgstr "Modo de red"
+
+msgid "Mode"
+msgstr "Modo"
+
+msgid "Automatic"
+msgstr "Automático"
+
+msgid "GSM only"
+msgstr "Sólo GSM"
+
+msgid "WCDMA only"
+msgstr "Sólo WCDMA"
+
+msgid "LTE only"
+msgstr "Sólo LTE"
+
+msgid "Read mode"
+msgstr "Modo de lectura"
+
+msgid "Apply mode"
+msgstr "Aplicar modo"
+
+msgid "Band configuration"
+msgstr "Configuración de banda"
+
+msgid "Read bands"
+msgstr "leer bandas"
+
+msgid "Select all"
+msgstr "Seleccionar todo"
+
+msgid "Restore default"
+msgstr "Restaurar valor predeterminado"
+
+msgid "Apply bands"
+msgstr "Aplicar bandas"
+
+msgid "Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection."
+msgstr "Selecciona las bandas LTE que deseas mantener habilitadas. La aplicación puede reiniciar la WAN y desconectar la conexión."
+
+msgid "USB mode"
+msgstr "modo USB"
+
+msgid "Current value"
+msgstr "Valor actual"
+
+msgid "New value"
+msgstr "Nuevo valor"
+
+msgid "RMNET (QMI)"
+msgstr "RMNET (QMI)"
+
+msgid "not supported"
+msgstr "no soportado"
+
+msgid "ECM (CDC Ethernet)"
+msgstr "ECM (Ethernet CDC)"
+
+msgid "MBIM"
+msgstr "MBIM"
+
+msgid "RNDIS"
+msgstr "RNDIS"
+
+msgid "Apply USB mode"
+msgstr "Aplicar modo USB"
+
+msgid "Read USB mode"
+msgstr "Leer modo USB"
+
+msgid "Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem."
+msgstr "Los modos que no son compatibles con el firmware del módem se desactivan y se marcan como no compatibles. Los modos admitidos se detectan automáticamente desde el módem."
+
+msgid "Apply NAT"
+msgstr "Aplicar NAT"
+
+msgid "Read NAT"
+msgstr "Leer NAT"
+
+msgid "Raw AT command"
+msgstr "Comando AT sin formato"
+
+msgid "AT command"
+msgstr "comando AT"
+
+msgid "Send"
+msgstr "enviar"
+
+msgid "Sending"
+msgstr "Enviando"
+
+msgid "AT command failed"
+msgstr "El comando AT falló"
+
+msgid "Reading APN"
+msgstr "Leyendo APN"
+
+msgid "Failed to read APN"
+msgstr "No se pudo leer APN"
+
+msgid "Reading settings"
+msgstr "Configuración de lectura"
+
+msgid "Settings read"
+msgstr "Configuración leída"
+
+msgid "Failed to read settings"
+msgstr "No se pudo leer la configuración"
+
+msgid "APN, username and password may contain only letters, digits, dot, hyphen and underscore."
+msgstr "APN, nombre de usuario y contraseña solo pueden contener letras, dígitos, puntos, guiones y guiones bajos."
+
+msgid "Apply APN settings? The connection may drop."
+msgstr "¿Aplicar configuración de APN? La conexión puede caer."
+
+msgid "Applying APN"
+msgstr "Aplicando APN"
+
+msgid "APN applied. Reconnect or reboot the modem if needed."
+msgstr "APN aplicado. Vuelva a conectar o reinicie el módem si es necesario."
+
+msgid "Failed to apply APN"
+msgstr "No se pudo aplicar APN"
+
+msgid "Apply network mode? The connection may drop."
+msgstr "¿Aplicar modo de red? La conexión puede caer."
+
+msgid "Reading bands"
+msgstr "bandas de lectura"
+
+msgid "Failed to read bands"
+msgstr "No se pudieron leer las bandas"
+
+msgid "No bands selected"
+msgstr "No hay bandas seleccionadas"
+
+msgid "Restore default bands?"
+msgstr "¿Restaurar bandas predeterminadas?"
+
+msgid "Apply selected bands? The connection may drop."
+msgstr "¿Aplicar bandas seleccionadas? La conexión puede caer."
+
+msgid "Applying bands"
+msgstr "Aplicando bandas"
+
+msgid "Failed to apply bands"
+msgstr "No se pudieron aplicar bandas"
+
+msgid "USB mode is read-only in this UI."
+msgstr "El modo USB es de solo lectura en esta interfaz de usuario."
+
+msgid "This USB mode is not supported by the modem firmware."
+msgstr "Este modo USB no es compatible con el firmware del módem."
+
+msgid "Change USB mode? The modem will re-enumerate and the connection may drop. Continue?"
+msgstr "¿Cambiar el modo USB? El módem volverá a enumerar y es posible que se interrumpa la conexión. ¿Continuar?"
+
+msgid "Change NAT mode? The connection may drop."
+msgstr "¿Cambiar el modo NAT? La conexión puede caer."
+
+msgid "Current operator"
+msgstr "Operador actual"
+
+msgid "AT port"
+msgstr "En el puerto"
+
+msgid "Scan networks"
+msgstr "Escanear redes"
+
+msgid "Automatic operator selection"
+msgstr "Selección automática de operador"
+
+msgid "Stop scan"
+msgstr "Detener escaneo"
+
+msgid "Update MCC/MNC database"
+msgstr "Actualizar la base de datos de MCC/MNC"
+
+msgid "Country"
+msgstr "País"
+
+msgid "MCC/MNC"
+msgstr "MCC/MNC"
+
+msgid "Technology"
+msgstr "Tecnología"
+
+msgid "Action"
+msgstr "Acción"
+
+msgid "Raw scan output"
+msgstr "Salida de escaneo sin procesar"
+
+msgid "current"
+msgstr "actual"
+
+msgid "available"
+msgstr "disponible"
+
+msgid "forbidden"
+msgstr "prohibido"
+
+msgid "unknown"
+msgstr "desconocido"
+
+msgid "Select"
+msgstr "Seleccionar"
+
+msgid "MCC/MNC database updated."
+msgstr "Base de datos de MCC/MNC actualizada."
+
+msgid "Not updated yet"
+msgstr "Aún no actualizado"
+
+msgid "Failed to read MCC/MNC update status"
+msgstr "No se pudo leer el estado de actualización de MCC/MNC"
+
+msgid "Updating MCC/MNC database"
+msgstr "Actualización de la base de datos de MCC/MNC"
+
+msgid "Scanning networks... This may take up to two minutes."
+msgstr "Escaneando redes... Esto puede tardar hasta dos minutos."
+
+msgid "Scan complete."
+msgstr "Escaneo completo."
+
+msgid "Modem is busy. Try again later."
+msgstr "El módem está ocupado. Vuelve a intentarlo más tarde."
+
+msgid "Scan failed"
+msgstr "Error de escaneo"
+
+msgid "Not scanned yet."
+msgstr "Aún no escaneado."
+
+msgid "Failed to read scan status"
+msgstr "No se pudo leer el estado del escaneo"
+
+msgid "Stopping scan"
+msgstr "Deteniendo el escaneo"
+
+msgid "Network scan stopped"
+msgstr "Se detuvo el análisis de red"
+
+msgid "Failed to stop scan"
+msgstr "No se pudo detener el escaneo"
+
+msgid "Starting network scan"
+msgstr "Iniciando escaneo de red"
+
+msgid "Network scan started"
+msgstr "Se inició el análisis de red"
+
+msgid "Failed to start scan"
+msgstr "No se pudo iniciar el escaneo"
+
+msgid "Select operator"
+msgstr "Seleccionar operador"
+
+msgid "The connection may drop."
+msgstr "La conexión puede caer."
+
+msgid "Selecting operator"
+msgstr "Seleccionando operador"
+
+msgid "Operator selection sent"
+msgstr "Selección de operador enviada"
+
+msgid "Failed to select operator"
+msgstr "No se pudo seleccionar el operador"
+
+msgid "Use automatic operator selection?"
+msgstr "¿Usar selección automática de operador?"
+
+msgid "Selecting automatic mode"
+msgstr "Seleccionar el modo automático"

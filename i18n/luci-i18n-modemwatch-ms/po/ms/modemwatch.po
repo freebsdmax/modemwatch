@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-modemwatch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 00:00+0000\n"
+"PO-Revision-Date: 2026-11-10 00:00+0000\n"
+"Last-Translator: modemwatch contributors\n"
+"Language-Team: Bahasa Melayu (Malay)\n"
+"Language: ms\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Modem LTE 4G"
+msgstr "Modem LTE 4G"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Signal"
+msgstr "Isyarat"
+
+msgid "Log"
+msgstr "Log"
+
+msgid "Modem settings"
+msgstr "Tetapan modem"
+
+msgid "Network search"
+msgstr "Carian rangkaian"
+
+msgid "Settings"
+msgstr "tetapan"
+
+msgid "invalid token"
+msgstr "token tidak sah"
+
+msgid "empty AT command"
+msgstr "arahan AT kosong"
+
+msgid "invalid band selection"
+msgstr "pemilihan jalur tidak sah"
+
+msgid "Band settings sent"
+msgstr "Tetapan jalur dihantar"
+
+msgid "network scan started"
+msgstr "imbasan rangkaian bermula"
+
+msgid "network scan stopped"
+msgstr "imbasan rangkaian berhenti"
+
+msgid "invalid operator"
+msgstr "pengendali tidak sah"
+
+msgid "Downloading MCC/MNC list"
+msgstr "Memuat turun senarai MCC/MNC"
+
+msgid "Parsing MCC/MNC list"
+msgstr "Menghuraikan senarai MCC/MNC"
+
+msgid "MCC/MNC database updated"
+msgstr "Pangkalan data MCC/MNC dikemas kini"
+
+msgid "Failed to update MCC/MNC database"
+msgstr "Gagal mengemas kini pangkalan data MCC/MNC"
+
+msgid "MCC/MNC update already running"
+msgstr "Kemas kini MCC/MNC sudah berjalan"
+
+msgid "MCC/MNC update started"
+msgstr "Kemas kini MCC/MNC bermula"
+
+msgid "operator selection sent"
+msgstr "pemilihan operator dihantar"
+
+msgid "internet check started"
+msgstr "pemeriksaan internet bermula"
+
+msgid "modem reboot started"
+msgstr "but semula modem bermula"
+
+msgid "service restarted"
+msgstr "perkhidmatan dimulakan semula"
+
+msgid "Modem info updated"
+msgstr "Maklumat modem dikemas kini"
+
+msgid "Modem did not respond"
+msgstr "Modem tidak bertindak balas"
+
+msgid "Checks internet connectivity and reboots the Quectel modem when the connection is lost."
+msgstr "Menyemak sambungan Internet dan but semula modem Quectel apabila sambungan terputus."
+
+msgid "Service settings"
+msgstr "Tetapan perkhidmatan"
+
+msgid "Enable service"
+msgstr "Dayakan perkhidmatan"
+
+msgid "Check interval (seconds)"
+msgstr "Semak selang (saat)"
+
+msgid "Failures before modem reboot"
+msgstr "Kegagalan sebelum but semula modem"
+
+msgid "Ping hosts"
+msgstr "Hos ping"
+
+msgid "Space-separated list. Internet is considered up if at least one host responds."
+msgstr "Senarai yang diasingkan ruang. Internet dianggap aktif jika sekurang-kurangnya satu hos bertindak balas."
+
+msgid "Also require DNS resolution"
+msgstr "Juga memerlukan resolusi DNS"
+
+msgid "DNS name to resolve"
+msgstr "Nama DNS untuk diselesaikan"
+
+msgid "Also require an HTTP request"
+msgstr "Juga memerlukan permintaan HTTP"
+
+msgid "HTTP URL"
+msgstr "HTTP URL"
+
+msgid "WAN interface"
+msgstr "antara muka WAN"
+
+msgid "The device name is read from network.<iface>.device."
+msgstr "Nama peranti dibaca daripada rangkaian.<iface>.peranti."
+
+msgid "AT serial port"
+msgstr "DI port bersiri"
+
+msgid "Detected USB/ACM serial ports. For Quectel EC200A use /dev/ttyUSB2; /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Port bersiri USB/ACM dikesan. Untuk Quectel EC200A gunakan /dev/ttyUSB2; /dev/ttyUSB0 ialah port diagnostik dan tidak menjawab arahan AT."
+
+msgid "AT port baud rate"
+msgstr "Kadar baud pelabuhan AT"
+
+msgid "Modem reboot method"
+msgstr "Kaedah but semula modem"
+
+msgid "AT+CFUN=1,1 (recommended)"
+msgstr "AT+CFUN=1,1 (disyorkan)"
+
+msgid "USB re-bind (best effort)"
+msgstr "Ikatan semula USB (usaha terbaik)"
+
+msgid "Wait after reboot (seconds)"
+msgstr "Tunggu selepas but semula (saat)"
+
+msgid "Collect modem information"
+msgstr "Kumpul maklumat modem"
+
+msgid "Reads model, firmware, IMEI, signal, operator and temperature via AT commands."
+msgstr "Membaca model, perisian tegar, IMEI, isyarat, operator dan suhu melalui arahan AT."
+
+msgid "Modem info interval (seconds)"
+msgstr "Selang maklumat modem (saat)"
+
+msgid "How often to query the modem with AT commands. Keep it longer if other modem tools use the same serial port."
+msgstr "Berapa kerap untuk menanyakan modem dengan arahan AT. Simpan lebih lama jika alat modem lain menggunakan port bersiri yang sama."
+
+msgid "Signal refresh interval (seconds)"
+msgstr "Selang penyegaran isyarat (saat)"
+
+msgid "Pause between signal page updates. The actual update also includes the modem response time."
+msgstr "Jeda antara kemas kini halaman isyarat. Kemas kini sebenar juga termasuk masa tindak balas modem."
+
+msgid "Safety"
+msgstr "Keselamatan"
+
+msgid "Maximum reboots per window"
+msgstr "But semula maksimum setiap tetingkap"
+
+msgid "Set to 0 for unlimited. The limit prevents reboot loops."
+msgstr "Tetapkan kepada 0 untuk tidak terhad. Had menghalang gelung but semula."
+
+msgid "Reboot window (seconds)"
+msgstr "But semula tetingkap (saat)"
+
+msgid "Cooldown between reboots (seconds)"
+msgstr "Sejuk antara but semula (saat)"
+
+msgid "Logging"
+msgstr "Pembalakan"
+
+msgid "Log level"
+msgstr "Tahap log"
+
+msgid "Error"
+msgstr "Kesalahan"
+
+msgid "Warning"
+msgstr "Amaran"
+
+msgid "Info"
+msgstr "info"
+
+msgid "Debug"
+msgstr "Nyahpepijat"
+
+msgid "Remote access warning"
+msgstr "Amaran akses jauh"
+
+msgid "This service reboots only the modem, not the router. If the modem is the only WAN, internet and remote access will be down during the reboot. Do not change USB mode, APN or band settings remotely without a rollback plan."
+msgstr "Perkhidmatan ini but semula hanya modem, bukan penghala. Jika modem adalah satu-satunya WAN, internet dan akses jauh akan terputus semasa but semula. Jangan ubah tetapan mod USB, APN atau jalur dari jauh tanpa pelan rollback."
+
+msgid "Service"
+msgstr "Perkhidmatan"
+
+msgid "State"
+msgstr "negeri"
+
+msgid "Last check"
+msgstr "Semakan terakhir"
+
+msgid "Last success"
+msgstr "Kejayaan terakhir"
+
+msgid "Last failure"
+msgstr "Kegagalan terakhir"
+
+msgid "Failures"
+msgstr "Kegagalan"
+
+msgid "Modem reboots"
+msgstr "Modem but semula"
+
+msgid "last"
+msgstr "terakhir"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "Data transferred"
+msgstr "Data dipindahkan"
+
+msgid "Ping / DNS / HTTP"
+msgstr "Ping / DNS / HTTP"
+
+msgid "Latency"
+msgstr "Latensi"
+
+msgid "Modem"
+msgstr "Modem"
+
+msgid "Firmware"
+msgstr "Perisian tegar"
+
+msgid "IMEI"
+msgstr "IMEI"
+
+msgid "Operator / network"
+msgstr "Operator / rangkaian"
+
+msgid "Modem temperature"
+msgstr "Suhu modem"
+
+msgid "Service uptime"
+msgstr "Masa operasi perkhidmatan"
+
+msgid "LTE quality"
+msgstr "Kualiti LTE"
+
+msgid "CSQ"
+msgstr "CSQ"
+
+msgid "RSSI"
+msgstr "RSSI"
+
+msgid "RSRP"
+msgstr "RSRP"
+
+msgid "SINR"
+msgstr "SINR"
+
+msgid "RSRQ"
+msgstr "RSRQ"
+
+msgid "Band"
+msgstr "Band"
+
+msgid "Check now"
+msgstr "Semak sekarang"
+
+msgid "Refresh modem info"
+msgstr "Muat semula maklumat modem"
+
+msgid "Reboot modem"
+msgstr "But semula modem"
+
+msgid "Restart service"
+msgstr "Mulakan semula perkhidmatan"
+
+msgid "yes"
+msgstr "ya"
+
+msgid "no"
+msgstr "tidak"
+
+msgid "online"
+msgstr "dalam talian"
+
+msgid "offline"
+msgstr "luar talian"
+
+msgid "rebooting"
+msgstr "but semula"
+
+msgid "checking"
+msgstr "menyemak"
+
+msgid "disabled"
+msgstr "kurang upaya"
+
+msgid "starting"
+msgstr "bermula"
+
+msgid "stopped"
+msgstr "berhenti"
+
+msgid "error"
+msgstr "ralat"
+
+msgid "running"
+msgstr "berlari"
+
+msgid "Failed to read status"
+msgstr "Gagal membaca status"
+
+msgid "Reading modem data"
+msgstr "Membaca data modem"
+
+msgid "Failed to read modem data"
+msgstr "Gagal membaca data modem"
+
+msgid "Check started"
+msgstr "Semakan bermula"
+
+msgid "Check failed"
+msgstr "Semakan gagal"
+
+msgid "Reboot the modem now? Internet will be down for about"
+msgstr "But semula modem sekarang? Internet akan terputus selama lebih kurang"
+
+msgid "seconds."
+msgstr "detik."
+
+msgid "Modem reboot started"
+msgstr "But semula modem bermula"
+
+msgid "Reboot failed"
+msgstr "But semula gagal"
+
+msgid "Restart the modemwatch service?"
+msgstr "Mulakan semula perkhidmatan jam tangan modem?"
+
+msgid "Service restarted"
+msgstr "Perkhidmatan dimulakan semula"
+
+msgid "Restart failed"
+msgstr "Mulakan semula gagal"
+
+msgid "Signal strength (RSRQ)"
+msgstr "Kekuatan isyarat (RSRQ)"
+
+msgid "Operator"
+msgstr "Operator"
+
+msgid "Network"
+msgstr "Rangkaian"
+
+msgid "Last update"
+msgstr "Kemas kini terakhir"
+
+msgid "Refresh interval"
+msgstr "Segarkan semula selang"
+
+msgid "seconds"
+msgstr "detik"
+
+msgid "Signal Strength"
+msgstr "Kekuatan Isyarat"
+
+msgid "Received Signal Strength Indicator"
+msgstr "Penunjuk Kekuatan Isyarat yang Diterima"
+
+msgid "Reference Signal Receive Power"
+msgstr "Isyarat Rujukan Kuasa Terima"
+
+msgid "Signal to Interference plus Noise Ratio"
+msgstr "Isyarat kepada Gangguan ditambah Nisbah Bunyi"
+
+msgid "Reference Signal Received Quality"
+msgstr "Kualiti Diterima Isyarat Rujukan"
+
+msgid "Refresh now"
+msgstr "Muat semula sekarang"
+
+msgid "Pause"
+msgstr "jeda"
+
+msgid "Busy"
+msgstr "Sibuk"
+
+msgid "AT port not found"
+msgstr "Pelabuhan AT tidak ditemui"
+
+msgid "No response from modem"
+msgstr "Tiada respon daripada modem"
+
+msgid "Failed to read signal"
+msgstr "Gagal membaca isyarat"
+
+msgid "Resume"
+msgstr "Sambung semula"
+
+msgid "Refresh log"
+msgstr "Muat semula log"
+
+msgid "Auto-refresh"
+msgstr "Muat semula automatik"
+
+msgid "(empty)"
+msgstr "(kosong)"
+
+msgid "Updated"
+msgstr "dikemas kini"
+
+msgid "Failed to read log"
+msgstr "Gagal membaca log"
+
+msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
+msgstr "Arahan AT boleh menukar tetapan modem dan mungkin memutuskan sambungan internet atau SSH. Jangan tukar mod USB, APN, jalur atau mod rangkaian dari jauh tanpa pelan rollback."
+
+msgid "Expert mode — allow changing USB mode and NAT"
+msgstr "Mod pakar — benarkan menukar mod USB dan NAT"
+
+msgid "Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan."
+msgstr "Menukar mod USB boleh memutuskan sambungan modem dan SSH. Gunakan hanya dengan akses tempatan atau pelan rollback."
+
+msgid "Selected AT port"
+msgstr "Port AT dipilih"
+
+msgid "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Untuk Quectel EC200A gunakan /dev/ttyUSB2. /dev/ttyUSB0 ialah port diagnostik dan tidak menjawab arahan AT."
+
+msgid "Current configuration"
+msgstr "Konfigurasi semasa"
+
+msgid "Read current configuration"
+msgstr "Baca konfigurasi semasa"
+
+msgid "Modem information"
+msgstr "Maklumat modem"
+
+msgid "Model"
+msgstr "Model"
+
+msgid "SIM status"
+msgstr "Status SIM"
+
+msgid "Temperature"
+msgstr "Suhu"
+
+msgid "Access Point Name (APN)"
+msgstr "Nama Titik Akses (APN)"
+
+msgid "Username"
+msgstr "Nama pengguna"
+
+msgid "Password"
+msgstr "Kata laluan"
+
+msgid "Authentication"
+msgstr "Authentifizierung"
+
+msgid "None"
+msgstr "tiada"
+
+msgid "PDP type"
+msgstr "jenis PDP"
+
+msgid "Read APN"
+msgstr "Baca APN"
+
+msgid "Apply APN"
+msgstr "Gunakan APN"
+
+msgid "Network mode"
+msgstr "Mod rangkaian"
+
+msgid "Mode"
+msgstr "Mode"
+
+msgid "Automatic"
+msgstr "Automatik"
+
+msgid "GSM only"
+msgstr "GSM sahaja"
+
+msgid "WCDMA only"
+msgstr "WCDMA sahaja"
+
+msgid "LTE only"
+msgstr "LTE sahaja"
+
+msgid "Read mode"
+msgstr "Mod baca"
+
+msgid "Apply mode"
+msgstr "Guna mod"
+
+msgid "Band configuration"
+msgstr "Konfigurasi jalur"
+
+msgid "Read bands"
+msgstr "Baca band"
+
+msgid "Select all"
+msgstr "Pilih semua"
+
+msgid "Restore default"
+msgstr "Pulihkan lalai"
+
+msgid "Apply bands"
+msgstr "Guna jalur"
+
+msgid "Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection."
+msgstr "Pilih jalur LTE yang anda mahu kekalkan dayakan. Memohon boleh memulakan semula WAN dan memutuskan sambungan."
+
+msgid "USB mode"
+msgstr "Mod USB"
+
+msgid "Current value"
+msgstr "Nilai semasa"
+
+msgid "New value"
+msgstr "Nilai baru"
+
+msgid "RMNET (QMI)"
+msgstr "RMNET (QMI)"
+
+msgid "not supported"
+msgstr "tidak disokong"
+
+msgid "ECM (CDC Ethernet)"
+msgstr "ECM (CDC Ethernet)"
+
+msgid "MBIM"
+msgstr "MBIM"
+
+msgid "RNDIS"
+msgstr "RNDIS"
+
+msgid "Apply USB mode"
+msgstr "Gunakan mod USB"
+
+msgid "Read USB mode"
+msgstr "Baca mod USB"
+
+msgid "Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem."
+msgstr "Mod yang tidak disokong oleh perisian tegar modem dinyahdayakan dan ditandai sebagai tidak disokong. Mod yang disokong dikesan secara automatik daripada modem."
+
+msgid "Apply NAT"
+msgstr "Gunakan NAT"
+
+msgid "Read NAT"
+msgstr "Baca NAT"
+
+msgid "Raw AT command"
+msgstr "Perintah AT mentah"
+
+msgid "AT command"
+msgstr "arahan AT"
+
+msgid "Send"
+msgstr "Hantar"
+
+msgid "Sending"
+msgstr "Menghantar"
+
+msgid "AT command failed"
+msgstr "Arahan AT gagal"
+
+msgid "Reading APN"
+msgstr "Membaca APN"
+
+msgid "Failed to read APN"
+msgstr "Gagal membaca APN"
+
+msgid "Reading settings"
+msgstr "Tetapan membaca"
+
+msgid "Settings read"
+msgstr "Tetapan dibaca"
+
+msgid "Failed to read settings"
+msgstr "Gagal membaca tetapan"
+
+msgid "APN, username and password may contain only letters, digits, dot, hyphen and underscore."
+msgstr "APN, nama pengguna dan kata laluan mungkin mengandungi hanya huruf, angka, titik, sempang dan garis bawah."
+
+msgid "Apply APN settings? The connection may drop."
+msgstr "Gunakan tetapan APN? Sambungan mungkin terputus."
+
+msgid "Applying APN"
+msgstr "Memohon APN"
+
+msgid "APN applied. Reconnect or reboot the modem if needed."
+msgstr "APN digunakan. Sambung semula atau but semula modem jika perlu."
+
+msgid "Failed to apply APN"
+msgstr "Gagal menggunakan APN"
+
+msgid "Apply network mode? The connection may drop."
+msgstr "Gunakan mod rangkaian? Sambungan mungkin terputus."
+
+msgid "Reading bands"
+msgstr "Kumpulan bacaan"
+
+msgid "Failed to read bands"
+msgstr "Gagal membaca band"
+
+msgid "No bands selected"
+msgstr "Tiada kumpulan yang dipilih"
+
+msgid "Restore default bands?"
+msgstr "Pulihkan jalur lalai?"
+
+msgid "Apply selected bands? The connection may drop."
+msgstr "Gunakan kumpulan yang dipilih? Sambungan mungkin terputus."
+
+msgid "Applying bands"
+msgstr "Menerapkan jalur"
+
+msgid "Failed to apply bands"
+msgstr "Gagal menggunakan jalur"
+
+msgid "USB mode is read-only in this UI."
+msgstr "Mod USB adalah baca sahaja dalam UI ini."
+
+msgid "This USB mode is not supported by the modem firmware."
+msgstr "Mod USB ini tidak disokong oleh perisian tegar modem."
+
+msgid "Change USB mode? The modem will re-enumerate and the connection may drop. Continue?"
+msgstr "Tukar mod USB? Modem akan menghitung semula dan sambungan mungkin terputus. teruskan?"
+
+msgid "Change NAT mode? The connection may drop."
+msgstr "Tukar mod NAT? Sambungan mungkin terputus."
+
+msgid "Current operator"
+msgstr "Operator semasa"
+
+msgid "AT port"
+msgstr "DI pelabuhan"
+
+msgid "Scan networks"
+msgstr "Imbas rangkaian"
+
+msgid "Automatic operator selection"
+msgstr "Pemilihan operator automatik"
+
+msgid "Stop scan"
+msgstr "Hentikan imbasan"
+
+msgid "Update MCC/MNC database"
+msgstr "Kemas kini pangkalan data MCC/MNC"
+
+msgid "Country"
+msgstr "Negara"
+
+msgid "MCC/MNC"
+msgstr "MCC/MNC"
+
+msgid "Technology"
+msgstr "Teknologi"
+
+msgid "Action"
+msgstr "Tindakan"
+
+msgid "Raw scan output"
+msgstr "Output imbasan mentah"
+
+msgid "current"
+msgstr "semasa"
+
+msgid "available"
+msgstr "tersedia"
+
+msgid "forbidden"
+msgstr "dilarang"
+
+msgid "unknown"
+msgstr "tidak diketahui"
+
+msgid "Select"
+msgstr "Pilih"
+
+msgid "MCC/MNC database updated."
+msgstr "Pangkalan data MCC/MNC dikemas kini."
+
+msgid "Not updated yet"
+msgstr "Belum dikemas kini"
+
+msgid "Failed to read MCC/MNC update status"
+msgstr "Gagal membaca status kemas kini MCC/MNC"
+
+msgid "Updating MCC/MNC database"
+msgstr "Mengemas kini pangkalan data MCC/MNC"
+
+msgid "Scanning networks... This may take up to two minutes."
+msgstr "Mengimbas rangkaian... Ini mungkin mengambil masa sehingga dua minit."
+
+msgid "Scan complete."
+msgstr "Imbasan selesai."
+
+msgid "Modem is busy. Try again later."
+msgstr "Modem sedang sibuk. Cuba lagi nanti."
+
+msgid "Scan failed"
+msgstr "Imbasan gagal"
+
+msgid "Not scanned yet."
+msgstr "Belum diimbas lagi."
+
+msgid "Failed to read scan status"
+msgstr "Gagal membaca status imbasan"
+
+msgid "Stopping scan"
+msgstr "Menghentikan imbasan"
+
+msgid "Network scan stopped"
+msgstr "Imbasan rangkaian berhenti"
+
+msgid "Failed to stop scan"
+msgstr "Gagal menghentikan imbasan"
+
+msgid "Starting network scan"
+msgstr "Memulakan imbasan rangkaian"
+
+msgid "Network scan started"
+msgstr "Imbasan rangkaian bermula"
+
+msgid "Failed to start scan"
+msgstr "Gagal memulakan imbasan"
+
+msgid "Select operator"
+msgstr "Pilih operator"
+
+msgid "The connection may drop."
+msgstr "Sambungan mungkin terputus."
+
+msgid "Selecting operator"
+msgstr "Memilih operator"
+
+msgid "Operator selection sent"
+msgstr "Pemilihan operator dihantar"
+
+msgid "Failed to select operator"
+msgstr "Gagal memilih operator"
+
+msgid "Use automatic operator selection?"
+msgstr "Gunakan pemilihan operator automatik?"
+
+msgid "Selecting automatic mode"
+msgstr "Memilih mod automatik"

@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-modemwatch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 00:00+0000\n"
+"PO-Revision-Date: 2026-11-10 00:00+0000\n"
+"Last-Translator: modemwatch contributors\n"
+"Language-Team: Filipino (Filipino)\n"
+"Language: fil\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Modem LTE 4G"
+msgstr "Modem LTE 4G"
+
+msgid "Status"
+msgstr "Katayuan"
+
+msgid "Signal"
+msgstr "Signal"
+
+msgid "Log"
+msgstr "Log"
+
+msgid "Modem settings"
+msgstr "Mga setting ng modem"
+
+msgid "Network search"
+msgstr "Paghahanap sa network"
+
+msgid "Settings"
+msgstr "Mga setting"
+
+msgid "invalid token"
+msgstr "di-wastong token"
+
+msgid "empty AT command"
+msgstr "walang laman na utos ng AT"
+
+msgid "invalid band selection"
+msgstr "di-wastong pagpili ng banda"
+
+msgid "Band settings sent"
+msgstr "Ipinadala ang mga setting ng banda"
+
+msgid "network scan started"
+msgstr "nagsimula ang pag-scan sa network"
+
+msgid "network scan stopped"
+msgstr "tumigil ang pag-scan ng network"
+
+msgid "invalid operator"
+msgstr "di-wastong operator"
+
+msgid "Downloading MCC/MNC list"
+msgstr "Nagda-download ng listahan ng MCC/MNC"
+
+msgid "Parsing MCC/MNC list"
+msgstr "Pag-parse ng listahan ng MCC/MNC"
+
+msgid "MCC/MNC database updated"
+msgstr "Na-update ang database ng MCC/MNC"
+
+msgid "Failed to update MCC/MNC database"
+msgstr "Nabigong i-update ang MCC/MNC database"
+
+msgid "MCC/MNC update already running"
+msgstr "Tumatakbo na ang MCC/MNC update"
+
+msgid "MCC/MNC update started"
+msgstr "Nagsimula ang pag-update ng MCC/MNC"
+
+msgid "operator selection sent"
+msgstr "ipinadala ang pagpili ng operator"
+
+msgid "internet check started"
+msgstr "nagsimula ang pagsusuri sa internet"
+
+msgid "modem reboot started"
+msgstr "nagsimula ang pag-reboot ng modem"
+
+msgid "service restarted"
+msgstr "na-restart ang serbisyo"
+
+msgid "Modem info updated"
+msgstr "Na-update ang impormasyon ng modem"
+
+msgid "Modem did not respond"
+msgstr "Hindi sumagot si Modem"
+
+msgid "Checks internet connectivity and reboots the Quectel modem when the connection is lost."
+msgstr "Sinusuri ang koneksyon sa internet at nire-reboot ang Quectel modem kapag nawala ang koneksyon."
+
+msgid "Service settings"
+msgstr "Mga setting ng serbisyo"
+
+msgid "Enable service"
+msgstr "Paganahin ang serbisyo"
+
+msgid "Check interval (seconds)"
+msgstr "Suriin ang pagitan (segundo)"
+
+msgid "Failures before modem reboot"
+msgstr "Mga pagkabigo bago i-reboot ang modem"
+
+msgid "Ping hosts"
+msgstr "Mga host ng ping"
+
+msgid "Space-separated list. Internet is considered up if at least one host responds."
+msgstr "Listahan na pinaghihiwalay ng espasyo. Isinasaalang-alang ang Internet kung tumugon man lang ang isang host."
+
+msgid "Also require DNS resolution"
+msgstr "Kailangan din ng DNS resolution"
+
+msgid "DNS name to resolve"
+msgstr "Pangalan ng DNS upang malutas"
+
+msgid "Also require an HTTP request"
+msgstr "Nangangailangan din ng kahilingan sa HTTP"
+
+msgid "HTTP URL"
+msgstr "HTTP URL"
+
+msgid "WAN interface"
+msgstr "WAN interface"
+
+msgid "The device name is read from network.<iface>.device."
+msgstr "Binabasa ang pangalan ng device mula sa network.<iface>.device."
+
+msgid "AT serial port"
+msgstr "SA serial port"
+
+msgid "Detected USB/ACM serial ports. For Quectel EC200A use /dev/ttyUSB2; /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Natukoy na mga USB/ACM serial port. Para sa Quectel EC200A gamitin ang /dev/ttyUSB2; Ang /dev/ttyUSB0 ay ang diagnostic port at hindi sumasagot sa mga utos ng AT."
+
+msgid "AT port baud rate"
+msgstr "AT port baud rate"
+
+msgid "Modem reboot method"
+msgstr "Paraan ng pag-reboot ng modem"
+
+msgid "AT+CFUN=1,1 (recommended)"
+msgstr "AT+CFUN=1,1 (inirerekomenda)"
+
+msgid "USB re-bind (best effort)"
+msgstr "USB re-bind (pinakamahusay na pagsisikap)"
+
+msgid "Wait after reboot (seconds)"
+msgstr "Maghintay pagkatapos mag-reboot (segundo)"
+
+msgid "Collect modem information"
+msgstr "Kolektahin ang impormasyon ng modem"
+
+msgid "Reads model, firmware, IMEI, signal, operator and temperature via AT commands."
+msgstr "Nagbabasa ng modelo, firmware, IMEI, signal, operator at temperatura sa pamamagitan ng mga AT command."
+
+msgid "Modem info interval (seconds)"
+msgstr "Interval ng impormasyon ng modem (segundo)"
+
+msgid "How often to query the modem with AT commands. Keep it longer if other modem tools use the same serial port."
+msgstr "Gaano kadalas i-query ang modem gamit ang mga AT command. Panatilihin itong mas matagal kung ang ibang mga tool sa modem ay gumagamit ng parehong serial port."
+
+msgid "Signal refresh interval (seconds)"
+msgstr "Interval ng pag-refresh ng signal (segundo)"
+
+msgid "Pause between signal page updates. The actual update also includes the modem response time."
+msgstr "I-pause sa pagitan ng mga pag-update ng signal page. Kasama rin sa aktwal na pag-update ang oras ng pagtugon ng modem."
+
+msgid "Safety"
+msgstr "Kaligtasan"
+
+msgid "Maximum reboots per window"
+msgstr "Pinakamataas na pag-reboot bawat window"
+
+msgid "Set to 0 for unlimited. The limit prevents reboot loops."
+msgstr "Itakda sa 0 para sa walang limitasyon. Pinipigilan ng limitasyon ang mga pag-reboot na loop."
+
+msgid "Reboot window (seconds)"
+msgstr "Reboot window (segundo)"
+
+msgid "Cooldown between reboots (seconds)"
+msgstr "Cooldown sa pagitan ng mga pag-reboot (segundo)"
+
+msgid "Logging"
+msgstr "Pag-log"
+
+msgid "Log level"
+msgstr "Antas ng log"
+
+msgid "Error"
+msgstr "Error"
+
+msgid "Warning"
+msgstr "Babala"
+
+msgid "Info"
+msgstr "Impormasyon"
+
+msgid "Debug"
+msgstr "I-debug"
+
+msgid "Remote access warning"
+msgstr "Babala sa malayong pag-access"
+
+msgid "This service reboots only the modem, not the router. If the modem is the only WAN, internet and remote access will be down during the reboot. Do not change USB mode, APN or band settings remotely without a rollback plan."
+msgstr "I-reboot lang ng serbisyong ito ang modem, hindi ang router. Kung ang modem ay ang tanging WAN, ang internet at malayuang pag-access ay mawawala sa panahon ng pag-reboot. Huwag baguhin ang USB mode, APN o mga setting ng banda nang malayuan nang walang rollback plan."
+
+msgid "Service"
+msgstr "Serbisyo"
+
+msgid "State"
+msgstr "Estado"
+
+msgid "Last check"
+msgstr "Huling tseke"
+
+msgid "Last success"
+msgstr "Huling tagumpay"
+
+msgid "Last failure"
+msgstr "Huling kabiguan"
+
+msgid "Failures"
+msgstr "Mga kabiguan"
+
+msgid "Modem reboots"
+msgstr "Nagre-reboot ang modem"
+
+msgid "last"
+msgstr "huli"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "Data transferred"
+msgstr "Inilipat ang data"
+
+msgid "Ping / DNS / HTTP"
+msgstr "Ping / DNS / HTTP"
+
+msgid "Latency"
+msgstr "Latency"
+
+msgid "Modem"
+msgstr "Modem"
+
+msgid "Firmware"
+msgstr "Firmware"
+
+msgid "IMEI"
+msgstr "IMEI"
+
+msgid "Operator / network"
+msgstr "Operator / network"
+
+msgid "Modem temperature"
+msgstr "Temperatura ng modem"
+
+msgid "Service uptime"
+msgstr "Oras ng serbisyo"
+
+msgid "LTE quality"
+msgstr "kalidad ng LTE"
+
+msgid "CSQ"
+msgstr "CSQ"
+
+msgid "RSSI"
+msgstr "RSSI"
+
+msgid "RSRP"
+msgstr "RSRP"
+
+msgid "SINR"
+msgstr "SINR"
+
+msgid "RSRQ"
+msgstr "RSRQ"
+
+msgid "Band"
+msgstr "banda"
+
+msgid "Check now"
+msgstr "Suriin ngayon"
+
+msgid "Refresh modem info"
+msgstr "I-refresh ang impormasyon ng modem"
+
+msgid "Reboot modem"
+msgstr "I-reboot ang modem"
+
+msgid "Restart service"
+msgstr "I-restart ang serbisyo"
+
+msgid "yes"
+msgstr "oo"
+
+msgid "no"
+msgstr "hindi"
+
+msgid "online"
+msgstr "online"
+
+msgid "offline"
+msgstr "offline"
+
+msgid "rebooting"
+msgstr "nagre-reboot"
+
+msgid "checking"
+msgstr "pagsuri"
+
+msgid "disabled"
+msgstr "may kapansanan"
+
+msgid "starting"
+msgstr "simula"
+
+msgid "stopped"
+msgstr "huminto"
+
+msgid "error"
+msgstr "pagkakamali"
+
+msgid "running"
+msgstr "tumatakbo"
+
+msgid "Failed to read status"
+msgstr "Nabigong basahin ang status"
+
+msgid "Reading modem data"
+msgstr "Nagbabasa ng data ng modem"
+
+msgid "Failed to read modem data"
+msgstr "Nabigong basahin ang data ng modem"
+
+msgid "Check started"
+msgstr "Nagsimula ang check"
+
+msgid "Check failed"
+msgstr "Nabigo ang pagsusuri"
+
+msgid "Reboot the modem now? Internet will be down for about"
+msgstr "I-reboot ang modem ngayon? Mawawala ang Internet nang humigit-kumulang"
+
+msgid "seconds."
+msgstr "segundo."
+
+msgid "Modem reboot started"
+msgstr "Nagsimula ang pag-reboot ng modem"
+
+msgid "Reboot failed"
+msgstr "Nabigo ang pag-reboot"
+
+msgid "Restart the modemwatch service?"
+msgstr "I-restart ang serbisyo ng modemwatch?"
+
+msgid "Service restarted"
+msgstr "Nag-restart ang serbisyo"
+
+msgid "Restart failed"
+msgstr "Nabigo ang pag-restart"
+
+msgid "Signal strength (RSRQ)"
+msgstr "Lakas ng signal (RSRQ)"
+
+msgid "Operator"
+msgstr "Operator"
+
+msgid "Network"
+msgstr "Network"
+
+msgid "Last update"
+msgstr "Huling update"
+
+msgid "Refresh interval"
+msgstr "I-refresh ang pagitan"
+
+msgid "seconds"
+msgstr "segundo"
+
+msgid "Signal Strength"
+msgstr "Lakas ng Signal"
+
+msgid "Received Signal Strength Indicator"
+msgstr "Nakatanggap ng Signal Strength Indicator"
+
+msgid "Reference Signal Receive Power"
+msgstr "Reference Signal Receive Power"
+
+msgid "Signal to Interference plus Noise Ratio"
+msgstr "Signal to Interference plus Ingay Ratio"
+
+msgid "Reference Signal Received Quality"
+msgstr "Kalidad ng Natanggap na Reference Signal"
+
+msgid "Refresh now"
+msgstr "I-refresh ngayon"
+
+msgid "Pause"
+msgstr "I-pause"
+
+msgid "Busy"
+msgstr "Busy"
+
+msgid "AT port not found"
+msgstr "Hindi nahanap ang AT port"
+
+msgid "No response from modem"
+msgstr "Walang tugon mula sa modem"
+
+msgid "Failed to read signal"
+msgstr "Nabigong basahin ang signal"
+
+msgid "Resume"
+msgstr "Ipagpatuloy"
+
+msgid "Refresh log"
+msgstr "I-refresh ang log"
+
+msgid "Auto-refresh"
+msgstr "Auto-refresh"
+
+msgid "(empty)"
+msgstr "(walang laman)"
+
+msgid "Updated"
+msgstr "Na-update"
+
+msgid "Failed to read log"
+msgstr "Nabigong basahin ang log"
+
+msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
+msgstr "Maaaring baguhin ng mga utos ng AT ang mga setting ng modem at maaaring idiskonekta ang internet o SSH. Huwag baguhin ang USB mode, APN, band o network mode nang malayuan nang walang rollback plan."
+
+msgid "Expert mode — allow changing USB mode and NAT"
+msgstr "Expert mode — payagan ang pagpapalit ng USB mode at NAT"
+
+msgid "Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan."
+msgstr "Maaaring idiskonekta ng pagpapalit ng USB mode ang modem at SSH. Gamitin lamang sa lokal na pag-access o isang rollback na plano."
+
+msgid "Selected AT port"
+msgstr "Napiling AT port"
+
+msgid "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Para sa Quectel EC200A gamitin ang /dev/ttyUSB2. Ang /dev/ttyUSB0 ay ang diagnostic port at hindi sumasagot sa mga utos ng AT."
+
+msgid "Current configuration"
+msgstr "Kasalukuyang configuration"
+
+msgid "Read current configuration"
+msgstr "Basahin ang kasalukuyang configuration"
+
+msgid "Modem information"
+msgstr "Impormasyon sa modem"
+
+msgid "Model"
+msgstr "Modelo"
+
+msgid "SIM status"
+msgstr "Katayuan ng SIM"
+
+msgid "Temperature"
+msgstr "Temperatura"
+
+msgid "Access Point Name (APN)"
+msgstr "Pangalan ng Access Point (APN)"
+
+msgid "Username"
+msgstr "Username"
+
+msgid "Password"
+msgstr "Password"
+
+msgid "Authentication"
+msgstr "Authentication"
+
+msgid "None"
+msgstr "wala"
+
+msgid "PDP type"
+msgstr "Uri ng PDP"
+
+msgid "Read APN"
+msgstr "Basahin ang APN"
+
+msgid "Apply APN"
+msgstr "Mag-apply ng APN"
+
+msgid "Network mode"
+msgstr "Network mode"
+
+msgid "Mode"
+msgstr "Mode"
+
+msgid "Automatic"
+msgstr "Awtomatiko"
+
+msgid "GSM only"
+msgstr "GSM lang"
+
+msgid "WCDMA only"
+msgstr "WCDMA lang"
+
+msgid "LTE only"
+msgstr "LTE lang"
+
+msgid "Read mode"
+msgstr "Read mode"
+
+msgid "Apply mode"
+msgstr "Ilapat ang mode"
+
+msgid "Band configuration"
+msgstr "Configuration ng banda"
+
+msgid "Read bands"
+msgstr "Magbasa ng mga banda"
+
+msgid "Select all"
+msgstr "Piliin lahat"
+
+msgid "Restore default"
+msgstr "Ibalik ang default"
+
+msgid "Apply bands"
+msgstr "Mag-apply ng mga banda"
+
+msgid "Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection."
+msgstr "Piliin ang mga LTE band na gusto mong panatilihing naka-enable. Ang pag-apply ay maaaring i-restart ang WAN at i-drop ang koneksyon."
+
+msgid "USB mode"
+msgstr "USB mode"
+
+msgid "Current value"
+msgstr "Kasalukuyang halaga"
+
+msgid "New value"
+msgstr "Bagong halaga"
+
+msgid "RMNET (QMI)"
+msgstr "RMNET (QMI)"
+
+msgid "not supported"
+msgstr "hindi suportado"
+
+msgid "ECM (CDC Ethernet)"
+msgstr "ECM (CDC Ethernet)"
+
+msgid "MBIM"
+msgstr "MBIM"
+
+msgid "RNDIS"
+msgstr "RNDIS"
+
+msgid "Apply USB mode"
+msgstr "Ilapat ang USB mode"
+
+msgid "Read USB mode"
+msgstr "Basahin ang USB mode"
+
+msgid "Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem."
+msgstr "Ang mga mode na hindi sinusuportahan ng firmware ng modem ay hindi pinagana at minarkahan bilang hindi suportado. Awtomatikong nade-detect ang mga sinusuportahang mode mula sa modem."
+
+msgid "Apply NAT"
+msgstr "Ilapat ang NAT"
+
+msgid "Read NAT"
+msgstr "Basahin ang NAT"
+
+msgid "Raw AT command"
+msgstr "Raw AT command"
+
+msgid "AT command"
+msgstr "AT utos"
+
+msgid "Send"
+msgstr "Ipadala"
+
+msgid "Sending"
+msgstr "Nagpapadala"
+
+msgid "AT command failed"
+msgstr "Nabigo ang utos ng AT"
+
+msgid "Reading APN"
+msgstr "Pagbabasa ng APN"
+
+msgid "Failed to read APN"
+msgstr "Nabigong basahin ang APN"
+
+msgid "Reading settings"
+msgstr "Mga setting ng pagbabasa"
+
+msgid "Settings read"
+msgstr "Binasa ang mga setting"
+
+msgid "Failed to read settings"
+msgstr "Nabigong basahin ang mga setting"
+
+msgid "APN, username and password may contain only letters, digits, dot, hyphen and underscore."
+msgstr "Ang APN, username at password ay maaaring maglaman lamang ng mga titik, digit, tuldok, gitling at salungguhit."
+
+msgid "Apply APN settings? The connection may drop."
+msgstr "Ilapat ang mga setting ng APN? Maaaring bumaba ang koneksyon."
+
+msgid "Applying APN"
+msgstr "Paglalapat ng APN"
+
+msgid "APN applied. Reconnect or reboot the modem if needed."
+msgstr "Inilapat ang APN. Ikonekta muli o i-reboot ang modem kung kinakailangan."
+
+msgid "Failed to apply APN"
+msgstr "Nabigong ilapat ang APN"
+
+msgid "Apply network mode? The connection may drop."
+msgstr "Ilapat ang network mode? Maaaring bumaba ang koneksyon."
+
+msgid "Reading bands"
+msgstr "Mga banda sa pagbabasa"
+
+msgid "Failed to read bands"
+msgstr "Nabigong basahin ang mga banda"
+
+msgid "No bands selected"
+msgstr "Walang napiling banda"
+
+msgid "Restore default bands?"
+msgstr "Ibalik ang mga default na banda?"
+
+msgid "Apply selected bands? The connection may drop."
+msgstr "Ilapat ang mga napiling banda? Maaaring bumaba ang koneksyon."
+
+msgid "Applying bands"
+msgstr "Paglalapat ng mga banda"
+
+msgid "Failed to apply bands"
+msgstr "Nabigong maglapat ng mga banda"
+
+msgid "USB mode is read-only in this UI."
+msgstr "Ang USB mode ay read-only sa UI na ito."
+
+msgid "This USB mode is not supported by the modem firmware."
+msgstr "Ang USB mode na ito ay hindi sinusuportahan ng modem firmware."
+
+msgid "Change USB mode? The modem will re-enumerate and the connection may drop. Continue?"
+msgstr "Baguhin ang USB mode? Ang modem ay muling magbibilang at ang koneksyon ay maaaring bumaba. Magpatuloy?"
+
+msgid "Change NAT mode? The connection may drop."
+msgstr "Baguhin ang NAT mode? Maaaring bumaba ang koneksyon."
+
+msgid "Current operator"
+msgstr "Kasalukuyang operator"
+
+msgid "AT port"
+msgstr "SA port"
+
+msgid "Scan networks"
+msgstr "I-scan ang mga network"
+
+msgid "Automatic operator selection"
+msgstr "Awtomatikong pagpili ng operator"
+
+msgid "Stop scan"
+msgstr "Itigil ang pag-scan"
+
+msgid "Update MCC/MNC database"
+msgstr "I-update ang database ng MCC/MNC"
+
+msgid "Country"
+msgstr "Bansa"
+
+msgid "MCC/MNC"
+msgstr "MCC/MNC"
+
+msgid "Technology"
+msgstr "Teknolohiya"
+
+msgid "Action"
+msgstr "Aksyon"
+
+msgid "Raw scan output"
+msgstr "Raw scan output"
+
+msgid "current"
+msgstr "kasalukuyang"
+
+msgid "available"
+msgstr "magagamit"
+
+msgid "forbidden"
+msgstr "bawal"
+
+msgid "unknown"
+msgstr "hindi kilala"
+
+msgid "Select"
+msgstr "Pumili"
+
+msgid "MCC/MNC database updated."
+msgstr "Na-update ang database ng MCC/MNC."
+
+msgid "Not updated yet"
+msgstr "Hindi pa updated"
+
+msgid "Failed to read MCC/MNC update status"
+msgstr "Nabigong basahin ang status ng update ng MCC/MNC"
+
+msgid "Updating MCC/MNC database"
+msgstr "Ina-update ang MCC/MNC database"
+
+msgid "Scanning networks... This may take up to two minutes."
+msgstr "Nag-scan ng mga network... Maaaring tumagal ito ng hanggang dalawang minuto."
+
+msgid "Scan complete."
+msgstr "Tapos na ang pag-scan."
+
+msgid "Modem is busy. Try again later."
+msgstr "Busy ang modem. Subukan ulit mamaya."
+
+msgid "Scan failed"
+msgstr "Nabigo ang pag-scan"
+
+msgid "Not scanned yet."
+msgstr "Hindi pa na-scan."
+
+msgid "Failed to read scan status"
+msgstr "Nabigong basahin ang katayuan ng pag-scan"
+
+msgid "Stopping scan"
+msgstr "Huminto sa pag-scan"
+
+msgid "Network scan stopped"
+msgstr "Huminto ang pag-scan sa network"
+
+msgid "Failed to stop scan"
+msgstr "Nabigong ihinto ang pag-scan"
+
+msgid "Starting network scan"
+msgstr "Sinisimulan ang pag-scan sa network"
+
+msgid "Network scan started"
+msgstr "Nagsimula ang pag-scan sa network"
+
+msgid "Failed to start scan"
+msgstr "Nabigong simulan ang pag-scan"
+
+msgid "Select operator"
+msgstr "Pumili ng operator"
+
+msgid "The connection may drop."
+msgstr "Maaaring bumaba ang koneksyon."
+
+msgid "Selecting operator"
+msgstr "Pagpili ng operator"
+
+msgid "Operator selection sent"
+msgstr "Ipinadala ang pagpili ng operator"
+
+msgid "Failed to select operator"
+msgstr "Nabigong pumili ng operator"
+
+msgid "Use automatic operator selection?"
+msgstr "Gumamit ng awtomatikong pagpili ng operator?"
+
+msgid "Selecting automatic mode"
+msgstr "Pagpili ng awtomatikong mode"

@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-modemwatch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 00:00+0000\n"
+"PO-Revision-Date: 2026-11-10 00:00+0000\n"
+"Last-Translator: modemwatch contributors\n"
+"Language-Team: ქართული (Georgian)\n"
+"Language: ka\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgid "Modem LTE 4G"
+msgstr "მოდემი LTE 4G"
+
+msgid "Status"
+msgstr "მდგომარეობა"
+
+msgid "Signal"
+msgstr "სიგნალი"
+
+msgid "Log"
+msgstr "შესვლა"
+
+msgid "Modem settings"
+msgstr "მოდემის პარამეტრები"
+
+msgid "Network search"
+msgstr "ქსელის ძებნა"
+
+msgid "Settings"
+msgstr "პარამეტრები"
+
+msgid "invalid token"
+msgstr "არასწორი ჟეტონი"
+
+msgid "empty AT command"
+msgstr "ცარიელი AT ბრძანება"
+
+msgid "invalid band selection"
+msgstr "ზოლის არასწორი შერჩევა"
+
+msgid "Band settings sent"
+msgstr "ჯგუფის პარამეტრები გაგზავნილია"
+
+msgid "network scan started"
+msgstr "ქსელის სკანირება დაიწყო"
+
+msgid "network scan stopped"
+msgstr "ქსელის სკანირება შეჩერდა"
+
+msgid "invalid operator"
+msgstr "არასწორი ოპერატორი"
+
+msgid "Downloading MCC/MNC list"
+msgstr "მიმდინარეობს MCC/MNC სიის ჩამოტვირთვა"
+
+msgid "Parsing MCC/MNC list"
+msgstr "MCC/MNC სიის ანალიზი"
+
+msgid "MCC/MNC database updated"
+msgstr "MCC/MNC მონაცემთა ბაზა განახლებულია"
+
+msgid "Failed to update MCC/MNC database"
+msgstr "MCC/MNC მონაცემთა ბაზის განახლება ვერ მოხერხდა"
+
+msgid "MCC/MNC update already running"
+msgstr "MCC/MNC განახლება უკვე გაშვებულია"
+
+msgid "MCC/MNC update started"
+msgstr "MCC/MNC განახლება დაიწყო"
+
+msgid "operator selection sent"
+msgstr "ოპერატორის არჩევანი გაგზავნილია"
+
+msgid "internet check started"
+msgstr "ინტერნეტის შემოწმება დაიწყო"
+
+msgid "modem reboot started"
+msgstr "დაიწყო მოდემის გადატვირთვა"
+
+msgid "service restarted"
+msgstr "სერვისი განახლდა"
+
+msgid "Modem info updated"
+msgstr "მოდემის ინფორმაცია განახლებულია"
+
+msgid "Modem did not respond"
+msgstr "მოდემი არ პასუხობდა"
+
+msgid "Checks internet connectivity and reboots the Quectel modem when the connection is lost."
+msgstr "ამოწმებს ინტერნეტ კავშირს და გადატვირთავს Quectel მოდემს, როდესაც კავშირი დაკარგა."
+
+msgid "Service settings"
+msgstr "სერვისის პარამეტრები"
+
+msgid "Enable service"
+msgstr "სერვისის ჩართვა"
+
+msgid "Check interval (seconds)"
+msgstr "შეამოწმეთ ინტერვალი (წამი)"
+
+msgid "Failures before modem reboot"
+msgstr "წარუმატებლობა მოდემის გადატვირთვამდე"
+
+msgid "Ping hosts"
+msgstr "პინგ მასპინძლები"
+
+msgid "Space-separated list. Internet is considered up if at least one host responds."
+msgstr "სივრცით გამოყოფილი სია. ინტერნეტი განიხილება, თუ ერთი ჰოსტი მაინც პასუხობს."
+
+msgid "Also require DNS resolution"
+msgstr "ასევე საჭიროა DNS გარჩევადობა"
+
+msgid "DNS name to resolve"
+msgstr "გადასაჭრელი DNS სახელი"
+
+msgid "Also require an HTTP request"
+msgstr "ასევე საჭიროა HTTP მოთხოვნა"
+
+msgid "HTTP URL"
+msgstr "HTTP URL"
+
+msgid "WAN interface"
+msgstr "WAN ინტერფეისი"
+
+msgid "The device name is read from network.<iface>.device."
+msgstr "მოწყობილობის სახელი იკითხება ქსელიდან.<iface>.device."
+
+msgid "AT serial port"
+msgstr "სერიული პორტი"
+
+msgid "Detected USB/ACM serial ports. For Quectel EC200A use /dev/ttyUSB2; /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "აღმოჩენილი USB/ACM სერიული პორტები. Quectel EC200A-სთვის გამოიყენეთ /dev/ttyUSB2; /dev/ttyUSB0 არის დიაგნოსტიკური პორტი და არ პასუხობს AT ბრძანებებს."
+
+msgid "AT port baud rate"
+msgstr "AT პორტის ბაუდის სიხშირე"
+
+msgid "Modem reboot method"
+msgstr "მოდემის გადატვირთვის მეთოდი"
+
+msgid "AT+CFUN=1,1 (recommended)"
+msgstr "AT+CFUN=1,1 (რეკომენდირებულია)"
+
+msgid "USB re-bind (best effort)"
+msgstr "USB ხელახლა შეკვრა (საუკეთესო ძალისხმევა)"
+
+msgid "Wait after reboot (seconds)"
+msgstr "დაელოდეთ გადატვირთვის შემდეგ (წამები)"
+
+msgid "Collect modem information"
+msgstr "შეაგროვეთ მოდემის ინფორმაცია"
+
+msgid "Reads model, firmware, IMEI, signal, operator and temperature via AT commands."
+msgstr "კითხულობს მოდელს, firmware-ს, IMEI-ს, სიგნალს, ოპერატორს და ტემპერატურას AT ბრძანებების საშუალებით."
+
+msgid "Modem info interval (seconds)"
+msgstr "მოდემის ინფორმაციის ინტერვალი (წამი)"
+
+msgid "How often to query the modem with AT commands. Keep it longer if other modem tools use the same serial port."
+msgstr "რამდენად ხშირად უნდა შეკითხოთ მოდემი AT ბრძანებებით. შეინახეთ იგი უფრო მეტხანს, თუ სხვა მოდემის ხელსაწყოები იყენებენ იმავე სერიულ პორტს."
+
+msgid "Signal refresh interval (seconds)"
+msgstr "სიგნალის განახლების ინტერვალი (წამი)"
+
+msgid "Pause between signal page updates. The actual update also includes the modem response time."
+msgstr "პაუზა სიგნალის გვერდის განახლებებს შორის. ფაქტობრივი განახლება ასევე მოიცავს მოდემის რეაგირების დროს."
+
+msgid "Safety"
+msgstr "უსაფრთხოება"
+
+msgid "Maximum reboots per window"
+msgstr "მაქსიმალური გადატვირთვა თითო ფანჯარაში"
+
+msgid "Set to 0 for unlimited. The limit prevents reboot loops."
+msgstr "დააყენეთ 0-ზე შეუზღუდავად. ლიმიტი ხელს უშლის გადატვირთვის მარყუჟებს."
+
+msgid "Reboot window (seconds)"
+msgstr "ფანჯრის გადატვირთვა (წამში)"
+
+msgid "Cooldown between reboots (seconds)"
+msgstr "გაცივება გადატვირთვებს შორის (წამები)"
+
+msgid "Logging"
+msgstr "ხე-ტყე"
+
+msgid "Log level"
+msgstr "ჟურნალის დონე"
+
+msgid "Error"
+msgstr "შეცდომა"
+
+msgid "Warning"
+msgstr "გაფრთხილება"
+
+msgid "Info"
+msgstr "ინფორმაცია"
+
+msgid "Debug"
+msgstr "ხარვეზის აღმოფხვრა"
+
+msgid "Remote access warning"
+msgstr "დისტანციური წვდომის გაფრთხილება"
+
+msgid "This service reboots only the modem, not the router. If the modem is the only WAN, internet and remote access will be down during the reboot. Do not change USB mode, APN or band settings remotely without a rollback plan."
+msgstr "ეს სერვისი გადატვირთავს მხოლოდ მოდემს და არა როუტერს. თუ მოდემი ერთადერთი WAN-ია, გადატვირთვისას ინტერნეტი და დისტანციური წვდომა შეწყდება. არ შეცვალოთ USB რეჟიმი, APN ან ზოლის პარამეტრები დისტანციურად უკან დაბრუნების გეგმის გარეშე."
+
+msgid "Service"
+msgstr "სერვისი"
+
+msgid "State"
+msgstr "სახელმწიფო"
+
+msgid "Last check"
+msgstr "ბოლო შემოწმება"
+
+msgid "Last success"
+msgstr "ბოლო წარმატება"
+
+msgid "Last failure"
+msgstr "ბოლო მარცხი"
+
+msgid "Failures"
+msgstr "წარუმატებლობები"
+
+msgid "Modem reboots"
+msgstr "მოდემი გადაიტვირთება"
+
+msgid "last"
+msgstr "ბოლო"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "Data transferred"
+msgstr "მონაცემები გადაცემულია"
+
+msgid "Ping / DNS / HTTP"
+msgstr "Ping / DNS / HTTP"
+
+msgid "Latency"
+msgstr "შეყოვნება"
+
+msgid "Modem"
+msgstr "მოდემი"
+
+msgid "Firmware"
+msgstr "Firmware"
+
+msgid "IMEI"
+msgstr "IMEI"
+
+msgid "Operator / network"
+msgstr "ოპერატორი / ქსელი"
+
+msgid "Modem temperature"
+msgstr "მოდემის ტემპერატურა"
+
+msgid "Service uptime"
+msgstr "სერვისის დრო"
+
+msgid "LTE quality"
+msgstr "LTE ხარისხი"
+
+msgid "CSQ"
+msgstr "CSQ"
+
+msgid "RSSI"
+msgstr "RSSI"
+
+msgid "RSRP"
+msgstr "RSRP"
+
+msgid "SINR"
+msgstr "SINR"
+
+msgid "RSRQ"
+msgstr "RSRQ"
+
+msgid "Band"
+msgstr "ბენდი"
+
+msgid "Check now"
+msgstr "შეამოწმეთ ახლა"
+
+msgid "Refresh modem info"
+msgstr "განაახლეთ მოდემის ინფორმაცია"
+
+msgid "Reboot modem"
+msgstr "გადატვირთეთ მოდემი"
+
+msgid "Restart service"
+msgstr "სერვისის გადატვირთვა"
+
+msgid "yes"
+msgstr "დიახ"
+
+msgid "no"
+msgstr "არა"
+
+msgid "online"
+msgstr "ონლაინ"
+
+msgid "offline"
+msgstr "ხაზგარეშე"
+
+msgid "rebooting"
+msgstr "გადატვირთვა"
+
+msgid "checking"
+msgstr "შემოწმება"
+
+msgid "disabled"
+msgstr "ინვალიდი"
+
+msgid "starting"
+msgstr "დაწყებული"
+
+msgid "stopped"
+msgstr "შეჩერდა"
+
+msgid "error"
+msgstr "შეცდომა"
+
+msgid "running"
+msgstr "გაშვებული"
+
+msgid "Failed to read status"
+msgstr "სტატუსის წაკითხვა ვერ მოხერხდა"
+
+msgid "Reading modem data"
+msgstr "მოდემის მონაცემების კითხვა"
+
+msgid "Failed to read modem data"
+msgstr "მოდემის მონაცემების წაკითხვა ვერ მოხერხდა"
+
+msgid "Check started"
+msgstr "შემოწმება დაიწყო"
+
+msgid "Check failed"
+msgstr "შემოწმება ვერ მოხერხდა"
+
+msgid "Reboot the modem now? Internet will be down for about"
+msgstr "გადატვირთეთ მოდემი ახლა? ინტერნეტი გაითიშება დაახლოებით"
+
+msgid "seconds."
+msgstr "წამი."
+
+msgid "Modem reboot started"
+msgstr "მოდემის გადატვირთვა დაიწყო"
+
+msgid "Reboot failed"
+msgstr "გადატვირთვა ვერ მოხერხდა"
+
+msgid "Restart the modemwatch service?"
+msgstr "გადატვირთოთ მოდემის საათის სერვისი?"
+
+msgid "Service restarted"
+msgstr "სერვისი განახლდა"
+
+msgid "Restart failed"
+msgstr "გადატვირთვა ვერ მოხერხდა"
+
+msgid "Signal strength (RSRQ)"
+msgstr "სიგნალის სიძლიერე (RSRQ)"
+
+msgid "Operator"
+msgstr "ოპერატორი"
+
+msgid "Network"
+msgstr "ქსელი"
+
+msgid "Last update"
+msgstr "ბოლო განახლება"
+
+msgid "Refresh interval"
+msgstr "განახლების ინტერვალი"
+
+msgid "seconds"
+msgstr "წამი"
+
+msgid "Signal Strength"
+msgstr "სიგნალის სიძლიერე"
+
+msgid "Received Signal Strength Indicator"
+msgstr "მიღებული სიგნალის სიძლიერის ინდიკატორი"
+
+msgid "Reference Signal Receive Power"
+msgstr "საცნობარო სიგნალის მიღების სიმძლავრე"
+
+msgid "Signal to Interference plus Noise Ratio"
+msgstr "სიგნალი ჩარევამდე პლუს ხმაურის თანაფარდობა"
+
+msgid "Reference Signal Received Quality"
+msgstr "საცნობარო სიგნალის მიღებული ხარისხი"
+
+msgid "Refresh now"
+msgstr "განაახლეთ ახლავე"
+
+msgid "Pause"
+msgstr "პაუზა"
+
+msgid "Busy"
+msgstr "დაკავებულია"
+
+msgid "AT port not found"
+msgstr "AT პორტი ვერ მოიძებნა"
+
+msgid "No response from modem"
+msgstr "არანაირი პასუხი მოდემიდან"
+
+msgid "Failed to read signal"
+msgstr "სიგნალის წაკითხვა ვერ მოხერხდა"
+
+msgid "Resume"
+msgstr "რეზიუმე"
+
+msgid "Refresh log"
+msgstr "ჟურნალის განახლება"
+
+msgid "Auto-refresh"
+msgstr "ავტომატური განახლება"
+
+msgid "(empty)"
+msgstr "(ცარიელი)"
+
+msgid "Updated"
+msgstr "განახლებულია"
+
+msgid "Failed to read log"
+msgstr "ჟურნალის წაკითხვა ვერ მოხერხდა"
+
+msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
+msgstr "AT ბრძანებებს შეუძლიათ შეცვალონ მოდემის პარამეტრები და შეიძლება გათიშონ ინტერნეტი ან SSH. არ შეცვალოთ USB რეჟიმი, APN, დიაპაზონი ან ქსელის რეჟიმი დისტანციურად უკან დაბრუნების გეგმის გარეშე."
+
+msgid "Expert mode — allow changing USB mode and NAT"
+msgstr "საექსპერტო რეჟიმი — საშუალებას გაძლევთ შეცვალოთ USB რეჟიმი და NAT"
+
+msgid "Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan."
+msgstr "USB რეჟიმის შეცვლამ შეიძლება გათიშოს მოდემი და SSH. გამოიყენეთ მხოლოდ ადგილობრივი წვდომით ან დაბრუნების გეგმით."
+
+msgid "Selected AT port"
+msgstr "არჩეული AT პორტი"
+
+msgid "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Quectel EC200A-სთვის გამოიყენეთ /dev/ttyUSB2. /dev/ttyUSB0 არის დიაგნოსტიკური პორტი და არ პასუხობს AT ბრძანებებს."
+
+msgid "Current configuration"
+msgstr "მიმდინარე კონფიგურაცია"
+
+msgid "Read current configuration"
+msgstr "წაიკითხეთ მიმდინარე კონფიგურაცია"
+
+msgid "Modem information"
+msgstr "ინფორმაცია მოდემის შესახებ"
+
+msgid "Model"
+msgstr "მოდელი"
+
+msgid "SIM status"
+msgstr "SIM-ის სტატუსი"
+
+msgid "Temperature"
+msgstr "ტემპერატურა"
+
+msgid "Access Point Name (APN)"
+msgstr "წვდომის წერტილის სახელი (APN)"
+
+msgid "Username"
+msgstr "მომხმარებლის სახელი"
+
+msgid "Password"
+msgstr "პაროლი"
+
+msgid "Authentication"
+msgstr "ავთენტიფიკაცია"
+
+msgid "None"
+msgstr "არცერთი"
+
+msgid "PDP type"
+msgstr "PDP ტიპი"
+
+msgid "Read APN"
+msgstr "წაიკითხეთ APN"
+
+msgid "Apply APN"
+msgstr "გამოიყენეთ APN"
+
+msgid "Network mode"
+msgstr "ქსელის რეჟიმი"
+
+msgid "Mode"
+msgstr "რეჟიმი"
+
+msgid "Automatic"
+msgstr "ავტომატური"
+
+msgid "GSM only"
+msgstr "მხოლოდ GSM"
+
+msgid "WCDMA only"
+msgstr "მხოლოდ WCDMA"
+
+msgid "LTE only"
+msgstr "მხოლოდ LTE"
+
+msgid "Read mode"
+msgstr "წაკითხვის რეჟიმი"
+
+msgid "Apply mode"
+msgstr "რეჟიმის გამოყენება"
+
+msgid "Band configuration"
+msgstr "ბენდის კონფიგურაცია"
+
+msgid "Read bands"
+msgstr "წაიკითხეთ ბენდები"
+
+msgid "Select all"
+msgstr "აირჩიეთ ყველა"
+
+msgid "Restore default"
+msgstr "ნაგულისხმევი აღდგენა"
+
+msgid "Apply bands"
+msgstr "წაისვით ზოლები"
+
+msgid "Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection."
+msgstr "აირჩიეთ LTE ზოლები, რომლებიც გსურთ ჩართული იყოს. განაცხადის შემთხვევაში შეიძლება WAN-ის გადატვირთვა და კავშირის გაწყვეტა."
+
+msgid "USB mode"
+msgstr "USB რეჟიმი"
+
+msgid "Current value"
+msgstr "მიმდინარე ღირებულება"
+
+msgid "New value"
+msgstr "ახალი ღირებულება"
+
+msgid "RMNET (QMI)"
+msgstr "RMNET (QMI)"
+
+msgid "not supported"
+msgstr "არ არის მხარდაჭერილი"
+
+msgid "ECM (CDC Ethernet)"
+msgstr "ECM (CDC Ethernet)"
+
+msgid "MBIM"
+msgstr "MBIM"
+
+msgid "RNDIS"
+msgstr "RNDIS"
+
+msgid "Apply USB mode"
+msgstr "გამოიყენეთ USB რეჟიმი"
+
+msgid "Read USB mode"
+msgstr "წაიკითხეთ USB რეჟიმი"
+
+msgid "Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem."
+msgstr "რეჟიმები, რომლებიც არ არის მხარდაჭერილი მოდემის პროგრამული უზრუნველყოფის მიერ, გამორთულია და მონიშნულია, როგორც მხარდაჭერილი. მხარდაჭერილი რეჟიმები ავტომატურად ვლინდება მოდემიდან."
+
+msgid "Apply NAT"
+msgstr "გამოიყენეთ NAT"
+
+msgid "Read NAT"
+msgstr "წაიკითხეთ NAT"
+
+msgid "Raw AT command"
+msgstr "Raw AT ბრძანება"
+
+msgid "AT command"
+msgstr "AT ბრძანება"
+
+msgid "Send"
+msgstr "გაგზავნა"
+
+msgid "Sending"
+msgstr "გაგზავნა"
+
+msgid "AT command failed"
+msgstr "AT ბრძანება ვერ მოხერხდა"
+
+msgid "Reading APN"
+msgstr "APN-ის კითხვა"
+
+msgid "Failed to read APN"
+msgstr "APN-ის წაკითხვა ვერ მოხერხდა"
+
+msgid "Reading settings"
+msgstr "პარამეტრების წაკითხვა"
+
+msgid "Settings read"
+msgstr "წაკითხული პარამეტრები"
+
+msgid "Failed to read settings"
+msgstr "პარამეტრების წაკითხვა ვერ მოხერხდა"
+
+msgid "APN, username and password may contain only letters, digits, dot, hyphen and underscore."
+msgstr "APN, მომხმარებლის სახელი და პაროლი შეიძლება შეიცავდეს მხოლოდ ასოებს, ციფრებს, წერტილებს, დეფისს და ქვედა ხაზს."
+
+msgid "Apply APN settings? The connection may drop."
+msgstr "გსურთ APN პარამეტრების გამოყენება? კავშირი შეიძლება შეწყდეს."
+
+msgid "Applying APN"
+msgstr "APN-ის გამოყენება"
+
+msgid "APN applied. Reconnect or reboot the modem if needed."
+msgstr "გამოყენებულია APN. საჭიროების შემთხვევაში ხელახლა შეაერთეთ ან გადატვირთეთ მოდემი."
+
+msgid "Failed to apply APN"
+msgstr "APN-ის გამოყენება ვერ მოხერხდა"
+
+msgid "Apply network mode? The connection may drop."
+msgstr "გსურთ ქსელის რეჟიმის გამოყენება? კავშირი შეიძლება შეწყდეს."
+
+msgid "Reading bands"
+msgstr "კითხვის ზოლები"
+
+msgid "Failed to read bands"
+msgstr "ზოლების წაკითხვა ვერ მოხერხდა"
+
+msgid "No bands selected"
+msgstr "არ არის შერჩეული ბენდები"
+
+msgid "Restore default bands?"
+msgstr "გსურთ ნაგულისხმევი ზოლების აღდგენა?"
+
+msgid "Apply selected bands? The connection may drop."
+msgstr "გსურთ შერჩეული ზოლების გამოყენება? კავშირი შეიძლება შეწყდეს."
+
+msgid "Applying bands"
+msgstr "ზოლების გამოყენება"
+
+msgid "Failed to apply bands"
+msgstr "ზოლების გამოყენება ვერ მოხერხდა"
+
+msgid "USB mode is read-only in this UI."
+msgstr "USB რეჟიმი ამ ინტერფეისში მხოლოდ წაკითხულია."
+
+msgid "This USB mode is not supported by the modem firmware."
+msgstr "ეს USB რეჟიმი არ არის მხარდაჭერილი მოდემის პროგრამული უზრუნველყოფის მიერ."
+
+msgid "Change USB mode? The modem will re-enumerate and the connection may drop. Continue?"
+msgstr "გსურთ USB რეჟიმის შეცვლა? მოდემი ხელახლა ჩაირიცხება და კავშირი შეიძლება შეწყდეს. გაგრძელება?"
+
+msgid "Change NAT mode? The connection may drop."
+msgstr "შევცვალო NAT რეჟიმი? კავშირი შეიძლება შეწყდეს."
+
+msgid "Current operator"
+msgstr "მიმდინარე ოპერატორი"
+
+msgid "AT port"
+msgstr "AT პორტი"
+
+msgid "Scan networks"
+msgstr "ქსელების სკანირება"
+
+msgid "Automatic operator selection"
+msgstr "ოპერატორის ავტომატური შერჩევა"
+
+msgid "Stop scan"
+msgstr "შეაჩერე სკანირება"
+
+msgid "Update MCC/MNC database"
+msgstr "MCC/MNC მონაცემთა ბაზის განახლება"
+
+msgid "Country"
+msgstr "ქვეყანა"
+
+msgid "MCC/MNC"
+msgstr "MCC/MNC"
+
+msgid "Technology"
+msgstr "ტექნიკა"
+
+msgid "Action"
+msgstr "მოქმედება"
+
+msgid "Raw scan output"
+msgstr "ნედლი სკანირების გამომავალი"
+
+msgid "current"
+msgstr "მიმდინარე"
+
+msgid "available"
+msgstr "ხელმისაწვდომი"
+
+msgid "forbidden"
+msgstr "აკრძალული"
+
+msgid "unknown"
+msgstr "უცნობი"
+
+msgid "Select"
+msgstr "აირჩიეთ"
+
+msgid "MCC/MNC database updated."
+msgstr "MCC/MNC მონაცემთა ბაზა განახლებულია."
+
+msgid "Not updated yet"
+msgstr "ჯერ არ განახლებულია"
+
+msgid "Failed to read MCC/MNC update status"
+msgstr "MCC/MNC განახლების სტატუსის წაკითხვა ვერ მოხერხდა"
+
+msgid "Updating MCC/MNC database"
+msgstr "MCC/MNC მონაცემთა ბაზის განახლება"
+
+msgid "Scanning networks... This may take up to two minutes."
+msgstr "მიმდინარეობს ქსელების სკანირება... ამას შეიძლება ორ წუთამდე დასჭირდეს."
+
+msgid "Scan complete."
+msgstr "სკანირება დასრულდა."
+
+msgid "Modem is busy. Try again later."
+msgstr "მოდემი დაკავებულია. სცადეთ მოგვიანებით."
+
+msgid "Scan failed"
+msgstr "სკანირება ვერ მოხერხდა"
+
+msgid "Not scanned yet."
+msgstr "ჯერ არ არის დასკანირებული."
+
+msgid "Failed to read scan status"
+msgstr "სკანირების სტატუსის წაკითხვა ვერ მოხერხდა"
+
+msgid "Stopping scan"
+msgstr "სკანირების შეჩერება"
+
+msgid "Network scan stopped"
+msgstr "ქსელის სკანირება შეჩერდა"
+
+msgid "Failed to stop scan"
+msgstr "სკანირების შეჩერება ვერ მოხერხდა"
+
+msgid "Starting network scan"
+msgstr "იწყება ქსელის სკანირება"
+
+msgid "Network scan started"
+msgstr "ქსელის სკანირება დაიწყო"
+
+msgid "Failed to start scan"
+msgstr "სკანირების დაწყება ვერ მოხერხდა"
+
+msgid "Select operator"
+msgstr "აირჩიეთ ოპერატორი"
+
+msgid "The connection may drop."
+msgstr "კავშირი შეიძლება შეწყდეს."
+
+msgid "Selecting operator"
+msgstr "ოპერატორის შერჩევა"
+
+msgid "Operator selection sent"
+msgstr "ოპერატორის არჩევანი გაგზავნილია"
+
+msgid "Failed to select operator"
+msgstr "ოპერატორის არჩევა ვერ მოხერხდა"
+
+msgid "Use automatic operator selection?"
+msgstr "გამოიყენეთ ოპერატორის ავტომატური შერჩევა?"
+
+msgid "Selecting automatic mode"
+msgstr "ავტომატური რეჟიმის არჩევა"

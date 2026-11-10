@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-modemwatch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 00:00+0000\n"
+"PO-Revision-Date: 2026-11-10 00:00+0000\n"
+"Last-Translator: modemwatch contributors\n"
+"Language-Team: Svenska (Swedish)\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgid "Modem LTE 4G"
+msgstr "Modem LTE 4G"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Signal"
+msgstr "Signal"
+
+msgid "Log"
+msgstr "Logg"
+
+msgid "Modem settings"
+msgstr "Modeminställningar"
+
+msgid "Network search"
+msgstr "Nätverkssökning"
+
+msgid "Settings"
+msgstr "Inställningar"
+
+msgid "invalid token"
+msgstr "ogiltig token"
+
+msgid "empty AT command"
+msgstr "tomt AT-kommando"
+
+msgid "invalid band selection"
+msgstr "ogiltigt bandval"
+
+msgid "Band settings sent"
+msgstr "Bandinställningar skickade"
+
+msgid "network scan started"
+msgstr "nätverksskanning startade"
+
+msgid "network scan stopped"
+msgstr "nätverkssökning stoppad"
+
+msgid "invalid operator"
+msgstr "ogiltig operatör"
+
+msgid "Downloading MCC/MNC list"
+msgstr "Laddar ned MCC/MNC-lista"
+
+msgid "Parsing MCC/MNC list"
+msgstr "Parsar MCC/MNC-lista"
+
+msgid "MCC/MNC database updated"
+msgstr "MCC/MNC-databas uppdaterad"
+
+msgid "Failed to update MCC/MNC database"
+msgstr "Det gick inte att uppdatera MCC/MNC-databasen"
+
+msgid "MCC/MNC update already running"
+msgstr "MCC/MNC-uppdatering körs redan"
+
+msgid "MCC/MNC update started"
+msgstr "MCC/MNC-uppdatering startade"
+
+msgid "operator selection sent"
+msgstr "operatörsval skickas"
+
+msgid "internet check started"
+msgstr "internetkontrollen startade"
+
+msgid "modem reboot started"
+msgstr "modemet startade omstart"
+
+msgid "service restarted"
+msgstr "tjänsten startade om"
+
+msgid "Modem info updated"
+msgstr "Modeminformation uppdaterad"
+
+msgid "Modem did not respond"
+msgstr "Modemet svarade inte"
+
+msgid "Checks internet connectivity and reboots the Quectel modem when the connection is lost."
+msgstr "Kontrollerar internetanslutningen och startar om Quectel-modemet när anslutningen bryts."
+
+msgid "Service settings"
+msgstr "Serviceinställningar"
+
+msgid "Enable service"
+msgstr "Aktivera tjänsten"
+
+msgid "Check interval (seconds)"
+msgstr "Kontrollintervall (sekunder)"
+
+msgid "Failures before modem reboot"
+msgstr "Fel före omstart av modemet"
+
+msgid "Ping hosts"
+msgstr "Ping-värdar"
+
+msgid "Space-separated list. Internet is considered up if at least one host responds."
+msgstr "Mellanslagsseparerad lista. Internet anses vara uppkopplat om minst en värd svarar."
+
+msgid "Also require DNS resolution"
+msgstr "Kräver också DNS-upplösning"
+
+msgid "DNS name to resolve"
+msgstr "DNS-namn att lösa"
+
+msgid "Also require an HTTP request"
+msgstr "Kräv också en HTTP-förfrågan"
+
+msgid "HTTP URL"
+msgstr "HTTP URL"
+
+msgid "WAN interface"
+msgstr "WAN-gränssnitt"
+
+msgid "The device name is read from network.<iface>.device."
+msgstr "Enhetsnamnet läses från nätverket.<iface>.enhet."
+
+msgid "AT serial port"
+msgstr "AT seriell port"
+
+msgid "Detected USB/ACM serial ports. For Quectel EC200A use /dev/ttyUSB2; /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Detekterade USB/ACM seriella portar. För Quectel EC200A använd /dev/ttyUSB2; /dev/ttyUSB0 är diagnosporten och svarar inte på AT-kommandon."
+
+msgid "AT port baud rate"
+msgstr "AT port baudhastighet"
+
+msgid "Modem reboot method"
+msgstr "Modemets omstartsmetod"
+
+msgid "AT+CFUN=1,1 (recommended)"
+msgstr "AT+CFUN=1,1 (rekommenderas)"
+
+msgid "USB re-bind (best effort)"
+msgstr "USB-återbindning (bästa ansträngning)"
+
+msgid "Wait after reboot (seconds)"
+msgstr "Vänta efter omstart (sekunder)"
+
+msgid "Collect modem information"
+msgstr "Samla in modeminformation"
+
+msgid "Reads model, firmware, IMEI, signal, operator and temperature via AT commands."
+msgstr "Läser modell, firmware, IMEI, signal, operatör och temperatur via AT-kommandon."
+
+msgid "Modem info interval (seconds)"
+msgstr "Modeminformationsintervall (sekunder)"
+
+msgid "How often to query the modem with AT commands. Keep it longer if other modem tools use the same serial port."
+msgstr "Hur ofta ska man fråga modemet med AT-kommandon. Behåll den längre om andra modemverktyg använder samma seriella port."
+
+msgid "Signal refresh interval (seconds)"
+msgstr "Signaluppdateringsintervall (sekunder)"
+
+msgid "Pause between signal page updates. The actual update also includes the modem response time."
+msgstr "Pausa mellan uppdateringar av signalsidan. Själva uppdateringen inkluderar även modemets svarstid."
+
+msgid "Safety"
+msgstr "Säkerhet"
+
+msgid "Maximum reboots per window"
+msgstr "Maximalt antal omstarter per fönster"
+
+msgid "Set to 0 for unlimited. The limit prevents reboot loops."
+msgstr "Sätt till 0 för obegränsat. Gränsen förhindrar omstartsslingor."
+
+msgid "Reboot window (seconds)"
+msgstr "Omstartsfönster (sekunder)"
+
+msgid "Cooldown between reboots (seconds)"
+msgstr "Nedkylning mellan omstarter (sekunder)"
+
+msgid "Logging"
+msgstr "Loggning"
+
+msgid "Log level"
+msgstr "Loggnivå"
+
+msgid "Error"
+msgstr "Fel"
+
+msgid "Warning"
+msgstr "Varning"
+
+msgid "Info"
+msgstr "Info"
+
+msgid "Debug"
+msgstr "Felsökning"
+
+msgid "Remote access warning"
+msgstr "Varning för fjärråtkomst"
+
+msgid "This service reboots only the modem, not the router. If the modem is the only WAN, internet and remote access will be down during the reboot. Do not change USB mode, APN or band settings remotely without a rollback plan."
+msgstr "Den här tjänsten startar bara om modemet, inte routern. Om modemet är det enda WAN, kommer internet och fjärråtkomst att vara nere under omstarten. Ändra inte USB-läge, APN eller bandinställningar på distans utan en återställningsplan."
+
+msgid "Service"
+msgstr "Tjänst"
+
+msgid "State"
+msgstr "Tillstånd"
+
+msgid "Last check"
+msgstr "Sista kontrollen"
+
+msgid "Last success"
+msgstr "Sista framgången"
+
+msgid "Last failure"
+msgstr "Senaste misslyckandet"
+
+msgid "Failures"
+msgstr "Misslyckanden"
+
+msgid "Modem reboots"
+msgstr "Modemet startar om"
+
+msgid "last"
+msgstr "sist"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "Data transferred"
+msgstr "Data överförs"
+
+msgid "Ping / DNS / HTTP"
+msgstr "Ping / DNS / HTTP"
+
+msgid "Latency"
+msgstr "Latens"
+
+msgid "Modem"
+msgstr "Modem"
+
+msgid "Firmware"
+msgstr "Firmware"
+
+msgid "IMEI"
+msgstr "IMEI"
+
+msgid "Operator / network"
+msgstr "Operatör/nätverk"
+
+msgid "Modem temperature"
+msgstr "Modemtemperatur"
+
+msgid "Service uptime"
+msgstr "Tjänstens uppetid"
+
+msgid "LTE quality"
+msgstr "LTE-kvalitet"
+
+msgid "CSQ"
+msgstr "CSQ"
+
+msgid "RSSI"
+msgstr "RSSI"
+
+msgid "RSRP"
+msgstr "RSRP"
+
+msgid "SINR"
+msgstr "SINR"
+
+msgid "RSRQ"
+msgstr "RSRQ"
+
+msgid "Band"
+msgstr "Band"
+
+msgid "Check now"
+msgstr "Kolla nu"
+
+msgid "Refresh modem info"
+msgstr "Uppdatera modeminformation"
+
+msgid "Reboot modem"
+msgstr "Starta om modemet"
+
+msgid "Restart service"
+msgstr "Starta om tjänsten"
+
+msgid "yes"
+msgstr "ja"
+
+msgid "no"
+msgstr "nej"
+
+msgid "online"
+msgstr "online"
+
+msgid "offline"
+msgstr "offline"
+
+msgid "rebooting"
+msgstr "startar om"
+
+msgid "checking"
+msgstr "kontrollerar"
+
+msgid "disabled"
+msgstr "avstängd"
+
+msgid "starting"
+msgstr "startar"
+
+msgid "stopped"
+msgstr "stannade"
+
+msgid "error"
+msgstr "fel"
+
+msgid "running"
+msgstr "löpning"
+
+msgid "Failed to read status"
+msgstr "Det gick inte att läsa status"
+
+msgid "Reading modem data"
+msgstr "Läser modemdata"
+
+msgid "Failed to read modem data"
+msgstr "Det gick inte att läsa modemdata"
+
+msgid "Check started"
+msgstr "Kontrollera startade"
+
+msgid "Check failed"
+msgstr "Kontrollen misslyckades"
+
+msgid "Reboot the modem now? Internet will be down for about"
+msgstr "Starta om modemet nu? Internet kommer att vara nere i ca"
+
+msgid "seconds."
+msgstr "sekunder."
+
+msgid "Modem reboot started"
+msgstr "Modemet startade omstart"
+
+msgid "Reboot failed"
+msgstr "Omstart misslyckades"
+
+msgid "Restart the modemwatch service?"
+msgstr "Starta om modemwatch-tjänsten?"
+
+msgid "Service restarted"
+msgstr "Tjänsten startade om"
+
+msgid "Restart failed"
+msgstr "Omstart misslyckades"
+
+msgid "Signal strength (RSRQ)"
+msgstr "Signalstyrka (RSRQ)"
+
+msgid "Operator"
+msgstr "Operatör"
+
+msgid "Network"
+msgstr "Nätverk"
+
+msgid "Last update"
+msgstr "Senaste uppdatering"
+
+msgid "Refresh interval"
+msgstr "Uppdateringsintervall"
+
+msgid "seconds"
+msgstr "sekunder"
+
+msgid "Signal Strength"
+msgstr "Signalstyrka"
+
+msgid "Received Signal Strength Indicator"
+msgstr "Indikator för mottagen signalstyrka"
+
+msgid "Reference Signal Receive Power"
+msgstr "Referenssignalmottagningsström"
+
+msgid "Signal to Interference plus Noise Ratio"
+msgstr "Signal till störning plus brusförhållande"
+
+msgid "Reference Signal Received Quality"
+msgstr "Referenssignal mottagen kvalitet"
+
+msgid "Refresh now"
+msgstr "Uppdatera nu"
+
+msgid "Pause"
+msgstr "Pausa"
+
+msgid "Busy"
+msgstr "Upptagen"
+
+msgid "AT port not found"
+msgstr "AT-porten hittades inte"
+
+msgid "No response from modem"
+msgstr "Inget svar från modemet"
+
+msgid "Failed to read signal"
+msgstr "Det gick inte att läsa signalen"
+
+msgid "Resume"
+msgstr "Återuppta"
+
+msgid "Refresh log"
+msgstr "Uppdatera loggen"
+
+msgid "Auto-refresh"
+msgstr "Automatisk uppdatering"
+
+msgid "(empty)"
+msgstr "(tomt)"
+
+msgid "Updated"
+msgstr "Uppdaterad"
+
+msgid "Failed to read log"
+msgstr "Det gick inte att läsa loggen"
+
+msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
+msgstr "AT-kommandon kan ändra modeminställningar och kan koppla från internet eller SSH. Ändra inte USB-läge, APN, band eller nätverksläge på distans utan en återställningsplan."
+
+msgid "Expert mode — allow changing USB mode and NAT"
+msgstr "Expertläge — tillåt ändring av USB-läge och NAT"
+
+msgid "Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan."
+msgstr "Om du ändrar USB-läge kan modemet och SSH kopplas bort. Använd endast med lokal åtkomst eller en återställningsplan."
+
+msgid "Selected AT port"
+msgstr "Vald AT-port"
+
+msgid "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "För Quectel EC200A använd /dev/ttyUSB2. /dev/ttyUSB0 är diagnosporten och svarar inte på AT-kommandon."
+
+msgid "Current configuration"
+msgstr "Aktuell konfiguration"
+
+msgid "Read current configuration"
+msgstr "Läs aktuell konfiguration"
+
+msgid "Modem information"
+msgstr "Modeminformation"
+
+msgid "Model"
+msgstr "Modell"
+
+msgid "SIM status"
+msgstr "SIM-status"
+
+msgid "Temperature"
+msgstr "Temperatur"
+
+msgid "Access Point Name (APN)"
+msgstr "Access Point Name (APN)"
+
+msgid "Username"
+msgstr "Användarnamn"
+
+msgid "Password"
+msgstr "Lösenord"
+
+msgid "Authentication"
+msgstr "Autentisering"
+
+msgid "None"
+msgstr "Ingen"
+
+msgid "PDP type"
+msgstr "PDP-typ"
+
+msgid "Read APN"
+msgstr "Läs APN"
+
+msgid "Apply APN"
+msgstr "Använd APN"
+
+msgid "Network mode"
+msgstr "Nätverksläge"
+
+msgid "Mode"
+msgstr "Läge"
+
+msgid "Automatic"
+msgstr "Automatisk"
+
+msgid "GSM only"
+msgstr "Endast GSM"
+
+msgid "WCDMA only"
+msgstr "Endast WCDMA"
+
+msgid "LTE only"
+msgstr "Endast LTE"
+
+msgid "Read mode"
+msgstr "Läsläge"
+
+msgid "Apply mode"
+msgstr "Använd läge"
+
+msgid "Band configuration"
+msgstr "Bandkonfiguration"
+
+msgid "Read bands"
+msgstr "Läs band"
+
+msgid "Select all"
+msgstr "Välj alla"
+
+msgid "Restore default"
+msgstr "Återställ standard"
+
+msgid "Apply bands"
+msgstr "Applicera band"
+
+msgid "Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection."
+msgstr "Välj de LTE-band du vill behålla aktiverade. Ansökan kan starta om WAN och bryta anslutningen."
+
+msgid "USB mode"
+msgstr "USB-läge"
+
+msgid "Current value"
+msgstr "Aktuellt värde"
+
+msgid "New value"
+msgstr "Nytt värde"
+
+msgid "RMNET (QMI)"
+msgstr "RMNET (QMI)"
+
+msgid "not supported"
+msgstr "stöds inte"
+
+msgid "ECM (CDC Ethernet)"
+msgstr "ECM (CDC Ethernet)"
+
+msgid "MBIM"
+msgstr "MBIM"
+
+msgid "RNDIS"
+msgstr "RNDIS"
+
+msgid "Apply USB mode"
+msgstr "Använd USB-läge"
+
+msgid "Read USB mode"
+msgstr "Läs USB-läge"
+
+msgid "Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem."
+msgstr "Lägen som inte stöds av modemets fasta programvara inaktiveras och markeras som inte stöds. Lägen som stöds upptäcks automatiskt från modemet."
+
+msgid "Apply NAT"
+msgstr "Använd NAT"
+
+msgid "Read NAT"
+msgstr "Läs NAT"
+
+msgid "Raw AT command"
+msgstr "Rå AT-kommando"
+
+msgid "AT command"
+msgstr "AT kommando"
+
+msgid "Send"
+msgstr "Skicka"
+
+msgid "Sending"
+msgstr "Skickar"
+
+msgid "AT command failed"
+msgstr "AT-kommandot misslyckades"
+
+msgid "Reading APN"
+msgstr "Läser APN"
+
+msgid "Failed to read APN"
+msgstr "Det gick inte att läsa APN"
+
+msgid "Reading settings"
+msgstr "Läsinställningar"
+
+msgid "Settings read"
+msgstr "Inställningar läst"
+
+msgid "Failed to read settings"
+msgstr "Det gick inte att läsa inställningarna"
+
+msgid "APN, username and password may contain only letters, digits, dot, hyphen and underscore."
+msgstr "APN, användarnamn och lösenord får endast innehålla bokstäver, siffror, punkt, bindestreck och understreck."
+
+msgid "Apply APN settings? The connection may drop."
+msgstr "Vill du använda APN-inställningar? Anslutningen kan avbrytas."
+
+msgid "Applying APN"
+msgstr "Använder APN"
+
+msgid "APN applied. Reconnect or reboot the modem if needed."
+msgstr "APN tillämpas. Återanslut eller starta om modemet om det behövs."
+
+msgid "Failed to apply APN"
+msgstr "Det gick inte att tillämpa APN"
+
+msgid "Apply network mode? The connection may drop."
+msgstr "Vill du använda nätverksläge? Anslutningen kan avbrytas."
+
+msgid "Reading bands"
+msgstr "Läsband"
+
+msgid "Failed to read bands"
+msgstr "Det gick inte att läsa band"
+
+msgid "No bands selected"
+msgstr "Inga band har valts"
+
+msgid "Restore default bands?"
+msgstr "Återställa standardband?"
+
+msgid "Apply selected bands? The connection may drop."
+msgstr "Vill du använda utvalda band? Anslutningen kan avbrytas."
+
+msgid "Applying bands"
+msgstr "Applicera band"
+
+msgid "Failed to apply bands"
+msgstr "Det gick inte att applicera band"
+
+msgid "USB mode is read-only in this UI."
+msgstr "USB-läget är skrivskyddat i det här användargränssnittet."
+
+msgid "This USB mode is not supported by the modem firmware."
+msgstr "Detta USB-läge stöds inte av modemets fasta programvara."
+
+msgid "Change USB mode? The modem will re-enumerate and the connection may drop. Continue?"
+msgstr "Ändra USB-läge? Modemet kommer att räknas upp igen och anslutningen kan avbrytas. Fortsätta?"
+
+msgid "Change NAT mode? The connection may drop."
+msgstr "Ändra NAT-läge? Anslutningen kan avbrytas."
+
+msgid "Current operator"
+msgstr "Nuvarande operatör"
+
+msgid "AT port"
+msgstr "AT hamn"
+
+msgid "Scan networks"
+msgstr "Skanna nätverk"
+
+msgid "Automatic operator selection"
+msgstr "Automatiskt operatörsval"
+
+msgid "Stop scan"
+msgstr "Stoppa skanningen"
+
+msgid "Update MCC/MNC database"
+msgstr "Uppdatera MCC/MNC-databas"
+
+msgid "Country"
+msgstr "Land"
+
+msgid "MCC/MNC"
+msgstr "MCC/MNC"
+
+msgid "Technology"
+msgstr "Teknik"
+
+msgid "Action"
+msgstr "Åtgärd"
+
+msgid "Raw scan output"
+msgstr "Utdata för råskanning"
+
+msgid "current"
+msgstr "nuvarande"
+
+msgid "available"
+msgstr "tillgängliga"
+
+msgid "forbidden"
+msgstr "förbjudet"
+
+msgid "unknown"
+msgstr "okänd"
+
+msgid "Select"
+msgstr "Välj"
+
+msgid "MCC/MNC database updated."
+msgstr "MCC/MNC-databas uppdaterad."
+
+msgid "Not updated yet"
+msgstr "Inte uppdaterad ännu"
+
+msgid "Failed to read MCC/MNC update status"
+msgstr "Det gick inte att läsa MCC/MNC-uppdateringsstatus"
+
+msgid "Updating MCC/MNC database"
+msgstr "Uppdaterar MCC/MNC-databas"
+
+msgid "Scanning networks... This may take up to two minutes."
+msgstr "Genomsöker nätverk... Detta kan ta upp till två minuter."
+
+msgid "Scan complete."
+msgstr "Skanningen är klar."
+
+msgid "Modem is busy. Try again later."
+msgstr "Modemet är upptaget. Försök igen senare."
+
+msgid "Scan failed"
+msgstr "Skanningen misslyckades"
+
+msgid "Not scanned yet."
+msgstr "Inte skannat ännu."
+
+msgid "Failed to read scan status"
+msgstr "Det gick inte att läsa skanningsstatus"
+
+msgid "Stopping scan"
+msgstr "Stoppar skanningen"
+
+msgid "Network scan stopped"
+msgstr "Nätverksskanningen stoppades"
+
+msgid "Failed to stop scan"
+msgstr "Det gick inte att stoppa skanningen"
+
+msgid "Starting network scan"
+msgstr "Startar nätverksskanning"
+
+msgid "Network scan started"
+msgstr "Nätverksskanning startade"
+
+msgid "Failed to start scan"
+msgstr "Det gick inte att starta skanningen"
+
+msgid "Select operator"
+msgstr "Välj operatör"
+
+msgid "The connection may drop."
+msgstr "Anslutningen kan avbrytas."
+
+msgid "Selecting operator"
+msgstr "Väljer operatör"
+
+msgid "Operator selection sent"
+msgstr "Val av operatör har skickats"
+
+msgid "Failed to select operator"
+msgstr "Det gick inte att välja operatör"
+
+msgid "Use automatic operator selection?"
+msgstr "Använda automatiskt operatörsval?"
+
+msgid "Selecting automatic mode"
+msgstr "Väljer automatiskt läge"

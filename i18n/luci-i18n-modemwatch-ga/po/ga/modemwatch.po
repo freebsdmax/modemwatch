@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-modemwatch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 00:00+0000\n"
+"PO-Revision-Date: 2026-11-10 00:00+0000\n"
+"Last-Translator: modemwatch contributors\n"
+"Language-Team: Gaeilge (Irish)\n"
+"Language: ga\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Modem LTE 4G"
+msgstr "Móideim LTE 4G"
+
+msgid "Status"
+msgstr "Stádas"
+
+msgid "Signal"
+msgstr "Comhartha"
+
+msgid "Log"
+msgstr "Logáil"
+
+msgid "Modem settings"
+msgstr "Socruithe móideim"
+
+msgid "Network search"
+msgstr "Cuardach líonra"
+
+msgid "Settings"
+msgstr "Socruithe"
+
+msgid "invalid token"
+msgstr "comhartha neamhbhailí"
+
+msgid "empty AT command"
+msgstr "ordú AT folamh"
+
+msgid "invalid band selection"
+msgstr "roghnú banna neamhbhailí"
+
+msgid "Band settings sent"
+msgstr "Socruithe banna seolta"
+
+msgid "network scan started"
+msgstr "cuireadh tús le scanadh líonra"
+
+msgid "network scan stopped"
+msgstr "scanadh líonra stoptha"
+
+msgid "invalid operator"
+msgstr "oibreoir neamhbhailí"
+
+msgid "Downloading MCC/MNC list"
+msgstr "Íoslódáil liosta MCC/MNC"
+
+msgid "Parsing MCC/MNC list"
+msgstr "Liosta MCC/MNC a pharsáil"
+
+msgid "MCC/MNC database updated"
+msgstr "Bunachar sonraí MCC/MNC nuashonraithe"
+
+msgid "Failed to update MCC/MNC database"
+msgstr "Theip ar bhunachar sonraí MCC/MNC a nuashonrú"
+
+msgid "MCC/MNC update already running"
+msgstr "Tá nuashonrú MCC/MNC ar siúl cheana féin"
+
+msgid "MCC/MNC update started"
+msgstr "Cuireadh tús le nuashonrú MCC/MNC"
+
+msgid "operator selection sent"
+msgstr "roghnú oibreoir seolta"
+
+msgid "internet check started"
+msgstr "cuireadh tús le seiceáil idirlín"
+
+msgid "modem reboot started"
+msgstr "Thosaigh atosaigh móideim"
+
+msgid "service restarted"
+msgstr "seirbhís atosú"
+
+msgid "Modem info updated"
+msgstr "Nuashonraíodh faisnéis móideim"
+
+msgid "Modem did not respond"
+msgstr "Níor fhreagair Móideim"
+
+msgid "Checks internet connectivity and reboots the Quectel modem when the connection is lost."
+msgstr "Seiceálann sé nascacht idirlín agus atosaíonn sé an móideim Quectel nuair a chailltear an nasc."
+
+msgid "Service settings"
+msgstr "Socruithe seirbhíse"
+
+msgid "Enable service"
+msgstr "Cumasaigh seirbhís"
+
+msgid "Check interval (seconds)"
+msgstr "Eatramh seiceála (soicindí)"
+
+msgid "Failures before modem reboot"
+msgstr "Teipeanna roimh atosaigh an modem"
+
+msgid "Ping hosts"
+msgstr "Óstach ping"
+
+msgid "Space-separated list. Internet is considered up if at least one host responds."
+msgstr "Liosta spás-scartha. Meastar go bhfuil an t-idirlíon suas má fhreagraíonn óstach amháin ar a laghad."
+
+msgid "Also require DNS resolution"
+msgstr "Chomh maith leis sin a cheangal ar DNS réiteach"
+
+msgid "DNS name to resolve"
+msgstr "Ainm DNS le réiteach"
+
+msgid "Also require an HTTP request"
+msgstr "Chomh maith leis sin a cheangal ar iarratas HTTP"
+
+msgid "HTTP URL"
+msgstr "HTTP URL"
+
+msgid "WAN interface"
+msgstr "Comhéadan WAN"
+
+msgid "The device name is read from network.<iface>.device."
+msgstr "Léitear ainm an ghléis ón líonra.<iface>.device."
+
+msgid "AT serial port"
+msgstr "AT port srathach"
+
+msgid "Detected USB/ACM serial ports. For Quectel EC200A use /dev/ttyUSB2; /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Na calafoirt sraitheacha USB/ACM braite. Le haghaidh Quectel EC200A úsáid /dev/ttyUSB2; Is é /dev/ttyUSB0 an calafort diagnóiseach agus ní fhreagraíonn sé orduithe AT."
+
+msgid "AT port baud rate"
+msgstr "AT port ráta baud"
+
+msgid "Modem reboot method"
+msgstr "Modh atosaigh móideim"
+
+msgid "AT+CFUN=1,1 (recommended)"
+msgstr "AT+CFUN=1,1 (molta)"
+
+msgid "USB re-bind (best effort)"
+msgstr "Athcheangal USB (an iarracht is fearr)"
+
+msgid "Wait after reboot (seconds)"
+msgstr "Fan tar éis atosaigh (soicindí)"
+
+msgid "Collect modem information"
+msgstr "Bailigh eolas móideim"
+
+msgid "Reads model, firmware, IMEI, signal, operator and temperature via AT commands."
+msgstr "Léann samhail, firmware, IMEI, comhartha, oibreoir agus teocht trí orduithe AT."
+
+msgid "Modem info interval (seconds)"
+msgstr "Eatramh faisnéise móideim (soicindí)"
+
+msgid "How often to query the modem with AT commands. Keep it longer if other modem tools use the same serial port."
+msgstr "Cé chomh minic is féidir an móideim a fhiosrú le horduithe AT. Coinnigh sé níos faide má úsáideann uirlisí móideim eile an port srathach céanna."
+
+msgid "Signal refresh interval (seconds)"
+msgstr "Eatramh athnuachana comharthaí (soicindí)"
+
+msgid "Pause between signal page updates. The actual update also includes the modem response time."
+msgstr "Sos idir nuashonruithe leathanach comhartha. Áiríonn an nuashonrú iarbhír an t-am freagartha móideim freisin."
+
+msgid "Safety"
+msgstr "Sábháilteacht"
+
+msgid "Maximum reboots per window"
+msgstr "Atosaithe uasta in aghaidh na fuinneoige"
+
+msgid "Set to 0 for unlimited. The limit prevents reboot loops."
+msgstr "Socraigh ar 0 le haghaidh neamhtheoranta. Cuireann an teorainn cosc ​​ar lúba atosaigh."
+
+msgid "Reboot window (seconds)"
+msgstr "Fuinneog atosaigh (soicindí)"
+
+msgid "Cooldown between reboots (seconds)"
+msgstr "Fuarú idir atosaithe (soicindí)"
+
+msgid "Logging"
+msgstr "Ag logáil"
+
+msgid "Log level"
+msgstr "Leibhéal loga"
+
+msgid "Error"
+msgstr "Earráid"
+
+msgid "Warning"
+msgstr "Rabhadh"
+
+msgid "Info"
+msgstr "Eolas"
+
+msgid "Debug"
+msgstr "Dífhabhtú"
+
+msgid "Remote access warning"
+msgstr "Rabhadh maidir le rochtain chianda"
+
+msgid "This service reboots only the modem, not the router. If the modem is the only WAN, internet and remote access will be down during the reboot. Do not change USB mode, APN or band settings remotely without a rollback plan."
+msgstr "Ní atosaíonn an tseirbhís seo ach an móideim, ní an ródaire. Más é an móideim an t-aon WAN, beidh rochtain idirlín agus cianda síos le linn an atosaigh. Ná athraigh socruithe mód USB, APN nó banna go cianda gan plean ais-rollta."
+
+msgid "Service"
+msgstr "Seirbhís"
+
+msgid "State"
+msgstr "Stát"
+
+msgid "Last check"
+msgstr "Seiceáil dheireanach"
+
+msgid "Last success"
+msgstr "Rath seo caite"
+
+msgid "Last failure"
+msgstr "Teip dheireanach"
+
+msgid "Failures"
+msgstr "Teipeanna"
+
+msgid "Modem reboots"
+msgstr "Atosaíonn an modem"
+
+msgid "last"
+msgstr "seo caite"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "Data transferred"
+msgstr "Sonraí aistrithe"
+
+msgid "Ping / DNS / HTTP"
+msgstr "Ping / DNS / HTTP"
+
+msgid "Latency"
+msgstr "Aga folaigh"
+
+msgid "Modem"
+msgstr "Móideim"
+
+msgid "Firmware"
+msgstr "Firmware"
+
+msgid "IMEI"
+msgstr "IMEI"
+
+msgid "Operator / network"
+msgstr "Oibreoir / líonra"
+
+msgid "Modem temperature"
+msgstr "Teocht móideim"
+
+msgid "Service uptime"
+msgstr "Aga fónaimh seirbhíse"
+
+msgid "LTE quality"
+msgstr "Cáilíocht LTE"
+
+msgid "CSQ"
+msgstr "CSQ"
+
+msgid "RSSI"
+msgstr "RSSI"
+
+msgid "RSRP"
+msgstr "RSRP"
+
+msgid "SINR"
+msgstr "SINR"
+
+msgid "RSRQ"
+msgstr "RSRQ"
+
+msgid "Band"
+msgstr "Banna"
+
+msgid "Check now"
+msgstr "Seiceáil anois"
+
+msgid "Refresh modem info"
+msgstr "Athnuaigh eolas móideim"
+
+msgid "Reboot modem"
+msgstr "Atosaigh móideim"
+
+msgid "Restart service"
+msgstr "Atosaigh an tseirbhís"
+
+msgid "yes"
+msgstr "tá"
+
+msgid "no"
+msgstr "níl"
+
+msgid "online"
+msgstr "ar líne"
+
+msgid "offline"
+msgstr "as líne"
+
+msgid "rebooting"
+msgstr "rebooting"
+
+msgid "checking"
+msgstr "ag seiceáil"
+
+msgid "disabled"
+msgstr "faoi mhíchumas"
+
+msgid "starting"
+msgstr "ag tosú"
+
+msgid "stopped"
+msgstr "stoptha"
+
+msgid "error"
+msgstr "earráid"
+
+msgid "running"
+msgstr "ag rith"
+
+msgid "Failed to read status"
+msgstr "Theip ar an stádas a léamh"
+
+msgid "Reading modem data"
+msgstr "Léamh sonraí móideim"
+
+msgid "Failed to read modem data"
+msgstr "Theip ar léamh sonraí móideim"
+
+msgid "Check started"
+msgstr "Thosaigh seiceáil"
+
+msgid "Check failed"
+msgstr "Theip ar an tseiceáil"
+
+msgid "Reboot the modem now? Internet will be down for about"
+msgstr "Atosaigh an móideim anois? Beidh an tIdirlíon síos ar feadh thart"
+
+msgid "seconds."
+msgstr "soicind."
+
+msgid "Modem reboot started"
+msgstr "Cuireadh tús leis an atosaigh móideim"
+
+msgid "Reboot failed"
+msgstr "Theip ar an atosú"
+
+msgid "Restart the modemwatch service?"
+msgstr "An tseirbhís faire modem a atosú?"
+
+msgid "Service restarted"
+msgstr "Atosaíodh an tseirbhís"
+
+msgid "Restart failed"
+msgstr "Theip ar an atosú"
+
+msgid "Signal strength (RSRQ)"
+msgstr "Neart comhartha (RSRQ)"
+
+msgid "Operator"
+msgstr "Oibreoir"
+
+msgid "Network"
+msgstr "Líonra"
+
+msgid "Last update"
+msgstr "Nuashonrú is déanaí"
+
+msgid "Refresh interval"
+msgstr "Eatramh athnuachan"
+
+msgid "seconds"
+msgstr "soicind"
+
+msgid "Signal Strength"
+msgstr "Neart Comhartha"
+
+msgid "Received Signal Strength Indicator"
+msgstr "Táscaire Neart Comhartha Faighte"
+
+msgid "Reference Signal Receive Power"
+msgstr "Cumhacht Faigh Comhartha Tagartha"
+
+msgid "Signal to Interference plus Noise Ratio"
+msgstr "Comhartha le Cur isteach móide Cóimheas Torainn"
+
+msgid "Reference Signal Received Quality"
+msgstr "Cáilíocht a Fuarthas Comhartha Tagartha"
+
+msgid "Refresh now"
+msgstr "Athnuaigh anois"
+
+msgid "Pause"
+msgstr "Sos"
+
+msgid "Busy"
+msgstr "gnóthach"
+
+msgid "AT port not found"
+msgstr "Níor aimsíodh port AT"
+
+msgid "No response from modem"
+msgstr "Gan freagra ón modem"
+
+msgid "Failed to read signal"
+msgstr "Theip ar léamh an chomhartha"
+
+msgid "Resume"
+msgstr "Atosaigh"
+
+msgid "Refresh log"
+msgstr "Athnuaigh logáil"
+
+msgid "Auto-refresh"
+msgstr "Uath-athnuachan"
+
+msgid "(empty)"
+msgstr "(folamh)"
+
+msgid "Updated"
+msgstr "Nuashonraithe"
+
+msgid "Failed to read log"
+msgstr "Theip ar an loga a léamh"
+
+msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
+msgstr "Is féidir le horduithe AT socruithe móideim a athrú agus féadfaidh siad an t-idirlíon nó SSH a dhícheangal. Ná athraigh mód USB, APN, banda nó modh líonra go cianda gan plean ais-rollta."
+
+msgid "Expert mode — allow changing USB mode and NAT"
+msgstr "Mód saineolaí - ceadaigh modh USB agus NAT a athrú"
+
+msgid "Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan."
+msgstr "Is féidir an móideim agus SSH a dhícheangal trí mhodh USB a athrú. Bain úsáid as le rochtain áitiúil amháin nó le plean rolladh siar."
+
+msgid "Selected AT port"
+msgstr "AT port roghnaithe"
+
+msgid "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Le haghaidh Quectel EC200A úsáid /dev/ttyUSB2. Is é /dev/ttyUSB0 an calafort diagnóiseach agus ní fhreagraíonn sé orduithe AT."
+
+msgid "Current configuration"
+msgstr "Cumraíocht reatha"
+
+msgid "Read current configuration"
+msgstr "Léigh an chumraíocht reatha"
+
+msgid "Modem information"
+msgstr "Faisnéise móideim"
+
+msgid "Model"
+msgstr "Múnla"
+
+msgid "SIM status"
+msgstr "stádas SIM"
+
+msgid "Temperature"
+msgstr "Teocht"
+
+msgid "Access Point Name (APN)"
+msgstr "Ainm an Phointe Rochtana (APN)"
+
+msgid "Username"
+msgstr "Ainm úsáideora"
+
+msgid "Password"
+msgstr "Pasfhocal"
+
+msgid "Authentication"
+msgstr "Fíordheimhniú"
+
+msgid "None"
+msgstr "Dada"
+
+msgid "PDP type"
+msgstr "Cineál PDP"
+
+msgid "Read APN"
+msgstr "Léigh APN"
+
+msgid "Apply APN"
+msgstr "Cuir APN i bhfeidhm"
+
+msgid "Network mode"
+msgstr "Mod líonra"
+
+msgid "Mode"
+msgstr "Mód"
+
+msgid "Automatic"
+msgstr "Uathoibrithe"
+
+msgid "GSM only"
+msgstr "GSM amháin"
+
+msgid "WCDMA only"
+msgstr "WCDMA amháin"
+
+msgid "LTE only"
+msgstr "LTE amháin"
+
+msgid "Read mode"
+msgstr "Mód léite"
+
+msgid "Apply mode"
+msgstr "Cuir mód i bhfeidhm"
+
+msgid "Band configuration"
+msgstr "Cumraíocht banna"
+
+msgid "Read bands"
+msgstr "Léigh bannaí"
+
+msgid "Select all"
+msgstr "Roghnaigh go léir"
+
+msgid "Restore default"
+msgstr "Athchóirigh réamhshocraithe"
+
+msgid "Apply bands"
+msgstr "Cuir bannaí i bhfeidhm"
+
+msgid "Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection."
+msgstr "Roghnaigh na bannaí LTE is mian leat a choinneáil cumasaithe. Is féidir an WAN a atosú agus an nasc a scaoileadh."
+
+msgid "USB mode"
+msgstr "Modh USB"
+
+msgid "Current value"
+msgstr "Luach reatha"
+
+msgid "New value"
+msgstr "Luach nua"
+
+msgid "RMNET (QMI)"
+msgstr "RMNET (QMI)"
+
+msgid "not supported"
+msgstr "gan tacaíocht"
+
+msgid "ECM (CDC Ethernet)"
+msgstr "ECM (CDC Ethernet)"
+
+msgid "MBIM"
+msgstr "MBIM"
+
+msgid "RNDIS"
+msgstr "RNDIS"
+
+msgid "Apply USB mode"
+msgstr "Cuir mód USB i bhfeidhm"
+
+msgid "Read USB mode"
+msgstr "Léigh mód USB"
+
+msgid "Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem."
+msgstr "Díchumasaítear modhanna nach dtacaíonn an firmware móideim leo agus marcáiltear iad mar nach dtacaítear leo. Braitear modhanna tacaithe go huathoibríoch ón móideim."
+
+msgid "Apply NAT"
+msgstr "Cuir NAT i bhfeidhm"
+
+msgid "Read NAT"
+msgstr "Léigh NAT"
+
+msgid "Raw AT command"
+msgstr "Ordú amh AT"
+
+msgid "AT command"
+msgstr "AT ordú"
+
+msgid "Send"
+msgstr "Seol"
+
+msgid "Sending"
+msgstr "Ag seoladh"
+
+msgid "AT command failed"
+msgstr "Theip ar ordú AT"
+
+msgid "Reading APN"
+msgstr "APN á léamh"
+
+msgid "Failed to read APN"
+msgstr "Theip ar léamh APN"
+
+msgid "Reading settings"
+msgstr "Socruithe léitheoireachta"
+
+msgid "Settings read"
+msgstr "Léadh socruithe"
+
+msgid "Failed to read settings"
+msgstr "Theip ar na socruithe a léamh"
+
+msgid "APN, username and password may contain only letters, digits, dot, hyphen and underscore."
+msgstr "Ní fhéadfaidh ach litreacha, digití, poncanna, fleiscín agus béim a chur in APN, ainm úsáideora agus pasfhocal."
+
+msgid "Apply APN settings? The connection may drop."
+msgstr "Cuir socruithe APN i bhfeidhm? Féadfaidh an nasc titim."
+
+msgid "Applying APN"
+msgstr "APN á chur i bhfeidhm"
+
+msgid "APN applied. Reconnect or reboot the modem if needed."
+msgstr "APN curtha i bhfeidhm. Athcheangail nó atosaigh an móideim más gá."
+
+msgid "Failed to apply APN"
+msgstr "Theip ar APN a chur i bhfeidhm"
+
+msgid "Apply network mode? The connection may drop."
+msgstr "Cuir mód líonra i bhfeidhm? Féadfaidh an nasc titim."
+
+msgid "Reading bands"
+msgstr "Ag léamh bannaí"
+
+msgid "Failed to read bands"
+msgstr "Theip ar na bannaí a léamh"
+
+msgid "No bands selected"
+msgstr "Níor roghnaíodh aon bhanda"
+
+msgid "Restore default bands?"
+msgstr "Athchóirigh na bannaí réamhshocraithe?"
+
+msgid "Apply selected bands? The connection may drop."
+msgstr "An bhfuil fonn ort bannaí roghnaithe a chur i bhfeidhm? Féadfaidh an nasc titim."
+
+msgid "Applying bands"
+msgstr "Bannaí á gcur i bhfeidhm"
+
+msgid "Failed to apply bands"
+msgstr "Theip ar na bannaí a chur i bhfeidhm"
+
+msgid "USB mode is read-only in this UI."
+msgstr "Tá mód USB inléite amháin san Chomhéadain seo."
+
+msgid "This USB mode is not supported by the modem firmware."
+msgstr "Níl an firmware móideim ag tacú leis an modh USB seo."
+
+msgid "Change USB mode? The modem will re-enumerate and the connection may drop. Continue?"
+msgstr "Athraigh mód USB? Déanfaidh an móideim ath-áireamh agus seans go dtitfidh an nasc. Lean ort?"
+
+msgid "Change NAT mode? The connection may drop."
+msgstr "Athraigh mód NAT? Féadfaidh an nasc titim."
+
+msgid "Current operator"
+msgstr "Oibreoir reatha"
+
+msgid "AT port"
+msgstr "AT port"
+
+msgid "Scan networks"
+msgstr "Líonraí a scanadh"
+
+msgid "Automatic operator selection"
+msgstr "Roghnú oibreoir uathoibríoch"
+
+msgid "Stop scan"
+msgstr "Stop scanadh"
+
+msgid "Update MCC/MNC database"
+msgstr "Bunachar sonraí MCC/MNC a nuashonrú"
+
+msgid "Country"
+msgstr "Tír"
+
+msgid "MCC/MNC"
+msgstr "MCC/MNC"
+
+msgid "Technology"
+msgstr "Teicneolaíocht"
+
+msgid "Action"
+msgstr "Gníomh"
+
+msgid "Raw scan output"
+msgstr "Aschur scanadh amh"
+
+msgid "current"
+msgstr "reatha"
+
+msgid "available"
+msgstr "ar fáil"
+
+msgid "forbidden"
+msgstr "toirmiscthe"
+
+msgid "unknown"
+msgstr "anaithnid"
+
+msgid "Select"
+msgstr "Roghnaigh"
+
+msgid "MCC/MNC database updated."
+msgstr "Bunachar sonraí MCC/MNC nuashonraithe."
+
+msgid "Not updated yet"
+msgstr "Gan nuashonrú fós"
+
+msgid "Failed to read MCC/MNC update status"
+msgstr "Theip ar stádas nuashonraithe MCC/MNC a léamh"
+
+msgid "Updating MCC/MNC database"
+msgstr "Bunachar sonraí MCC/MNC á nuashonrú"
+
+msgid "Scanning networks... This may take up to two minutes."
+msgstr "Líonraí a scanadh... Seans go dtógfaidh sé seo suas le dhá nóiméad."
+
+msgid "Scan complete."
+msgstr "Scanadh críochnaithe."
+
+msgid "Modem is busy. Try again later."
+msgstr "Tá Móideim gnóthach. Bain triail eile as ar ball."
+
+msgid "Scan failed"
+msgstr "Theip ar an scanadh"
+
+msgid "Not scanned yet."
+msgstr "Gan scanadh fós."
+
+msgid "Failed to read scan status"
+msgstr "Theip ar an stádas scanadh a léamh"
+
+msgid "Stopping scan"
+msgstr "Scanadh a stopadh"
+
+msgid "Network scan stopped"
+msgstr "Cuireadh deireadh leis an scanadh líonra"
+
+msgid "Failed to stop scan"
+msgstr "Theip ar an scanadh a stopadh"
+
+msgid "Starting network scan"
+msgstr "Ag tosú scanadh líonra"
+
+msgid "Network scan started"
+msgstr "Cuireadh tús le scanadh líonra"
+
+msgid "Failed to start scan"
+msgstr "Theip ar an scanadh a thosú"
+
+msgid "Select operator"
+msgstr "Roghnaigh oibreoir"
+
+msgid "The connection may drop."
+msgstr "Féadfaidh an nasc titim."
+
+msgid "Selecting operator"
+msgstr "Roghnú oibreoir"
+
+msgid "Operator selection sent"
+msgstr "Roghnú oibreoir seolta"
+
+msgid "Failed to select operator"
+msgstr "Theip ar oibreoir a roghnú"
+
+msgid "Use automatic operator selection?"
+msgstr "Úsáid roghnú oibreoir uathoibríoch?"
+
+msgid "Selecting automatic mode"
+msgstr "Mód uathoibríoch a roghnú"

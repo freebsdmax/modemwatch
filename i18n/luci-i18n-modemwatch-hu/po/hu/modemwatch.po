@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-modemwatch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 00:00+0000\n"
+"PO-Revision-Date: 2026-11-10 00:00+0000\n"
+"Last-Translator: modemwatch contributors\n"
+"Language-Team: Magyar (Hungarian)\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgid "Modem LTE 4G"
+msgstr "Modem LTE 4G"
+
+msgid "Status"
+msgstr "Állapot"
+
+msgid "Signal"
+msgstr "Jel"
+
+msgid "Log"
+msgstr "Napló"
+
+msgid "Modem settings"
+msgstr "Modem beállítások"
+
+msgid "Network search"
+msgstr "Hálózati keresés"
+
+msgid "Settings"
+msgstr "Beállítások"
+
+msgid "invalid token"
+msgstr "érvénytelen token"
+
+msgid "empty AT command"
+msgstr "üres AT parancs"
+
+msgid "invalid band selection"
+msgstr "érvénytelen sávválasztás"
+
+msgid "Band settings sent"
+msgstr "A sávbeállítások elküldve"
+
+msgid "network scan started"
+msgstr "hálózati vizsgálat indult"
+
+msgid "network scan stopped"
+msgstr "hálózati keresés leállt"
+
+msgid "invalid operator"
+msgstr "érvénytelen operátor"
+
+msgid "Downloading MCC/MNC list"
+msgstr "MCC/MNC lista letöltése"
+
+msgid "Parsing MCC/MNC list"
+msgstr "MCC/MNC lista elemzése"
+
+msgid "MCC/MNC database updated"
+msgstr "MCC/MNC adatbázis frissítve"
+
+msgid "Failed to update MCC/MNC database"
+msgstr "Nem sikerült frissíteni az MCC/MNC adatbázist"
+
+msgid "MCC/MNC update already running"
+msgstr "Az MCC/MNC frissítés már fut"
+
+msgid "MCC/MNC update started"
+msgstr "Az MCC/MNC frissítés elindult"
+
+msgid "operator selection sent"
+msgstr "operátorválasztás elküldve"
+
+msgid "internet check started"
+msgstr "Internetes ellenőrzés elindult"
+
+msgid "modem reboot started"
+msgstr "a modem újraindítása elindult"
+
+msgid "service restarted"
+msgstr "szolgáltatás újraindult"
+
+msgid "Modem info updated"
+msgstr "A modem adatai frissítve"
+
+msgid "Modem did not respond"
+msgstr "A modem nem válaszolt"
+
+msgid "Checks internet connectivity and reboots the Quectel modem when the connection is lost."
+msgstr "Ellenőrzi az internetkapcsolatot, és újraindítja a Quectel modemet, ha a kapcsolat megszakad."
+
+msgid "Service settings"
+msgstr "Szolgáltatás beállításai"
+
+msgid "Enable service"
+msgstr "Szolgáltatás engedélyezése"
+
+msgid "Check interval (seconds)"
+msgstr "Ellenőrzési időköz (másodperc)"
+
+msgid "Failures before modem reboot"
+msgstr "Hibák a modem újraindítása előtt"
+
+msgid "Ping hosts"
+msgstr "Ping házigazdák"
+
+msgid "Space-separated list. Internet is considered up if at least one host responds."
+msgstr "Szóközökkel elválasztott lista. Az Internet akkor tekinthető működőképesnek, ha legalább egy gazdagép válaszol."
+
+msgid "Also require DNS resolution"
+msgstr "DNS-feloldást is igényel"
+
+msgid "DNS name to resolve"
+msgstr "Feloldandó DNS név"
+
+msgid "Also require an HTTP request"
+msgstr "HTTP-kérés is szükséges"
+
+msgid "HTTP URL"
+msgstr "HTTP URL"
+
+msgid "WAN interface"
+msgstr "WAN interfész"
+
+msgid "The device name is read from network.<iface>.device."
+msgstr "Az eszköznév beolvasása a hálózatról történik.<iface>.device."
+
+msgid "AT serial port"
+msgstr "AT soros porton"
+
+msgid "Detected USB/ACM serial ports. For Quectel EC200A use /dev/ttyUSB2; /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "USB/ACM soros portokat észlelt. A Quectel EC200A esetén használja a /dev/ttyUSB2; A /dev/ttyUSB0 a diagnosztikai port, és nem válaszol az AT parancsokra."
+
+msgid "AT port baud rate"
+msgstr "AT port adatátviteli sebessége"
+
+msgid "Modem reboot method"
+msgstr "Modem újraindítási módszer"
+
+msgid "AT+CFUN=1,1 (recommended)"
+msgstr "AT+CFUN=1,1 (ajánlott)"
+
+msgid "USB re-bind (best effort)"
+msgstr "USB újrakötés (legjobb erőfeszítés)"
+
+msgid "Wait after reboot (seconds)"
+msgstr "Várjon újraindítás után (másodperc)"
+
+msgid "Collect modem information"
+msgstr "Gyűjtse össze a modem adatait"
+
+msgid "Reads model, firmware, IMEI, signal, operator and temperature via AT commands."
+msgstr "AT parancsokon keresztül beolvassa a modellt, a firmware-t, az IMEI-t, a jelet, a kezelőt és a hőmérsékletet."
+
+msgid "Modem info interval (seconds)"
+msgstr "Modem információs intervallum (másodperc)"
+
+msgid "How often to query the modem with AT commands. Keep it longer if other modem tools use the same serial port."
+msgstr "Milyen gyakran kell lekérdezni a modemet AT parancsokkal. Tartsa meg tovább, ha más modemeszközök ugyanazt a soros portot használják."
+
+msgid "Signal refresh interval (seconds)"
+msgstr "Jelfrissítési időköz (másodperc)"
+
+msgid "Pause between signal page updates. The actual update also includes the modem response time."
+msgstr "Szünet a jeloldal frissítései között. A tényleges frissítés tartalmazza a modem válaszidejét is."
+
+msgid "Safety"
+msgstr "Biztonság"
+
+msgid "Maximum reboots per window"
+msgstr "Maximum újraindítások ablakonként"
+
+msgid "Set to 0 for unlimited. The limit prevents reboot loops."
+msgstr "Állítsa 0-ra a korlátlan használathoz. A korlát megakadályozza az újraindítási ciklusokat."
+
+msgid "Reboot window (seconds)"
+msgstr "Újraindító ablak (másodperc)"
+
+msgid "Cooldown between reboots (seconds)"
+msgstr "Lehűlés az újraindítások között (másodpercekben)"
+
+msgid "Logging"
+msgstr "Naplózás"
+
+msgid "Log level"
+msgstr "Naplózási szint"
+
+msgid "Error"
+msgstr "Hiba"
+
+msgid "Warning"
+msgstr "Figyelmeztetés"
+
+msgid "Info"
+msgstr "Információ"
+
+msgid "Debug"
+msgstr "Hibakeresés"
+
+msgid "Remote access warning"
+msgstr "Távoli hozzáférés figyelmeztetése"
+
+msgid "This service reboots only the modem, not the router. If the modem is the only WAN, internet and remote access will be down during the reboot. Do not change USB mode, APN or band settings remotely without a rollback plan."
+msgstr "Ez a szolgáltatás csak a modemet indítja újra, az útválasztót nem. Ha a modem az egyetlen WAN, az internet és a távoli hozzáférés megszűnik az újraindítás során. Ne módosítsa távolról az USB-módot, az APN-t vagy a sávbeállításokat visszaállítási terv nélkül."
+
+msgid "Service"
+msgstr "Szolgáltatás"
+
+msgid "State"
+msgstr "Állapot"
+
+msgid "Last check"
+msgstr "Utolsó ellenőrzés"
+
+msgid "Last success"
+msgstr "Utolsó siker"
+
+msgid "Last failure"
+msgstr "Utolsó kudarc"
+
+msgid "Failures"
+msgstr "Kudarcok"
+
+msgid "Modem reboots"
+msgstr "A modem újraindul"
+
+msgid "last"
+msgstr "utolsó"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "Data transferred"
+msgstr "Adatátvitel"
+
+msgid "Ping / DNS / HTTP"
+msgstr "Ping / DNS / HTTP"
+
+msgid "Latency"
+msgstr "Késleltetés"
+
+msgid "Modem"
+msgstr "Modem"
+
+msgid "Firmware"
+msgstr "Firmware"
+
+msgid "IMEI"
+msgstr "IMEI"
+
+msgid "Operator / network"
+msgstr "Üzemeltető / hálózat"
+
+msgid "Modem temperature"
+msgstr "Modem hőmérséklet"
+
+msgid "Service uptime"
+msgstr "Szolgáltatás üzemidő"
+
+msgid "LTE quality"
+msgstr "LTE minőség"
+
+msgid "CSQ"
+msgstr "CSQ"
+
+msgid "RSSI"
+msgstr "RSSI"
+
+msgid "RSRP"
+msgstr "RSRP"
+
+msgid "SINR"
+msgstr "SINR"
+
+msgid "RSRQ"
+msgstr "RSRQ"
+
+msgid "Band"
+msgstr "Sáv"
+
+msgid "Check now"
+msgstr "Ellenőrizze most"
+
+msgid "Refresh modem info"
+msgstr "Frissítse a modem adatait"
+
+msgid "Reboot modem"
+msgstr "Indítsa újra a modemet"
+
+msgid "Restart service"
+msgstr "Indítsa újra a szolgáltatást"
+
+msgid "yes"
+msgstr "igen"
+
+msgid "no"
+msgstr "nem"
+
+msgid "online"
+msgstr "online"
+
+msgid "offline"
+msgstr "offline módban"
+
+msgid "rebooting"
+msgstr "újraindítás"
+
+msgid "checking"
+msgstr "ellenőrzése"
+
+msgid "disabled"
+msgstr "letiltva"
+
+msgid "starting"
+msgstr "induló"
+
+msgid "stopped"
+msgstr "megállt"
+
+msgid "error"
+msgstr "hiba"
+
+msgid "running"
+msgstr "futás"
+
+msgid "Failed to read status"
+msgstr "Nem sikerült beolvasni az állapotot"
+
+msgid "Reading modem data"
+msgstr "Modem adatok olvasása"
+
+msgid "Failed to read modem data"
+msgstr "Nem sikerült beolvasni a modem adatait"
+
+msgid "Check started"
+msgstr "Az ellenőrzés elindult"
+
+msgid "Check failed"
+msgstr "Az ellenőrzés nem sikerült"
+
+msgid "Reboot the modem now? Internet will be down for about"
+msgstr "Most újraindítja a modemet? Az internet kb"
+
+msgid "seconds."
+msgstr "másodpercig."
+
+msgid "Modem reboot started"
+msgstr "Elindult a modem újraindítása"
+
+msgid "Reboot failed"
+msgstr "Az újraindítás nem sikerült"
+
+msgid "Restart the modemwatch service?"
+msgstr "Újraindítja a modemóra szolgáltatást?"
+
+msgid "Service restarted"
+msgstr "A szolgáltatás újraindult"
+
+msgid "Restart failed"
+msgstr "Az újraindítás nem sikerült"
+
+msgid "Signal strength (RSRQ)"
+msgstr "Jelerősség (RSRQ)"
+
+msgid "Operator"
+msgstr "Szolgáltató"
+
+msgid "Network"
+msgstr "Hálózat"
+
+msgid "Last update"
+msgstr "Utolsó frissítés"
+
+msgid "Refresh interval"
+msgstr "Frissítési időköz"
+
+msgid "seconds"
+msgstr "másodpercig"
+
+msgid "Signal Strength"
+msgstr "Jelerősség"
+
+msgid "Received Signal Strength Indicator"
+msgstr "Fogadott jelerősség jelző"
+
+msgid "Reference Signal Receive Power"
+msgstr "Referenciajel vételi teljesítménye"
+
+msgid "Signal to Interference plus Noise Ratio"
+msgstr "Jel-interferencia plusz zaj arány"
+
+msgid "Reference Signal Received Quality"
+msgstr "Referenciajel vett minősége"
+
+msgid "Refresh now"
+msgstr "Frissítés most"
+
+msgid "Pause"
+msgstr "Szünet"
+
+msgid "Busy"
+msgstr "Elfoglalt"
+
+msgid "AT port not found"
+msgstr "AT port nem található"
+
+msgid "No response from modem"
+msgstr "Nincs válasz a modemtől"
+
+msgid "Failed to read signal"
+msgstr "Nem sikerült beolvasni a jelet"
+
+msgid "Resume"
+msgstr "Folytatás"
+
+msgid "Refresh log"
+msgstr "Napló frissítése"
+
+msgid "Auto-refresh"
+msgstr "Automatikus frissítés"
+
+msgid "(empty)"
+msgstr "(üres)"
+
+msgid "Updated"
+msgstr "Frissítve"
+
+msgid "Failed to read log"
+msgstr "Nem sikerült beolvasni a naplót"
+
+msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
+msgstr "Az AT parancsok módosíthatják a modem beállításait, és megszakíthatják az internet- vagy az SSH-kapcsolatot. Ne módosítsa távolról az USB módot, APN-t, sávot vagy hálózati módot visszaállítási terv nélkül."
+
+msgid "Expert mode — allow changing USB mode and NAT"
+msgstr "Szakértői mód – lehetővé teszi az USB mód és a NAT módosítását"
+
+msgid "Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan."
+msgstr "Az USB mód megváltoztatása leválaszthatja a modemet és az SSH-t. Csak helyi hozzáféréssel vagy visszaállítási tervvel használja."
+
+msgid "Selected AT port"
+msgstr "Kiválasztott AT port"
+
+msgid "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "A Quectel EC200A esetén használja a /dev/ttyUSB2-t. A /dev/ttyUSB0 a diagnosztikai port, és nem válaszol az AT parancsokra."
+
+msgid "Current configuration"
+msgstr "Jelenlegi konfiguráció"
+
+msgid "Read current configuration"
+msgstr "Olvassa el az aktuális konfigurációt"
+
+msgid "Modem information"
+msgstr "Modem információk"
+
+msgid "Model"
+msgstr "Modell"
+
+msgid "SIM status"
+msgstr "SIM állapota"
+
+msgid "Temperature"
+msgstr "Hőmérséklet"
+
+msgid "Access Point Name (APN)"
+msgstr "Hozzáférési pont neve (APN)"
+
+msgid "Username"
+msgstr "Felhasználónév"
+
+msgid "Password"
+msgstr "Jelszó"
+
+msgid "Authentication"
+msgstr "Hitelesítés"
+
+msgid "None"
+msgstr "Nincs"
+
+msgid "PDP type"
+msgstr "PDP típus"
+
+msgid "Read APN"
+msgstr "Olvassa el az APN-t"
+
+msgid "Apply APN"
+msgstr "APN alkalmazása"
+
+msgid "Network mode"
+msgstr "Hálózati mód"
+
+msgid "Mode"
+msgstr "Mód"
+
+msgid "Automatic"
+msgstr "Automatikus"
+
+msgid "GSM only"
+msgstr "Csak GSM"
+
+msgid "WCDMA only"
+msgstr "Csak WCDMA"
+
+msgid "LTE only"
+msgstr "Csak LTE"
+
+msgid "Read mode"
+msgstr "Olvasási mód"
+
+msgid "Apply mode"
+msgstr "Alkalmaz mód"
+
+msgid "Band configuration"
+msgstr "Sáv konfiguráció"
+
+msgid "Read bands"
+msgstr "Zenekarokat olvasni"
+
+msgid "Select all"
+msgstr "Válassza ki az összeset"
+
+msgid "Restore default"
+msgstr "Alapértelmezés visszaállítása"
+
+msgid "Apply bands"
+msgstr "Alkalmazzon szalagokat"
+
+msgid "Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection."
+msgstr "Válassza ki azokat az LTE-sávokat, amelyeket engedélyezni szeretne. Az alkalmazás újraindíthatja a WAN-t, és megszakad a kapcsolat."
+
+msgid "USB mode"
+msgstr "USB mód"
+
+msgid "Current value"
+msgstr "Jelenlegi érték"
+
+msgid "New value"
+msgstr "Új érték"
+
+msgid "RMNET (QMI)"
+msgstr "RMNET (QMI)"
+
+msgid "not supported"
+msgstr "nem támogatott"
+
+msgid "ECM (CDC Ethernet)"
+msgstr "ECM (CDC Ethernet)"
+
+msgid "MBIM"
+msgstr "MBIM"
+
+msgid "RNDIS"
+msgstr "RNDIS"
+
+msgid "Apply USB mode"
+msgstr "USB mód alkalmazása"
+
+msgid "Read USB mode"
+msgstr "USB mód olvasása"
+
+msgid "Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem."
+msgstr "A modem firmware által nem támogatott módok letiltásra kerülnek, és nem támogatottként vannak megjelölve. A támogatott módokat a modem automatikusan észleli."
+
+msgid "Apply NAT"
+msgstr "Alkalmazza a NAT-ot"
+
+msgid "Read NAT"
+msgstr "Olvassa el a NAT-ot"
+
+msgid "Raw AT command"
+msgstr "Nyers AT parancs"
+
+msgid "AT command"
+msgstr "AT parancs"
+
+msgid "Send"
+msgstr "Küldés"
+
+msgid "Sending"
+msgstr "Küldés"
+
+msgid "AT command failed"
+msgstr "Az AT parancs nem sikerült"
+
+msgid "Reading APN"
+msgstr "APN olvasása"
+
+msgid "Failed to read APN"
+msgstr "Nem sikerült beolvasni az APN-t"
+
+msgid "Reading settings"
+msgstr "Olvasási beállítások"
+
+msgid "Settings read"
+msgstr "A beállítások elolvasása"
+
+msgid "Failed to read settings"
+msgstr "Nem sikerült beolvasni a beállításokat"
+
+msgid "APN, username and password may contain only letters, digits, dot, hyphen and underscore."
+msgstr "Az APN, a felhasználónév és a jelszó csak betűket, számokat, pontot, kötőjelet és aláhúzást tartalmazhat."
+
+msgid "Apply APN settings? The connection may drop."
+msgstr "Alkalmazza az APN-beállításokat? A kapcsolat megszakadhat."
+
+msgid "Applying APN"
+msgstr "APN alkalmazása"
+
+msgid "APN applied. Reconnect or reboot the modem if needed."
+msgstr "APN alkalmazva. Szükség esetén csatlakoztassa újra vagy indítsa újra a modemet."
+
+msgid "Failed to apply APN"
+msgstr "Nem sikerült az APN alkalmazása"
+
+msgid "Apply network mode? The connection may drop."
+msgstr "Használja a hálózati módot? A kapcsolat megszakadhat."
+
+msgid "Reading bands"
+msgstr "Felolvasó zenekarok"
+
+msgid "Failed to read bands"
+msgstr "Nem sikerült beolvasni a sávokat"
+
+msgid "No bands selected"
+msgstr "Nincsenek kiválasztott zenekarok"
+
+msgid "Restore default bands?"
+msgstr "Visszaállítja az alapértelmezett sávokat?"
+
+msgid "Apply selected bands? The connection may drop."
+msgstr "Alkalmazza a kiválasztott sávokat? A kapcsolat megszakadhat."
+
+msgid "Applying bands"
+msgstr "Szalagok alkalmazása"
+
+msgid "Failed to apply bands"
+msgstr "A sávok alkalmazása nem sikerült"
+
+msgid "USB mode is read-only in this UI."
+msgstr "Az USB mód csak olvasható ezen a felhasználói felületen."
+
+msgid "This USB mode is not supported by the modem firmware."
+msgstr "Ezt az USB módot a modem firmware nem támogatja."
+
+msgid "Change USB mode? The modem will re-enumerate and the connection may drop. Continue?"
+msgstr "USB módot váltani? A modem újra felsorolja, és a kapcsolat megszakadhat. Folytatja?"
+
+msgid "Change NAT mode? The connection may drop."
+msgstr "NAT mód módosítása? A kapcsolat megszakadhat."
+
+msgid "Current operator"
+msgstr "Jelenlegi üzemeltető"
+
+msgid "AT port"
+msgstr "AT porton"
+
+msgid "Scan networks"
+msgstr "Hálózatok vizsgálata"
+
+msgid "Automatic operator selection"
+msgstr "Automatikus kezelőválasztás"
+
+msgid "Stop scan"
+msgstr "Szkennelés leállítása"
+
+msgid "Update MCC/MNC database"
+msgstr "Frissítse az MCC/MNC adatbázist"
+
+msgid "Country"
+msgstr "Ország"
+
+msgid "MCC/MNC"
+msgstr "MCC/MNC"
+
+msgid "Technology"
+msgstr "Technológia"
+
+msgid "Action"
+msgstr "Művelet"
+
+msgid "Raw scan output"
+msgstr "Nyers szkennelési kimenet"
+
+msgid "current"
+msgstr "jelenlegi"
+
+msgid "available"
+msgstr "elérhető"
+
+msgid "forbidden"
+msgstr "tilos"
+
+msgid "unknown"
+msgstr "ismeretlen"
+
+msgid "Select"
+msgstr "Kiválasztás"
+
+msgid "MCC/MNC database updated."
+msgstr "MCC/MNC adatbázis frissítve."
+
+msgid "Not updated yet"
+msgstr "Még nincs frissítve"
+
+msgid "Failed to read MCC/MNC update status"
+msgstr "Nem sikerült beolvasni az MCC/MNC frissítési állapotát"
+
+msgid "Updating MCC/MNC database"
+msgstr "MCC/MNC adatbázis frissítése"
+
+msgid "Scanning networks... This may take up to two minutes."
+msgstr "Hálózatok keresése... Ez akár két percig is eltarthat."
+
+msgid "Scan complete."
+msgstr "Beolvasás kész."
+
+msgid "Modem is busy. Try again later."
+msgstr "A modem foglalt. Próbálja újra később."
+
+msgid "Scan failed"
+msgstr "A beolvasás nem sikerült"
+
+msgid "Not scanned yet."
+msgstr "Még nincs beolvasva."
+
+msgid "Failed to read scan status"
+msgstr "Nem sikerült beolvasni a szkennelés állapotát"
+
+msgid "Stopping scan"
+msgstr "A szkennelés leállítása"
+
+msgid "Network scan stopped"
+msgstr "A hálózati keresés leállt"
+
+msgid "Failed to stop scan"
+msgstr "Nem sikerült leállítani a keresést"
+
+msgid "Starting network scan"
+msgstr "Hálózati keresés indítása"
+
+msgid "Network scan started"
+msgstr "Elindult a hálózati szkennelés"
+
+msgid "Failed to start scan"
+msgstr "Nem sikerült elindítani a szkennelést"
+
+msgid "Select operator"
+msgstr "Válasszon operátort"
+
+msgid "The connection may drop."
+msgstr "A kapcsolat megszakadhat."
+
+msgid "Selecting operator"
+msgstr "Operátor kiválasztása"
+
+msgid "Operator selection sent"
+msgstr "Operátorválasztás elküldve"
+
+msgid "Failed to select operator"
+msgstr "Nem sikerült kiválasztani az operátort"
+
+msgid "Use automatic operator selection?"
+msgstr "Használja az automatikus kezelőválasztást?"
+
+msgid "Selecting automatic mode"
+msgstr "Automatikus üzemmód kiválasztása"

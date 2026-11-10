@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-modemwatch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 00:00+0000\n"
+"PO-Revision-Date: 2026-11-10 00:00+0000\n"
+"Last-Translator: modemwatch contributors\n"
+"Language-Team: فارسی (Persian)\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+msgid "Modem LTE 4G"
+msgstr "مودم LTE 4G"
+
+msgid "Status"
+msgstr "وضعیت"
+
+msgid "Signal"
+msgstr "علامت"
+
+msgid "Log"
+msgstr "گزارش"
+
+msgid "Modem settings"
+msgstr "تنظیمات مودم"
+
+msgid "Network search"
+msgstr "جستجوی شبکه"
+
+msgid "Settings"
+msgstr "تنظیمات"
+
+msgid "invalid token"
+msgstr "نشانه نامعتبر"
+
+msgid "empty AT command"
+msgstr "دستور AT خالی"
+
+msgid "invalid band selection"
+msgstr "انتخاب باند نامعتبر"
+
+msgid "Band settings sent"
+msgstr "تنظیمات باند ارسال شد"
+
+msgid "network scan started"
+msgstr "اسکن شبکه شروع شد"
+
+msgid "network scan stopped"
+msgstr "اسکن شبکه متوقف شد"
+
+msgid "invalid operator"
+msgstr "اپراتور نامعتبر"
+
+msgid "Downloading MCC/MNC list"
+msgstr "در حال دانلود لیست MCC/MNC"
+
+msgid "Parsing MCC/MNC list"
+msgstr "تجزیه لیست MCC/MNC"
+
+msgid "MCC/MNC database updated"
+msgstr "پایگاه داده MCC/MNC به روز شد"
+
+msgid "Failed to update MCC/MNC database"
+msgstr "پایگاه داده MCC/MNC به روز نشد"
+
+msgid "MCC/MNC update already running"
+msgstr "به‌روزرسانی MCC/MNC از قبل در حال اجرا است"
+
+msgid "MCC/MNC update started"
+msgstr "به‌روزرسانی MCC/MNC شروع شد"
+
+msgid "operator selection sent"
+msgstr "انتخاب اپراتور ارسال شد"
+
+msgid "internet check started"
+msgstr "بررسی اینترنت شروع شد"
+
+msgid "modem reboot started"
+msgstr "راه اندازی مجدد مودم شروع شد"
+
+msgid "service restarted"
+msgstr "سرویس دوباره راه اندازی شد"
+
+msgid "Modem info updated"
+msgstr "اطلاعات مودم به روز شد"
+
+msgid "Modem did not respond"
+msgstr "مودم جواب نداد"
+
+msgid "Checks internet connectivity and reboots the Quectel modem when the connection is lost."
+msgstr "اتصال اینترنت را بررسی می کند و در صورت قطع شدن اتصال، مودم Quectel را مجددا راه اندازی می کند."
+
+msgid "Service settings"
+msgstr "تنظیمات سرویس"
+
+msgid "Enable service"
+msgstr "سرویس را فعال کنید"
+
+msgid "Check interval (seconds)"
+msgstr "بررسی فاصله (ثانیه)"
+
+msgid "Failures before modem reboot"
+msgstr "خرابی قبل از راه اندازی مجدد مودم"
+
+msgid "Ping hosts"
+msgstr "هاست پینگ"
+
+msgid "Space-separated list. Internet is considered up if at least one host responds."
+msgstr "فهرست جدا شده از فضا اگر حداقل یک میزبان پاسخ دهد، اینترنت در نظر گرفته می شود."
+
+msgid "Also require DNS resolution"
+msgstr "همچنین به وضوح DNS نیاز دارید"
+
+msgid "DNS name to resolve"
+msgstr "نام DNS برای حل"
+
+msgid "Also require an HTTP request"
+msgstr "همچنین به درخواست HTTP نیاز دارید"
+
+msgid "HTTP URL"
+msgstr "HTTP URL"
+
+msgid "WAN interface"
+msgstr "رابط WAN"
+
+msgid "The device name is read from network.<iface>.device."
+msgstr "نام دستگاه از شبکه خوانده می شود.<iface>.device."
+
+msgid "AT serial port"
+msgstr "پورت سریال AT"
+
+msgid "Detected USB/ACM serial ports. For Quectel EC200A use /dev/ttyUSB2; /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "پورت های سریال USB/ACM شناسایی شده است. برای Quectel EC200A از /dev/ttyUSB2 استفاده کنید. /dev/ttyUSB0 پورت تشخیصی است و به دستورات AT پاسخ نمی دهد."
+
+msgid "AT port baud rate"
+msgstr "نرخ باود در پورت AT"
+
+msgid "Modem reboot method"
+msgstr "روش راه اندازی مجدد مودم"
+
+msgid "AT+CFUN=1,1 (recommended)"
+msgstr "AT+CFUN=1,1 (توصیه می شود)"
+
+msgid "USB re-bind (best effort)"
+msgstr "اتصال مجدد USB (بهترین تلاش)"
+
+msgid "Wait after reboot (seconds)"
+msgstr "پس از راه اندازی مجدد (ثانیه) صبر کنید"
+
+msgid "Collect modem information"
+msgstr "اطلاعات مودم را جمع آوری کنید"
+
+msgid "Reads model, firmware, IMEI, signal, operator and temperature via AT commands."
+msgstr "مدل، سیستم عامل، IMEI، سیگنال، اپراتور و دما را از طریق دستورات AT می خواند."
+
+msgid "Modem info interval (seconds)"
+msgstr "فاصله اطلاعات مودم (ثانیه)"
+
+msgid "How often to query the modem with AT commands. Keep it longer if other modem tools use the same serial port."
+msgstr "هر چند وقت یکبار با دستورات AT از مودم پرس و جو کنید. اگر ابزارهای مودم دیگر از همان پورت سریال استفاده می کنند، آن را بیشتر نگه دارید."
+
+msgid "Signal refresh interval (seconds)"
+msgstr "فاصله بازخوانی سیگنال (ثانیه)"
+
+msgid "Pause between signal page updates. The actual update also includes the modem response time."
+msgstr "بین به‌روزرسانی‌های صفحه سیگنال مکث کنید. به روز رسانی واقعی همچنین شامل زمان پاسخگویی مودم است."
+
+msgid "Safety"
+msgstr "ایمنی"
+
+msgid "Maximum reboots per window"
+msgstr "حداکثر راه اندازی مجدد در هر پنجره"
+
+msgid "Set to 0 for unlimited. The limit prevents reboot loops."
+msgstr "برای نامحدود روی 0 تنظیم کنید. محدودیت از حلقه های راه اندازی مجدد جلوگیری می کند."
+
+msgid "Reboot window (seconds)"
+msgstr "راه اندازی مجدد پنجره (ثانیه)"
+
+msgid "Cooldown between reboots (seconds)"
+msgstr "خنک شدن بین راه اندازی مجدد (ثانیه)"
+
+msgid "Logging"
+msgstr "گززارش گیری"
+
+msgid "Log level"
+msgstr "سطح دسترسی لاگ"
+
+msgid "Error"
+msgstr "خطا"
+
+msgid "Warning"
+msgstr "Warning"
+
+msgid "Info"
+msgstr "اطّلاعات"
+
+msgid "Debug"
+msgstr "اشکال‌زدایی"
+
+msgid "Remote access warning"
+msgstr "هشدار دسترسی از راه دور"
+
+msgid "This service reboots only the modem, not the router. If the modem is the only WAN, internet and remote access will be down during the reboot. Do not change USB mode, APN or band settings remotely without a rollback plan."
+msgstr "این سرویس فقط مودم را راه اندازی مجدد می کند نه روتر. اگر مودم تنها شبکه WAN باشد، اینترنت و دسترسی از راه دور در طول راه اندازی مجدد قطع می شود. تنظیمات حالت USB، APN یا باند را از راه دور بدون برنامه برگشت تغییر ندهید."
+
+msgid "Service"
+msgstr "سرویس"
+
+msgid "State"
+msgstr "وضعیت"
+
+msgid "Last check"
+msgstr "آخرین بررسی"
+
+msgid "Last success"
+msgstr "آخرین موفقیت"
+
+msgid "Last failure"
+msgstr "آخرین شکست"
+
+msgid "Failures"
+msgstr "شکست ها"
+
+msgid "Modem reboots"
+msgstr "مودم راه اندازی مجدد می شود"
+
+msgid "last"
+msgstr "آخرین"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "Data transferred"
+msgstr "داده ها منتقل شد"
+
+msgid "Ping / DNS / HTTP"
+msgstr "پینگ / DNS / HTTP"
+
+msgid "Latency"
+msgstr "تأخیر"
+
+msgid "Modem"
+msgstr "مودم"
+
+msgid "Firmware"
+msgstr "سیستم عامل"
+
+msgid "IMEI"
+msgstr "IMEI"
+
+msgid "Operator / network"
+msgstr "اپراتور / شبکه"
+
+msgid "Modem temperature"
+msgstr "دمای مودم"
+
+msgid "Service uptime"
+msgstr "تایم سرویس"
+
+msgid "LTE quality"
+msgstr "کیفیت LTE"
+
+msgid "CSQ"
+msgstr "CSQ"
+
+msgid "RSSI"
+msgstr "RSSI"
+
+msgid "RSRP"
+msgstr "RSRP"
+
+msgid "SINR"
+msgstr "SINR"
+
+msgid "RSRQ"
+msgstr "RSRQ"
+
+msgid "Band"
+msgstr "باند"
+
+msgid "Check now"
+msgstr "اکنون بررسی کنید"
+
+msgid "Refresh modem info"
+msgstr "تازه کردن اطلاعات مودم"
+
+msgid "Reboot modem"
+msgstr "راه اندازی مجدد مودم"
+
+msgid "Restart service"
+msgstr "سرویس را دوباره راه اندازی کنید"
+
+msgid "yes"
+msgstr "بله"
+
+msgid "no"
+msgstr "نه"
+
+msgid "online"
+msgstr "آنلاین"
+
+msgid "offline"
+msgstr "آفلاین"
+
+msgid "rebooting"
+msgstr "راه اندازی مجدد"
+
+msgid "checking"
+msgstr "چک کردن"
+
+msgid "disabled"
+msgstr "از کار افتاده است"
+
+msgid "starting"
+msgstr "شروع کردن"
+
+msgid "stopped"
+msgstr "متوقف شد"
+
+msgid "error"
+msgstr "خطا"
+
+msgid "running"
+msgstr "در حال اجرا"
+
+msgid "Failed to read status"
+msgstr "وضعیت خواندن ناموفق بود"
+
+msgid "Reading modem data"
+msgstr "خواندن اطلاعات مودم"
+
+msgid "Failed to read modem data"
+msgstr "داده های مودم خوانده نشد"
+
+msgid "Check started"
+msgstr "بررسی شروع شد"
+
+msgid "Check failed"
+msgstr "بررسی انجام نشد"
+
+msgid "Reboot the modem now? Internet will be down for about"
+msgstr "الان مودم رو ریستارت کنم؟ اینترنت حدودا قطع خواهد شد"
+
+msgid "seconds."
+msgstr "ثانیه"
+
+msgid "Modem reboot started"
+msgstr "راه اندازی مجدد مودم شروع شد"
+
+msgid "Reboot failed"
+msgstr "راه اندازی مجدد انجام نشد"
+
+msgid "Restart the modemwatch service?"
+msgstr "سرویس ساعت مودم راه اندازی مجدد شود؟"
+
+msgid "Service restarted"
+msgstr "سرویس دوباره راه اندازی شد"
+
+msgid "Restart failed"
+msgstr "راه اندازی مجدد ناموفق بود"
+
+msgid "Signal strength (RSRQ)"
+msgstr "قدرت سیگنال (RSRQ)"
+
+msgid "Operator"
+msgstr "اپراتور"
+
+msgid "Network"
+msgstr "شبکه"
+
+msgid "Last update"
+msgstr "آخرین به روز رسانی"
+
+msgid "Refresh interval"
+msgstr "فاصله بازخوانی"
+
+msgid "seconds"
+msgstr "ثانیه"
+
+msgid "Signal Strength"
+msgstr "قدرت سیگنال"
+
+msgid "Received Signal Strength Indicator"
+msgstr "نشانگر قدرت سیگنال دریافتی"
+
+msgid "Reference Signal Receive Power"
+msgstr "قدرت دریافت سیگنال مرجع"
+
+msgid "Signal to Interference plus Noise Ratio"
+msgstr "نسبت سیگنال به تداخل به اضافه نویز"
+
+msgid "Reference Signal Received Quality"
+msgstr "کیفیت دریافت سیگنال مرجع"
+
+msgid "Refresh now"
+msgstr "اکنون بازخوانی کنید"
+
+msgid "Pause"
+msgstr "مکث کنید"
+
+msgid "Busy"
+msgstr "مشغول"
+
+msgid "AT port not found"
+msgstr "پورت AT یافت نشد"
+
+msgid "No response from modem"
+msgstr "هیچ پاسخی از مودم وجود ندارد"
+
+msgid "Failed to read signal"
+msgstr "سیگنال خوانده نشد"
+
+msgid "Resume"
+msgstr "رزومه"
+
+msgid "Refresh log"
+msgstr "تازه کردن گزارش"
+
+msgid "Auto-refresh"
+msgstr "بازخوانی خودکار"
+
+msgid "(empty)"
+msgstr "(خالی)"
+
+msgid "Updated"
+msgstr "به روز شد"
+
+msgid "Failed to read log"
+msgstr "خواندن گزارش انجام نشد"
+
+msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
+msgstr "دستورات AT می توانند تنظیمات مودم را تغییر دهند و ممکن است اینترنت یا SSH را قطع کنند. حالت USB، APN، باند یا حالت شبکه را از راه دور بدون برنامه برگشت تغییر ندهید."
+
+msgid "Expert mode — allow changing USB mode and NAT"
+msgstr "حالت خبره - اجازه تغییر حالت USB و NAT را می دهد"
+
+msgid "Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan."
+msgstr "تغییر حالت USB می تواند ارتباط مودم و SSH را قطع کند. فقط با دسترسی محلی یا طرح بازگشت استفاده کنید."
+
+msgid "Selected AT port"
+msgstr "پورت AT انتخاب شده است"
+
+msgid "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "برای Quectel EC200A از /dev/ttyUSB2 استفاده کنید. /dev/ttyUSB0 پورت تشخیصی است و به دستورات AT پاسخ نمی دهد."
+
+msgid "Current configuration"
+msgstr "پیکربندی فعلی"
+
+msgid "Read current configuration"
+msgstr "پیکربندی فعلی را بخوانید"
+
+msgid "Modem information"
+msgstr "اطلاعات مودم"
+
+msgid "Model"
+msgstr "مدل"
+
+msgid "SIM status"
+msgstr "وضعیت سیم کارت"
+
+msgid "Temperature"
+msgstr "دما"
+
+msgid "Access Point Name (APN)"
+msgstr "نام نقطه دسترسی (APN)"
+
+msgid "Username"
+msgstr "نام کاربری"
+
+msgid "Password"
+msgstr "گذر‌واژه"
+
+msgid "Authentication"
+msgstr "هویت‌سنجی"
+
+msgid "None"
+msgstr "هیچکدام"
+
+msgid "PDP type"
+msgstr "نوع PDP"
+
+msgid "Read APN"
+msgstr "APN را بخوانید"
+
+msgid "Apply APN"
+msgstr "APN را اعمال کنید"
+
+msgid "Network mode"
+msgstr "حالت شبکه"
+
+msgid "Mode"
+msgstr "حالت"
+
+msgid "Automatic"
+msgstr "خودکار"
+
+msgid "GSM only"
+msgstr "فقط GSM"
+
+msgid "WCDMA only"
+msgstr "فقط WCDMA"
+
+msgid "LTE only"
+msgstr "فقط LTE"
+
+msgid "Read mode"
+msgstr "حالت خواندن"
+
+msgid "Apply mode"
+msgstr "اعمال حالت"
+
+msgid "Band configuration"
+msgstr "پیکربندی باند"
+
+msgid "Read bands"
+msgstr "باندها را بخوانید"
+
+msgid "Select all"
+msgstr "همه را انتخاب کنید"
+
+msgid "Restore default"
+msgstr "بازیابی پیش فرض"
+
+msgid "Apply bands"
+msgstr "باندها را اعمال کنید"
+
+msgid "Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection."
+msgstr "باندهای LTE را که می خواهید فعال نگه دارید انتخاب کنید. با اعمال ممکن است WAN مجددا راه اندازی شود و اتصال قطع شود."
+
+msgid "USB mode"
+msgstr "حالت USB"
+
+msgid "Current value"
+msgstr "ارزش فعلی"
+
+msgid "New value"
+msgstr "ارزش جدید"
+
+msgid "RMNET (QMI)"
+msgstr "RMNET (QMI)"
+
+msgid "not supported"
+msgstr "پشتیبانی نمی شود"
+
+msgid "ECM (CDC Ethernet)"
+msgstr "ECM (CDC Ethernet)"
+
+msgid "MBIM"
+msgstr "MBIM"
+
+msgid "RNDIS"
+msgstr "RNDIS"
+
+msgid "Apply USB mode"
+msgstr "حالت USB را اعمال کنید"
+
+msgid "Read USB mode"
+msgstr "حالت USB را بخوانید"
+
+msgid "Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem."
+msgstr "حالت هایی که توسط سیستم عامل مودم پشتیبانی نمی شوند غیرفعال شده و به عنوان پشتیبانی نشده علامت گذاری می شوند. حالت های پشتیبانی شده به طور خودکار از مودم شناسایی می شوند."
+
+msgid "Apply NAT"
+msgstr "NAT را اعمال کنید"
+
+msgid "Read NAT"
+msgstr "NAT را بخوانید"
+
+msgid "Raw AT command"
+msgstr "دستور خام AT"
+
+msgid "AT command"
+msgstr "فرمان AT"
+
+msgid "Send"
+msgstr "ارسال کنید"
+
+msgid "Sending"
+msgstr "ارسال می شود"
+
+msgid "AT command failed"
+msgstr "فرمان AT ناموفق بود"
+
+msgid "Reading APN"
+msgstr "خواندن APN"
+
+msgid "Failed to read APN"
+msgstr "APN خوانده نشد"
+
+msgid "Reading settings"
+msgstr "تنظیمات خواندن"
+
+msgid "Settings read"
+msgstr "تنظیمات خوانده شد"
+
+msgid "Failed to read settings"
+msgstr "تنظیمات خوانده نشد"
+
+msgid "APN, username and password may contain only letters, digits, dot, hyphen and underscore."
+msgstr "APN، نام کاربری و رمز عبور ممکن است فقط شامل حروف، اعداد، نقطه، خط فاصله و زیرخط باشد."
+
+msgid "Apply APN settings? The connection may drop."
+msgstr "تنظیمات APN اعمال شود؟ ممکن است اتصال قطع شود."
+
+msgid "Applying APN"
+msgstr "استفاده از APN"
+
+msgid "APN applied. Reconnect or reboot the modem if needed."
+msgstr "APN اعمال شد. در صورت نیاز مودم را مجددا وصل یا راه اندازی مجدد کنید."
+
+msgid "Failed to apply APN"
+msgstr "APN اعمال نشد"
+
+msgid "Apply network mode? The connection may drop."
+msgstr "حالت شبکه اعمال شود؟ ممکن است اتصال قطع شود."
+
+msgid "Reading bands"
+msgstr "باندهای خواندن"
+
+msgid "Failed to read bands"
+msgstr "باندها خوانده نشد"
+
+msgid "No bands selected"
+msgstr "هیچ گروهی انتخاب نشده است"
+
+msgid "Restore default bands?"
+msgstr "بازیابی باندهای پیش فرض؟"
+
+msgid "Apply selected bands? The connection may drop."
+msgstr "باندهای انتخاب شده را اعمال کنید؟ ممکن است اتصال قطع شود."
+
+msgid "Applying bands"
+msgstr "اعمال باند"
+
+msgid "Failed to apply bands"
+msgstr "باندها اعمال نشد"
+
+msgid "USB mode is read-only in this UI."
+msgstr "حالت USB در این رابط کاربری فقط خواندنی است."
+
+msgid "This USB mode is not supported by the modem firmware."
+msgstr "این حالت USB توسط سیستم عامل مودم پشتیبانی نمی شود."
+
+msgid "Change USB mode? The modem will re-enumerate and the connection may drop. Continue?"
+msgstr "حالت USB را تغییر دهید؟ مودم مجدداً شماره گذاری می شود و ممکن است اتصال قطع شود. ادامه دهید؟"
+
+msgid "Change NAT mode? The connection may drop."
+msgstr "حالت NAT را تغییر دهید؟ ممکن است اتصال قطع شود."
+
+msgid "Current operator"
+msgstr "اپراتور فعلی"
+
+msgid "AT port"
+msgstr "درگاه AT"
+
+msgid "Scan networks"
+msgstr "شبکه ها را اسکن کنید"
+
+msgid "Automatic operator selection"
+msgstr "انتخاب خودکار اپراتور"
+
+msgid "Stop scan"
+msgstr "اسکن را متوقف کنید"
+
+msgid "Update MCC/MNC database"
+msgstr "پایگاه داده MCC/MNC را به روز کنید"
+
+msgid "Country"
+msgstr "کشور"
+
+msgid "MCC/MNC"
+msgstr "MCC/MNC"
+
+msgid "Technology"
+msgstr "تکنولوژی"
+
+msgid "Action"
+msgstr "اقدام"
+
+msgid "Raw scan output"
+msgstr "خروجی اسکن خام"
+
+msgid "current"
+msgstr "جاری"
+
+msgid "available"
+msgstr "موجود است"
+
+msgid "forbidden"
+msgstr "ممنوع"
+
+msgid "unknown"
+msgstr "ناشناخته"
+
+msgid "Select"
+msgstr "انتخاب کنید"
+
+msgid "MCC/MNC database updated."
+msgstr "پایگاه داده MCC/MNC به روز شد."
+
+msgid "Not updated yet"
+msgstr "هنوز آپدیت نشده"
+
+msgid "Failed to read MCC/MNC update status"
+msgstr "وضعیت به‌روزرسانی MCC/MNC خوانده نشد"
+
+msgid "Updating MCC/MNC database"
+msgstr "به روز رسانی پایگاه داده MCC/MNC"
+
+msgid "Scanning networks... This may take up to two minutes."
+msgstr "در حال اسکن شبکه ها... این ممکن است تا دو دقیقه طول بکشد."
+
+msgid "Scan complete."
+msgstr "اسکن کامل شد."
+
+msgid "Modem is busy. Try again later."
+msgstr "مودم مشغول است. بعداً دوباره امتحان کنید."
+
+msgid "Scan failed"
+msgstr "اسکن انجام نشد"
+
+msgid "Not scanned yet."
+msgstr "هنوز اسکن نشده"
+
+msgid "Failed to read scan status"
+msgstr "وضعیت اسکن خوانده نشد"
+
+msgid "Stopping scan"
+msgstr "توقف اسکن"
+
+msgid "Network scan stopped"
+msgstr "اسکن شبکه متوقف شد"
+
+msgid "Failed to stop scan"
+msgstr "اسکن متوقف نشد"
+
+msgid "Starting network scan"
+msgstr "شروع اسکن شبکه"
+
+msgid "Network scan started"
+msgstr "اسکن شبکه شروع شد"
+
+msgid "Failed to start scan"
+msgstr "شروع اسکن ناموفق بود"
+
+msgid "Select operator"
+msgstr "اپراتور را انتخاب کنید"
+
+msgid "The connection may drop."
+msgstr "ممکن است اتصال قطع شود."
+
+msgid "Selecting operator"
+msgstr "انتخاب اپراتور"
+
+msgid "Operator selection sent"
+msgstr "انتخاب اپراتور ارسال شد"
+
+msgid "Failed to select operator"
+msgstr "اپراتور انتخاب نشد"
+
+msgid "Use automatic operator selection?"
+msgstr "از انتخاب خودکار اپراتور استفاده کنید؟"
+
+msgid "Selecting automatic mode"
+msgstr "انتخاب حالت خودکار"

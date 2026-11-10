@@ -87,12 +87,18 @@ opkg update
 opkg install modemwatch_24.10.8_*.ipk luci-app-modemwatch_24.10.8_*.ipk luci-i18n-modemwatch-uk_24.10.8_*.ipk
 ```
 
+Для інших мов розпакуйте `modemwatch-24.10.8-all.tar.gz` і встановіть
+потрібний `luci-i18n-modemwatch-<lang>_24.10.8_*.ipk`.
+
 Для 25.12:
 
 ```sh
 apk update
 apk add --allow-untrusted modemwatch_25.12.6_*.apk luci-app-modemwatch_25.12.6_*.apk luci-i18n-modemwatch-uk_25.12.6_*.apk
 ```
+
+Для інших мов розпакуйте `modemwatch-25.12.6-all.tar.gz` і встановіть
+потрібний `luci-i18n-modemwatch-<lang>_25.12.6_*.apk`.
 
 Якщо пакети не підписані, для `apk` може знадобитися
 `--allow-untrusted`.
@@ -180,9 +186,10 @@ Workflow `.github/workflows/build.yml` збирає пакети для трьо
 | 24.10.8 | `.ipk` | `all` |
 | 25.12.6 | `.apk` | `all` |
 
-Кожна збірка також створює пакет `luci-i18n-modemwatch-uk` з українською
-локалізацією. Артефакти мають назви
-`modemwatch-<version>-all-<format>`.
+Кожна збірка створює пакети `luci-i18n-modemwatch-<lang>` для 41 мови
+(усі доступні мови LuCI, крім російської). Артефакти мають назви
+`modemwatch-<version>-all`, `luci-app-modemwatch-<version>-all`,
+`luci-i18n-modemwatch-<version>-all` і `modemwatch-<version>-all-bundle`.
 
 Оскільки обидва пакети мають `PKGARCH:=all`, достатньо однієї архітектури
 SDK на версію — вміст пакета однаковий для ARM, MIPS і x86. Поле `arch`
@@ -206,17 +213,77 @@ Snapshot-версії у матрицю не включені.
 в релізі є окремі пакети та один загальний архів:
 
 ```text
-modemwatch_23.05.6_1.0.1-r1_all.ipk
-luci-app-modemwatch_23.05.6_1.0.1-r1_all.ipk
-luci-i18n-modemwatch-uk_23.05.6_1.0.1-r1_all.ipk
+modemwatch_23.05.6_1.0.2-r1_all.ipk
+luci-app-modemwatch_23.05.6_1.0.2-r1_all.ipk
+luci-i18n-modemwatch-de_23.05.6_1.0.2-r1_all.ipk
+luci-i18n-modemwatch-uk_23.05.6_1.0.2-r1_all.ipk
+...
 modemwatch-23.05.6-all.tar.gz
 ```
 
 Аналогічно для `24.10.8` (`.ipk`) і `25.12.6` (`.apk`). У назві кожного
 файлу явно вказана версія OpenWrt, під яку він зібраний.
 
-Загальний архів `modemwatch-<version>-all.tar.gz` містить усі три пакети
-для відповідної версії.
+Загальний архів `modemwatch-<version>-all.tar.gz` містить основний пакет,
+LuCI-застосунок і всі пакети перекладів для відповідної версії.
+
+### Переклади
+
+Пакети перекладу доступні для 41 мови. У релізі окремо публікується
+лише українська локалізація, а пакети для решти мов входять до
+`modemwatch-<версія>-all.tar.gz`. Вихідні каталоги пакетів лежать
+у `i18n/luci-i18n-modemwatch-<lang>`:
+
+- `ar` — арабська
+- `bg` — болгарська
+- `bn` — бенгальська
+- `ca` — каталонська
+- `cs` — чеська
+- `da` — данська
+- `de` — німецька
+- `el` — грецька
+- `es` — іспанська
+- `fa` — перська
+- `fi` — фінська
+- `fil` — філіппінська
+- `fr` — французька
+- `ga` — ірландська
+- `he` — іврит
+- `hi` — гінді
+- `hu` — угорська
+- `it` — італійська
+- `ja` — японська
+- `ka` — грузинська
+- `ko` — корейська
+- `lo` — лаоська
+- `lt` — литовська
+- `lv` — латиська
+- `mr` — маратхі
+- `ms` — малайська
+- `no` — норвезька
+- `nl` — нідерландська
+- `pl` — польська
+- `pt` — португальська
+- `pt-br` — бразильська португальська
+- `ro` — румунська
+- `sk` — словацька
+- `sv` — шведська
+- `ta` — тамільська
+- `tr` — турецька
+- `uk` — українська
+- `vi` — в'єтнамська
+- `yua` — юкатецька
+- `zh-cn` — китайська (спрощена)
+- `zh-tw` — китайська (традиційна)
+
+Пакет перекладу встановлюється разом з `luci-app-modemwatch` і додає мову
+до списку мов LuCI. Наприклад:
+
+```sh
+opkg install luci-i18n-modemwatch-de_24.10.8_*.ipk
+```
+
+Повний перелік кодів мов — у [`scripts/languages.txt`](scripts/languages.txt).
 
 ## Веб-інтерфейс
 

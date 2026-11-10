@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-modemwatch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 00:00+0000\n"
+"PO-Revision-Date: 2026-11-10 00:00+0000\n"
+"Last-Translator: modemwatch contributors\n"
+"Language-Team: 日本語 (Japanese)\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Modem LTE 4G"
+msgstr "モデム LTE 4G"
+
+msgid "Status"
+msgstr "状態"
+
+msgid "Signal"
+msgstr "信号"
+
+msgid "Log"
+msgstr "ログ"
+
+msgid "Modem settings"
+msgstr "モデムの設定"
+
+msgid "Network search"
+msgstr "ネットワーク検索"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "invalid token"
+msgstr "無効なトークン"
+
+msgid "empty AT command"
+msgstr "空のATコマンド"
+
+msgid "invalid band selection"
+msgstr "無効なバンド選択"
+
+msgid "Band settings sent"
+msgstr "バンド設定を送信しました"
+
+msgid "network scan started"
+msgstr "ネットワークスキャンが開始されました"
+
+msgid "network scan stopped"
+msgstr "ネットワークスキャンが停止しました"
+
+msgid "invalid operator"
+msgstr "無効な演算子"
+
+msgid "Downloading MCC/MNC list"
+msgstr "MCC/MNCリストのダウンロード"
+
+msgid "Parsing MCC/MNC list"
+msgstr "MCC/MNC リストの解析"
+
+msgid "MCC/MNC database updated"
+msgstr "MCC/MNCデータベースが更新されました"
+
+msgid "Failed to update MCC/MNC database"
+msgstr "MCC/MNC データベースの更新に失敗しました"
+
+msgid "MCC/MNC update already running"
+msgstr "MCC/MNC アップデートはすでに実行中です"
+
+msgid "MCC/MNC update started"
+msgstr "MCC/MNCアップデート開始"
+
+msgid "operator selection sent"
+msgstr "オペレータの選択が送信されました"
+
+msgid "internet check started"
+msgstr "インターネットチェックが始まりました"
+
+msgid "modem reboot started"
+msgstr "モデムの再起動が開始されました"
+
+msgid "service restarted"
+msgstr "サービスが再開されました"
+
+msgid "Modem info updated"
+msgstr "モデム情報が更新されました"
+
+msgid "Modem did not respond"
+msgstr "モデムが応答しませんでした"
+
+msgid "Checks internet connectivity and reboots the Quectel modem when the connection is lost."
+msgstr "インターネット接続をチェックし、接続が失われた場合は Quectel モデムを再起動します。"
+
+msgid "Service settings"
+msgstr "サービス設定"
+
+msgid "Enable service"
+msgstr "サービスを有効にする"
+
+msgid "Check interval (seconds)"
+msgstr "チェック間隔(秒)"
+
+msgid "Failures before modem reboot"
+msgstr "モデムを再起動する前の障害"
+
+msgid "Ping hosts"
+msgstr "ホストに ping を送信する"
+
+msgid "Space-separated list. Internet is considered up if at least one host responds."
+msgstr "スペース区切りのリスト。少なくとも 1 つのホストが応答した場合、インターネットは稼働しているとみなされます。"
+
+msgid "Also require DNS resolution"
+msgstr "DNS解決も必要"
+
+msgid "DNS name to resolve"
+msgstr "解決するDNS名"
+
+msgid "Also require an HTTP request"
+msgstr "HTTPリクエストも必要です"
+
+msgid "HTTP URL"
+msgstr "HTTP URL"
+
+msgid "WAN interface"
+msgstr "WANインターフェース"
+
+msgid "The device name is read from network.<iface>.device."
+msgstr "デバイス名は network.<iface>.device から読み取られます。"
+
+msgid "AT serial port"
+msgstr "ATシリアルポート"
+
+msgid "Detected USB/ACM serial ports. For Quectel EC200A use /dev/ttyUSB2; /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "USB/ACM シリアル ポートが検出されました。 Quectel EC200A の場合は /dev/ttyUSB2 を使用します。 /dev/ttyUSB0 は診断ポートであり、AT コマンドには応答しません。"
+
+msgid "AT port baud rate"
+msgstr "ATポートのボーレート"
+
+msgid "Modem reboot method"
+msgstr "モデムの再起動方法"
+
+msgid "AT+CFUN=1,1 (recommended)"
+msgstr "AT+CFUN=1,1 (推奨)"
+
+msgid "USB re-bind (best effort)"
+msgstr "USB 再バインド (ベストエフォート)"
+
+msgid "Wait after reboot (seconds)"
+msgstr "再起動後の待機時間 (秒)"
+
+msgid "Collect modem information"
+msgstr "モデム情報を収集する"
+
+msgid "Reads model, firmware, IMEI, signal, operator and temperature via AT commands."
+msgstr "AT コマンドを介して、モデル、ファームウェア、IMEI、信号、オペレーター、温度を読み取ります。"
+
+msgid "Modem info interval (seconds)"
+msgstr "モデム情報間隔 (秒)"
+
+msgid "How often to query the modem with AT commands. Keep it longer if other modem tools use the same serial port."
+msgstr "AT コマンドを使用してモデムにクエリを実行する頻度。他のモデム ツールが同じシリアル ポートを使用する場合は、それを長くしておいてください。"
+
+msgid "Signal refresh interval (seconds)"
+msgstr "信号更新間隔（秒）"
+
+msgid "Pause between signal page updates. The actual update also includes the modem response time."
+msgstr "シグナルページの更新の間に一時停止します。実際の更新にはモデムの応答時間も含まれます。"
+
+msgid "Safety"
+msgstr "安全性"
+
+msgid "Maximum reboots per window"
+msgstr "ウィンドウごとの最大再起動数"
+
+msgid "Set to 0 for unlimited. The limit prevents reboot loops."
+msgstr "無制限の場合は 0 に設定します。この制限により、再起動ループが防止されます。"
+
+msgid "Reboot window (seconds)"
+msgstr "再起動ウィンドウ (秒)"
+
+msgid "Cooldown between reboots (seconds)"
+msgstr "再起動間のクールダウン (秒)"
+
+msgid "Logging"
+msgstr "ロギング"
+
+msgid "Log level"
+msgstr "ログレベル"
+
+msgid "Error"
+msgstr "エラー"
+
+msgid "Warning"
+msgstr "警告"
+
+msgid "Info"
+msgstr "情報"
+
+msgid "Debug"
+msgstr "デバッグ"
+
+msgid "Remote access warning"
+msgstr "リモートアクセスに関する警告"
+
+msgid "This service reboots only the modem, not the router. If the modem is the only WAN, internet and remote access will be down during the reboot. Do not change USB mode, APN or band settings remotely without a rollback plan."
+msgstr "このサービスはモデムのみを再起動し、ルーターは再起動しません。モデムが唯一の WAN である場合、再起動中にインターネットとリモート アクセスがダウンします。ロールバック計画を立てずに、USB モード、APN、またはバンド設定をリモートで変更しないでください。"
+
+msgid "Service"
+msgstr "サービス"
+
+msgid "State"
+msgstr "状態"
+
+msgid "Last check"
+msgstr "最終チェック"
+
+msgid "Last success"
+msgstr "最後の成功"
+
+msgid "Last failure"
+msgstr "最後の失敗"
+
+msgid "Failures"
+msgstr "失敗"
+
+msgid "Modem reboots"
+msgstr "モデムの再起動"
+
+msgid "last"
+msgstr "最後"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "Data transferred"
+msgstr "転送されるデータ"
+
+msgid "Ping / DNS / HTTP"
+msgstr "Ping / DNS / HTTP"
+
+msgid "Latency"
+msgstr "遅延"
+
+msgid "Modem"
+msgstr "モデム"
+
+msgid "Firmware"
+msgstr "ファームウェア"
+
+msgid "IMEI"
+msgstr "IMEI"
+
+msgid "Operator / network"
+msgstr "オペレーター/ネットワーク"
+
+msgid "Modem temperature"
+msgstr "モデム温度"
+
+msgid "Service uptime"
+msgstr "サービス稼働時間"
+
+msgid "LTE quality"
+msgstr "LTE品質"
+
+msgid "CSQ"
+msgstr "CSQ"
+
+msgid "RSSI"
+msgstr "RSSI"
+
+msgid "RSRP"
+msgstr "RSRP"
+
+msgid "SINR"
+msgstr "SINR"
+
+msgid "RSRQ"
+msgstr "RSRQ"
+
+msgid "Band"
+msgstr "バンド"
+
+msgid "Check now"
+msgstr "今すぐチェック"
+
+msgid "Refresh modem info"
+msgstr "モデム情報を更新する"
+
+msgid "Reboot modem"
+msgstr "モデムを再起動します"
+
+msgid "Restart service"
+msgstr "サービスを再起動する"
+
+msgid "yes"
+msgstr "はい"
+
+msgid "no"
+msgstr "いいえ"
+
+msgid "online"
+msgstr "オンライン"
+
+msgid "offline"
+msgstr "オフライン"
+
+msgid "rebooting"
+msgstr "再起動"
+
+msgid "checking"
+msgstr "チェック中"
+
+msgid "disabled"
+msgstr "無効"
+
+msgid "starting"
+msgstr "始めます"
+
+msgid "stopped"
+msgstr "止まった"
+
+msgid "error"
+msgstr "エラー"
+
+msgid "running"
+msgstr "走っている"
+
+msgid "Failed to read status"
+msgstr "ステータスの読み取りに失敗しました"
+
+msgid "Reading modem data"
+msgstr "モデムデータの読み取り"
+
+msgid "Failed to read modem data"
+msgstr "モデムデータの読み取りに失敗しました"
+
+msgid "Check started"
+msgstr "チェックが開始されました"
+
+msgid "Check failed"
+msgstr "チェックに失敗しました"
+
+msgid "Reboot the modem now? Internet will be down for about"
+msgstr "今すぐモデムを再起動しますか?インターネットは約しばらくダウンします"
+
+msgid "seconds."
+msgstr "秒。"
+
+msgid "Modem reboot started"
+msgstr "モデムの再起動が開始されました"
+
+msgid "Reboot failed"
+msgstr "再起動に失敗しました"
+
+msgid "Restart the modemwatch service?"
+msgstr "モデムウォッチ サービスを再起動しますか?"
+
+msgid "Service restarted"
+msgstr "サービス再開しました"
+
+msgid "Restart failed"
+msgstr "再起動に失敗しました"
+
+msgid "Signal strength (RSRQ)"
+msgstr "信号強度 (RSRQ)"
+
+msgid "Operator"
+msgstr "オペレーター"
+
+msgid "Network"
+msgstr "ネットワーク"
+
+msgid "Last update"
+msgstr "最終更新"
+
+msgid "Refresh interval"
+msgstr "リフレッシュ間隔"
+
+msgid "seconds"
+msgstr "秒"
+
+msgid "Signal Strength"
+msgstr "信号強度"
+
+msgid "Received Signal Strength Indicator"
+msgstr "受信信号強度インジケーター"
+
+msgid "Reference Signal Receive Power"
+msgstr "基準信号受信電力"
+
+msgid "Signal to Interference plus Noise Ratio"
+msgstr "信号対干渉プラスノイズ比"
+
+msgid "Reference Signal Received Quality"
+msgstr "基準信号受信品質"
+
+msgid "Refresh now"
+msgstr "今すぐ更新してください"
+
+msgid "Pause"
+msgstr "一時停止"
+
+msgid "Busy"
+msgstr "忙しい"
+
+msgid "AT port not found"
+msgstr "ATポートが見つかりません"
+
+msgid "No response from modem"
+msgstr "モデムからの応答がありません"
+
+msgid "Failed to read signal"
+msgstr "信号の読み取りに失敗しました"
+
+msgid "Resume"
+msgstr "再開"
+
+msgid "Refresh log"
+msgstr "ログを更新する"
+
+msgid "Auto-refresh"
+msgstr "自動更新"
+
+msgid "(empty)"
+msgstr "(空)"
+
+msgid "Updated"
+msgstr "更新されました"
+
+msgid "Failed to read log"
+msgstr "ログの読み取りに失敗しました"
+
+msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
+msgstr "AT コマンドはモデム設定を変更したり、インターネットや SSH を切断したりする可能性があります。ロールバック計画を立てずに、USB モード、APN、バンド、またはネットワーク モードをリモートで変更しないでください。"
+
+msgid "Expert mode — allow changing USB mode and NAT"
+msgstr "エキスパート モード - USB モードと NAT の変更を許可します"
+
+msgid "Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan."
+msgstr "USB モードを変更すると、モデムと SSH が切断される場合があります。ローカル アクセスまたはロールバック プランでのみ使用してください。"
+
+msgid "Selected AT port"
+msgstr "選択されたATポート"
+
+msgid "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Quectel EC200A の場合は、/dev/ttyUSB2 を使用します。 /dev/ttyUSB0 は診断ポートであり、AT コマンドには応答しません。"
+
+msgid "Current configuration"
+msgstr "現在の構成"
+
+msgid "Read current configuration"
+msgstr "現在の構成を読み取る"
+
+msgid "Modem information"
+msgstr "モデム情報"
+
+msgid "Model"
+msgstr "モデル"
+
+msgid "SIM status"
+msgstr "SIMステータス"
+
+msgid "Temperature"
+msgstr "温度"
+
+msgid "Access Point Name (APN)"
+msgstr "アクセスポイント名(APN)"
+
+msgid "Username"
+msgstr "ユーザー名"
+
+msgid "Password"
+msgstr "パスワード"
+
+msgid "Authentication"
+msgstr "認証"
+
+msgid "None"
+msgstr "なし"
+
+msgid "PDP type"
+msgstr "PDPの種類"
+
+msgid "Read APN"
+msgstr "APNの読み取り"
+
+msgid "Apply APN"
+msgstr "APNを適用する"
+
+msgid "Network mode"
+msgstr "ネットワークモード"
+
+msgid "Mode"
+msgstr "モード"
+
+msgid "Automatic"
+msgstr "自動"
+
+msgid "GSM only"
+msgstr "GSMのみ"
+
+msgid "WCDMA only"
+msgstr "WCDMAのみ"
+
+msgid "LTE only"
+msgstr "LTEのみ"
+
+msgid "Read mode"
+msgstr "読み取りモード"
+
+msgid "Apply mode"
+msgstr "適用モード"
+
+msgid "Band configuration"
+msgstr "バンド構成"
+
+msgid "Read bands"
+msgstr "バンドを読み取る"
+
+msgid "Select all"
+msgstr "すべて選択"
+
+msgid "Restore default"
+msgstr "デフォルトに戻す"
+
+msgid "Apply bands"
+msgstr "バンドを適用する"
+
+msgid "Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection."
+msgstr "有効にしておく LTE バンドを選択します。適用すると、WAN が再起動され、接続が切断される場合があります。"
+
+msgid "USB mode"
+msgstr "USBモード"
+
+msgid "Current value"
+msgstr "現在値"
+
+msgid "New value"
+msgstr "新しい価値"
+
+msgid "RMNET (QMI)"
+msgstr "RMNET (QMI)"
+
+msgid "not supported"
+msgstr "サポートされていません"
+
+msgid "ECM (CDC Ethernet)"
+msgstr "ECM (CDC イーサネット)"
+
+msgid "MBIM"
+msgstr "MBIM"
+
+msgid "RNDIS"
+msgstr "RNDIS"
+
+msgid "Apply USB mode"
+msgstr "USBモードを適用する"
+
+msgid "Read USB mode"
+msgstr "読み取りUSBモード"
+
+msgid "Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem."
+msgstr "モデム ファームウェアでサポートされていないモードは無効になり、サポートされていないとしてマークされます。サポートされているモードはモデムから自動的に検出されます。"
+
+msgid "Apply NAT"
+msgstr "NAT を適用する"
+
+msgid "Read NAT"
+msgstr "NATの読み取り"
+
+msgid "Raw AT command"
+msgstr "生の AT コマンド"
+
+msgid "AT command"
+msgstr "ATコマンド"
+
+msgid "Send"
+msgstr "送信"
+
+msgid "Sending"
+msgstr "送信中"
+
+msgid "AT command failed"
+msgstr "ATコマンドが失敗しました"
+
+msgid "Reading APN"
+msgstr "APNの読み取り"
+
+msgid "Failed to read APN"
+msgstr "APNの読み取りに失敗しました"
+
+msgid "Reading settings"
+msgstr "読み取り設定"
+
+msgid "Settings read"
+msgstr "設定の読み取り"
+
+msgid "Failed to read settings"
+msgstr "設定の読み込みに失敗しました"
+
+msgid "APN, username and password may contain only letters, digits, dot, hyphen and underscore."
+msgstr "APN、ユーザー名、パスワードには、文字、数字、ドット、ハイフン、アンダースコアのみを含めることができます。"
+
+msgid "Apply APN settings? The connection may drop."
+msgstr "APN設定を適用しますか?接続が切断される可能性があります。"
+
+msgid "Applying APN"
+msgstr "APNの適用"
+
+msgid "APN applied. Reconnect or reboot the modem if needed."
+msgstr "APNが適用されました。必要に応じてモデムを再接続または再起動します。"
+
+msgid "Failed to apply APN"
+msgstr "APNの適用に失敗しました"
+
+msgid "Apply network mode? The connection may drop."
+msgstr "ネットワークモードを適用しますか?接続が切断される可能性があります。"
+
+msgid "Reading bands"
+msgstr "リーディングバンド"
+
+msgid "Failed to read bands"
+msgstr "バンドの読み取りに失敗しました"
+
+msgid "No bands selected"
+msgstr "バンドが選択されていません"
+
+msgid "Restore default bands?"
+msgstr "デフォルトのバンドを復元しますか?"
+
+msgid "Apply selected bands? The connection may drop."
+msgstr "選択したバンドを適用しますか?接続が切断される可能性があります。"
+
+msgid "Applying bands"
+msgstr "バンドの適用"
+
+msgid "Failed to apply bands"
+msgstr "バンドの適用に失敗しました"
+
+msgid "USB mode is read-only in this UI."
+msgstr "この UI では USB モードは読み取り専用です。"
+
+msgid "This USB mode is not supported by the modem firmware."
+msgstr "この USB モードはモデム ファームウェアではサポートされていません。"
+
+msgid "Change USB mode? The modem will re-enumerate and the connection may drop. Continue?"
+msgstr "USBモードを変更しますか?モデムが再列挙し、接続が切断される可能性があります。続く？"
+
+msgid "Change NAT mode? The connection may drop."
+msgstr "NATモードを変更しますか?接続が切断される可能性があります。"
+
+msgid "Current operator"
+msgstr "現在のオペレーター"
+
+msgid "AT port"
+msgstr "ATポート"
+
+msgid "Scan networks"
+msgstr "ネットワークをスキャンする"
+
+msgid "Automatic operator selection"
+msgstr "オペレータの自動選択"
+
+msgid "Stop scan"
+msgstr "スキャンの停止"
+
+msgid "Update MCC/MNC database"
+msgstr "MCC/MNCデータベースを更新する"
+
+msgid "Country"
+msgstr "国"
+
+msgid "MCC/MNC"
+msgstr "MCC/MNC"
+
+msgid "Technology"
+msgstr "テクノロジー"
+
+msgid "Action"
+msgstr "アクション"
+
+msgid "Raw scan output"
+msgstr "生のスキャン出力"
+
+msgid "current"
+msgstr "現在の"
+
+msgid "available"
+msgstr "利用可能"
+
+msgid "forbidden"
+msgstr "禁止"
+
+msgid "unknown"
+msgstr "不明"
+
+msgid "Select"
+msgstr "選択"
+
+msgid "MCC/MNC database updated."
+msgstr "MCC/MNCデータベースが更新されました。"
+
+msgid "Not updated yet"
+msgstr "まだ更新されていません"
+
+msgid "Failed to read MCC/MNC update status"
+msgstr "MCC/MNC更新ステータスの読み取りに失敗しました"
+
+msgid "Updating MCC/MNC database"
+msgstr "MCC/MNCデータベースの更新"
+
+msgid "Scanning networks... This may take up to two minutes."
+msgstr "ネットワークをスキャンしています... これには最大 2 分かかる場合があります。"
+
+msgid "Scan complete."
+msgstr "スキャンが完了しました。"
+
+msgid "Modem is busy. Try again later."
+msgstr "モデムがビジー状態です。後でもう一度試してください。"
+
+msgid "Scan failed"
+msgstr "スキャンに失敗しました"
+
+msgid "Not scanned yet."
+msgstr "まだスキャンされていません。"
+
+msgid "Failed to read scan status"
+msgstr "スキャンステータスの読み取りに失敗しました"
+
+msgid "Stopping scan"
+msgstr "スキャンを停止しています"
+
+msgid "Network scan stopped"
+msgstr "ネットワークスキャンが停止しました"
+
+msgid "Failed to stop scan"
+msgstr "スキャンの停止に失敗しました"
+
+msgid "Starting network scan"
+msgstr "ネットワークスキャンの開始"
+
+msgid "Network scan started"
+msgstr "ネットワークスキャンが開始されました"
+
+msgid "Failed to start scan"
+msgstr "スキャンの開始に失敗しました"
+
+msgid "Select operator"
+msgstr "演算子の選択"
+
+msgid "The connection may drop."
+msgstr "接続が切断される可能性があります。"
+
+msgid "Selecting operator"
+msgstr "演算子の選択"
+
+msgid "Operator selection sent"
+msgstr "オペレーターの選択が送信されました"
+
+msgid "Failed to select operator"
+msgstr "演算子の選択に失敗しました"
+
+msgid "Use automatic operator selection?"
+msgstr "オペレータの自動選択を使用しますか?"
+
+msgid "Selecting automatic mode"
+msgstr "自動モードの選択"

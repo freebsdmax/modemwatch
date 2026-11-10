@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-modemwatch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 00:00+0000\n"
+"PO-Revision-Date: 2026-11-10 00:00+0000\n"
+"Last-Translator: modemwatch contributors\n"
+"Language-Team: 简体中文 (Simplified Chinese)\n"
+"Language: zh-cn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Modem LTE 4G"
+msgstr "调制解调器 LTE 4G"
+
+msgid "Status"
+msgstr "状态"
+
+msgid "Signal"
+msgstr "信号"
+
+msgid "Log"
+msgstr "日志"
+
+msgid "Modem settings"
+msgstr "调制解调器设置"
+
+msgid "Network search"
+msgstr "网络搜索"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "invalid token"
+msgstr "无效令牌"
+
+msgid "empty AT command"
+msgstr "空 AT 命令"
+
+msgid "invalid band selection"
+msgstr "波段选择无效"
+
+msgid "Band settings sent"
+msgstr "已发送频段设置"
+
+msgid "network scan started"
+msgstr "网络扫描开始"
+
+msgid "network scan stopped"
+msgstr "网络扫描已停止"
+
+msgid "invalid operator"
+msgstr "无效的运算符"
+
+msgid "Downloading MCC/MNC list"
+msgstr "下载MCC/MNC名单"
+
+msgid "Parsing MCC/MNC list"
+msgstr "解析MCC/MNC列表"
+
+msgid "MCC/MNC database updated"
+msgstr "MCC/MNC 数据库更新"
+
+msgid "Failed to update MCC/MNC database"
+msgstr "无法更新 MCC/MNC 数据库"
+
+msgid "MCC/MNC update already running"
+msgstr "MCC/MNC 更新已在运行"
+
+msgid "MCC/MNC update started"
+msgstr "MCC/MNC更新开始"
+
+msgid "operator selection sent"
+msgstr "已发送运营商选择"
+
+msgid "internet check started"
+msgstr "互联网检查开始"
+
+msgid "modem reboot started"
+msgstr "调制解调器重新启动开始"
+
+msgid "service restarted"
+msgstr "服务已重新启动"
+
+msgid "Modem info updated"
+msgstr "调制解调器信息已更新"
+
+msgid "Modem did not respond"
+msgstr "调制解调器没有响应"
+
+msgid "Checks internet connectivity and reboots the Quectel modem when the connection is lost."
+msgstr "检查互联网连接并在连接丢失时重新启动移远调制解调器。"
+
+msgid "Service settings"
+msgstr "服务设置"
+
+msgid "Enable service"
+msgstr "启用服务"
+
+msgid "Check interval (seconds)"
+msgstr "检查间隔（秒）"
+
+msgid "Failures before modem reboot"
+msgstr "调制解调器重新启动前出现故障"
+
+msgid "Ping hosts"
+msgstr "Ping 主机"
+
+msgid "Space-separated list. Internet is considered up if at least one host responds."
+msgstr "以空格分隔的列表。如果至少有一台主机响应，则认为互联网可用。"
+
+msgid "Also require DNS resolution"
+msgstr "还需要DNS解析"
+
+msgid "DNS name to resolve"
+msgstr "要解析的 DNS 名称"
+
+msgid "Also require an HTTP request"
+msgstr "还需要 HTTP 请求"
+
+msgid "HTTP URL"
+msgstr "HTTP URL"
+
+msgid "WAN interface"
+msgstr "广域网接口"
+
+msgid "The device name is read from network.<iface>.device."
+msgstr "设备名称是从network.<iface>.device 读取的。"
+
+msgid "AT serial port"
+msgstr "AT串口"
+
+msgid "Detected USB/ACM serial ports. For Quectel EC200A use /dev/ttyUSB2; /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "检测到 USB/ACM 串行端口。对于移远EC200A，使用/dev/ttyUSB2； /dev/ttyUSB0 是诊断端口，不响应 AT 命令。"
+
+msgid "AT port baud rate"
+msgstr "AT口波特率"
+
+msgid "Modem reboot method"
+msgstr "调制解调器重启方法"
+
+msgid "AT+CFUN=1,1 (recommended)"
+msgstr "AT+CFUN=1,1（推荐）"
+
+msgid "USB re-bind (best effort)"
+msgstr "USB 重新绑定（尽力而为）"
+
+msgid "Wait after reboot (seconds)"
+msgstr "重启后等待（秒）"
+
+msgid "Collect modem information"
+msgstr "收集调制解调器信息"
+
+msgid "Reads model, firmware, IMEI, signal, operator and temperature via AT commands."
+msgstr "通过 AT 命令读取型号、固件、IMEI、信号、操作员和温度。"
+
+msgid "Modem info interval (seconds)"
+msgstr "调制解调器信息间隔（秒）"
+
+msgid "How often to query the modem with AT commands. Keep it longer if other modem tools use the same serial port."
+msgstr "使用 AT 命令查询调制解调器的频率。如果其他调制解调器工具使用相同的串行端口，请保留更长的时间。"
+
+msgid "Signal refresh interval (seconds)"
+msgstr "信号刷新间隔（秒）"
+
+msgid "Pause between signal page updates. The actual update also includes the modem response time."
+msgstr "信号页面更新之间暂停。实际更新还包括调制解调器响应时间。"
+
+msgid "Safety"
+msgstr "安全"
+
+msgid "Maximum reboots per window"
+msgstr "每个窗口的最大重新启动次数"
+
+msgid "Set to 0 for unlimited. The limit prevents reboot loops."
+msgstr "设置为 0 表示无限制。该限制可防止重新启动循环。"
+
+msgid "Reboot window (seconds)"
+msgstr "重启窗口（秒）"
+
+msgid "Cooldown between reboots (seconds)"
+msgstr "重新启动之间的冷却时间（秒）"
+
+msgid "Logging"
+msgstr "日志记录"
+
+msgid "Log level"
+msgstr "日志级别"
+
+msgid "Error"
+msgstr "错误"
+
+msgid "Warning"
+msgstr "警报"
+
+msgid "Info"
+msgstr "信息"
+
+msgid "Debug"
+msgstr "调试"
+
+msgid "Remote access warning"
+msgstr "远程访问警告"
+
+msgid "This service reboots only the modem, not the router. If the modem is the only WAN, internet and remote access will be down during the reboot. Do not change USB mode, APN or band settings remotely without a rollback plan."
+msgstr "此服务仅重新启动调制解调器，而不重新启动路由器。如果调制解调器是唯一的 WAN，则互联网和远程访问将在重新启动期间关闭。如果没有回滚计划，请勿远程更改 USB 模式、APN 或频段设置。"
+
+msgid "Service"
+msgstr "服务"
+
+msgid "State"
+msgstr "状态"
+
+msgid "Last check"
+msgstr "最后检查"
+
+msgid "Last success"
+msgstr "最后的成功"
+
+msgid "Last failure"
+msgstr "最后一次失败"
+
+msgid "Failures"
+msgstr "失败"
+
+msgid "Modem reboots"
+msgstr "调制解调器重新启动"
+
+msgid "last"
+msgstr "最后"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "Data transferred"
+msgstr "数据传输"
+
+msgid "Ping / DNS / HTTP"
+msgstr "平/DNS/HTTP"
+
+msgid "Latency"
+msgstr "延迟"
+
+msgid "Modem"
+msgstr "调制解调器"
+
+msgid "Firmware"
+msgstr "固件"
+
+msgid "IMEI"
+msgstr "IMEI"
+
+msgid "Operator / network"
+msgstr "运营商/网络"
+
+msgid "Modem temperature"
+msgstr "调制解调器温度"
+
+msgid "Service uptime"
+msgstr "服务正常运行时间"
+
+msgid "LTE quality"
+msgstr "LTE 质量"
+
+msgid "CSQ"
+msgstr "CSQ"
+
+msgid "RSSI"
+msgstr "RSSI"
+
+msgid "RSRP"
+msgstr "RSRP"
+
+msgid "SINR"
+msgstr "SINR"
+
+msgid "RSRQ"
+msgstr "RSRQ"
+
+msgid "Band"
+msgstr "频段"
+
+msgid "Check now"
+msgstr "立即查看"
+
+msgid "Refresh modem info"
+msgstr "刷新调制解调器信息"
+
+msgid "Reboot modem"
+msgstr "重新启动调制解调器"
+
+msgid "Restart service"
+msgstr "重启服务"
+
+msgid "yes"
+msgstr "是"
+
+msgid "no"
+msgstr "否"
+
+msgid "online"
+msgstr "在线"
+
+msgid "offline"
+msgstr "离线"
+
+msgid "rebooting"
+msgstr "重新启动"
+
+msgid "checking"
+msgstr "检查"
+
+msgid "disabled"
+msgstr "已禁用"
+
+msgid "starting"
+msgstr "开始"
+
+msgid "stopped"
+msgstr "停止了"
+
+msgid "error"
+msgstr "错误"
+
+msgid "running"
+msgstr "跑步"
+
+msgid "Failed to read status"
+msgstr "读取状态失败"
+
+msgid "Reading modem data"
+msgstr "读取调制解调器数据"
+
+msgid "Failed to read modem data"
+msgstr "无法读取调制解调器数据"
+
+msgid "Check started"
+msgstr "检查开始"
+
+msgid "Check failed"
+msgstr "检查失败"
+
+msgid "Reboot the modem now? Internet will be down for about"
+msgstr "现在重新启动调制解调器吗？互联网将关闭约"
+
+msgid "seconds."
+msgstr "秒。"
+
+msgid "Modem reboot started"
+msgstr "调制解调器重新启动开始"
+
+msgid "Reboot failed"
+msgstr "重启失败"
+
+msgid "Restart the modemwatch service?"
+msgstr "重新启动调制解调器服务？"
+
+msgid "Service restarted"
+msgstr "服务已重启"
+
+msgid "Restart failed"
+msgstr "重启失败"
+
+msgid "Signal strength (RSRQ)"
+msgstr "信号强度 (RSRQ)"
+
+msgid "Operator"
+msgstr "运营商"
+
+msgid "Network"
+msgstr "网络"
+
+msgid "Last update"
+msgstr "最后更新"
+
+msgid "Refresh interval"
+msgstr "刷新间隔"
+
+msgid "seconds"
+msgstr "秒"
+
+msgid "Signal Strength"
+msgstr "信号强度"
+
+msgid "Received Signal Strength Indicator"
+msgstr "接收信号强度指示器"
+
+msgid "Reference Signal Receive Power"
+msgstr "参考信号接收功率"
+
+msgid "Signal to Interference plus Noise Ratio"
+msgstr "信号干扰加噪声比"
+
+msgid "Reference Signal Received Quality"
+msgstr "参考信号接收质量"
+
+msgid "Refresh now"
+msgstr "立即刷新"
+
+msgid "Pause"
+msgstr "暂停"
+
+msgid "Busy"
+msgstr "忙"
+
+msgid "AT port not found"
+msgstr "未找到 AT 端口"
+
+msgid "No response from modem"
+msgstr "调制解调器没有响应"
+
+msgid "Failed to read signal"
+msgstr "读取信号失败"
+
+msgid "Resume"
+msgstr "简历"
+
+msgid "Refresh log"
+msgstr "刷新日志"
+
+msgid "Auto-refresh"
+msgstr "自动刷新"
+
+msgid "(empty)"
+msgstr "（空）"
+
+msgid "Updated"
+msgstr "已更新"
+
+msgid "Failed to read log"
+msgstr "读取日志失败"
+
+msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
+msgstr "AT 命令可以更改调制解调器设置，并可能断开互联网或 SSH。在没有回滚计划的情况下，请勿远程更改 USB 模式、APN、频段或网络模式。"
+
+msgid "Expert mode — allow changing USB mode and NAT"
+msgstr "专家模式 — 允许更改 USB 模式和 NAT"
+
+msgid "Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan."
+msgstr "更改 USB 模式可以断开调制解调器和 SSH。 Use only with local access or a rollback plan."
+
+msgid "Selected AT port"
+msgstr "选定的 AT 端口"
+
+msgid "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 是诊断端口，不响应 AT 命令。"
+
+msgid "Current configuration"
+msgstr "当前配置"
+
+msgid "Read current configuration"
+msgstr "读取当前配置"
+
+msgid "Modem information"
+msgstr "调制解调器信息"
+
+msgid "Model"
+msgstr "型号"
+
+msgid "SIM status"
+msgstr "SIM 卡状态"
+
+msgid "Temperature"
+msgstr "温度"
+
+msgid "Access Point Name (APN)"
+msgstr "接入点名称 (APN)"
+
+msgid "Username"
+msgstr "用户名"
+
+msgid "Password"
+msgstr "密码"
+
+msgid "Authentication"
+msgstr "身份认证"
+
+msgid "None"
+msgstr "无"
+
+msgid "PDP type"
+msgstr "等离子显示型"
+
+msgid "Read APN"
+msgstr "读取接入点"
+
+msgid "Apply APN"
+msgstr "申请接入点"
+
+msgid "Network mode"
+msgstr "网络模式"
+
+msgid "Mode"
+msgstr "模式"
+
+msgid "Automatic"
+msgstr "自动"
+
+msgid "GSM only"
+msgstr "仅限 GSM"
+
+msgid "WCDMA only"
+msgstr "仅限WCDMA"
+
+msgid "LTE only"
+msgstr "仅限 LTE"
+
+msgid "Read mode"
+msgstr "阅读模式"
+
+msgid "Apply mode"
+msgstr "应用方式"
+
+msgid "Band configuration"
+msgstr "频段配置"
+
+msgid "Read bands"
+msgstr "读取波段"
+
+msgid "Select all"
+msgstr "选择全部"
+
+msgid "Restore default"
+msgstr "恢复默认值"
+
+msgid "Apply bands"
+msgstr "应用乐队"
+
+msgid "Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection."
+msgstr "选择您想要保持启用的 LTE 频段。应用可能会重新启动 WAN 并断开连接。"
+
+msgid "USB mode"
+msgstr "USB模式"
+
+msgid "Current value"
+msgstr "当前值"
+
+msgid "New value"
+msgstr "新价值"
+
+msgid "RMNET (QMI)"
+msgstr "RMNET (QMI)"
+
+msgid "not supported"
+msgstr "不支持"
+
+msgid "ECM (CDC Ethernet)"
+msgstr "ECM（CDC 以太网）"
+
+msgid "MBIM"
+msgstr "MBIM"
+
+msgid "RNDIS"
+msgstr "RNDIS"
+
+msgid "Apply USB mode"
+msgstr "应用USB模式"
+
+msgid "Read USB mode"
+msgstr "读取USB模式"
+
+msgid "Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem."
+msgstr "调制解调器固件不支持的模式将被禁用并标记为不支持。调制解调器自动检测支持的模式。"
+
+msgid "Apply NAT"
+msgstr "应用网络地址转换"
+
+msgid "Read NAT"
+msgstr "读取NAT"
+
+msgid "Raw AT command"
+msgstr "原始 AT 命令"
+
+msgid "AT command"
+msgstr "AT指令"
+
+msgid "Send"
+msgstr "发送"
+
+msgid "Sending"
+msgstr "发送"
+
+msgid "AT command failed"
+msgstr "AT命令失败"
+
+msgid "Reading APN"
+msgstr "读取APN"
+
+msgid "Failed to read APN"
+msgstr "读取 APN 失败"
+
+msgid "Reading settings"
+msgstr "阅读设置"
+
+msgid "Settings read"
+msgstr "设置读取"
+
+msgid "Failed to read settings"
+msgstr "无法读取设置"
+
+msgid "APN, username and password may contain only letters, digits, dot, hyphen and underscore."
+msgstr "APN、用户名和密码只能包含字母、数字、点、连字符和下划线。"
+
+msgid "Apply APN settings? The connection may drop."
+msgstr "应用 APN 设置？连接可能会断开。"
+
+msgid "Applying APN"
+msgstr "应用APN"
+
+msgid "APN applied. Reconnect or reboot the modem if needed."
+msgstr "应用了 APN。如果需要，重新连接或重新启动调制解调器。"
+
+msgid "Failed to apply APN"
+msgstr "申请APN失败"
+
+msgid "Apply network mode? The connection may drop."
+msgstr "应用网络模式？连接可能会断开。"
+
+msgid "Reading bands"
+msgstr "阅读乐队"
+
+msgid "Failed to read bands"
+msgstr "无法读取条带"
+
+msgid "No bands selected"
+msgstr "未选择乐队"
+
+msgid "Restore default bands?"
+msgstr "恢复默认频段？"
+
+msgid "Apply selected bands? The connection may drop."
+msgstr "应用选定的频段？连接可能会断开。"
+
+msgid "Applying bands"
+msgstr "应用乐队"
+
+msgid "Failed to apply bands"
+msgstr "应用频段失败"
+
+msgid "USB mode is read-only in this UI."
+msgstr "USB 模式在此 UI 中是只读的。"
+
+msgid "This USB mode is not supported by the modem firmware."
+msgstr "调制解调器固件不支持此 USB 模式。"
+
+msgid "Change USB mode? The modem will re-enumerate and the connection may drop. Continue?"
+msgstr "更改USB模式？调制解调器将重新枚举并且连接可能会断开。继续？"
+
+msgid "Change NAT mode? The connection may drop."
+msgstr "更改NAT模式？连接可能会断开。"
+
+msgid "Current operator"
+msgstr "当前操作员"
+
+msgid "AT port"
+msgstr "AT端口"
+
+msgid "Scan networks"
+msgstr "扫描网络"
+
+msgid "Automatic operator selection"
+msgstr "自动操作员选择"
+
+msgid "Stop scan"
+msgstr "停止扫描"
+
+msgid "Update MCC/MNC database"
+msgstr "更新MCC/MNC数据库"
+
+msgid "Country"
+msgstr "国家"
+
+msgid "MCC/MNC"
+msgstr "MCC/MNC"
+
+msgid "Technology"
+msgstr "技术"
+
+msgid "Action"
+msgstr "操作"
+
+msgid "Raw scan output"
+msgstr "原始扫描输出"
+
+msgid "current"
+msgstr "当前"
+
+msgid "available"
+msgstr "可用"
+
+msgid "forbidden"
+msgstr "禁止的"
+
+msgid "unknown"
+msgstr "未知"
+
+msgid "Select"
+msgstr "选择"
+
+msgid "MCC/MNC database updated."
+msgstr "MCC/MNC 数据库已更新。"
+
+msgid "Not updated yet"
+msgstr "尚未更新"
+
+msgid "Failed to read MCC/MNC update status"
+msgstr "无法读取 MCC/MNC 更新状态"
+
+msgid "Updating MCC/MNC database"
+msgstr "更新MCC/MNC数据库"
+
+msgid "Scanning networks... This may take up to two minutes."
+msgstr "正在扫描网络...这最多可能需要两分钟。"
+
+msgid "Scan complete."
+msgstr "扫描完成。"
+
+msgid "Modem is busy. Try again later."
+msgstr "调制解调器正忙。稍后再试。"
+
+msgid "Scan failed"
+msgstr "扫描失败"
+
+msgid "Not scanned yet."
+msgstr "还没有扫描。"
+
+msgid "Failed to read scan status"
+msgstr "无法读取扫描状态"
+
+msgid "Stopping scan"
+msgstr "停止扫描"
+
+msgid "Network scan stopped"
+msgstr "网络扫描已停止"
+
+msgid "Failed to stop scan"
+msgstr "无法停止扫描"
+
+msgid "Starting network scan"
+msgstr "开始网络扫描"
+
+msgid "Network scan started"
+msgstr "网络扫描开始"
+
+msgid "Failed to start scan"
+msgstr "无法开始扫描"
+
+msgid "Select operator"
+msgstr "选择运营商"
+
+msgid "The connection may drop."
+msgstr "连接可能会断开。"
+
+msgid "Selecting operator"
+msgstr "选择操作员"
+
+msgid "Operator selection sent"
+msgstr "已发送运营商选择"
+
+msgid "Failed to select operator"
+msgstr "选择运营商失败"
+
+msgid "Use automatic operator selection?"
+msgstr "使用自动操作员选择？"
+
+msgid "Selecting automatic mode"
+msgstr "选择自动模式"

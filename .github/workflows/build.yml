@@ -36,12 +36,19 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Collect package list
+        run: |
+          pkgs="modemwatch luci-app-modemwatch"
+          for dir in i18n/luci-i18n-modemwatch-*; do
+            [ -d "$dir" ] && pkgs="$pkgs $(basename "$dir")"
+          done
+          echo "PACKAGES=$pkgs" >> "$GITHUB_ENV"
+
       - name: Build packages with OpenWrt SDK
         uses: openwrt/gh-action-sdk@main
         env:
           ARCH: ${{ matrix.arch }}-${{ matrix.version }}
           FEEDNAME: modemwatch
-          PACKAGES: modemwatch luci-app-modemwatch luci-i18n-modemwatch-uk
           NO_SHFMT_CHECK: 1
 
       - name: Upload modemwatch package
@@ -58,11 +65,11 @@ jobs:
           path: bin/packages/**/luci-app-modemwatch*.${{ matrix.format }}
           if-no-files-found: error
 
-      - name: Upload Ukrainian translation package
+      - name: Upload translation packages
         uses: actions/upload-artifact@v4
         with:
-          name: luci-i18n-modemwatch-uk-${{ matrix.version }}-all
-          path: bin/packages/**/luci-i18n-modemwatch-uk*.${{ matrix.format }}
+          name: luci-i18n-modemwatch-${{ matrix.version }}-all
+          path: bin/packages/**/luci-i18n-modemwatch-*.${{ matrix.format }}
           if-no-files-found: error
 
       - name: Upload version bundle
@@ -72,7 +79,7 @@ jobs:
           path: |
             bin/packages/**/modemwatch*.${{ matrix.format }}
             bin/packages/**/luci-app-modemwatch*.${{ matrix.format }}
-            bin/packages/**/luci-i18n-modemwatch-uk*.${{ matrix.format }}
+            bin/packages/**/luci-i18n-modemwatch-*.${{ matrix.format }}
           if-no-files-found: error
 
   release:

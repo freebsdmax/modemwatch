@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-modemwatch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 00:00+0000\n"
+"PO-Revision-Date: 2026-11-10 00:00+0000\n"
+"Last-Translator: modemwatch contributors\n"
+"Language-Team: Nederlands (Dutch)\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgid "Modem LTE 4G"
+msgstr "Modem LTE 4G"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Signal"
+msgstr "Signaal"
+
+msgid "Log"
+msgstr "Log"
+
+msgid "Modem settings"
+msgstr "Modeminstellingen"
+
+msgid "Network search"
+msgstr "Netwerk zoeken"
+
+msgid "Settings"
+msgstr "Instellingen"
+
+msgid "invalid token"
+msgstr "ongeldig token"
+
+msgid "empty AT command"
+msgstr "lege AT-opdracht"
+
+msgid "invalid band selection"
+msgstr "ongeldige bandselectie"
+
+msgid "Band settings sent"
+msgstr "Bandinstellingen verzonden"
+
+msgid "network scan started"
+msgstr "netwerkscan gestart"
+
+msgid "network scan stopped"
+msgstr "netwerkscan gestopt"
+
+msgid "invalid operator"
+msgstr "ongeldige operator"
+
+msgid "Downloading MCC/MNC list"
+msgstr "MCC/MNC-lijst downloaden"
+
+msgid "Parsing MCC/MNC list"
+msgstr "MCC/MNC-lijst parseren"
+
+msgid "MCC/MNC database updated"
+msgstr "MCC/MNC-database bijgewerkt"
+
+msgid "Failed to update MCC/MNC database"
+msgstr "Kan de MCC/MNC-database niet bijwerken"
+
+msgid "MCC/MNC update already running"
+msgstr "MCC/MNC-update wordt al uitgevoerd"
+
+msgid "MCC/MNC update started"
+msgstr "MCC/MNC-update gestart"
+
+msgid "operator selection sent"
+msgstr "operatorselectie verzonden"
+
+msgid "internet check started"
+msgstr "internetcontrole gestart"
+
+msgid "modem reboot started"
+msgstr "modem opnieuw opstarten gestart"
+
+msgid "service restarted"
+msgstr "dienst opnieuw gestart"
+
+msgid "Modem info updated"
+msgstr "Modemgegevens bijgewerkt"
+
+msgid "Modem did not respond"
+msgstr "Modem reageerde niet"
+
+msgid "Checks internet connectivity and reboots the Quectel modem when the connection is lost."
+msgstr "Controleert de internetverbinding en start het Quectel-modem opnieuw op wanneer de verbinding verloren gaat."
+
+msgid "Service settings"
+msgstr "Service-instellingen"
+
+msgid "Enable service"
+msgstr "Dienst inschakelen"
+
+msgid "Check interval (seconds)"
+msgstr "Controle-interval (seconden)"
+
+msgid "Failures before modem reboot"
+msgstr "Fouten voordat het modem opnieuw opstart"
+
+msgid "Ping hosts"
+msgstr "Ping-hosts"
+
+msgid "Space-separated list. Internet is considered up if at least one host responds."
+msgstr "Door spaties gescheiden lijst. Internet wordt overwogen als ten minste één host reageert."
+
+msgid "Also require DNS resolution"
+msgstr "Vereist ook DNS-resolutie"
+
+msgid "DNS name to resolve"
+msgstr "DNS-naam om op te lossen"
+
+msgid "Also require an HTTP request"
+msgstr "Vereist ook een HTTP-verzoek"
+
+msgid "HTTP URL"
+msgstr "HTTP URL"
+
+msgid "WAN interface"
+msgstr "WAN-interface"
+
+msgid "The device name is read from network.<iface>.device."
+msgstr "De apparaatnaam wordt gelezen uit netwerk.<iface>.device."
+
+msgid "AT serial port"
+msgstr "AT-seriële poort"
+
+msgid "Detected USB/ACM serial ports. For Quectel EC200A use /dev/ttyUSB2; /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Gedetecteerde USB/ACM seriële poorten. Gebruik voor Quectel EC200A /dev/ttyUSB2; /dev/ttyUSB0 is de diagnostische poort en beantwoordt geen AT-opdrachten."
+
+msgid "AT port baud rate"
+msgstr "Baudrate van AT-poort"
+
+msgid "Modem reboot method"
+msgstr "Methode voor het opnieuw opstarten van de modem"
+
+msgid "AT+CFUN=1,1 (recommended)"
+msgstr "AT+CFUN=1,1 (aanbevolen)"
+
+msgid "USB re-bind (best effort)"
+msgstr "USB opnieuw binden (beste poging)"
+
+msgid "Wait after reboot (seconds)"
+msgstr "Wacht na opnieuw opstarten (seconden)"
+
+msgid "Collect modem information"
+msgstr "Verzamel modeminformatie"
+
+msgid "Reads model, firmware, IMEI, signal, operator and temperature via AT commands."
+msgstr "Leest model, firmware, IMEI, signaal, operator en temperatuur via AT-opdrachten."
+
+msgid "Modem info interval (seconds)"
+msgstr "Modem-info-interval (seconden)"
+
+msgid "How often to query the modem with AT commands. Keep it longer if other modem tools use the same serial port."
+msgstr "Hoe vaak de modem moet worden opgevraagd met AT-opdrachten. Bewaar deze langer als andere modemtools dezelfde seriële poort gebruiken."
+
+msgid "Signal refresh interval (seconds)"
+msgstr "Signaalvernieuwingsinterval (seconden)"
+
+msgid "Pause between signal page updates. The actual update also includes the modem response time."
+msgstr "Pauzeer tussen signaalpagina-updates. De daadwerkelijke update omvat ook de responstijd van de modem."
+
+msgid "Safety"
+msgstr "Veiligheid"
+
+msgid "Maximum reboots per window"
+msgstr "Maximaal opnieuw opstarten per venster"
+
+msgid "Set to 0 for unlimited. The limit prevents reboot loops."
+msgstr "Stel in op 0 voor onbeperkt. De limiet voorkomt herstartlussen."
+
+msgid "Reboot window (seconds)"
+msgstr "Herstartvenster (seconden)"
+
+msgid "Cooldown between reboots (seconds)"
+msgstr "Afkoeltijd tussen opnieuw opstarten (seconden)"
+
+msgid "Logging"
+msgstr "Logboekregistratie"
+
+msgid "Log level"
+msgstr "Log level"
+
+msgid "Error"
+msgstr "Fout"
+
+msgid "Warning"
+msgstr "Warning"
+
+msgid "Info"
+msgstr "Info"
+
+msgid "Debug"
+msgstr "Debuggen"
+
+msgid "Remote access warning"
+msgstr "Waarschuwing voor toegang op afstand"
+
+msgid "This service reboots only the modem, not the router. If the modem is the only WAN, internet and remote access will be down during the reboot. Do not change USB mode, APN or band settings remotely without a rollback plan."
+msgstr "Deze service start alleen de modem opnieuw op, niet de router. Als de modem het enige WAN is, zijn internet en externe toegang uitgeschakeld tijdens het opnieuw opstarten. Wijzig de USB-modus, APN of bandinstellingen niet op afstand zonder een rollback-plan."
+
+msgid "Service"
+msgstr "Dienst"
+
+msgid "State"
+msgstr "State"
+
+msgid "Last check"
+msgstr "Laatste controle"
+
+msgid "Last success"
+msgstr "Laatste succes"
+
+msgid "Last failure"
+msgstr "Laatste mislukking"
+
+msgid "Failures"
+msgstr "Mislukkingen"
+
+msgid "Modem reboots"
+msgstr "Modem wordt opnieuw opgestart"
+
+msgid "last"
+msgstr "laatste"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "Data transferred"
+msgstr "Gegevens overgedragen"
+
+msgid "Ping / DNS / HTTP"
+msgstr "Ping/DNS/HTTP"
+
+msgid "Latency"
+msgstr "Latency"
+
+msgid "Modem"
+msgstr "Modem"
+
+msgid "Firmware"
+msgstr "Firmware"
+
+msgid "IMEI"
+msgstr "IMEI"
+
+msgid "Operator / network"
+msgstr "Exploitant / netwerk"
+
+msgid "Modem temperature"
+msgstr "Modemtemperatuur"
+
+msgid "Service uptime"
+msgstr "Service-uptime"
+
+msgid "LTE quality"
+msgstr "LTE-kwaliteit"
+
+msgid "CSQ"
+msgstr "CSQ"
+
+msgid "RSSI"
+msgstr "RSSI"
+
+msgid "RSRP"
+msgstr "RSRP"
+
+msgid "SINR"
+msgstr "SINR"
+
+msgid "RSRQ"
+msgstr "RSRQ"
+
+msgid "Band"
+msgstr "Band"
+
+msgid "Check now"
+msgstr "Controleer nu"
+
+msgid "Refresh modem info"
+msgstr "Modeminfo vernieuwen"
+
+msgid "Reboot modem"
+msgstr "Modem opnieuw opstarten"
+
+msgid "Restart service"
+msgstr "Start de dienst opnieuw"
+
+msgid "yes"
+msgstr "ja"
+
+msgid "no"
+msgstr "nee"
+
+msgid "online"
+msgstr "online"
+
+msgid "offline"
+msgstr "offline"
+
+msgid "rebooting"
+msgstr "opnieuw opstarten"
+
+msgid "checking"
+msgstr "controleren"
+
+msgid "disabled"
+msgstr "uitgeschakeld"
+
+msgid "starting"
+msgstr "starten"
+
+msgid "stopped"
+msgstr "gestopt"
+
+msgid "error"
+msgstr "fout"
+
+msgid "running"
+msgstr "rennen"
+
+msgid "Failed to read status"
+msgstr "Kan de status niet lezen"
+
+msgid "Reading modem data"
+msgstr "Modemgegevens lezen"
+
+msgid "Failed to read modem data"
+msgstr "Kan modemgegevens niet lezen"
+
+msgid "Check started"
+msgstr "Controle gestart"
+
+msgid "Check failed"
+msgstr "Controle mislukt"
+
+msgid "Reboot the modem now? Internet will be down for about"
+msgstr "Modem nu opnieuw opstarten? Internet zal ongeveer uitvallen"
+
+msgid "seconds."
+msgstr "seconden."
+
+msgid "Modem reboot started"
+msgstr "Modem opnieuw opstarten gestart"
+
+msgid "Reboot failed"
+msgstr "Opnieuw opstarten mislukt"
+
+msgid "Restart the modemwatch service?"
+msgstr "De modemwatch-service opnieuw starten?"
+
+msgid "Service restarted"
+msgstr "Dienst opnieuw gestart"
+
+msgid "Restart failed"
+msgstr "Opnieuw opstarten mislukt"
+
+msgid "Signal strength (RSRQ)"
+msgstr "Signaalsterkte (RSRQ)"
+
+msgid "Operator"
+msgstr "Operator"
+
+msgid "Network"
+msgstr "Netwerk"
+
+msgid "Last update"
+msgstr "Laatste update"
+
+msgid "Refresh interval"
+msgstr "Vernieuwingsinterval"
+
+msgid "seconds"
+msgstr "seconden"
+
+msgid "Signal Strength"
+msgstr "Signaalsterkte"
+
+msgid "Received Signal Strength Indicator"
+msgstr "Ontvangen signaalsterkte-indicator"
+
+msgid "Reference Signal Receive Power"
+msgstr "Referentiesignaal Ontvangstvermogen"
+
+msgid "Signal to Interference plus Noise Ratio"
+msgstr "Signaal-interferentie plus ruisverhouding"
+
+msgid "Reference Signal Received Quality"
+msgstr "Referentiesignaal ontvangen kwaliteit"
+
+msgid "Refresh now"
+msgstr "Vernieuw nu"
+
+msgid "Pause"
+msgstr "Pauze"
+
+msgid "Busy"
+msgstr "Bezet"
+
+msgid "AT port not found"
+msgstr "AT-poort niet gevonden"
+
+msgid "No response from modem"
+msgstr "Geen reactie van modem"
+
+msgid "Failed to read signal"
+msgstr "Kan het signaal niet lezen"
+
+msgid "Resume"
+msgstr "Hervatten"
+
+msgid "Refresh log"
+msgstr "Logboek vernieuwen"
+
+msgid "Auto-refresh"
+msgstr "Automatisch vernieuwen"
+
+msgid "(empty)"
+msgstr "(leeg)"
+
+msgid "Updated"
+msgstr "Bijgewerkt"
+
+msgid "Failed to read log"
+msgstr "Kan het logboek niet lezen"
+
+msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
+msgstr "AT-opdrachten kunnen de modeminstellingen wijzigen en kunnen de verbinding met internet of SSH verbreken. Wijzig de USB-modus, APN, band- of netwerkmodus niet op afstand zonder een rollback-plan."
+
+msgid "Expert mode — allow changing USB mode and NAT"
+msgstr "Expertmodus — hiermee kunt u de USB-modus en NAT wijzigen"
+
+msgid "Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan."
+msgstr "Als u de USB-modus wijzigt, kunnen de modem en SSH worden losgekoppeld. Alleen gebruiken met lokale toegang of een rollback-abonnement."
+
+msgid "Selected AT port"
+msgstr "Geselecteerde AT-poort"
+
+msgid "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Gebruik voor Quectel EC200A /dev/ttyUSB2. /dev/ttyUSB0 is de diagnostische poort en beantwoordt geen AT-opdrachten."
+
+msgid "Current configuration"
+msgstr "Huidige configuratie"
+
+msgid "Read current configuration"
+msgstr "Lees huidige configuratie"
+
+msgid "Modem information"
+msgstr "Modeminformatie"
+
+msgid "Model"
+msgstr "Model"
+
+msgid "SIM status"
+msgstr "SIM-status"
+
+msgid "Temperature"
+msgstr "Temperatuur"
+
+msgid "Access Point Name (APN)"
+msgstr "Naam toegangspunt (APN)"
+
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+msgid "Password"
+msgstr "Wachtwoord"
+
+msgid "Authentication"
+msgstr "Authenticatie"
+
+msgid "None"
+msgstr "Geen"
+
+msgid "PDP type"
+msgstr "PDP-type"
+
+msgid "Read APN"
+msgstr "Lees APN"
+
+msgid "Apply APN"
+msgstr "APN toepassen"
+
+msgid "Network mode"
+msgstr "Netwerkmodus"
+
+msgid "Mode"
+msgstr "Modus"
+
+msgid "Automatic"
+msgstr "Automatisch"
+
+msgid "GSM only"
+msgstr "Alleen GSM"
+
+msgid "WCDMA only"
+msgstr "Alleen WCDMA"
+
+msgid "LTE only"
+msgstr "Alleen LTE"
+
+msgid "Read mode"
+msgstr "Leesmodus"
+
+msgid "Apply mode"
+msgstr "Toepassingsmodus"
+
+msgid "Band configuration"
+msgstr "Bandconfiguratie"
+
+msgid "Read bands"
+msgstr "Banden lezen"
+
+msgid "Select all"
+msgstr "Selecteer alles"
+
+msgid "Restore default"
+msgstr "Standaard herstellen"
+
+msgid "Apply bands"
+msgstr "Bandjes aanbrengen"
+
+msgid "Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection."
+msgstr "Selecteer de LTE-banden die u ingeschakeld wilt houden. Als u een aanvraag indient, wordt het WAN mogelijk opnieuw opgestart en wordt de verbinding verbroken."
+
+msgid "USB mode"
+msgstr "USB-modus"
+
+msgid "Current value"
+msgstr "Huidige waarde"
+
+msgid "New value"
+msgstr "Nieuwe waarde"
+
+msgid "RMNET (QMI)"
+msgstr "RMNET (QMI)"
+
+msgid "not supported"
+msgstr "niet ondersteund"
+
+msgid "ECM (CDC Ethernet)"
+msgstr "ECM (CDC Ethernet)"
+
+msgid "MBIM"
+msgstr "MBIM"
+
+msgid "RNDIS"
+msgstr "RNDIS"
+
+msgid "Apply USB mode"
+msgstr "Pas de USB-modus toe"
+
+msgid "Read USB mode"
+msgstr "USB-modus lezen"
+
+msgid "Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem."
+msgstr "Modi die niet door de modemfirmware worden ondersteund, worden uitgeschakeld en gemarkeerd als niet ondersteund. Ondersteunde modi worden automatisch door de modem gedetecteerd."
+
+msgid "Apply NAT"
+msgstr "NAT toepassen"
+
+msgid "Read NAT"
+msgstr "Lees NAT"
+
+msgid "Raw AT command"
+msgstr "Ruw AT-commando"
+
+msgid "AT command"
+msgstr "AT-commando"
+
+msgid "Send"
+msgstr "Verzenden"
+
+msgid "Sending"
+msgstr "Verzenden"
+
+msgid "AT command failed"
+msgstr "AT-opdracht mislukt"
+
+msgid "Reading APN"
+msgstr "APN lezen"
+
+msgid "Failed to read APN"
+msgstr "Kan APN niet lezen"
+
+msgid "Reading settings"
+msgstr "Instellingen lezen"
+
+msgid "Settings read"
+msgstr "Instellingen gelezen"
+
+msgid "Failed to read settings"
+msgstr "Kan instellingen niet lezen"
+
+msgid "APN, username and password may contain only letters, digits, dot, hyphen and underscore."
+msgstr "APN, gebruikersnaam en wachtwoord mogen alleen letters, cijfers, punten, koppelteken en onderstrepingstekens bevatten."
+
+msgid "Apply APN settings? The connection may drop."
+msgstr "APN-instellingen toepassen? De verbinding kan wegvallen."
+
+msgid "Applying APN"
+msgstr "APN toepassen"
+
+msgid "APN applied. Reconnect or reboot the modem if needed."
+msgstr "APN toegepast. Sluit de modem indien nodig opnieuw aan of start deze opnieuw op."
+
+msgid "Failed to apply APN"
+msgstr "Kan APN niet toepassen"
+
+msgid "Apply network mode? The connection may drop."
+msgstr "Netwerkmodus toepassen? De verbinding kan wegvallen."
+
+msgid "Reading bands"
+msgstr "Bandjes lezen"
+
+msgid "Failed to read bands"
+msgstr "Kan de banden niet lezen"
+
+msgid "No bands selected"
+msgstr "Geen bands geselecteerd"
+
+msgid "Restore default bands?"
+msgstr "Standaardbanden herstellen?"
+
+msgid "Apply selected bands? The connection may drop."
+msgstr "Geselecteerde banden toepassen? De verbinding kan wegvallen."
+
+msgid "Applying bands"
+msgstr "Bandjes aanbrengen"
+
+msgid "Failed to apply bands"
+msgstr "Het is niet gelukt om banden toe te passen"
+
+msgid "USB mode is read-only in this UI."
+msgstr "De USB-modus is alleen-lezen in deze gebruikersinterface."
+
+msgid "This USB mode is not supported by the modem firmware."
+msgstr "Deze USB-modus wordt niet ondersteund door de modemfirmware."
+
+msgid "Change USB mode? The modem will re-enumerate and the connection may drop. Continue?"
+msgstr "USB-modus wijzigen? De modem zal opnieuw inventariseren en de verbinding kan wegvallen. Doorgaan?"
+
+msgid "Change NAT mode? The connection may drop."
+msgstr "NAT-modus wijzigen? De verbinding kan wegvallen."
+
+msgid "Current operator"
+msgstr "Huidige exploitant"
+
+msgid "AT port"
+msgstr "AT-poort"
+
+msgid "Scan networks"
+msgstr "Netwerken scannen"
+
+msgid "Automatic operator selection"
+msgstr "Automatische operatorselectie"
+
+msgid "Stop scan"
+msgstr "Stop met scannen"
+
+msgid "Update MCC/MNC database"
+msgstr "MCC/MNC-database bijwerken"
+
+msgid "Country"
+msgstr "Land"
+
+msgid "MCC/MNC"
+msgstr "MCC/MNC"
+
+msgid "Technology"
+msgstr "Technologie"
+
+msgid "Action"
+msgstr "Action"
+
+msgid "Raw scan output"
+msgstr "Ruwe scanuitvoer"
+
+msgid "current"
+msgstr "actueel"
+
+msgid "available"
+msgstr "beschikbaar"
+
+msgid "forbidden"
+msgstr "verboden"
+
+msgid "unknown"
+msgstr "onbekend"
+
+msgid "Select"
+msgstr "Select"
+
+msgid "MCC/MNC database updated."
+msgstr "MCC/MNC-database bijgewerkt."
+
+msgid "Not updated yet"
+msgstr "Nog niet bijgewerkt"
+
+msgid "Failed to read MCC/MNC update status"
+msgstr "Kan de MCC/MNC-updatestatus niet lezen"
+
+msgid "Updating MCC/MNC database"
+msgstr "MCC/MNC-database bijwerken"
+
+msgid "Scanning networks... This may take up to two minutes."
+msgstr "Netwerken scannen... Dit kan maximaal twee minuten duren."
+
+msgid "Scan complete."
+msgstr "Scannen voltooid."
+
+msgid "Modem is busy. Try again later."
+msgstr "Modem is bezet. Probeer het later opnieuw."
+
+msgid "Scan failed"
+msgstr "Scannen mislukt"
+
+msgid "Not scanned yet."
+msgstr "Nog niet gescand."
+
+msgid "Failed to read scan status"
+msgstr "Kan de scanstatus niet lezen"
+
+msgid "Stopping scan"
+msgstr "Scannen stoppen"
+
+msgid "Network scan stopped"
+msgstr "Netwerkscan gestopt"
+
+msgid "Failed to stop scan"
+msgstr "Kan het scannen niet stoppen"
+
+msgid "Starting network scan"
+msgstr "Netwerkscan starten"
+
+msgid "Network scan started"
+msgstr "Netwerkscan gestart"
+
+msgid "Failed to start scan"
+msgstr "Kan het scannen niet starten"
+
+msgid "Select operator"
+msgstr "Operator selecteren"
+
+msgid "The connection may drop."
+msgstr "De verbinding kan wegvallen."
+
+msgid "Selecting operator"
+msgstr "Operator selecteren"
+
+msgid "Operator selection sent"
+msgstr "Operatorselectie verzonden"
+
+msgid "Failed to select operator"
+msgstr "Kan operator niet selecteren"
+
+msgid "Use automatic operator selection?"
+msgstr "Automatische operatorselectie gebruiken?"
+
+msgid "Selecting automatic mode"
+msgstr "Automatische modus selecteren"

@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-modemwatch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 00:00+0000\n"
+"PO-Revision-Date: 2026-11-10 00:00+0000\n"
+"Last-Translator: modemwatch contributors\n"
+"Language-Team: Latviešu (Latvian)\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Modem LTE 4G"
+msgstr "Modems LTE 4G"
+
+msgid "Status"
+msgstr "Statuss"
+
+msgid "Signal"
+msgstr "Signāls"
+
+msgid "Log"
+msgstr "Žurnāls"
+
+msgid "Modem settings"
+msgstr "Modema iestatījumi"
+
+msgid "Network search"
+msgstr "Tīkla meklēšana"
+
+msgid "Settings"
+msgstr "Iestatījumi"
+
+msgid "invalid token"
+msgstr "nederīgs marķieris"
+
+msgid "empty AT command"
+msgstr "tukša AT komanda"
+
+msgid "invalid band selection"
+msgstr "nederīga joslas izvēle"
+
+msgid "Band settings sent"
+msgstr "Joslas iestatījumi ir nosūtīti"
+
+msgid "network scan started"
+msgstr "sākta tīkla skenēšana"
+
+msgid "network scan stopped"
+msgstr "tīkla skenēšana apturēta"
+
+msgid "invalid operator"
+msgstr "nederīgs operators"
+
+msgid "Downloading MCC/MNC list"
+msgstr "Notiek KC/MNC saraksta lejupielāde"
+
+msgid "Parsing MCC/MNC list"
+msgstr "Notiek KC/MNC saraksta parsēšana"
+
+msgid "MCC/MNC database updated"
+msgstr "KC/MNC datu bāze atjaunināta"
+
+msgid "Failed to update MCC/MNC database"
+msgstr "Neizdevās atjaunināt KC/MNC datu bāzi"
+
+msgid "MCC/MNC update already running"
+msgstr "KC/MNC atjauninājums jau darbojas"
+
+msgid "MCC/MNC update started"
+msgstr "Sākta KC/MNC atjaunināšana"
+
+msgid "operator selection sent"
+msgstr "operatora izvēle nosūtīta"
+
+msgid "internet check started"
+msgstr "interneta pārbaude sākta"
+
+msgid "modem reboot started"
+msgstr "sākās modema atsāknēšana"
+
+msgid "service restarted"
+msgstr "pakalpojums ir restartēts"
+
+msgid "Modem info updated"
+msgstr "Modema informācija atjaunināta"
+
+msgid "Modem did not respond"
+msgstr "Modems neatbildēja"
+
+msgid "Checks internet connectivity and reboots the Quectel modem when the connection is lost."
+msgstr "Pārbauda interneta savienojumu un pārstartē Quectel modemu, kad savienojums tiek zaudēts."
+
+msgid "Service settings"
+msgstr "Pakalpojuma iestatījumi"
+
+msgid "Enable service"
+msgstr "Iespējot pakalpojumu"
+
+msgid "Check interval (seconds)"
+msgstr "Pārbaudes intervāls (sekundēs)"
+
+msgid "Failures before modem reboot"
+msgstr "Kļūmes pirms modema atsāknēšanas"
+
+msgid "Ping hosts"
+msgstr "Ping saimnieki"
+
+msgid "Space-separated list. Internet is considered up if at least one host responds."
+msgstr "Ar atstarpi atdalīts saraksts. Internets tiek uzskatīts par atvērtu, ja atbild vismaz viens saimniekdators."
+
+msgid "Also require DNS resolution"
+msgstr "Nepieciešama arī DNS izšķirtspēja"
+
+msgid "DNS name to resolve"
+msgstr "DNS nosaukums, kas jāatrisina"
+
+msgid "Also require an HTTP request"
+msgstr "Nepieciešams arī HTTP pieprasījums"
+
+msgid "HTTP URL"
+msgstr "HTTP URL"
+
+msgid "WAN interface"
+msgstr "WAN interfeiss"
+
+msgid "The device name is read from network.<iface>.device."
+msgstr "Ierīces nosaukums tiek nolasīts no tīkla.<iface>.device."
+
+msgid "AT serial port"
+msgstr "AT seriālajā portā"
+
+msgid "Detected USB/ACM serial ports. For Quectel EC200A use /dev/ttyUSB2; /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Konstatēti USB/ACM seriālie porti. Quectel EC200A izmantojiet /dev/ttyUSB2; /dev/ttyUSB0 ir diagnostikas ports un neatbild uz AT komandām."
+
+msgid "AT port baud rate"
+msgstr "AT porta datu pārraides ātrums"
+
+msgid "Modem reboot method"
+msgstr "Modema atsāknēšanas metode"
+
+msgid "AT+CFUN=1,1 (recommended)"
+msgstr "AT+CFUN=1,1 (ieteicams)"
+
+msgid "USB re-bind (best effort)"
+msgstr "USB atkārtota saistīšana (labākais mēģinājums)"
+
+msgid "Wait after reboot (seconds)"
+msgstr "Pagaidiet pēc atsāknēšanas (sekundes)"
+
+msgid "Collect modem information"
+msgstr "Savākt informāciju par modemu"
+
+msgid "Reads model, firmware, IMEI, signal, operator and temperature via AT commands."
+msgstr "Nolasa modeli, programmaparatūru, IMEI, signālu, operatoru un temperatūru, izmantojot AT komandas."
+
+msgid "Modem info interval (seconds)"
+msgstr "Modema informācijas intervāls (sekundēs)"
+
+msgid "How often to query the modem with AT commands. Keep it longer if other modem tools use the same serial port."
+msgstr "Cik bieži vaicāt modemu ar AT komandām. Saglabājiet to ilgāk, ja citi modema rīki izmanto to pašu seriālo portu."
+
+msgid "Signal refresh interval (seconds)"
+msgstr "Signāla atsvaidzināšanas intervāls (sekundēs)"
+
+msgid "Pause between signal page updates. The actual update also includes the modem response time."
+msgstr "Pauze starp signāla lapas atjauninājumiem. Faktiskais atjauninājums ietver arī modema reakcijas laiku."
+
+msgid "Safety"
+msgstr "Drošība"
+
+msgid "Maximum reboots per window"
+msgstr "Maksimālais atsāknēšanas reižu skaits vienā logā"
+
+msgid "Set to 0 for unlimited. The limit prevents reboot loops."
+msgstr "Iestatiet uz 0 neierobežotam. Ierobežojums novērš atsāknēšanas cilpas."
+
+msgid "Reboot window (seconds)"
+msgstr "Atsāknēšanas logs (sekundēs)"
+
+msgid "Cooldown between reboots (seconds)"
+msgstr "Atdzesēšana starp atsāknēšanu (sekundēs)"
+
+msgid "Logging"
+msgstr "Mežizstrāde"
+
+msgid "Log level"
+msgstr "Baļķu līmenis"
+
+msgid "Error"
+msgstr "Kļūda"
+
+msgid "Warning"
+msgstr "Brīdinājums"
+
+msgid "Info"
+msgstr "Informācija"
+
+msgid "Debug"
+msgstr "Atkļūdošana"
+
+msgid "Remote access warning"
+msgstr "Attālās piekļuves brīdinājums"
+
+msgid "This service reboots only the modem, not the router. If the modem is the only WAN, internet and remote access will be down during the reboot. Do not change USB mode, APN or band settings remotely without a rollback plan."
+msgstr "Šis pakalpojums pārstartē tikai modemu, nevis maršrutētāju. Ja modems ir vienīgais WAN, atsāknēšanas laikā internets un attālā piekļuve nedarbosies. Nemainiet USB režīma, APN vai joslas iestatījumus attālināti bez atcelšanas plāna."
+
+msgid "Service"
+msgstr "Serviss"
+
+msgid "State"
+msgstr "valsts"
+
+msgid "Last check"
+msgstr "Pēdējā pārbaude"
+
+msgid "Last success"
+msgstr "Pēdējais panākums"
+
+msgid "Last failure"
+msgstr "Pēdējā neveiksme"
+
+msgid "Failures"
+msgstr "Neveiksmes"
+
+msgid "Modem reboots"
+msgstr "Modems tiek restartēts"
+
+msgid "last"
+msgstr "pēdējais"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "Data transferred"
+msgstr "Dati pārsūtīti"
+
+msgid "Ping / DNS / HTTP"
+msgstr "Ping / DNS / HTTP"
+
+msgid "Latency"
+msgstr "Latentums"
+
+msgid "Modem"
+msgstr "Modems"
+
+msgid "Firmware"
+msgstr "Programmaparatūra"
+
+msgid "IMEI"
+msgstr "IMEI"
+
+msgid "Operator / network"
+msgstr "Operators / tīkls"
+
+msgid "Modem temperature"
+msgstr "Modema temperatūra"
+
+msgid "Service uptime"
+msgstr "Pakalpojuma darbības laiks"
+
+msgid "LTE quality"
+msgstr "LTE kvalitāte"
+
+msgid "CSQ"
+msgstr "CSQ"
+
+msgid "RSSI"
+msgstr "RSSI"
+
+msgid "RSRP"
+msgstr "RSRP"
+
+msgid "SINR"
+msgstr "SINR"
+
+msgid "RSRQ"
+msgstr "RSRQ"
+
+msgid "Band"
+msgstr "Grupa"
+
+msgid "Check now"
+msgstr "Pārbaudiet tūlīt"
+
+msgid "Refresh modem info"
+msgstr "Atsvaidziniet modema informāciju"
+
+msgid "Reboot modem"
+msgstr "Pārstartējiet modemu"
+
+msgid "Restart service"
+msgstr "Restartējiet pakalpojumu"
+
+msgid "yes"
+msgstr "jā"
+
+msgid "no"
+msgstr "nē"
+
+msgid "online"
+msgstr "tiešsaistē"
+
+msgid "offline"
+msgstr "bezsaistē"
+
+msgid "rebooting"
+msgstr "pārstartēšana"
+
+msgid "checking"
+msgstr "pārbaudot"
+
+msgid "disabled"
+msgstr "invalīds"
+
+msgid "starting"
+msgstr "sākot"
+
+msgid "stopped"
+msgstr "apstājās"
+
+msgid "error"
+msgstr "kļūda"
+
+msgid "running"
+msgstr "skrienot"
+
+msgid "Failed to read status"
+msgstr "Neizdevās nolasīt statusu"
+
+msgid "Reading modem data"
+msgstr "Modema datu lasīšana"
+
+msgid "Failed to read modem data"
+msgstr "Neizdevās nolasīt modema datus"
+
+msgid "Check started"
+msgstr "Pārbaude sākta"
+
+msgid "Check failed"
+msgstr "Pārbaude neizdevās"
+
+msgid "Reboot the modem now? Internet will be down for about"
+msgstr "Vai tagad pārstartēt modemu? Internets nedarbosies uz aptuveni"
+
+msgid "seconds."
+msgstr "sekundes."
+
+msgid "Modem reboot started"
+msgstr "Sākta modema atsāknēšana"
+
+msgid "Reboot failed"
+msgstr "Atsāknēšana neizdevās"
+
+msgid "Restart the modemwatch service?"
+msgstr "Vai restartēt modema pulksteņa pakalpojumu?"
+
+msgid "Service restarted"
+msgstr "Pakalpojums ir restartēts"
+
+msgid "Restart failed"
+msgstr "Restartēšana neizdevās"
+
+msgid "Signal strength (RSRQ)"
+msgstr "Signāla stiprums (RSRQ)"
+
+msgid "Operator"
+msgstr "Operators"
+
+msgid "Network"
+msgstr "Tīkls"
+
+msgid "Last update"
+msgstr "Pēdējais atjauninājums"
+
+msgid "Refresh interval"
+msgstr "Atsvaidzināšanas intervāls"
+
+msgid "seconds"
+msgstr "sekundes"
+
+msgid "Signal Strength"
+msgstr "Signāla stiprums"
+
+msgid "Received Signal Strength Indicator"
+msgstr "Saņemtā signāla stipruma indikators"
+
+msgid "Reference Signal Receive Power"
+msgstr "Atsauces signāla saņemšanas jauda"
+
+msgid "Signal to Interference plus Noise Ratio"
+msgstr "Signāla un traucējumu plus trokšņu attiecība"
+
+msgid "Reference Signal Received Quality"
+msgstr "Saņemtā atsauces signāla kvalitāte"
+
+msgid "Refresh now"
+msgstr "Atsvaidziniet tūlīt"
+
+msgid "Pause"
+msgstr "Pauze"
+
+msgid "Busy"
+msgstr "Aizņemts"
+
+msgid "AT port not found"
+msgstr "AT ports nav atrasts"
+
+msgid "No response from modem"
+msgstr "No modema nav atbildes"
+
+msgid "Failed to read signal"
+msgstr "Neizdevās nolasīt signālu"
+
+msgid "Resume"
+msgstr "Atsākt"
+
+msgid "Refresh log"
+msgstr "Atsvaidzināt žurnālu"
+
+msgid "Auto-refresh"
+msgstr "Automātiska atsvaidzināšana"
+
+msgid "(empty)"
+msgstr "(tukšs)"
+
+msgid "Updated"
+msgstr "Atjaunināts"
+
+msgid "Failed to read log"
+msgstr "Neizdevās nolasīt žurnālu"
+
+msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
+msgstr "AT komandas var mainīt modema iestatījumus un atvienot internetu vai SSH. Nemainiet USB režīmu, APN, joslas vai tīkla režīmu attālināti bez atcelšanas plāna."
+
+msgid "Expert mode — allow changing USB mode and NAT"
+msgstr "Ekspertu režīms — ļauj mainīt USB režīmu un NAT"
+
+msgid "Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan."
+msgstr "Mainot USB režīmu, var atvienot modemu un SSH. Izmantojiet tikai ar vietējo piekļuvi vai atcelšanas plānu."
+
+msgid "Selected AT port"
+msgstr "Atlasīts AT ports"
+
+msgid "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Quectel EC200A izmantojiet /dev/ttyUSB2. /dev/ttyUSB0 ir diagnostikas ports un neatbild uz AT komandām."
+
+msgid "Current configuration"
+msgstr "Pašreizējā konfigurācija"
+
+msgid "Read current configuration"
+msgstr "Lasīt pašreizējo konfigurāciju"
+
+msgid "Modem information"
+msgstr "Modema informācija"
+
+msgid "Model"
+msgstr "Modelis"
+
+msgid "SIM status"
+msgstr "SIM statuss"
+
+msgid "Temperature"
+msgstr "Temperatūra"
+
+msgid "Access Point Name (APN)"
+msgstr "Piekļuves punkta nosaukums (APN)"
+
+msgid "Username"
+msgstr "Lietotājvārds"
+
+msgid "Password"
+msgstr "Parole"
+
+msgid "Authentication"
+msgstr "Autentifikācija"
+
+msgid "None"
+msgstr "Nav"
+
+msgid "PDP type"
+msgstr "PDP veids"
+
+msgid "Read APN"
+msgstr "Lasīt APN"
+
+msgid "Apply APN"
+msgstr "Lietot APN"
+
+msgid "Network mode"
+msgstr "Tīkla režīms"
+
+msgid "Mode"
+msgstr "Režīms"
+
+msgid "Automatic"
+msgstr "Automātiski"
+
+msgid "GSM only"
+msgstr "Tikai GSM"
+
+msgid "WCDMA only"
+msgstr "Tikai WCDMA"
+
+msgid "LTE only"
+msgstr "Tikai LTE"
+
+msgid "Read mode"
+msgstr "Lasīšanas režīms"
+
+msgid "Apply mode"
+msgstr "Lietot režīmu"
+
+msgid "Band configuration"
+msgstr "Joslas konfigurācija"
+
+msgid "Read bands"
+msgstr "Lasīt joslas"
+
+msgid "Select all"
+msgstr "Atlasiet visu"
+
+msgid "Restore default"
+msgstr "Atjaunot noklusējuma iestatījumus"
+
+msgid "Apply bands"
+msgstr "Uzklājiet lentes"
+
+msgid "Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection."
+msgstr "Atlasiet LTE joslas, kuras vēlaties paturēt iespējotas. Pieteikšanās var restartēt WAN un pārtraukt savienojumu."
+
+msgid "USB mode"
+msgstr "USB režīms"
+
+msgid "Current value"
+msgstr "Pašreizējā vērtība"
+
+msgid "New value"
+msgstr "Jauna vērtība"
+
+msgid "RMNET (QMI)"
+msgstr "RMNET (QMI)"
+
+msgid "not supported"
+msgstr "nav atbalstīts"
+
+msgid "ECM (CDC Ethernet)"
+msgstr "ECM (CDC Ethernet)"
+
+msgid "MBIM"
+msgstr "MBIM"
+
+msgid "RNDIS"
+msgstr "RNDIS"
+
+msgid "Apply USB mode"
+msgstr "Lietot USB režīmu"
+
+msgid "Read USB mode"
+msgstr "Lasīt USB režīmu"
+
+msgid "Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem."
+msgstr "Režīmi, kurus neatbalsta modema programmaparatūra, ir atspējoti un atzīmēti kā neatbalstīti. Atbalstītie režīmi tiek automātiski noteikti no modema."
+
+msgid "Apply NAT"
+msgstr "Piesakies NAT"
+
+msgid "Read NAT"
+msgstr "Izlasiet NAT"
+
+msgid "Raw AT command"
+msgstr "Neapstrādāta AT komanda"
+
+msgid "AT command"
+msgstr "AT komanda"
+
+msgid "Send"
+msgstr "Sūtīt"
+
+msgid "Sending"
+msgstr "Nosūtīšana"
+
+msgid "AT command failed"
+msgstr "AT komanda neizdevās"
+
+msgid "Reading APN"
+msgstr "APN lasīšana"
+
+msgid "Failed to read APN"
+msgstr "Neizdevās nolasīt APN"
+
+msgid "Reading settings"
+msgstr "Lasīšanas iestatījumi"
+
+msgid "Settings read"
+msgstr "Iestatījumi lasīti"
+
+msgid "Failed to read settings"
+msgstr "Neizdevās nolasīt iestatījumus"
+
+msgid "APN, username and password may contain only letters, digits, dot, hyphen and underscore."
+msgstr "APN, lietotājvārds un parole var saturēt tikai burtus, ciparus, punktu, defisi un pasvītrojumu."
+
+msgid "Apply APN settings? The connection may drop."
+msgstr "Vai lietot APN iestatījumus? Savienojums var pārtraukties."
+
+msgid "Applying APN"
+msgstr "APN lietošana"
+
+msgid "APN applied. Reconnect or reboot the modem if needed."
+msgstr "Lietots APN. Ja nepieciešams, pievienojiet vai restartējiet modemu."
+
+msgid "Failed to apply APN"
+msgstr "Neizdevās lietot APN"
+
+msgid "Apply network mode? The connection may drop."
+msgstr "Vai lietot tīkla režīmu? Savienojums var pārtraukties."
+
+msgid "Reading bands"
+msgstr "Lasīšanas joslas"
+
+msgid "Failed to read bands"
+msgstr "Neizdevās nolasīt joslas"
+
+msgid "No bands selected"
+msgstr "Nav atlasīta neviena grupa"
+
+msgid "Restore default bands?"
+msgstr "Vai atjaunot noklusējuma joslas?"
+
+msgid "Apply selected bands? The connection may drop."
+msgstr "Vai lietot atlasītās joslas? Savienojums var pārtraukties."
+
+msgid "Applying bands"
+msgstr "Joslu uzlikšana"
+
+msgid "Failed to apply bands"
+msgstr "Neizdevās lietot joslas"
+
+msgid "USB mode is read-only in this UI."
+msgstr "USB režīms šajā lietotāja saskarnē ir tikai lasāms."
+
+msgid "This USB mode is not supported by the modem firmware."
+msgstr "Modema programmaparatūra neatbalsta šo USB režīmu."
+
+msgid "Change USB mode? The modem will re-enumerate and the connection may drop. Continue?"
+msgstr "Vai mainīt USB režīmu? Modems tiks uzskaitīts atkārtoti, un savienojums var pārtraukties. Vai turpināt?"
+
+msgid "Change NAT mode? The connection may drop."
+msgstr "Vai mainīt NAT režīmu? Savienojums var pārtraukties."
+
+msgid "Current operator"
+msgstr "Pašreizējais operators"
+
+msgid "AT port"
+msgstr "AT ostā"
+
+msgid "Scan networks"
+msgstr "Skenēt tīklus"
+
+msgid "Automatic operator selection"
+msgstr "Automātiska operatora izvēle"
+
+msgid "Stop scan"
+msgstr "Pārtraukt skenēšanu"
+
+msgid "Update MCC/MNC database"
+msgstr "Atjauniniet KC/MNC datu bāzi"
+
+msgid "Country"
+msgstr "Valsts"
+
+msgid "MCC/MNC"
+msgstr "MCC/MNC"
+
+msgid "Technology"
+msgstr "Tehnoloģija"
+
+msgid "Action"
+msgstr "Darbība"
+
+msgid "Raw scan output"
+msgstr "Neapstrādāta skenēšanas izvade"
+
+msgid "current"
+msgstr "strāva"
+
+msgid "available"
+msgstr "pieejams"
+
+msgid "forbidden"
+msgstr "aizliegts"
+
+msgid "unknown"
+msgstr "nezināms"
+
+msgid "Select"
+msgstr "Izvēlieties"
+
+msgid "MCC/MNC database updated."
+msgstr "KC/MNC datu bāze ir atjaunināta."
+
+msgid "Not updated yet"
+msgstr "Vēl nav atjaunināts"
+
+msgid "Failed to read MCC/MNC update status"
+msgstr "Neizdevās nolasīt KC/MNC atjaunināšanas statusu"
+
+msgid "Updating MCC/MNC database"
+msgstr "KC/MNC datu bāzes atjaunināšana"
+
+msgid "Scanning networks... This may take up to two minutes."
+msgstr "Notiek tīklu meklēšana... Tas var ilgt līdz divām minūtēm."
+
+msgid "Scan complete."
+msgstr "Skenēšana pabeigta."
+
+msgid "Modem is busy. Try again later."
+msgstr "Modems ir aizņemts. Vēlāk mēģiniet vēlreiz."
+
+msgid "Scan failed"
+msgstr "Skenēšana neizdevās"
+
+msgid "Not scanned yet."
+msgstr "Vēl nav skenēts."
+
+msgid "Failed to read scan status"
+msgstr "Neizdevās nolasīt skenēšanas statusu"
+
+msgid "Stopping scan"
+msgstr "Skenēšanas apturēšana"
+
+msgid "Network scan stopped"
+msgstr "Tīkla skenēšana apturēta"
+
+msgid "Failed to stop scan"
+msgstr "Neizdevās apturēt skenēšanu"
+
+msgid "Starting network scan"
+msgstr "Tiek sākta tīkla skenēšana"
+
+msgid "Network scan started"
+msgstr "Sākta tīkla skenēšana"
+
+msgid "Failed to start scan"
+msgstr "Neizdevās sākt skenēšanu"
+
+msgid "Select operator"
+msgstr "Izvēlieties operatoru"
+
+msgid "The connection may drop."
+msgstr "Savienojums var pārtraukties."
+
+msgid "Selecting operator"
+msgstr "Operatora izvēle"
+
+msgid "Operator selection sent"
+msgstr "Operatora izvēle nosūtīta"
+
+msgid "Failed to select operator"
+msgstr "Neizdevās atlasīt operatoru"
+
+msgid "Use automatic operator selection?"
+msgstr "Vai izmantot automātisko operatora izvēli?"
+
+msgid "Selecting automatic mode"
+msgstr "Automātiskā režīma izvēle"

@@ -12,13 +12,16 @@ if [ -z "$TAG" ]; then
 	exit 2
 fi
 
-human_size() {
-	bytes=$(wc -c < "$1" | tr -d ' ')
-	awk -v b="$bytes" 'BEGIN {
+human_bytes() {
+	awk -v b="$1" 'BEGIN {
 		if (b >= 1048576) printf "%.1f MB", b / 1048576;
 		else if (b >= 1024) printf "%.1f KB", b / 1024;
 		else printf "%d B", b;
 	}'
+}
+
+human_size() {
+	human_bytes "$(wc -c < "$1" | tr -d ' ')"
 }
 
 pkg_file() {
@@ -92,6 +95,9 @@ ${changes}
 
 EOF
 
+lang_table=$(awk -F'|' '!/^#/ && NF >= 3 { printf "| `%s` | %s |\n", $1, $3 }' scripts/languages.txt)
+lang_count=$(awk -F'|' '!/^#/ && NF >= 3 { n++ } END { print n + 0 }' scripts/languages.txt)
+
 for ver in $VERSIONS; do
 	case "$ver" in
 		25.12.6) ext="apk" ;;
@@ -103,7 +109,7 @@ for ver in $VERSIONS; do
 	echo "| Компонент | Файл | Розмір |"
 	echo "| --- | --- | ---: |"
 
-	for pkg in modemwatch luci-app-modemwatch luci-i18n-modemwatch-uk; do
+	for pkg in modemwatch luci-app-modemwatch; do
 		if ! file=$(pkg_file "$pkg" "$ver" "$ext"); then
 			echo "| $(pkg_desc "$pkg") | _відсутній_ | — |"
 			continue
@@ -111,13 +117,43 @@ for ver in $VERSIONS; do
 		echo "| $(pkg_desc "$pkg") | \`${file}\` | $(human_size "$RELEASE_DIR/$file") |"
 	done
 
+	if file=$(pkg_file "luci-i18n-modemwatch-uk" "$ver" "$ext"); then
+		echo "| Українська локалізація | \`${file}\` | $(human_size "$RELEASE_DIR/$file") |"
+	else
+		echo "| Українська локалізація | _відсутня_ | — |"
+	fi
+
 	tarball="modemwatch-${ver}-all.tar.gz"
 	if [ -f "$RELEASE_DIR/$tarball" ]; then
-		echo "| Усі три пакети одним архівом | \`${tarball}\` | $(human_size "$RELEASE_DIR/$tarball") |"
+		echo "| Усі пакети одним архівом | \`${tarball}\` | $(human_size "$RELEASE_DIR/$tarball") |"
 	fi
 
 	echo
+	echo "Окремо в релізі опубліковано лише українську локалізацію."
+	if [ "$lang_count" -gt 1 ]; then
+		echo "Пакети для решти $((lang_count - 1)) мов входять до \`${tarball}\`."
+	fi
+	echo
 done
+
+cat <<EOF
+## Мови перекладу
+
+Пакети перекладу доступні для **${lang_count} мов**. У релізі окремо
+опубліковано лише українську локалізацію (\`luci-i18n-modemwatch-uk\`),
+а пакети для решти мов входять до загального архіву
+\`modemwatch-<версія>-all.tar.gz\`.
+
+<details>
+<summary>Повний список мов</summary>
+
+| Код | Мова |
+| --- | --- |
+${lang_table}
+
+</details>
+
+EOF
 
 cat <<EOF
 ## Встановлення
@@ -134,7 +170,10 @@ opkg install modemwatch_24.10.8_*.ipk \\
   luci-i18n-modemwatch-uk_24.10.8_*.ipk
 \`\`\`
 
-Для 23.05 замініть \`24.10.8\` на \`23.05.6\`.
+Для 23.05 замініть \`24.10.8\` на \`23.05.6\`. Пакет \`luci-i18n-modemwatch-uk\`
+є окремим файлом у релізі. Пакети для інших мов входять до
+\`modemwatch-24.10.8-all.tar.gz\`: розпакуйте архів і встановіть потрібний
+\`luci-i18n-modemwatch-<lang>_...\`.
 
 ### OpenWrt 25.12 (\`.apk\`)
 
@@ -160,7 +199,7 @@ apk add --allow-untrusted modemwatch_25.12.6_*.apk \\
 | --- | --- |
 | \`modemwatch\` | \`picocom\`, \`sms-tool\`, \`ubus\` |
 | \`luci-app-modemwatch\` | \`modemwatch\`, \`luci-compat\`, \`luci-lua-runtime\`, \`luci-lib-jsonc\`, \`luci-lib-nixio\`, \`curl\`, \`ca-bundle\` |
-| \`luci-i18n-modemwatch-uk\` | \`luci-app-modemwatch\`, \`luci-base\` |
+| \`luci-i18n-modemwatch-<lang>\` | \`luci-app-modemwatch\`, \`luci-base\` |
 
 Пакетний менеджер підтягне залежності автоматично. Якщо чогось не
 вистачає, він покаже команду для встановлення, наприклад:

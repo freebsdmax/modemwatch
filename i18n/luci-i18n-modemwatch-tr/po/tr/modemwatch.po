@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-modemwatch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 00:00+0000\n"
+"PO-Revision-Date: 2026-11-10 00:00+0000\n"
+"Last-Translator: modemwatch contributors\n"
+"Language-Team: Türkçe (Turkish)\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Modem LTE 4G"
+msgstr "ModemLTE 4G"
+
+msgid "Status"
+msgstr "Durum"
+
+msgid "Signal"
+msgstr "Sinyal"
+
+msgid "Log"
+msgstr "Günlük"
+
+msgid "Modem settings"
+msgstr "Modem ayarları"
+
+msgid "Network search"
+msgstr "Ağ araması"
+
+msgid "Settings"
+msgstr "Ayarlar"
+
+msgid "invalid token"
+msgstr "geçersiz belirteç"
+
+msgid "empty AT command"
+msgstr "boş AT komutu"
+
+msgid "invalid band selection"
+msgstr "geçersiz bant seçimi"
+
+msgid "Band settings sent"
+msgstr "Bant ayarları gönderildi"
+
+msgid "network scan started"
+msgstr "ağ taraması başlatıldı"
+
+msgid "network scan stopped"
+msgstr "ağ taraması durduruldu"
+
+msgid "invalid operator"
+msgstr "geçersiz operatör"
+
+msgid "Downloading MCC/MNC list"
+msgstr "MM/MNC listesi indiriliyor"
+
+msgid "Parsing MCC/MNC list"
+msgstr "MM/MNC listesi ayrıştırılıyor"
+
+msgid "MCC/MNC database updated"
+msgstr "MM/MNC veritabanı güncellendi"
+
+msgid "Failed to update MCC/MNC database"
+msgstr "MCC/MNC veritabanı güncellenemedi"
+
+msgid "MCC/MNC update already running"
+msgstr "MM/MNC güncellemesi zaten çalışıyor"
+
+msgid "MCC/MNC update started"
+msgstr "MM/MNC güncellemesi başladı"
+
+msgid "operator selection sent"
+msgstr "operatör seçimi gönderildi"
+
+msgid "internet check started"
+msgstr "internet kontrolü başlatıldı"
+
+msgid "modem reboot started"
+msgstr "modem yeniden başlatma başlatıldı"
+
+msgid "service restarted"
+msgstr "hizmet yeniden başlatıldı"
+
+msgid "Modem info updated"
+msgstr "Modem bilgileri güncellendi"
+
+msgid "Modem did not respond"
+msgstr "Modem yanıt vermedi"
+
+msgid "Checks internet connectivity and reboots the Quectel modem when the connection is lost."
+msgstr "İnternet bağlantısını kontrol eder ve bağlantı kesildiğinde Quectel modemi yeniden başlatır."
+
+msgid "Service settings"
+msgstr "Hizmet ayarları"
+
+msgid "Enable service"
+msgstr "Hizmeti etkinleştir"
+
+msgid "Check interval (seconds)"
+msgstr "Kontrol aralığı (saniye)"
+
+msgid "Failures before modem reboot"
+msgstr "Modem yeniden başlatılmadan önceki hatalar"
+
+msgid "Ping hosts"
+msgstr "Ana bilgisayarlara ping at"
+
+msgid "Space-separated list. Internet is considered up if at least one host responds."
+msgstr "Boşlukla ayrılmış liste. En az bir ana bilgisayarın yanıt vermesi halinde İnternet'in çalıştığı kabul edilir."
+
+msgid "Also require DNS resolution"
+msgstr "Ayrıca DNS çözümlemesi gerektir"
+
+msgid "DNS name to resolve"
+msgstr "Çözümlenecek DNS adı"
+
+msgid "Also require an HTTP request"
+msgstr "Ayrıca bir HTTP isteği gerektir"
+
+msgid "HTTP URL"
+msgstr "HTTP URL"
+
+msgid "WAN interface"
+msgstr "WAN arayüzü"
+
+msgid "The device name is read from network.<iface>.device."
+msgstr "Cihaz adı ağdan okunur.<iface>.device."
+
+msgid "AT serial port"
+msgstr "AT seri bağlantı noktası"
+
+msgid "Detected USB/ACM serial ports. For Quectel EC200A use /dev/ttyUSB2; /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Algılanan USB/ACM seri bağlantı noktaları. Quectel EC200A için /dev/ttyUSB2'yi kullanın; /dev/ttyUSB0 tanılama bağlantı noktasıdır ve AT komutlarına yanıt vermez."
+
+msgid "AT port baud rate"
+msgstr "AT bağlantı noktası baud hızı"
+
+msgid "Modem reboot method"
+msgstr "Modem yeniden başlatma yöntemi"
+
+msgid "AT+CFUN=1,1 (recommended)"
+msgstr "AT+CFUN=1,1 (önerilir)"
+
+msgid "USB re-bind (best effort)"
+msgstr "USB yeniden bağlama (en iyi çaba)"
+
+msgid "Wait after reboot (seconds)"
+msgstr "Yeniden başlatmanın ardından bekleyin (saniye)"
+
+msgid "Collect modem information"
+msgstr "Modem bilgilerini topla"
+
+msgid "Reads model, firmware, IMEI, signal, operator and temperature via AT commands."
+msgstr "AT komutları aracılığıyla modeli, donanım yazılımını, IMEI'yi, sinyali, operatörü ve sıcaklığı okur."
+
+msgid "Modem info interval (seconds)"
+msgstr "Modem bilgi aralığı (saniye)"
+
+msgid "How often to query the modem with AT commands. Keep it longer if other modem tools use the same serial port."
+msgstr "AT komutlarıyla modemin ne sıklıkta sorgulanacağı. Diğer modem araçları aynı seri bağlantı noktasını kullanıyorsa daha uzun süre saklayın."
+
+msgid "Signal refresh interval (seconds)"
+msgstr "Sinyal yenileme aralığı (saniye)"
+
+msgid "Pause between signal page updates. The actual update also includes the modem response time."
+msgstr "Sinyal sayfası güncellemeleri arasında duraklayın. Gerçek güncelleme aynı zamanda modemin yanıt süresini de içerir."
+
+msgid "Safety"
+msgstr "Güvenlik"
+
+msgid "Maximum reboots per window"
+msgstr "Pencere başına maksimum yeniden başlatma"
+
+msgid "Set to 0 for unlimited. The limit prevents reboot loops."
+msgstr "Sınırsız için 0'a ayarlayın. Sınır, yeniden başlatma döngülerini önler."
+
+msgid "Reboot window (seconds)"
+msgstr "Yeniden başlatma penceresi (saniye)"
+
+msgid "Cooldown between reboots (seconds)"
+msgstr "Yeniden başlatmalar arasındaki bekleme süresi (saniye)"
+
+msgid "Logging"
+msgstr "Günlükleme"
+
+msgid "Log level"
+msgstr "Günlük seviyesi"
+
+msgid "Error"
+msgstr "Hata"
+
+msgid "Warning"
+msgstr "Warning"
+
+msgid "Info"
+msgstr "Bilgi"
+
+msgid "Debug"
+msgstr "Hata ayıklama"
+
+msgid "Remote access warning"
+msgstr "Uzaktan erişim uyarısı"
+
+msgid "This service reboots only the modem, not the router. If the modem is the only WAN, internet and remote access will be down during the reboot. Do not change USB mode, APN or band settings remotely without a rollback plan."
+msgstr "Bu hizmet yönlendiriciyi değil yalnızca modemi yeniden başlatır. Modem tek WAN ise, yeniden başlatma sırasında internet ve uzaktan erişim kapalı olacaktır. Geri alma planı olmadan USB modunu, APN'yi veya bant ayarlarını uzaktan değiştirmeyin."
+
+msgid "Service"
+msgstr "Hizmet"
+
+msgid "State"
+msgstr "Durum"
+
+msgid "Last check"
+msgstr "Son kontrol"
+
+msgid "Last success"
+msgstr "Son başarı"
+
+msgid "Last failure"
+msgstr "Son başarısızlık"
+
+msgid "Failures"
+msgstr "Başarısızlıklar"
+
+msgid "Modem reboots"
+msgstr "Modem yeniden başlatılıyor"
+
+msgid "last"
+msgstr "son"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "Data transferred"
+msgstr "Aktarılan veriler"
+
+msgid "Ping / DNS / HTTP"
+msgstr "Ping / DNS / HTTP"
+
+msgid "Latency"
+msgstr "Gecikme"
+
+msgid "Modem"
+msgstr "modem"
+
+msgid "Firmware"
+msgstr "Firmware"
+
+msgid "IMEI"
+msgstr "IMEI"
+
+msgid "Operator / network"
+msgstr "Operatör / ağ"
+
+msgid "Modem temperature"
+msgstr "Modem sıcaklığı"
+
+msgid "Service uptime"
+msgstr "Hizmetin çalışma süresi"
+
+msgid "LTE quality"
+msgstr "LTE kalitesi"
+
+msgid "CSQ"
+msgstr "CSQ"
+
+msgid "RSSI"
+msgstr "RSSI"
+
+msgid "RSRP"
+msgstr "RSRP"
+
+msgid "SINR"
+msgstr "SINR"
+
+msgid "RSRQ"
+msgstr "RSRQ"
+
+msgid "Band"
+msgstr "Bant"
+
+msgid "Check now"
+msgstr "Şimdi kontrol et"
+
+msgid "Refresh modem info"
+msgstr "Modem bilgilerini yenile"
+
+msgid "Reboot modem"
+msgstr "Modemi yeniden başlat"
+
+msgid "Restart service"
+msgstr "Hizmeti yeniden başlat"
+
+msgid "yes"
+msgstr "evet"
+
+msgid "no"
+msgstr "hayır"
+
+msgid "online"
+msgstr "çevrimiçi"
+
+msgid "offline"
+msgstr "çevrimdışı"
+
+msgid "rebooting"
+msgstr "yeniden başlatılıyor"
+
+msgid "checking"
+msgstr "kontrol etmek"
+
+msgid "disabled"
+msgstr "devre dışı bırakıldı"
+
+msgid "starting"
+msgstr "başlangıç"
+
+msgid "stopped"
+msgstr "durduruldu"
+
+msgid "error"
+msgstr "hata"
+
+msgid "running"
+msgstr "koşu"
+
+msgid "Failed to read status"
+msgstr "Durum okunamadı"
+
+msgid "Reading modem data"
+msgstr "Modem verilerini okuma"
+
+msgid "Failed to read modem data"
+msgstr "Modem verileri okunamadı"
+
+msgid "Check started"
+msgstr "Kontrol başlatıldı"
+
+msgid "Check failed"
+msgstr "Kontrol başarısız oldu"
+
+msgid "Reboot the modem now? Internet will be down for about"
+msgstr "Modem şimdi yeniden başlatılsın mı? İnternet yaklaşık bir süreliğine kapalı olacak"
+
+msgid "seconds."
+msgstr "saniye."
+
+msgid "Modem reboot started"
+msgstr "Modem yeniden başlatma başlatıldı"
+
+msgid "Reboot failed"
+msgstr "Yeniden başlatma başarısız oldu"
+
+msgid "Restart the modemwatch service?"
+msgstr "Modem izleme hizmeti yeniden başlatılsın mı?"
+
+msgid "Service restarted"
+msgstr "Hizmet yeniden başlatıldı"
+
+msgid "Restart failed"
+msgstr "Yeniden başlatma başarısız oldu"
+
+msgid "Signal strength (RSRQ)"
+msgstr "Sinyal gücü (RSRQ)"
+
+msgid "Operator"
+msgstr "Operatör"
+
+msgid "Network"
+msgstr "Ağ"
+
+msgid "Last update"
+msgstr "Son güncelleme"
+
+msgid "Refresh interval"
+msgstr "Yenileme aralığı"
+
+msgid "seconds"
+msgstr "saniye"
+
+msgid "Signal Strength"
+msgstr "Sinyal Gücü"
+
+msgid "Received Signal Strength Indicator"
+msgstr "Alınan Sinyal Gücü Göstergesi"
+
+msgid "Reference Signal Receive Power"
+msgstr "Referans Sinyali Alma Gücü"
+
+msgid "Signal to Interference plus Noise Ratio"
+msgstr "Sinyal/Parazit artı Gürültü Oranı"
+
+msgid "Reference Signal Received Quality"
+msgstr "Referans Sinyali Alınan Kalite"
+
+msgid "Refresh now"
+msgstr "Şimdi yenile"
+
+msgid "Pause"
+msgstr "Duraklat"
+
+msgid "Busy"
+msgstr "Meşgul"
+
+msgid "AT port not found"
+msgstr "AT bağlantı noktası bulunamadı"
+
+msgid "No response from modem"
+msgstr "Modemden yanıt gelmiyor"
+
+msgid "Failed to read signal"
+msgstr "Sinyal okunamadı"
+
+msgid "Resume"
+msgstr "Devam et"
+
+msgid "Refresh log"
+msgstr "Günlüğü yenile"
+
+msgid "Auto-refresh"
+msgstr "Otomatik yenileme"
+
+msgid "(empty)"
+msgstr "(boş)"
+
+msgid "Updated"
+msgstr "Güncellendi"
+
+msgid "Failed to read log"
+msgstr "Günlük okunamadı"
+
+msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
+msgstr "AT komutları modem ayarlarını değiştirebilir ve internet veya SSH bağlantısını kesebilir. Geri alma planı olmadan USB modunu, APN'yi, bant veya ağ modunu uzaktan değiştirmeyin."
+
+msgid "Expert mode — allow changing USB mode and NAT"
+msgstr "Uzman modu — USB modunun ve NAT'ın değiştirilmesine izin verir"
+
+msgid "Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan."
+msgstr "USB modunu değiştirmek modem ve SSH bağlantısını kesebilir. Yalnızca yerel erişimle veya geri alma planıyla kullanın."
+
+msgid "Selected AT port"
+msgstr "Seçilen AT bağlantı noktası"
+
+msgid "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Quectel EC200A için /dev/ttyUSB2 kullanın. /dev/ttyUSB0 tanılama bağlantı noktasıdır ve AT komutlarına yanıt vermez."
+
+msgid "Current configuration"
+msgstr "Mevcut yapılandırma"
+
+msgid "Read current configuration"
+msgstr "Geçerli yapılandırmayı oku"
+
+msgid "Modem information"
+msgstr "Modem bilgileri"
+
+msgid "Model"
+msgstr "Model"
+
+msgid "SIM status"
+msgstr "SIM durumu"
+
+msgid "Temperature"
+msgstr "Sıcaklık"
+
+msgid "Access Point Name (APN)"
+msgstr "Erişim Noktası Adı (APN)"
+
+msgid "Username"
+msgstr "Kullanıcı adı"
+
+msgid "Password"
+msgstr "Şifre"
+
+msgid "Authentication"
+msgstr "Kimlik Doğrulama"
+
+msgid "None"
+msgstr "Hiçbiri"
+
+msgid "PDP type"
+msgstr "PDP türü"
+
+msgid "Read APN"
+msgstr "APN'yi okuyun"
+
+msgid "Apply APN"
+msgstr "APN'yi uygula"
+
+msgid "Network mode"
+msgstr "Ağ modu"
+
+msgid "Mode"
+msgstr "Mod"
+
+msgid "Automatic"
+msgstr "Otomatik"
+
+msgid "GSM only"
+msgstr "Yalnızca GSM"
+
+msgid "WCDMA only"
+msgstr "Yalnızca WCDMA"
+
+msgid "LTE only"
+msgstr "Yalnızca LTE"
+
+msgid "Read mode"
+msgstr "Okuma modu"
+
+msgid "Apply mode"
+msgstr "Modu uygula"
+
+msgid "Band configuration"
+msgstr "Bant konfigürasyonu"
+
+msgid "Read bands"
+msgstr "Bantları oku"
+
+msgid "Select all"
+msgstr "Tümünü seç"
+
+msgid "Restore default"
+msgstr "Varsayılanı geri yükle"
+
+msgid "Apply bands"
+msgstr "Bantları uygula"
+
+msgid "Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection."
+msgstr "Etkin tutmak istediğiniz LTE bantlarını seçin. Uygulanması WAN'ı yeniden başlatabilir ve bağlantıyı kesebilir."
+
+msgid "USB mode"
+msgstr "USB modu"
+
+msgid "Current value"
+msgstr "Mevcut değer"
+
+msgid "New value"
+msgstr "Yeni değer"
+
+msgid "RMNET (QMI)"
+msgstr "RMNET (QMI)"
+
+msgid "not supported"
+msgstr "desteklenmiyor"
+
+msgid "ECM (CDC Ethernet)"
+msgstr "ECM (CDC Ethernet)"
+
+msgid "MBIM"
+msgstr "MBIM"
+
+msgid "RNDIS"
+msgstr "RNDIS"
+
+msgid "Apply USB mode"
+msgstr "USB modunu uygula"
+
+msgid "Read USB mode"
+msgstr "USB modunu oku"
+
+msgid "Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem."
+msgstr "Modem ürün yazılımı tarafından desteklenmeyen modlar devre dışı bırakılır ve desteklenmiyor olarak işaretlenir. Desteklenen modlar modem tarafından otomatik olarak algılanır."
+
+msgid "Apply NAT"
+msgstr "NAT'ı uygula"
+
+msgid "Read NAT"
+msgstr "NAT'ı oku"
+
+msgid "Raw AT command"
+msgstr "Ham AT komutu"
+
+msgid "AT command"
+msgstr "AT komutu"
+
+msgid "Send"
+msgstr "Gönder"
+
+msgid "Sending"
+msgstr "Gönderiliyor"
+
+msgid "AT command failed"
+msgstr "AT komutu başarısız oldu"
+
+msgid "Reading APN"
+msgstr "APN okuma"
+
+msgid "Failed to read APN"
+msgstr "APN okunamadı"
+
+msgid "Reading settings"
+msgstr "Okuma ayarları"
+
+msgid "Settings read"
+msgstr "Ayarlar okundu"
+
+msgid "Failed to read settings"
+msgstr "Ayarlar okunamadı"
+
+msgid "APN, username and password may contain only letters, digits, dot, hyphen and underscore."
+msgstr "APN, kullanıcı adı ve şifre yalnızca harf, rakam, nokta, tire ve alt çizgi içerebilir."
+
+msgid "Apply APN settings? The connection may drop."
+msgstr "APN ayarları uygulansın mı? Bağlantı kopabilir."
+
+msgid "Applying APN"
+msgstr "APN uygulanıyor"
+
+msgid "APN applied. Reconnect or reboot the modem if needed."
+msgstr "APN uygulandı. Gerekirse modemi yeniden bağlayın veya yeniden başlatın."
+
+msgid "Failed to apply APN"
+msgstr "APN uygulanamadı"
+
+msgid "Apply network mode? The connection may drop."
+msgstr "Ağ modu uygulansın mı? Bağlantı kopabilir."
+
+msgid "Reading bands"
+msgstr "Okuma grupları"
+
+msgid "Failed to read bands"
+msgstr "Gruplar okunamadı"
+
+msgid "No bands selected"
+msgstr "Hiçbir grup seçilmedi"
+
+msgid "Restore default bands?"
+msgstr "Varsayılan bantlar geri yüklensin mi?"
+
+msgid "Apply selected bands? The connection may drop."
+msgstr "Seçilen bantlar uygulansın mı? Bağlantı kopabilir."
+
+msgid "Applying bands"
+msgstr "Bantların uygulanması"
+
+msgid "Failed to apply bands"
+msgstr "Bantlar uygulanamadı"
+
+msgid "USB mode is read-only in this UI."
+msgstr "USB modu bu kullanıcı arayüzünde salt okunurdur."
+
+msgid "This USB mode is not supported by the modem firmware."
+msgstr "Bu USB modu modem donanım yazılımı tarafından desteklenmez."
+
+msgid "Change USB mode? The modem will re-enumerate and the connection may drop. Continue?"
+msgstr "USB modu değiştirilsin mi? Modem yeniden numaralandırılır ve bağlantı kesilebilir. Devam etmek?"
+
+msgid "Change NAT mode? The connection may drop."
+msgstr "NAT modu değiştirilsin mi? Bağlantı kopabilir."
+
+msgid "Current operator"
+msgstr "Mevcut operatör"
+
+msgid "AT port"
+msgstr "AT bağlantı noktası"
+
+msgid "Scan networks"
+msgstr "Ağları tara"
+
+msgid "Automatic operator selection"
+msgstr "Otomatik operatör seçimi"
+
+msgid "Stop scan"
+msgstr "Taramayı durdur"
+
+msgid "Update MCC/MNC database"
+msgstr "MCC/MNC veritabanını güncelleyin"
+
+msgid "Country"
+msgstr "Ülke"
+
+msgid "MCC/MNC"
+msgstr "MCC/MNC"
+
+msgid "Technology"
+msgstr "Teknoloji"
+
+msgid "Action"
+msgstr "Action"
+
+msgid "Raw scan output"
+msgstr "Ham tarama çıktısı"
+
+msgid "current"
+msgstr "akım"
+
+msgid "available"
+msgstr "mevcut"
+
+msgid "forbidden"
+msgstr "yasak"
+
+msgid "unknown"
+msgstr "bilinmeyen"
+
+msgid "Select"
+msgstr "Select"
+
+msgid "MCC/MNC database updated."
+msgstr "MCC/MNC veritabanı güncellendi."
+
+msgid "Not updated yet"
+msgstr "Henüz güncellenmedi"
+
+msgid "Failed to read MCC/MNC update status"
+msgstr "MM/MNC güncelleme durumu okunamadı"
+
+msgid "Updating MCC/MNC database"
+msgstr "MCC/MNC veri tabanı güncelleniyor"
+
+msgid "Scanning networks... This may take up to two minutes."
+msgstr "Ağlar taranıyor... Bu işlem iki dakika kadar sürebilir."
+
+msgid "Scan complete."
+msgstr "Tarama tamamlandı."
+
+msgid "Modem is busy. Try again later."
+msgstr "Modem meşgul. Daha sonra tekrar deneyin."
+
+msgid "Scan failed"
+msgstr "Tarama başarısız oldu"
+
+msgid "Not scanned yet."
+msgstr "Henüz taranmadı."
+
+msgid "Failed to read scan status"
+msgstr "Tarama durumu okunamadı"
+
+msgid "Stopping scan"
+msgstr "Taramayı durdurma"
+
+msgid "Network scan stopped"
+msgstr "Ağ taraması durduruldu"
+
+msgid "Failed to stop scan"
+msgstr "Tarama durdurulamadı"
+
+msgid "Starting network scan"
+msgstr "Ağ taraması başlatılıyor"
+
+msgid "Network scan started"
+msgstr "Ağ taraması başlatıldı"
+
+msgid "Failed to start scan"
+msgstr "Tarama başlatılamadı"
+
+msgid "Select operator"
+msgstr "Operatör seçin"
+
+msgid "The connection may drop."
+msgstr "Bağlantı kopabilir."
+
+msgid "Selecting operator"
+msgstr "Operatör seçimi"
+
+msgid "Operator selection sent"
+msgstr "Operatör seçimi gönderildi"
+
+msgid "Failed to select operator"
+msgstr "Operatör seçilemedi"
+
+msgid "Use automatic operator selection?"
+msgstr "Otomatik operatör seçimi kullanılsın mı?"
+
+msgid "Selecting automatic mode"
+msgstr "Otomatik modun seçilmesi"

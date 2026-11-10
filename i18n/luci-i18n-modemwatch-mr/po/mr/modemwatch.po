@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-modemwatch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 00:00+0000\n"
+"PO-Revision-Date: 2026-11-10 00:00+0000\n"
+"Last-Translator: modemwatch contributors\n"
+"Language-Team: मराठी (Marathi)\n"
+"Language: mr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+msgid "Modem LTE 4G"
+msgstr "मोडेम LTE 4G"
+
+msgid "Status"
+msgstr "स्थिती"
+
+msgid "Signal"
+msgstr "सिग्नल"
+
+msgid "Log"
+msgstr "लॉग"
+
+msgid "Modem settings"
+msgstr "मोडेम सेटिंग्ज"
+
+msgid "Network search"
+msgstr "नेटवर्क शोध"
+
+msgid "Settings"
+msgstr "सेटिंग्ज"
+
+msgid "invalid token"
+msgstr "अवैध टोकन"
+
+msgid "empty AT command"
+msgstr "रिक्त एटी कमांड"
+
+msgid "invalid band selection"
+msgstr "अवैध बँड निवड"
+
+msgid "Band settings sent"
+msgstr "बँड सेटिंग्ज पाठवली"
+
+msgid "network scan started"
+msgstr "नेटवर्क स्कॅन सुरू झाले"
+
+msgid "network scan stopped"
+msgstr "नेटवर्क स्कॅन थांबवले"
+
+msgid "invalid operator"
+msgstr "अवैध ऑपरेटर"
+
+msgid "Downloading MCC/MNC list"
+msgstr "MCC/MNC सूची डाउनलोड करत आहे"
+
+msgid "Parsing MCC/MNC list"
+msgstr "MCC/MNC सूची पार्स करत आहे"
+
+msgid "MCC/MNC database updated"
+msgstr "MCC/MNC डेटाबेस अद्यतनित"
+
+msgid "Failed to update MCC/MNC database"
+msgstr "MCC/MNC डेटाबेस अपडेट करण्यात अयशस्वी"
+
+msgid "MCC/MNC update already running"
+msgstr "MCC/MNC अपडेट आधीच चालू आहे"
+
+msgid "MCC/MNC update started"
+msgstr "MCC/MNC अपडेट सुरू झाले"
+
+msgid "operator selection sent"
+msgstr "ऑपरेटर निवड पाठवली"
+
+msgid "internet check started"
+msgstr "इंटरनेट तपासणी सुरू झाली"
+
+msgid "modem reboot started"
+msgstr "मॉडेम रीबूट सुरू झाला"
+
+msgid "service restarted"
+msgstr "सेवा पुन्हा सुरू केली"
+
+msgid "Modem info updated"
+msgstr "मोडेम माहिती अपडेट केली"
+
+msgid "Modem did not respond"
+msgstr "मोडेमने प्रतिसाद दिला नाही"
+
+msgid "Checks internet connectivity and reboots the Quectel modem when the connection is lost."
+msgstr "इंटरनेट कनेक्टिव्हिटी तपासते आणि कनेक्शन तुटल्यावर Quectel मोडेम रीबूट करते."
+
+msgid "Service settings"
+msgstr "सेवा सेटिंग्ज"
+
+msgid "Enable service"
+msgstr "सेवा सक्षम करा"
+
+msgid "Check interval (seconds)"
+msgstr "मध्यांतर तपासा (सेकंद)"
+
+msgid "Failures before modem reboot"
+msgstr "मोडेम रीबूट करण्यापूर्वी अयशस्वी"
+
+msgid "Ping hosts"
+msgstr "पिंग यजमान"
+
+msgid "Space-separated list. Internet is considered up if at least one host responds."
+msgstr "जागा-विभक्त यादी. किमान एक होस्ट प्रतिसाद देत असल्यास इंटरनेटचा विचार केला जातो."
+
+msgid "Also require DNS resolution"
+msgstr "DNS रिझोल्यूशन देखील आवश्यक आहे"
+
+msgid "DNS name to resolve"
+msgstr "निराकरण करण्यासाठी DNS नाव"
+
+msgid "Also require an HTTP request"
+msgstr "HTTP विनंती देखील आवश्यक आहे"
+
+msgid "HTTP URL"
+msgstr "HTTP URL"
+
+msgid "WAN interface"
+msgstr "WAN इंटरफेस"
+
+msgid "The device name is read from network.<iface>.device."
+msgstr "डिव्हाइसचे नाव नेटवर्कवरून वाचले जाते.<iface>.device."
+
+msgid "AT serial port"
+msgstr "एटी सिरीयल पोर्ट"
+
+msgid "Detected USB/ACM serial ports. For Quectel EC200A use /dev/ttyUSB2; /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "USB/ACM सिरीयल पोर्ट आढळले. Quectel EC200A साठी /dev/ttyUSB2 वापरा; /dev/ttyUSB0 हे डायग्नोस्टिक पोर्ट आहे आणि ते AT आदेशांना उत्तर देत नाही."
+
+msgid "AT port baud rate"
+msgstr "एटी पोर्ट बॉड दर"
+
+msgid "Modem reboot method"
+msgstr "मोडेम रीबूट पद्धत"
+
+msgid "AT+CFUN=1,1 (recommended)"
+msgstr "AT+CFUN=1,1 (शिफारस केलेले)"
+
+msgid "USB re-bind (best effort)"
+msgstr "यूएसबी री-बाइंड (सर्वोत्तम प्रयत्न)"
+
+msgid "Wait after reboot (seconds)"
+msgstr "रीबूट केल्यानंतर प्रतीक्षा करा (सेकंद)"
+
+msgid "Collect modem information"
+msgstr "मोडेम माहिती गोळा करा"
+
+msgid "Reads model, firmware, IMEI, signal, operator and temperature via AT commands."
+msgstr "एटी कमांडद्वारे मॉडेल, फर्मवेअर, आयएमईआय, सिग्नल, ऑपरेटर आणि तापमान वाचते."
+
+msgid "Modem info interval (seconds)"
+msgstr "मोडेम माहिती अंतराल (सेकंद)"
+
+msgid "How often to query the modem with AT commands. Keep it longer if other modem tools use the same serial port."
+msgstr "AT कमांडसह मॉडेमची किती वेळा चौकशी करायची. इतर मोडेम साधने समान सिरीयल पोर्ट वापरत असल्यास ते जास्त काळ ठेवा."
+
+msgid "Signal refresh interval (seconds)"
+msgstr "सिग्नल रिफ्रेश मध्यांतर (सेकंद)"
+
+msgid "Pause between signal page updates. The actual update also includes the modem response time."
+msgstr "सिग्नल पेज अपडेट्स दरम्यान विराम द्या. वास्तविक अपडेटमध्ये मोडेम प्रतिसाद वेळ देखील समाविष्ट आहे."
+
+msgid "Safety"
+msgstr "सुरक्षितता"
+
+msgid "Maximum reboots per window"
+msgstr "प्रति विंडो कमाल रीबूट"
+
+msgid "Set to 0 for unlimited. The limit prevents reboot loops."
+msgstr "अमर्यादित साठी 0 वर सेट करा. मर्यादा रीबूट लूप प्रतिबंधित करते."
+
+msgid "Reboot window (seconds)"
+msgstr "विंडो रीबूट करा (सेकंद)"
+
+msgid "Cooldown between reboots (seconds)"
+msgstr "रीबूट दरम्यान कूलडाउन (सेकंद)"
+
+msgid "Logging"
+msgstr "लॉगिंग"
+
+msgid "Log level"
+msgstr "लॉग पातळी"
+
+msgid "Error"
+msgstr "त्रुटी"
+
+msgid "Warning"
+msgstr "चेतावणी"
+
+msgid "Info"
+msgstr "माहिती"
+
+msgid "Debug"
+msgstr "डीबग करा"
+
+msgid "Remote access warning"
+msgstr "दूरस्थ प्रवेश चेतावणी"
+
+msgid "This service reboots only the modem, not the router. If the modem is the only WAN, internet and remote access will be down during the reboot. Do not change USB mode, APN or band settings remotely without a rollback plan."
+msgstr "ही सेवा फक्त मॉडेम रीबूट करते, राउटर नाही. मॉडेम एकमेव WAN असल्यास, रीबूट दरम्यान इंटरनेट आणि रिमोट ऍक्सेस बंद होईल. रोलबॅक योजनेशिवाय USB मोड, APN किंवा बँड सेटिंग्ज दूरस्थपणे बदलू नका."
+
+msgid "Service"
+msgstr "सेवा"
+
+msgid "State"
+msgstr "राज्य"
+
+msgid "Last check"
+msgstr "शेवटची तपासणी"
+
+msgid "Last success"
+msgstr "शेवटचे यश"
+
+msgid "Last failure"
+msgstr "शेवटचे अपयश"
+
+msgid "Failures"
+msgstr "अपयश"
+
+msgid "Modem reboots"
+msgstr "मॉडेम रीबूट होते"
+
+msgid "last"
+msgstr "शेवटचे"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "Data transferred"
+msgstr "डेटा हस्तांतरित"
+
+msgid "Ping / DNS / HTTP"
+msgstr "पिंग / DNS / HTTP"
+
+msgid "Latency"
+msgstr "विलंब"
+
+msgid "Modem"
+msgstr "मोडेम"
+
+msgid "Firmware"
+msgstr "फर्मवेअर"
+
+msgid "IMEI"
+msgstr "IMEI"
+
+msgid "Operator / network"
+msgstr "ऑपरेटर / नेटवर्क"
+
+msgid "Modem temperature"
+msgstr "मोडेम तापमान"
+
+msgid "Service uptime"
+msgstr "सेवा अपटाइम"
+
+msgid "LTE quality"
+msgstr "LTE गुणवत्ता"
+
+msgid "CSQ"
+msgstr "CSQ"
+
+msgid "RSSI"
+msgstr "RSSI"
+
+msgid "RSRP"
+msgstr "RSRP"
+
+msgid "SINR"
+msgstr "SINR"
+
+msgid "RSRQ"
+msgstr "RSRQ"
+
+msgid "Band"
+msgstr "बँड"
+
+msgid "Check now"
+msgstr "आता तपासा"
+
+msgid "Refresh modem info"
+msgstr "मॉडेम माहिती रिफ्रेश करा"
+
+msgid "Reboot modem"
+msgstr "मोडेम रीबूट करा"
+
+msgid "Restart service"
+msgstr "सेवा पुन्हा सुरू करा"
+
+msgid "yes"
+msgstr "होय"
+
+msgid "no"
+msgstr "नाही"
+
+msgid "online"
+msgstr "ऑनलाइन"
+
+msgid "offline"
+msgstr "ऑफलाइन"
+
+msgid "rebooting"
+msgstr "रीबूट करत आहे"
+
+msgid "checking"
+msgstr "तपासत आहे"
+
+msgid "disabled"
+msgstr "अक्षम"
+
+msgid "starting"
+msgstr "सुरू करत आहे"
+
+msgid "stopped"
+msgstr "थांबवले"
+
+msgid "error"
+msgstr "त्रुटी"
+
+msgid "running"
+msgstr "धावणे"
+
+msgid "Failed to read status"
+msgstr "स्थिती वाचण्यात अयशस्वी"
+
+msgid "Reading modem data"
+msgstr "मोडेम डेटा वाचत आहे"
+
+msgid "Failed to read modem data"
+msgstr "मोडेम डेटा वाचण्यात अयशस्वी"
+
+msgid "Check started"
+msgstr "तपासणी सुरू झाली"
+
+msgid "Check failed"
+msgstr "चेक अयशस्वी"
+
+msgid "Reboot the modem now? Internet will be down for about"
+msgstr "आता मोडेम रीबूट करायचा? सुमारे इंटरनेट बंद राहील"
+
+msgid "seconds."
+msgstr "सेकंद"
+
+msgid "Modem reboot started"
+msgstr "मोडेम रीबूट सुरू झाला"
+
+msgid "Reboot failed"
+msgstr "रीबूट अयशस्वी"
+
+msgid "Restart the modemwatch service?"
+msgstr "मोडेमवॉच सेवा रीस्टार्ट करायची?"
+
+msgid "Service restarted"
+msgstr "सेवा पुन्हा सुरू झाली"
+
+msgid "Restart failed"
+msgstr "रीस्टार्ट अयशस्वी"
+
+msgid "Signal strength (RSRQ)"
+msgstr "सिग्नल स्ट्रेंथ (RSRQ)"
+
+msgid "Operator"
+msgstr "ऑपरेटर"
+
+msgid "Network"
+msgstr "नेटवर्क"
+
+msgid "Last update"
+msgstr "शेवटचे अपडेट"
+
+msgid "Refresh interval"
+msgstr "रीफ्रेश मध्यांतर"
+
+msgid "seconds"
+msgstr "सेकंद"
+
+msgid "Signal Strength"
+msgstr "सिग्नल स्ट्रेंथ"
+
+msgid "Received Signal Strength Indicator"
+msgstr "सिग्नल स्ट्रेंथ इंडिकेटर प्राप्त झाला"
+
+msgid "Reference Signal Receive Power"
+msgstr "संदर्भ सिग्नल प्राप्त शक्ती"
+
+msgid "Signal to Interference plus Noise Ratio"
+msgstr "सिग्नल टू इंटरफेरन्स प्लस नॉइज रेशो"
+
+msgid "Reference Signal Received Quality"
+msgstr "संदर्भ सिग्नल प्राप्त गुणवत्ता"
+
+msgid "Refresh now"
+msgstr "आता रिफ्रेश करा"
+
+msgid "Pause"
+msgstr "विराम द्या"
+
+msgid "Busy"
+msgstr "व्यस्त"
+
+msgid "AT port not found"
+msgstr "AT पोर्ट सापडला नाही"
+
+msgid "No response from modem"
+msgstr "मॉडेमकडून प्रतिसाद नाही"
+
+msgid "Failed to read signal"
+msgstr "सिग्नल वाचण्यात अयशस्वी"
+
+msgid "Resume"
+msgstr "पुन्हा सुरू करा"
+
+msgid "Refresh log"
+msgstr "लॉग रिफ्रेश करा"
+
+msgid "Auto-refresh"
+msgstr "स्वयं-रिफ्रेश"
+
+msgid "(empty)"
+msgstr "(रिक्त)"
+
+msgid "Updated"
+msgstr "अपडेट केले"
+
+msgid "Failed to read log"
+msgstr "लॉग वाचण्यात अयशस्वी"
+
+msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
+msgstr "AT आदेश मोडेम सेटिंग्ज बदलू शकतात आणि इंटरनेट किंवा SSH डिस्कनेक्ट करू शकतात. रोलबॅक योजनेशिवाय USB मोड, APN, बँड किंवा नेटवर्क मोड दूरस्थपणे बदलू नका."
+
+msgid "Expert mode — allow changing USB mode and NAT"
+msgstr "तज्ञ मोड — USB मोड आणि NAT बदलण्याची अनुमती द्या"
+
+msgid "Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan."
+msgstr "USB मोड बदलल्याने मोडेम आणि SSH डिस्कनेक्ट होऊ शकतो. फक्त स्थानिक प्रवेश किंवा रोलबॅक योजनेसह वापरा."
+
+msgid "Selected AT port"
+msgstr "एटी पोर्ट निवडले"
+
+msgid "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Quectel EC200A साठी /dev/ttyUSB2 वापरा. /dev/ttyUSB0 हे डायग्नोस्टिक पोर्ट आहे आणि ते AT आदेशांना उत्तर देत नाही."
+
+msgid "Current configuration"
+msgstr "वर्तमान कॉन्फिगरेशन"
+
+msgid "Read current configuration"
+msgstr "वर्तमान कॉन्फिगरेशन वाचा"
+
+msgid "Modem information"
+msgstr "मोडेम माहिती"
+
+msgid "Model"
+msgstr "मॉडेल"
+
+msgid "SIM status"
+msgstr "सिम स्थिती"
+
+msgid "Temperature"
+msgstr "तापमान"
+
+msgid "Access Point Name (APN)"
+msgstr "प्रवेश बिंदूचे नाव (APN)"
+
+msgid "Username"
+msgstr "वापरकर्तानाव"
+
+msgid "Password"
+msgstr "संकेतशब्द"
+
+msgid "Authentication"
+msgstr "प्रमाणीकरण"
+
+msgid "None"
+msgstr "एकही नाही"
+
+msgid "PDP type"
+msgstr "पीडीपी प्रकार"
+
+msgid "Read APN"
+msgstr "APN वाचा"
+
+msgid "Apply APN"
+msgstr "APN लागू करा"
+
+msgid "Network mode"
+msgstr "नेटवर्क मोड"
+
+msgid "Mode"
+msgstr "मोड"
+
+msgid "Automatic"
+msgstr "स्वयंचलित"
+
+msgid "GSM only"
+msgstr "फक्त GSM"
+
+msgid "WCDMA only"
+msgstr "फक्त WCDMA"
+
+msgid "LTE only"
+msgstr "फक्त LTE"
+
+msgid "Read mode"
+msgstr "वाचा मोड"
+
+msgid "Apply mode"
+msgstr "मोड लागू करा"
+
+msgid "Band configuration"
+msgstr "बँड कॉन्फिगरेशन"
+
+msgid "Read bands"
+msgstr "बँड वाचा"
+
+msgid "Select all"
+msgstr "सर्व निवडा"
+
+msgid "Restore default"
+msgstr "डीफॉल्ट पुनर्संचयित करा"
+
+msgid "Apply bands"
+msgstr "पट्ट्या लावा"
+
+msgid "Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection."
+msgstr "तुम्ही सक्षम ठेवू इच्छित असलेले LTE बँड निवडा. अर्ज केल्याने WAN रीस्टार्ट होऊन कनेक्शन बंद होऊ शकते."
+
+msgid "USB mode"
+msgstr "यूएसबी मोड"
+
+msgid "Current value"
+msgstr "वर्तमान मूल्य"
+
+msgid "New value"
+msgstr "नवीन मूल्य"
+
+msgid "RMNET (QMI)"
+msgstr "RMNET (QMI)"
+
+msgid "not supported"
+msgstr "समर्थित नाही"
+
+msgid "ECM (CDC Ethernet)"
+msgstr "ECM (CDC इथरनेट)"
+
+msgid "MBIM"
+msgstr "MBIM"
+
+msgid "RNDIS"
+msgstr "RNDIS"
+
+msgid "Apply USB mode"
+msgstr "यूएसबी मोड लागू करा"
+
+msgid "Read USB mode"
+msgstr "यूएसबी मोड वाचा"
+
+msgid "Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem."
+msgstr "मोडेम फर्मवेअरद्वारे समर्थित नसलेले मोड अक्षम केले जातात आणि समर्थित नाहीत म्हणून चिन्हांकित केले जातात. मॉडेममधून समर्थित मोड स्वयंचलितपणे शोधले जातात."
+
+msgid "Apply NAT"
+msgstr "NAT लागू करा"
+
+msgid "Read NAT"
+msgstr "NAT वाचा"
+
+msgid "Raw AT command"
+msgstr "रॉ एटी कमांड"
+
+msgid "AT command"
+msgstr "AT आदेश"
+
+msgid "Send"
+msgstr "पाठवा"
+
+msgid "Sending"
+msgstr "पाठवत आहे"
+
+msgid "AT command failed"
+msgstr "AT कमांड अयशस्वी"
+
+msgid "Reading APN"
+msgstr "APN वाचत आहे"
+
+msgid "Failed to read APN"
+msgstr "APN वाचण्यात अयशस्वी"
+
+msgid "Reading settings"
+msgstr "वाचन सेटिंग्ज"
+
+msgid "Settings read"
+msgstr "सेटिंग्ज वाचल्या"
+
+msgid "Failed to read settings"
+msgstr "सेटिंग्ज वाचण्यात अयशस्वी"
+
+msgid "APN, username and password may contain only letters, digits, dot, hyphen and underscore."
+msgstr "APN, वापरकर्तानाव आणि पासवर्डमध्ये फक्त अक्षरे, अंक, बिंदू, हायफन आणि अंडरस्कोर असू शकतात."
+
+msgid "Apply APN settings? The connection may drop."
+msgstr "APN सेटिंग्ज लागू करायची? कनेक्शन कमी होऊ शकते."
+
+msgid "Applying APN"
+msgstr "APN लागू करत आहे"
+
+msgid "APN applied. Reconnect or reboot the modem if needed."
+msgstr "APN लागू केले. आवश्यक असल्यास मोडेम पुन्हा कनेक्ट करा किंवा रीबूट करा."
+
+msgid "Failed to apply APN"
+msgstr "APN लागू करण्यात अयशस्वी"
+
+msgid "Apply network mode? The connection may drop."
+msgstr "नेटवर्क मोड लागू करायचा? कनेक्शन कमी होऊ शकते."
+
+msgid "Reading bands"
+msgstr "वाचन बँड"
+
+msgid "Failed to read bands"
+msgstr "बँड वाचण्यात अयशस्वी"
+
+msgid "No bands selected"
+msgstr "कोणतेही बँड निवडलेले नाहीत"
+
+msgid "Restore default bands?"
+msgstr "डीफॉल्ट बँड रिस्टोअर करायचे?"
+
+msgid "Apply selected bands? The connection may drop."
+msgstr "निवडक बँड लागू करायचे? कनेक्शन कमी होऊ शकते."
+
+msgid "Applying bands"
+msgstr "बँड लावणे"
+
+msgid "Failed to apply bands"
+msgstr "बँड लागू करण्यात अयशस्वी"
+
+msgid "USB mode is read-only in this UI."
+msgstr "या UI मध्ये USB मोड केवळ वाचनीय आहे."
+
+msgid "This USB mode is not supported by the modem firmware."
+msgstr "हा USB मोड मोडेम फर्मवेअरद्वारे समर्थित नाही."
+
+msgid "Change USB mode? The modem will re-enumerate and the connection may drop. Continue?"
+msgstr "यूएसबी मोड बदलायचा? मॉडेम पुन्हा गणना करेल आणि कनेक्शन कमी होऊ शकते. सुरू ठेवायचे?"
+
+msgid "Change NAT mode? The connection may drop."
+msgstr "NAT मोड बदलायचा? कनेक्शन कमी होऊ शकते."
+
+msgid "Current operator"
+msgstr "वर्तमान ऑपरेटर"
+
+msgid "AT port"
+msgstr "एटी पोर्ट"
+
+msgid "Scan networks"
+msgstr "नेटवर्क स्कॅन करा"
+
+msgid "Automatic operator selection"
+msgstr "स्वयंचलित ऑपरेटर निवड"
+
+msgid "Stop scan"
+msgstr "स्कॅन करणे थांबवा"
+
+msgid "Update MCC/MNC database"
+msgstr "MCC/MNC डेटाबेस अपडेट करा"
+
+msgid "Country"
+msgstr "देश"
+
+msgid "MCC/MNC"
+msgstr "MCC/MNC"
+
+msgid "Technology"
+msgstr "तंत्रज्ञान"
+
+msgid "Action"
+msgstr "कृती"
+
+msgid "Raw scan output"
+msgstr "रॉ स्कॅन आउटपुट"
+
+msgid "current"
+msgstr "वर्तमान"
+
+msgid "available"
+msgstr "उपलब्ध"
+
+msgid "forbidden"
+msgstr "निषिद्ध"
+
+msgid "unknown"
+msgstr "अज्ञात"
+
+msgid "Select"
+msgstr "निवडा"
+
+msgid "MCC/MNC database updated."
+msgstr "MCC/MNC डेटाबेस अद्यतनित."
+
+msgid "Not updated yet"
+msgstr "अजून अपडेट केलेले नाही"
+
+msgid "Failed to read MCC/MNC update status"
+msgstr "MCC/MNC अपडेट स्थिती वाचण्यात अयशस्वी"
+
+msgid "Updating MCC/MNC database"
+msgstr "MCC/MNC डेटाबेस अपडेट करत आहे"
+
+msgid "Scanning networks... This may take up to two minutes."
+msgstr "नेटवर्क स्कॅन करत आहे... यास दोन मिनिटे लागू शकतात."
+
+msgid "Scan complete."
+msgstr "स्कॅन पूर्ण."
+
+msgid "Modem is busy. Try again later."
+msgstr "मोडेम व्यस्त आहे. नंतर पुन्हा प्रयत्न करा."
+
+msgid "Scan failed"
+msgstr "स्कॅन अयशस्वी"
+
+msgid "Not scanned yet."
+msgstr "अजून स्कॅन केलेले नाही."
+
+msgid "Failed to read scan status"
+msgstr "स्कॅन स्थिती वाचण्यात अयशस्वी"
+
+msgid "Stopping scan"
+msgstr "स्कॅन थांबवत आहे"
+
+msgid "Network scan stopped"
+msgstr "नेटवर्क स्कॅन थांबवले"
+
+msgid "Failed to stop scan"
+msgstr "स्कॅन थांबवण्यात अयशस्वी"
+
+msgid "Starting network scan"
+msgstr "नेटवर्क स्कॅन सुरू करत आहे"
+
+msgid "Network scan started"
+msgstr "नेटवर्क स्कॅन सुरू झाले"
+
+msgid "Failed to start scan"
+msgstr "स्कॅन सुरू करण्यात अयशस्वी"
+
+msgid "Select operator"
+msgstr "ऑपरेटर निवडा"
+
+msgid "The connection may drop."
+msgstr "कनेक्शन कमी होऊ शकते."
+
+msgid "Selecting operator"
+msgstr "ऑपरेटर निवडत आहे"
+
+msgid "Operator selection sent"
+msgstr "ऑपरेटर निवड पाठवली"
+
+msgid "Failed to select operator"
+msgstr "ऑपरेटर निवडण्यात अयशस्वी"
+
+msgid "Use automatic operator selection?"
+msgstr "स्वयंचलित ऑपरेटर निवड वापरायची?"
+
+msgid "Selecting automatic mode"
+msgstr "स्वयंचलित मोड निवडत आहे"

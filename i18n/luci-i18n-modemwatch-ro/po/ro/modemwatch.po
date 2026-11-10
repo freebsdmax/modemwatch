@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-modemwatch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 00:00+0000\n"
+"PO-Revision-Date: 2026-11-10 00:00+0000\n"
+"Last-Translator: modemwatch contributors\n"
+"Language-Team: Română (Romanian)\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Modem LTE 4G"
+msgstr "Modem LTE 4G"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Signal"
+msgstr "Semnal"
+
+msgid "Log"
+msgstr "Jurnal"
+
+msgid "Modem settings"
+msgstr "Setări modem"
+
+msgid "Network search"
+msgstr "Căutare în rețea"
+
+msgid "Settings"
+msgstr "Setări"
+
+msgid "invalid token"
+msgstr "jeton invalid"
+
+msgid "empty AT command"
+msgstr "comanda AT goală"
+
+msgid "invalid band selection"
+msgstr "selecție nevalidă a benzii"
+
+msgid "Band settings sent"
+msgstr "Setările benzii au fost trimise"
+
+msgid "network scan started"
+msgstr "scanarea rețelei a început"
+
+msgid "network scan stopped"
+msgstr "scanarea rețelei s-a oprit"
+
+msgid "invalid operator"
+msgstr "operator invalid"
+
+msgid "Downloading MCC/MNC list"
+msgstr "Se descarcă lista MCC/MNC"
+
+msgid "Parsing MCC/MNC list"
+msgstr "Se analizează lista MCC/MNC"
+
+msgid "MCC/MNC database updated"
+msgstr "Baza de date MCC/MNC a fost actualizată"
+
+msgid "Failed to update MCC/MNC database"
+msgstr "Nu s-a putut actualiza baza de date MCC/MNC"
+
+msgid "MCC/MNC update already running"
+msgstr "Actualizarea MCC/MNC deja rulează"
+
+msgid "MCC/MNC update started"
+msgstr "Actualizarea MCC/MNC a început"
+
+msgid "operator selection sent"
+msgstr "selecția operatorului trimisă"
+
+msgid "internet check started"
+msgstr "a început verificarea pe internet"
+
+msgid "modem reboot started"
+msgstr "repornirea modemului a început"
+
+msgid "service restarted"
+msgstr "serviciul repornit"
+
+msgid "Modem info updated"
+msgstr "Informațiile modemului au fost actualizate"
+
+msgid "Modem did not respond"
+msgstr "Modemul nu a răspuns"
+
+msgid "Checks internet connectivity and reboots the Quectel modem when the connection is lost."
+msgstr "Verifică conexiunea la internet și repornește modemul Quectel atunci când conexiunea este pierdută."
+
+msgid "Service settings"
+msgstr "Setări de serviciu"
+
+msgid "Enable service"
+msgstr "Activați serviciul"
+
+msgid "Check interval (seconds)"
+msgstr "Interval de verificare (secunde)"
+
+msgid "Failures before modem reboot"
+msgstr "Eșecuri înainte de repornirea modemului"
+
+msgid "Ping hosts"
+msgstr "Ping gazde"
+
+msgid "Space-separated list. Internet is considered up if at least one host responds."
+msgstr "Listă separată de spațiu. Internetul este considerat funcțional dacă cel puțin o gazdă răspunde."
+
+msgid "Also require DNS resolution"
+msgstr "De asemenea, necesită rezoluție DNS"
+
+msgid "DNS name to resolve"
+msgstr "Nume DNS de rezolvat"
+
+msgid "Also require an HTTP request"
+msgstr "De asemenea, necesită o solicitare HTTP"
+
+msgid "HTTP URL"
+msgstr "HTTP URL"
+
+msgid "WAN interface"
+msgstr "Interfață WAN"
+
+msgid "The device name is read from network.<iface>.device."
+msgstr "Numele dispozitivului este citit din rețea.<iface>.device."
+
+msgid "AT serial port"
+msgstr "AT portul serial"
+
+msgid "Detected USB/ACM serial ports. For Quectel EC200A use /dev/ttyUSB2; /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Au fost detectate porturi seriale USB/ACM. Pentru Quectel EC200A utilizați /dev/ttyUSB2; /dev/ttyUSB0 este portul de diagnosticare și nu răspunde la comenzile AT."
+
+msgid "AT port baud rate"
+msgstr "AT port baud rate"
+
+msgid "Modem reboot method"
+msgstr "Metoda de repornire a modemului"
+
+msgid "AT+CFUN=1,1 (recommended)"
+msgstr "AT+CFUN=1,1 (recomandat)"
+
+msgid "USB re-bind (best effort)"
+msgstr "Relegare USB (cel mai bun efort)"
+
+msgid "Wait after reboot (seconds)"
+msgstr "Așteptați după repornire (secunde)"
+
+msgid "Collect modem information"
+msgstr "Colectați informații despre modem"
+
+msgid "Reads model, firmware, IMEI, signal, operator and temperature via AT commands."
+msgstr "Citește modelul, firmware-ul, IMEI, semnalul, operatorul și temperatura prin comenzi AT."
+
+msgid "Modem info interval (seconds)"
+msgstr "Interval de informații despre modem (secunde)"
+
+msgid "How often to query the modem with AT commands. Keep it longer if other modem tools use the same serial port."
+msgstr "Cât de des să interogați modemul cu comenzi AT. Păstrați-l mai mult dacă alte instrumente de modem folosesc același port serial."
+
+msgid "Signal refresh interval (seconds)"
+msgstr "Interval de reîmprospătare a semnalului (secunde)"
+
+msgid "Pause between signal page updates. The actual update also includes the modem response time."
+msgstr "Întrerupeți între actualizările paginii de semnal. Actualizarea actuală include și timpul de răspuns al modemului."
+
+msgid "Safety"
+msgstr "Siguranță"
+
+msgid "Maximum reboots per window"
+msgstr "Reporniri maxime pe fereastră"
+
+msgid "Set to 0 for unlimited. The limit prevents reboot loops."
+msgstr "Setați la 0 pentru nelimitat. Limita împiedică buclele de repornire."
+
+msgid "Reboot window (seconds)"
+msgstr "Fereastra de repornire (secunde)"
+
+msgid "Cooldown between reboots (seconds)"
+msgstr "Timp de răcire între reporniri (secunde)"
+
+msgid "Logging"
+msgstr "Jurnalizare"
+
+msgid "Log level"
+msgstr "Nivel de jurnal"
+
+msgid "Error"
+msgstr "Eroare"
+
+msgid "Warning"
+msgstr "Avertizare"
+
+msgid "Info"
+msgstr "Informații"
+
+msgid "Debug"
+msgstr "Depanare"
+
+msgid "Remote access warning"
+msgstr "Avertizare de acces la distanță"
+
+msgid "This service reboots only the modem, not the router. If the modem is the only WAN, internet and remote access will be down during the reboot. Do not change USB mode, APN or band settings remotely without a rollback plan."
+msgstr "Acest serviciu repornește doar modemul, nu routerul. Dacă modemul este singurul WAN, accesul la internet și la distanță se vor opri în timpul repornirii. Nu modificați modul USB, APN sau setările de bandă de la distanță fără un plan de retragere."
+
+msgid "Service"
+msgstr "Serviciul"
+
+msgid "State"
+msgstr "Stat"
+
+msgid "Last check"
+msgstr "Ultima verificare"
+
+msgid "Last success"
+msgstr "Ultimul succes"
+
+msgid "Last failure"
+msgstr "Ultimul eșec"
+
+msgid "Failures"
+msgstr "Eșecuri"
+
+msgid "Modem reboots"
+msgstr "Modemul repornește"
+
+msgid "last"
+msgstr "ultimul"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "Data transferred"
+msgstr "Date transferate"
+
+msgid "Ping / DNS / HTTP"
+msgstr "Ping / DNS / HTTP"
+
+msgid "Latency"
+msgstr "Latență"
+
+msgid "Modem"
+msgstr "Modem"
+
+msgid "Firmware"
+msgstr "Firmware"
+
+msgid "IMEI"
+msgstr "IMEI"
+
+msgid "Operator / network"
+msgstr "Operator/rețea"
+
+msgid "Modem temperature"
+msgstr "Temperatura modemului"
+
+msgid "Service uptime"
+msgstr "Perioada de funcționare a serviciului"
+
+msgid "LTE quality"
+msgstr "Calitate LTE"
+
+msgid "CSQ"
+msgstr "CSQ"
+
+msgid "RSSI"
+msgstr "RSSI"
+
+msgid "RSRP"
+msgstr "RSRP"
+
+msgid "SINR"
+msgstr "SINR"
+
+msgid "RSRQ"
+msgstr "RSRQ"
+
+msgid "Band"
+msgstr "Bandă"
+
+msgid "Check now"
+msgstr "Verificați acum"
+
+msgid "Refresh modem info"
+msgstr "Actualizează informațiile modemului"
+
+msgid "Reboot modem"
+msgstr "Reporniți modemul"
+
+msgid "Restart service"
+msgstr "Reporniți serviciul"
+
+msgid "yes"
+msgstr "da"
+
+msgid "no"
+msgstr "nu"
+
+msgid "online"
+msgstr "online"
+
+msgid "offline"
+msgstr "offline"
+
+msgid "rebooting"
+msgstr "repornind"
+
+msgid "checking"
+msgstr "verificarea"
+
+msgid "disabled"
+msgstr "dezactivat"
+
+msgid "starting"
+msgstr "pornind"
+
+msgid "stopped"
+msgstr "oprit"
+
+msgid "error"
+msgstr "eroare"
+
+msgid "running"
+msgstr "alergând"
+
+msgid "Failed to read status"
+msgstr "Nu s-a putut citi starea"
+
+msgid "Reading modem data"
+msgstr "Citirea datelor modemului"
+
+msgid "Failed to read modem data"
+msgstr "Nu s-au putut citi datele modemului"
+
+msgid "Check started"
+msgstr "Verificarea a început"
+
+msgid "Check failed"
+msgstr "Verificarea a eșuat"
+
+msgid "Reboot the modem now? Internet will be down for about"
+msgstr "Reporniți modemul acum? Internetul va fi oprit de aproximativ"
+
+msgid "seconds."
+msgstr "secunde."
+
+msgid "Modem reboot started"
+msgstr "Repornirea modemului a început"
+
+msgid "Reboot failed"
+msgstr "Repornirea a eșuat"
+
+msgid "Restart the modemwatch service?"
+msgstr "Reporniți serviciul modemwatch?"
+
+msgid "Service restarted"
+msgstr "Serviciul a fost repornit"
+
+msgid "Restart failed"
+msgstr "Repornirea a eșuat"
+
+msgid "Signal strength (RSRQ)"
+msgstr "Puterea semnalului (RSRQ)"
+
+msgid "Operator"
+msgstr "Operator"
+
+msgid "Network"
+msgstr "Rețea"
+
+msgid "Last update"
+msgstr "Ultima actualizare"
+
+msgid "Refresh interval"
+msgstr "Interval de reîmprospătare"
+
+msgid "seconds"
+msgstr "secunde"
+
+msgid "Signal Strength"
+msgstr "Puterea semnalului"
+
+msgid "Received Signal Strength Indicator"
+msgstr "Indicator de putere a semnalului primit"
+
+msgid "Reference Signal Receive Power"
+msgstr "Putere de recepție a semnalului de referință"
+
+msgid "Signal to Interference plus Noise Ratio"
+msgstr "Raport semnal la interferență plus zgomot"
+
+msgid "Reference Signal Received Quality"
+msgstr "Calitatea semnalului de referință primit"
+
+msgid "Refresh now"
+msgstr "Actualizează acum"
+
+msgid "Pause"
+msgstr "Pauză"
+
+msgid "Busy"
+msgstr "ocupat"
+
+msgid "AT port not found"
+msgstr "Portul AT nu a fost găsit"
+
+msgid "No response from modem"
+msgstr "Niciun răspuns de la modem"
+
+msgid "Failed to read signal"
+msgstr "Nu s-a putut citi semnalul"
+
+msgid "Resume"
+msgstr "Reluați"
+
+msgid "Refresh log"
+msgstr "Reîmprospătați jurnalul"
+
+msgid "Auto-refresh"
+msgstr "Reîmprospătare automată"
+
+msgid "(empty)"
+msgstr "(gol)"
+
+msgid "Updated"
+msgstr "Actualizat"
+
+msgid "Failed to read log"
+msgstr "Nu s-a putut citi jurnalul"
+
+msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
+msgstr "Comenzile AT pot schimba setările modemului și pot deconecta internetul sau SSH. Nu schimbați modul USB, APN, bandă sau modul de rețea de la distanță fără un plan de rollback."
+
+msgid "Expert mode — allow changing USB mode and NAT"
+msgstr "Mod expert — permite schimbarea modului USB și NAT"
+
+msgid "Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan."
+msgstr "Schimbarea modului USB poate deconecta modemul și SSH. Utilizați numai cu acces local sau cu un plan de retragere."
+
+msgid "Selected AT port"
+msgstr "Port AT selectat"
+
+msgid "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Pentru Quectel EC200A utilizați /dev/ttyUSB2. /dev/ttyUSB0 este portul de diagnosticare și nu răspunde la comenzile AT."
+
+msgid "Current configuration"
+msgstr "Configurația curentă"
+
+msgid "Read current configuration"
+msgstr "Citiți configurația curentă"
+
+msgid "Modem information"
+msgstr "Informații despre modem"
+
+msgid "Model"
+msgstr "Model"
+
+msgid "SIM status"
+msgstr "Stare SIM"
+
+msgid "Temperature"
+msgstr "Temperatura"
+
+msgid "Access Point Name (APN)"
+msgstr "Nume punct de acces (APN)"
+
+msgid "Username"
+msgstr "Nume Utilizator"
+
+msgid "Password"
+msgstr "Parolă"
+
+msgid "Authentication"
+msgstr "Autentificare"
+
+msgid "None"
+msgstr "Niciuna"
+
+msgid "PDP type"
+msgstr "tip PDP"
+
+msgid "Read APN"
+msgstr "Citiți APN"
+
+msgid "Apply APN"
+msgstr "Aplicați APN"
+
+msgid "Network mode"
+msgstr "Modul de rețea"
+
+msgid "Mode"
+msgstr "Mod"
+
+msgid "Automatic"
+msgstr "Automat"
+
+msgid "GSM only"
+msgstr "Numai GSM"
+
+msgid "WCDMA only"
+msgstr "Numai WCDMA"
+
+msgid "LTE only"
+msgstr "Numai LTE"
+
+msgid "Read mode"
+msgstr "Modul de citire"
+
+msgid "Apply mode"
+msgstr "Mod de aplicare"
+
+msgid "Band configuration"
+msgstr "Configurarea benzii"
+
+msgid "Read bands"
+msgstr "Citiți benzi"
+
+msgid "Select all"
+msgstr "Selectați toate"
+
+msgid "Restore default"
+msgstr "Restabiliți valoarea implicită"
+
+msgid "Apply bands"
+msgstr "Aplicați benzi"
+
+msgid "Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection."
+msgstr "Selectați benzile LTE pe care doriți să le păstrați activate. Aplicarea poate reporni WAN-ul și întrerupe conexiunea."
+
+msgid "USB mode"
+msgstr "Mod USB"
+
+msgid "Current value"
+msgstr "Valoarea curentă"
+
+msgid "New value"
+msgstr "Noua valoare"
+
+msgid "RMNET (QMI)"
+msgstr "RMNET (QMI)"
+
+msgid "not supported"
+msgstr "nesuportat"
+
+msgid "ECM (CDC Ethernet)"
+msgstr "ECM (CDC Ethernet)"
+
+msgid "MBIM"
+msgstr "MBIM"
+
+msgid "RNDIS"
+msgstr "RNDIS"
+
+msgid "Apply USB mode"
+msgstr "Aplicați modul USB"
+
+msgid "Read USB mode"
+msgstr "Citiți modul USB"
+
+msgid "Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem."
+msgstr "Modurile care nu sunt acceptate de firmware-ul modemului sunt dezactivate și marcate ca neacceptate. Modurile acceptate sunt detectate automat de la modem."
+
+msgid "Apply NAT"
+msgstr "Aplicați NAT"
+
+msgid "Read NAT"
+msgstr "Citiți NAT"
+
+msgid "Raw AT command"
+msgstr "Comanda AT brută"
+
+msgid "AT command"
+msgstr "Comanda AT"
+
+msgid "Send"
+msgstr "Trimite"
+
+msgid "Sending"
+msgstr "Trimiterea"
+
+msgid "AT command failed"
+msgstr "Comanda AT a eșuat"
+
+msgid "Reading APN"
+msgstr "Citirea APN"
+
+msgid "Failed to read APN"
+msgstr "Nu s-a putut citi APN"
+
+msgid "Reading settings"
+msgstr "Setări de citire"
+
+msgid "Settings read"
+msgstr "Setări citite"
+
+msgid "Failed to read settings"
+msgstr "Nu s-au putut citi setările"
+
+msgid "APN, username and password may contain only letters, digits, dot, hyphen and underscore."
+msgstr "APN, numele de utilizator și parola pot conține numai litere, cifre, punct, cratima și liniuță de subliniere."
+
+msgid "Apply APN settings? The connection may drop."
+msgstr "Aplicați setările APN? Conexiunea se poate întrerupe."
+
+msgid "Applying APN"
+msgstr "Aplicarea APN"
+
+msgid "APN applied. Reconnect or reboot the modem if needed."
+msgstr "APN aplicat. Reconectați sau reporniți modemul dacă este necesar."
+
+msgid "Failed to apply APN"
+msgstr "Nu s-a putut aplica APN"
+
+msgid "Apply network mode? The connection may drop."
+msgstr "Aplicați modul de rețea? Conexiunea se poate întrerupe."
+
+msgid "Reading bands"
+msgstr "Benzi de lectură"
+
+msgid "Failed to read bands"
+msgstr "Nu s-a putut citi benzile"
+
+msgid "No bands selected"
+msgstr "Nu au fost selectate benzi"
+
+msgid "Restore default bands?"
+msgstr "Restabiliți benzile implicite?"
+
+msgid "Apply selected bands? The connection may drop."
+msgstr "Aplicați benzile selectate? Conexiunea se poate întrerupe."
+
+msgid "Applying bands"
+msgstr "Aplicarea benzilor"
+
+msgid "Failed to apply bands"
+msgstr "Nu s-au aplicat benzile"
+
+msgid "USB mode is read-only in this UI."
+msgstr "Modul USB este doar citire în această interfață de utilizare."
+
+msgid "This USB mode is not supported by the modem firmware."
+msgstr "Acest mod USB nu este acceptat de firmware-ul modemului."
+
+msgid "Change USB mode? The modem will re-enumerate and the connection may drop. Continue?"
+msgstr "Schimbați modul USB? Modemul se va re-enumera și conexiunea se poate întrerupe. Continua?"
+
+msgid "Change NAT mode? The connection may drop."
+msgstr "Schimbați modul NAT? Conexiunea se poate întrerupe."
+
+msgid "Current operator"
+msgstr "Operatorul actual"
+
+msgid "AT port"
+msgstr "AT port"
+
+msgid "Scan networks"
+msgstr "Scanați rețele"
+
+msgid "Automatic operator selection"
+msgstr "Selectarea automată a operatorului"
+
+msgid "Stop scan"
+msgstr "Opriți scanarea"
+
+msgid "Update MCC/MNC database"
+msgstr "Actualizați baza de date MCC/MNC"
+
+msgid "Country"
+msgstr "Țară"
+
+msgid "MCC/MNC"
+msgstr "MCC/MNC"
+
+msgid "Technology"
+msgstr "Tehnologia"
+
+msgid "Action"
+msgstr "Acţiune"
+
+msgid "Raw scan output"
+msgstr "Ieșire de scanare brută"
+
+msgid "current"
+msgstr "curent"
+
+msgid "available"
+msgstr "disponibile"
+
+msgid "forbidden"
+msgstr "interzis"
+
+msgid "unknown"
+msgstr "necunoscut"
+
+msgid "Select"
+msgstr "Selectați"
+
+msgid "MCC/MNC database updated."
+msgstr "Baza de date MCC/MNC a fost actualizată."
+
+msgid "Not updated yet"
+msgstr "Nu este încă actualizat"
+
+msgid "Failed to read MCC/MNC update status"
+msgstr "Nu s-a putut citi starea actualizării MCC/MNC"
+
+msgid "Updating MCC/MNC database"
+msgstr "Se actualizează baza de date MCC/MNC"
+
+msgid "Scanning networks... This may take up to two minutes."
+msgstr "Scanarea rețelelor... Aceasta poate dura până la două minute."
+
+msgid "Scan complete."
+msgstr "Scanare finalizată."
+
+msgid "Modem is busy. Try again later."
+msgstr "Modemul este ocupat. Încercați din nou mai târziu."
+
+msgid "Scan failed"
+msgstr "Scanarea a eșuat"
+
+msgid "Not scanned yet."
+msgstr "Nu a fost scanat încă."
+
+msgid "Failed to read scan status"
+msgstr "Nu s-a putut citi starea scanării"
+
+msgid "Stopping scan"
+msgstr "Oprirea scanării"
+
+msgid "Network scan stopped"
+msgstr "Scanarea rețelei a fost oprită"
+
+msgid "Failed to stop scan"
+msgstr "Nu s-a oprit scanarea"
+
+msgid "Starting network scan"
+msgstr "Se începe scanarea rețelei"
+
+msgid "Network scan started"
+msgstr "Scanarea rețelei a început"
+
+msgid "Failed to start scan"
+msgstr "Nu s-a pornit scanarea"
+
+msgid "Select operator"
+msgstr "Selectați operatorul"
+
+msgid "The connection may drop."
+msgstr "Conexiunea se poate întrerupe."
+
+msgid "Selecting operator"
+msgstr "Selectarea operatorului"
+
+msgid "Operator selection sent"
+msgstr "Selecția operatorului a fost trimisă"
+
+msgid "Failed to select operator"
+msgstr "Operatorul nu a fost selectat"
+
+msgid "Use automatic operator selection?"
+msgstr "Folosiți selecția automată a operatorului?"
+
+msgid "Selecting automatic mode"
+msgstr "Selectarea modului automat"

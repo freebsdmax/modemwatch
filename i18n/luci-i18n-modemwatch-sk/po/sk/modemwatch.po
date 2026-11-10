@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-modemwatch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 00:00+0000\n"
+"PO-Revision-Date: 2026-11-10 00:00+0000\n"
+"Last-Translator: modemwatch contributors\n"
+"Language-Team: Slovenčina (Slovak)\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
+
+msgid "Modem LTE 4G"
+msgstr "Modem LTE 4G"
+
+msgid "Status"
+msgstr "Stav"
+
+msgid "Signal"
+msgstr "Signál"
+
+msgid "Log"
+msgstr "Log"
+
+msgid "Modem settings"
+msgstr "Nastavenia modemu"
+
+msgid "Network search"
+msgstr "Vyhľadávanie v sieti"
+
+msgid "Settings"
+msgstr "Nastavenia"
+
+msgid "invalid token"
+msgstr "neplatný token"
+
+msgid "empty AT command"
+msgstr "prázdny AT príkaz"
+
+msgid "invalid band selection"
+msgstr "neplatný výber pásma"
+
+msgid "Band settings sent"
+msgstr "Nastavenia pásma boli odoslané"
+
+msgid "network scan started"
+msgstr "skenovanie siete začalo"
+
+msgid "network scan stopped"
+msgstr "skenovanie siete sa zastavilo"
+
+msgid "invalid operator"
+msgstr "neplatný operátor"
+
+msgid "Downloading MCC/MNC list"
+msgstr "Sťahuje sa zoznam MCC/MNC"
+
+msgid "Parsing MCC/MNC list"
+msgstr "Analýza zoznamu MCC/MNC"
+
+msgid "MCC/MNC database updated"
+msgstr "Databáza MCC/MNC bola aktualizovaná"
+
+msgid "Failed to update MCC/MNC database"
+msgstr "Nepodarilo sa aktualizovať databázu MCC/MNC"
+
+msgid "MCC/MNC update already running"
+msgstr "Aktualizácia MCC/MNC už beží"
+
+msgid "MCC/MNC update started"
+msgstr "Spustila sa aktualizácia MCC/MNC"
+
+msgid "operator selection sent"
+msgstr "výber operátora odoslaný"
+
+msgid "internet check started"
+msgstr "spustila sa kontrola internetu"
+
+msgid "modem reboot started"
+msgstr "spustil sa reštart modemu"
+
+msgid "service restarted"
+msgstr "služba reštartovaná"
+
+msgid "Modem info updated"
+msgstr "Informácie o modemu boli aktualizované"
+
+msgid "Modem did not respond"
+msgstr "Modem nereagoval"
+
+msgid "Checks internet connectivity and reboots the Quectel modem when the connection is lost."
+msgstr "Skontroluje internetové pripojenie a reštartuje modem Quectel, keď sa spojenie stratí."
+
+msgid "Service settings"
+msgstr "Nastavenia služby"
+
+msgid "Enable service"
+msgstr "Povoliť službu"
+
+msgid "Check interval (seconds)"
+msgstr "Interval kontroly (sekundy)"
+
+msgid "Failures before modem reboot"
+msgstr "Zlyhania pred reštartovaním modemu"
+
+msgid "Ping hosts"
+msgstr "Ping hostitelia"
+
+msgid "Space-separated list. Internet is considered up if at least one host responds."
+msgstr "Zoznam oddelený medzerou. Internet sa považuje za zapnutý, ak odpovie aspoň jeden hostiteľ."
+
+msgid "Also require DNS resolution"
+msgstr "Vyžaduje tiež rozlíšenie DNS"
+
+msgid "DNS name to resolve"
+msgstr "Názov DNS, ktorý sa má vyriešiť"
+
+msgid "Also require an HTTP request"
+msgstr "Vyžaduje tiež požiadavku HTTP"
+
+msgid "HTTP URL"
+msgstr "HTTP URL"
+
+msgid "WAN interface"
+msgstr "Rozhranie WAN"
+
+msgid "The device name is read from network.<iface>.device."
+msgstr "Názov zariadenia sa načíta zo siete.<iface>.device."
+
+msgid "AT serial port"
+msgstr "AT sériový port"
+
+msgid "Detected USB/ACM serial ports. For Quectel EC200A use /dev/ttyUSB2; /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Zistené sériové porty USB/ACM. Pre Quectel EC200A použite /dev/ttyUSB2; /dev/ttyUSB0 je diagnostický port a neodpovedá na príkazy AT."
+
+msgid "AT port baud rate"
+msgstr "Prenosová rýchlosť portu AT"
+
+msgid "Modem reboot method"
+msgstr "Metóda reštartu modemu"
+
+msgid "AT+CFUN=1,1 (recommended)"
+msgstr "AT+CFUN=1,1 (odporúčané)"
+
+msgid "USB re-bind (best effort)"
+msgstr "USB re-bind (najlepšie úsilie)"
+
+msgid "Wait after reboot (seconds)"
+msgstr "Počkajte po reštarte (sekundy)"
+
+msgid "Collect modem information"
+msgstr "Zbierajte informácie o modemoch"
+
+msgid "Reads model, firmware, IMEI, signal, operator and temperature via AT commands."
+msgstr "Číta model, firmvér, IMEI, signál, operátora a teplotu pomocou AT príkazov."
+
+msgid "Modem info interval (seconds)"
+msgstr "Interval informácií o modemu (sekundy)"
+
+msgid "How often to query the modem with AT commands. Keep it longer if other modem tools use the same serial port."
+msgstr "Ako často žiadať modem pomocou AT príkazov. Ponechajte ho dlhšie, ak iné modemové nástroje používajú rovnaký sériový port."
+
+msgid "Signal refresh interval (seconds)"
+msgstr "Interval obnovy signálu (sekundy)"
+
+msgid "Pause between signal page updates. The actual update also includes the modem response time."
+msgstr "Pauza medzi aktualizáciami signálovej stránky. Aktuálna aktualizácia zahŕňa aj čas odozvy modemu."
+
+msgid "Safety"
+msgstr "Bezpečnosť"
+
+msgid "Maximum reboots per window"
+msgstr "Maximálny počet reštartov na okno"
+
+msgid "Set to 0 for unlimited. The limit prevents reboot loops."
+msgstr "Nastavte na 0 pre neobmedzené. Obmedzenie bráni slučkám pri reštarte."
+
+msgid "Reboot window (seconds)"
+msgstr "Okno reštartu (sekundy)"
+
+msgid "Cooldown between reboots (seconds)"
+msgstr "Vychladnutie medzi reštartmi (sekundy)"
+
+msgid "Logging"
+msgstr "Zaznamenávanie"
+
+msgid "Log level"
+msgstr "Log level"
+
+msgid "Error"
+msgstr "Chyba"
+
+msgid "Warning"
+msgstr "Warning"
+
+msgid "Info"
+msgstr "Informácia"
+
+msgid "Debug"
+msgstr "Ladenie"
+
+msgid "Remote access warning"
+msgstr "Upozornenie na vzdialený prístup"
+
+msgid "This service reboots only the modem, not the router. If the modem is the only WAN, internet and remote access will be down during the reboot. Do not change USB mode, APN or band settings remotely without a rollback plan."
+msgstr "Táto služba reštartuje iba modem, nie smerovač. Ak je modem jedinou sieťou WAN, internet a vzdialený prístup budú počas reštartu vypnuté. Nemeňte nastavenia režimu USB, APN alebo pásma na diaľku bez plánu vrátenia."
+
+msgid "Service"
+msgstr "Service"
+
+msgid "State"
+msgstr "State"
+
+msgid "Last check"
+msgstr "Posledná kontrola"
+
+msgid "Last success"
+msgstr "Posledný úspech"
+
+msgid "Last failure"
+msgstr "Posledné zlyhanie"
+
+msgid "Failures"
+msgstr "Neúspechy"
+
+msgid "Modem reboots"
+msgstr "Modem sa reštartuje"
+
+msgid "last"
+msgstr "posledný"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "Data transferred"
+msgstr "Prenesené dáta"
+
+msgid "Ping / DNS / HTTP"
+msgstr "Ping / DNS / HTTP"
+
+msgid "Latency"
+msgstr "Oneskorenie"
+
+msgid "Modem"
+msgstr "Modem"
+
+msgid "Firmware"
+msgstr "Firmvér"
+
+msgid "IMEI"
+msgstr "IMEI"
+
+msgid "Operator / network"
+msgstr "Operátor / sieť"
+
+msgid "Modem temperature"
+msgstr "Teplota modemu"
+
+msgid "Service uptime"
+msgstr "Doba prevádzkyschopnosti služby"
+
+msgid "LTE quality"
+msgstr "Kvalita LTE"
+
+msgid "CSQ"
+msgstr "CSQ"
+
+msgid "RSSI"
+msgstr "RSSI"
+
+msgid "RSRP"
+msgstr "RSRP"
+
+msgid "SINR"
+msgstr "SINR"
+
+msgid "RSRQ"
+msgstr "RSRQ"
+
+msgid "Band"
+msgstr "Pásmo"
+
+msgid "Check now"
+msgstr "Skontrolujte teraz"
+
+msgid "Refresh modem info"
+msgstr "Obnoviť informácie o modeme"
+
+msgid "Reboot modem"
+msgstr "Reštartujte modem"
+
+msgid "Restart service"
+msgstr "Reštartujte službu"
+
+msgid "yes"
+msgstr "áno"
+
+msgid "no"
+msgstr "nie"
+
+msgid "online"
+msgstr "online"
+
+msgid "offline"
+msgstr "offline"
+
+msgid "rebooting"
+msgstr "reštartovanie"
+
+msgid "checking"
+msgstr "kontrola"
+
+msgid "disabled"
+msgstr "zakázané"
+
+msgid "starting"
+msgstr "počnúc"
+
+msgid "stopped"
+msgstr "zastavil"
+
+msgid "error"
+msgstr "chyba"
+
+msgid "running"
+msgstr "beh"
+
+msgid "Failed to read status"
+msgstr "Stav sa nepodarilo prečítať"
+
+msgid "Reading modem data"
+msgstr "Čítanie údajov modemu"
+
+msgid "Failed to read modem data"
+msgstr "Nepodarilo sa prečítať údaje modemu"
+
+msgid "Check started"
+msgstr "Kontrola spustená"
+
+msgid "Check failed"
+msgstr "Kontrola zlyhala"
+
+msgid "Reboot the modem now? Internet will be down for about"
+msgstr "Reštartovať modem teraz? Internet bude asi"
+
+msgid "seconds."
+msgstr "sekúnd."
+
+msgid "Modem reboot started"
+msgstr "Spustil sa reštart modemu"
+
+msgid "Reboot failed"
+msgstr "Reštartovanie zlyhalo"
+
+msgid "Restart the modemwatch service?"
+msgstr "Reštartovať službu modemwatch?"
+
+msgid "Service restarted"
+msgstr "Služba bola reštartovaná"
+
+msgid "Restart failed"
+msgstr "Reštartovanie zlyhalo"
+
+msgid "Signal strength (RSRQ)"
+msgstr "Sila signálu (RSRQ)"
+
+msgid "Operator"
+msgstr "Operator"
+
+msgid "Network"
+msgstr "Sieť"
+
+msgid "Last update"
+msgstr "Posledná aktualizácia"
+
+msgid "Refresh interval"
+msgstr "Interval obnovovania"
+
+msgid "seconds"
+msgstr "sekúnd"
+
+msgid "Signal Strength"
+msgstr "Sila signálu"
+
+msgid "Received Signal Strength Indicator"
+msgstr "Indikátor sily prijatého signálu"
+
+msgid "Reference Signal Receive Power"
+msgstr "Napájanie referenčného signálu"
+
+msgid "Signal to Interference plus Noise Ratio"
+msgstr "Signál k rušeniu plus pomer šumu"
+
+msgid "Reference Signal Received Quality"
+msgstr "Kvalita prijímaného referenčného signálu"
+
+msgid "Refresh now"
+msgstr "Obnovte teraz"
+
+msgid "Pause"
+msgstr "Pauza"
+
+msgid "Busy"
+msgstr "Zaneprázdnený"
+
+msgid "AT port not found"
+msgstr "Port AT sa nenašiel"
+
+msgid "No response from modem"
+msgstr "Žiadna odpoveď z modemu"
+
+msgid "Failed to read signal"
+msgstr "Signál sa nepodarilo prečítať"
+
+msgid "Resume"
+msgstr "Obnoviť"
+
+msgid "Refresh log"
+msgstr "Obnoviť denník"
+
+msgid "Auto-refresh"
+msgstr "Automatické obnovenie"
+
+msgid "(empty)"
+msgstr "(prázdne)"
+
+msgid "Updated"
+msgstr "Aktualizované"
+
+msgid "Failed to read log"
+msgstr "Nepodarilo sa prečítať denník"
+
+msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
+msgstr "AT príkazy môžu zmeniť nastavenia modemu a môžu odpojiť internet alebo SSH. Nemeňte režim USB, APN, pásmo ani sieťový režim na diaľku bez plánu vrátenia."
+
+msgid "Expert mode — allow changing USB mode and NAT"
+msgstr "Expertný režim — umožňuje zmeniť režim USB a NAT"
+
+msgid "Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan."
+msgstr "Zmena režimu USB môže odpojiť modem a SSH. Používajte iba s miestnym prístupom alebo plánom vrátenia."
+
+msgid "Selected AT port"
+msgstr "Zvolený AT port"
+
+msgid "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Pre Quectel EC200A použite /dev/ttyUSB2. /dev/ttyUSB0 je diagnostický port a neodpovedá na príkazy AT."
+
+msgid "Current configuration"
+msgstr "Aktuálna konfigurácia"
+
+msgid "Read current configuration"
+msgstr "Prečítajte si aktuálnu konfiguráciu"
+
+msgid "Modem information"
+msgstr "Informácie o modemu"
+
+msgid "Model"
+msgstr "Model"
+
+msgid "SIM status"
+msgstr "Stav SIM karty"
+
+msgid "Temperature"
+msgstr "Teplota"
+
+msgid "Access Point Name (APN)"
+msgstr "Názov prístupového bodu (APN)"
+
+msgid "Username"
+msgstr "Používateľské meno"
+
+msgid "Password"
+msgstr "Heslo"
+
+msgid "Authentication"
+msgstr "Overenie totožnosti"
+
+msgid "None"
+msgstr "Žiadny"
+
+msgid "PDP type"
+msgstr "typ PDP"
+
+msgid "Read APN"
+msgstr "Prečítajte si APN"
+
+msgid "Apply APN"
+msgstr "Použiť APN"
+
+msgid "Network mode"
+msgstr "Režim siete"
+
+msgid "Mode"
+msgstr "Režim"
+
+msgid "Automatic"
+msgstr "Automatic"
+
+msgid "GSM only"
+msgstr "Iba GSM"
+
+msgid "WCDMA only"
+msgstr "iba WCDMA"
+
+msgid "LTE only"
+msgstr "Len LTE"
+
+msgid "Read mode"
+msgstr "Režim čítania"
+
+msgid "Apply mode"
+msgstr "Režim použitia"
+
+msgid "Band configuration"
+msgstr "Konfigurácia pásma"
+
+msgid "Read bands"
+msgstr "Prečítajte si pásma"
+
+msgid "Select all"
+msgstr "Vybrať všetko"
+
+msgid "Restore default"
+msgstr "Obnoviť predvolené"
+
+msgid "Apply bands"
+msgstr "Aplikujte pásy"
+
+msgid "Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection."
+msgstr "Vyberte pásma LTE, ktoré chcete ponechať povolené. Použitie môže reštartovať WAN a prerušiť pripojenie."
+
+msgid "USB mode"
+msgstr "Režim USB"
+
+msgid "Current value"
+msgstr "Aktuálna hodnota"
+
+msgid "New value"
+msgstr "Nová hodnota"
+
+msgid "RMNET (QMI)"
+msgstr "RMNET (QMI)"
+
+msgid "not supported"
+msgstr "nie je podporované"
+
+msgid "ECM (CDC Ethernet)"
+msgstr "ECM (CDC Ethernet)"
+
+msgid "MBIM"
+msgstr "MBIM"
+
+msgid "RNDIS"
+msgstr "RNDIS"
+
+msgid "Apply USB mode"
+msgstr "Použiť režim USB"
+
+msgid "Read USB mode"
+msgstr "Režim čítania USB"
+
+msgid "Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem."
+msgstr "Režimy, ktoré nie sú podporované firmvérom modemu, sú zakázané a označené ako nepodporované. Podporované režimy sa zisťujú automaticky z modemu."
+
+msgid "Apply NAT"
+msgstr "Použiť NAT"
+
+msgid "Read NAT"
+msgstr "Prečítajte si NAT"
+
+msgid "Raw AT command"
+msgstr "Surový AT príkaz"
+
+msgid "AT command"
+msgstr "AT príkaz"
+
+msgid "Send"
+msgstr "Odoslať"
+
+msgid "Sending"
+msgstr "Odosielanie"
+
+msgid "AT command failed"
+msgstr "Príkaz AT zlyhal"
+
+msgid "Reading APN"
+msgstr "Čítanie APN"
+
+msgid "Failed to read APN"
+msgstr "Nepodarilo sa prečítať APN"
+
+msgid "Reading settings"
+msgstr "Nastavenia čítania"
+
+msgid "Settings read"
+msgstr "Nastavenia prečítané"
+
+msgid "Failed to read settings"
+msgstr "Nastavenia sa nepodarilo prečítať"
+
+msgid "APN, username and password may contain only letters, digits, dot, hyphen and underscore."
+msgstr "APN, používateľské meno a heslo môžu obsahovať iba písmená, číslice, bodku, spojovník a podčiarkovník."
+
+msgid "Apply APN settings? The connection may drop."
+msgstr "Chcete použiť nastavenia APN? Spojenie môže prepadnúť."
+
+msgid "Applying APN"
+msgstr "Aplikácia APN"
+
+msgid "APN applied. Reconnect or reboot the modem if needed."
+msgstr "APN bol použitý. V prípade potreby znova pripojte alebo reštartujte modem."
+
+msgid "Failed to apply APN"
+msgstr "Nepodarilo sa použiť APN"
+
+msgid "Apply network mode? The connection may drop."
+msgstr "Použiť sieťový režim? Spojenie môže prepadnúť."
+
+msgid "Reading bands"
+msgstr "Pásy na čítanie"
+
+msgid "Failed to read bands"
+msgstr "Nepodarilo sa prečítať pásma"
+
+msgid "No bands selected"
+msgstr "Nie sú vybraté žiadne kapely"
+
+msgid "Restore default bands?"
+msgstr "Obnoviť predvolené pásma?"
+
+msgid "Apply selected bands? The connection may drop."
+msgstr "Použiť vybrané pásma? Spojenie môže prepadnúť."
+
+msgid "Applying bands"
+msgstr "Nanášanie pásov"
+
+msgid "Failed to apply bands"
+msgstr "Pásy sa nepodarilo použiť"
+
+msgid "USB mode is read-only in this UI."
+msgstr "Režim USB je v tomto používateľskom rozhraní iba na čítanie."
+
+msgid "This USB mode is not supported by the modem firmware."
+msgstr "Tento režim USB nepodporuje firmvér modemu."
+
+msgid "Change USB mode? The modem will re-enumerate and the connection may drop. Continue?"
+msgstr "Zmeniť režim USB? Modem sa znova vyčísli a spojenie môže prepadnúť. Pokračovať?"
+
+msgid "Change NAT mode? The connection may drop."
+msgstr "Zmeniť režim NAT? Spojenie môže prepadnúť."
+
+msgid "Current operator"
+msgstr "Súčasný operátor"
+
+msgid "AT port"
+msgstr "AT port"
+
+msgid "Scan networks"
+msgstr "Skenovať siete"
+
+msgid "Automatic operator selection"
+msgstr "Automatický výber operátora"
+
+msgid "Stop scan"
+msgstr "Zastaviť skenovanie"
+
+msgid "Update MCC/MNC database"
+msgstr "Aktualizujte databázu MCC/MNC"
+
+msgid "Country"
+msgstr "Krajina"
+
+msgid "MCC/MNC"
+msgstr "MCC/MNC"
+
+msgid "Technology"
+msgstr "Technológia"
+
+msgid "Action"
+msgstr "Action"
+
+msgid "Raw scan output"
+msgstr "Surový výstup skenovania"
+
+msgid "current"
+msgstr "prúd"
+
+msgid "available"
+msgstr "k dispozícii"
+
+msgid "forbidden"
+msgstr "zakázané"
+
+msgid "unknown"
+msgstr "neznámy"
+
+msgid "Select"
+msgstr "Select"
+
+msgid "MCC/MNC database updated."
+msgstr "Databáza MCC/MNC bola aktualizovaná."
+
+msgid "Not updated yet"
+msgstr "Zatiaľ neaktualizované"
+
+msgid "Failed to read MCC/MNC update status"
+msgstr "Nepodarilo sa prečítať stav aktualizácie MCC/MNC"
+
+msgid "Updating MCC/MNC database"
+msgstr "Aktualizácia databázy MCC/MNC"
+
+msgid "Scanning networks... This may take up to two minutes."
+msgstr "Prebieha vyhľadávanie sietí... Môže to trvať až dve minúty."
+
+msgid "Scan complete."
+msgstr "Skenovanie je dokončené."
+
+msgid "Modem is busy. Try again later."
+msgstr "Modem je zaneprázdnený. Skúste to znova neskôr."
+
+msgid "Scan failed"
+msgstr "Skenovanie zlyhalo"
+
+msgid "Not scanned yet."
+msgstr "Ešte nenaskenované."
+
+msgid "Failed to read scan status"
+msgstr "Nepodarilo sa prečítať stav skenovania"
+
+msgid "Stopping scan"
+msgstr "Zastavenie skenovania"
+
+msgid "Network scan stopped"
+msgstr "Sieťové skenovanie sa zastavilo"
+
+msgid "Failed to stop scan"
+msgstr "Skenovanie sa nepodarilo zastaviť"
+
+msgid "Starting network scan"
+msgstr "Spustenie skenovania siete"
+
+msgid "Network scan started"
+msgstr "Sieťové skenovanie sa začalo"
+
+msgid "Failed to start scan"
+msgstr "Skenovanie zlyhalo"
+
+msgid "Select operator"
+msgstr "Vyberte operátora"
+
+msgid "The connection may drop."
+msgstr "Spojenie môže prepadnúť."
+
+msgid "Selecting operator"
+msgstr "Výber operátora"
+
+msgid "Operator selection sent"
+msgstr "Výber operátora bol odoslaný"
+
+msgid "Failed to select operator"
+msgstr "Nepodarilo sa vybrať operátora"
+
+msgid "Use automatic operator selection?"
+msgstr "Chcete použiť automatický výber operátora?"
+
+msgid "Selecting automatic mode"
+msgstr "Výber automatického režimu"

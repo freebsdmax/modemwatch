@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-modemwatch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 00:00+0000\n"
+"PO-Revision-Date: 2026-11-10 00:00+0000\n"
+"Last-Translator: modemwatch contributors\n"
+"Language-Team: 한국어 (Korean)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n == 1 ? 0 : 1;\n"
+
+msgid "Modem LTE 4G"
+msgstr "모뎀 LTE 4G"
+
+msgid "Status"
+msgstr "상태"
+
+msgid "Signal"
+msgstr "신호"
+
+msgid "Log"
+msgstr "로그"
+
+msgid "Modem settings"
+msgstr "모뎀 설정"
+
+msgid "Network search"
+msgstr "네트워크 검색"
+
+msgid "Settings"
+msgstr "설정"
+
+msgid "invalid token"
+msgstr "잘못된 토큰"
+
+msgid "empty AT command"
+msgstr "빈 AT 명령"
+
+msgid "invalid band selection"
+msgstr "잘못된 밴드 선택"
+
+msgid "Band settings sent"
+msgstr "밴드 설정 전송됨"
+
+msgid "network scan started"
+msgstr "네트워크 스캔이 시작되었습니다"
+
+msgid "network scan stopped"
+msgstr "네트워크 스캔이 중지되었습니다"
+
+msgid "invalid operator"
+msgstr "잘못된 연산자"
+
+msgid "Downloading MCC/MNC list"
+msgstr "MCC/MNC 목록 다운로드 중"
+
+msgid "Parsing MCC/MNC list"
+msgstr "MCC/MNC 목록 구문 분석"
+
+msgid "MCC/MNC database updated"
+msgstr "MCC/MNC 데이터베이스가 업데이트되었습니다."
+
+msgid "Failed to update MCC/MNC database"
+msgstr "MCC/MNC 데이터베이스를 업데이트하지 못했습니다."
+
+msgid "MCC/MNC update already running"
+msgstr "MCC/MNC 업데이트가 이미 실행 중입니다."
+
+msgid "MCC/MNC update started"
+msgstr "MCC/MNC 업데이트가 시작되었습니다."
+
+msgid "operator selection sent"
+msgstr "교환원 선택이 전송되었습니다"
+
+msgid "internet check started"
+msgstr "인터넷 확인이 시작되었습니다"
+
+msgid "modem reboot started"
+msgstr "모뎀 재부팅이 시작되었습니다"
+
+msgid "service restarted"
+msgstr "서비스가 다시 시작되었습니다"
+
+msgid "Modem info updated"
+msgstr "모뎀 정보가 업데이트되었습니다."
+
+msgid "Modem did not respond"
+msgstr "모뎀이 응답하지 않음"
+
+msgid "Checks internet connectivity and reboots the Quectel modem when the connection is lost."
+msgstr "인터넷 연결을 확인하고 연결이 끊어지면 Quectel 모뎀을 재부팅합니다."
+
+msgid "Service settings"
+msgstr "서비스 설정"
+
+msgid "Enable service"
+msgstr "서비스 활성화"
+
+msgid "Check interval (seconds)"
+msgstr "확인 간격(초)"
+
+msgid "Failures before modem reboot"
+msgstr "모뎀 재부팅 전 오류"
+
+msgid "Ping hosts"
+msgstr "핑 호스트"
+
+msgid "Space-separated list. Internet is considered up if at least one host responds."
+msgstr "공백으로 구분된 목록입니다. 하나 이상의 호스트가 응답하면 인터넷이 연결된 것으로 간주됩니다."
+
+msgid "Also require DNS resolution"
+msgstr "DNS 확인도 필요합니다."
+
+msgid "DNS name to resolve"
+msgstr "확인할 DNS 이름"
+
+msgid "Also require an HTTP request"
+msgstr "또한 HTTP 요청이 필요합니다."
+
+msgid "HTTP URL"
+msgstr "HTTP URL"
+
+msgid "WAN interface"
+msgstr "WAN 인터페이스"
+
+msgid "The device name is read from network.<iface>.device."
+msgstr "장치 이름은 network.<iface>.device에서 읽습니다."
+
+msgid "AT serial port"
+msgstr "AT 직렬 포트"
+
+msgid "Detected USB/ACM serial ports. For Quectel EC200A use /dev/ttyUSB2; /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "USB/ACM 직렬 포트가 감지되었습니다. Quectel EC200A의 경우 /dev/ttyUSB2를 사용하십시오. /dev/ttyUSB0은 진단 포트이며 AT 명령에 응답하지 않습니다."
+
+msgid "AT port baud rate"
+msgstr "AT 포트 전송 속도"
+
+msgid "Modem reboot method"
+msgstr "모뎀 재부팅 방법"
+
+msgid "AT+CFUN=1,1 (recommended)"
+msgstr "AT+CFUN=1,1 (권장)"
+
+msgid "USB re-bind (best effort)"
+msgstr "USB 다시 바인딩(최선의 노력)"
+
+msgid "Wait after reboot (seconds)"
+msgstr "재부팅 후 대기(초)"
+
+msgid "Collect modem information"
+msgstr "모뎀 정보 수집"
+
+msgid "Reads model, firmware, IMEI, signal, operator and temperature via AT commands."
+msgstr "AT 명령을 통해 모델, 펌웨어, IMEI, 신호, 운영자 및 온도를 읽습니다."
+
+msgid "Modem info interval (seconds)"
+msgstr "모뎀 정보 간격(초)"
+
+msgid "How often to query the modem with AT commands. Keep it longer if other modem tools use the same serial port."
+msgstr "AT 명령으로 모뎀을 쿼리하는 빈도입니다. 다른 모뎀 도구가 동일한 직렬 포트를 사용하는 경우 더 오래 유지하십시오."
+
+msgid "Signal refresh interval (seconds)"
+msgstr "신호 새로 고침 간격(초)"
+
+msgid "Pause between signal page updates. The actual update also includes the modem response time."
+msgstr "신호 페이지 업데이트 사이에 일시 중지합니다. 실제 업데이트에는 모뎀 응답 시간도 포함됩니다."
+
+msgid "Safety"
+msgstr "안전"
+
+msgid "Maximum reboots per window"
+msgstr "창당 최대 재부팅"
+
+msgid "Set to 0 for unlimited. The limit prevents reboot loops."
+msgstr "0으로 설정하면 무제한입니다. 이 제한은 재부팅 루프를 방지합니다."
+
+msgid "Reboot window (seconds)"
+msgstr "재부팅 기간(초)"
+
+msgid "Cooldown between reboots (seconds)"
+msgstr "재부팅 간 쿨타임(초)"
+
+msgid "Logging"
+msgstr "로그 기록"
+
+msgid "Log level"
+msgstr "로그 수준"
+
+msgid "Error"
+msgstr "오류(Error)"
+
+msgid "Warning"
+msgstr "경고"
+
+msgid "Info"
+msgstr "정보(Info)"
+
+msgid "Debug"
+msgstr "디버그(Debug)"
+
+msgid "Remote access warning"
+msgstr "원격 접속 경고"
+
+msgid "This service reboots only the modem, not the router. If the modem is the only WAN, internet and remote access will be down during the reboot. Do not change USB mode, APN or band settings remotely without a rollback plan."
+msgstr "이 서비스는 라우터가 아닌 모뎀만 재부팅합니다. 모뎀이 유일한 WAN인 경우 재부팅하는 동안 인터넷과 원격 액세스가 중단됩니다. 롤백 계획 없이 USB 모드, APN 또는 대역 설정을 원격으로 변경하지 마십시오."
+
+msgid "Service"
+msgstr "서비스"
+
+msgid "State"
+msgstr "상태"
+
+msgid "Last check"
+msgstr "마지막 확인"
+
+msgid "Last success"
+msgstr "마지막 성공"
+
+msgid "Last failure"
+msgstr "마지막 실패"
+
+msgid "Failures"
+msgstr "실패"
+
+msgid "Modem reboots"
+msgstr "모뎀 재부팅"
+
+msgid "last"
+msgstr "마지막"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "Data transferred"
+msgstr "전송된 데이터"
+
+msgid "Ping / DNS / HTTP"
+msgstr "핑/DNS/HTTP"
+
+msgid "Latency"
+msgstr "지연 시간"
+
+msgid "Modem"
+msgstr "모뎀"
+
+msgid "Firmware"
+msgstr "펌웨어"
+
+msgid "IMEI"
+msgstr "IMEI"
+
+msgid "Operator / network"
+msgstr "통신사/네트워크"
+
+msgid "Modem temperature"
+msgstr "모뎀 온도"
+
+msgid "Service uptime"
+msgstr "서비스 가동 시간"
+
+msgid "LTE quality"
+msgstr "LTE 품질"
+
+msgid "CSQ"
+msgstr "CSQ"
+
+msgid "RSSI"
+msgstr "RSSI"
+
+msgid "RSRP"
+msgstr "RSRP"
+
+msgid "SINR"
+msgstr "SINR"
+
+msgid "RSRQ"
+msgstr "RSRQ"
+
+msgid "Band"
+msgstr "대역"
+
+msgid "Check now"
+msgstr "지금 확인하세요"
+
+msgid "Refresh modem info"
+msgstr "모뎀 정보 새로 고침"
+
+msgid "Reboot modem"
+msgstr "모뎀 재부팅"
+
+msgid "Restart service"
+msgstr "서비스 다시 시작"
+
+msgid "yes"
+msgstr "예"
+
+msgid "no"
+msgstr "아니요"
+
+msgid "online"
+msgstr "온라인"
+
+msgid "offline"
+msgstr "오프라인"
+
+msgid "rebooting"
+msgstr "재부팅 중"
+
+msgid "checking"
+msgstr "확인 중"
+
+msgid "disabled"
+msgstr "사용 안 함"
+
+msgid "starting"
+msgstr "시작"
+
+msgid "stopped"
+msgstr "중지됨"
+
+msgid "error"
+msgstr "오류"
+
+msgid "running"
+msgstr "달리기"
+
+msgid "Failed to read status"
+msgstr "상태를 읽지 못했습니다."
+
+msgid "Reading modem data"
+msgstr "모뎀 데이터 읽기"
+
+msgid "Failed to read modem data"
+msgstr "모뎀 데이터를 읽지 못했습니다."
+
+msgid "Check started"
+msgstr "점검이 시작되었습니다"
+
+msgid "Check failed"
+msgstr "확인 실패"
+
+msgid "Reboot the modem now? Internet will be down for about"
+msgstr "지금 모뎀을 재부팅하시겠습니까? 인터넷이 약 1시간 동안 중단됩니다"
+
+msgid "seconds."
+msgstr "초."
+
+msgid "Modem reboot started"
+msgstr "모뎀 재부팅이 시작되었습니다."
+
+msgid "Reboot failed"
+msgstr "재부팅 실패"
+
+msgid "Restart the modemwatch service?"
+msgstr "모뎀워치 서비스를 다시 시작하시겠습니까?"
+
+msgid "Service restarted"
+msgstr "서비스가 다시 시작되었습니다"
+
+msgid "Restart failed"
+msgstr "다시 시작하지 못했습니다."
+
+msgid "Signal strength (RSRQ)"
+msgstr "신호 강도(RSRQ)"
+
+msgid "Operator"
+msgstr "통신사"
+
+msgid "Network"
+msgstr "네트워크"
+
+msgid "Last update"
+msgstr "마지막 업데이트"
+
+msgid "Refresh interval"
+msgstr "새로 고침 간격"
+
+msgid "seconds"
+msgstr "초"
+
+msgid "Signal Strength"
+msgstr "신호 강도"
+
+msgid "Received Signal Strength Indicator"
+msgstr "수신된 신호 강도 표시기"
+
+msgid "Reference Signal Receive Power"
+msgstr "기준 신호 수신 전력"
+
+msgid "Signal to Interference plus Noise Ratio"
+msgstr "신호 대 간섭 및 잡음 비율"
+
+msgid "Reference Signal Received Quality"
+msgstr "기준 신호 수신 품질"
+
+msgid "Refresh now"
+msgstr "지금 새로고침"
+
+msgid "Pause"
+msgstr "일시중지"
+
+msgid "Busy"
+msgstr "바쁨"
+
+msgid "AT port not found"
+msgstr "AT 포트를 찾을 수 없습니다"
+
+msgid "No response from modem"
+msgstr "모뎀에서 응답이 없습니다."
+
+msgid "Failed to read signal"
+msgstr "신호를 읽지 못했습니다."
+
+msgid "Resume"
+msgstr "이력서"
+
+msgid "Refresh log"
+msgstr "로그 새로고침"
+
+msgid "Auto-refresh"
+msgstr "자동 새로고침"
+
+msgid "(empty)"
+msgstr "(비어 있음)"
+
+msgid "Updated"
+msgstr "업데이트됨"
+
+msgid "Failed to read log"
+msgstr "로그를 읽지 못했습니다."
+
+msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
+msgstr "AT 명령은 모뎀 설정을 변경할 수 있으며 인터넷이나 SSH 연결을 끊을 수도 있습니다. 롤백 계획 없이 USB 모드, APN, 밴드 또는 네트워크 모드를 원격으로 변경하지 마십시오."
+
+msgid "Expert mode — allow changing USB mode and NAT"
+msgstr "전문가 모드 — USB 모드 및 NAT 변경 허용"
+
+msgid "Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan."
+msgstr "USB 모드를 변경하면 모뎀과 SSH 연결이 끊어질 수 있습니다. 로컬 액세스 또는 롤백 계획에서만 사용하십시오."
+
+msgid "Selected AT port"
+msgstr "선택된 AT 포트"
+
+msgid "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Quectel EC200A의 경우 /dev/ttyUSB2를 사용하십시오. /dev/ttyUSB0은 진단 포트이며 AT 명령에 응답하지 않습니다."
+
+msgid "Current configuration"
+msgstr "현재 구성"
+
+msgid "Read current configuration"
+msgstr "현재 구성 읽기"
+
+msgid "Modem information"
+msgstr "모뎀 정보"
+
+msgid "Model"
+msgstr "모델"
+
+msgid "SIM status"
+msgstr "SIM 상태"
+
+msgid "Temperature"
+msgstr "온도"
+
+msgid "Access Point Name (APN)"
+msgstr "액세스 포인트 이름(APN)"
+
+msgid "Username"
+msgstr "사용자 이름"
+
+msgid "Password"
+msgstr "암호"
+
+msgid "Authentication"
+msgstr "인증"
+
+msgid "None"
+msgstr "없음"
+
+msgid "PDP type"
+msgstr "PDP 유형"
+
+msgid "Read APN"
+msgstr "APN 읽기"
+
+msgid "Apply APN"
+msgstr "APN 적용"
+
+msgid "Network mode"
+msgstr "네트워크 모드"
+
+msgid "Mode"
+msgstr "모드"
+
+msgid "Automatic"
+msgstr "자동"
+
+msgid "GSM only"
+msgstr "GSM 전용"
+
+msgid "WCDMA only"
+msgstr "WCDMA 전용"
+
+msgid "LTE only"
+msgstr "LTE 전용"
+
+msgid "Read mode"
+msgstr "읽기 모드"
+
+msgid "Apply mode"
+msgstr "적용 모드"
+
+msgid "Band configuration"
+msgstr "밴드 구성"
+
+msgid "Read bands"
+msgstr "밴드 읽기"
+
+msgid "Select all"
+msgstr "모두 선택"
+
+msgid "Restore default"
+msgstr "기본값 복원"
+
+msgid "Apply bands"
+msgstr "밴드 적용"
+
+msgid "Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection."
+msgstr "활성화된 상태를 유지하려는 LTE 대역을 선택하세요. 적용하면 WAN이 다시 시작되고 연결이 끊어질 수 있습니다."
+
+msgid "USB mode"
+msgstr "USB 모드"
+
+msgid "Current value"
+msgstr "현재 가치"
+
+msgid "New value"
+msgstr "새로운 가치"
+
+msgid "RMNET (QMI)"
+msgstr "RMNET (QMI)"
+
+msgid "not supported"
+msgstr "지원되지 않음"
+
+msgid "ECM (CDC Ethernet)"
+msgstr "ECM(CDC 이더넷)"
+
+msgid "MBIM"
+msgstr "MBIM"
+
+msgid "RNDIS"
+msgstr "RNDIS"
+
+msgid "Apply USB mode"
+msgstr "USB 모드 적용"
+
+msgid "Read USB mode"
+msgstr "USB 모드 읽기"
+
+msgid "Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem."
+msgstr "모뎀 펌웨어에서 지원하지 않는 모드는 비활성화되고 지원되지 않는 것으로 표시됩니다. 지원되는 모드는 모뎀에서 자동으로 감지됩니다."
+
+msgid "Apply NAT"
+msgstr "NAT 적용"
+
+msgid "Read NAT"
+msgstr "NAT 읽기"
+
+msgid "Raw AT command"
+msgstr "원시 AT 명령"
+
+msgid "AT command"
+msgstr "AT 명령"
+
+msgid "Send"
+msgstr "보내기"
+
+msgid "Sending"
+msgstr "보내는 중"
+
+msgid "AT command failed"
+msgstr "AT 명령이 실패했습니다"
+
+msgid "Reading APN"
+msgstr "APN 읽기"
+
+msgid "Failed to read APN"
+msgstr "APN을 읽지 못했습니다."
+
+msgid "Reading settings"
+msgstr "읽기 설정"
+
+msgid "Settings read"
+msgstr "설정을 읽었습니다."
+
+msgid "Failed to read settings"
+msgstr "설정을 읽지 못했습니다."
+
+msgid "APN, username and password may contain only letters, digits, dot, hyphen and underscore."
+msgstr "APN, 사용자 이름 및 비밀번호에는 문자, 숫자, 점, 하이픈 및 밑줄만 포함할 수 있습니다."
+
+msgid "Apply APN settings? The connection may drop."
+msgstr "APN 설정을 적용하시겠습니까? 연결이 끊어질 수 있습니다."
+
+msgid "Applying APN"
+msgstr "APN 적용 중"
+
+msgid "APN applied. Reconnect or reboot the modem if needed."
+msgstr "APN이 적용되었습니다. 필요한 경우 모뎀을 다시 연결하거나 재부팅하십시오."
+
+msgid "Failed to apply APN"
+msgstr "APN 적용 실패"
+
+msgid "Apply network mode? The connection may drop."
+msgstr "네트워크 모드를 적용하시겠습니까? 연결이 끊어질 수 있습니다."
+
+msgid "Reading bands"
+msgstr "밴드 읽기"
+
+msgid "Failed to read bands"
+msgstr "밴드를 읽지 못했습니다."
+
+msgid "No bands selected"
+msgstr "선택한 밴드가 없습니다."
+
+msgid "Restore default bands?"
+msgstr "기본 밴드를 복원하시겠습니까?"
+
+msgid "Apply selected bands? The connection may drop."
+msgstr "선택한 밴드를 적용하시겠습니까? 연결이 끊어질 수 있습니다."
+
+msgid "Applying bands"
+msgstr "밴드 적용"
+
+msgid "Failed to apply bands"
+msgstr "밴드를 적용하지 못했습니다."
+
+msgid "USB mode is read-only in this UI."
+msgstr "이 UI에서는 USB 모드가 읽기 전용입니다."
+
+msgid "This USB mode is not supported by the modem firmware."
+msgstr "이 USB 모드는 모뎀 펌웨어에서 지원되지 않습니다."
+
+msgid "Change USB mode? The modem will re-enumerate and the connection may drop. Continue?"
+msgstr "USB 모드를 변경하시겠습니까? 모뎀이 다시 열거되고 연결이 끊어질 수 있습니다. 계속하다?"
+
+msgid "Change NAT mode? The connection may drop."
+msgstr "NAT 모드를 변경하시겠습니까? 연결이 끊어질 수 있습니다."
+
+msgid "Current operator"
+msgstr "현재 운영자"
+
+msgid "AT port"
+msgstr "포트에"
+
+msgid "Scan networks"
+msgstr "네트워크 스캔"
+
+msgid "Automatic operator selection"
+msgstr "자동 연산자 선택"
+
+msgid "Stop scan"
+msgstr "스캔 중지"
+
+msgid "Update MCC/MNC database"
+msgstr "MCC/MNC 데이터베이스 업데이트"
+
+msgid "Country"
+msgstr "국가"
+
+msgid "MCC/MNC"
+msgstr "MCC/MNC"
+
+msgid "Technology"
+msgstr "기술"
+
+msgid "Action"
+msgstr "동작"
+
+msgid "Raw scan output"
+msgstr "원시 스캔 출력"
+
+msgid "current"
+msgstr "현재"
+
+msgid "available"
+msgstr "사용 가능"
+
+msgid "forbidden"
+msgstr "금지된"
+
+msgid "unknown"
+msgstr "알 수 없음"
+
+msgid "Select"
+msgstr "선택"
+
+msgid "MCC/MNC database updated."
+msgstr "MCC/MNC 데이터베이스가 업데이트되었습니다."
+
+msgid "Not updated yet"
+msgstr "아직 업데이트되지 않았습니다."
+
+msgid "Failed to read MCC/MNC update status"
+msgstr "MCC/MNC 업데이트 상태를 읽지 못했습니다."
+
+msgid "Updating MCC/MNC database"
+msgstr "MCC/MNC 데이터베이스 업데이트 중"
+
+msgid "Scanning networks... This may take up to two minutes."
+msgstr "네트워크 검색 중... 최대 2분 정도 걸릴 수 있습니다."
+
+msgid "Scan complete."
+msgstr "스캔이 완료되었습니다."
+
+msgid "Modem is busy. Try again later."
+msgstr "모뎀이 사용 중입니다. 나중에 다시 시도하세요."
+
+msgid "Scan failed"
+msgstr "스캔 실패"
+
+msgid "Not scanned yet."
+msgstr "아직 스캔되지 않았습니다."
+
+msgid "Failed to read scan status"
+msgstr "스캔 상태를 읽지 못했습니다."
+
+msgid "Stopping scan"
+msgstr "스캔 중지 중"
+
+msgid "Network scan stopped"
+msgstr "네트워크 검사가 중지되었습니다."
+
+msgid "Failed to stop scan"
+msgstr "검사를 중지하지 못했습니다."
+
+msgid "Starting network scan"
+msgstr "네트워크 스캔 시작"
+
+msgid "Network scan started"
+msgstr "네트워크 스캔이 시작되었습니다"
+
+msgid "Failed to start scan"
+msgstr "스캔을 시작하지 못했습니다."
+
+msgid "Select operator"
+msgstr "연산자 선택"
+
+msgid "The connection may drop."
+msgstr "연결이 끊어질 수 있습니다."
+
+msgid "Selecting operator"
+msgstr "연산자 선택"
+
+msgid "Operator selection sent"
+msgstr "운영자 선택이 전송되었습니다."
+
+msgid "Failed to select operator"
+msgstr "운영자를 선택하지 못했습니다."
+
+msgid "Use automatic operator selection?"
+msgstr "자동 연산자 선택을 사용하시겠습니까?"
+
+msgid "Selecting automatic mode"
+msgstr "자동 모드 선택"

@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-modemwatch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 00:00+0000\n"
+"PO-Revision-Date: 2026-11-10 00:00+0000\n"
+"Last-Translator: modemwatch contributors\n"
+"Language-Team: العربية (Arabic)\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Modem LTE 4G"
+msgstr "مودم LTE 4G"
+
+msgid "Status"
+msgstr "الحالة"
+
+msgid "Signal"
+msgstr "الإشارة"
+
+msgid "Log"
+msgstr "السجل"
+
+msgid "Modem settings"
+msgstr "إعدادات المودم"
+
+msgid "Network search"
+msgstr "بحث الشبكة"
+
+msgid "Settings"
+msgstr "الاعدادات"
+
+msgid "invalid token"
+msgstr "رمز غير صالح"
+
+msgid "empty AT command"
+msgstr "أمر AT فارغ"
+
+msgid "invalid band selection"
+msgstr "اختيار نطاق غير صالح"
+
+msgid "Band settings sent"
+msgstr "تم إرسال إعدادات النطاق"
+
+msgid "network scan started"
+msgstr "بدأ فحص الشبكة"
+
+msgid "network scan stopped"
+msgstr "توقف فحص الشبكة"
+
+msgid "invalid operator"
+msgstr "عامل غير صالح"
+
+msgid "Downloading MCC/MNC list"
+msgstr "تنزيل قائمة MCC/MNC"
+
+msgid "Parsing MCC/MNC list"
+msgstr "تحليل قائمة MCC/MNC"
+
+msgid "MCC/MNC database updated"
+msgstr "تم تحديث قاعدة بيانات MCC/MNC"
+
+msgid "Failed to update MCC/MNC database"
+msgstr "فشل تحديث قاعدة بيانات MCC/MNC"
+
+msgid "MCC/MNC update already running"
+msgstr "تحديث MCC/MNC قيد التشغيل بالفعل"
+
+msgid "MCC/MNC update started"
+msgstr "بدأ تحديث مركز عملائي/MNC"
+
+msgid "operator selection sent"
+msgstr "تم إرسال اختيار المشغل"
+
+msgid "internet check started"
+msgstr "بدأ فحص الإنترنت"
+
+msgid "modem reboot started"
+msgstr "بدأت عملية إعادة تشغيل المودم"
+
+msgid "service restarted"
+msgstr "تم إعادة تشغيل الخدمة"
+
+msgid "Modem info updated"
+msgstr "تم تحديث معلومات المودم"
+
+msgid "Modem did not respond"
+msgstr "المودم لم يستجب"
+
+msgid "Checks internet connectivity and reboots the Quectel modem when the connection is lost."
+msgstr "التحقق من الاتصال بالإنترنت وإعادة تشغيل مودم Quectel عند فقدان الاتصال."
+
+msgid "Service settings"
+msgstr "إعدادات الخدمة"
+
+msgid "Enable service"
+msgstr "تمكين الخدمة"
+
+msgid "Check interval (seconds)"
+msgstr "التحقق من الفاصل الزمني (ثواني)"
+
+msgid "Failures before modem reboot"
+msgstr "فشل قبل إعادة تشغيل المودم"
+
+msgid "Ping hosts"
+msgstr "المضيفين بينغ"
+
+msgid "Space-separated list. Internet is considered up if at least one host responds."
+msgstr "قائمة مفصولة بمسافة. يعتبر الإنترنت جاهزًا إذا استجاب مضيف واحد على الأقل."
+
+msgid "Also require DNS resolution"
+msgstr "تتطلب أيضًا حل DNS"
+
+msgid "DNS name to resolve"
+msgstr "اسم DNS لحلها"
+
+msgid "Also require an HTTP request"
+msgstr "تتطلب أيضًا طلب HTTP"
+
+msgid "HTTP URL"
+msgstr "HTTP URL"
+
+msgid "WAN interface"
+msgstr "واجهة وان"
+
+msgid "The device name is read from network.<iface>.device."
+msgstr "تتم قراءة اسم الجهاز من الشبكة.<iface>.device."
+
+msgid "AT serial port"
+msgstr "في المنفذ التسلسلي"
+
+msgid "Detected USB/ACM serial ports. For Quectel EC200A use /dev/ttyUSB2; /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "تم اكتشاف منافذ USB/ACM التسلسلية. بالنسبة إلى Quectel EC200A، استخدم /dev/ttyUSB2؛ /dev/ttyUSB0 هو منفذ التشخيص ولا يجيب على أوامر AT."
+
+msgid "AT port baud rate"
+msgstr "في معدل الباود المنفذ"
+
+msgid "Modem reboot method"
+msgstr "طريقة إعادة تشغيل المودم"
+
+msgid "AT+CFUN=1,1 (recommended)"
+msgstr "AT+CFUN=1,1 (مستحسن)"
+
+msgid "USB re-bind (best effort)"
+msgstr "إعادة ربط USB (أفضل جهد)"
+
+msgid "Wait after reboot (seconds)"
+msgstr "انتظر بعد إعادة التشغيل (ثواني)"
+
+msgid "Collect modem information"
+msgstr "جمع معلومات المودم"
+
+msgid "Reads model, firmware, IMEI, signal, operator and temperature via AT commands."
+msgstr "يقرأ الطراز والبرامج الثابتة وIMEI والإشارة والمشغل ودرجة الحرارة عبر أوامر AT."
+
+msgid "Modem info interval (seconds)"
+msgstr "الفاصل الزمني لمعلومات المودم (بالثواني)"
+
+msgid "How often to query the modem with AT commands. Keep it longer if other modem tools use the same serial port."
+msgstr "كم مرة يتم الاستعلام عن المودم باستخدام أوامر AT. احتفظ به لفترة أطول إذا كانت أدوات المودم الأخرى تستخدم نفس المنفذ التسلسلي."
+
+msgid "Signal refresh interval (seconds)"
+msgstr "الفاصل الزمني لتحديث الإشارة (ثواني)"
+
+msgid "Pause between signal page updates. The actual update also includes the modem response time."
+msgstr "توقف مؤقتًا بين تحديثات صفحة الإشارة. يتضمن التحديث الفعلي أيضًا وقت استجابة المودم."
+
+msgid "Safety"
+msgstr "السلامة"
+
+msgid "Maximum reboots per window"
+msgstr "الحد الأقصى لعمليات إعادة التشغيل لكل نافذة"
+
+msgid "Set to 0 for unlimited. The limit prevents reboot loops."
+msgstr "اضبط على 0 لعدد غير محدود. يمنع الحد حلقات إعادة التشغيل."
+
+msgid "Reboot window (seconds)"
+msgstr "نافذة إعادة التشغيل (ثواني)"
+
+msgid "Cooldown between reboots (seconds)"
+msgstr "فترة التهدئة بين عمليات إعادة التشغيل (بالثواني)"
+
+msgid "Logging"
+msgstr "تسجيل"
+
+msgid "Log level"
+msgstr "مستوى التسجيل"
+
+msgid "Error"
+msgstr "خطأ"
+
+msgid "Warning"
+msgstr "Warning"
+
+msgid "Info"
+msgstr "معلومات"
+
+msgid "Debug"
+msgstr "تصحيح الأخطاء"
+
+msgid "Remote access warning"
+msgstr "تحذير الوصول عن بعد"
+
+msgid "This service reboots only the modem, not the router. If the modem is the only WAN, internet and remote access will be down during the reboot. Do not change USB mode, APN or band settings remotely without a rollback plan."
+msgstr "تقوم هذه الخدمة بإعادة تشغيل المودم فقط، وليس جهاز التوجيه. إذا كان المودم هو شبكة WAN الوحيدة، فسيتم إيقاف الوصول إلى الإنترنت والوصول عن بعد أثناء إعادة التشغيل. لا تقم بتغيير وضع USB أو APN أو إعدادات النطاق عن بعد بدون خطة التراجع."
+
+msgid "Service"
+msgstr "الخدمة"
+
+msgid "State"
+msgstr "حالة"
+
+msgid "Last check"
+msgstr "الاختيار الأخير"
+
+msgid "Last success"
+msgstr "النجاح الأخير"
+
+msgid "Last failure"
+msgstr "الفشل الأخير"
+
+msgid "Failures"
+msgstr "الفشل"
+
+msgid "Modem reboots"
+msgstr "تتم إعادة تشغيل المودم"
+
+msgid "last"
+msgstr "الاخير"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "Data transferred"
+msgstr "تم نقل البيانات"
+
+msgid "Ping / DNS / HTTP"
+msgstr "بينغ / DNS / HTTP"
+
+msgid "Latency"
+msgstr "الكمون"
+
+msgid "Modem"
+msgstr "مودم"
+
+msgid "Firmware"
+msgstr "البرامج الثابتة"
+
+msgid "IMEI"
+msgstr "IMEI"
+
+msgid "Operator / network"
+msgstr "المشغل / الشبكة"
+
+msgid "Modem temperature"
+msgstr "درجة حرارة المودم"
+
+msgid "Service uptime"
+msgstr "مدة تشغيل الخدمة"
+
+msgid "LTE quality"
+msgstr "جودة LTE"
+
+msgid "CSQ"
+msgstr "CSQ"
+
+msgid "RSSI"
+msgstr "RSSI"
+
+msgid "RSRP"
+msgstr "RSRP"
+
+msgid "SINR"
+msgstr "SINR"
+
+msgid "RSRQ"
+msgstr "RSRQ"
+
+msgid "Band"
+msgstr "نِطاق"
+
+msgid "Check now"
+msgstr "تحقق الآن"
+
+msgid "Refresh modem info"
+msgstr "تحديث معلومات المودم"
+
+msgid "Reboot modem"
+msgstr "إعادة تشغيل المودم"
+
+msgid "Restart service"
+msgstr "إعادة تشغيل الخدمة"
+
+msgid "yes"
+msgstr "نعم"
+
+msgid "no"
+msgstr "لا"
+
+msgid "online"
+msgstr "على الانترنت"
+
+msgid "offline"
+msgstr "غير متصل"
+
+msgid "rebooting"
+msgstr "إعادة التشغيل"
+
+msgid "checking"
+msgstr "التحقق"
+
+msgid "disabled"
+msgstr "معطل"
+
+msgid "starting"
+msgstr "البدء"
+
+msgid "stopped"
+msgstr "توقف"
+
+msgid "error"
+msgstr "خطأ"
+
+msgid "running"
+msgstr "تشغيل"
+
+msgid "Failed to read status"
+msgstr "فشل في قراءة الحالة"
+
+msgid "Reading modem data"
+msgstr "قراءة بيانات المودم"
+
+msgid "Failed to read modem data"
+msgstr "فشل في قراءة بيانات المودم"
+
+msgid "Check started"
+msgstr "بدأ التحقق"
+
+msgid "Check failed"
+msgstr "فشل التحقق"
+
+msgid "Reboot the modem now? Internet will be down for about"
+msgstr "إعادة تشغيل المودم الآن؟ سوف ينقطع الإنترنت لمدة حوالي"
+
+msgid "seconds."
+msgstr "ثواني."
+
+msgid "Modem reboot started"
+msgstr "بدأت عملية إعادة تشغيل المودم"
+
+msgid "Reboot failed"
+msgstr "فشلت عملية إعادة التشغيل"
+
+msgid "Restart the modemwatch service?"
+msgstr "إعادة تشغيل خدمة مراقبة المودم؟"
+
+msgid "Service restarted"
+msgstr "تم إعادة تشغيل الخدمة"
+
+msgid "Restart failed"
+msgstr "فشلت عملية إعادة التشغيل"
+
+msgid "Signal strength (RSRQ)"
+msgstr "قوة الإشارة (رسرك)"
+
+msgid "Operator"
+msgstr "المشغل"
+
+msgid "Network"
+msgstr "شبكة الاتصال"
+
+msgid "Last update"
+msgstr "التحديث الأخير"
+
+msgid "Refresh interval"
+msgstr "الفاصل الزمني للتحديث"
+
+msgid "seconds"
+msgstr "ثواني"
+
+msgid "Signal Strength"
+msgstr "قوة الإشارة"
+
+msgid "Received Signal Strength Indicator"
+msgstr "مؤشر قوة الإشارة المستلمة"
+
+msgid "Reference Signal Receive Power"
+msgstr "إشارة مرجعية تلقي الطاقة"
+
+msgid "Signal to Interference plus Noise Ratio"
+msgstr "الإشارة إلى التداخل بالإضافة إلى نسبة الضوضاء"
+
+msgid "Reference Signal Received Quality"
+msgstr "جودة الإشارة المرجعية المستلمة"
+
+msgid "Refresh now"
+msgstr "قم بالتحديث الآن"
+
+msgid "Pause"
+msgstr "وقفة"
+
+msgid "Busy"
+msgstr "مشغول"
+
+msgid "AT port not found"
+msgstr "لم يتم العثور على المنفذ"
+
+msgid "No response from modem"
+msgstr "لا يوجد رد من المودم"
+
+msgid "Failed to read signal"
+msgstr "فشل في قراءة الإشارة"
+
+msgid "Resume"
+msgstr "استئناف"
+
+msgid "Refresh log"
+msgstr "تحديث السجل"
+
+msgid "Auto-refresh"
+msgstr "التحديث التلقائي"
+
+msgid "(empty)"
+msgstr "(فارغ)"
+
+msgid "Updated"
+msgstr "تم التحديث"
+
+msgid "Failed to read log"
+msgstr "فشل في قراءة السجل"
+
+msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
+msgstr "يمكن لأوامر AT تغيير إعدادات المودم وربما قطع الاتصال بالإنترنت أو SSH. لا تقم بتغيير وضع USB أو APN أو النطاق أو وضع الشبكة عن بعد دون خطة التراجع."
+
+msgid "Expert mode — allow changing USB mode and NAT"
+msgstr "وضع الخبراء - يسمح بتغيير وضع USB وNAT"
+
+msgid "Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan."
+msgstr "قد يؤدي تغيير وضع USB إلى فصل المودم وSSH. استخدم فقط مع الوصول المحلي أو خطة التراجع."
+
+msgid "Selected AT port"
+msgstr "منفذ AT المحدد"
+
+msgid "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "بالنسبة إلى Quectel EC200A، استخدم /dev/ttyUSB2. /dev/ttyUSB0 هو منفذ التشخيص ولا يجيب على أوامر AT."
+
+msgid "Current configuration"
+msgstr "التكوين الحالي"
+
+msgid "Read current configuration"
+msgstr "قراءة التكوين الحالي"
+
+msgid "Modem information"
+msgstr "معلومات المودم"
+
+msgid "Model"
+msgstr "النموذج"
+
+msgid "SIM status"
+msgstr "حالة SIM"
+
+msgid "Temperature"
+msgstr "درجة الحرارة"
+
+msgid "Access Point Name (APN)"
+msgstr "اسم نقطة الوصول (APN)"
+
+msgid "Username"
+msgstr "اسم المستخدم"
+
+msgid "Password"
+msgstr "كلمة المرور"
+
+msgid "Authentication"
+msgstr "المصادقة"
+
+msgid "None"
+msgstr "لاشيء"
+
+msgid "PDP type"
+msgstr "نوع حزب الديمقراطيين الاشتراكيين"
+
+msgid "Read APN"
+msgstr "اقرأ أبن"
+
+msgid "Apply APN"
+msgstr "تطبيق أبن"
+
+msgid "Network mode"
+msgstr "وضع الشبكة"
+
+msgid "Mode"
+msgstr "وضع"
+
+msgid "Automatic"
+msgstr "أوتوماتيكي"
+
+msgid "GSM only"
+msgstr "جي إس إم فقط"
+
+msgid "WCDMA only"
+msgstr "WCDMA فقط"
+
+msgid "LTE only"
+msgstr "LTE فقط"
+
+msgid "Read mode"
+msgstr "وضع القراءة"
+
+msgid "Apply mode"
+msgstr "تطبيق الوضع"
+
+msgid "Band configuration"
+msgstr "تكوين الفرقة"
+
+msgid "Read bands"
+msgstr "قراءة العصابات"
+
+msgid "Select all"
+msgstr "حدد الكل"
+
+msgid "Restore default"
+msgstr "استعادة الافتراضي"
+
+msgid "Apply bands"
+msgstr "تطبيق العصابات"
+
+msgid "Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection."
+msgstr "حدد نطاقات LTE التي تريد الاحتفاظ بتمكينها. قد يؤدي التطبيق إلى إعادة تشغيل شبكة WAN وإسقاط الاتصال."
+
+msgid "USB mode"
+msgstr "وضع USB"
+
+msgid "Current value"
+msgstr "القيمة الحالية"
+
+msgid "New value"
+msgstr "قيمة جديدة"
+
+msgid "RMNET (QMI)"
+msgstr "RMNET (QMI)"
+
+msgid "not supported"
+msgstr "غير معتمد"
+
+msgid "ECM (CDC Ethernet)"
+msgstr "ECM (إيثرنت CDC)"
+
+msgid "MBIM"
+msgstr "MBIM"
+
+msgid "RNDIS"
+msgstr "RNDIS"
+
+msgid "Apply USB mode"
+msgstr "تطبيق وضع USB"
+
+msgid "Read USB mode"
+msgstr "قراءة وضع USB"
+
+msgid "Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem."
+msgstr "يتم تعطيل الأوضاع التي لا يدعمها البرنامج الثابت للمودم ويتم وضع علامة عليها على أنها غير مدعومة. يتم اكتشاف الأوضاع المدعومة تلقائيًا من المودم."
+
+msgid "Apply NAT"
+msgstr "تطبيق نات"
+
+msgid "Read NAT"
+msgstr "اقرأ نات"
+
+msgid "Raw AT command"
+msgstr "أمر AT الخام"
+
+msgid "AT command"
+msgstr "في الأمر"
+
+msgid "Send"
+msgstr "أرسل"
+
+msgid "Sending"
+msgstr "إرسال"
+
+msgid "AT command failed"
+msgstr "فشل الأمر"
+
+msgid "Reading APN"
+msgstr "قراءة أبن"
+
+msgid "Failed to read APN"
+msgstr "فشل في قراءة APN"
+
+msgid "Reading settings"
+msgstr "إعدادات القراءة"
+
+msgid "Settings read"
+msgstr "قراءة الإعدادات"
+
+msgid "Failed to read settings"
+msgstr "فشل في قراءة الإعدادات"
+
+msgid "APN, username and password may contain only letters, digits, dot, hyphen and underscore."
+msgstr "قد يحتوي APN واسم المستخدم وكلمة المرور على أحرف وأرقام ونقطة وواصلة وشرطة سفلية فقط."
+
+msgid "Apply APN settings? The connection may drop."
+msgstr "تطبيق إعدادات APN؟ قد ينقطع الاتصال."
+
+msgid "Applying APN"
+msgstr "تطبيق أبن"
+
+msgid "APN applied. Reconnect or reboot the modem if needed."
+msgstr "تم تطبيق APN. أعد توصيل المودم أو أعد تشغيله إذا لزم الأمر."
+
+msgid "Failed to apply APN"
+msgstr "فشل في تطبيق APN"
+
+msgid "Apply network mode? The connection may drop."
+msgstr "تطبيق وضع الشبكة؟ قد ينقطع الاتصال."
+
+msgid "Reading bands"
+msgstr "فرق القراءة"
+
+msgid "Failed to read bands"
+msgstr "فشل في قراءة النطاقات"
+
+msgid "No bands selected"
+msgstr "لم يتم تحديد أي نطاقات"
+
+msgid "Restore default bands?"
+msgstr "استعادة النطاقات الافتراضية؟"
+
+msgid "Apply selected bands? The connection may drop."
+msgstr "تطبيق النطاقات المحددة؟ قد ينقطع الاتصال."
+
+msgid "Applying bands"
+msgstr "تطبيق العصابات"
+
+msgid "Failed to apply bands"
+msgstr "فشل في تطبيق النطاقات"
+
+msgid "USB mode is read-only in this UI."
+msgstr "وضع USB للقراءة فقط في واجهة المستخدم هذه."
+
+msgid "This USB mode is not supported by the modem firmware."
+msgstr "وضع USB هذا غير مدعوم من قبل البرنامج الثابت للمودم."
+
+msgid "Change USB mode? The modem will re-enumerate and the connection may drop. Continue?"
+msgstr "تغيير وضع USB؟ ستتم إعادة تعداد المودم وقد ينقطع الاتصال. يكمل؟"
+
+msgid "Change NAT mode? The connection may drop."
+msgstr "تغيير وضع NAT؟ قد ينقطع الاتصال."
+
+msgid "Current operator"
+msgstr "المشغل الحالي"
+
+msgid "AT port"
+msgstr "في الميناء"
+
+msgid "Scan networks"
+msgstr "مسح الشبكات"
+
+msgid "Automatic operator selection"
+msgstr "اختيار المشغل التلقائي"
+
+msgid "Stop scan"
+msgstr "توقف عن المسح"
+
+msgid "Update MCC/MNC database"
+msgstr "تحديث قاعدة بيانات MCC/MNC"
+
+msgid "Country"
+msgstr "بلد"
+
+msgid "MCC/MNC"
+msgstr "MCC/MNC"
+
+msgid "Technology"
+msgstr "التكنولوجيا"
+
+msgid "Action"
+msgstr "العمل"
+
+msgid "Raw scan output"
+msgstr "إخراج المسح الخام"
+
+msgid "current"
+msgstr "الحالي"
+
+msgid "available"
+msgstr "متاح"
+
+msgid "forbidden"
+msgstr "ممنوع"
+
+msgid "unknown"
+msgstr "غير معروف"
+
+msgid "Select"
+msgstr "اختر"
+
+msgid "MCC/MNC database updated."
+msgstr "تم تحديث قاعدة بيانات MCC/MNC."
+
+msgid "Not updated yet"
+msgstr "لم يتم تحديثه بعد"
+
+msgid "Failed to read MCC/MNC update status"
+msgstr "فشل في قراءة حالة تحديث MCC/MNC"
+
+msgid "Updating MCC/MNC database"
+msgstr "تحديث قاعدة بيانات MCC/MNC"
+
+msgid "Scanning networks... This may take up to two minutes."
+msgstr "جارٍ فحص الشبكات... قد يستغرق هذا ما يصل إلى دقيقتين."
+
+msgid "Scan complete."
+msgstr "اكتمل المسح."
+
+msgid "Modem is busy. Try again later."
+msgstr "المودم مشغول. حاول مرة أخرى لاحقًا."
+
+msgid "Scan failed"
+msgstr "فشل المسح"
+
+msgid "Not scanned yet."
+msgstr "لم يتم مسحها بعد."
+
+msgid "Failed to read scan status"
+msgstr "فشل في قراءة حالة المسح"
+
+msgid "Stopping scan"
+msgstr "إيقاف الفحص"
+
+msgid "Network scan stopped"
+msgstr "توقف فحص الشبكة"
+
+msgid "Failed to stop scan"
+msgstr "فشل في إيقاف الفحص"
+
+msgid "Starting network scan"
+msgstr "بدء فحص الشبكة"
+
+msgid "Network scan started"
+msgstr "بدأ فحص الشبكة"
+
+msgid "Failed to start scan"
+msgstr "فشل بدء الفحص"
+
+msgid "Select operator"
+msgstr "حدد المشغل"
+
+msgid "The connection may drop."
+msgstr "قد ينقطع الاتصال."
+
+msgid "Selecting operator"
+msgstr "اختيار المشغل"
+
+msgid "Operator selection sent"
+msgstr "تم إرسال اختيار المشغل"
+
+msgid "Failed to select operator"
+msgstr "فشل في تحديد المشغل"
+
+msgid "Use automatic operator selection?"
+msgstr "هل تريد استخدام التحديد التلقائي للمشغل؟"
+
+msgid "Selecting automatic mode"
+msgstr "اختيار الوضع التلقائي"

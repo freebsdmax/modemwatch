@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-modemwatch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 00:00+0000\n"
+"PO-Revision-Date: 2026-11-10 00:00+0000\n"
+"Last-Translator: modemwatch contributors\n"
+"Language-Team: עברית (Hebrew)\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Modem LTE 4G"
+msgstr "מודם LTE 4G"
+
+msgid "Status"
+msgstr "מצב"
+
+msgid "Signal"
+msgstr "אות"
+
+msgid "Log"
+msgstr "יומן"
+
+msgid "Modem settings"
+msgstr "הגדרות מודם"
+
+msgid "Network search"
+msgstr "חיפוש ברשת"
+
+msgid "Settings"
+msgstr "הגדרות"
+
+msgid "invalid token"
+msgstr "אסימון לא חוקי"
+
+msgid "empty AT command"
+msgstr "פקודת AT ריקה"
+
+msgid "invalid band selection"
+msgstr "בחירת להקה לא חוקית"
+
+msgid "Band settings sent"
+msgstr "הגדרות הלהקה נשלחו"
+
+msgid "network scan started"
+msgstr "סריקת רשת החלה"
+
+msgid "network scan stopped"
+msgstr "סריקת הרשת הופסקה"
+
+msgid "invalid operator"
+msgstr "מפעיל לא חוקי"
+
+msgid "Downloading MCC/MNC list"
+msgstr "הורדת רשימת MCC/MNC"
+
+msgid "Parsing MCC/MNC list"
+msgstr "ניתוח רשימת MCC/MNC"
+
+msgid "MCC/MNC database updated"
+msgstr "מסד הנתונים של MCC/MNC עודכן"
+
+msgid "Failed to update MCC/MNC database"
+msgstr "נכשל עדכון מסד הנתונים של MCC/MNC"
+
+msgid "MCC/MNC update already running"
+msgstr "עדכון MCC/MNC כבר פועל"
+
+msgid "MCC/MNC update started"
+msgstr "עדכון MCC/MNC התחיל"
+
+msgid "operator selection sent"
+msgstr "בחירת המפעיל נשלחה"
+
+msgid "internet check started"
+msgstr "בדיקת האינטרנט החלה"
+
+msgid "modem reboot started"
+msgstr "אתחול מחדש של המודם התחיל"
+
+msgid "service restarted"
+msgstr "השירות הופעל מחדש"
+
+msgid "Modem info updated"
+msgstr "מידע המודם עודכן"
+
+msgid "Modem did not respond"
+msgstr "מודם לא הגיב"
+
+msgid "Checks internet connectivity and reboots the Quectel modem when the connection is lost."
+msgstr "בודק קישוריות לאינטרנט ומפעיל מחדש את מודם Quectel כאשר החיבור מנותק."
+
+msgid "Service settings"
+msgstr "הגדרות שירות"
+
+msgid "Enable service"
+msgstr "אפשר שירות"
+
+msgid "Check interval (seconds)"
+msgstr "מרווח בדיקה (שניות)"
+
+msgid "Failures before modem reboot"
+msgstr "תקלות לפני אתחול מחדש של המודם"
+
+msgid "Ping hosts"
+msgstr "פינג מארח"
+
+msgid "Space-separated list. Internet is considered up if at least one host responds."
+msgstr "רשימה מופרדת בחלל. האינטרנט נחשב כפעיל אם לפחות מארח אחד מגיב."
+
+msgid "Also require DNS resolution"
+msgstr "דורש גם רזולוציית DNS"
+
+msgid "DNS name to resolve"
+msgstr "שם DNS לפתרון"
+
+msgid "Also require an HTTP request"
+msgstr "דורש גם בקשת HTTP"
+
+msgid "HTTP URL"
+msgstr "HTTP URL"
+
+msgid "WAN interface"
+msgstr "ממשק WAN"
+
+msgid "The device name is read from network.<iface>.device."
+msgstr "שם המכשיר נקרא מהרשת.<iface>.device."
+
+msgid "AT serial port"
+msgstr "יציאה טורית AT"
+
+msgid "Detected USB/ACM serial ports. For Quectel EC200A use /dev/ttyUSB2; /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "זוהו יציאות USB/ACM טוריות. עבור Quectel EC200A השתמש /dev/ttyUSB2; /dev/ttyUSB0 היא יציאת האבחון ואינה עונה לפקודות AT."
+
+msgid "AT port baud rate"
+msgstr "קצב העברת יציאות AT"
+
+msgid "Modem reboot method"
+msgstr "שיטת אתחול מחדש של המודם"
+
+msgid "AT+CFUN=1,1 (recommended)"
+msgstr "AT+CFUN=1,1 (מומלץ)"
+
+msgid "USB re-bind (best effort)"
+msgstr "חיבור USB מחדש (מיטב המאמץ)"
+
+msgid "Wait after reboot (seconds)"
+msgstr "המתן לאחר אתחול מחדש (שניות)"
+
+msgid "Collect modem information"
+msgstr "אסוף מידע על המודם"
+
+msgid "Reads model, firmware, IMEI, signal, operator and temperature via AT commands."
+msgstr "קורא דגם, קושחה, IMEI, אות, מפעיל וטמפרטורה באמצעות פקודות AT."
+
+msgid "Modem info interval (seconds)"
+msgstr "מרווח מידע מודם (שניות)"
+
+msgid "How often to query the modem with AT commands. Keep it longer if other modem tools use the same serial port."
+msgstr "באיזו תדירות לשאול את המודם עם פקודות AT. שמור אותו זמן רב יותר אם כלי מודם אחרים משתמשים באותה יציאה טורית."
+
+msgid "Signal refresh interval (seconds)"
+msgstr "מרווח רענון אות (שניות)"
+
+msgid "Pause between signal page updates. The actual update also includes the modem response time."
+msgstr "השהה בין עדכוני עמוד האותות. העדכון בפועל כולל גם את זמן התגובה של המודם."
+
+msgid "Safety"
+msgstr "בטיחות"
+
+msgid "Maximum reboots per window"
+msgstr "מקסימום אתחולים מחדש לכל חלון"
+
+msgid "Set to 0 for unlimited. The limit prevents reboot loops."
+msgstr "הגדר ל-0 עבור ללא הגבלה. המגבלה מונעת לולאות אתחול מחדש."
+
+msgid "Reboot window (seconds)"
+msgstr "חלון אתחול מחדש (שניות)"
+
+msgid "Cooldown between reboots (seconds)"
+msgstr "התקררות בין אתחול מחדש (שניות)"
+
+msgid "Logging"
+msgstr "רישום"
+
+msgid "Log level"
+msgstr "רמת יומן"
+
+msgid "Error"
+msgstr "שגיאה"
+
+msgid "Warning"
+msgstr "Warning"
+
+msgid "Info"
+msgstr "מידע"
+
+msgid "Debug"
+msgstr "ניפוי באגים"
+
+msgid "Remote access warning"
+msgstr "אזהרת גישה מרחוק"
+
+msgid "This service reboots only the modem, not the router. If the modem is the only WAN, internet and remote access will be down during the reboot. Do not change USB mode, APN or band settings remotely without a rollback plan."
+msgstr "שירות זה מאתחל רק את המודם, לא את הנתב. אם המודם הוא ה-WAN היחיד, האינטרנט והגישה מרחוק יהיו מושבתים במהלך האתחול. אל תשנה את מצב ה-USB, ה-APN או הלהקה מרחוק ללא תוכנית החזרה."
+
+msgid "Service"
+msgstr "שירות"
+
+msgid "State"
+msgstr "מדינה"
+
+msgid "Last check"
+msgstr "בדיקה אחרונה"
+
+msgid "Last success"
+msgstr "הצלחה אחרונה"
+
+msgid "Last failure"
+msgstr "כישלון אחרון"
+
+msgid "Failures"
+msgstr "כשלים"
+
+msgid "Modem reboots"
+msgstr "המודם מאתחל"
+
+msgid "last"
+msgstr "אחרון"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "Data transferred"
+msgstr "נתונים הועברו"
+
+msgid "Ping / DNS / HTTP"
+msgstr "פינג / DNS / HTTP"
+
+msgid "Latency"
+msgstr "חביון"
+
+msgid "Modem"
+msgstr "מודם"
+
+msgid "Firmware"
+msgstr "קושחה"
+
+msgid "IMEI"
+msgstr "IMEI"
+
+msgid "Operator / network"
+msgstr "מפעיל/רשת"
+
+msgid "Modem temperature"
+msgstr "טמפרטורת מודם"
+
+msgid "Service uptime"
+msgstr "זמן פעילות שירות"
+
+msgid "LTE quality"
+msgstr "איכות LTE"
+
+msgid "CSQ"
+msgstr "CSQ"
+
+msgid "RSSI"
+msgstr "RSSI"
+
+msgid "RSRP"
+msgstr "RSRP"
+
+msgid "SINR"
+msgstr "SINR"
+
+msgid "RSRQ"
+msgstr "RSRQ"
+
+msgid "Band"
+msgstr "להקה"
+
+msgid "Check now"
+msgstr "בדוק עכשיו"
+
+msgid "Refresh modem info"
+msgstr "רענן את פרטי המודם"
+
+msgid "Reboot modem"
+msgstr "הפעל מחדש את המודם"
+
+msgid "Restart service"
+msgstr "הפעל מחדש את השירות"
+
+msgid "yes"
+msgstr "כן"
+
+msgid "no"
+msgstr "לא"
+
+msgid "online"
+msgstr "באינטרנט"
+
+msgid "offline"
+msgstr "במצב לא מקוון"
+
+msgid "rebooting"
+msgstr "אתחול מחדש"
+
+msgid "checking"
+msgstr "בודק"
+
+msgid "disabled"
+msgstr "נכים"
+
+msgid "starting"
+msgstr "מתחיל"
+
+msgid "stopped"
+msgstr "נעצר"
+
+msgid "error"
+msgstr "שגיאה"
+
+msgid "running"
+msgstr "ריצה"
+
+msgid "Failed to read status"
+msgstr "קריאת הסטטוס נכשלה"
+
+msgid "Reading modem data"
+msgstr "קריאת נתוני מודם"
+
+msgid "Failed to read modem data"
+msgstr "קריאת נתוני המודם נכשלה"
+
+msgid "Check started"
+msgstr "הבדיקה התחילה"
+
+msgid "Check failed"
+msgstr "הבדיקה נכשלה"
+
+msgid "Reboot the modem now? Internet will be down for about"
+msgstr "להפעיל מחדש את המודם עכשיו? האינטרנט יהיה מושבת בערך"
+
+msgid "seconds."
+msgstr "שניות."
+
+msgid "Modem reboot started"
+msgstr "אתחול מחדש של המודם התחיל"
+
+msgid "Reboot failed"
+msgstr "אתחול מחדש נכשל"
+
+msgid "Restart the modemwatch service?"
+msgstr "להפעיל מחדש את שירות המודםwatch?"
+
+msgid "Service restarted"
+msgstr "השירות הופעל מחדש"
+
+msgid "Restart failed"
+msgstr "ההפעלה מחדש נכשלה"
+
+msgid "Signal strength (RSRQ)"
+msgstr "חוזק האות (RSRQ)"
+
+msgid "Operator"
+msgstr "מפעיל"
+
+msgid "Network"
+msgstr "רשת"
+
+msgid "Last update"
+msgstr "עדכון אחרון"
+
+msgid "Refresh interval"
+msgstr "מרווח רענון"
+
+msgid "seconds"
+msgstr "שניות"
+
+msgid "Signal Strength"
+msgstr "חוזק אות"
+
+msgid "Received Signal Strength Indicator"
+msgstr "מחוון עוצמת אות שהתקבל"
+
+msgid "Reference Signal Receive Power"
+msgstr "אות התייחסות לקבלת כוח"
+
+msgid "Signal to Interference plus Noise Ratio"
+msgstr "אות להפרעה פלוס יחס רעש"
+
+msgid "Reference Signal Received Quality"
+msgstr "איכות אות התייחסות שהתקבלה"
+
+msgid "Refresh now"
+msgstr "רענן עכשיו"
+
+msgid "Pause"
+msgstr "השהה"
+
+msgid "Busy"
+msgstr "עסוק"
+
+msgid "AT port not found"
+msgstr "יציאת AT לא נמצאה"
+
+msgid "No response from modem"
+msgstr "אין תגובה מהמודם"
+
+msgid "Failed to read signal"
+msgstr "קריאת האות נכשלה"
+
+msgid "Resume"
+msgstr "קורות חיים"
+
+msgid "Refresh log"
+msgstr "רענן יומן"
+
+msgid "Auto-refresh"
+msgstr "רענון אוטומטי"
+
+msgid "(empty)"
+msgstr "(ריק)"
+
+msgid "Updated"
+msgstr "עודכן"
+
+msgid "Failed to read log"
+msgstr "קריאת היומן נכשלה"
+
+msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
+msgstr "פקודות AT יכולות לשנות את הגדרות המודם ועשויות לנתק את האינטרנט או ה-SSH. אל תשנה את מצב USB, APN, פס או רשת מרחוק ללא תוכנית החזרה."
+
+msgid "Expert mode — allow changing USB mode and NAT"
+msgstr "מצב מומחה - אפשר לשנות מצב USB ו-NAT"
+
+msgid "Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan."
+msgstr "שינוי מצב USB יכול לנתק את המודם וה-SSH. השתמש רק עם גישה מקומית או תוכנית החזרה לאחור."
+
+msgid "Selected AT port"
+msgstr "יציאת AT שנבחרה"
+
+msgid "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "עבור Quectel EC200A השתמש ב-/dev/ttyUSB2. /dev/ttyUSB0 היא יציאת האבחון ואינה עונה לפקודות AT."
+
+msgid "Current configuration"
+msgstr "תצורה נוכחית"
+
+msgid "Read current configuration"
+msgstr "קרא את התצורה הנוכחית"
+
+msgid "Modem information"
+msgstr "מידע על מודם"
+
+msgid "Model"
+msgstr "דגם"
+
+msgid "SIM status"
+msgstr "מצב SIM"
+
+msgid "Temperature"
+msgstr "טמפרטורה"
+
+msgid "Access Point Name (APN)"
+msgstr "שם נקודת גישה (APN)"
+
+msgid "Username"
+msgstr "שם משתמש"
+
+msgid "Password"
+msgstr "סיסמה"
+
+msgid "Authentication"
+msgstr "אימות"
+
+msgid "None"
+msgstr "אין"
+
+msgid "PDP type"
+msgstr "סוג PDP"
+
+msgid "Read APN"
+msgstr "קרא את APN"
+
+msgid "Apply APN"
+msgstr "החל APN"
+
+msgid "Network mode"
+msgstr "מצב רשת"
+
+msgid "Mode"
+msgstr "מצב"
+
+msgid "Automatic"
+msgstr "אוטומטי"
+
+msgid "GSM only"
+msgstr "GSM בלבד"
+
+msgid "WCDMA only"
+msgstr "WCDMA בלבד"
+
+msgid "LTE only"
+msgstr "LTE בלבד"
+
+msgid "Read mode"
+msgstr "מצב קריאה"
+
+msgid "Apply mode"
+msgstr "מצב החל"
+
+msgid "Band configuration"
+msgstr "תצורת הלהקה"
+
+msgid "Read bands"
+msgstr "קרא להקות"
+
+msgid "Select all"
+msgstr "בחר הכל"
+
+msgid "Restore default"
+msgstr "שחזר ברירת מחדל"
+
+msgid "Apply bands"
+msgstr "החל להקות"
+
+msgid "Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection."
+msgstr "בחר את רצועות ה-LTE שברצונך להשאיר מופעלות. יישום עשוי להפעיל מחדש את ה-WAN ולבטל את החיבור."
+
+msgid "USB mode"
+msgstr "מצב USB"
+
+msgid "Current value"
+msgstr "ערך נוכחי"
+
+msgid "New value"
+msgstr "ערך חדש"
+
+msgid "RMNET (QMI)"
+msgstr "RMNET (QMI)"
+
+msgid "not supported"
+msgstr "לא נתמך"
+
+msgid "ECM (CDC Ethernet)"
+msgstr "ECM (CDC Ethernet)"
+
+msgid "MBIM"
+msgstr "MBIM"
+
+msgid "RNDIS"
+msgstr "RNDIS"
+
+msgid "Apply USB mode"
+msgstr "החל מצב USB"
+
+msgid "Read USB mode"
+msgstr "קרא מצב USB"
+
+msgid "Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem."
+msgstr "מצבים שאינם נתמכים על ידי קושחת המודם מושבתים ומסומנים כלא נתמכים. מצבים נתמכים מזוהים באופן אוטומטי מהמודם."
+
+msgid "Apply NAT"
+msgstr "החל NAT"
+
+msgid "Read NAT"
+msgstr "קרא את NAT"
+
+msgid "Raw AT command"
+msgstr "פקודת AT גולמית"
+
+msgid "AT command"
+msgstr "פקודת AT"
+
+msgid "Send"
+msgstr "שלח"
+
+msgid "Sending"
+msgstr "שולח"
+
+msgid "AT command failed"
+msgstr "פקודת AT נכשלה"
+
+msgid "Reading APN"
+msgstr "קריאת APN"
+
+msgid "Failed to read APN"
+msgstr "קריאת APN נכשלה"
+
+msgid "Reading settings"
+msgstr "הגדרות קריאה"
+
+msgid "Settings read"
+msgstr "הגדרות קריאה"
+
+msgid "Failed to read settings"
+msgstr "קריאת ההגדרות נכשלה"
+
+msgid "APN, username and password may contain only letters, digits, dot, hyphen and underscore."
+msgstr "APN, שם משתמש וסיסמה עשויים להכיל רק אותיות, ספרות, נקודה, מקף וקווים תחתונים."
+
+msgid "Apply APN settings? The connection may drop."
+msgstr "להחיל הגדרות APN? החיבור עלול לרדת."
+
+msgid "Applying APN"
+msgstr "החלת APN"
+
+msgid "APN applied. Reconnect or reboot the modem if needed."
+msgstr "APN הוחל. התחבר מחדש או הפעל מחדש את המודם במידת הצורך."
+
+msgid "Failed to apply APN"
+msgstr "יישום APN נכשל"
+
+msgid "Apply network mode? The connection may drop."
+msgstr "להחיל מצב רשת? החיבור עלול לרדת."
+
+msgid "Reading bands"
+msgstr "להקות קריאה"
+
+msgid "Failed to read bands"
+msgstr "לא הצליח לקרוא להקות"
+
+msgid "No bands selected"
+msgstr "לא נבחרו להקות"
+
+msgid "Restore default bands?"
+msgstr "לשחזר להקות ברירת מחדל?"
+
+msgid "Apply selected bands? The connection may drop."
+msgstr "להחיל להקות נבחרות? החיבור עלול לרדת."
+
+msgid "Applying bands"
+msgstr "החלת להקות"
+
+msgid "Failed to apply bands"
+msgstr "החלת פסים נכשלה"
+
+msgid "USB mode is read-only in this UI."
+msgstr "מצב USB הוא לקריאה בלבד בממשק המשתמש הזה."
+
+msgid "This USB mode is not supported by the modem firmware."
+msgstr "מצב USB זה אינו נתמך על ידי קושחת המודם."
+
+msgid "Change USB mode? The modem will re-enumerate and the connection may drop. Continue?"
+msgstr "לשנות מצב USB? המודם יספור מחדש והחיבור עלול לרדת. לְהַמשִׁיך?"
+
+msgid "Change NAT mode? The connection may drop."
+msgstr "לשנות מצב NAT? החיבור עלול לרדת."
+
+msgid "Current operator"
+msgstr "מפעיל נוכחי"
+
+msgid "AT port"
+msgstr "נמל AT"
+
+msgid "Scan networks"
+msgstr "סרוק רשתות"
+
+msgid "Automatic operator selection"
+msgstr "בחירת מפעיל אוטומטית"
+
+msgid "Stop scan"
+msgstr "עצור את הסריקה"
+
+msgid "Update MCC/MNC database"
+msgstr "עדכן את מסד הנתונים של MCC/MNC"
+
+msgid "Country"
+msgstr "מדינה"
+
+msgid "MCC/MNC"
+msgstr "MCC/MNC"
+
+msgid "Technology"
+msgstr "טכנולוגיה"
+
+msgid "Action"
+msgstr "פעולה"
+
+msgid "Raw scan output"
+msgstr "פלט סריקה גולמי"
+
+msgid "current"
+msgstr "הנוכחי"
+
+msgid "available"
+msgstr "זמין"
+
+msgid "forbidden"
+msgstr "אסור"
+
+msgid "unknown"
+msgstr "לא ידוע"
+
+msgid "Select"
+msgstr "בחר"
+
+msgid "MCC/MNC database updated."
+msgstr "מסד הנתונים של MCC/MNC עודכן."
+
+msgid "Not updated yet"
+msgstr "עדיין לא מעודכן"
+
+msgid "Failed to read MCC/MNC update status"
+msgstr "קריאת סטטוס עדכון MCC/MNC נכשלה"
+
+msgid "Updating MCC/MNC database"
+msgstr "עדכון מסד הנתונים של MCC/MNC"
+
+msgid "Scanning networks... This may take up to two minutes."
+msgstr "סורק רשתות... פעולה זו עשויה להימשך עד שתי דקות."
+
+msgid "Scan complete."
+msgstr "הסריקה הושלמה."
+
+msgid "Modem is busy. Try again later."
+msgstr "המודם תפוס. נסה שוב מאוחר יותר."
+
+msgid "Scan failed"
+msgstr "הסריקה נכשלה"
+
+msgid "Not scanned yet."
+msgstr "עדיין לא נסרק."
+
+msgid "Failed to read scan status"
+msgstr "קריאת סטטוס הסריקה נכשלה"
+
+msgid "Stopping scan"
+msgstr "הפסקת סריקה"
+
+msgid "Network scan stopped"
+msgstr "סריקת הרשת הופסקה"
+
+msgid "Failed to stop scan"
+msgstr "הפסקת הסריקה נכשלה"
+
+msgid "Starting network scan"
+msgstr "התחלת סריקת רשת"
+
+msgid "Network scan started"
+msgstr "סריקת רשת החלה"
+
+msgid "Failed to start scan"
+msgstr "התחלת הסריקה נכשלה"
+
+msgid "Select operator"
+msgstr "בחר מפעיל"
+
+msgid "The connection may drop."
+msgstr "החיבור עלול לרדת."
+
+msgid "Selecting operator"
+msgstr "בחירת מפעיל"
+
+msgid "Operator selection sent"
+msgstr "בחירת המפעיל נשלחה"
+
+msgid "Failed to select operator"
+msgstr "בחירת המפעיל נכשלה"
+
+msgid "Use automatic operator selection?"
+msgstr "האם להשתמש בבחירת מפעיל אוטומטית?"
+
+msgid "Selecting automatic mode"
+msgstr "בחירת מצב אוטומטי"

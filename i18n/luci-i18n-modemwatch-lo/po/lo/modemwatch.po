@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-modemwatch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 00:00+0000\n"
+"PO-Revision-Date: 2026-11-10 00:00+0000\n"
+"Last-Translator: modemwatch contributors\n"
+"Language-Team: ພາສາລາວ (Lao)\n"
+"Language: lo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Modem LTE 4G"
+msgstr "ໂມເດັມ LTE 4G"
+
+msgid "Status"
+msgstr "ສະຖານະ"
+
+msgid "Signal"
+msgstr "ສັນຍານ"
+
+msgid "Log"
+msgstr "ບັນທຶກການເຮັດວຽກ"
+
+msgid "Modem settings"
+msgstr "ການຕັ້ງຄ່າໂມເດັມ"
+
+msgid "Network search"
+msgstr "ຄົ້ນຫາເຄືອຂ່າຍ"
+
+msgid "Settings"
+msgstr "ການຕັ້ງຄ່າ"
+
+msgid "invalid token"
+msgstr "ໂທເຄັນບໍ່ຖືກຕ້ອງ"
+
+msgid "empty AT command"
+msgstr "ຄໍາສັ່ງ AT ຫວ່າງເປົ່າ"
+
+msgid "invalid band selection"
+msgstr "ການເລືອກແຖບບໍ່ຖືກຕ້ອງ"
+
+msgid "Band settings sent"
+msgstr "ສົ່ງການຕັ້ງຄ່າແຖບແລ້ວ"
+
+msgid "network scan started"
+msgstr "ເລີ່ມການສະແກນເຄືອຂ່າຍແລ້ວ"
+
+msgid "network scan stopped"
+msgstr "ການສະແກນເຄືອຂ່າຍຢຸດ"
+
+msgid "invalid operator"
+msgstr "ຜູ້ປະກອບການບໍ່ຖືກຕ້ອງ"
+
+msgid "Downloading MCC/MNC list"
+msgstr "ກຳລັງດາວໂຫຼດລາຍຊື່ MCC/MNC"
+
+msgid "Parsing MCC/MNC list"
+msgstr "ກຳລັງວິເຄາະລາຍຊື່ MCC/MNC"
+
+msgid "MCC/MNC database updated"
+msgstr "ອັບເດດຖານຂໍ້ມູນ MCC/MNC ແລ້ວ"
+
+msgid "Failed to update MCC/MNC database"
+msgstr "ລົ້ມເຫລວໃນການອັບເດດຖານຂໍ້ມູນ MCC/MNC"
+
+msgid "MCC/MNC update already running"
+msgstr "ອັບເດດ MCC/MNC ເຮັດວຽກຢູ່ກ່ອນແລ້ວ"
+
+msgid "MCC/MNC update started"
+msgstr "ການອັບເດດ MCC/MNC ເລີ່ມແລ້ວ"
+
+msgid "operator selection sent"
+msgstr "ການ​ເລືອກ​ຜູ້​ປະ​ຕິ​ບັດ​ການ​ຖືກ​ສົ່ງ​ໄປ​"
+
+msgid "internet check started"
+msgstr "ການກວດສອບອິນເຕີເນັດໄດ້ເລີ່ມຕົ້ນ"
+
+msgid "modem reboot started"
+msgstr "ເລີ່ມເປີດໂມເດັມຄືນໃໝ່"
+
+msgid "service restarted"
+msgstr "ການບໍລິການເລີ່ມຕົ້ນໃໝ່"
+
+msgid "Modem info updated"
+msgstr "ອັບເດດຂໍ້ມູນໂມເດັມແລ້ວ"
+
+msgid "Modem did not respond"
+msgstr "ໂມເດັມບໍ່ຕອບສະໜອງ"
+
+msgid "Checks internet connectivity and reboots the Quectel modem when the connection is lost."
+msgstr "ກວດເບິ່ງການເຊື່ອມຕໍ່ອິນເຕີເນັດ ແລະປິດເປີດໂມເດັມ Quectel ຄືນໃໝ່ເມື່ອການເຊື່ອມຕໍ່ເສຍ."
+
+msgid "Service settings"
+msgstr "ການຕັ້ງຄ່າການບໍລິການ"
+
+msgid "Enable service"
+msgstr "ເປີດໃຊ້ການບໍລິການ"
+
+msgid "Check interval (seconds)"
+msgstr "ກວດສອບໄລຍະຫ່າງ (ວິນາທີ)"
+
+msgid "Failures before modem reboot"
+msgstr "ຄວາມລົ້ມເຫຼວກ່ອນທີ່ຈະປິດເປີດໂມເດັມ"
+
+msgid "Ping hosts"
+msgstr "Ping ເຈົ້າພາບ"
+
+msgid "Space-separated list. Internet is considered up if at least one host responds."
+msgstr "ບັນຊີລາຍຊື່ທີ່ແຍກອອກຈາກພື້ນທີ່. ອິນເຕີເນັດແມ່ນພິຈາລະນາເພີ່ມຂຶ້ນຖ້າຫາກວ່າຢ່າງຫນ້ອຍຫນຶ່ງເຈົ້າພາບຕອບສະຫນອງ."
+
+msgid "Also require DNS resolution"
+msgstr "ຍັງຕ້ອງການການແກ້ໄຂ DNS"
+
+msgid "DNS name to resolve"
+msgstr "ຊື່ DNS ເພື່ອແກ້ໄຂ"
+
+msgid "Also require an HTTP request"
+msgstr "ຍັງຕ້ອງການການຮ້ອງຂໍ HTTP"
+
+msgid "HTTP URL"
+msgstr "HTTP URL"
+
+msgid "WAN interface"
+msgstr "ການໂຕ້ຕອບ WAN"
+
+msgid "The device name is read from network.<iface>.device."
+msgstr "ຊື່ອຸປະກອນຖືກອ່ານຈາກເຄືອຂ່າຍ.<iface>.device."
+
+msgid "AT serial port"
+msgstr "AT ພອດ serial"
+
+msgid "Detected USB/ACM serial ports. For Quectel EC200A use /dev/ttyUSB2; /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "ກວດພົບພອດ USB/ACM serial. ສໍາລັບ Quectel EC200A ໃຊ້ /dev/ttyUSB2; /dev/ttyUSB0 ແມ່ນພອດກວດວິນິດໄສແລະບໍ່ຕອບຄໍາສັ່ງ AT."
+
+msgid "AT port baud rate"
+msgstr "ອັດຕາ AT port baud"
+
+msgid "Modem reboot method"
+msgstr "ວິທີການປິດເປີດໂມເດັມ"
+
+msgid "AT+CFUN=1,1 (recommended)"
+msgstr "AT+CFUN=1,1 (ແນະນຳ)"
+
+msgid "USB re-bind (best effort)"
+msgstr "ຜູກມັດ USB ຄືນໃໝ່ (ພະຍາຍາມດີທີ່ສຸດ)"
+
+msgid "Wait after reboot (seconds)"
+msgstr "ລໍຖ້າຫຼັງຈາກປິດເປີດໃໝ່ (ວິນາທີ)"
+
+msgid "Collect modem information"
+msgstr "ເກັບກໍາຂໍ້ມູນໂມເດັມ"
+
+msgid "Reads model, firmware, IMEI, signal, operator and temperature via AT commands."
+msgstr "ອ່ານຕົວແບບ, ເຟີມແວ, IMEI, ສັນຍານ, ຕົວປະຕິບັດການ ແລະອຸນຫະພູມຜ່ານຄຳສັ່ງ AT."
+
+msgid "Modem info interval (seconds)"
+msgstr "ໄລຍະຫ່າງຂໍ້ມູນໂມເດັມ (ວິນາທີ)"
+
+msgid "How often to query the modem with AT commands. Keep it longer if other modem tools use the same serial port."
+msgstr "ການສອບຖາມໂມເດັມດ້ວຍຄຳສັ່ງ AT ເລື້ອຍໆສໍ່າໃດ. ຮັກສາມັນໄວ້ດົນກວ່າຖ້າເຄື່ອງມືໂມເດັມອື່ນໃຊ້ພອດ serial ດຽວກັນ."
+
+msgid "Signal refresh interval (seconds)"
+msgstr "ໄລຍະການໂຫຼດຂໍ້ມູນຄືນໃໝ່ (ວິນາທີ)"
+
+msgid "Pause between signal page updates. The actual update also includes the modem response time."
+msgstr "ຢຸດຊົ່ວຄາວລະຫວ່າງການປັບປຸງຫນ້າສັນຍານ. ການປັບປຸງຕົວຈິງຍັງປະກອບມີເວລາຕອບສະຫນອງໂມເດັມ."
+
+msgid "Safety"
+msgstr "ຄວາມປອດໄພ"
+
+msgid "Maximum reboots per window"
+msgstr "reboots ສູງສຸດຕໍ່ປ່ອງຢ້ຽມ"
+
+msgid "Set to 0 for unlimited. The limit prevents reboot loops."
+msgstr "ກໍານົດເປັນ 0 ສໍາລັບການບໍ່ຈໍາກັດ. ຂອບເຂດຈໍາກັດປ້ອງກັນການ reboot loops."
+
+msgid "Reboot window (seconds)"
+msgstr "reboot window (ວິນາທີ)"
+
+msgid "Cooldown between reboots (seconds)"
+msgstr "Cooldown ລະຫວ່າງ reboots (ວິນາທີ)"
+
+msgid "Logging"
+msgstr "ການບັນທຶກຂໍ້ມູນ"
+
+msgid "Log level"
+msgstr "ລະດັບການບັນທຶກ (Log)"
+
+msgid "Error"
+msgstr "ຄວາມຜິດພາດ"
+
+msgid "Warning"
+msgstr "Warning"
+
+msgid "Info"
+msgstr "ຂໍ້ມູນ"
+
+msgid "Debug"
+msgstr "ດີບັກ (Debug)"
+
+msgid "Remote access warning"
+msgstr "ການເຕືອນໄພການເຂົ້າເຖິງໄລຍະໄກ"
+
+msgid "This service reboots only the modem, not the router. If the modem is the only WAN, internet and remote access will be down during the reboot. Do not change USB mode, APN or band settings remotely without a rollback plan."
+msgstr "ການບໍລິການນີ້ reboots ພຽງແຕ່ໂມເດັມ, ບໍ່ແມ່ນ router. ຖ້າໂມເດັມເປັນ WAN ເທົ່ານັ້ນ, ອິນເຕີເນັດ ແລະການເຂົ້າເຖິງທາງໄກຈະຫຼຸດລົງໃນລະຫວ່າງການປິດເປີດໃໝ່. ຢ່າປ່ຽນໂຫມດ USB, APN ຫຼືການຕັ້ງຄ່າແຖບຈາກໄລຍະໄກໂດຍບໍ່ມີແຜນການ rollback."
+
+msgid "Service"
+msgstr "ບໍລິການ"
+
+msgid "State"
+msgstr "ສະຖານະ"
+
+msgid "Last check"
+msgstr "ກວດຄັ້ງສຸດທ້າຍ"
+
+msgid "Last success"
+msgstr "ຄວາມສໍາເລັດສຸດທ້າຍ"
+
+msgid "Last failure"
+msgstr "ຄວາມລົ້ມເຫຼວສຸດທ້າຍ"
+
+msgid "Failures"
+msgstr "ຄວາມລົ້ມເຫຼວ"
+
+msgid "Modem reboots"
+msgstr "ໂມເດັມປິດເປີດໃໝ່"
+
+msgid "last"
+msgstr "ສຸດທ້າຍ"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "Data transferred"
+msgstr "ໂອນຂໍ້ມູນ"
+
+msgid "Ping / DNS / HTTP"
+msgstr "Ping / DNS / HTTP"
+
+msgid "Latency"
+msgstr "ຄວາມຊ້າ"
+
+msgid "Modem"
+msgstr "ໂມເດັມ"
+
+msgid "Firmware"
+msgstr "ເຟີມແວ"
+
+msgid "IMEI"
+msgstr "IMEI"
+
+msgid "Operator / network"
+msgstr "ຜູ້ປະຕິບັດງານ / ເຄືອຂ່າຍ"
+
+msgid "Modem temperature"
+msgstr "ອຸນຫະພູມໂມເດັມ"
+
+msgid "Service uptime"
+msgstr "ເວລາໃຫ້ບໍລິການ"
+
+msgid "LTE quality"
+msgstr "ຄຸນະພາບ LTE"
+
+msgid "CSQ"
+msgstr "CSQ"
+
+msgid "RSSI"
+msgstr "RSSI"
+
+msgid "RSRP"
+msgstr "RSRP"
+
+msgid "SINR"
+msgstr "SINR"
+
+msgid "RSRQ"
+msgstr "RSRQ"
+
+msgid "Band"
+msgstr "ແຖບສັນຍານ"
+
+msgid "Check now"
+msgstr "ກວດເບິ່ງດຽວນີ້"
+
+msgid "Refresh modem info"
+msgstr "ໂຫຼດຂໍ້ມູນໂມເດັມຄືນໃໝ່"
+
+msgid "Reboot modem"
+msgstr "ຣີບູດໂມເດັມ"
+
+msgid "Restart service"
+msgstr "ເປີດບໍລິການຄືນໃໝ່"
+
+msgid "yes"
+msgstr "ແມ່ນ"
+
+msgid "no"
+msgstr "ບໍ່"
+
+msgid "online"
+msgstr "ອອນໄລນ໌"
+
+msgid "offline"
+msgstr "ອອບໄລນ໌"
+
+msgid "rebooting"
+msgstr "rebooting"
+
+msgid "checking"
+msgstr "ກວດ​ສອບ"
+
+msgid "disabled"
+msgstr "ປິດການໃຊ້ງານ"
+
+msgid "starting"
+msgstr "ເລີ່ມ"
+
+msgid "stopped"
+msgstr "ຢຸດ"
+
+msgid "error"
+msgstr "ຄວາມຜິດພາດ"
+
+msgid "running"
+msgstr "ແລ່ນ"
+
+msgid "Failed to read status"
+msgstr "ອ່ານສະຖານະບໍ່ສຳເລັດ"
+
+msgid "Reading modem data"
+msgstr "ກຳລັງອ່ານຂໍ້ມູນໂມເດັມ"
+
+msgid "Failed to read modem data"
+msgstr "ລົ້ມເຫລວໃນການອ່ານຂໍ້ມູນໂມເດັມ"
+
+msgid "Check started"
+msgstr "ກວດສອບເລີ່ມແລ້ວ"
+
+msgid "Check failed"
+msgstr "ກວດສອບບໍ່ສຳເລັດ"
+
+msgid "Reboot the modem now? Internet will be down for about"
+msgstr "ຣີບູດໂມເດັມດຽວນີ້ບໍ? ອິນເຕີເນັດຈະຫຼຸດລົງປະມານ"
+
+msgid "seconds."
+msgstr "ວິນາທີ."
+
+msgid "Modem reboot started"
+msgstr "ເລີ່ມເປີດໂມເດັມຄືນໃໝ່"
+
+msgid "Reboot failed"
+msgstr "ປິດເປີດຄືນໃໝ່ບໍ່ສຳເລັດ"
+
+msgid "Restart the modemwatch service?"
+msgstr "ຣີສະຕາດບໍລິການໂມເດັມໂມງບໍ?"
+
+msgid "Service restarted"
+msgstr "ການບໍລິການເລີ່ມຕົ້ນໃໝ່"
+
+msgid "Restart failed"
+msgstr "ຣີສະຕາດບໍ່ສຳເລັດ"
+
+msgid "Signal strength (RSRQ)"
+msgstr "ຄວາມແຮງສັນຍານ (RSRQ)"
+
+msgid "Operator"
+msgstr "ຜູ້ໃຫ້ບໍລິການ"
+
+msgid "Network"
+msgstr "ເຄືອຂ່າຍ"
+
+msgid "Last update"
+msgstr "ອັບເດດຫຼ້າສຸດ"
+
+msgid "Refresh interval"
+msgstr "ໄລຍະການໂຫຼດຂໍ້ມູນຄືນໃໝ່"
+
+msgid "seconds"
+msgstr "ວິນາທີ"
+
+msgid "Signal Strength"
+msgstr "ຄວາມແຮງຂອງສັນຍານ"
+
+msgid "Received Signal Strength Indicator"
+msgstr "ໄດ້ຮັບຕົວຊີ້ວັດຄວາມແຮງຂອງສັນຍານ"
+
+msgid "Reference Signal Receive Power"
+msgstr "ສັນຍານອ້າງອີງຮັບພະລັງງານ"
+
+msgid "Signal to Interference plus Noise Ratio"
+msgstr "ສັນຍານການລົບກວນບວກກັບອັດຕາສ່ວນສຽງ"
+
+msgid "Reference Signal Received Quality"
+msgstr "ສັນຍານອ້າງອີງທີ່ໄດ້ຮັບຄຸນນະພາບ"
+
+msgid "Refresh now"
+msgstr "ໂຫຼດຂໍ້ມູນຄືນໃໝ່ດຽວນີ້"
+
+msgid "Pause"
+msgstr "ຢຸດຊົ່ວຄາວ"
+
+msgid "Busy"
+msgstr "ບໍ່ຫວ່າງ"
+
+msgid "AT port not found"
+msgstr "ບໍ່ພົບພອດ AT"
+
+msgid "No response from modem"
+msgstr "ບໍ່ມີການຕອບສະໜອງຈາກໂມເດັມ"
+
+msgid "Failed to read signal"
+msgstr "ອ່ານສັນຍານບໍ່ສຳເລັດ"
+
+msgid "Resume"
+msgstr "ປະຫວັດຫຍໍ້"
+
+msgid "Refresh log"
+msgstr "ໂຫຼດບັນທຶກຄືນໃໝ່"
+
+msgid "Auto-refresh"
+msgstr "ໂຫຼດຂໍ້ມູນຄືນໃໝ່ອັດຕະໂນມັດ"
+
+msgid "(empty)"
+msgstr "(ຫວ່າງເປົ່າ)"
+
+msgid "Updated"
+msgstr "ອັບເດດ"
+
+msgid "Failed to read log"
+msgstr "ລົ້ມເຫລວໃນການອ່ານບັນທຶກ"
+
+msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
+msgstr "ຄຳສັ່ງ AT ສາມາດປ່ຽນການຕັ້ງຄ່າໂມເດັມ ແລະອາດຈະຕັດການເຊື່ອມຕໍ່ອິນເຕີເນັດ ຫຼື SSH. ຢ່າປ່ຽນໂຫມດ USB, APN, ແຖບ ຫຼືໂໝດເຄືອຂ່າຍຈາກໄລຍະໄກ ໂດຍບໍ່ມີແຜນການ rollback."
+
+msgid "Expert mode — allow changing USB mode and NAT"
+msgstr "ໂໝດຊ່ຽວຊານ — ອະນຸຍາດໃຫ້ປ່ຽນໂໝດ USB ແລະ NAT"
+
+msgid "Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan."
+msgstr "ການປ່ຽນໂໝດ USB ສາມາດຕັດການເຊື່ອມຕໍ່ໂມເດັມ ແລະ SSH ໄດ້. ໃຊ້ກັບການເຂົ້າເຖິງທ້ອງຖິ່ນຫຼືແຜນການ rollback ເທົ່ານັ້ນ."
+
+msgid "Selected AT port"
+msgstr "ເລືອກພອດ AT"
+
+msgid "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "ສໍາລັບ Quectel EC200A ໃຊ້ /dev/ttyUSB2. /dev/ttyUSB0 ແມ່ນພອດກວດວິນິດໄສແລະບໍ່ຕອບຄໍາສັ່ງ AT."
+
+msgid "Current configuration"
+msgstr "ການຕັ້ງຄ່າປັດຈຸບັນ"
+
+msgid "Read current configuration"
+msgstr "ອ່ານການຕັ້ງຄ່າປັດຈຸບັນ"
+
+msgid "Modem information"
+msgstr "ຂໍ້ມູນໂມເດັມ"
+
+msgid "Model"
+msgstr "ຮຸ່ນ"
+
+msgid "SIM status"
+msgstr "ສະຖານະ SIM"
+
+msgid "Temperature"
+msgstr "ອຸນຫະພູມ"
+
+msgid "Access Point Name (APN)"
+msgstr "ຊື່ຈຸດເຂົ້າເຖິງ (APN)"
+
+msgid "Username"
+msgstr "ຊື່ຜູ້ໃຊ້"
+
+msgid "Password"
+msgstr "ລະຫັດຜ່ານ"
+
+msgid "Authentication"
+msgstr "ການຢືນຢັນຕົວຕົນ"
+
+msgid "None"
+msgstr "ບໍ່ມີ"
+
+msgid "PDP type"
+msgstr "ປະເພດ PDP"
+
+msgid "Read APN"
+msgstr "ອ່ານ APN"
+
+msgid "Apply APN"
+msgstr "ນຳໃຊ້ APN"
+
+msgid "Network mode"
+msgstr "ໂໝດເຄືອຂ່າຍ"
+
+msgid "Mode"
+msgstr "ໂໝດ"
+
+msgid "Automatic"
+msgstr "ອັດຕະໂນມັດ"
+
+msgid "GSM only"
+msgstr "GSM ເທົ່ານັ້ນ"
+
+msgid "WCDMA only"
+msgstr "WCDMA ເທົ່ານັ້ນ"
+
+msgid "LTE only"
+msgstr "LTE ເທົ່ານັ້ນ"
+
+msgid "Read mode"
+msgstr "ໂໝດອ່ານ"
+
+msgid "Apply mode"
+msgstr "ນຳໃຊ້ໂໝດ"
+
+msgid "Band configuration"
+msgstr "ການຕັ້ງຄ່າແຖບ"
+
+msgid "Read bands"
+msgstr "ອ່ານແຖບ"
+
+msgid "Select all"
+msgstr "ເລືອກທັງໝົດ"
+
+msgid "Restore default"
+msgstr "ຟື້ນຟູຄ່າເລີ່ມຕົ້ນ"
+
+msgid "Apply bands"
+msgstr "ນຳໃຊ້ແຖບ"
+
+msgid "Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection."
+msgstr "ເລືອກແຖບ LTE ທີ່ທ່ານຕ້ອງການທີ່ຈະເປີດໃຫ້ໃຊ້ງານ. ການ​ນໍາ​ໃຊ້​ອາດ​ຈະ restart WAN ແລະ​ຫຼຸດ​ລົງ​ການ​ເຊື່ອມ​ຕໍ່​."
+
+msgid "USB mode"
+msgstr "ໂໝດ USB"
+
+msgid "Current value"
+msgstr "ມູນຄ່າປັດຈຸບັນ"
+
+msgid "New value"
+msgstr "ຄ່າໃໝ່"
+
+msgid "RMNET (QMI)"
+msgstr "RMNET (QMI)"
+
+msgid "not supported"
+msgstr "ບໍ່ຮອງຮັບ"
+
+msgid "ECM (CDC Ethernet)"
+msgstr "ECM (CDC Ethernet)"
+
+msgid "MBIM"
+msgstr "MBIM"
+
+msgid "RNDIS"
+msgstr "RNDIS"
+
+msgid "Apply USB mode"
+msgstr "ນຳໃຊ້ໂໝດ USB"
+
+msgid "Read USB mode"
+msgstr "ອ່ານໂໝດ USB"
+
+msgid "Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem."
+msgstr "ໂມເດັມທີ່ບໍ່ຮອງຮັບໂດຍເຟີມແວໂມເດັມຖືກປິດໃຊ້ງານ ແລະໝາຍວ່າບໍ່ຮອງຮັບ. ໂໝດທີ່ຮອງຮັບຖືກກວດພົບໂດຍອັດຕະໂນມັດຈາກໂມເດັມ."
+
+msgid "Apply NAT"
+msgstr "ນຳໃຊ້ NAT"
+
+msgid "Read NAT"
+msgstr "ອ່ານ NAT"
+
+msgid "Raw AT command"
+msgstr "ຄໍາສັ່ງ AT ດິບ"
+
+msgid "AT command"
+msgstr "AT ຄໍາສັ່ງ"
+
+msgid "Send"
+msgstr "ສົ່ງ"
+
+msgid "Sending"
+msgstr "ກຳລັງສົ່ງ"
+
+msgid "AT command failed"
+msgstr "ຄຳສັ່ງ AT ລົ້ມເຫລວ"
+
+msgid "Reading APN"
+msgstr "ກຳລັງອ່ານ APN"
+
+msgid "Failed to read APN"
+msgstr "ລົ້ມເຫລວໃນການອ່ານ APN"
+
+msgid "Reading settings"
+msgstr "ການຕັ້ງຄ່າການອ່ານ"
+
+msgid "Settings read"
+msgstr "ອ່ານການຕັ້ງຄ່າ"
+
+msgid "Failed to read settings"
+msgstr "ລົ້ມເຫລວໃນການອ່ານການຕັ້ງຄ່າ"
+
+msgid "APN, username and password may contain only letters, digits, dot, hyphen and underscore."
+msgstr "APN, ຊື່​ຜູ້​ໃຊ້ ແລະ​ລະ​ຫັດ​ຜ່ານ​ອາດ​ຈະ​ມີ​ພຽງ​ແຕ່​ຕົວ​ອັກ​ສອນ​, ຕົວ​ເລກ​, ຈຸດ​, hyphen ແລະ​ຂີດ​ກ້ອງ​."
+
+msgid "Apply APN settings? The connection may drop."
+msgstr "ນຳໃຊ້ການຕັ້ງຄ່າ APN ບໍ? ການເຊື່ອມຕໍ່ອາດຈະຫຼຸດລົງ."
+
+msgid "Applying APN"
+msgstr "ກຳລັງນຳໃຊ້ APN"
+
+msgid "APN applied. Reconnect or reboot the modem if needed."
+msgstr "ນຳໃຊ້ APN ແລ້ວ. ເຊື່ອມຕໍ່ຄືນໃໝ່ ຫຼືປິດເປີດໂມເດັມຄືນໃໝ່ຖ້າຈຳເປັນ."
+
+msgid "Failed to apply APN"
+msgstr "ນຳໃຊ້ APN ບໍ່ສຳເລັດ"
+
+msgid "Apply network mode? The connection may drop."
+msgstr "ນຳໃຊ້ໂໝດເຄືອຂ່າຍບໍ? ການເຊື່ອມຕໍ່ອາດຈະຫຼຸດລົງ."
+
+msgid "Reading bands"
+msgstr "ວົງການອ່ານ"
+
+msgid "Failed to read bands"
+msgstr "ລົ້ມເຫລວໃນການອ່ານແຖບ"
+
+msgid "No bands selected"
+msgstr "ບໍ່ໄດ້ເລືອກແຖບ"
+
+msgid "Restore default bands?"
+msgstr "ກູ້ຄືນແຖບເລີ່ມຕົ້ນບໍ?"
+
+msgid "Apply selected bands? The connection may drop."
+msgstr "ນຳໃຊ້ແຖບທີ່ເລືອກບໍ? ການເຊື່ອມຕໍ່ອາດຈະຫຼຸດລົງ."
+
+msgid "Applying bands"
+msgstr "ນຳໃຊ້ແຖບ"
+
+msgid "Failed to apply bands"
+msgstr "ນຳໃຊ້ແຖບບໍ່ສຳເລັດ"
+
+msgid "USB mode is read-only in this UI."
+msgstr "ໂໝດ USB ແມ່ນອ່ານໄດ້ຢ່າງດຽວໃນ UI ນີ້."
+
+msgid "This USB mode is not supported by the modem firmware."
+msgstr "ໂໝດ USB ນີ້ບໍ່ຮອງຮັບໂມເດັມເຟີມແວ."
+
+msgid "Change USB mode? The modem will re-enumerate and the connection may drop. Continue?"
+msgstr "ປ່ຽນໂໝດ USB ບໍ? ໂມເດັມຈະນັບຄືນ ແລະການເຊື່ອມຕໍ່ອາດຈະຫຼຸດລົງ. ສືບຕໍ່?"
+
+msgid "Change NAT mode? The connection may drop."
+msgstr "ປ່ຽນໂໝດ NAT ບໍ? ການເຊື່ອມຕໍ່ອາດຈະຫຼຸດລົງ."
+
+msgid "Current operator"
+msgstr "ຜູ້ປະກອບການປະຈຸບັນ"
+
+msgid "AT port"
+msgstr "AT ພອດ"
+
+msgid "Scan networks"
+msgstr "ສະແກນເຄືອຂ່າຍ"
+
+msgid "Automatic operator selection"
+msgstr "ການເລືອກຕົວປະຕິບັດການອັດຕະໂນມັດ"
+
+msgid "Stop scan"
+msgstr "ຢຸດການສະແກນ"
+
+msgid "Update MCC/MNC database"
+msgstr "ອັບເດດຖານຂໍ້ມູນ MCC/MNC"
+
+msgid "Country"
+msgstr "ປະເທດ"
+
+msgid "MCC/MNC"
+msgstr "MCC/MNC"
+
+msgid "Technology"
+msgstr "ເຕັກໂນໂລຊີ"
+
+msgid "Action"
+msgstr "ການກະທຳ"
+
+msgid "Raw scan output"
+msgstr "ຜົນຜະລິດສະແກນດິບ"
+
+msgid "current"
+msgstr "ປະຈຸບັນ"
+
+msgid "available"
+msgstr "ມີໃຫ້"
+
+msgid "forbidden"
+msgstr "ຫ້າມ"
+
+msgid "unknown"
+msgstr "ບໍ່ຮູ້ຈັກ"
+
+msgid "Select"
+msgstr "ເລືອກ"
+
+msgid "MCC/MNC database updated."
+msgstr "ອັບເດດຖານຂໍ້ມູນ MCC/MNC ແລ້ວ."
+
+msgid "Not updated yet"
+msgstr "ຍັງບໍ່ໄດ້ອັບເດດເທື່ອ"
+
+msgid "Failed to read MCC/MNC update status"
+msgstr "ອ່ານສະຖານະການອັບເດດ MCC/MNC ບໍ່ສຳເລັດ"
+
+msgid "Updating MCC/MNC database"
+msgstr "ກຳລັງອັບເດດຖານຂໍ້ມູນ MCC/MNC"
+
+msgid "Scanning networks... This may take up to two minutes."
+msgstr "ກຳລັງສະແກນເຄືອຂ່າຍ... ອັນນີ້ອາດຈະໃຊ້ເວລາເຖິງສອງນາທີ."
+
+msgid "Scan complete."
+msgstr "ສະແກນສຳເລັດ."
+
+msgid "Modem is busy. Try again later."
+msgstr "ໂມເດັມບໍ່ຫວ່າງ. ລອງໃໝ່ໃນພາຍຫຼັງ."
+
+msgid "Scan failed"
+msgstr "ການສະແກນລົ້ມເຫລວ"
+
+msgid "Not scanned yet."
+msgstr "ຍັງບໍ່ໄດ້ສະແກນເທື່ອ."
+
+msgid "Failed to read scan status"
+msgstr "ອ່ານສະຖານະສະແກນບໍ່ສຳເລັດ"
+
+msgid "Stopping scan"
+msgstr "ຢຸດການສະແກນ"
+
+msgid "Network scan stopped"
+msgstr "ການສະແກນເຄືອຂ່າຍຢຸດ"
+
+msgid "Failed to stop scan"
+msgstr "ຢຸດການສະແກນບໍ່ສຳເລັດ"
+
+msgid "Starting network scan"
+msgstr "ກຳລັງເລີ່ມສະແກນເຄືອຂ່າຍ"
+
+msgid "Network scan started"
+msgstr "ເລີ່ມການສະແກນເຄືອຂ່າຍແລ້ວ"
+
+msgid "Failed to start scan"
+msgstr "ເລີ່ມການສະແກນລົ້ມເຫລວ"
+
+msgid "Select operator"
+msgstr "ເລືອກຕົວປະຕິບັດການ"
+
+msgid "The connection may drop."
+msgstr "ການເຊື່ອມຕໍ່ອາດຈະຫຼຸດລົງ."
+
+msgid "Selecting operator"
+msgstr "ເລືອກຕົວປະຕິບັດການ"
+
+msgid "Operator selection sent"
+msgstr "ສົ່ງການຄັດເລືອກຜູ້ປະຕິບັດງານ"
+
+msgid "Failed to select operator"
+msgstr "ເລືອກຕົວດຳເນີນການບໍ່ສຳເລັດ"
+
+msgid "Use automatic operator selection?"
+msgstr "ໃຊ້ການເລືອກຕົວປະຕິບັດການອັດຕະໂນມັດບໍ?"
+
+msgid "Selecting automatic mode"
+msgstr "ເລືອກໂໝດອັດຕະໂນມັດ"

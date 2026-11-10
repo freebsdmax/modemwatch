@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: luci-app-modemwatch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-10 00:00+0000\n"
+"PO-Revision-Date: 2026-11-10 00:00+0000\n"
+"Last-Translator: modemwatch contributors\n"
+"Language-Team: Ελληνικά (Greek)\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgid "Modem LTE 4G"
+msgstr "Μόντεμ LTE 4G"
+
+msgid "Status"
+msgstr "Κατάσταση"
+
+msgid "Signal"
+msgstr "Σήμα"
+
+msgid "Log"
+msgstr "Καταγραφή"
+
+msgid "Modem settings"
+msgstr "Ρυθμίσεις μόντεμ"
+
+msgid "Network search"
+msgstr "Αναζήτηση δικτύου"
+
+msgid "Settings"
+msgstr "Ρυθμίσεις"
+
+msgid "invalid token"
+msgstr "μη έγκυρο διακριτικό"
+
+msgid "empty AT command"
+msgstr "άδεια εντολή AT"
+
+msgid "invalid band selection"
+msgstr "μη έγκυρη επιλογή μπάντας"
+
+msgid "Band settings sent"
+msgstr "Στάλθηκαν οι ρυθμίσεις μπάντας"
+
+msgid "network scan started"
+msgstr "ξεκίνησε η σάρωση δικτύου"
+
+msgid "network scan stopped"
+msgstr "η σάρωση δικτύου σταμάτησε"
+
+msgid "invalid operator"
+msgstr "μη έγκυρος χειριστής"
+
+msgid "Downloading MCC/MNC list"
+msgstr "Λήψη λίστας MCC/MNC"
+
+msgid "Parsing MCC/MNC list"
+msgstr "Ανάλυση λίστας MCC/MNC"
+
+msgid "MCC/MNC database updated"
+msgstr "Η βάση δεδομένων MCC/MNC ενημερώθηκε"
+
+msgid "Failed to update MCC/MNC database"
+msgstr "Η ενημέρωση της βάσης δεδομένων MCC/MNC απέτυχε"
+
+msgid "MCC/MNC update already running"
+msgstr "Η ενημέρωση MCC/MNC εκτελείται ήδη"
+
+msgid "MCC/MNC update started"
+msgstr "Η ενημέρωση MCC/MNC ξεκίνησε"
+
+msgid "operator selection sent"
+msgstr "στάλθηκε η επιλογή χειριστή"
+
+msgid "internet check started"
+msgstr "Ο έλεγχος στο διαδίκτυο ξεκίνησε"
+
+msgid "modem reboot started"
+msgstr "ξεκίνησε η επανεκκίνηση του μόντεμ"
+
+msgid "service restarted"
+msgstr "επανεκκίνηση της υπηρεσίας"
+
+msgid "Modem info updated"
+msgstr "Οι πληροφορίες μόντεμ ενημερώθηκαν"
+
+msgid "Modem did not respond"
+msgstr "Το μόντεμ δεν ανταποκρίθηκε"
+
+msgid "Checks internet connectivity and reboots the Quectel modem when the connection is lost."
+msgstr "Ελέγχει τη συνδεσιμότητα στο Διαδίκτυο και επανεκκινεί το μόντεμ Quectel όταν η σύνδεση χαθεί."
+
+msgid "Service settings"
+msgstr "Ρυθμίσεις υπηρεσίας"
+
+msgid "Enable service"
+msgstr "Ενεργοποίηση υπηρεσίας"
+
+msgid "Check interval (seconds)"
+msgstr "Διάστημα ελέγχου (δευτερόλεπτα)"
+
+msgid "Failures before modem reboot"
+msgstr "Αποτυχίες πριν από την επανεκκίνηση του μόντεμ"
+
+msgid "Ping hosts"
+msgstr "Ping hosts"
+
+msgid "Space-separated list. Internet is considered up if at least one host responds."
+msgstr "Λίστα χωρισμένη σε χώρο. Το Διαδίκτυο θεωρείται ανοιχτό εάν απαντήσει τουλάχιστον ένας κεντρικός υπολογιστής."
+
+msgid "Also require DNS resolution"
+msgstr "Απαιτείται επίσης ανάλυση DNS"
+
+msgid "DNS name to resolve"
+msgstr "Όνομα DNS προς επίλυση"
+
+msgid "Also require an HTTP request"
+msgstr "Απαιτείται επίσης ένα αίτημα HTTP"
+
+msgid "HTTP URL"
+msgstr "HTTP URL"
+
+msgid "WAN interface"
+msgstr "Διεπαφή WAN"
+
+msgid "The device name is read from network.<iface>.device."
+msgstr "Το όνομα της συσκευής διαβάζεται από το δίκτυο.<iface>.device."
+
+msgid "AT serial port"
+msgstr "AT σειριακή θύρα"
+
+msgid "Detected USB/ACM serial ports. For Quectel EC200A use /dev/ttyUSB2; /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Εντοπίστηκαν σειριακές θύρες USB/ACM. Για Quectel EC200A χρησιμοποιήστε /dev/ttyUSB2; Το /dev/ttyUSB0 είναι η διαγνωστική θύρα και δεν απαντά σε εντολές AT."
+
+msgid "AT port baud rate"
+msgstr "Ρυθμός baud στη θύρα"
+
+msgid "Modem reboot method"
+msgstr "Μέθοδος επανεκκίνησης μόντεμ"
+
+msgid "AT+CFUN=1,1 (recommended)"
+msgstr "AT+CFUN=1,1 (συνιστάται)"
+
+msgid "USB re-bind (best effort)"
+msgstr "Επανασύνδεση USB (καλύτερη προσπάθεια)"
+
+msgid "Wait after reboot (seconds)"
+msgstr "Περιμένετε μετά την επανεκκίνηση (δευτερόλεπτα)"
+
+msgid "Collect modem information"
+msgstr "Συλλέξτε πληροφορίες μόντεμ"
+
+msgid "Reads model, firmware, IMEI, signal, operator and temperature via AT commands."
+msgstr "Διαβάζει μοντέλο, υλικολογισμικό, IMEI, σήμα, χειριστή και θερμοκρασία μέσω εντολών AT."
+
+msgid "Modem info interval (seconds)"
+msgstr "Διάστημα πληροφοριών μόντεμ (δευτερόλεπτα)"
+
+msgid "How often to query the modem with AT commands. Keep it longer if other modem tools use the same serial port."
+msgstr "Πόσο συχνά γίνεται ερώτηση στο μόντεμ με εντολές AT. Διατηρήστε το περισσότερο εάν άλλα εργαλεία μόντεμ χρησιμοποιούν την ίδια σειριακή θύρα."
+
+msgid "Signal refresh interval (seconds)"
+msgstr "Διάστημα ανανέωσης σήματος (δευτερόλεπτα)"
+
+msgid "Pause between signal page updates. The actual update also includes the modem response time."
+msgstr "Παύση μεταξύ ενημερώσεων σελίδας σήματος. Η πραγματική ενημέρωση περιλαμβάνει επίσης τον χρόνο απόκρισης του μόντεμ."
+
+msgid "Safety"
+msgstr "Ασφάλεια"
+
+msgid "Maximum reboots per window"
+msgstr "Μέγιστες επανεκκινήσεις ανά παράθυρο"
+
+msgid "Set to 0 for unlimited. The limit prevents reboot loops."
+msgstr "Ορίστε στο 0 για απεριόριστο. Το όριο αποτρέπει τους βρόχους επανεκκίνησης."
+
+msgid "Reboot window (seconds)"
+msgstr "Παράθυρο επανεκκίνησης (δευτερόλεπτα)"
+
+msgid "Cooldown between reboots (seconds)"
+msgstr "Ψύξη μεταξύ επανεκκινήσεων (δευτερόλεπτα)"
+
+msgid "Logging"
+msgstr "Καταγραφή"
+
+msgid "Log level"
+msgstr "Επίπεδο καταγραφής"
+
+msgid "Error"
+msgstr "Σφάλμα"
+
+msgid "Warning"
+msgstr "Warning"
+
+msgid "Info"
+msgstr "Πληροφορίες"
+
+msgid "Debug"
+msgstr "Αποσφαλμάτωση"
+
+msgid "Remote access warning"
+msgstr "Προειδοποίηση απομακρυσμένης πρόσβασης"
+
+msgid "This service reboots only the modem, not the router. If the modem is the only WAN, internet and remote access will be down during the reboot. Do not change USB mode, APN or band settings remotely without a rollback plan."
+msgstr "Αυτή η υπηρεσία κάνει επανεκκίνηση μόνο του μόντεμ και όχι του δρομολογητή. Εάν το μόντεμ είναι το μόνο WAN, το διαδίκτυο και η απομακρυσμένη πρόσβαση θα διακοπούν κατά την επανεκκίνηση. Μην αλλάζετε τις ρυθμίσεις λειτουργίας USB, APN ή ζώνης από απόσταση χωρίς σχέδιο επαναφοράς."
+
+msgid "Service"
+msgstr "Υπηρεσία"
+
+msgid "State"
+msgstr "κράτος"
+
+msgid "Last check"
+msgstr "Τελευταίος έλεγχος"
+
+msgid "Last success"
+msgstr "Τελευταία επιτυχία"
+
+msgid "Last failure"
+msgstr "Τελευταία αποτυχία"
+
+msgid "Failures"
+msgstr "Αποτυχίες"
+
+msgid "Modem reboots"
+msgstr "Επανεκκινεί το μόντεμ"
+
+msgid "last"
+msgstr "τελευταία"
+
+msgid "WAN"
+msgstr "WAN"
+
+msgid "Data transferred"
+msgstr "Μεταφέρθηκαν δεδομένα"
+
+msgid "Ping / DNS / HTTP"
+msgstr "Ping / DNS / HTTP"
+
+msgid "Latency"
+msgstr "Καθυστέρηση"
+
+msgid "Modem"
+msgstr "Μόντεμ"
+
+msgid "Firmware"
+msgstr "Υλικολογισμικό"
+
+msgid "IMEI"
+msgstr "IMEI"
+
+msgid "Operator / network"
+msgstr "Χειριστής / δίκτυο"
+
+msgid "Modem temperature"
+msgstr "Θερμοκρασία μόντεμ"
+
+msgid "Service uptime"
+msgstr "Χρόνος λειτουργίας υπηρεσίας"
+
+msgid "LTE quality"
+msgstr "Ποιότητα LTE"
+
+msgid "CSQ"
+msgstr "CSQ"
+
+msgid "RSSI"
+msgstr "RSSI"
+
+msgid "RSRP"
+msgstr "RSRP"
+
+msgid "SINR"
+msgstr "SINR"
+
+msgid "RSRQ"
+msgstr "RSRQ"
+
+msgid "Band"
+msgstr "Μπάντα"
+
+msgid "Check now"
+msgstr "Ελέγξτε τώρα"
+
+msgid "Refresh modem info"
+msgstr "Ανανέωση πληροφοριών μόντεμ"
+
+msgid "Reboot modem"
+msgstr "Επανεκκινήστε το μόντεμ"
+
+msgid "Restart service"
+msgstr "Επανεκκινήστε την υπηρεσία"
+
+msgid "yes"
+msgstr "ναί"
+
+msgid "no"
+msgstr "όχι"
+
+msgid "online"
+msgstr "online"
+
+msgid "offline"
+msgstr "εκτός σύνδεσης"
+
+msgid "rebooting"
+msgstr "επανεκκίνηση"
+
+msgid "checking"
+msgstr "έλεγχος"
+
+msgid "disabled"
+msgstr "άτομα με ειδικές ανάγκες"
+
+msgid "starting"
+msgstr "ξεκινώντας"
+
+msgid "stopped"
+msgstr "σταμάτησε"
+
+msgid "error"
+msgstr "σφάλμα"
+
+msgid "running"
+msgstr "τρέξιμο"
+
+msgid "Failed to read status"
+msgstr "Αποτυχία ανάγνωσης της κατάστασης"
+
+msgid "Reading modem data"
+msgstr "Ανάγνωση δεδομένων μόντεμ"
+
+msgid "Failed to read modem data"
+msgstr "Αποτυχία ανάγνωσης δεδομένων μόντεμ"
+
+msgid "Check started"
+msgstr "Ο έλεγχος ξεκίνησε"
+
+msgid "Check failed"
+msgstr "Ο έλεγχος απέτυχε"
+
+msgid "Reboot the modem now? Internet will be down for about"
+msgstr "Επανεκκίνηση του μόντεμ τώρα; Το Διαδίκτυο θα σταματήσει για περίπου"
+
+msgid "seconds."
+msgstr "δευτερόλεπτα."
+
+msgid "Modem reboot started"
+msgstr "Ξεκίνησε η επανεκκίνηση του μόντεμ"
+
+msgid "Reboot failed"
+msgstr "Η επανεκκίνηση απέτυχε"
+
+msgid "Restart the modemwatch service?"
+msgstr "Επανεκκίνηση της υπηρεσίας modemwatch;"
+
+msgid "Service restarted"
+msgstr "Η υπηρεσία επανεκκινήθηκε"
+
+msgid "Restart failed"
+msgstr "Η επανεκκίνηση απέτυχε"
+
+msgid "Signal strength (RSRQ)"
+msgstr "Ισχύς σήματος (RSRQ)"
+
+msgid "Operator"
+msgstr "Χειριστής"
+
+msgid "Network"
+msgstr "Δίκτυο"
+
+msgid "Last update"
+msgstr "Τελευταία ενημέρωση"
+
+msgid "Refresh interval"
+msgstr "Διάστημα ανανέωσης"
+
+msgid "seconds"
+msgstr "δευτερόλεπτα"
+
+msgid "Signal Strength"
+msgstr "Ισχύς σήματος"
+
+msgid "Received Signal Strength Indicator"
+msgstr "Ένδειξη ισχύος ληφθέντος σήματος"
+
+msgid "Reference Signal Receive Power"
+msgstr "Ισχύς λήψης σήματος αναφοράς"
+
+msgid "Signal to Interference plus Noise Ratio"
+msgstr "Σήμα προς παρεμβολές συν Αναλογία θορύβου"
+
+msgid "Reference Signal Received Quality"
+msgstr "Ποιότητα ληφθέντος σήματος αναφοράς"
+
+msgid "Refresh now"
+msgstr "Ανανέωση τώρα"
+
+msgid "Pause"
+msgstr "Παύση"
+
+msgid "Busy"
+msgstr "Απασχολημένος"
+
+msgid "AT port not found"
+msgstr "Η θύρα AT δεν βρέθηκε"
+
+msgid "No response from modem"
+msgstr "Καμία απάντηση από το μόντεμ"
+
+msgid "Failed to read signal"
+msgstr "Αποτυχία ανάγνωσης του σήματος"
+
+msgid "Resume"
+msgstr "Βιογραφικό"
+
+msgid "Refresh log"
+msgstr "Ανανέωση αρχείου καταγραφής"
+
+msgid "Auto-refresh"
+msgstr "Αυτόματη ανανέωση"
+
+msgid "(empty)"
+msgstr "(κενό)"
+
+msgid "Updated"
+msgstr "Ενημερώθηκε"
+
+msgid "Failed to read log"
+msgstr "Η ανάγνωση του αρχείου καταγραφής απέτυχε"
+
+msgid "AT commands can change modem settings and may disconnect the internet or SSH. Do not change USB mode, APN, band or network mode remotely without a rollback plan."
+msgstr "Οι εντολές AT μπορούν να αλλάξουν τις ρυθμίσεις του μόντεμ και ενδέχεται να αποσυνδέσουν το Διαδίκτυο ή το SSH. Μην αλλάζετε τη λειτουργία USB, το APN, τη ζώνη ή τη λειτουργία δικτύου από απόσταση χωρίς σχέδιο επαναφοράς."
+
+msgid "Expert mode — allow changing USB mode and NAT"
+msgstr "Λειτουργία ειδικού — επιτρέψτε την αλλαγή λειτουργίας USB και NAT"
+
+msgid "Changing USB mode can disconnect the modem and SSH. Use only with local access or a rollback plan."
+msgstr "Η αλλαγή της λειτουργίας USB μπορεί να αποσυνδέσει το μόντεμ και το SSH. Χρησιμοποιήστε μόνο με τοπική πρόσβαση ή σχέδιο επαναφοράς."
+
+msgid "Selected AT port"
+msgstr "Επιλεγμένη θύρα AT"
+
+msgid "For Quectel EC200A use /dev/ttyUSB2. /dev/ttyUSB0 is the diagnostic port and does not answer AT commands."
+msgstr "Για το Quectel EC200A χρησιμοποιήστε /dev/ttyUSB2. Το /dev/ttyUSB0 είναι η διαγνωστική θύρα και δεν απαντά σε εντολές AT."
+
+msgid "Current configuration"
+msgstr "Τρέχουσα διαμόρφωση"
+
+msgid "Read current configuration"
+msgstr "Διαβάστε την τρέχουσα διαμόρφωση"
+
+msgid "Modem information"
+msgstr "Πληροφορίες μόντεμ"
+
+msgid "Model"
+msgstr "Μοντέλο"
+
+msgid "SIM status"
+msgstr "Κατάσταση SIM"
+
+msgid "Temperature"
+msgstr "Θερμοκρασία"
+
+msgid "Access Point Name (APN)"
+msgstr "Όνομα σημείου πρόσβασης (APN)"
+
+msgid "Username"
+msgstr "Όνομα Χρήστη"
+
+msgid "Password"
+msgstr "Κωδικός Πρόσβασης"
+
+msgid "Authentication"
+msgstr "Εξουσιοδότηση"
+
+msgid "None"
+msgstr "Κανένα"
+
+msgid "PDP type"
+msgstr "Τύπος PDP"
+
+msgid "Read APN"
+msgstr "Διαβάστε το APN"
+
+msgid "Apply APN"
+msgstr "Εφαρμόστε APN"
+
+msgid "Network mode"
+msgstr "Λειτουργία δικτύου"
+
+msgid "Mode"
+msgstr "Λειτουργία"
+
+msgid "Automatic"
+msgstr "Αυτόματο"
+
+msgid "GSM only"
+msgstr "Μόνο GSM"
+
+msgid "WCDMA only"
+msgstr "Μόνο WCDMA"
+
+msgid "LTE only"
+msgstr "Μόνο LTE"
+
+msgid "Read mode"
+msgstr "Λειτουργία ανάγνωσης"
+
+msgid "Apply mode"
+msgstr "Εφαρμογή λειτουργίας"
+
+msgid "Band configuration"
+msgstr "Διαμόρφωση μπάντας"
+
+msgid "Read bands"
+msgstr "Διαβάστε μπάντες"
+
+msgid "Select all"
+msgstr "Επιλέξτε όλα"
+
+msgid "Restore default"
+msgstr "Επαναφορά προεπιλογής"
+
+msgid "Apply bands"
+msgstr "Εφαρμόστε ζώνες"
+
+msgid "Select the LTE bands you want to keep enabled. Applying may restart the WAN and drop the connection."
+msgstr "Επιλέξτε τις ζώνες LTE που θέλετε να διατηρήσετε ενεργοποιημένες. Η εφαρμογή ενδέχεται να επανεκκινήσει το WAN και να διακόψει τη σύνδεση."
+
+msgid "USB mode"
+msgstr "Λειτουργία USB"
+
+msgid "Current value"
+msgstr "Τρέχουσα αξία"
+
+msgid "New value"
+msgstr "Νέα αξία"
+
+msgid "RMNET (QMI)"
+msgstr "RMNET (QMI)"
+
+msgid "not supported"
+msgstr "δεν υποστηρίζεται"
+
+msgid "ECM (CDC Ethernet)"
+msgstr "ECM (CDC Ethernet)"
+
+msgid "MBIM"
+msgstr "MBIM"
+
+msgid "RNDIS"
+msgstr "RNDIS"
+
+msgid "Apply USB mode"
+msgstr "Εφαρμόστε τη λειτουργία USB"
+
+msgid "Read USB mode"
+msgstr "Διαβάστε τη λειτουργία USB"
+
+msgid "Modes that are not supported by the modem firmware are disabled and marked as not supported. Supported modes are detected automatically from the modem."
+msgstr "Οι λειτουργίες που δεν υποστηρίζονται από το υλικολογισμικό του μόντεμ είναι απενεργοποιημένες και επισημαίνονται ως μη υποστηριζόμενες. Οι υποστηριζόμενες λειτουργίες εντοπίζονται αυτόματα από το μόντεμ."
+
+msgid "Apply NAT"
+msgstr "Εφαρμόστε NAT"
+
+msgid "Read NAT"
+msgstr "Διαβάστε ΝΑΤ"
+
+msgid "Raw AT command"
+msgstr "Εντολή Raw AT"
+
+msgid "AT command"
+msgstr "Εντολή AT"
+
+msgid "Send"
+msgstr "Αποστολή"
+
+msgid "Sending"
+msgstr "Αποστολή"
+
+msgid "AT command failed"
+msgstr "Η εντολή AT απέτυχε"
+
+msgid "Reading APN"
+msgstr "Διαβάζοντας το APN"
+
+msgid "Failed to read APN"
+msgstr "Αποτυχία ανάγνωσης APN"
+
+msgid "Reading settings"
+msgstr "Ρυθμίσεις ανάγνωσης"
+
+msgid "Settings read"
+msgstr "Οι ρυθμίσεις διαβάζονται"
+
+msgid "Failed to read settings"
+msgstr "Αποτυχία ανάγνωσης ρυθμίσεων"
+
+msgid "APN, username and password may contain only letters, digits, dot, hyphen and underscore."
+msgstr "Το APN, το όνομα χρήστη και ο κωδικός πρόσβασης μπορεί να περιέχουν μόνο γράμματα, ψηφία, τελείες, παύλες και κάτω παύλες."
+
+msgid "Apply APN settings? The connection may drop."
+msgstr "Εφαρμογή ρυθμίσεων APN; Η σύνδεση μπορεί να πέσει."
+
+msgid "Applying APN"
+msgstr "Εφαρμογή APN"
+
+msgid "APN applied. Reconnect or reboot the modem if needed."
+msgstr "Εφαρμόστηκε το APN. Επανασυνδέστε ή επανεκκινήστε το μόντεμ εάν χρειάζεται."
+
+msgid "Failed to apply APN"
+msgstr "Αποτυχία εφαρμογής APN"
+
+msgid "Apply network mode? The connection may drop."
+msgstr "Εφαρμογή λειτουργίας δικτύου; Η σύνδεση μπορεί να πέσει."
+
+msgid "Reading bands"
+msgstr "Συγκροτήματα ανάγνωσης"
+
+msgid "Failed to read bands"
+msgstr "Αποτυχία ανάγνωσης συγκροτημάτων"
+
+msgid "No bands selected"
+msgstr "Δεν επιλέχθηκαν μπάντες"
+
+msgid "Restore default bands?"
+msgstr "Επαναφορά προεπιλεγμένων ζωνών;"
+
+msgid "Apply selected bands? The connection may drop."
+msgstr "Εφαρμογή επιλεγμένων ζωνών; Η σύνδεση μπορεί να πέσει."
+
+msgid "Applying bands"
+msgstr "Εφαρμογή ζωνών"
+
+msgid "Failed to apply bands"
+msgstr "Αποτυχία εφαρμογής ζωνών"
+
+msgid "USB mode is read-only in this UI."
+msgstr "Η λειτουργία USB είναι μόνο για ανάγνωση σε αυτήν τη διεπαφή χρήστη."
+
+msgid "This USB mode is not supported by the modem firmware."
+msgstr "Αυτή η λειτουργία USB δεν υποστηρίζεται από το υλικολογισμικό του μόντεμ."
+
+msgid "Change USB mode? The modem will re-enumerate and the connection may drop. Continue?"
+msgstr "Αλλαγή λειτουργίας USB; Το μόντεμ θα απαριθμήσει ξανά και η σύνδεση μπορεί να πέσει. Συνεχίζω;"
+
+msgid "Change NAT mode? The connection may drop."
+msgstr "Αλλαγή λειτουργίας NAT; Η σύνδεση μπορεί να πέσει."
+
+msgid "Current operator"
+msgstr "Τρέχων χειριστής"
+
+msgid "AT port"
+msgstr "AT λιμάνι"
+
+msgid "Scan networks"
+msgstr "Σάρωση δικτύων"
+
+msgid "Automatic operator selection"
+msgstr "Αυτόματη επιλογή χειριστή"
+
+msgid "Stop scan"
+msgstr "Διακοπή σάρωσης"
+
+msgid "Update MCC/MNC database"
+msgstr "Ενημέρωση βάσης δεδομένων MCC/MNC"
+
+msgid "Country"
+msgstr "Χώρα"
+
+msgid "MCC/MNC"
+msgstr "MCC/MNC"
+
+msgid "Technology"
+msgstr "Τεχνολογία"
+
+msgid "Action"
+msgstr "Δράση"
+
+msgid "Raw scan output"
+msgstr "Έξοδος ακατέργαστης σάρωσης"
+
+msgid "current"
+msgstr "τρέχουσα"
+
+msgid "available"
+msgstr "διαθέσιμο"
+
+msgid "forbidden"
+msgstr "απαγορευμένο"
+
+msgid "unknown"
+msgstr "άγνωστο"
+
+msgid "Select"
+msgstr "Επιλέξτε"
+
+msgid "MCC/MNC database updated."
+msgstr "Η βάση δεδομένων MCC/MNC ενημερώθηκε."
+
+msgid "Not updated yet"
+msgstr "Δεν έχει ενημερωθεί ακόμα"
+
+msgid "Failed to read MCC/MNC update status"
+msgstr "Αποτυχία ανάγνωσης της κατάστασης ενημέρωσης MCC/MNC"
+
+msgid "Updating MCC/MNC database"
+msgstr "Ενημέρωση βάσης δεδομένων MCC/MNC"
+
+msgid "Scanning networks... This may take up to two minutes."
+msgstr "Σάρωση δικτύων... Αυτό μπορεί να διαρκέσει έως και δύο λεπτά."
+
+msgid "Scan complete."
+msgstr "Η σάρωση ολοκληρώθηκε."
+
+msgid "Modem is busy. Try again later."
+msgstr "Το μόντεμ είναι απασχολημένο. Δοκιμάστε ξανά αργότερα."
+
+msgid "Scan failed"
+msgstr "Η σάρωση απέτυχε"
+
+msgid "Not scanned yet."
+msgstr "Δεν έχει σαρωθεί ακόμα."
+
+msgid "Failed to read scan status"
+msgstr "Αποτυχία ανάγνωσης της κατάστασης σάρωσης"
+
+msgid "Stopping scan"
+msgstr "Διακοπή σάρωσης"
+
+msgid "Network scan stopped"
+msgstr "Η σάρωση δικτύου σταμάτησε"
+
+msgid "Failed to stop scan"
+msgstr "Η διακοπή της σάρωσης απέτυχε"
+
+msgid "Starting network scan"
+msgstr "Έναρξη σάρωσης δικτύου"
+
+msgid "Network scan started"
+msgstr "Η σάρωση δικτύου ξεκίνησε"
+
+msgid "Failed to start scan"
+msgstr "Αποτυχία έναρξης σάρωσης"
+
+msgid "Select operator"
+msgstr "Επιλέξτε χειριστή"
+
+msgid "The connection may drop."
+msgstr "Η σύνδεση μπορεί να πέσει."
+
+msgid "Selecting operator"
+msgstr "Επιλογή χειριστή"
+
+msgid "Operator selection sent"
+msgstr "Η επιλογή χειριστή στάλθηκε"
+
+msgid "Failed to select operator"
+msgstr "Αποτυχία επιλογής χειριστή"
+
+msgid "Use automatic operator selection?"
+msgstr "Χρήση αυτόματης επιλογής χειριστή;"
+
+msgid "Selecting automatic mode"
+msgstr "Επιλογή αυτόματης λειτουργίας"
