@@ -83,6 +83,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Download built packages
         uses: actions/download-artifact@v4
@@ -94,15 +96,15 @@ jobs:
           chmod +x scripts/release-assets.sh
           scripts/release-assets.sh artifacts release
 
+      - name: Generate release notes
+        run: |
+          chmod +x scripts/release-notes.sh
+          scripts/release-notes.sh release "${GITHUB_REF_NAME}" > release-notes.md
+          cat release-notes.md
+
       - name: Create or update GitHub release
         uses: softprops/action-gh-release@v2
         with:
           name: modemwatch ${{ github.ref_name }}
-          generate_release_notes: true
-          body: |
-            OpenWrt packages for 23.05.6, 24.10.8 and 25.12.6.
-
-            Each package filename includes the OpenWrt version.
-            A combined `modemwatch-<version>-all.tar.gz` archive is provided
-            for every version.
+          body_path: release-notes.md
           files: release/*
