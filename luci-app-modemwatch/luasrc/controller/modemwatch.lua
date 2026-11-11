@@ -18,6 +18,8 @@ function index()
 		return
 	end
 
+	entry({"admin", "modem"}, firstchild(), _("Modem"), 60).dependent = false
+
 	entry({"admin", "modem", "modemwatch"},
 		template("modemwatch/status"),
 		_("Modem LTE 4G"), 60).acl_depends = { "luci-app-modemwatch" }
