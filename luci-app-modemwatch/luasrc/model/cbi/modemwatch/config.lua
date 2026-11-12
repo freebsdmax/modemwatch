@@ -2,6 +2,7 @@ local m, s, o
 
 local sys = require "luci.sys"
 local uci = require "luci.model.uci"
+local fs = require "nixio.fs"
 
 local cursor = uci.cursor()
 local current_at = cursor:get("modemwatch", "main", "at_port") or "/dev/ttyUSB2"
@@ -39,6 +40,10 @@ m = Map("modemwatch", translate("Modem LTE 4G"),
 s = m:section(TypedSection, "modemwatch", translate("Settings"))
 s.anonymous = true
 s.addremove = false
+
+o = s:option(DummyValue, "_sticky_tabs", "")
+o.rawhtml = true
+o.default = fs.readfile("/usr/lib/lua/luci/view/modemwatch/sticky.htm") or ""
 
 o = s:option(DummyValue, "_service", "")
 o.rawhtml = true

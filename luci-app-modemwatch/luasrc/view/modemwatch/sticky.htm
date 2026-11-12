@@ -1,0 +1,60 @@
+<style>
+	#tabmenu.mw-sticky-tabs {
+		position: sticky;
+		top: var(--mw-sticky-top, 0px);
+		z-index: 700;
+		background: var(--mw-body-bg, #fff);
+		padding: 0.25em 0;
+		margin-bottom: 0.25em;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+	}
+	#tabmenu.mw-sticky-tabs ul.tabs {
+		margin-bottom: 0;
+	}
+</style>
+<script type="text/javascript">
+(function() {
+	function mwScrollParent(el) {
+		var p = el.parentElement;
+		while (p && p !== document.body && p !== document.documentElement) {
+			var cs = window.getComputedStyle(p);
+			if (/(auto|scroll)/.test(cs.overflowY) && p.scrollHeight > p.clientHeight) {
+				return p;
+			}
+			p = p.parentElement;
+		}
+		return null;
+	}
+
+	function mwUpdateStickyTabs() {
+		var tabs = document.getElementById('tabmenu');
+		var top = 0;
+		var scroller = tabs ? mwScrollParent(tabs) : null;
+		if (!scroller) {
+			var header = document.querySelector('header');
+			if (header) {
+				var style = window.getComputedStyle(header);
+				if (style.position === 'sticky' || style.position === 'fixed') {
+					top = header.offsetHeight;
+				}
+			}
+		}
+		var root = document.documentElement;
+		root.style.setProperty('--mw-sticky-top', top + 'px');
+		var bg = window.getComputedStyle(document.body).backgroundColor;
+		if (!bg || bg === 'rgba(0, 0, 0, 0)' || bg === 'transparent') {
+			bg = '#fff';
+		}
+		root.style.setProperty('--mw-body-bg', bg);
+		if (tabs) {
+			tabs.classList.add('mw-sticky-tabs');
+		}
+	}
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', mwUpdateStickyTabs);
+	} else {
+		mwUpdateStickyTabs();
+	}
+	window.addEventListener('resize', mwUpdateStickyTabs);
+})();
+</script>
