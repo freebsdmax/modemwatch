@@ -289,7 +289,8 @@ local function bands_to_hex(bands)
 			mask = mask + 2 ^ (b - 1)
 		end
 	end
-	return "0x" .. number_to_hex(mask)
+	-- The EC200A expects the band mask without the 0x prefix when setting.
+	return number_to_hex(mask)
 end
 
 function action_band_info()
@@ -326,6 +327,20 @@ function action_band_set()
 	local hex = bands_to_hex(bands)
 	local out1 = sys.exec("/usr/bin/modemwatch.sh at " .. shellquote('AT+QCFG="band",0,' .. hex) .. " 2>&1")
 	local out2 = sys.exec("/usr/bin/modemwatch.sh at " .. shellquote("AT&W") .. " 2>&1")
+	sys.exec("sleep 1")
+	local check = sys.exec("/usr/bin/modemwatch.sh at " .. shellquote('AT+QCFG="band"') .. " 2>&1")
+	local _, lte_hex = check:match("(0x[0-9a-fA-F]+)%s*,%s*(0x[0-9a-fA-F]+)")
+	lte_hex = lte_hex or check:match("(0x[0-9a-fA-F]+)")
+	local wanted = hex_to_number(hex)
+	local current = lte_hex and hex_to_number(lte_hex) or nil
+	if current ~= wanted then
+		send_json({
+			ok = false,
+			error = i18n.translate("Failed to apply bands"),
+			output = out1 .. out2 .. check
+		})
+		return
+	end
 	send_json({
 		ok = true,
 		output = out1 .. out2,

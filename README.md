@@ -213,9 +213,9 @@ Snapshot-версії у матрицю не включені.
 в релізі є окремі пакети та один загальний архів:
 
 ```text
-modemwatch_23.05.6_1.0.3-r1_all.ipk
-luci-app-modemwatch_23.05.6_1.0.3-r1_all.ipk
-luci-i18n-modemwatch-uk_23.05.6_1.0.3-r1_all.ipk
+modemwatch_23.05.6_1.0.4-r1_all.ipk
+luci-app-modemwatch_23.05.6_1.0.4-r1_all.ipk
+luci-i18n-modemwatch-uk_23.05.6_1.0.4-r1_all.ipk
 ...
 modemwatch-23.05.6-all.tar.gz
 ```
