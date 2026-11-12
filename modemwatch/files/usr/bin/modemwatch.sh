@@ -708,6 +708,35 @@ maybe_reboot() {
 	reboot_modem
 }
 
+wait_before_reboot() {
+	timeout="${offline_timeout:-60}"
+	case "$timeout" in
+		''|*[!0-9]*) timeout=60 ;;
+	esac
+	if [ "$timeout" -le 0 ] 2>/dev/null; then
+		maybe_reboot
+		return
+	fi
+
+	log warn "internet is down; waiting ${timeout}s before reboot"
+	elapsed=0
+	while [ "$elapsed" -lt "$timeout" ]; do
+		sleep 5
+		elapsed=$((elapsed + 5))
+		if check_internet; then
+			state="online"
+			last_success=$(now)
+			failures="0"
+			log info "internet restored after ${elapsed}s; reboot cancelled"
+			write_status
+			return 0
+		fi
+	done
+
+	log warn "still offline after ${timeout}s; rebooting modem"
+	maybe_reboot
+}
+
 run_cycle() {
 	load_config
 
@@ -737,7 +766,7 @@ run_cycle() {
 		state="offline"
 		log warn "internet FAILED ($failures/$failure_threshold) ping=$ping_ok dns=$dns_ok http=$http_ok wan_up=$wan_up ip=${wan_ip:-none}"
 		if [ "$failures" -ge "$failure_threshold" ] 2>/dev/null; then
-			maybe_reboot
+			wait_before_reboot
 		fi
 	fi
 

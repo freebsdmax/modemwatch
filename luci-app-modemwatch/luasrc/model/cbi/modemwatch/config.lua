@@ -58,6 +58,12 @@ o.datatype = "uinteger"
 o.default = "3"
 o.rmempty = false
 
+o = s:option(Value, "offline_timeout", translate("Offline timeout before reboot (seconds)"))
+o.datatype = "uinteger"
+o.default = "60"
+o.rmempty = false
+o.description = translate("How long to wait after internet loss before rebooting the modem. If the connection returns during this time, the reboot is cancelled. Set to 0 to reboot immediately.")
+
 o = s:option(Value, "ping_hosts", translate("Ping hosts"))
 o.default = "8.8.8.8 1.1.1.1 9.9.9.9"
 o.rmempty = false

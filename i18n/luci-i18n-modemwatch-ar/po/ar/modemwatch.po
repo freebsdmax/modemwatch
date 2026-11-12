@@ -114,6 +114,12 @@ msgstr "التحقق من الفاصل الزمني (ثواني)"
 msgid "Failures before modem reboot"
 msgstr "فشل قبل إعادة تشغيل المودم"
 
+msgid "Offline timeout before reboot (seconds)"
+msgstr "Offline timeout before reboot (seconds)"
+
+msgid "How long to wait after internet loss before rebooting the modem. If the connection returns during this time, the reboot is cancelled. Set to 0 to reboot immediately."
+msgstr "How long to wait after internet loss before rebooting the modem. If the connection returns during this time, the reboot is cancelled. Set to 0 to reboot immediately."
+
 msgid "Ping hosts"
 msgstr "المضيفين بينغ"
 
