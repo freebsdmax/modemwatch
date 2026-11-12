@@ -12,6 +12,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
+msgid "Modem"
+msgstr "Módem"
+
 msgid "Modem LTE 4G"
 msgstr "Módem LTE 4G"
 
@@ -39,11 +42,17 @@ msgstr "token ma' válido"
 msgid "empty AT command"
 msgstr "comando AT vacío"
 
+msgid "Modem is busy. Try again later."
+msgstr "Modem táan ocupado. k'aax u ka'a ts'o'okol."
+
 msgid "invalid band selection"
 msgstr "selección banda ma' válida"
 
 msgid "Band settings sent"
 msgstr "Túuxta'an u configuración le banda"
+
+msgid "Failed to apply bands"
+msgstr "Ma' béeyak u ts'a'abal bandas"
 
 msgid "network scan started"
 msgstr "káaj u xak'alta'al le páawo'obo'"
@@ -168,6 +177,12 @@ msgstr "Intervalo u actualización le señal (segundos)"
 msgid "Pause between signal page updates. The actual update also includes the modem response time."
 msgstr "Je'elel ichil u túumbenkuunsa'al u linki abas kaambalil señal. Le actualización xíimbal tumen xan analte'obo' yaan u k'iinil núukik le módem."
 
+msgid "Band rollback timeout (seconds)"
+msgstr "U k'iinil u suut le bandao' (segundos)"
+
+msgid "If the new band set disconnects the internet, restore the previous bands after this many seconds. Set to 0 to disable automatic rollback."
+msgstr "Wa le túumben tsol banda ku desconectar le interneto', restaurar le bandas anteriores ka' le ya'ab segundos. Ts'áa 0 uti'al u xu'ulul u suut automático."
+
 msgid "Safety"
 msgstr "Seguridad"
 
@@ -242,9 +257,6 @@ msgstr "Ping / DNS / HTTP"
 
 msgid "Latency"
 msgstr "Latencia"
-
-msgid "Modem"
-msgstr "Módem"
 
 msgid "Firmware"
 msgstr "Firmware"
@@ -636,9 +648,6 @@ msgstr "¿Aplicar bandas seleccionadas? Le conexión je'el u páajtal u lúubul.
 msgid "Applying bands"
 msgstr "U ts'áabal bandas"
 
-msgid "Failed to apply bands"
-msgstr "Ma' béeyak u ts'a'abal bandas"
-
 msgid "USB mode is read-only in this UI."
 msgstr "Le modo USB jach chéen xooka' ti' le UI."
 
@@ -716,9 +725,6 @@ msgstr "U xak'altik páawo'ob... Je'el u xáantal tak ka'ap'éel minutos."
 
 msgid "Scan complete."
 msgstr "Ts'o'ok u xak'alta'al."
-
-msgid "Modem is busy. Try again later."
-msgstr "Modem táan ocupado. k'aax u ka'a ts'o'okol."
 
 msgid "Scan failed"
 msgstr "Ma' béeyak u exploración"

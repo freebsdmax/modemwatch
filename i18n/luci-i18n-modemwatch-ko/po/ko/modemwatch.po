@@ -12,6 +12,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n == 1 ? 0 : 1;\n"
 
+msgid "Modem"
+msgstr "모뎀"
+
 msgid "Modem LTE 4G"
 msgstr "모뎀 LTE 4G"
 
@@ -39,11 +42,17 @@ msgstr "잘못된 토큰"
 msgid "empty AT command"
 msgstr "빈 AT 명령"
 
+msgid "Modem is busy. Try again later."
+msgstr "모뎀이 사용 중입니다. 나중에 다시 시도하세요."
+
 msgid "invalid band selection"
 msgstr "잘못된 밴드 선택"
 
 msgid "Band settings sent"
 msgstr "밴드 설정 전송됨"
+
+msgid "Failed to apply bands"
+msgstr "밴드를 적용하지 못했습니다."
 
 msgid "network scan started"
 msgstr "네트워크 스캔이 시작되었습니다"
@@ -168,6 +177,12 @@ msgstr "신호 새로 고침 간격(초)"
 msgid "Pause between signal page updates. The actual update also includes the modem response time."
 msgstr "신호 페이지 업데이트 사이에 일시 중지합니다. 실제 업데이트에는 모뎀 응답 시간도 포함됩니다."
 
+msgid "Band rollback timeout (seconds)"
+msgstr "밴드 롤백 시간 초과(초)"
+
+msgid "If the new band set disconnects the internet, restore the previous bands after this many seconds. Set to 0 to disable automatic rollback."
+msgstr "새 밴드 세트로 인해 인터넷 연결이 끊어지면 이 몇 초 후에 이전 밴드를 복원하십시오. 자동 롤백을 비활성화하려면 0으로 설정합니다."
+
 msgid "Safety"
 msgstr "안전"
 
@@ -242,9 +257,6 @@ msgstr "핑/DNS/HTTP"
 
 msgid "Latency"
 msgstr "지연 시간"
-
-msgid "Modem"
-msgstr "모뎀"
 
 msgid "Firmware"
 msgstr "펌웨어"
@@ -636,9 +648,6 @@ msgstr "선택한 밴드를 적용하시겠습니까? 연결이 끊어질 수 �
 msgid "Applying bands"
 msgstr "밴드 적용"
 
-msgid "Failed to apply bands"
-msgstr "밴드를 적용하지 못했습니다."
-
 msgid "USB mode is read-only in this UI."
 msgstr "이 UI에서는 USB 모드가 읽기 전용입니다."
 
@@ -716,9 +725,6 @@ msgstr "네트워크 검색 중... 최대 2분 정도 걸릴 수 있습니다."
 
 msgid "Scan complete."
 msgstr "스캔이 완료되었습니다."
-
-msgid "Modem is busy. Try again later."
-msgstr "모뎀이 사용 중입니다. 나중에 다시 시도하세요."
 
 msgid "Scan failed"
 msgstr "스캔 실패"

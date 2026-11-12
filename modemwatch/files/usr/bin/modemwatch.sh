@@ -184,6 +184,18 @@ release_lock() {
 	fi
 }
 
+acquire_lock_wait() {
+	tries=0
+	while ! acquire_lock; do
+		tries=$((tries + 1))
+		if [ "$tries" -ge 60 ]; then
+			return 1
+		fi
+		sleep 1
+	done
+	return 0
+}
+
 at_send() {
 	cmd="$1"
 	if [ ! -c "$at_port" ]; then
@@ -782,7 +794,7 @@ do_reboot() {
 	mkdir -p "$STATE_DIR"
 	load_status || true
 
-	if ! acquire_lock; then
+	if ! acquire_lock_wait; then
 		echo "busy=1"
 		return 1
 	fi

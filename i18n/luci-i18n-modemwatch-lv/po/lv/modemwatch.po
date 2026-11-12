@@ -12,6 +12,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "Modem"
+msgstr "Modems"
+
 msgid "Modem LTE 4G"
 msgstr "Modems LTE 4G"
 
@@ -39,11 +42,17 @@ msgstr "nederīgs marķieris"
 msgid "empty AT command"
 msgstr "tukša AT komanda"
 
+msgid "Modem is busy. Try again later."
+msgstr "Modems ir aizņemts. Vēlāk mēģiniet vēlreiz."
+
 msgid "invalid band selection"
 msgstr "nederīga joslas izvēle"
 
 msgid "Band settings sent"
 msgstr "Joslas iestatījumi ir nosūtīti"
+
+msgid "Failed to apply bands"
+msgstr "Neizdevās lietot joslas"
 
 msgid "network scan started"
 msgstr "sākta tīkla skenēšana"
@@ -168,6 +177,12 @@ msgstr "Signāla atsvaidzināšanas intervāls (sekundēs)"
 msgid "Pause between signal page updates. The actual update also includes the modem response time."
 msgstr "Pauze starp signāla lapas atjauninājumiem. Faktiskais atjauninājums ietver arī modema reakcijas laiku."
 
+msgid "Band rollback timeout (seconds)"
+msgstr "Joslas atcelšanas taimauts (sekundēs)"
+
+msgid "If the new band set disconnects the internet, restore the previous bands after this many seconds. Set to 0 to disable automatic rollback."
+msgstr "Ja jaunais joslu komplekts atvieno internetu, pēc šīm sekundēm atjaunojiet iepriekšējās joslas. Iestatiet uz 0, lai atspējotu automātisko atgriešanu."
+
 msgid "Safety"
 msgstr "Drošība"
 
@@ -242,9 +257,6 @@ msgstr "Ping / DNS / HTTP"
 
 msgid "Latency"
 msgstr "Latentums"
-
-msgid "Modem"
-msgstr "Modems"
 
 msgid "Firmware"
 msgstr "Programmaparatūra"
@@ -636,9 +648,6 @@ msgstr "Vai lietot atlasītās joslas? Savienojums var pārtraukties."
 msgid "Applying bands"
 msgstr "Joslu uzlikšana"
 
-msgid "Failed to apply bands"
-msgstr "Neizdevās lietot joslas"
-
 msgid "USB mode is read-only in this UI."
 msgstr "USB režīms šajā lietotāja saskarnē ir tikai lasāms."
 
@@ -716,9 +725,6 @@ msgstr "Notiek tīklu meklēšana... Tas var ilgt līdz divām minūtēm."
 
 msgid "Scan complete."
 msgstr "Skenēšana pabeigta."
-
-msgid "Modem is busy. Try again later."
-msgstr "Modems ir aizņemts. Vēlāk mēģiniet vēlreiz."
 
 msgid "Scan failed"
 msgstr "Skenēšana neizdevās"

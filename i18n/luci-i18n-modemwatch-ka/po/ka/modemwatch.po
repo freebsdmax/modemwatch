@@ -12,6 +12,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
+msgid "Modem"
+msgstr "მოდემი"
+
 msgid "Modem LTE 4G"
 msgstr "მოდემი LTE 4G"
 
@@ -39,11 +42,17 @@ msgstr "არასწორი ჟეტონი"
 msgid "empty AT command"
 msgstr "ცარიელი AT ბრძანება"
 
+msgid "Modem is busy. Try again later."
+msgstr "მოდემი დაკავებულია. სცადეთ მოგვიანებით."
+
 msgid "invalid band selection"
 msgstr "ზოლის არასწორი შერჩევა"
 
 msgid "Band settings sent"
 msgstr "ჯგუფის პარამეტრები გაგზავნილია"
+
+msgid "Failed to apply bands"
+msgstr "ზოლების გამოყენება ვერ მოხერხდა"
 
 msgid "network scan started"
 msgstr "ქსელის სკანირება დაიწყო"
@@ -168,6 +177,12 @@ msgstr "სიგნალის განახლების ინტერ�
 msgid "Pause between signal page updates. The actual update also includes the modem response time."
 msgstr "პაუზა სიგნალის გვერდის განახლებებს შორის. ფაქტობრივი განახლება ასევე მოიცავს მოდემის რეაგირების დროს."
 
+msgid "Band rollback timeout (seconds)"
+msgstr "ჯგუფის უკან დაბრუნების ვადა (წამი)"
+
+msgid "If the new band set disconnects the internet, restore the previous bands after this many seconds. Set to 0 to disable automatic rollback."
+msgstr "თუ ახალი ზოლების ნაკრები გათიშავს ინტერნეტს, აღადგინეთ წინა ზოლები ამ მრავალი წამის შემდეგ. დააყენეთ 0-ზე, რათა გამორთოთ ავტომატური უკან დაბრუნება."
+
 msgid "Safety"
 msgstr "უსაფრთხოება"
 
@@ -242,9 +257,6 @@ msgstr "Ping / DNS / HTTP"
 
 msgid "Latency"
 msgstr "შეყოვნება"
-
-msgid "Modem"
-msgstr "მოდემი"
 
 msgid "Firmware"
 msgstr "Firmware"
@@ -636,9 +648,6 @@ msgstr "გსურთ შერჩეული ზოლების გამ
 msgid "Applying bands"
 msgstr "ზოლების გამოყენება"
 
-msgid "Failed to apply bands"
-msgstr "ზოლების გამოყენება ვერ მოხერხდა"
-
 msgid "USB mode is read-only in this UI."
 msgstr "USB რეჟიმი ამ ინტერფეისში მხოლოდ წაკითხულია."
 
@@ -716,9 +725,6 @@ msgstr "მიმდინარეობს ქსელების სკა�
 
 msgid "Scan complete."
 msgstr "სკანირება დასრულდა."
-
-msgid "Modem is busy. Try again later."
-msgstr "მოდემი დაკავებულია. სცადეთ მოგვიანებით."
 
 msgid "Scan failed"
 msgstr "სკანირება ვერ მოხერხდა"

@@ -12,6 +12,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+msgid "Modem"
+msgstr "數據機"
+
 msgid "Modem LTE 4G"
 msgstr "數據機 LTE 4G"
 
@@ -39,11 +42,17 @@ msgstr "無效令牌"
 msgid "empty AT command"
 msgstr "空 AT 指令"
 
+msgid "Modem is busy. Try again later."
+msgstr "調製解調器正忙。稍後再試。"
+
 msgid "invalid band selection"
 msgstr "波段選擇無效"
 
 msgid "Band settings sent"
 msgstr "已發送頻段設定"
+
+msgid "Failed to apply bands"
+msgstr "應用頻段失敗"
 
 msgid "network scan started"
 msgstr "網路掃描開始"
@@ -168,6 +177,12 @@ msgstr "訊號刷新間隔（秒）"
 msgid "Pause between signal page updates. The actual update also includes the modem response time."
 msgstr "在訊號頁面更新之間暫停。實際更新還包括調製解調器回應時間。"
 
+msgid "Band rollback timeout (seconds)"
+msgstr "帶回滾超時（秒）"
+
+msgid "If the new band set disconnects the internet, restore the previous bands after this many seconds. Set to 0 to disable automatic rollback."
+msgstr "如果新的頻段組斷開了互聯網連接，請在這麼多秒後恢復之前的頻段。設定為 0 以停用自動回滾。"
+
 msgid "Safety"
 msgstr "安全"
 
@@ -242,9 +257,6 @@ msgstr "平/DNS/HTTP"
 
 msgid "Latency"
 msgstr "延遲"
-
-msgid "Modem"
-msgstr "數據機"
 
 msgid "Firmware"
 msgstr "韌體"
@@ -636,9 +648,6 @@ msgstr "應用選定的頻段？連接可能會斷開。"
 msgid "Applying bands"
 msgstr "應用樂團"
 
-msgid "Failed to apply bands"
-msgstr "應用頻段失敗"
-
 msgid "USB mode is read-only in this UI."
 msgstr "USB 模式在此 UI 中是唯讀的。"
 
@@ -716,9 +725,6 @@ msgstr "正在掃描網路...這最多可能需要兩分鐘。"
 
 msgid "Scan complete."
 msgstr "掃描完成。"
-
-msgid "Modem is busy. Try again later."
-msgstr "調製解調器正忙。稍後再試。"
 
 msgid "Scan failed"
 msgstr "掃描失敗"

@@ -145,6 +145,12 @@ o.default = "5"
 o.rmempty = false
 o.description = translate("Pause between signal page updates. The actual update also includes the modem response time.")
 
+o = s:option(Value, "band_rollback", translate("Band rollback timeout (seconds)"))
+o.datatype = "uinteger"
+o.default = "30"
+o.rmempty = false
+o.description = translate("If the new band set disconnects the internet, restore the previous bands after this many seconds. Set to 0 to disable automatic rollback.")
+
 o = s:option(DummyValue, "_safety", "")
 o.rawhtml = true
 o.default = "<h3>" .. translate("Safety") .. "</h3>"

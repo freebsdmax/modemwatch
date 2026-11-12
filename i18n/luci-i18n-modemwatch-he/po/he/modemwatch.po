@@ -12,6 +12,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "Modem"
+msgstr "מודם"
+
 msgid "Modem LTE 4G"
 msgstr "מודם LTE 4G"
 
@@ -39,11 +42,17 @@ msgstr "אסימון לא חוקי"
 msgid "empty AT command"
 msgstr "פקודת AT ריקה"
 
+msgid "Modem is busy. Try again later."
+msgstr "המודם תפוס. נסה שוב מאוחר יותר."
+
 msgid "invalid band selection"
 msgstr "בחירת להקה לא חוקית"
 
 msgid "Band settings sent"
 msgstr "הגדרות הלהקה נשלחו"
+
+msgid "Failed to apply bands"
+msgstr "החלת פסים נכשלה"
 
 msgid "network scan started"
 msgstr "סריקת רשת החלה"
@@ -168,6 +177,12 @@ msgstr "מרווח רענון אות (שניות)"
 msgid "Pause between signal page updates. The actual update also includes the modem response time."
 msgstr "השהה בין עדכוני עמוד האותות. העדכון בפועל כולל גם את זמן התגובה של המודם."
 
+msgid "Band rollback timeout (seconds)"
+msgstr "פסק זמן להחזרת הלהקה (שניות)"
+
+msgid "If the new band set disconnects the internet, restore the previous bands after this many seconds. Set to 0 to disable automatic rollback."
+msgstr "אם ערכת הלהקה החדשה מנתקת את האינטרנט, שחזר את הרצועות הקודמות לאחר שניות רבות כל כך. הגדר ל-0 כדי להשבית את ההחזרה האוטומטית."
+
 msgid "Safety"
 msgstr "בטיחות"
 
@@ -242,9 +257,6 @@ msgstr "פינג / DNS / HTTP"
 
 msgid "Latency"
 msgstr "חביון"
-
-msgid "Modem"
-msgstr "מודם"
 
 msgid "Firmware"
 msgstr "קושחה"
@@ -636,9 +648,6 @@ msgstr "להחיל להקות נבחרות? החיבור עלול לרדת."
 msgid "Applying bands"
 msgstr "החלת להקות"
 
-msgid "Failed to apply bands"
-msgstr "החלת פסים נכשלה"
-
 msgid "USB mode is read-only in this UI."
 msgstr "מצב USB הוא לקריאה בלבד בממשק המשתמש הזה."
 
@@ -716,9 +725,6 @@ msgstr "סורק רשתות... פעולה זו עשויה להימשך עד שת
 
 msgid "Scan complete."
 msgstr "הסריקה הושלמה."
-
-msgid "Modem is busy. Try again later."
-msgstr "המודם תפוס. נסה שוב מאוחר יותר."
 
 msgid "Scan failed"
 msgstr "הסריקה נכשלה"

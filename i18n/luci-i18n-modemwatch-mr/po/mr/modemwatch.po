@@ -12,6 +12,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 
+msgid "Modem"
+msgstr "मोडेम"
+
 msgid "Modem LTE 4G"
 msgstr "मोडेम LTE 4G"
 
@@ -39,11 +42,17 @@ msgstr "अवैध टोकन"
 msgid "empty AT command"
 msgstr "रिक्त एटी कमांड"
 
+msgid "Modem is busy. Try again later."
+msgstr "मोडेम व्यस्त आहे. नंतर पुन्हा प्रयत्न करा."
+
 msgid "invalid band selection"
 msgstr "अवैध बँड निवड"
 
 msgid "Band settings sent"
 msgstr "बँड सेटिंग्ज पाठवली"
+
+msgid "Failed to apply bands"
+msgstr "बँड लागू करण्यात अयशस्वी"
 
 msgid "network scan started"
 msgstr "नेटवर्क स्कॅन सुरू झाले"
@@ -168,6 +177,12 @@ msgstr "सिग्नल रिफ्रेश मध्यांतर (स�
 msgid "Pause between signal page updates. The actual update also includes the modem response time."
 msgstr "सिग्नल पेज अपडेट्स दरम्यान विराम द्या. वास्तविक अपडेटमध्ये मोडेम प्रतिसाद वेळ देखील समाविष्ट आहे."
 
+msgid "Band rollback timeout (seconds)"
+msgstr "बँड रोलबॅक टाइमआउट (सेकंद)"
+
+msgid "If the new band set disconnects the internet, restore the previous bands after this many seconds. Set to 0 to disable automatic rollback."
+msgstr "नवीन बँड सेटने इंटरनेट डिस्कनेक्ट केल्यास, या अनेक सेकंदांनंतर मागील बँड पुनर्संचयित करा. स्वयंचलित रोलबॅक अक्षम करण्यासाठी 0 वर सेट करा."
+
 msgid "Safety"
 msgstr "सुरक्षितता"
 
@@ -242,9 +257,6 @@ msgstr "पिंग / DNS / HTTP"
 
 msgid "Latency"
 msgstr "विलंब"
-
-msgid "Modem"
-msgstr "मोडेम"
 
 msgid "Firmware"
 msgstr "फर्मवेअर"
@@ -636,9 +648,6 @@ msgstr "निवडक बँड लागू करायचे? कनेक�
 msgid "Applying bands"
 msgstr "बँड लावणे"
 
-msgid "Failed to apply bands"
-msgstr "बँड लागू करण्यात अयशस्वी"
-
 msgid "USB mode is read-only in this UI."
 msgstr "या UI मध्ये USB मोड केवळ वाचनीय आहे."
 
@@ -716,9 +725,6 @@ msgstr "नेटवर्क स्कॅन करत आहे... यास �
 
 msgid "Scan complete."
 msgstr "स्कॅन पूर्ण."
-
-msgid "Modem is busy. Try again later."
-msgstr "मोडेम व्यस्त आहे. नंतर पुन्हा प्रयत्न करा."
 
 msgid "Scan failed"
 msgstr "स्कॅन अयशस्वी"

@@ -12,6 +12,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
+msgid "Modem"
+msgstr "Modem"
+
 msgid "Modem LTE 4G"
 msgstr "Modem LTE 4G"
 
@@ -39,11 +42,17 @@ msgstr "ugyldig token"
 msgid "empty AT command"
 msgstr "tom AT-kommando"
 
+msgid "Modem is busy. Try again later."
+msgstr "Modemet er opptatt. Prøv igjen senere."
+
 msgid "invalid band selection"
 msgstr "ugyldig båndvalg"
 
 msgid "Band settings sent"
 msgstr "Bandinnstillinger sendt"
+
+msgid "Failed to apply bands"
+msgstr "Kunne ikke bruke bånd"
 
 msgid "network scan started"
 msgstr "nettverksskanning startet"
@@ -168,6 +177,12 @@ msgstr "Signaloppdateringsintervall (sekunder)"
 msgid "Pause between signal page updates. The actual update also includes the modem response time."
 msgstr "Pause mellom oppdateringer av signalsiden. Selve oppdateringen inkluderer også modemets responstid."
 
+msgid "Band rollback timeout (seconds)"
+msgstr "Tidsavbrudd for tilbakerulling av bånd (sekunder)"
+
+msgid "If the new band set disconnects the internet, restore the previous bands after this many seconds. Set to 0 to disable automatic rollback."
+msgstr "Hvis det nye båndsettet kobler fra Internett, gjenopprett de forrige båndene etter disse mange sekunder. Sett til 0 for å deaktivere automatisk tilbakeføring."
+
 msgid "Safety"
 msgstr "Sikkerhet"
 
@@ -242,9 +257,6 @@ msgstr "Ping / DNS / HTTP"
 
 msgid "Latency"
 msgstr "Latency"
-
-msgid "Modem"
-msgstr "Modem"
 
 msgid "Firmware"
 msgstr "Fastvare"
@@ -636,9 +648,6 @@ msgstr "Vil du bruke utvalgte band? Tilkoblingen kan falle."
 msgid "Applying bands"
 msgstr "Påføring av bånd"
 
-msgid "Failed to apply bands"
-msgstr "Kunne ikke bruke bånd"
-
 msgid "USB mode is read-only in this UI."
 msgstr "USB-modus er skrivebeskyttet i dette brukergrensesnittet."
 
@@ -716,9 +725,6 @@ msgstr "Skanner nettverk... Dette kan ta opptil to minutter."
 
 msgid "Scan complete."
 msgstr "Skanning fullført."
-
-msgid "Modem is busy. Try again later."
-msgstr "Modemet er opptatt. Prøv igjen senere."
 
 msgid "Scan failed"
 msgstr "Skanning mislyktes"

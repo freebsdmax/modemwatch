@@ -12,6 +12,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "Modem"
+msgstr "مودم"
+
 msgid "Modem LTE 4G"
 msgstr "مودم LTE 4G"
 
@@ -39,11 +42,17 @@ msgstr "رمز غير صالح"
 msgid "empty AT command"
 msgstr "أمر AT فارغ"
 
+msgid "Modem is busy. Try again later."
+msgstr "المودم مشغول. حاول مرة أخرى لاحقًا."
+
 msgid "invalid band selection"
 msgstr "اختيار نطاق غير صالح"
 
 msgid "Band settings sent"
 msgstr "تم إرسال إعدادات النطاق"
+
+msgid "Failed to apply bands"
+msgstr "فشل في تطبيق النطاقات"
 
 msgid "network scan started"
 msgstr "بدأ فحص الشبكة"
@@ -168,6 +177,12 @@ msgstr "الفاصل الزمني لتحديث الإشارة (ثواني)"
 msgid "Pause between signal page updates. The actual update also includes the modem response time."
 msgstr "توقف مؤقتًا بين تحديثات صفحة الإشارة. يتضمن التحديث الفعلي أيضًا وقت استجابة المودم."
 
+msgid "Band rollback timeout (seconds)"
+msgstr "مهلة التراجع عن النطاق (بالثواني)"
+
+msgid "If the new band set disconnects the internet, restore the previous bands after this many seconds. Set to 0 to disable automatic rollback."
+msgstr "إذا قامت مجموعة النطاق الجديدة بفصل الإنترنت، قم باستعادة النطاقات السابقة بعد هذه الثواني العديدة. اضبط على 0 لتعطيل التراجع التلقائي."
+
 msgid "Safety"
 msgstr "السلامة"
 
@@ -242,9 +257,6 @@ msgstr "بينغ / DNS / HTTP"
 
 msgid "Latency"
 msgstr "الكمون"
-
-msgid "Modem"
-msgstr "مودم"
 
 msgid "Firmware"
 msgstr "البرامج الثابتة"
@@ -636,9 +648,6 @@ msgstr "تطبيق النطاقات المحددة؟ قد ينقطع الاتص�
 msgid "Applying bands"
 msgstr "تطبيق العصابات"
 
-msgid "Failed to apply bands"
-msgstr "فشل في تطبيق النطاقات"
-
 msgid "USB mode is read-only in this UI."
 msgstr "وضع USB للقراءة فقط في واجهة المستخدم هذه."
 
@@ -716,9 +725,6 @@ msgstr "جارٍ فحص الشبكات... قد يستغرق هذا ما يصل �
 
 msgid "Scan complete."
 msgstr "اكتمل المسح."
-
-msgid "Modem is busy. Try again later."
-msgstr "المودم مشغول. حاول مرة أخرى لاحقًا."
 
 msgid "Scan failed"
 msgstr "فشل المسح"

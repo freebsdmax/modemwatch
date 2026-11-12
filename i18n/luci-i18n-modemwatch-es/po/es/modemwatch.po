@@ -12,6 +12,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
+msgid "Modem"
+msgstr "Módem"
+
 msgid "Modem LTE 4G"
 msgstr "Módem LTE 4G"
 
@@ -39,11 +42,17 @@ msgstr "ficha no válida"
 msgid "empty AT command"
 msgstr "comando AT vacío"
 
+msgid "Modem is busy. Try again later."
+msgstr "El módem está ocupado. Vuelve a intentarlo más tarde."
+
 msgid "invalid band selection"
 msgstr "selección de banda no válida"
 
 msgid "Band settings sent"
 msgstr "Configuración de banda enviada"
+
+msgid "Failed to apply bands"
+msgstr "No se pudieron aplicar bandas"
 
 msgid "network scan started"
 msgstr "escaneo de red iniciado"
@@ -168,6 +177,12 @@ msgstr "Intervalo de actualización de señal (segundos)"
 msgid "Pause between signal page updates. The actual update also includes the modem response time."
 msgstr "Pausa entre actualizaciones de la página de señales. La actualización real también incluye el tiempo de respuesta del módem."
 
+msgid "Band rollback timeout (seconds)"
+msgstr "Tiempo de espera de reversión de banda (segundos)"
+
+msgid "If the new band set disconnects the internet, restore the previous bands after this many seconds. Set to 0 to disable automatic rollback."
+msgstr "Si el nuevo conjunto de bandas desconecta Internet, restaure las bandas anteriores después de tantos segundos. Establezca en 0 para deshabilitar la reversión automática."
+
 msgid "Safety"
 msgstr "Seguridad"
 
@@ -242,9 +257,6 @@ msgstr "Hacer ping/DNS/HTTP"
 
 msgid "Latency"
 msgstr "Latencia"
-
-msgid "Modem"
-msgstr "Módem"
 
 msgid "Firmware"
 msgstr "firmware"
@@ -636,9 +648,6 @@ msgstr "¿Aplicar bandas seleccionadas? La conexión puede caer."
 msgid "Applying bands"
 msgstr "Aplicando bandas"
 
-msgid "Failed to apply bands"
-msgstr "No se pudieron aplicar bandas"
-
 msgid "USB mode is read-only in this UI."
 msgstr "El modo USB es de solo lectura en esta interfaz de usuario."
 
@@ -716,9 +725,6 @@ msgstr "Escaneando redes... Esto puede tardar hasta dos minutos."
 
 msgid "Scan complete."
 msgstr "Escaneo completo."
-
-msgid "Modem is busy. Try again later."
-msgstr "El módem está ocupado. Vuelve a intentarlo más tarde."
 
 msgid "Scan failed"
 msgstr "Error de escaneo"

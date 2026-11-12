@@ -12,6 +12,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 
+msgid "Modem"
+msgstr "مودم"
+
 msgid "Modem LTE 4G"
 msgstr "مودم LTE 4G"
 
@@ -39,11 +42,17 @@ msgstr "نشانه نامعتبر"
 msgid "empty AT command"
 msgstr "دستور AT خالی"
 
+msgid "Modem is busy. Try again later."
+msgstr "مودم مشغول است. بعداً دوباره امتحان کنید."
+
 msgid "invalid band selection"
 msgstr "انتخاب باند نامعتبر"
 
 msgid "Band settings sent"
 msgstr "تنظیمات باند ارسال شد"
+
+msgid "Failed to apply bands"
+msgstr "باندها اعمال نشد"
 
 msgid "network scan started"
 msgstr "اسکن شبکه شروع شد"
@@ -168,6 +177,12 @@ msgstr "فاصله بازخوانی سیگنال (ثانیه)"
 msgid "Pause between signal page updates. The actual update also includes the modem response time."
 msgstr "بین به‌روزرسانی‌های صفحه سیگنال مکث کنید. به روز رسانی واقعی همچنین شامل زمان پاسخگویی مودم است."
 
+msgid "Band rollback timeout (seconds)"
+msgstr "مهلت زمانی بازگشت باند (ثانیه)"
+
+msgid "If the new band set disconnects the internet, restore the previous bands after this many seconds. Set to 0 to disable automatic rollback."
+msgstr "اگر مجموعه باند جدید اینترنت را قطع کرد، باندهای قبلی را پس از این چند ثانیه بازیابی کنید. برای غیرفعال کردن بازگشت خودکار، روی 0 تنظیم کنید."
+
 msgid "Safety"
 msgstr "ایمنی"
 
@@ -242,9 +257,6 @@ msgstr "پینگ / DNS / HTTP"
 
 msgid "Latency"
 msgstr "تأخیر"
-
-msgid "Modem"
-msgstr "مودم"
 
 msgid "Firmware"
 msgstr "سیستم عامل"
@@ -636,9 +648,6 @@ msgstr "باندهای انتخاب شده را اعمال کنید؟ ممکن �
 msgid "Applying bands"
 msgstr "اعمال باند"
 
-msgid "Failed to apply bands"
-msgstr "باندها اعمال نشد"
-
 msgid "USB mode is read-only in this UI."
 msgstr "حالت USB در این رابط کاربری فقط خواندنی است."
 
@@ -716,9 +725,6 @@ msgstr "در حال اسکن شبکه ها... این ممکن است تا دو �
 
 msgid "Scan complete."
 msgstr "اسکن کامل شد."
-
-msgid "Modem is busy. Try again later."
-msgstr "مودم مشغول است. بعداً دوباره امتحان کنید."
 
 msgid "Scan failed"
 msgstr "اسکن انجام نشد"

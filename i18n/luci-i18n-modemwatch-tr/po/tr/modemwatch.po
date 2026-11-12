@@ -12,6 +12,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+msgid "Modem"
+msgstr "modem"
+
 msgid "Modem LTE 4G"
 msgstr "ModemLTE 4G"
 
@@ -39,11 +42,17 @@ msgstr "geçersiz belirteç"
 msgid "empty AT command"
 msgstr "boş AT komutu"
 
+msgid "Modem is busy. Try again later."
+msgstr "Modem meşgul. Daha sonra tekrar deneyin."
+
 msgid "invalid band selection"
 msgstr "geçersiz bant seçimi"
 
 msgid "Band settings sent"
 msgstr "Bant ayarları gönderildi"
+
+msgid "Failed to apply bands"
+msgstr "Bantlar uygulanamadı"
 
 msgid "network scan started"
 msgstr "ağ taraması başlatıldı"
@@ -168,6 +177,12 @@ msgstr "Sinyal yenileme aralığı (saniye)"
 msgid "Pause between signal page updates. The actual update also includes the modem response time."
 msgstr "Sinyal sayfası güncellemeleri arasında duraklayın. Gerçek güncelleme aynı zamanda modemin yanıt süresini de içerir."
 
+msgid "Band rollback timeout (seconds)"
+msgstr "Bant geri alma zaman aşımı (saniye)"
+
+msgid "If the new band set disconnects the internet, restore the previous bands after this many seconds. Set to 0 to disable automatic rollback."
+msgstr "Yeni bant seti internet bağlantısını keserse, bu kadar saniye sonra önceki bantları geri yükleyin. Otomatik geri almayı devre dışı bırakmak için 0'a ayarlayın."
+
 msgid "Safety"
 msgstr "Güvenlik"
 
@@ -242,9 +257,6 @@ msgstr "Ping / DNS / HTTP"
 
 msgid "Latency"
 msgstr "Gecikme"
-
-msgid "Modem"
-msgstr "modem"
 
 msgid "Firmware"
 msgstr "Firmware"
@@ -636,9 +648,6 @@ msgstr "Seçilen bantlar uygulansın mı? Bağlantı kopabilir."
 msgid "Applying bands"
 msgstr "Bantların uygulanması"
 
-msgid "Failed to apply bands"
-msgstr "Bantlar uygulanamadı"
-
 msgid "USB mode is read-only in this UI."
 msgstr "USB modu bu kullanıcı arayüzünde salt okunurdur."
 
@@ -716,9 +725,6 @@ msgstr "Ağlar taranıyor... Bu işlem iki dakika kadar sürebilir."
 
 msgid "Scan complete."
 msgstr "Tarama tamamlandı."
-
-msgid "Modem is busy. Try again later."
-msgstr "Modem meşgul. Daha sonra tekrar deneyin."
 
 msgid "Scan failed"
 msgstr "Tarama başarısız oldu"

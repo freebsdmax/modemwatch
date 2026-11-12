@@ -12,6 +12,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 
+msgid "Modem"
+msgstr "মডেম"
+
 msgid "Modem LTE 4G"
 msgstr "মডেম LTE 4G"
 
@@ -39,11 +42,17 @@ msgstr "অবৈধ টোকেন"
 msgid "empty AT command"
 msgstr "খালি AT কমান্ড"
 
+msgid "Modem is busy. Try again later."
+msgstr "মডেম ব্যস্ত। পরে আবার চেষ্টা করুন."
+
 msgid "invalid band selection"
 msgstr "অবৈধ ব্যান্ড নির্বাচন"
 
 msgid "Band settings sent"
 msgstr "ব্যান্ড সেটিংস পাঠানো হয়েছে"
+
+msgid "Failed to apply bands"
+msgstr "ব্যান্ড প্রয়োগ করতে ব্যর্থ হয়েছে"
 
 msgid "network scan started"
 msgstr "নেটওয়ার্ক স্ক্যান শুরু হয়েছে"
@@ -168,6 +177,12 @@ msgstr "সংকেত রিফ্রেশ ব্যবধান (সেক�
 msgid "Pause between signal page updates. The actual update also includes the modem response time."
 msgstr "সিগন্যাল পৃষ্ঠা আপডেটের মধ্যে বিরতি দিন। প্রকৃত আপডেট মডেম প্রতিক্রিয়া সময় অন্তর্ভুক্ত."
 
+msgid "Band rollback timeout (seconds)"
+msgstr "ব্যান্ড রোলব্যাক টাইমআউট (সেকেন্ড)"
+
+msgid "If the new band set disconnects the internet, restore the previous bands after this many seconds. Set to 0 to disable automatic rollback."
+msgstr "যদি নতুন ব্যান্ড সেট ইন্টারনেট সংযোগ বিচ্ছিন্ন করে, তাহলে অনেক সেকেন্ড পরে আগের ব্যান্ডগুলি পুনরুদ্ধার করুন। স্বয়ংক্রিয় রোলব্যাক অক্ষম করতে 0 এ সেট করুন।"
+
 msgid "Safety"
 msgstr "নিরাপত্তা"
 
@@ -242,9 +257,6 @@ msgstr "পিং/ডিএনএস/এইচটিটিপি"
 
 msgid "Latency"
 msgstr "লেটেন্সি"
-
-msgid "Modem"
-msgstr "মডেম"
 
 msgid "Firmware"
 msgstr "ফার্মওয়্যার"
@@ -636,9 +648,6 @@ msgstr "নির্বাচিত ব্যান্ড প্রয়োগ 
 msgid "Applying bands"
 msgstr "ব্যান্ড প্রয়োগ"
 
-msgid "Failed to apply bands"
-msgstr "ব্যান্ড প্রয়োগ করতে ব্যর্থ হয়েছে"
-
 msgid "USB mode is read-only in this UI."
 msgstr "এই UI-তে USB মোড শুধুমাত্র পঠনযোগ্য।"
 
@@ -716,9 +725,6 @@ msgstr "নেটওয়ার্ক স্ক্যান করা হচ্
 
 msgid "Scan complete."
 msgstr "স্ক্যান সম্পূর্ণ।"
-
-msgid "Modem is busy. Try again later."
-msgstr "মডেম ব্যস্ত। পরে আবার চেষ্টা করুন."
 
 msgid "Scan failed"
 msgstr "স্ক্যান ব্যর্থ হয়েছে"

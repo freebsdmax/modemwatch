@@ -12,6 +12,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "Modem"
+msgstr "Modem"
+
 msgid "Modem LTE 4G"
 msgstr "Modem LTE 4G"
 
@@ -39,11 +42,17 @@ msgstr "jeton invalid"
 msgid "empty AT command"
 msgstr "comanda AT goală"
 
+msgid "Modem is busy. Try again later."
+msgstr "Modemul este ocupat. Încercați din nou mai târziu."
+
 msgid "invalid band selection"
 msgstr "selecție nevalidă a benzii"
 
 msgid "Band settings sent"
 msgstr "Setările benzii au fost trimise"
+
+msgid "Failed to apply bands"
+msgstr "Nu s-au aplicat benzile"
 
 msgid "network scan started"
 msgstr "scanarea rețelei a început"
@@ -168,6 +177,12 @@ msgstr "Interval de reîmprospătare a semnalului (secunde)"
 msgid "Pause between signal page updates. The actual update also includes the modem response time."
 msgstr "Întrerupeți între actualizările paginii de semnal. Actualizarea actuală include și timpul de răspuns al modemului."
 
+msgid "Band rollback timeout (seconds)"
+msgstr "Timp de expirare a retragerii benzii (secunde)"
+
+msgid "If the new band set disconnects the internet, restore the previous bands after this many seconds. Set to 0 to disable automatic rollback."
+msgstr "Dacă noul set de benzi deconectează internetul, restabiliți benzile anterioare după atâtea secunde. Setați la 0 pentru a dezactiva derularea automată."
+
 msgid "Safety"
 msgstr "Siguranță"
 
@@ -242,9 +257,6 @@ msgstr "Ping / DNS / HTTP"
 
 msgid "Latency"
 msgstr "Latență"
-
-msgid "Modem"
-msgstr "Modem"
 
 msgid "Firmware"
 msgstr "Firmware"
@@ -636,9 +648,6 @@ msgstr "Aplicați benzile selectate? Conexiunea se poate întrerupe."
 msgid "Applying bands"
 msgstr "Aplicarea benzilor"
 
-msgid "Failed to apply bands"
-msgstr "Nu s-au aplicat benzile"
-
 msgid "USB mode is read-only in this UI."
 msgstr "Modul USB este doar citire în această interfață de utilizare."
 
@@ -655,7 +664,7 @@ msgid "Current operator"
 msgstr "Operatorul actual"
 
 msgid "AT port"
-msgstr "AT port"
+msgstr "Portul AT"
 
 msgid "Scan networks"
 msgstr "Scanați rețele"
@@ -716,9 +725,6 @@ msgstr "Scanarea rețelelor... Aceasta poate dura până la două minute."
 
 msgid "Scan complete."
 msgstr "Scanare finalizată."
-
-msgid "Modem is busy. Try again later."
-msgstr "Modemul este ocupat. Încercați din nou mai târziu."
 
 msgid "Scan failed"
 msgstr "Scanarea a eșuat"

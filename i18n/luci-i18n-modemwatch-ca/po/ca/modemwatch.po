@@ -12,6 +12,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
+msgid "Modem"
+msgstr "Mòdem"
+
 msgid "Modem LTE 4G"
 msgstr "Mòdem LTE 4G"
 
@@ -39,11 +42,17 @@ msgstr "testimoni no vàlid"
 msgid "empty AT command"
 msgstr "comanda AT buida"
 
+msgid "Modem is busy. Try again later."
+msgstr "El mòdem està ocupat. Torna-ho a provar més tard."
+
 msgid "invalid band selection"
 msgstr "selecció de banda no vàlida"
 
 msgid "Band settings sent"
 msgstr "Configuració de la banda enviada"
+
+msgid "Failed to apply bands"
+msgstr "No s'han pogut aplicar les bandes"
 
 msgid "network scan started"
 msgstr "s'ha iniciat l'exploració de la xarxa"
@@ -168,6 +177,12 @@ msgstr "Interval d'actualització del senyal (segons)"
 msgid "Pause between signal page updates. The actual update also includes the modem response time."
 msgstr "Pausa entre les actualitzacions de la pàgina de senyal. L'actualització real també inclou el temps de resposta del mòdem."
 
+msgid "Band rollback timeout (seconds)"
+msgstr "Temps d'espera de recuperació de la banda (segons)"
+
+msgid "If the new band set disconnects the internet, restore the previous bands after this many seconds. Set to 0 to disable automatic rollback."
+msgstr "Si el nou conjunt de bandes desconnecta Internet, restaura les bandes anteriors després d'aquests segons. Establiu a 0 per desactivar la recuperació automàtica."
+
 msgid "Safety"
 msgstr "Seguretat"
 
@@ -242,9 +257,6 @@ msgstr "Ping / DNS / HTTP"
 
 msgid "Latency"
 msgstr "Latència"
-
-msgid "Modem"
-msgstr "Mòdem"
 
 msgid "Firmware"
 msgstr "Firmware"
@@ -636,9 +648,6 @@ msgstr "Voleu aplicar les bandes seleccionades? La connexió pot caure."
 msgid "Applying bands"
 msgstr "Aplicació de bandes"
 
-msgid "Failed to apply bands"
-msgstr "No s'han pogut aplicar les bandes"
-
 msgid "USB mode is read-only in this UI."
 msgstr "El mode USB és només de lectura en aquesta interfície d'usuari."
 
@@ -716,9 +725,6 @@ msgstr "Escanejant xarxes... Això pot trigar fins a dos minuts."
 
 msgid "Scan complete."
 msgstr "Escaneig completat."
-
-msgid "Modem is busy. Try again later."
-msgstr "El mòdem està ocupat. Torna-ho a provar més tard."
 
 msgid "Scan failed"
 msgstr "L'escaneig ha fallat"

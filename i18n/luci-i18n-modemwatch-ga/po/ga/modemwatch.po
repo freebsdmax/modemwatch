@@ -12,6 +12,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgid "Modem"
+msgstr "Móideim"
+
 msgid "Modem LTE 4G"
 msgstr "Móideim LTE 4G"
 
@@ -39,11 +42,17 @@ msgstr "comhartha neamhbhailí"
 msgid "empty AT command"
 msgstr "ordú AT folamh"
 
+msgid "Modem is busy. Try again later."
+msgstr "Tá Móideim gnóthach. Bain triail eile as ar ball."
+
 msgid "invalid band selection"
 msgstr "roghnú banna neamhbhailí"
 
 msgid "Band settings sent"
 msgstr "Socruithe banna seolta"
+
+msgid "Failed to apply bands"
+msgstr "Theip ar na bannaí a chur i bhfeidhm"
 
 msgid "network scan started"
 msgstr "cuireadh tús le scanadh líonra"
@@ -168,6 +177,12 @@ msgstr "Eatramh athnuachana comharthaí (soicindí)"
 msgid "Pause between signal page updates. The actual update also includes the modem response time."
 msgstr "Sos idir nuashonruithe leathanach comhartha. Áiríonn an nuashonrú iarbhír an t-am freagartha móideim freisin."
 
+msgid "Band rollback timeout (seconds)"
+msgstr "Teorainn ama rolladh siar banna (soicindí)"
+
+msgid "If the new band set disconnects the internet, restore the previous bands after this many seconds. Set to 0 to disable automatic rollback."
+msgstr "Má dhícheanglaíonn an tacar bannaí nua an t-idirlíon, cuir na bannaí roimhe seo ar ais tar éis an iliomad soicind seo. Socraigh go 0 chun rolladh siar uathoibríoch a dhíchumasú."
+
 msgid "Safety"
 msgstr "Sábháilteacht"
 
@@ -242,9 +257,6 @@ msgstr "Ping / DNS / HTTP"
 
 msgid "Latency"
 msgstr "Aga folaigh"
-
-msgid "Modem"
-msgstr "Móideim"
 
 msgid "Firmware"
 msgstr "Firmware"
@@ -636,9 +648,6 @@ msgstr "An bhfuil fonn ort bannaí roghnaithe a chur i bhfeidhm? Féadfaidh an n
 msgid "Applying bands"
 msgstr "Bannaí á gcur i bhfeidhm"
 
-msgid "Failed to apply bands"
-msgstr "Theip ar na bannaí a chur i bhfeidhm"
-
 msgid "USB mode is read-only in this UI."
 msgstr "Tá mód USB inléite amháin san Chomhéadain seo."
 
@@ -716,9 +725,6 @@ msgstr "Líonraí a scanadh... Seans go dtógfaidh sé seo suas le dhá nóiméa
 
 msgid "Scan complete."
 msgstr "Scanadh críochnaithe."
-
-msgid "Modem is busy. Try again later."
-msgstr "Tá Móideim gnóthach. Bain triail eile as ar ball."
 
 msgid "Scan failed"
 msgstr "Theip ar an scanadh"

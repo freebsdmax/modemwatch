@@ -310,6 +310,15 @@ local function set_band_mask(mask)
 	return out1 .. out2
 end
 
+local function band_rollback_timeout()
+	local cursor = uci.cursor()
+	local value = tonumber(cursor:get("modemwatch", "main", "band_rollback")) or 30
+	if value < 0 then
+		value = 0
+	end
+	return value
+end
+
 function action_band_info()
 	local current, out, busy = read_band_mask()
 	if busy then
@@ -358,6 +367,7 @@ function action_band_set()
 		return
 	end
 
+	local rollback_wait = band_rollback_timeout()
 	local out1 = set_band_mask(wanted)
 	local current
 	for _ = 1, 5 do
@@ -368,7 +378,7 @@ function action_band_set()
 		end
 	end
 	if current ~= wanted then
-		if old_mask then
+		if old_mask and rollback_wait > 0 then
 			set_band_mask(old_mask)
 		end
 		send_json({
@@ -379,23 +389,29 @@ function action_band_set()
 		return
 	end
 
-	-- If the new band set disconnected the modem, restore the old set.
-	local online = false
-	for _ = 1, 4 do
-		if sys.call("ping -c 1 -W 2 1.1.1.1 >/dev/null 2>&1") == 0 then
-			online = true
-			break
+	-- Optionally restore the old band set if the change disconnected the modem.
+	if rollback_wait > 0 then
+		local online = false
+		local loops = math.floor(rollback_wait / 5)
+		if loops < 1 then
+			loops = 1
 		end
-		sys.exec("sleep 5")
-	end
-	if not online and old_mask then
-		set_band_mask(old_mask)
-		send_json({
-			ok = false,
-			error = i18n.translate("Failed to apply bands"),
-			output = out1
-		})
-		return
+		for _ = 1, loops do
+			if sys.call("ping -c 1 -W 2 1.1.1.1 >/dev/null 2>&1") == 0 then
+				online = true
+				break
+			end
+			sys.exec("sleep 5")
+		end
+		if not online and old_mask then
+			set_band_mask(old_mask)
+			send_json({
+				ok = false,
+				error = i18n.translate("Failed to apply bands"),
+				output = out1
+			})
+			return
+		end
 	end
 
 	send_json({
@@ -629,7 +645,7 @@ function action_check()
 	if not check_token() then
 		return
 	end
-	sys.exec("nohup /usr/bin/modemwatch.sh check --fast >/dev/null 2>&1 &")
+	sys.exec("setsid /usr/bin/modemwatch.sh check --fast >/dev/null 2>&1 < /dev/null &")
 	send_json({ ok = true, message = i18n.translate("internet check started") })
 end
 
@@ -637,7 +653,7 @@ function action_reboot()
 	if not check_token() then
 		return
 	end
-	sys.exec("nohup /usr/bin/modemwatch.sh reboot >/dev/null 2>&1 &")
+	sys.exec("setsid /usr/bin/modemwatch.sh reboot >/dev/null 2>&1 < /dev/null &")
 	send_json({ ok = true, message = i18n.translate("modem reboot started") })
 end
 

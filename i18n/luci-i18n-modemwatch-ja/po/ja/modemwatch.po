@@ -12,6 +12,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+msgid "Modem"
+msgstr "モデム"
+
 msgid "Modem LTE 4G"
 msgstr "モデム LTE 4G"
 
@@ -39,11 +42,17 @@ msgstr "無効なトークン"
 msgid "empty AT command"
 msgstr "空のATコマンド"
 
+msgid "Modem is busy. Try again later."
+msgstr "モデムがビジー状態です。後でもう一度試してください。"
+
 msgid "invalid band selection"
 msgstr "無効なバンド選択"
 
 msgid "Band settings sent"
 msgstr "バンド設定を送信しました"
+
+msgid "Failed to apply bands"
+msgstr "バンドの適用に失敗しました"
 
 msgid "network scan started"
 msgstr "ネットワークスキャンが開始されました"
@@ -168,6 +177,12 @@ msgstr "信号更新間隔（秒）"
 msgid "Pause between signal page updates. The actual update also includes the modem response time."
 msgstr "シグナルページの更新の間に一時停止します。実際の更新にはモデムの応答時間も含まれます。"
 
+msgid "Band rollback timeout (seconds)"
+msgstr "バンドのロールバック タイムアウト (秒)"
+
+msgid "If the new band set disconnects the internet, restore the previous bands after this many seconds. Set to 0 to disable automatic rollback."
+msgstr "新しいバンド セットによってインターネットが切断された場合は、この秒数後に以前のバンドが復元されます。自動ロールバックを無効にするには、0 に設定します。"
+
 msgid "Safety"
 msgstr "安全性"
 
@@ -242,9 +257,6 @@ msgstr "Ping / DNS / HTTP"
 
 msgid "Latency"
 msgstr "遅延"
-
-msgid "Modem"
-msgstr "モデム"
 
 msgid "Firmware"
 msgstr "ファームウェア"
@@ -636,9 +648,6 @@ msgstr "選択したバンドを適用しますか?接続が切断される可�
 msgid "Applying bands"
 msgstr "バンドの適用"
 
-msgid "Failed to apply bands"
-msgstr "バンドの適用に失敗しました"
-
 msgid "USB mode is read-only in this UI."
 msgstr "この UI では USB モードは読み取り専用です。"
 
@@ -716,9 +725,6 @@ msgstr "ネットワークをスキャンしています... これには最大 2
 
 msgid "Scan complete."
 msgstr "スキャンが完了しました。"
-
-msgid "Modem is busy. Try again later."
-msgstr "モデムがビジー状態です。後でもう一度試してください。"
 
 msgid "Scan failed"
 msgstr "スキャンに失敗しました"

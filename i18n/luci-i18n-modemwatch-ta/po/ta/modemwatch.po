@@ -12,6 +12,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
+msgid "Modem"
+msgstr "மோடம்"
+
 msgid "Modem LTE 4G"
 msgstr "மோடம் LTE 4G"
 
@@ -39,11 +42,17 @@ msgstr "தவறான டோக்கன்"
 msgid "empty AT command"
 msgstr "வெற்று AT கட்டளை"
 
+msgid "Modem is busy. Try again later."
+msgstr "மோடம் பிஸியாக உள்ளது. பிறகு முயற்சிக்கவும்."
+
 msgid "invalid band selection"
 msgstr "தவறான இசைக்குழு தேர்வு"
 
 msgid "Band settings sent"
 msgstr "பேண்ட் அமைப்புகள் அனுப்பப்பட்டன"
+
+msgid "Failed to apply bands"
+msgstr "பேண்டுகளைப் பயன்படுத்துவதில் தோல்வி"
 
 msgid "network scan started"
 msgstr "நெட்வொர்க் ஸ்கேன் தொடங்கியது"
@@ -168,6 +177,12 @@ msgstr "சிக்னல் புதுப்பிப்பு இடைவ�
 msgid "Pause between signal page updates. The actual update also includes the modem response time."
 msgstr "சிக்னல் பக்க புதுப்பிப்புகளுக்கு இடையில் இடைநிறுத்தம். உண்மையான புதுப்பிப்பில் மோடம் மறுமொழி நேரமும் அடங்கும்."
 
+msgid "Band rollback timeout (seconds)"
+msgstr "பேண்ட் ரோல்பேக் நேரம் முடிந்தது (வினாடிகள்)"
+
+msgid "If the new band set disconnects the internet, restore the previous bands after this many seconds. Set to 0 to disable automatic rollback."
+msgstr "புதிய பேண்ட் செட் இணையத்தைத் துண்டித்தால், பல வினாடிகளுக்குப் பிறகு முந்தைய பேண்டுகளை மீட்டெடுக்கவும். தானியங்கு திரும்பப்பெறுதலை முடக்க 0 என அமைக்கவும்."
+
 msgid "Safety"
 msgstr "பாதுகாப்பு"
 
@@ -242,9 +257,6 @@ msgstr "பிங் / DNS / HTTP"
 
 msgid "Latency"
 msgstr "சுணக்கம்"
-
-msgid "Modem"
-msgstr "மோடம்"
 
 msgid "Firmware"
 msgstr "நிலைபொருள்"
@@ -636,9 +648,6 @@ msgstr "தேர்ந்தெடுக்கப்பட்ட பேண்�
 msgid "Applying bands"
 msgstr "பட்டைகளைப் பயன்படுத்துதல்"
 
-msgid "Failed to apply bands"
-msgstr "பேண்டுகளைப் பயன்படுத்துவதில் தோல்வி"
-
 msgid "USB mode is read-only in this UI."
 msgstr "இந்த UI இல் USB பயன்முறை படிக்க மட்டுமே உள்ளது."
 
@@ -716,9 +725,6 @@ msgstr "நெட்வொர்க்குகளை ஸ்கேன் செ�
 
 msgid "Scan complete."
 msgstr "ஸ்கேன் முடிந்தது."
-
-msgid "Modem is busy. Try again later."
-msgstr "மோடம் பிஸியாக உள்ளது. பிறகு முயற்சிக்கவும்."
 
 msgid "Scan failed"
 msgstr "ஸ்கேன் தோல்வியடைந்தது"

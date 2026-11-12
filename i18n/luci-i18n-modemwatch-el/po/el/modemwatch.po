@@ -12,6 +12,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
+msgid "Modem"
+msgstr "Μόντεμ"
+
 msgid "Modem LTE 4G"
 msgstr "Μόντεμ LTE 4G"
 
@@ -39,11 +42,17 @@ msgstr "μη έγκυρο διακριτικό"
 msgid "empty AT command"
 msgstr "άδεια εντολή AT"
 
+msgid "Modem is busy. Try again later."
+msgstr "Το μόντεμ είναι απασχολημένο. Δοκιμάστε ξανά αργότερα."
+
 msgid "invalid band selection"
 msgstr "μη έγκυρη επιλογή μπάντας"
 
 msgid "Band settings sent"
 msgstr "Στάλθηκαν οι ρυθμίσεις μπάντας"
+
+msgid "Failed to apply bands"
+msgstr "Αποτυχία εφαρμογής ζωνών"
 
 msgid "network scan started"
 msgstr "ξεκίνησε η σάρωση δικτύου"
@@ -168,6 +177,12 @@ msgstr "Διάστημα ανανέωσης σήματος (δευτερόλεπ
 msgid "Pause between signal page updates. The actual update also includes the modem response time."
 msgstr "Παύση μεταξύ ενημερώσεων σελίδας σήματος. Η πραγματική ενημέρωση περιλαμβάνει επίσης τον χρόνο απόκρισης του μόντεμ."
 
+msgid "Band rollback timeout (seconds)"
+msgstr "Χρονικό όριο επαναφοράς μπάντας (δευτερόλεπτα)"
+
+msgid "If the new band set disconnects the internet, restore the previous bands after this many seconds. Set to 0 to disable automatic rollback."
+msgstr "Εάν το νέο σετ ζωνών αποσυνδέει το Διαδίκτυο, επαναφέρετε τις προηγούμενες ζώνες μετά από τόσα δευτερόλεπτα. Ορίστε στο 0 για να απενεργοποιήσετε την αυτόματη επαναφορά."
+
 msgid "Safety"
 msgstr "Ασφάλεια"
 
@@ -242,9 +257,6 @@ msgstr "Ping / DNS / HTTP"
 
 msgid "Latency"
 msgstr "Καθυστέρηση"
-
-msgid "Modem"
-msgstr "Μόντεμ"
 
 msgid "Firmware"
 msgstr "Υλικολογισμικό"
@@ -636,9 +648,6 @@ msgstr "Εφαρμογή επιλεγμένων ζωνών; Η σύνδεση μ
 msgid "Applying bands"
 msgstr "Εφαρμογή ζωνών"
 
-msgid "Failed to apply bands"
-msgstr "Αποτυχία εφαρμογής ζωνών"
-
 msgid "USB mode is read-only in this UI."
 msgstr "Η λειτουργία USB είναι μόνο για ανάγνωση σε αυτήν τη διεπαφή χρήστη."
 
@@ -716,9 +725,6 @@ msgstr "Σάρωση δικτύων... Αυτό μπορεί να διαρκέσ
 
 msgid "Scan complete."
 msgstr "Η σάρωση ολοκληρώθηκε."
-
-msgid "Modem is busy. Try again later."
-msgstr "Το μόντεμ είναι απασχολημένο. Δοκιμάστε ξανά αργότερα."
 
 msgid "Scan failed"
 msgstr "Η σάρωση απέτυχε"

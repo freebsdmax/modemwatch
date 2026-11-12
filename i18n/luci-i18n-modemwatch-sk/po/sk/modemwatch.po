@@ -12,6 +12,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
 
+msgid "Modem"
+msgstr "Modem"
+
 msgid "Modem LTE 4G"
 msgstr "Modem LTE 4G"
 
@@ -39,11 +42,17 @@ msgstr "neplatný token"
 msgid "empty AT command"
 msgstr "prázdny AT príkaz"
 
+msgid "Modem is busy. Try again later."
+msgstr "Modem je zaneprázdnený. Skúste to znova neskôr."
+
 msgid "invalid band selection"
 msgstr "neplatný výber pásma"
 
 msgid "Band settings sent"
 msgstr "Nastavenia pásma boli odoslané"
+
+msgid "Failed to apply bands"
+msgstr "Pásy sa nepodarilo použiť"
 
 msgid "network scan started"
 msgstr "skenovanie siete začalo"
@@ -168,6 +177,12 @@ msgstr "Interval obnovy signálu (sekundy)"
 msgid "Pause between signal page updates. The actual update also includes the modem response time."
 msgstr "Pauza medzi aktualizáciami signálovej stránky. Aktuálna aktualizácia zahŕňa aj čas odozvy modemu."
 
+msgid "Band rollback timeout (seconds)"
+msgstr "Časový limit vrátenia pásma (v sekundách)"
+
+msgid "If the new band set disconnects the internet, restore the previous bands after this many seconds. Set to 0 to disable automatic rollback."
+msgstr "Ak nové pásmo odpojí internet, po uplynutí tohto počtu sekúnd obnovte predchádzajúce pásma. Nastavte na 0, aby ste deaktivovali automatické vrátenie."
+
 msgid "Safety"
 msgstr "Bezpečnosť"
 
@@ -242,9 +257,6 @@ msgstr "Ping / DNS / HTTP"
 
 msgid "Latency"
 msgstr "Oneskorenie"
-
-msgid "Modem"
-msgstr "Modem"
 
 msgid "Firmware"
 msgstr "Firmvér"
@@ -636,9 +648,6 @@ msgstr "Použiť vybrané pásma? Spojenie môže prepadnúť."
 msgid "Applying bands"
 msgstr "Nanášanie pásov"
 
-msgid "Failed to apply bands"
-msgstr "Pásy sa nepodarilo použiť"
-
 msgid "USB mode is read-only in this UI."
 msgstr "Režim USB je v tomto používateľskom rozhraní iba na čítanie."
 
@@ -716,9 +725,6 @@ msgstr "Prebieha vyhľadávanie sietí... Môže to trvať až dve minúty."
 
 msgid "Scan complete."
 msgstr "Skenovanie je dokončené."
-
-msgid "Modem is busy. Try again later."
-msgstr "Modem je zaneprázdnený. Skúste to znova neskôr."
 
 msgid "Scan failed"
 msgstr "Skenovanie zlyhalo"

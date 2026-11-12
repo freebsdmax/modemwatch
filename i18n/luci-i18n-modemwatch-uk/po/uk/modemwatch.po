@@ -12,6 +12,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
+msgid "Modem"
+msgstr "Модем"
+
 msgid "Modem LTE 4G"
 msgstr "Модем LTE 4G"
 
@@ -39,11 +42,17 @@ msgstr "Недійсний токен"
 msgid "empty AT command"
 msgstr "Порожня AT-команда"
 
+msgid "Modem is busy. Try again later."
+msgstr "Модем зайнятий. Спробуйте пізніше."
+
 msgid "invalid band selection"
 msgstr "недійсний вибір діапазонів"
 
 msgid "Band settings sent"
 msgstr "Налаштування діапазонів надіслано"
+
+msgid "Failed to apply bands"
+msgstr "Не вдалося застосувати діапазони"
 
 msgid "network scan started"
 msgstr "Сканування мереж розпочато"
@@ -168,6 +177,12 @@ msgstr "Інтервал оновлення сигналу (секунди)"
 msgid "Pause between signal page updates. The actual update also includes the modem response time."
 msgstr "Пауза між оновленнями сторінки сигналу. Фактичний час також включає час відповіді модема."
 
+msgid "Band rollback timeout (seconds)"
+msgstr "Тайм-аут відкату діапазонів (секунди)"
+
+msgid "If the new band set disconnects the internet, restore the previous bands after this many seconds. Set to 0 to disable automatic rollback."
+msgstr "Якщо новий набір діапазонів розірве інтернет, повернути попередні діапазони через вказану кількість секунд. 0 — вимкнути автоматичний відкат."
+
 msgid "Safety"
 msgstr "Безпека"
 
@@ -242,9 +257,6 @@ msgstr "Ping / DNS / HTTP"
 
 msgid "Latency"
 msgstr "Затримка"
-
-msgid "Modem"
-msgstr "Модем"
 
 msgid "Firmware"
 msgstr "Прошивка"
@@ -636,9 +648,6 @@ msgstr "Застосувати вибрані діапазони? З'єднан�
 msgid "Applying bands"
 msgstr "Застосування діапазонів"
 
-msgid "Failed to apply bands"
-msgstr "Не вдалося застосувати діапазони"
-
 msgid "USB mode is read-only in this UI."
 msgstr "Режим USB у цьому інтерфейсі доступний лише для перегляду."
 
@@ -716,9 +725,6 @@ msgstr "Сканування мереж... Це може тривати до д�
 
 msgid "Scan complete."
 msgstr "Сканування завершено."
-
-msgid "Modem is busy. Try again later."
-msgstr "Модем зайнятий. Спробуйте пізніше."
 
 msgid "Scan failed"
 msgstr "Помилка сканування"

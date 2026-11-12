@@ -12,6 +12,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+msgid "Modem"
+msgstr "modem"
+
 msgid "Modem LTE 4G"
 msgstr "Modem LTE 4G"
 
@@ -39,11 +42,17 @@ msgstr "mã thông báo không hợp lệ"
 msgid "empty AT command"
 msgstr "lệnh AT trống"
 
+msgid "Modem is busy. Try again later."
+msgstr "Modem đang bận. Hãy thử lại sau."
+
 msgid "invalid band selection"
 msgstr "lựa chọn băng tần không hợp lệ"
 
 msgid "Band settings sent"
 msgstr "Đã gửi cài đặt ban nhạc"
+
+msgid "Failed to apply bands"
+msgstr "Không áp dụng được dải tần"
 
 msgid "network scan started"
 msgstr "bắt đầu quét mạng"
@@ -168,6 +177,12 @@ msgstr "Khoảng thời gian làm mới tín hiệu (giây)"
 msgid "Pause between signal page updates. The actual update also includes the modem response time."
 msgstr "Tạm dừng giữa các lần cập nhật trang tín hiệu. Bản cập nhật thực tế cũng bao gồm thời gian phản hồi của modem."
 
+msgid "Band rollback timeout (seconds)"
+msgstr "Thời gian chờ khôi phục băng tần (giây)"
+
+msgid "If the new band set disconnects the internet, restore the previous bands after this many seconds. Set to 0 to disable automatic rollback."
+msgstr "Nếu băng tần mới ngắt kết nối Internet, hãy khôi phục các băng tần trước đó sau nhiều giây. Đặt thành 0 để tắt tính năng khôi phục tự động."
+
 msgid "Safety"
 msgstr "An toàn"
 
@@ -242,9 +257,6 @@ msgstr "Ping/DNS/HTTP"
 
 msgid "Latency"
 msgstr "Độ trễ"
-
-msgid "Modem"
-msgstr "modem"
 
 msgid "Firmware"
 msgstr "Phần sụn"
@@ -636,9 +648,6 @@ msgstr "Áp dụng các dải đã chọn? Kết nối có thể bị rớt."
 msgid "Applying bands"
 msgstr "Áp dụng các dải"
 
-msgid "Failed to apply bands"
-msgstr "Không áp dụng được dải tần"
-
 msgid "USB mode is read-only in this UI."
 msgstr "Chế độ USB ở chế độ chỉ đọc trong giao diện người dùng này."
 
@@ -716,9 +725,6 @@ msgstr "Đang quét mạng... Quá trình này có thể mất tối đa hai ph�
 
 msgid "Scan complete."
 msgstr "Quét hoàn tất."
-
-msgid "Modem is busy. Try again later."
-msgstr "Modem đang bận. Hãy thử lại sau."
 
 msgid "Scan failed"
 msgstr "Quét không thành công"

@@ -12,6 +12,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
+msgid "Modem"
+msgstr "Модем"
+
 msgid "Modem LTE 4G"
 msgstr "Модем LTE 4G"
 
@@ -39,11 +42,17 @@ msgstr "невалиден токен"
 msgid "empty AT command"
 msgstr "празна AT команда"
 
+msgid "Modem is busy. Try again later."
+msgstr "Модемът е зает. Опитайте отново по-късно."
+
 msgid "invalid band selection"
 msgstr "невалиден избор на лента"
 
 msgid "Band settings sent"
 msgstr "Настройките на лентата са изпратени"
+
+msgid "Failed to apply bands"
+msgstr "Неуспешно прилагане на ленти"
 
 msgid "network scan started"
 msgstr "мрежовото сканиране започна"
@@ -168,6 +177,12 @@ msgstr "Интервал на опресняване на сигнала (сек
 msgid "Pause between signal page updates. The actual update also includes the modem response time."
 msgstr "Пауза между актуализациите на страницата на сигнала. Действителната актуализация включва и времето за реакция на модема."
 
+msgid "Band rollback timeout (seconds)"
+msgstr "Време за изчакване на връщане на лентата (секунди)"
+
+msgid "If the new band set disconnects the internet, restore the previous bands after this many seconds. Set to 0 to disable automatic rollback."
+msgstr "Ако новият набор от ленти прекъсне връзката с интернет, възстановете предишните ленти след толкова секунди. Задайте 0, за да деактивирате автоматичното връщане назад."
+
 msgid "Safety"
 msgstr "Безопасност"
 
@@ -242,9 +257,6 @@ msgstr "Ping / DNS / HTTP"
 
 msgid "Latency"
 msgstr "Латентност"
-
-msgid "Modem"
-msgstr "Модем"
 
 msgid "Firmware"
 msgstr "фърмуер"
@@ -636,9 +648,6 @@ msgstr "Прилагане на избраните ленти? Връзката 
 msgid "Applying bands"
 msgstr "Поставяне на ленти"
 
-msgid "Failed to apply bands"
-msgstr "Неуспешно прилагане на ленти"
-
 msgid "USB mode is read-only in this UI."
 msgstr "USB режимът е само за четене в този потребителски интерфейс."
 
@@ -716,9 +725,6 @@ msgstr "Сканиране на мрежи... Това може да отнем�
 
 msgid "Scan complete."
 msgstr "Сканирането е завършено."
-
-msgid "Modem is busy. Try again later."
-msgstr "Модемът е зает. Опитайте отново по-късно."
 
 msgid "Scan failed"
 msgstr "Неуспешно сканиране"

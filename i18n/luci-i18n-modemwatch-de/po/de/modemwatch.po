@@ -12,6 +12,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
+msgid "Modem"
+msgstr "Modem"
+
 msgid "Modem LTE 4G"
 msgstr "Modem LTE 4G"
 
@@ -39,11 +42,17 @@ msgstr "Ungültiges Token"
 msgid "empty AT command"
 msgstr "leerer AT-Befehl"
 
+msgid "Modem is busy. Try again later."
+msgstr "Modem ist beschäftigt. Versuchen Sie es später noch einmal."
+
 msgid "invalid band selection"
 msgstr "Ungültige Bandauswahl"
 
 msgid "Band settings sent"
 msgstr "Bandeinstellungen gesendet"
+
+msgid "Failed to apply bands"
+msgstr "Bänder konnten nicht angewendet werden"
 
 msgid "network scan started"
 msgstr "Netzwerkscan gestartet"
@@ -168,6 +177,12 @@ msgstr "Signalaktualisierungsintervall (Sekunden)"
 msgid "Pause between signal page updates. The actual update also includes the modem response time."
 msgstr "Pause zwischen Aktualisierungen der Signalseite. Das eigentliche Update beinhaltet auch die Modem-Reaktionszeit."
 
+msgid "Band rollback timeout (seconds)"
+msgstr "Band-Rollback-Timeout (Sekunden)"
+
+msgid "If the new band set disconnects the internet, restore the previous bands after this many seconds. Set to 0 to disable automatic rollback."
+msgstr "Wenn das neue Bandset die Verbindung zum Internet unterbricht, stellen Sie nach dieser Anzahl von Sekunden die vorherigen Bänder wieder her. Auf 0 setzen, um das automatische Rollback zu deaktivieren."
+
 msgid "Safety"
 msgstr "Sicherheit"
 
@@ -242,9 +257,6 @@ msgstr "Ping / DNS / HTTP"
 
 msgid "Latency"
 msgstr "Latenz"
-
-msgid "Modem"
-msgstr "Modem"
 
 msgid "Firmware"
 msgstr "Firmware"
@@ -636,9 +648,6 @@ msgstr "Ausgewählte Bands anwenden? Die Verbindung kann unterbrochen werden."
 msgid "Applying bands"
 msgstr "Anbringen von Bändern"
 
-msgid "Failed to apply bands"
-msgstr "Bänder konnten nicht angewendet werden"
-
 msgid "USB mode is read-only in this UI."
 msgstr "Der USB-Modus ist in dieser Benutzeroberfläche schreibgeschützt."
 
@@ -716,9 +725,6 @@ msgstr "Netzwerke werden gescannt... Dies kann bis zu zwei Minuten dauern."
 
 msgid "Scan complete."
 msgstr "Scan abgeschlossen."
-
-msgid "Modem is busy. Try again later."
-msgstr "Modem ist beschäftigt. Versuchen Sie es später noch einmal."
 
 msgid "Scan failed"
 msgstr "Der Scan ist fehlgeschlagen"

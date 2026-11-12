@@ -12,6 +12,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+msgid "Modem"
+msgstr "Modem"
+
 msgid "Modem LTE 4G"
 msgstr "Modem LTE 4G"
 
@@ -39,11 +42,17 @@ msgstr "token tidak sah"
 msgid "empty AT command"
 msgstr "arahan AT kosong"
 
+msgid "Modem is busy. Try again later."
+msgstr "Modem sedang sibuk. Cuba lagi nanti."
+
 msgid "invalid band selection"
 msgstr "pemilihan jalur tidak sah"
 
 msgid "Band settings sent"
 msgstr "Tetapan jalur dihantar"
+
+msgid "Failed to apply bands"
+msgstr "Gagal menggunakan jalur"
 
 msgid "network scan started"
 msgstr "imbasan rangkaian bermula"
@@ -168,6 +177,12 @@ msgstr "Selang penyegaran isyarat (saat)"
 msgid "Pause between signal page updates. The actual update also includes the modem response time."
 msgstr "Jeda antara kemas kini halaman isyarat. Kemas kini sebenar juga termasuk masa tindak balas modem."
 
+msgid "Band rollback timeout (seconds)"
+msgstr "tamat masa rollback jalur (saat)"
+
+msgid "If the new band set disconnects the internet, restore the previous bands after this many seconds. Set to 0 to disable automatic rollback."
+msgstr "Jika set jalur baharu memutuskan sambungan Internet, pulihkan jalur sebelumnya selepas beberapa saat ini. Tetapkan kepada 0 untuk melumpuhkan rollback automatik."
+
 msgid "Safety"
 msgstr "Keselamatan"
 
@@ -242,9 +257,6 @@ msgstr "Ping / DNS / HTTP"
 
 msgid "Latency"
 msgstr "Latensi"
-
-msgid "Modem"
-msgstr "Modem"
 
 msgid "Firmware"
 msgstr "Perisian tegar"
@@ -636,9 +648,6 @@ msgstr "Gunakan kumpulan yang dipilih? Sambungan mungkin terputus."
 msgid "Applying bands"
 msgstr "Menerapkan jalur"
 
-msgid "Failed to apply bands"
-msgstr "Gagal menggunakan jalur"
-
 msgid "USB mode is read-only in this UI."
 msgstr "Mod USB adalah baca sahaja dalam UI ini."
 
@@ -716,9 +725,6 @@ msgstr "Mengimbas rangkaian... Ini mungkin mengambil masa sehingga dua minit."
 
 msgid "Scan complete."
 msgstr "Imbasan selesai."
-
-msgid "Modem is busy. Try again later."
-msgstr "Modem sedang sibuk. Cuba lagi nanti."
 
 msgid "Scan failed"
 msgstr "Imbasan gagal"
