@@ -293,16 +293,34 @@ local function bands_to_hex(bands)
 	return number_to_hex(mask)
 end
 
-function action_band_info()
+local function read_band_mask()
 	local out = sys.exec("/usr/bin/modemwatch.sh at " .. shellquote('AT+QCFG="band"') .. " 2>&1")
-	local lte_hex
+	if out:match("busy=1") then
+		return nil, out, true
+	end
 	local _, second = out:match("(0x[0-9a-fA-F]+)%s*,%s*(0x[0-9a-fA-F]+)")
-	lte_hex = second or out:match("(0x[0-9a-fA-F]+)")
+	local lte_hex = second or out:match("(0x[0-9a-fA-F]+)")
+	return lte_hex and hex_to_number(lte_hex) or nil, out, false
+end
+
+local function set_band_mask(mask)
+	local hex = number_to_hex(mask)
+	local out1 = sys.exec("/usr/bin/modemwatch.sh at " .. shellquote('AT+QCFG="band",0,' .. hex) .. " 2>&1")
+	local out2 = sys.exec("/usr/bin/modemwatch.sh at " .. shellquote("AT&W") .. " 2>&1")
+	return out1 .. out2
+end
+
+function action_band_info()
+	local current, out, busy = read_band_mask()
+	if busy then
+		send_json({ ok = false, error = i18n.translate("Modem is busy. Try again later.") })
+		return
+	end
 	local supported = {}
 	for _, b in ipairs(BAND_LIST) do
 		supported[#supported + 1] = { band = b, txt = BAND_NAMES[b] or "" }
 	end
-	local enabled = lte_hex and hex_to_bands(lte_hex) or {}
+	local enabled = current and hex_to_bands(number_to_hex(current)) or {}
 	send_json({
 		ok = true,
 		modem = "Quectel EC200A",
@@ -325,25 +343,64 @@ function action_band_set()
 		bands = "1 3 5 7 8 20 28 38 40 41"
 	end
 	local hex = bands_to_hex(bands)
-	local out1 = sys.exec("/usr/bin/modemwatch.sh at " .. shellquote('AT+QCFG="band",0,' .. hex) .. " 2>&1")
-	local out2 = sys.exec("/usr/bin/modemwatch.sh at " .. shellquote("AT&W") .. " 2>&1")
-	sys.exec("sleep 1")
-	local check = sys.exec("/usr/bin/modemwatch.sh at " .. shellquote('AT+QCFG="band"') .. " 2>&1")
-	local _, lte_hex = check:match("(0x[0-9a-fA-F]+)%s*,%s*(0x[0-9a-fA-F]+)")
-	lte_hex = lte_hex or check:match("(0x[0-9a-fA-F]+)")
 	local wanted = hex_to_number(hex)
-	local current = lte_hex and hex_to_number(lte_hex) or nil
-	if current ~= wanted then
+	local old_mask, old_out, busy = read_band_mask()
+	if busy then
+		send_json({ ok = false, error = i18n.translate("Modem is busy. Try again later."), output = old_out })
+		return
+	end
+	if old_mask == wanted then
 		send_json({
-			ok = false,
-			error = i18n.translate("Failed to apply bands"),
-			output = out1 .. out2 .. check
+			ok = true,
+			output = old_out,
+			message = i18n.translate("Band settings sent")
 		})
 		return
 	end
+
+	local out1 = set_band_mask(wanted)
+	local current
+	for _ = 1, 5 do
+		sys.exec("sleep 1")
+		current = read_band_mask()
+		if current == wanted then
+			break
+		end
+	end
+	if current ~= wanted then
+		if old_mask then
+			set_band_mask(old_mask)
+		end
+		send_json({
+			ok = false,
+			error = i18n.translate("Failed to apply bands"),
+			output = out1 .. (old_out or "")
+		})
+		return
+	end
+
+	-- If the new band set disconnected the modem, restore the old set.
+	local online = false
+	for _ = 1, 4 do
+		if sys.call("ping -c 1 -W 2 1.1.1.1 >/dev/null 2>&1") == 0 then
+			online = true
+			break
+		end
+		sys.exec("sleep 5")
+	end
+	if not online and old_mask then
+		set_band_mask(old_mask)
+		send_json({
+			ok = false,
+			error = i18n.translate("Failed to apply bands"),
+			output = out1
+		})
+		return
+	end
+
 	send_json({
 		ok = true,
-		output = out1 .. out2,
+		output = out1,
 		message = i18n.translate("Band settings sent")
 	})
 end

@@ -648,18 +648,22 @@ reboot_modem() {
 
 	failures="0"
 	write_status
-	log info "waiting ${reboot_wait}s for modem to come back"
-	sleep "$reboot_wait"
-
-	if check_internet; then
-		state="online"
-		last_success=$(now)
-		failures="0"
-		log info "internet restored after modem reboot"
-	else
-		state="offline"
-		log warn "still offline after modem reboot"
-	fi
+	log info "waiting up to ${reboot_wait}s for modem to come back"
+	elapsed=0
+	while [ "$elapsed" -lt "$reboot_wait" ]; do
+		sleep 5
+		elapsed=$((elapsed + 5))
+		if check_internet; then
+			state="online"
+			last_success=$(now)
+			failures="0"
+			log info "internet restored after ${elapsed}s"
+			write_status
+			return 0
+		fi
+	done
+	state="offline"
+	log warn "still offline after ${reboot_wait}s"
 	write_status
 }
 
