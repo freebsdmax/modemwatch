@@ -1,7 +1,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=luci-i18n-modemwatch-lt
-PKG_VERSION:=1.0.6
+PKG_VERSION:=1.0.5b
 PKG_RELEASE:=1
 PKG_LICENSE:=MIT
 PKG_MAINTAINER:=modemwatch contributors
